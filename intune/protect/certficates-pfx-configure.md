@@ -1,13 +1,14 @@
 ---
 title: Microsoft Intune で秘密キーと公開キーの証明書を使用する - Azure | Microsoft Docs
-description: Microsoft Intune で Public Key Cryptography Standards (PKCS) 証明書を追加または作成します。これには、ルート証明書をエクスポートする、証明書テンプレートを構成する、Intune Certificate Connector (NDES) をダウンロードしてインストールする、デバイス構成プロファイルを作成する、Azure とご利用の証明機関で PKCS 証明書プロファイルを作成するという手順が含まれます。
+description: Microsoft Intune で公開キー暗号化標準 (PKCS) 証明書を使用する これには、ルート証明書と証明書テンプレートの使用、Intune Certificate Connector (NDES) のインストール、PKCS 証明書のデバイス構成プロファイルの使用が含まれます。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 10/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ee5ef1b5c59bbef3834d44354508b767ae99088
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b0f31add65063665da5a7961e2caf9eb30a847e2
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722931"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72787869"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune で PKCS 証明書を構成して使用する
 
@@ -58,7 +59,7 @@ Intune で PKCS 証明書を使用するには、次のインフラストラク�
 - **Microsoft Intune Certificate Connector** ("*NDES 証明書コネクタ*" とも呼ばれます):  
   Intune ポータルで、 **[デバイス構成]**  >  **[証明書コネクタ]**  >  **[追加]** の順に移動して、*PKCS #12 用コネクタをインストールする手順*に従います。 ポータルのダウンロード リンクを使用して、証明書コネクタのインストーラー **NDESConnectorSetup.exe** のダウンロードを開始します。  
 
-  Intune では、テナントごとにこのコネクタの最大 100 個のインスタンスがサポートされており、各インスタンスは個別の Windows サーバー上にあります。 このコネクタのインスタンスは、Microsoft Intune 用の PFX Certificate Connector のインスタンスと同じサーバー上にインストールできます。 複数のコネクタを使用する場合、コネクタのインフラストラクチャでは、使用可能なコネクタ インスタンスによって PKCS 証明書要求を処理できるため、高可用性と負荷分散がサポートされます。 
+  Intune では、テナントごとにこのコネクタのインスタンスが最大 100 サポートされます。 コネクタの各インスタンスは、別個の Windows サーバー上に置く必要があります。 このコネクタのインスタンスは、Microsoft Intune 用の PFX Certificate Connector のインスタンスと同じサーバー上にインストールできます。 複数のコネクタを使用する場合、コネクタのインフラストラクチャでは、使用可能なコネクタ インスタンスによって PKCS 証明書要求を処理できるため、高可用性と負荷分散がサポートされます。 
 
   このコネクタは、認証または S/MIME メールの署名で使用される PKCS 証明書の要求を処理します。
 
@@ -75,7 +76,7 @@ Intune で PKCS 証明書を使用するには、次のインフラストラク�
   - PFX Certificate Connector for Microsoft Intune をサーバーにインストールします。  
   - 重要な更新プログラムを自動的に受け取るには、確実にファイアウォールがオープンになっていることを確認し、コネクタがポート **443** で **autoupdate.msappproxy.net** にコンタクトできるようにします。   
 
-  Intune とコネクタがアクセスできる必要があるネットワーク エンドポイントについて詳しくは、「[Microsoft Intune のネットワーク エンドポイント](../fundamentals/intune-endpoints.md)」をご覧ください。
+  Intune とコネクタでアクセスするネットワーク エンドポイントについて詳しくは、「[Microsoft Intune のネットワーク エンドポイント](../fundamentals/intune-endpoints.md)」をご覧ください。
 
 - **Windows Server**:  
   Windows Server をホストに使用します。
@@ -102,7 +103,7 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
 
 1. 管理特権があるアカウントでエンタープライズ CA にサインインします。
 2. **[証明機関]** コンソールで **[証明書テンプレート]** を右クリックして **[管理]** を選択します。
-3. **User** 証明書テンプレートを探して右クリックし、 **[テンプレートの複製]** を選択します。 **[新しいテンプレートのプロパティ]** が開きます。
+3. **User** 証明書テンプレートを探して右クリックし、 **[テンプレートの複製]** を選択して **[新しいテンプレートのプロパティ]** を開きます。
 
     > [!NOTE]
     > S/MIME メールの署名と暗号化のシナリオの場合、管理者の多くは、署名と暗号化に対して別々の証明書を使用します。 Microsoft Active Directory Certificate Services を使用している場合、S/MIME メールの署名証明書には **[Exchange 署名のみ]** テンプレートを使用し、S/MIME 暗号化証明書には **[Exchange ユーザー]** テンプレートを使用することができます。  サード パーティ証明機関を使用している場合は、該当するガイダンスを確認して署名および暗号化のテンプレートを設定することをお勧めします。
@@ -165,7 +166,7 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
 
 ## <a name="create-a-trusted-certificate-profile"></a>信頼済み証明書プロファイルを作成する
 
-1. [Azure portal](https://portal.azure.com) で、 **[Intune]**  >  **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインして、 **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に移動します。
     ![Intune に移動して信頼済み証明書用に新しいプロファイルを作成する](./media/certficates-pfx-configure/certificates-pfx-configure-profile-new.png)
 
 2. 次のプロパティを入力します。
@@ -187,7 +188,7 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
 
 ## <a name="create-a-pkcs-certificate-profile"></a>PKCS 証明書プロファイルを作成する
 
-1. [Azure portal](https://portal.azure.com) で、 **[Intune]**  >  **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインして、 **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に移動します。
 2. 次のプロパティを入力します。
 
     - プロファイルの**名前**
@@ -195,22 +196,81 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
     - プロファイルをデプロイする**プラットフォーム**
     - **[プロファイルの種類]** に **[PKCS 証明書]** を設定
 
-3. **[設定]** に移動し、次のプロパティを入力します。
-
-    - **[更新しきい値 (%)]** : 推奨値は 20% です。
-    - **[証明書の有効期間]** : 証明書テンプレートを変更していない場合、このオプションはおそらく 1 年に設定されています。
-    - **キー記憶域プロバイダー (KSP)** :Windows では、デバイス上のキーを格納する場所を選択します。
-    - **証明機関**:エンタープライズ CA の内部完全修飾ドメイン名 (FQDN) が表示されます。
-    - **証明機関名**:"Contoso Certification Authority" など、エンタープライズ CA の名前が一覧表示されます。
-    - **証明書テンプレート名**: 先に作成したテンプレートの名前。 既定では、 **[テンプレート名]** は **[テンプレート表示名]** (*スペースなし*) と同じであることに注意してください。
-    - **[サブジェクト名の形式]** : 特に指定がない限り、このオプションは**共通名**に設定します。
-    - **[サブジェクトの別名]** : 特に指定がない限り、このオプションは**ユーザー プリンシパル名 (UPN)** に設定します。
+3. **[設定]** にアクセスし、選択したプラットフォームに適用されるプロパティを構成します。  
+   
+   |Setting     | プラットフォーム     | 説明   |
+   |------------|------------|------------|
+   |**[更新しきい値 (%)]**        |すべて         |推奨値は 20% です  | 
+   |**[証明書の有効期間]**  |すべて         |証明書テンプレートを変更していない場合、このオプションはおそらく 1 年に設定されています。 |
+   |**キー記憶域プロバイダー (KSP)**   |Windows 10  | Windows では、デバイス上のキーを格納する場所を選択します。 |
+   |**証明機関**      |すべて         |エンタープライズ CA の内部完全修飾ドメイン名 (FQDN) が表示されます。  |
+   |**証明機関名** |すべて         |"Contoso Certification Authority" など、エンタープライズ CA の名前が一覧表示されます。 |
+   |**証明書の種類**             |macOS       |種類の選択: <br> **-** **ユーザー**証明書では、証明書のサブジェクトと SAN 内にユーザー属性とデバイス属性の両方を含めることができます。 <br><br>**-** **[デバイス]** 証明書では、証明書のサブジェクトと SAN にデバイスの属性を含めることができます。 キオスクやその他の共有デバイスなど、ユーザーのいないデバイスなどのシナリオには、[デバイス] を使用します。  <br><br> この選択は、サブジェクト名の形式に影響します。 |
+   |**[サブジェクト名の形式]**          |すべて         |ほとんどのプラットフォームでは、特に指定がない限り、このオプションは**共通名**に設定します。<br><br>macOS の場合、サブジェクト名の形式は証明書の種類によって決まります。 この記事の後半に登場するセクション「[macOS のサブジェクト名の形式](#subject-name-format-for-macos)」を参照してください。 |
+   |**[サブジェクトの別名]**     |すべて         |特に指定がない限り、このオプションは**ユーザー プリンシパル名 (UPN)** に設定します。 |
+   |**[拡張キー使用法]**           |**-** Android デバイス管理者 <br>**-** Android エンタープライズ (*デバイス所有者*、*仕事用プロファイル*) <br> **-** Windows 10 |ユーザーまたはデバイスがサーバーに対して認証できるように、証明書には通常、 *[クライアント認証]* が必要です。 |
+   |**[すべてのアプリが秘密キーにアクセスできるようにする]** |macOS  |**[有効にする]** に設定すると、PKCS 証明書の秘密キーへのアクセスが関連 mac デバイスに構成されているアプリに与えられます。 <br><br> この設定の詳細については、Apple 開発者ドキュメントにある「[Configuration Profile Reference](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)」の「Certificate Payload」セクションに記載されている *AllowAllAppsAccess* を参照してください。 |
+   |**ルート証明書**             |**-** Android デバイス管理者 <br> **-** Android エンタープライズ (*デバイス所有者*、*仕事用プロファイル*) |前に割り当てられたルート CA 証明書プロファイルを選択します。 |
 
 4. **[OK]**  >  **[作成]** を選択してプロファイルを保存します。
 5. 1 つ以上のデバイスに新しいプロファイルを割り当てる場合は、[Microsoft Intune のデバイス プロファイルの割り当て](../configuration/device-profile-assign.md)に関するページをご覧ください。
 
    > [!NOTE]
    > Android エンタープライズ プロファイルを使用しているデバイスでは、PKCS 証明書プロファイルを使用してインストールされた証明書は、デバイス上に表示されません。 証明書の展開に成功したことを確認するには、Intune コンソール上でプロファイルの状態を確認します。
+
+### <a name="subject-name-format-for-macos"></a>macOS のサブジェクト名の形式
+
+macOS PKCS 証明書プロファイルを作成するとき、サブジェクト名の形式のオプションは、選択した証明書の種類 ( **[ユーザー]** または **[デバイス]** ) によって異なります。  
+
+> [!NOTE]  
+> PKCS を使用した証明書の取得について、生成される証明書署名要求 (CSR) 内のサブジェクト名に次の文字のいずれかがエスケープ文字 (前にバックスラッシュ \\ が付く) として含まれていた場合に関する既知の問題があります。[SCEP でも同じ問題が確認されています](certificates-profile-scep.md#avoid-certificate-signing-requests-with-escaped-special-characters)。
+> - \+
+> - ;
+> - 、
+> - =
+
+- **ユーザー証明書の種類**  
+  *[サブジェクト名の形式]* の形式オプションが 2 つあります。**共通名 (CN)** と**電子メール (E)** ) をサポートしています。 **共通名 (CN)** は、次のいずれかの変数に設定できます。
+
+  - **CN={{UserName}}** : janedoe@contoso.com など、ユーザーのユーザー プリンシパル名。
+  - **CN={{AAD_Device_ID}}** : Azure Active Directory (AD) にデバイスを登録するときに割り当てられた ID。 通常、この ID は Azure AD での認証に使われます。
+  - **CN={{SERIALNUMBER}}** : 一意のシリアル番号 (SN)。通常はデバイスを識別するために製造元によって使われます。
+  - **CN={{IMEINumber}}** : 携帯電話の識別に使用される IMEI (International Mobile Equipment Identity) の一意の番号です。
+  - **CN={{OnPrem_Distinguished_Name}}** : コンマで区切られた相対識別名のシーケンスです (*CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com* など)。
+
+    *{{OnPrem_Distinguished_Name}}* 変数を使用するには、[Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) を使用して、*onpremisesdistinguishedname* ユーザー属性をご自分の Azure AD に同期してください。
+
+  - **CN={{onPremisesSamAccountName}}** : 管理者は、Azure AD Connect を使用して、Active Directory の samAccountName 属性を、Azure AD の *onPremisesSamAccountName* という属性に同期できます。 Intune では、証明書のサブジェクト内の証明書発行要求の一部として、その変数を置き換えることができます。 samAccountName 属性は、以前のバージョンの Windows (windows 2000 より前) のクライアントとサーバーをサポートするために使われるユーザー サインイン名です。 ユーザー サインイン名の形式は次のとおりです。*DomainName\testUser*、または *testUser* のみ。
+
+    *{{onPremisesSamAccountName}}* 変数を使用するには、[Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) を使用して、*onPremisesSamAccountName* ユーザー属性をご自分の Azure AD に同期してください。
+
+  これらの変数と静的文字列の 1 つまたは複数を組み合わせて使用することで、次のようなサブジェクト名のカスタム形式を作成できます。  
+  - **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
+  
+  その例には、CN 変数と E 変数に加えて、組織単位、組織、場所、州、国の各値を表す文字列を使用するサブジェクト名形式が含まれています。 [CertStrToName 関数](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)の記事では、この関数とそのサポートされる文字列について説明されています。
+
+- **デバイス証明書の種類**  
+  サブジェクト名の形式のフォーマットオプションには、次の変数が含まれます。 
+  - **{{AAD_Device_ID}}**
+  - **{{Device_Serial}}**
+  - **{{Device_IMEI}}**
+  - **{{SerialNumber}}**
+  - **{{IMEINumber}}**
+  - **{{AzureADDeviceId}}**
+  - **{{WiFiMacAddress}}**
+  - **{{IMEI}}**
+  - **{{DeviceName}}**
+  - **{{FullyQualifiedDomainName}}** *(Windows およびドメインに参加しているデバイスにのみ適用)*
+  - **{{MEID}}**
+   
+  これらの変数は、テキスト ボックスで指定し、その後に変数のテキストを続けることができます。 たとえば、*Device1* という名前のデバイスの共通名は、**CN={{DeviceName}}Device1** として追加できます。
+
+  > [!IMPORTANT]  
+  > - 変数を指定する場合は、エラーが発生しないように、例に示すように、変数名を中かっこ { } で囲みます。  
+  > - デバイス証明書の "*サブジェクト*" または *SAN* で使用されるデバイス プロパティ (**IMEI**、**SerialNumber**、**FullyQualifiedDomainName** など) は、デバイスへのアクセス権を持つユーザーによってスプーフィングされる可能性のあるプロパティです。
+  > - 証明書プロファイルをデバイスにインストールする場合は、そのプロファイルで指定されたすべての変数が該当するデバイスでサポートされている必要があります。  たとえば、 **{{IMEI}}** が SCEP プロファイルのサブジェクト名に使用されていて、IMEI 番号を持たないデバイスに割り当てられている場合、プロファイルのインストールは失敗します。  
+ 
+
 
 ## <a name="whats-new-for-connectors"></a>コネクタの新機能
 2 つの証明書コネクタの更新プログラムは、定期的にリリースされます。 コネクタが更新された場合、その変更についてここから確認することができます。 
