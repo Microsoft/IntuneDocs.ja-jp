@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 07/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -15,17 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35fae5ea1b3294772db4f4db51179892e08ed5d1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c1c02248b3208073a3bb09cafe69cf0473eacb2b
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728508"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584535"
 ---
 # <a name="rename-a-device-in-intune"></a>Intune 上でデバイスの名前を変更する
-
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 **デバイス名の変更**アクションによって、Intune に登録されているデバイスの名前を変更できます。 デバイスの名前は、Intune 内とデバイス上で変更されます。
 
@@ -39,11 +37,20 @@ ms.locfileid: "71728508"
 ## <a name="rename-a-device"></a>デバイスの名前を変更する
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-3. **[デバイス]** > **[すべてのデバイス]** > デバイスの選択 > **[その他]** > **[デバイスの名前を変更]** の順に選択します。
+3. **[デバイス]**  >  **[すべてのデバイス]** > デバイスの選択 > **[その他]**  >  **[デバイスの名前を変更]** の順に選択します。
 4. **[デバイスの名前を変更]** ブレードで、テキスト ボックスに新しい名前を入力します。 文字、数字、ハイフンを使用できます。 名前には、少なくとも 1 つの文字またはハイフンを含める必要があります。
-5. 名前の変更後、デバイスを再起動する場合、**[名前を変更したら再起動する]** の横の **[はい]** を選択します。
+5. 名前の変更後、デバイスを再起動する場合、 **[名前を変更したら再起動する]** の横の **[はい]** を選択します。
 6. **[名前の変更]** を選択します。
 
+## <a name="windows-device-rename-rules"></a>Windows デバイスの名前の変更規則
+Windows デバイスの名前を変更する場合、次の規則に従って新しい名前を指定する必要があります。
+- 15 文字以下 (後続の NULL を除き、63 バイト以下にする必要があります)
+- null または空の文字列にしない
+- 許可される ASCII: 文字 (a-z、A-Z)、数字 (0-9)、ハイフン
+- 許可される Unicode: 文字数 >= 0x80、有効な UTF8 であることが必須、IDN マッピング可能であることが必須 (つまり、RtlIdnToNameprepUnicode は合格です。RFC 3492 参照)
+- 名前は数字だけにすることができない
+- 名前にスペースを使用できない
+- 許可されていない文字: { | } ~ [ \ ] ^ ' : ; < = > ? & @ ! " # $ % ` ( ) + / , . _ *)
 
 
 ## <a name="next-steps"></a>次の手順

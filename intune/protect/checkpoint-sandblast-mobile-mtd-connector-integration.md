@@ -6,9 +6,10 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1e9b1576-b239-48cc-a672-da6b5fb7be0a
@@ -17,19 +18,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c3c19c927618cec4b5cb55eb08f097ea21ebc47
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 54d02f46b3296770f1eb24917e7e874e7b3977ac
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722827"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681277"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>Check Point SandBlast Mobile と Intune を統合します
 
+次の手順を行って、Check Point SandBlast Mobile Threat Defense ソリューションを Intune と統合します。
+
+> [!NOTE]
+> この Mobile Threat Defense ベンダーは、未登録のデバイスではサポートされていません。
+
 ## <a name="before-you-begin"></a>始める前に
 
-> [!NOTE] 
-> 以下の手順は、[Check Point SandBlast Mobile MTD コンソール](https://intune-4.eu1.locsec.net/)で行う必要があります。
+この記事に記載の手順は、[Check Point SandBlast Mobile コンソール](https://intune-4.eu1.locsec.net/)で行います。 
 
 Check Point SandBlast Mobile と Intune の統合を始める前に、次のものがあることを確認します。
 

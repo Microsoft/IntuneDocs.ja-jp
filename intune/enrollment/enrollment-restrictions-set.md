@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/17/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
@@ -17,20 +18,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f041c76b4d9b3814a020d51ad4cbb8e33df6c27
-ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
+ms.openlocfilehash: 5d70496a87f923b61cacb3da250e5f22ce5c7817
+ms.sourcegitcommit: aeb76032de216e5feb94559aeaf36c0357f1247d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379808"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587955"
 ---
 # <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 ユーザーは Intune 管理者として、Intune での管理に登録できるデバイスについて、以下を定義する登録制限を作成して管理することができます。
-- デバイスの数
-- オペレーティング システムとバージョン 制限を複数作成して、さまざまなユーザー グループに適用することができます。 さまざまな制限を作成した場合は、[優先度](#change-enrollment-restriction-priority)を設定することができます。
+- デバイスの数。
+- オペレーティング システムとバージョン。
+
+制限を複数作成して、さまざまなユーザー グループに適用することができます。 さまざまな制限を作成した場合は、[優先度](#change-enrollment-restriction-priority)を設定することができます。
 
 >[!NOTE]
 >登録の制限はセキュリティ機能ではありません。 侵害されたデバイスでは特徴が正しく示されない可能性があります。 これらの制限は、悪意のないユーザーにとって最善の防御策となります。
@@ -69,8 +72,17 @@ ms.locfileid: "72379808"
     - Android デバイス管理者と Android Enterprise 仕事用プロファイルでは、major.minor.rev.build がサポートされます。
     - iOS では major.minor.rev がサポートされます。オペレーティング システムのバージョンは、Device Enrollment Program、Apple School Manager、または Apple Configurator アプリを使用して登録する Apple デバイスには適用されません。
     - Windows は、Windows 10 の場合にのみ major.minor.build.rev をサポートします。
-    > [!Note]
-    > Windows 10 では登録時にリビジョン番号が提供されないため、たとえば 10.0.17134.100 と入力し、デバイスが 10.0.17134.174 の場合、登録中にブロックされます。
+    
+    > [!IMPORTANT]
+    > Android Enterprise (仕事用プロファイル) プラットフォームと Android デバイス管理者プラットフォームには、次のような特徴があります。
+    > - 両方のプラットフォームが同じグループに対して許可されている場合、ユーザーは、自分のデバイスで仕事用プロファイルがサポートされていればそれに登録され、そうでなければ、DA として登録されます。 
+    > - 両方のプラットフォームがグループに対して許可され、特定の重複しないバージョンに合わせて調整されている場合、ユーザーは自分の OS バージョン用に定義された登録フローを受け取ります。 
+    > - 両方のプラットフォームは許可されているが、同じバージョンに対してブロックされている場合、ブロックされたバージョンを使用するデバイス上のユーザーは、Android デバイス管理者登録フローに移動し、登録がブロックされて、サインアウトするように求められます。 
+    >
+    > 適切な前提条件が Android 登録内で完了していない限り、仕事用プロファイルもデバイス管理者の登録も機能しないことに注意してください。 
+    
+   > [!Note]
+   > Windows 10 では登録時にリビジョン番号が提供されないため、たとえば 10.0.17134.100 と入力し、デバイスが 10.0.17134.174 の場合、登録中にブロックされます。
 
 8. **[個人所有]** で、個人所有デバイスとして許可するプラットフォームに対して **[許可]** を選択します。
 9. **[次へ]** を選択して、 **[割り当て]** ページに移動します。

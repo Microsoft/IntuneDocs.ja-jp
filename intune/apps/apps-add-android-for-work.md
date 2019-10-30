@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbcc777cc6d8b803c502d847114ef7cff04ceb26
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3137db9d1ab82ebb99686f8f98aa768dae222caf
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725336"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584954"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Intune を使ってマネージド Google Play アプリを Android Enterprise デバイスに追加する
 
@@ -48,9 +49,9 @@ Android Enterprise 管理をより簡単に構成して使用できるように�
 ## <a name="managed-google-play-app-types"></a>マネージド Google Play アプリの種類
 マネージド Google Play では、次の 3 種類のアプリを利用できます。
 
-* **マネージド Google Play ストア アプリ** - Play ストア内で一般提供されている公式アプリ。 管理するアプリを参照して承認し、Intune に同期することで、Intune 内でこれらのアプリを管理します。
-* **マネージド Google Play プライベート アプリ** - これらは、Intune 管理者によってマネージド Google Play に発行された LOB アプリです。  これらのアプリはプライベートであり、ご自身の Intune テナントのみで利用可能です。 これは、マネージド Google Play および Android Enterprise を使って LOB アプリを管理および展開する方法です。
-* **マネージド Google Play Web リンク** - Android Enterprise デバイスに展開できる IT 管理者が定義したアイコン付きの Web リンク。 これらは、デバイス上で、通常のアプリと同じようにデバイスのアプリ一覧内に表示されます。
+- **マネージド Google Play ストア アプリ** - Play ストア内で一般提供されている公式アプリ。 管理するアプリを参照して承認し、Intune に同期することで、Intune 内でこれらのアプリを管理します。
+- **マネージド Google Play プライベート アプリ** - これらは、Intune 管理者によってマネージド Google Play に発行された LOB アプリです。  これらのアプリはプライベートであり、ご自身の Intune テナントのみで利用可能です。 これは、マネージド Google Play および Android Enterprise を使って LOB アプリを管理および展開する方法です。
+- **マネージド Google Play Web リンク** - Android Enterprise デバイスに展開できる IT 管理者が定義したアイコン付きの Web リンク。 これらは、デバイス上で、通常のアプリと同じようにデバイスのアプリ一覧内に表示されます。
 
 ## <a name="managed-google-play-store-apps"></a>マネージド Google Play ストア アプリ
 Intune を使ってマネージド Google Play ストア アプリを参照して承認するには、次の 2 つの方法があります。
@@ -209,8 +210,7 @@ Android Enterprise では、Intune にアプリを同期してユーザーに割
 
 ## <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices"></a>Android エンタープライズ仕事用プロファイル デバイスに関するマネージド Google Play アプリの追加レポート
 
-Android エンタープライズ仕事用プロファイル デバイスに展開されたマネージド Google Play アプリについて、デバイスにインストールされているアプリの特定のバージョン番号を表示できます。 これは必須アプリのみに適用されます。 
-
+Android エンタープライズ仕事用プロファイル デバイスに展開されたマネージド Google Play アプリの場合は、Intune を使用して、デバイスにインストールされたアプリの状態とバージョン番号を表示できます。 
 
 ## <a name="delete-managed-google-play-apps"></a>managed Google Play アプリを削除する
 必要に応じて、Microsoft Intune から managed Google Play アプリを削除できます。 managed Google Play アプリを削除するには、Azure portal で Microsoft Intune を開き、 **[クライアント アプリ]**  >  **[アプリ]** の順に選択します。 アプリの一覧から、managed Google Play アプリの右側にある省略記号 (...) を選択し、表示された一覧で **[削除]** を選択します。 アプリの一覧からマネージド Google Play アプリを削除すると、そのマネージド Google Play アプリは自動的に未承認になります。

@@ -6,9 +6,10 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/21/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
@@ -17,15 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97efe5c2445263bba11ee083e89d36fde1986dc1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4abc35b625b9aa072e38c02d2fc4160faa916fb3
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727871"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785718"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Mobile Threat Defense の Intune との統合
-Intune を使用すると、Mobile Threat Defense ベンダーからのデータを、コンプライアンス ポリシーおよび条件付きアクセス規則の情報ソースとして統合することができます。 この情報を使用すれば、危険にさらされたモバイル デバイスからのアクセスをブロックすることで、Exchange や SharePoint などの会社リソースを容易に保護することができます。  
+Intune を使用すると、Mobile Threat Defense ベンダーからのデータを、デバイス コンプライアンス ポリシーおよびデバイス条件付きアクセス規則の情報ソースとして統合することができます。 この情報を使用すれば、危険にさらされたモバイル デバイスからのアクセスをブロックすることで、Exchange や SharePoint などの会社リソースを容易に保護することができます。
+
+Intune では、Intune アプリ保護ポリシーを使用して、未登録デバイスに対するソースと同じデータを使用できます。 そのため、管理者は、この情報を使用して、[Microsoft Intune の保護されたアプリ](~/apps/apps-supported-intune-apps.md)内の企業データを保護し、ブロックまたは選択的ワイプを発行することができます。
 
 ## <a name="what-problem-does-this-solve"></a>どのような問題がこれにより解決されますか?
 Mobile Threat Defense ベンダーからの情報を統合することは、モバイル プラットフォームに影響する脅威から会社のリソースを保護する場合に役立ちます。  
@@ -42,7 +45,7 @@ Intune では、Mobile Threat Defense コネクタを使用して、Intune と�
 
 有効になっている場合、Intune は個人のデバイスと会社所有のデバイスの両方からアプリ インベントリ情報を収集し、Lookout for Work など、MTD (Mobile Thread Defense) プロバイダーが取得できるようにします。 iOS デバイスを所有するユーザーからアプリ インベントリを収集できます。
 
-これは、オプトインのサービスです。既定で共有されるインベントリ情報はありません。 アプリのインベントリ情報を共有する前に、Intune 管理者は、サービス設定で iOS デバイスのアプリの同期を有効にする必要があります。
+これは、オプトインのサービスです。既定で共有されるインベントリ情報はありません。 アプリのインベントリ情報を共有する前に、Intune 管理者は、Mobile Threat Defense コネクタの設定で **iOS デバイスのアプリの同期**を有効にする必要があります。
 
 **アプリ インベントリ**  
 iOS デバイスのアプリの同期を有効にした場合、iOS を内蔵した会社所有デバイスと個人所有デバイスの両方からのインベントリが MTD サービス プロバイダーに送信されます。 アプリ インベントリのデータ:
@@ -56,7 +59,7 @@ iOS デバイスのアプリの同期を有効にした場合、iOS を内蔵し
 - アプリの有効性が確認されているかどうか
 - アプリが管理されているかどうか
 
-## <a name="sample-scenarios"></a>サンプル事例
+## <a name="sample-scenarios-for-enrolled-devices-using-device-compliance-policies"></a>デバイス コンプライアンス ポリシーを使用する登録済みデバイスのサンプル シナリオ
 
 Mobile Threat Defense ソリューションによってデバイスが感染したと見なされた場合
 
@@ -66,14 +69,22 @@ Mobile Threat Defense ソリューションによってデバイスが感染し�
 
 ![Mobile Threat Defense とアクセス付与を示す画像](./media/mobile-threat-defense/MTD-image-2.png)
 
+## <a name="sample-scenarios-for-unenrolled-devices-using-intune-app-protection-policies"></a>Intune アプリ保護ポリシーを使用する未登録デバイスのサンプル シナリオ
+
+Mobile Threat Defense ソリューションによってデバイスが感染したと見なされた場合<br>
+![Mobile Threat Defense と感染しているデバイスを示す画像](./media/mobile-threat-defense/MTD-image-3.png)
+
+デバイスが修復されたときにアクセスが許可されます。<br>
+![Mobile Threat Defense とアクセス付与を示す画像](./media/mobile-threat-defense/MTD-image-4.png)
+
 > [!NOTE] 
-> Intune で複数の Mobile Threat Defense ベンダーを使用することは、サポートされていません。 複数の MTD ツールが有効になると、すべての MTD アプリがインストールされ、脅威を検出するためにデバイスにまたがるスキャンが実行されます。
+> Intune で複数の Mobile Threat Defense ベンダーを使用することは、サポートされていません。 複数の MTD コネクタが有効になると、すべての MTD アプリがインストールされ、脅威を検出するためにデバイスにまたがるスキャンが実行されます。
 
 ## <a name="mobile-threat-defense-partners"></a>Mobile Threat Defense パートナー
 
 デバイス、ネットワーク、アプリケーションのリスクに基づいて、会社のリソースへのアクセスを保護する方法について説明します。次のものを使用します。
 
-- [Lookout](lookout-mobile-threat-defense-connector.md)
+- [Lookout for Work](lookout-mobile-threat-defense-connector.md)
 - [Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md)
 - [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)

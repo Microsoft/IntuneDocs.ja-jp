@@ -2,29 +2,28 @@
 title: Microsoft Intune - Azure のデバイス コンプライアンス ポリシー | Microsoft Docs
 description: デバイス コンプライアンス ポリシーの使用の開始、状態と重大度レベルの概要、InGracePeriod 状態の使用、条件付きアクセスの使用、割り当てポリシーなしのデバイスの処理、Microsoft Intune の Azure portal とクラシック ポータルのコンプライアンスの違い
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a743bb3b2003b1dbdf8088aca19bce898c8e40a8
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 967bf9937c71ff3ca7277f43fd969291eb5af6de
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721423"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749167"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Intune を使用して組織内のリソースへのアクセスを許可するように、デバイス上でルールを設定する
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 モバイル デバイス管理 (MDM) ソリューションの多くでは、組織のデータを保護するために、ユーザーやデバイスがいくつかの要件を満たすことを要求します。 Intune では、この機能は "コンプライアンス ポリシー" と呼ばれています。 コンプライアンス ポリシーでは、準拠ユーザーおよびデバイスであるために満たす必要があるルールや設定が定義されます。 条件付きアクセスと組み合わせた場合、管理者はルールを満たしていないユーザーとデバイスをブロックすることができます。
 
@@ -89,7 +88,7 @@ Intune には、組み込みのコンプライアンス ポリシー設定のセ
 
 - **[Mark devices with no compliance policy assigned as]\(コンプライアンス ポリシーが割り当てられていないデバイスにマークを付ける\)** :このプロパティには次の 2 つの値があります。
 
-  - **[準拠]** (既定値): セキュリティ機能が無効
+  - **[準拠]** (*既定値*): セキュリティ機能が無効
   - **[非準拠]** : セキュリティ機能が有効
 
   デバイスにコンプライアンス ポリシーが割り当てられていない場合、そのデバイスは既定で準拠と見なされます。 コンプライアンス ポリシーで条件付きアクセスを使用する場合は、既定の設定を **[非準拠]** に変更することをお勧めします。 ポリシーが割り当てられていないためにエンド ユーザーが準拠していない場合、[ポータル サイト アプリ](../apps/company-portal-app.md)には `No compliance policies have been assigned` と表示されます。
@@ -115,13 +114,13 @@ Intune には、組み込みのコンプライアンス ポリシー設定のセ
 
 |**ポリシー設定**| **プラットフォーム** |
 | --- | ----|
-| **PIN またはパスワードの構成** | - **Android 4.0 以降**: 検疫済み</br>- **Samsung KNOX Standard 4.0 以降**: 検疫済み</br>- **Android エンタープライズ**: 検疫済み</br></br>- **iOS 8.0 以降**: 修復</br>- **macOS 10.11 以降**: 修復</br></br>- **Windows 8.1 以降**: 修復</br>- **Windows Phone 8.1 以降**: 修復|
-| **デバイスの暗号化** | - **Android 4.0 以降**: 検疫済み</br>- **Samsung KNOX Standard 4.0 以降**: 検疫済み</br>- **Android エンタープライズ**: 検疫済み</br></br>- **iOS 8.0 以降**: 修復 (PIN の設定による)</br>- **macOS 10.11 以降**: 修復 (PIN の設定による)</br></br>- **Windows 8.1 以降**: 適用できません</br>- **Windows Phone 8.1 以降**: 修復 |
-| **脱獄またはルート化されたデバイス** | - **Android 4.0 以降**: 検疫済み (設定ではありません)</br>- **Samsung KNOX Standard 4.0 以降**: 検疫済み (設定ではありません)</br>- **Android エンタープライズ**: 検疫済み (設定ではありません)</br></br>- **iOS 8.0 以降**: 検疫済み (設定ではありません)</br>- **macOS 10.11 以降**: 適用できません</br></br>- **Windows 8.1 以降**: 適用できません</br>- **Windows Phone 8.1 以降**: 適用できません |
-| **電子メールのプロファイル** | - **Android 4.0 以降**: 適用できません</br>- **Samsung KNOX Standard 4.0 以降**: 適用できません</br>- **Android エンタープライズ**: 適用できません</br></br>- **iOS 8.0 以降**: 検疫済み</br>- **macOS 10.11 以降**: 検疫済み</br></br>- **Windows 8.1 以降**: 適用できません</br>- **Windows Phone 8.1 以降**: 適用できません |
-| **最小 OS バージョン** | - **Android 4.0 以降**: 検疫済み</br>- **Samsung KNOX Standard 4.0 以降**: 検疫済み</br>- **Android エンタープライズ**: 検疫済み</br></br>- **iOS 8.0 以降**: 検疫済み</br>- **macOS 10.11 以降**: 検疫済み</br></br>- **Windows 8.1 以降**: 検疫済み</br>- **Windows Phone 8.1 以降**: 検疫済み |
-| **最大 OS バージョン** | - **Android 4.0 以降**: 検疫済み</br>- **Samsung KNOX Standard 4.0 以降**: 検疫済み</br>- **Android エンタープライズ**: 検疫済み</br></br>- **iOS 8.0 以降**: 検疫済み</br>- **macOS 10.11 以降**: 検疫済み</br></br>- **Windows 8.1 以降**: 検疫済み</br>- **Windows Phone 8.1 以降**: 検疫済み |
-| **Windows 正常性構成証明書** | - **Android 4.0 以降**: 適用できません</br>- **Samsung KNOX Standard 4.0 以降**: 適用できません</br>- **Android エンタープライズ**: 適用できません</br></br>- **iOS 8.0 以降**: 適用できません</br>- **macOS 10.11 以降**: 適用できません</br></br>- **Windows 10 および Windows 10 Mobile**: 検疫済み</br>- **Windows 8.1 以降**: 検疫済み</br>- **Windows Phone 8.1 以降**: 適用できません |
+| **PIN またはパスワードの構成** | - **Android 4.0 以降**: 検疫済み<br>- **Samsung KNOX Standard 4.0 以降**: 検疫済み<br>- **Android エンタープライズ**: 検疫済み  <br>  <br>- **iOS 8.0 以降**: 修復<br>- **macOS 10.11 以降**: 修復  <br>  <br>- **Windows 8.1 以降**: 修復<br>- **Windows Phone 8.1 以降**: 修復|
+| **デバイスの暗号化** | - **Android 4.0 以降**: 検疫済み<br>- **Samsung KNOX Standard 4.0 以降**: 検疫済み<br>- **Android エンタープライズ**: 検疫済み<br><br>- **iOS 8.0 以降**: 修復 (PIN の設定による)<br>- **macOS 10.11 以降**: 修復 (PIN の設定による)<br><br>- **Windows 8.1 以降**: 適用できません<br>- **Windows Phone 8.1 以降**: 修復 |
+| **脱獄またはルート化されたデバイス** | - **Android 4.0 以降**: 検疫済み (設定ではありません)<br>- **Samsung KNOX Standard 4.0 以降**: 検疫済み (設定ではありません)<br>- **Android エンタープライズ**: 検疫済み (設定ではありません)<br><br>- **iOS 8.0 以降**: 検疫済み (設定ではありません)<br>- **macOS 10.11 以降**: 適用できません<br><br>- **Windows 8.1 以降**: 適用できません<br>- **Windows Phone 8.1 以降**: 適用できません |
+| **電子メールのプロファイル** | - **Android 4.0 以降**: 適用できません<br>- **Samsung KNOX Standard 4.0 以降**: 適用できません<br>- **Android エンタープライズ**: 適用できません<br><br>- **iOS 8.0 以降**: 検疫済み<br>- **macOS 10.11 以降**: 検疫済み<br><br>- **Windows 8.1 以降**: 適用できません<br>- **Windows Phone 8.1 以降**: 適用できません |
+| **最小 OS バージョン** | - **Android 4.0 以降**: 検疫済み<br>- **Samsung KNOX Standard 4.0 以降**: 検疫済み<br>- **Android エンタープライズ**: 検疫済み<br><br>- **iOS 8.0 以降**: 検疫済み<br>- **macOS 10.11 以降**: 検疫済み<br><br>- **Windows 8.1 以降**: 検疫済み<br>- **Windows Phone 8.1 以降**: 検疫済み |
+| **最大 OS バージョン** | - **Android 4.0 以降**: 検疫済み<br>- **Samsung KNOX Standard 4.0 以降**: 検疫済み<br>- **Android エンタープライズ**: 検疫済み<br><br>- **iOS 8.0 以降**: 検疫済み<br>- **macOS 10.11 以降**: 検疫済み<br><br>- **Windows 8.1 以降**: 検疫済み<br>- **Windows Phone 8.1 以降**: 検疫済み |
+| **Windows 正常性構成証明書** | - **Android 4.0 以降**: 適用できません<br>- **Samsung KNOX Standard 4.0 以降**: 適用できません<br>- **Android エンタープライズ**: 適用できません<br><br>- **iOS 8.0 以降**: 適用できません<br>- **macOS 10.11 以降**: 適用できません<br><br>- **Windows 10 および Windows 10 Mobile**: 検疫済み<br>- **Windows 8.1 以降**: 検疫済み<br>- **Windows Phone 8.1 以降**: 適用できません |
 
 ---------------------------
 
@@ -156,8 +155,9 @@ Azure Portal でデバイス コンプライアンスに関連した機能を使
   - [Android エンタープライズ](compliance-policy-create-android-for-work.md)
   - [Android](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
-  - [Windows 10 以降](compliance-policy-create-windows.md)
   - [Windows Holographic for Business](compliance-policy-create-windows.md#windows-holographic-for-business)
-  - [Windows 8.1 および Windows Phone 8.1](compliance-policy-create-windows-8-1.md)
+  - [Windows Phone 8.1](compliance-policy-create-windows-8-1.md)
+  - [Windows 8.1 以降](compliance-policy-create-windows-8-1.md)
+  - [Windows 10 以降](compliance-policy-create-windows.md)
 
 - 「[ポリシー エンティティのリファレンス](../reports-ref-policy.md)」には、Intune データ ウェアハウス ポリシー エンティティに関する情報が含まれます。

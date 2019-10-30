@@ -5,23 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: karthib
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3afdb365d0ed88a58028287cc7010bb334e9001e
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 7c49445800f5d34fbb6ce0a845d4f29c3e587483
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036452"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749338"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune でデバイス プロファイルを使用してデバイスに機能と設定を適用する
 
@@ -48,7 +49,7 @@ Microsoft Intune には、組織内のさまざまなデバイスで有効また
 
 この機能では以下をサポートします。
 
-- Windows 10 以降
+- サポートされているファームウェアでの Windows 10 1809 以降。
 
 ## <a name="certificates"></a>証明書
 
@@ -66,7 +67,7 @@ Microsoft Intune には、組織内のさまざまなデバイスで有効また
 
 ## <a name="custom-profile"></a>カスタム プロファイル
 
-管理者は[カスタム設定](../custom-settings-configure.md)を使用して、Intune に組み込まれていないデバイス設定を割り当てることができます。 Android デバイスでは、OMA-URI 値を入力できます。 iOS デバイスの場合は、Apple Configurator で作成した構成ファイルをインポートできます。
+管理者は[カスタム設定](custom-settings-configure.md)を使用して、Intune に組み込まれていないデバイス設定を割り当てることができます。 Android デバイスでは、OMA-URI 値を入力できます。 iOS デバイスの場合は、Apple Configurator で作成した構成ファイルをインポートできます。
 
 この機能では以下をサポートします。
 
@@ -78,7 +79,7 @@ Microsoft Intune には、組織内のさまざまなデバイスで有効また
 
 ## <a name="delivery-optimization"></a>配信の最適化
 
-[配信の最適化](../delivery-optimization-windows.md)では、ソフトウェア更新プログラムの配信に関するエクスペリエンスを向上させることができます。 これらの設定は、 **[ソフトウェア更新プログラム]**  >  **[Windows 10 更新プログラムのリング]** 設定に置き換わるものです。
+[配信の最適化](delivery-optimization-windows.md)では、ソフトウェア更新プログラムの配信に関するエクスペリエンスを向上させることができます。 これらの設定は、 **[ソフトウェア更新プログラム]**  >  **[Windows 10 更新プログラムのリング]** 設定に置き換わるものです。
 
 これらの設定は、ソフトウェア更新プログラムを組織内のデバイスにダウンロードする方法を制御するために使用します。 たとえば、デバイス プロファイル内で、ユーザーが自分で更新プログラムを取得できるように設定することも、配信の最適化クラウド サービスを通じて更新プログラムを取得できるように設定することもできます。
 
@@ -88,12 +89,20 @@ Microsoft Intune には、組織内のさまざまなデバイスで有効また
 
 ## <a name="device-features"></a>デバイスの機能
 
-[デバイスの機能](../device-features-configure.md)では、AirPrint、通知、ロック画面メッセージなど、iOS および macOS デバイスの機能を制御します。
+[デバイスの機能](device-features-configure.md)では、AirPrint、通知、ロック画面メッセージなど、iOS および macOS デバイスの機能を制御します。
 
 この機能では以下をサポートします。
 
 - iOS/iPadOS
 - macOS
+
+## <a name="device-firmware-configuration-interface"></a>デバイス ファームウェア構成インターフェイス
+
+[デバイス ファームウェア構成インターフェイス](device-firmware-configuration-interface-windows.md) (DFCI) を使用すると、管理者は Intune を使用して UEFI (BIOS) の設定を有効または無効にすることができます。 これらの設定を使用して、ファームウェア レベルでセキュリティを強化します。通常は、悪意のある攻撃に対する回復力が高くなります。
+
+この機能では以下をサポートします。
+
+- Windows 10 以降
 
 ## <a name="device-restrictions"></a>デバイスの制限
 
@@ -122,7 +131,7 @@ Microsoft Intune には、組織内のさまざまなデバイスで有効また
 
 [教育設定 - iOS](../fundamentals/education-settings-configure-ios-shared.md) では、iOS Classroom アプリを使用し、教室で学習を指導し、生徒のデバイスを操作します。 多数の学生が 1 台のデバイスを共有できるように iPad デバイスを構成できます。
 
-## <a name="email"></a>電子メール
+## <a name="email"></a>Email
 
 [電子メールの設定](email-settings-configure.md)では、デバイス上の Exchange ActiveSync 電子メール設定の作成、割り当て、監視を行います。 電子メール プロファイルにより、一貫性の確保とサポート負荷の軽減が可能になり、エンド ユーザーは自分では何の設定もせずに個人デバイスで会社の電子メールにアクセスできるようになります。 
 
@@ -152,7 +161,7 @@ Microsoft Defender Advanced Threat Protection (WDATP) と Microsoft Intune を�
 
 - Windows 10 Fall Creators Update 以降
 
-## <a name="extensions"></a>Extensions
+## <a name="extensions"></a>の拡張
 
 管理者は、[カーネル拡張機能](kernel-extensions-overview-macos.md)を使用して、macOS デバイスにカーネルレベルで機能またはプログラムを追加できます。 これらの設定を、特定の開発者またはパートナーからのすべての拡張機能を信頼するように構成するか、特定のカーネル拡張機能を許可するように構成します。
 
@@ -210,9 +219,9 @@ Microsoft Defender Advanced Threat Protection (WDATP) と Microsoft Intune を�
 
 ## <a name="update-policies"></a>更新ポリシー
 
-[iOS 更新ポリシー](../software-updates-ios.md)には、iOS デバイスにソフトウェア更新プログラムをインストールするための iOS ポリシーを作成し、割り当てる方法が示されます。 インストールの状態を確認することもできます。
+[iOS 更新ポリシー](../protect/software-updates-ios.md)には、iOS デバイスにソフトウェア更新プログラムをインストールするための iOS ポリシーを作成し、割り当てる方法が示されます。 インストールの状態を確認することもできます。
 
-Windows デバイスの更新プログラム ポリシーについては、[配信の最適化](../delivery-optimization-windows.md)に関するページを参照してください。 
+Windows デバイスの更新プログラム ポリシーについては、[配信の最適化](delivery-optimization-windows.md)に関するページを参照してください。 
 
 この機能では以下をサポートします。
 
@@ -265,7 +274,7 @@ Windows デバイスの更新プログラム ポリシーについては、[配�
 
 ## <a name="manage-and-troubleshoot"></a>管理とトラブルシューティング
 
-[プロファイルの管理](../device-profile-monitor.md)に関する説明では、デバイスの状態や割り当てられているプロファイルの確認方法を説明しています。 競合を起こした設定と、これらの設定を含むプロファイルを確認することによって、競合も解決できます。 [一般的な問題と解決策](device-profile-troubleshoot.md)に関する説明は、管理者がプロファイルを操作するのに役立ちます。 プロファイルを削除した場合の動作や、デバイスに通知が送信される原因などについて説明しています。
+[プロファイルの管理](device-profile-monitor.md)に関する説明では、デバイスの状態や割り当てられているプロファイルの確認方法を説明しています。 競合を起こした設定と、これらの設定を含むプロファイルを確認することによって、競合も解決できます。 [一般的な問題と解決策](device-profile-troubleshoot.md)に関する説明は、管理者がプロファイルを操作するのに役立ちます。 プロファイルを削除した場合の動作や、デバイスに通知が送信される原因などについて説明しています。
 
 ## <a name="next-steps"></a>次の手順
 

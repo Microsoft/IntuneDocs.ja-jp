@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0858eefede678615e5b856fa0e40e48a791e4cce
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 97227d5ca75b3584cb4e603a16601b2a22deb919
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724101"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681459"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune でのデバイス プロファイルの作成
 
@@ -76,6 +77,7 @@ ms.locfileid: "71724101"
        - [ID 保護](../protect/identity-protection-configure.md)  
        - [キオスク](kiosk-settings.md)
        - [PKCS 証明書](../protect/certficates-pfx-configure.md)
+       - [PKCS のインポートされた証明書](../protect/certificates-imported-pfx-configure.md)
        - [SCEP 証明書](../protect/certificates-scep-configure.md)
        - [信頼された証明書](../protect/certificates-configure.md)
        - [更新ポリシー](../software-updates-ios.md)
@@ -112,30 +114,30 @@ ms.locfileid: "71724101"
 
 これを行うには、**適用性ルール**を作成します。 これらのルールは、次のシナリオに最適です。
 
-- Windows 10 Education (EDU) を使用しています。 Bellows College で、RS3 と RS4 間のすべての Windows 10 EDU デバイスを対象にする必要があります。
-- Contoso で、人事部のすべてのユーザーが対象だが、デバイスについては Windows 10 Professional デバイスまたは Enterprise デバイスのみを対象にする必要があります。
+- Windows 10 Education (EDU) を使用しています。 Bellows College では、RS3 から RS4 までのすべての Windows 10 EDU デバイスを対象にする必要があります。
+- Contoso では、人事部のすべてのユーザーを対象にし、さらに Windows 10 Professional または Enterprise デバイスのみを対象にする必要があります。
 
 これらのシナリオに取り組むには:
 
-- Bellows College のすべてのデバイスを含むデバイス グループを作成します。 プロファイルに、OS の最小バージョンが `16299` であり、最大バージョンが `17134` である場合に適用される適用性ルールを追加します。 このプロファイルを、Bellows College デバイス グループに割り当てます。
+- Bellows College のすべてのデバイスを含むデバイス グループを作成します。 プロファイルに、OS の最小バージョンが `16299` であり、最大バージョンが `17134` である場合に適用される適用性ルールを追加します。 このプロファイルを Bellows College デバイス グループに割り当てます。
 
-  プロファイルが割り当てられると、入力された最小バージョンと最大バージョンの間にあるデバイスに対してプロファイルが適用されます。 入力された最小バージョンと最大バージョンの間にないデバイスでは、その状態が **[適用なし]** と表示されます。
+  割り当てられると、入力した最小バージョンから最大バージョンまでのデバイスに対してプロファイルが適用されます。 入力した最小バージョンから最大バージョンまでに含まれないデバイスの場合、その状態は **[適用なし]** と表示されます。
 
 - Contoso の人事部 (HR) のすべてのユーザーを含むユーザー グループを作成します。 プロファイルに、Windows 10 Professional または Enterprise を実行しているデバイスに適用される適用性ルールを追加します。 このプロファイルを HR ユーザー グループに割り当てます。
 
-  プロファイルが割り当てられると、Windows 10 Professional または Enterprise を実行しているデバイスに対して、プロファイルが適用されます。 これらのエディションを実行していないデバイスでは、その状態が **[適用なし]** と表示されます。
+  割り当てられると、Windows 10 Professional または Enterprise を実行しているデバイスに対してプロファイルが適用されます。 これらのエディションを実行していないデバイスの場合、その状態は **[適用なし]** と表示されます。
 
 - まったく同じ設定のプロファイルが 2 つある場合は、適用性ルールが含まれていないプロファイルが適用されます。 
 
-  たとえば、ProfileA では、Windows 10 デバイス グループを対象として BitLocker を有効にしますが、適用性ルールは含まれていません。 ProfileB では、同じ Windows 10 デバイス グループを対象として BitLocker を有効にしますが、Windows 10 Enterprise にのみプロファイルを適用するという適用性ルールが含まれています。
+  たとえば、ProfileA では Windows 10 デバイス グループを対象とし、BitLocker が有効ですが、適用性ルールは含まれていません。 ProfileB では同じ Windows 10 デバイス グループを対象とし、BitLocker が有効であり、Windows 10 Enterprise にのみプロファイルを適用するという適用性ルールが含まれています。
 
   両方のプロファイルが割り当てられた場合、適用性ルールがないため、ProfileA が適用されます。 
 
-プロファイルをグループに割り当てるとき、適用性ルールはフィルターとして機能し、条件を満たすデバイスのみが対象になります。
+プロファイルをグループに割り当てると、適用性ルールはフィルターとして機能し、条件を満たすデバイスのみが対象になります。
 
 ### <a name="add-a-rule"></a>ルールを追加する
 
-1. **適用性ルール**を選択します。 **[ルール]** 、 **[プロパティ]** 、および **[OS のエディション]** を選択できます。
+1. **[適用性ルール]** を選択します。 **[ルール]** 、 **[プロパティ]** 、および **[OS のエディション]** を選択できます。
 
     ![Microsoft Intune でデバイス構成プロファイルに適用性ルールを追加する](./media/device-profile-create/applicability-rules.png)
 
@@ -149,7 +151,7 @@ ms.locfileid: "71724101"
     - **OS のエディション**:一覧で、ルールに含める (または除外する) Windows 10 のエディションをオンにします。
     - **OS のバージョン**:ルールに含める (または除外する) Windows 10 の**最小**および**最大**のバージョン番号を入力します。 両方の値が必要です。
 
-      たとえば、最小バージョンには `10.0.16299.0` (RS3 または 1709) を、最大バージョンには `10.0.17134.0` (RS4 または 1803) を入力できます。 または、さらに細かい設定が可能であり、、最小バージョンとして `10.0.16299.001` を、最大バージョンとして `10.0.17134.319` を入力できます。
+      たとえば、最小バージョンには `10.0.16299.0` (RS3 または 1709) を、最大バージョンには `10.0.17134.0` (RS4 または 1803) を入力できます。 または、さらに細かい設定が可能であり、最小バージョンとして `10.0.16299.001` を、最大バージョンとして `10.0.17134.319` を入力できます。
 
 4. **[追加]** を選択して変更を保存します。
 

@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 10/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 624c6cec2a887396cb6ef6508ab26a16d72f8f7c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c0b5f087494e8033cb9645d0a08edd4e1c481a2c
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725323"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584916"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>iOS アプリ プロビジョニング プロファイルを使用して、アプリが期限切れにならないようにする
 
@@ -44,14 +45,22 @@ iPhone および iPad に割り当てられた Apple iOS 基幹業務アプリ�
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>iOS モバイル アプリ プロビジョニング プロファイルを作成する方法
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-3. **[Intune]** ウィンドウで、 **[クライアント アプリ]** を選択します。
-1. **[クライアント アプリ]** ワークロードで、 **[管理]**  >  **[iOS アプリ プロビジョニング プロファイル]** の順に選択します。
-2. プロファイルの一覧ウィンドウで、 **[プロファイルの作成]** を選択します。
-3. **[プロファイルの作成]** ウィンドウで、次の値を構成します。
+2. **[Intune]** ウィンドウで、 **[クライアント アプリ]**  >  **[iOS アプリ プロビジョニング プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
+3. **[基本]** ページで、次の値を追加します。
     - **名前** - このモバイル プロビジョニング プロファイルの名前を指定します。
     - **説明** - 必要に応じて、ポリシーの説明を指定します。
     - **プロファイル ファイルのアップロード** - **[開く]** アイコンを選択し、[Apple Developer Web サイト](https://developer.apple.com/)からダウンロードした Apple モバイル構成プロファイル ファイル (拡張子 `.mobileprovision`) を選択します。
-4. 終了したら、 **[作成]** を選択します。
+
+   **[有効期限]** は、上記で追加した Apple モバイル構成プロファイル ファイル内の値から設定されます。<br>
+
+   <img alt="Create profile - Basics" src="~/apps/media/app-provisioning-profile-ios/app-provisioning-profile-ios-01.png">
+
+4. **[次へ]:[スコープ タグ]** をクリックします。<br>
+   **[スコープ タグ]** ページでは、必要に応じて、スコープ タグを構成することにより Intune で iOS アプリ プロビジョニング プロファイルを表示できるユーザーを決定できます。 スコープのタグの詳細については、[分散 IT のためのロールベースのアクセス制御とスコープのタグの使用](../fundamentals/scope-tags.md)に関するページをご覧ください。
+5. **[次へ]:[割り当て]** をクリックします。<br>
+   **[割り当て]** ページでは、ユーザーとデバイスにプロファイルを割り当てることができます。 デバイスが Intune で管理されているかどうかに関係なく、デバイスにプロファイルを割り当てることができることに注意してください。このことは重要です。
+6. **[次へ]:[確認と作成]** をクリックして、プロファイルに対して入力した値を確認します。
+7. 終了したら、 **[作成]** をクリックして、Intune で iOS アプリ プロビジョニング プロファイルを作成します。 
 
 ## <a name="next-steps"></a>次の手順
 

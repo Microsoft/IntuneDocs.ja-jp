@@ -1,13 +1,14 @@
 ---
 title: Microsoft Intune での証明書プロファイルの作成 - Azure | Microsoft Docs
-description: デバイスに対して、SCEP または PKCS 証明書の環境を構成して証明書プロファイルを追加または作成し、パブリック証明書をエクスポートし、Azure Portal でプロファイルを作成してから、Azure Portal の Microsoft Intune で証明書プロファイルに SCEP または PKCS を割り当てます
+description: Microsoft Intune で Simple Certificate Enrollment Protocol (SCEP) 証明書または Public Key Cryptography Standards (PKCS) 証明書と証明書プロファイルを使用する方法について説明します。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/03/2019
+ms.date: 10/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e993df5c37cfed8d5dd0481543b406dd25ad1a49
-ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
+ms.openlocfilehash: 65ced1dfb0fe872129b7437e8dda3dde680b5d07
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72251564"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786830"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Microsoft Intune で認証に証明書を使用する  
 
@@ -30,7 +31,7 @@ Intune で証明書を使用し、VPN、Wi-Fi、電子メール プロファイ�
 ## <a name="intune-supported-certificates-and-usage"></a>Intune でサポートされている証明書と使用方法
 | Type              | 認証 | S/MIME 署名 | S/MIME 暗号化  |
 |--|--|--|--|
-| PKCS のインポートされた証明書 |  | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png)|
+| 公開キー暗号化標準 (PKCS) のインポートされた証明書 |  | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png)|
 | PKCS#12 (または PFX)    | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) |  |
 | Simple Certificate Enrollment Protocol (SCEP)  | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) | |
 
@@ -43,9 +44,9 @@ Intune で証明書を使用し、VPN、Wi-Fi、電子メール プロファイ�
 - Microsoft Active Directory 証明書サービスを使用して SCEP 証明書プロファイルを使用する場合、ネットワークデバイス登録サービス (NDES) サーバーを構成します。
 - SCEP と共に Microsoft のいずれかの証明機関パートナーを使用する場合、[それを Intune と統合する](certificate-authority-add-scep-overview.md#set-up-third-party-ca-integration)必要があります。
 - SCEP 証明書プロファイルと PKCS 証明書プロファイルのいずれでも、Microsoft Intune Certificate Connector をダウンロードし、インストールし、構成する必要があります。 
-- PCKS のインポートされた証明書には、PFX Certificate Connector for Microsoft Intune をダウンロードし、インストールし、構成する必要があります。
+- PKCS のインポートされた証明書には、PFX Certificate Connector for Microsoft Intune をダウンロードし、インストールし、構成する必要があります。
 - PKCS のインポートされた証明書の場合、証明機関から証明書をエクスポートし、それを Microsoft Intune にインポートする必要があります。 「[PFXImport PowerShell プロジェクト](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)」を参照してください。
-- SCEP、PCKS、または PKCS のインポートされた証明書プロファイルをデバイスで使用するには、そのデバイスでルート証明機関を信頼する必要があります。 *信頼された証明書プロファイル*を使用し、信頼されたルート CA 証明書をデバイスに配備します。  
+- SCEP、PKCS、または PKCS のインポートされた証明書プロファイルをデバイスで使用するには、そのデバイスでルート証明機関を信頼する必要があります。 *信頼された証明書プロファイル*を使用し、信頼されたルート CA 証明書をデバイスに配備します。  
 
 ## <a name="supported-platforms-and-certificate-profiles"></a>サポートされているプラットフォームと証明書プロファイル  
 | プラットフォーム              | 信頼された証明書プロファイル | PKCS 証明書プロファイル | SCEP 証明書プロファイル | PKCS のインポートされた証明書プロファイル  |
@@ -55,13 +56,13 @@ Intune で証明書を使用し、VPN、Wi-Fi、電子メール プロファイ�
 | Android エンタープライズ <br> - 専用 (デバイスの所有者)   |  |   |  |   |
 | Android エンタープライズ <br> - 仕事用プロファイル    | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) |
 | iOS                   | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) |
-| macOS                 | ![サポート](./media/certificates-configure/green-check.png) |   |![サポート](./media/certificates-configure/green-check.png)|![サポート](./media/certificates-configure/green-check.png)|
+| macOS                 | ![サポート](./media/certificates-configure/green-check.png) |  ![サポート](./media/certificates-configure/green-check.png) |![サポート](./media/certificates-configure/green-check.png)|![サポート](./media/certificates-configure/green-check.png)|
 | Windows Phone 8.1     |![サポート](./media/certificates-configure/green-check.png)  |  | ![サポート](./media/certificates-configure/green-check.png)| ![サポート](./media/certificates-configure/green-check.png) |
 | Windows 8.1 以降 |![サポート](./media/certificates-configure/green-check.png)  |  |![サポート](./media/certificates-configure/green-check.png) |   |
 | Windows 10 以降  | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) |
 
 ## <a name="export-the-trusted-root-ca-certificate"></a>信頼されたルート CA 証明書をエクスポートする  
-PKCS、SCEP、PKCS のインポートされた証明書を使用するには、デバイスでルート証明機関を信頼する必要があります。 この信頼を確立するには、信頼されたルート証明機関 (CA) 証明書だけでなく、中間または発行元の証明機関の証明書も公開証明書 (.cer) としてエクスポートします。 このような証明書は、発行元 CA か、発行元 CA を信頼する任意のデバイスから取得できます。  
+PKCS、SCEP、PKCS のインポートされた証明書を使用するには、デバイスでルート証明機関を信頼する必要があります。 信頼を確立するには、信頼されたルート証明機関 (CA) 証明書だけでなく、中間または発行元の証明機関の証明書も公開証明書 (.cer) としてエクスポートします。 このような証明書は、発行元 CA か、発行元 CA を信頼する任意のデバイスから取得できます。  
 
 証明書をエクスポートするには、証明機関のドキュメントを参照してください。 公開証明書は .cer ファイルとしてエクスポートする必要があります。  秘密キー (.pfx ファイル) をエクスポートしないでください。  
 
@@ -70,7 +71,7 @@ PKCS、SCEP、PKCS のインポートされた証明書を使用するには、�
 ## <a name="create-trusted-certificate-profiles"></a>信頼された証明書プロファイルを作成する  
 SCEP、PKCS、または PKCS のインポートされた証明書プロファイルを作成する前に、信頼された証明書プロファイルを作成します。 信頼された証明書プロファイルを配備することで、CA の正当性が各デバイスで認識されます。 SCEP 証明書プロファイルでは、信頼された証明書プロファイルが直接参照されます。 PKCS 証明書プロファイルでは、信頼された証明書プロファイルが直接参照されず、CA をホストするサーバーが直接参照されます。 PKCS のインポートされた証明書プロファイルでは、信頼された証明書プロファイルが直接参照されませんが、デバイス上で利用されることがあります。 信頼された証明書プロファイルをデバイスに配備することで、この信頼が確立されます。 デバイスでルート CA が信頼されない場合、SCEP または PKCS 証明書プロファイル ポリシーは失敗します。  
 
-SCEP、PCKS、PKCS のインポートされた証明書プロファイルの場合と同様に、サポートするデバイス プラットフォームごとに別個の信頼された証明書プロファイルを作成します。  
+SCEP、PKCS、PKCS のインポートされた証明書プロファイルの場合と同様に、サポートするデバイス プラットフォームごとに別個の信頼された証明書プロファイルを作成します。  
 
 
 ### <a name="to-create-a-trusted-certificate-profile"></a>信頼された証明書プロファイルを作成するには  
@@ -86,7 +87,7 @@ SCEP、PCKS、PKCS のインポートされた証明書プロファイルの場�
    - **コンピューター証明書ストア - 中間**
    - **ユーザー証明書ストア - 中間**
 8. 完了したら、 **[OK]** を選択し、 **[プロファイルの作成]** ウィンドウに戻り、 **[作成]** を選択します。
-プロファイルは *[デバイス構成 - プロファイル]* ビュー ウィンドウのプロファイル一覧に、 **[信頼済み証明書]** のプロファイル タイプと共に表示されます。  このプロファイルは必ず、SCEP または PCKS 証明書を使用するデバイスに割り当ててください。 プロファイルをグループに割り当てる場合は、[デバイス プロファイルの割り当て](../configuration/device-profile-assign.md)に関するページを参照してください。
+プロファイルは *[デバイス構成 - プロファイル]* ビュー ウィンドウのプロファイル一覧に、 **[信頼済み証明書]** のプロファイル タイプと共に表示されます。  このプロファイルは必ず、SCEP または PKCS 証明書を使用するデバイスに割り当ててください。 プロファイルをグループに割り当てる場合は、[デバイス プロファイルの割り当て](../configuration/device-profile-assign.md)に関するページを参照してください。
 
 > [!NOTE]  
 > Android デバイスでは、信頼できる証明書がサード パーティによってインストールされたことを知らせるメッセージが表示される場合があります。  
@@ -97,7 +98,7 @@ SCEP、PCKS、PKCS のインポートされた証明書プロファイルの場�
 - [サード パーティの証明機関を使用する](certificate-authority-add-scep-overview.md)  
 
 ## <a name="next-steps"></a>次の手順  
-信頼された証明書プロファイルを作成し、割り当てた後、使用する各プラットフォーム用に SCEP、PKCS、または PKCS のインポートされた証明書プロファイルを作成します。 続行するには、次の記事をご覧ください。  
+使用する各プラットフォーム用に SCEP、PKCS、または PKCS のインポートされた証明書プロファイルを作成します。 続行するには、次の記事をご覧ください。  
 - [Intune を使用して SCEP 証明書をサポートするようにインフラストラクチャを構成する](certificates-scep-configure.md)  
 - [Intune で PKCS 証明書を構成して管理する](certficates-pfx-configure.md)  
 - [PKCS のインポートされた証明書プロファイルを作成する](certificates-imported-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  

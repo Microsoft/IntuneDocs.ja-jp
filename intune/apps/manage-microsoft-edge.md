@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3fb2f050-ec94-42ab-be05-c3d4101148bb
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ec1af80d52a8331c2bef136cd0947b81beaa3ea
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3ee68392feaa59ef5207edce75250e539407273b
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724777"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593691"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Edge と Microsoft Intune を使用して Web アクセスを管理する
 
@@ -204,7 +205,7 @@ Microsoft Edge と [Azure AD アプリケーション プロキシ](https://docs
 
 詳細をいくつか以下に示します。
 
-- これらのブックマークは、ユーザーが Microsoft Edge の企業モードを使っている場合にのみ表示されます。 
+- これらのブックマークは、ユーザーが Microsoft Edge の[企業モード](https://docs.microsoft.com/intune/apps/app-configuration-managed-browser#how-to-configure-bookmarks-for-a-protected-browser)を使用している場合にのみ表示されます。 
 - これらのブックマークを、ユーザーが削除したり、変更したりすることはできません。
 - これらのブックマークは、リストの上部に表示されます。 ユーザーが作成したブックマークは、これらのブックマークの下に表示されます。
 - アプリケーション プロキシのリダイレクトを有効にしてある場合は、内部 URL または外部 URL を使ってアプリケーション プロキシ Web アプリを追加できます。

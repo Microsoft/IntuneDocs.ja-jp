@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2ebca165c067afbc3d830e5f75ac9f8e29effb2
-ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
+ms.openlocfilehash: f2a1d964f157f33e439f659713fe8c2e02f852b3
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72237227"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749403"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot を使用して Intune に Windows デバイスを登録する  
 Windows Autopilot を使用すると、Intune でのデバイスの登録が簡単になります。 カスタマイズされたオペレーティング システム イメージのビルドおよび維持は、時間のかかるプロセスです。 また、これらのカスタム オペレーティング システム イメージを新しいデバイスに適用し、エンド ユーザーに提供する前に使用の準備を行う場合にも、時間がかかることがあります。 Microsoft Intune と Autopilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および新しいデバイスへの適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 Intune を使用して Autopilot デバイスを管理する場合、デバイスの登録後にポリシー、プロファイル、アプリなどを管理することができます。 利点、シナリオ、および前提条件の概要については、「[Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)」 (Windows Autopilot の概要) を参照してください。
@@ -77,7 +78,7 @@ CSV ファイルの情報をインポートすることにより、Windows Autop
     3. **[メンバーシップの種類]** に、 **[割り当て済み]** または **[動的デバイス]** のどちらかを選択します。
 3. 前の手順の **[メンバーシップの種類]** で **[割り当て済み]** を選択した場合は、 **[グループ]** ブレードで **[メンバー]** を選択して Autopilot のデバイスをグループに追加します。
     まだ登録されていない Autopilot デバイスの場合、デバイスのシリアル番号が名前です。
-4. 上の **[メンバーシップの種類]** で **[動的デバイス]** を選択した場合は、 **[グループ]** ブレードで **[動的なデバイス メンバー]** を選択し、 **[高度なルール]** ボックスに次のいずれかのコードを入力します。 これらのルールは Autopilot デバイスでのみ処理される属性を対象としているため、Autopilot デバイスのみが収集されます。
+4. 上の **[メンバーシップの種類]** で **[動的デバイス]** を選択した場合は、 **[グループ]** ブレードで **[動的なデバイス メンバー]** を選択し、 **[高度なルール]** ボックスに次のいずれかのコードを入力します。 これらのルールは Autopilot デバイスでのみ処理される属性を対象としているため、Autopilot デバイスのみが収集されます。 Autopilot 以外の属性に基づいてグループを作成すると、グループに含まれるデバイスが実際に Autopilot に登録されることは保証されません。
     - Autopilot デバイスをすべて含むグループを作成する場合は、「`(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`」と入力します
     - Intune のグループ タグ フィールドは、Azure AD デバイス上の OrderID 属性にマップされます。 特定のグループ タグ (Azure AD デバイス の OrderID) を持つすべての Autopilot デバイスが含まれるグループを作成する場合は、「`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`」と入力する必要があります
     - 特定の注文書 ID の Autopilot デバイスをすべて含むグループを作成する場合は、「`(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`」と入力します
@@ -167,6 +168,11 @@ Autopilot Deployment プロファイルを作成したら、その展開プロ�
     ![フレンドリ名のスクリーンショット](./media/enrollment-autopilot/friendly-name.png)
 
 4. **[OK]** を選択します。
+
+## <a name="autopilot-deployments-report"></a>Autopilot 展開レポート
+Windows Autopilot によって展開された各デバイスについての詳細を見ることができます。
+レポートを表示するには、**Intune** に移動し、 **[モニター]** の **[Autopilot Deployment]** を選択します。
+データは、展開後 30 日間使用できます。
 
 
 ## <a name="delete-autopilot-devices"></a>Autopilot デバイスを削除する

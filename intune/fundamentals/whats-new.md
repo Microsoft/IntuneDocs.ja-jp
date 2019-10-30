@@ -6,9 +6,10 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/23/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 571974e1736fb78ae633c02fcfd6e6233056379b
-ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
+ms.openlocfilehash: f32637173ec6cf5f7c284a87193eafffb6a16e6c
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71920162"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786130"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 
@@ -50,8 +51,170 @@ ms.locfileid: "71920162"
 ### Intune apps
 ### Monitor and troubleshoot
 ### Role-based access control
-
 -->  
+
+
+<!-- ########################## -->
+
+## <a name="week-of-october-21-2019"></a>2019 年 10 月 21 日の週
+
+### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073-idready-wnready---"></a>Windows 10 以降のデバイス用の新しいデバイス ファームウェア構成インターフェイス プロファイル <!-- 2266073 idready wnready -->
+
+Windows 10 以降では、デバイス構成プロファイルを作成し、設定と機能を制御できます ( **[デバイスの構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  **[Windows 10 以降]** (プラットフォーム))。 この更新には、Intune で UEFI (BIOS) 設定の管理を可能にする新しいデバイス ファームウェア構成インターフェイスがあります。
+
+この機能の詳細については、「[Microsoft Intune で Windows デバイスの DFCI プロファイルを使用する](../configuration/device-firmware-configuration-interface-windows.md)」を参照してください。
+
+適用対象:
+
+- Windows 10 RS5 (1809) 以降でサポートされているファームウェア
+
+## <a name="week-of-october-14-2019"></a>2019 年 10 月 14 日の週
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>アプリ管理 
+
+#### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956-----"></a>Android の仕事用プロファイルに使用できる Google Play アプリのレポート <!-- 3041956   -->
+Android Enterprise の仕事用プロファイル デバイス、専用デバイス、フル マネージド デバイスに使用できるアプリのインストールについては、アプリのインストール状態とマネージド Google Play アプリのインストール バージョンを確認できます。 詳細については、[アプリの保護ポリシーを監視する方法](~/apps/app-protection-policies-monitor.md)、[Intune を使用した Android の仕事用プロファイル デバイスの管理](~/enrollment/android-enterprise-overview.md)、および[マネージド Google Play アプリの種類](~/apps/apps-add-android-for-work.md#managed-google-play-app-types)に関する記事を参照してください。
+
+#### <a name="microsoft-edge-version-77-and-later-for-windows-10-and-macos-public-preview----3872025-4678761----"></a>Windows 10 と macOS 向けの Microsoft Edge バージョン 77 以降 (パブリック プレビュー) <!-- 3872025, 4678761  -->
+Microsoft Edge バージョン 77 以降は、Windows 10 と macOS を実行している PC に展開できるようになりました。 パブリック プレビューからは、Windows 10 の **Dev** チャンネルと **Beta** チャンネルが、macOS の **Beta** チャンネルが提供されます。 展開は英語版 (EN) のみですが、エンド ユーザーはブラウザーの **[設定]**  >  **[言語]** で表示言語を変更することができます。 Microsoft Edge は、システム コンテキスト、およびアーキテクチャに合わせてインストールされる Win32 アプリです (x86 OS の場合は x86、x64 OS の場合は x64)。 さらに、ブラウザーの自動更新は既定で**オン**になっています。また、Microsoft Edge はアンインストールできません。 詳細については、「[Microsoft Edge for Windows 10 を Microsoft Intune に追加する](~/apps/apps-windows-edge.md)」と「[Microsoft Edge ドキュメント](https://go.microsoft.com/fwlink/?linkid=2103823)」を参照してください。
+
+#### <a name="update-to-app-protection-ui-and-ios-app-provisioning-ui----4102027-4102029-----"></a>アプリ保護 UI と iOS アプリ プロビジョニング UI の更新 <!-- 4102027, 4102029   -->
+Intune でアプリ保護ポリシーと iOS アプリ プロビジョニング プロファイルを作成し、編集するための UI が更新されました。 UI に対する次のような変更があります。
+- ウィザード方式による簡単操作が 1 つのブレード内に凝縮されました。 
+- 作成フローを更新し、割り当てを含めました。
+- プロパティを表示するときに、新しいポリシーを作成する前に、プロパティを編集するときに、まとめページに全部設定されます。 また、プロパティを編集するとき、編集されるプロパティのカテゴリから項目の一覧のみがまとめに表示されます。
+
+詳細については、「[アプリ保護ポリシーを作成して割り当てる方法](~/apps/app-protection-policies.md)」と「[iOS アプリ プロビジョニング プロファイルを使用する](~/apps/app-provisioning-profile-ios.md)」を参照してください。
+
+#### <a name="intune-guided-scenarios----4850318-4831296-3610611----"></a>Intune のガイド付きシナリオ <!-- 4850318, 4831296, 3610611  -->
+Intune では、Intune 内で特定のタスクまたは一連のタスクを完了するのに役立つガイド付きシナリオが提供されるようになりました。 ガイド付きシナリオは、1 つのエンドツーエンドのユースケースを中心にカスタマイズされた一連の手順 (ワークフロー) です。 一般的なシナリオは、組織内で管理者、ユーザー、またはデバイスが果たす役割に基づいて定義されます。 これらのワークフローでは通常、最適なユーザーエクスペリエンスとセキュリティを提供するために、慎重に調整されたプロファイル、設定、アプリケーション、セキュリティ制御のコレクションが必要です。 新しいガイド付きシナリオは次のとおりです。
+- [Microsoft Edge for Mobile を展開する](~/fundamentals/guided-scenarios-edge.md)
+- [Secure Microsoft Office モバイル アプリ](~/fundamentals/guided-scenarios-office-mobile.md) 
+- [クラウドで管理される最新式のデスクトップ](~/fundamentals/guided-scenarios-cloud-managed-pc.md)
+
+詳細については、「[Intune のガイド付きシナリオの概要](guided-scenarios-overview.md)」を参照してください。
+
+#### <a name="additional-app-configuration-variable-available----4969237-----"></a>追加のアプリ構成変数を利用できる <!-- 4969237   -->
+アプリ構成ポリシーを作成するとき、構成設定の一部として `AAD Device ID` 構成変数を含めることができます。 Intune で **[クライアント アプリ]**  >  **[アプリ構成ポリシー]**  >  **[追加]** の順に選択します。 構成ポリシーの詳細を入力し、 **[構成設定]** を選択して **[構成設定]** ブレードを表示します。 詳細については、「マネージド Android Enterprise デバイス用にアプリ構成ポリシーを追加する」の「[構成デザイナーを使用する](~/apps/app-configuration-policies-use-android.md#use-the-configuration-designer)」を参照してください。
+
+
+#### <a name="create-groups-of-management-objects-called-policy-sets----3762880----"></a>ポリシー セットと呼ばれる管理オブジェクトのグループを作成する <!-- 3762880  -->
+ポリシー セットを使用すると、1 つの概念単位として識別、対象化、監視する必要がある既存の管理エンティティへの参照のバンドルを作成できます。 ポリシー セットによって、既存の概念やオブジェクトが置き換えられることはありません。 Intune で引き続き個々のオブジェクトを割り当てることができて、ポリシー セットの一部として個々のオブジェクトを参照できます。 そのため、個々のオブジェクトに対する変更は、ポリシー セットに反映されます。  Intune では、 **[ポリシーセット]** 、 **[作成]** の順に選択し、新しいポリシー セットを作成します。 
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-configuration"></a>デバイス構成
+
+#### <a name="ui-update-for-creating-and-editing-windows-10-update-rings-----4099089-----------"></a>Windows 10 更新プログラム リングを作成し、編集するための UI 更新プログラム  <!-- 4099089         -->
+Intune 用に [Windows 10 更新プログラム リングを作成し、編集する](../protect/windows-update-for-business-configure.md#create-and-assign-update-rings)ための UI エクスペリエンスが更新されました。 UI の変更点は次のとおりです。  
+- ウィザード形式が 1 つのコンソール ブレードに凝縮されました。更新プログラム リングを構成するとき、以前見られたようにブレードがまとまりなく広がることがなくなりました。   
+- 変更後のワークフローでは、リングの初期構成を完了する前に割り当てが追加されました。
+- 概要ページを利用し、行った構成をすべて見直してから新しい更新プログラム リングを保存したり、展開したりできます。 更新プログラム リングの編集時、編集中のプロパティのカテゴリ内に設定されている項目のみがまとめに一覧表示されます。
+
+#### <a name="ui-update-for-creating-and-editing-ios-software-update-policy-----4099090---------"></a>iOS ソフトウェアの更新ポリシーを作成し、編集するための UI の更新  <!-- 4099090       --> 
+Intune 用に iOS ソフトウェアの更新ポリシーを[作成](../protect/software-updates-ios.md#configure-the-policy)し、[編集](../protect/software-updates-ios.md#edit-a-policy)するための UI エクスペリエンスが更新されました。  UI の変更点は次のとおりです。  
+- ウィザード形式が 1 つのコンソール ブレードに凝縮されました。更新プログラム ポリシーを構成するとき、以前見られたようにブレードがまとまりなく広がることがなくなりました。   
+- 変更後のワークフローでは、ポリシーの初期構成を完了する前に割り当てが追加されました。
+- 概要ページを利用し、行った構成をすべて見直してから新しいポリシーを保存したり、展開したりできます。 ポリシーの編集時、編集中のプロパティのカテゴリ内に設定されている項目のみがまとめに一覧表示されます。
+
+#### <a name="engaged-restart-settings-are-removed-from-windows-update-rings------4464404---wnready-----"></a>Windows 更新プログラム リングから再起動猶予期間設定が削除された  <!--  4464404   WNReady   -->
+前に発表したように、Intune の Windows 10 更新プログラム リングでは、[期限の設定がサポート](../protect/windows-update-settings.md)されるようになり、*再起動猶予期間*はサポートされなくなりました。 Intune で更新プログラム リングを構成または管理するときに、*再起動猶予期間*の設定は利用できなくなりました。  
+
+この変更は、最近の [Windows サービス変更](https://docs.microsoft.com//windows/whats-new/whats-new-windows-10-version-1903#servicing)に合わせるためのものであり、Windows 10 1903 以降で実行されるデバイスでは、*期限*が*再起動猶予期間*の構成より優先されます。
+
+#### <a name="prevent-installation-of-apps-from-unknown-sources-on-android-enterprise-work-profile-devices----4760025-----"></a>Android Enterprise の仕事用プロファイル デバイスに不明ソースからアプリをインストールできなくする <!-- 4760025   -->
+Android Enterprise の仕事用プロファイル デバイスでは、ユーザーは不明ソースからアプリをインストールできなくなりました。 この更新プログラムには、**個人プロファイルでは、不明ソースからのアプリ インストールが禁止される**という新しい設定があります。 既定では、この設定により、ユーザーはデバイスで不明ソースから個人プロファイルにアプリをサイドロードできなくなります。
+
+構成できる設定を確認する方法については、「[Intune を使用して機能を許可または制限するための Android エンタープライズ デバイス設定](../configuration/device-restrictions-android-for-work.md)」を参照してください。
+
+適用対象:
+- Android Enterprise 仕事用プロファイル
+
+#### <a name="create-a-global-http-proxy-on-android-enterprise-device-owner-devices----4816339-----"></a>Android エンタープライズ デバイス所有者デバイスでグローバル HTTP プロキシを作成する <!-- 4816339   -->
+Android Enterprise デバイスでは、組織の Web 閲覧標準を満たすようにグローバル HTTP プロキシを構成できます ( **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  **[Android Enterprise]** > **[デバイス所有者] > [デバイスの制限]** (プロファイルの種類) > **[接続]** )。 構成後、すべての HTTP トラフィックでこのプロキシが使用されます。
+
+この機能を構成し、構成したすべての設定を表示する方法については、「[Intune を使用して機能を許可または制限するための Android エンタープライズ デバイス設定](../configuration/device-restrictions-android-for-work.md)」を参照してください。
+
+適用対象:
+- Android Enterprise デバイス所有者
+
+#### <a name="connect-automatically-setting-is-removed-in-wi-fi-profiles-on-android-device-administrator-and-android-enterprise----5021055-----"></a>Android デバイス管理者と Android Enterprise の Wi-Fi プロファイルで [自動的に接続する] 設定が削除される <!-- 5021055   -->
+Android デバイス管理者と Android Enterprise デバイスで、Wi-Fi プロファイルを作成し、さまざまな設定を構成できます ( **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  **[Android デバイス管理者]** または **[Android Enterprise]** (プラットフォーム) > **[Wi-Fi]** (プロファイルの種類))。 この更新プログラムでは、[Android ではサポートされていない](https://developer.android.com/reference/android/net/wifi/WifiManager.html#enableNetwork%28int%2c%20boolean%29)ため、 **[自動的に接続する]** 設定が削除されます。 
+
+Wi-Fi プロファイルでこの設定を使用すると、 **[自動的に接続する]** が機能しないことに気付くことがあります。 何の措置もとる必要はありませんが、この設定は Intune ユーザー インターフェイスから削除されることにご留意ください。
+
+現在の設定を表示するには、[Android Wi-Fi 設定](../configuration/wi-fi-settings-android.md)に関するページか、[Android Enterprise Wi-Fi 設定](../configuration/wi-fi-settings-android-enterprise.md)に関するページをご覧ください。
+
+適用対象:
+- Android デバイス管理者 
+- Android エンタープライズ
+
+
+#### <a name="new-device-configuration-settings-for-supervised-ios-and-ipados-devices----5199328-----"></a>監視対象の iOS デバイスと iPadOS デバイスの新しいデバイス構成設定 <!-- 5199328   -->
+iOS デバイスと iPadOS デバイスでは、デバイス上の機能と設定を制限するプロファイルを作成できます ( **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  **[iOS/iPadOS]** (プラットフォーム) > **[デバイスの制限]** (プロファイルの種類))。 この更新では、制御できる新しい設定があります。 
+- Files アプリでネットワーク ドライブにアクセスする  
+- Files アプリで USB ドライブにアクセスする 
+- Wi-Fi を常にオンにする 
+
+これらの設定を確認するには、「[Intune を使用して機能を許可または制限するように iOS デバイスを設定する](../configuration/device-restrictions-ios.md)」を参照してください。
+
+適用対象:
+- iOS 13.0 以降
+- iPadOS 13.0 以降
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-enrollment"></a>デバイスの登録
+
+#### <a name="specify-which-android-device-operating-system-versions-enroll-with-work-profile-or-device-administrator-enrollment----4350697-----"></a>仕事用プロファイルまたはデバイス管理者の登録で登録する Android デバイスのオペレーティング システムのバージョンを指定する <!-- 4350697   -->
+Intune のデバイスの種類の制限を利用し、Android Enterprise 仕事用プロファイルの登録または Android デバイス管理者の登録を使用するユーザー デバイスをデバイスの OS バージョンで指定できます。  詳細は、「[登録制限を設定する](../enrollment/enrollment-restrictions-set.md)」を参照してください。
+
+#### <a name="windows-autopilot-deployment-reports----3856172---"></a>Windows Autopilot 配置レポート <!-- 3856172 -->
+新しいレポートでは、Windows Autopilot によって展開された各デバイスについて詳しく報告されます。 詳しくは、[Autopilot の展開レポート](../enrollment/enrollment-autopilot.md#autopilot-deployments-report)に関するページをご覧ください。 この機能をすべてのお客様にロールアウトしている最中であり、来週の終わりまでに完了する予定です。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>デバイス管理
+
+#### <a name="new-restrictions-for-renaming-windows-devices----3478938----"></a>Windows デバイスの名前変更に関する新しい制限 <!-- 3478938  -->
+Windows デバイスの名前を変更するとき、新しい規則に従う必要があります。
+- 15 文字以下 (後続の NULL を除き、63 バイト以下にする必要があります)
+- null または空の文字列にしない
+- 許可される ASCII:文字 (a-z、A-Z)、数字 (0-9)、ハイフン
+- 許可される Unicode: 文字数 >= 0x80、有効な UTF8 であることが必須、IDN マッピング可能であることが必須 (つまり、RtlIdnToNameprepUnicode は合格です。RFC 3492 参照)
+- 名前は数字だけにすることができない
+- 名前にスペースを使用できない
+- 許可されていない文字: { | } ~ [ \ ] ^ ' : ; < = > ? & @ ! " # $ % ` ( ) + / , . _ *)
+
+ 詳細については、「[Intune 上でデバイスの名前を変更する](../remote-actions/device-rename.md)」を参照してください。
+
+### <a name="new-android-report-on-devices-overview-page----4924364---"></a>デバイス概要ページの新しい Android レポート <!-- 4924364 -->
+デバイス概要ページの新しいレポートには、登録されている Android デバイスの数がデバイス管理ソリューションごとに表示されます。 このグラフには、仕事用プロファイル デバイス、フル マネージド デバイス、専用デバイス、デバイス管理者登録デバイスの数が表示されます。 レポートを表示するには、 **[Intune]** 、 **[デバイス]** 、 **[概要]** を選択します。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-security"></a>デバイス セキュリティ 
+
+#### <a name="pkcs-certificates-for-macos-----1333650---------"></a>macOS の PKCS 証明書  <!-- 1333650       -->
+[macOS で PKCS 証明書を利用](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile)できるようになりました。 macOS のプロファイルの種類として PKCS 証明書を選択し、[サブジェクトとサブジェクト代替名のフィールドがカスタマイズ](../protect/certficates-pfx-configure.md#subject-name-format-for-macos)されているユーザーおよびデバイス証明書を展開できます。  
+
+macOS 向け PKCS 証明書では、_すべてのアプリ アクセスを許可する_新しい設定もサポートされています。 この設定により、証明書の秘密鍵に関連付けられているすべてのアプリ アクセスを有効にできます。  この設定に関する詳細については、 https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf にある Apple ドキュメントを参照してください。
+
+####   <a name="derived-credentials-to-provision-ios-mobile-devices-with-certificates----------1736036-1736037-1772050-2777333-----------"></a>証明書で iOS モバイル デバイスをプロビジョニングするための派生資格情報      <!--  1736036, 1736037, 1772050, 2777333         -->  
+Intune では、認証方法として、また、iOS デバイスの S/MIME の署名と暗号化のために[派生資格情報](../protect/derived-credentials.md)を使用できます。 派生資格情報は、証明書をデバイスに展開するための *アメリカ国立標準技術研究所 (NIST) 800-157* 標準を実装したものです。  
+
+派生資格情報は、スマート カードのように、Personal Identity Verification (PIV) または Common Access Card (CAC) カードの使用に依存します。 モバイル デバイスのために派生資格情報を得るには、ユーザーはポータル サイト アプリから開始し、使用しているプロバイダーに固有の登録ワークフローに従います。  すべてのプロバイダーに共通することは、コンピューターのスマート カードを使用し、派生資格情報プロバイダーに対して認証するという要件です。 そのプロバイダーはその後、ユーザーのスマート カードから誘導されたデバイスに証明書を発行します。  
+
+Intune では、次の派生資格情報プロバイダーがサポートされています。   
+- DISA Purebred
+- Entrust Datacard
+- Intercede
+
+VPN、Wi-Fi、電子メールのデバイス構成プロファイル用の認証方法として派生資格情報を使用します。 アプリ認証や S/MIME 署名と暗号化にも使用できます。  
+
+この標準に関する詳細については、www.nccoe.nist.gov にある「[Derived PIV Credentials](https://www.nccoe.nist.gov/projects/building-blocks/piv-credentials)」を参照してください。
+
+#### <a name="use-graph-api-to-specify-a-on-premises-user-principal-name-as-a-variable-for-scep-certificates--------5437939----------"></a>Graph API を使用し、SCEP 証明書の変数としてオンプレミスのユーザー プリンシパル名を指定します。    <!--  5437939        -->  
+[Intune Graph API](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0) を使用するとき、SCEP 証明書のサブジェクト代替名 (SAN) の変数として onPremisesUserPrincipalName を指定できます。
+
+
 
 <!-- ########################## -->
 
@@ -367,7 +530,7 @@ macOS デバイス上で機能を有効にして構成できます ( **[デバ�
 #### <a name="deadlines-replace-engaged-restart-settings-for-windows-update-rings------4464404----------"></a>Windows Update リングでの再起動猶予期間の設定が [期限] に置き換わった   <!-- 4464404        -->
 最近の [Windows サービスの変更](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903#servicing)に合わせて、Intune の Windows 10 更新リングでは[期限の設定がサポートされる](../protect/windows-update-settings.md)ようになりました。 "*期限*" によって、デバイスに機能とセキュリティの更新プログラムがインストールされるタイミングが決まります。  Windows 10 1903 以降を実行しているデバイス上では、"*期限*" が "*再起動猶予期間*" の構成よりも優先されます。  将来は、Windows 10 の以前のバージョンでも、"*期限*" が "*再起動猶予期間*" よりも優先される予定です。  
 
-"*期限*" を構成しない場合、デバイスでは引き続き "*再起動猶予期間*" の設定が使用されますが、将来の更新プログラムでは [Intune による再起動猶予期間の設定のサポートは廃止される予定](whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-)です。  
+"*期限*" を構成しない場合、デバイスでは引き続き "*再起動猶予期間*" の設定が使用されますが、将来の更新プログラムでは Intune による再起動猶予期間の設定のサポートは廃止される予定です。  
 
 お使いのすべての Windows 10 デバイスに対して、"*期限*" を使用することを計画してください。 "*期限*" の設定が行われたら、"*再起動猶予期間*" に関する Intune の構成を未構成に変更できます。 未構成に設定されている場合、Intune ではデバイス上のそれらの設定の管理を停止しますが、その設定に対応する最後の構成をデバイスから削除することはありません。 そのため、"*再起動猶予期間*" に設定された最後の構成は、それらの設定が Intune 以外の方法によって変更されるまで、デバイス上でアクティブに使用されたままになります。 その後、Windows のデバイス バージョンが変更された場合、または "*期限*" に対する Intune のサポートがそのデバイスの Windows バージョンまで拡張された場合、デバイスでは、既に設定されている新しい設定の使用が開始されます。
 

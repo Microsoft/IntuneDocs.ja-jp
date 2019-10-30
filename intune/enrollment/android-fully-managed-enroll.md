@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 1/15/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2abf391ddbdb1f7087cd06ed1865b3da8b155178
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 755aefb955c2d30652434f2bd2e91981145fc56f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723581"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505597"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>Android Enterprise フル マネージド デバイスの Intune 登録を設定する 
 
@@ -61,7 +62,7 @@ Android Enterprise フル マネージド デバイスの管理を設定する�
 > [!NOTE]
 > *[デバイスは準拠としてマーク済みである必要があります]* コントロールを使用し、**すべてのクラウド アプリ**、**Android** および**ブラウザー**に適用される、Azure AD 条件付きアクセス ポリシーを定義している場合 - このポリシーから **Microsoft Intune** クラウド アプリを除外する必要があります。 これは、Android のセットアップ プロセスで Chrome タブを使用して、登録中にユーザーを認証するためです。 詳細については、「[Azure AD の条件付きアクセスのドキュメント](https://docs.microsoft.com/azure/active-directory/conditional-access/)」を参照してください。
 
-**[はい]** に設定すると、登録トークン (無作為の文字列) と Intune テナントの QR コードが与えられます。 この 1 個の登録トークンは登録するすべてのユーザーに対して有効であり、有効期限はありません。 デバイスの Android OS とバージョンに基づき、トークンと QR コードのいずれかを利用してキオスク デバイスを登録できます。
+**[はい]** に設定すると、登録トークン (無作為の文字列) と Intune テナントの QR コードが与えられます。 この 1 個の登録トークンは登録するすべてのユーザーに対して有効であり、有効期限はありません。 デバイスの Android OS とバージョンに基づき、トークンと QR コードのいずれかを利用してデバイスを登録できます。
 
 ## <a name="enroll-the-fully-managed-devices"></a>フル マネージド デバイスを登録する
 これで[フル マネージド デバイスを登録](android-dedicated-devices-fully-managed-enroll.md)できるようになりました。

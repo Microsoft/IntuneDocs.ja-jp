@@ -1,16 +1,18 @@
 ---
-ms.openlocfilehash: f7916bc38be085625f5a65d7889212827bcae5d3
-ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
+ms.openlocfilehash: 748174ded8e8331c032ffd9f3b70b2c09b724f85
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314613"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72601008"
 ---
 ### <a name="apple"></a>Apple
-- Apple iOS および iPadOS 9.0 以降
+
+- Apple iOS および iPadOS 10.0 以降
 - Mac OS X 10.9 以降
 
 ### <a name="windows"></a>Windows
+
 - Windows 10 (Home、Pro、Education、および Enterprise バージョン) を実行している PC
 - Windows 10 Mobile
 - Windows 10 IoT Enterprise (x86、x64) を実行しているデバイス
@@ -23,6 +25,7 @@ ms.locfileid: "72314613"
   Windows 7 以降の PC (Windows 10 Home エディション以外) は、[Intune ソフトウェア クライアント](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)を使用して管理することもできます。
 
 ### <a name="google"></a>Google
+
 - Google Android 4.0 以降 (Samsung KNOX Standard 4.0 以降を含む)*
 - Google Android for Work ([要件](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
 

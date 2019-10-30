@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc4c301ebc4e8dc4a26a49957d344ad52316f66a
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 4be8c383ded85dbfa9cf1c1b293bb979201ee4ab
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036404"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785663"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune の Android アプリ保護ポリシー設定
 この記事では、Android デバイスのアプリ保護ポリシーの設定について説明します。 説明されているポリシーの設定は、Azure Portal の **[設定]** ブレードでアプリ保護ポリシー用に[構成](app-protection-policies.md)することができます。
@@ -126,3 +127,4 @@ ms.locfileid: "72036404"
 | **デバイスの製造元** | セミコロンで区切られた製造元の一覧を指定します。 複数の値を含む一覧でのスペースの使用は避けてください。 これらの値では大文字と小文字が区別されません。 *"アクション"* に含まれている項目: <br><ul><li>**指定されたものを許可します (未指定のものはブロック)** - 指定の製造元に一致するデバイスのみでアプリを使用できます。 他のデバイスはすべてブロックされます。 </li></ul> <ul><li>**[指定されたものを許可します (未指定のものはワイプ)]** - アプリケーションに関連付けられているユーザー アカウントがデバイスからワイプされます。 </li></ul> この設定の使用方法について詳しくは、[条件付き起動アクション](app-protection-policies-access-actions.md#android-policy-settings)に関する記事をご覧ください。 |
 | **SafetyNet デバイスの構成証明** | アプリ保護ポリシーでは、Google Play Protect の API の一部がサポートされています。 この設定は、特にエンド ユーザー デバイス上で Google の SafetyNet 構成証明を構成します。 **基本的な整合性**または**基本的な整合性と認定デバイス**のいずれかを指定します。 **基本的な整合性**からは、デバイスの全体的な整合性がわかります。 ルート化されたデバイス、エミュレーター、仮想デバイス、改ざんの兆候があるデバイスは基本的な整合性のチェックで不合格になります。 **基本的な整合性と認定デバイス**からは、デバイスと Google のサービスとの互換性がわかります。 Google に認められた、改造されていないデバイスのみがこのチェックに合格します。 *"アクション"* に含まれている項目: <br><ul><li>**[警告]** - 構成された値に基づいて、デバイスが Google の SafetyNet 構成証明スキャンを満たさない場合、ユーザーに通知が表示されます。 この通知は閉じることができます。 </li></ul><ul><li>**[アクセスのブロック]** - 構成された値に基づいて、デバイスが Google の SafetyNet 構成証明スキャンを満たさない場合、ユーザーはアクセスがブロックされます。 </li></ul> <ul><li>**[データのワイプ]** - アプリケーションに関連付けられているユーザー アカウントがデバイスからワイプされます。 </li></ul> </li></ul> この設定に関してよく寄せられる質問については、「[MAM とアプリの保護に関してよく寄せられる質問](mam-faq.md#app-experience-on-android)」を参照してください。 |
 | **アプリの脅威のスキャン** | アプリ保護ポリシーでは、Google Play Protect の API の一部がサポートされています。 この設定によって、特にエンド ユーザー デバイスに上で Google のアプリ スキャンの検証が確実に有効になります。 構成されている場合、エンド ユーザーは自分の Android デバイス上で Google のアプリ スキャンを有効にするまでアクセスがブロックされます。 *"アクション"* に含まれている項目: <br><ul><li>**[警告]** - デバイス上で Google のアプリの検証スキャンが有効ではない場合、ユーザーに通知が表示されます。 この通知は閉じることができます。 </li></ul><ul><li>**[アクセスのブロック]** - デバイス上で Google のアプリの検証スキャンが有効ではない場合、ユーザーはアクセスがブロックされます。 </li></ul></li></ul> Google のアプリの検証スキャンの結果は、コンソールの **[Potentially Harmful Apps]\(有害な可能性があるアプリ\)** レポートに表示されます。 |
+| **許容される最大デバイス脅威レベル** | アプリ保護ポリシーでは、Intune-MTD コネクタを利用できます。 このアプリの使用に対して許容される最大脅威レベルを指定します。 脅威は、エンド ユーザー デバイスで選択された Mobile Threat Defense (MTD) ベンダー アプリによって決定されます。 "*セキュリティ保護*"、"*低*"、"*中*"、"*高*" のいずれかを指定します。 "*セキュリティ保護*" は、デバイスに対する脅威は不要で、構成可能な最も制限の厳しい値であるのに対し、"*高*" では基本的に Intune と MTD の間のアクティブな接続が必要です。 *"アクション"* に含まれている項目: <br><ul><li>**アクセスのブロック** - エンド ユーザー デバイスで選択されている Mobile Threat Defense (MTD) ベンダー アプリによって決定された脅威レベルがこの要件を満たしていない場合、ユーザーはアクセスをブロックされます。</li></ul> <ul><li>**[データのワイプ]** - アプリケーションに関連付けられているユーザー アカウントがデバイスからワイプされます。</li></ul>この設定の使用方法の詳細については、(## 登録されていないデバイスで MTD 用に Intune を設定する) を参照してください。 |

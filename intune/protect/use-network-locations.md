@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 05/21/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5491e0d2dfb1aa1989fc202203d9a895823b0b73
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 648ccd889714c2ee4f7ee1fa04301490ad9fd001
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727819"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749453"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Intune で場所 (ネットワーク フェンス) を使用する
 
@@ -29,7 +30,7 @@ ms.locfileid: "71727819"
 
 ネットワーク フェンスとも呼ばれる、ネットワークの場所ベースのコンプライアンス ポリシーを作成できます。 ポリシーは、デバイスが準拠するように社内ネットワークに接続されるようにします。 このポリシーを条件付きアクセス ポリシーと共に使用して、デバイスが社内ネットワークに接続されているときに "*のみ*"、職場のリソースにアクセスできるようにします。 デバイスが社内ネットワークに接続されていない場合、そのデバイスは非準拠となり、社内ネットワークにアクセスできなくなります。
 
-次のシナリオを考えてみましょう。
+次のシナリオを想定してください。
 
 製造工場では、一部の従業員が Android デバイスを使用しています。 ある従業員は、工場の外に Android デバイスを持ち出しています。 無許可のアクセスを防止するために、次の操作を行うことができます。
 
@@ -68,9 +69,8 @@ ms.locfileid: "71727819"
 
 ## <a name="create-the-location-compliance-policy"></a>場所のコンプライアンス ポリシーを作成する
 
-コンプライアンス ポリシーを作成する際に、**プラットフォーム**として **[Android]** を選択します。 **場所**では、追加した 1 つ以上のネットワークの場所を選択できます。 これらの場所は、デバイス用に作成するネットワーク フェンスの一部です。
+[コンプライアンス ポリシーを作成する](create-compliance-policy.md)ときは、 **[プラットフォーム]** として **[Android]** を選択します。 **場所**では、追加した 1 つ以上のネットワークの場所を選択できます。 これらの場所は、デバイス用に作成するネットワーク フェンスの一部です。 
 
-ガイダンスについては、[ネットワークの場所ベースのコンプライアンス ポリシーの作成](compliance-policy-create-android.md#locations)に関するページを参照してください。
 
 ## <a name="configure-the-actions-for-noncompliance"></a>コンプライアンス違反に対するアクションを構成する
 

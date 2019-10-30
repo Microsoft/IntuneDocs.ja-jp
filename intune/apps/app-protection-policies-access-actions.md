@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff9306c7429adbe4a5159879ccbe7cb0f13e65ed
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 62a3f9ee2cec41f14e450158ab8ad02e1a3a2ea2
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725570"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785684"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Intune でアプリ保護ポリシーの条件付き起動アクションを使用してデータを選択的にワイプする
 
@@ -59,6 +60,7 @@ iOS の場合、 **[設定]** ドロップダウンを利用して次の設定�
 - [アプリの最小バージョン]
 - [SDK の最小バージョン]
 - [デバイス モデル]
+- 許容される最大デバイス脅威レベル
 
 **デバイス モデル**設定を使用するには、iOS のモデル識別子の一覧をセミコロンで区切って入力します。 iOS のモデル識別子は、[HockeyApp のサポート ドキュメント](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types)の Device Type 列の下で確認できます。<br>
 入力例: *iPhone5,2;iPhone5,3*
@@ -83,6 +85,7 @@ Android の場合、 **[設定]** ドロップダウンを利用して次の設�
 - [デバイスの製造元]
 - [SafetyNet デバイスの構成証明]
 - アプリの脅威のスキャン
+- 許容される最大デバイス脅威レベル
 
 **[デバイスの製造元]** 設定を使用するには、Android の製造元の一覧をセミコロンで区切って入力します。 デバイスの Android の製造元は、デバイスの設定で確認できます。<br>
 入力例:*Manufacturer A;Manufacturer B* 

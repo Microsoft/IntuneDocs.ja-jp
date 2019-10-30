@@ -5,9 +5,10 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db1f0944a6725d1f361ea20c972d8ffa8f5d9035
-ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
+ms.openlocfilehash: 26ed23e4d9d267e37ba5088fa32234c27e3935b6
+ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72237203"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72550807"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune でユーザーおよびデバイス プロファイルを割り当てる
 
@@ -33,6 +34,10 @@ ms.locfileid: "72237203"
 
 > [!NOTE]  
 > ポリシーが削除された場合、またはデバイスに割り当てられなくなった場合、設定が既存値のままになることがあります。 この設定は既定値に戻りません。 設定を別の値に変更するには、新しいポリシーを作成して割り当てます。
+
+## <a name="before-you-begin"></a>始める前に
+
+ポリシーを割り当てるための適切なロールを持っていることを確認してください。 詳細については、「[Microsoft Intune でのロールベースのアクセス制御 (RBAC)](../fundamentals/role-based-access-control.md)」を参照してください。
 
 ## <a name="assign-a-device-profile"></a>デバイス プロファイルを割り当てる
 
