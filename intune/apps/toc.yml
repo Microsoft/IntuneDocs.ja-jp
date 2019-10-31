@@ -78,6 +78,8 @@
               href: lob-apps-macos.md
             - name: Win32 アプリの管理
               href: apps-win32-app-management.md
+            - name: S モード デバイスでの Win32 アプリ
+              href: apps-win32-s-mode.md
         - name: 特定のアプリを追加する
           items:
             - name: ポータル サイト アプリ
