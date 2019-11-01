@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e53f50c42e768eeb652a8602bea49c04d29364c7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4f917167baecc643e045610e86e582957e535978
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504427"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810294"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Intune で Mobile Threat Defense コネクタを有効にする
 
@@ -44,7 +44,7 @@ MTD アプリ用の従来の条件付きアクセス ポリシーは:
 従来の条件付きアクセス ポリシーを表示するには、[Azure](https://portal.azure.com/#home) で **[Azure Active Directory]**  >  **[条件付きアクセス]**  >  **[クラシック ポリシー]** の順に移動します。
 
 
-## <a name="to-enable-the-mtd-connector"></a>MTD コネクタを有効にするには
+## <a name="to-enable-the-mobile-threat-defense-connector"></a>Mobile Threat Defense コネクタを有効にするには
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 
@@ -58,20 +58,23 @@ MTD アプリ用の従来の条件付きアクセス ポリシーは:
 
 7. 組織の要件に応じてトグルのオプションを有効にします。 表示される切り替えオプションは、MTD パートナーによって異なります。
 
-## <a name="mtd-toggle-options"></a>MTD トグル オプション
+## <a name="mobile-threat-defense-toggle-options"></a>Mobile Threat Defense 切り替えオプション
 
-組織の要件に基づき、有効にする MTD 切り替えオプションを決定できます。 詳細を次に示します。
+どの Mobile Threat Defense 切り替えオプションを有効にする必要があるのかを、ご自身の組織の要件に応じて決定することができます。 詳細を次に示します。
 
-- **[Connect Android 4.1+ devices to [MTD partner name] for Work MTD]\(Android 4.1+ デバイスを [MTD パートナー名] for Work MTD に接続する\)** :このオプションを有効にすると、Android 4.1+ デバイスはセキュリティ上のリスクを Intune に報告します。
-  - **[データが受信されない場合、非準拠としてマークする]** :Intune がこのプラットフォーム上のデバイスに関するデータを MTD パートナーから受信しない場合は、そのデバイスを非準拠と見なします。
-<br></br>
-- **[Connect iOS 8.0+ devices to [MTD partner name] for Work MTD]\(iOS 8.0+ デバイスを [MTD パートナー名] for Work MTD に接続する\)** :このオプションを有効にすると、iOS 8.0 以降のデバイスはセキュリティ上のリスクを Intune に報告します。
-  - **[データが受信されない場合、非準拠としてマークする]** :Intune がこのプラットフォーム上のデバイスに関するデータを MTD パートナーから受信しない場合は、そのデバイスを非準拠と見なします。
-<br></br>
+**MDM コンプライアンス ポリシー設定**
+- **[Android 4.1 以上のデバイスを *\<MTD パートナー名>* に接続する]**:このオプションを有効にすると、Android 4.1+ デバイスはセキュリティ上のリスクを Intune に報告します。
+- **[iOS 8.0 以上のデバイスを *\<MTD パートナー名>* に接続する]**:このオプションを有効にすると、iOS 8.0 以降のデバイスはセキュリティ上のリスクを Intune に報告します。
 - **[iOS デバイスのアプリの同期を有効にする]** :この Mobile Threat Defense パートナーに、Intune から iOS アプリケーションのメタデータを脅威分析用に要求することを許可します。
-
 - **[サポートされていない OS バージョンをブロックする]** :デバイスがサポートされる最低バージョン以前のオペレーティング システムを実行している場合は、ブロックします。
 
+**アプリ保護ポリシー設定**
+- **[バージョン 4.1 以上の Android デバイスを *\<MTD パートナー名>* に接続し、アプリ保護ポリシーを評価する]** :このオプションを有効にすると、デバイスの脅威レベルの規則を使用したアプリ保護ポリシーによって、このコネクタのデータを含むデバイスが評価されます。
+- **[バージョン 8.0 以上の iOS デバイスを *\<MTD パートナー名>* に接続し、アプリ保護ポリシーを評価する]** :このオプションを有効にすると、デバイスの脅威レベルの規則を使用したアプリ保護ポリシーによって、このコネクタのデータを含むデバイスが評価されます。
+
+Intune アプリ保護ポリシーを評価するために Mobile Threat Defense コネクタを使用する方法について詳しくは、[登録されていないデバイスに対する Mobile Threat Defense の設定](~/protect/mtd-enable-unenrolled-devices.md)に関するページをご覧ください。
+
+**共通の共有設定**
 - **[パートナーが無応答になるまでの日数]** :接続が失われたためにパートナーが応答していないと Intune が判断するまでの、非アクティブ状態の日数。 Intune は、応答しない MTD パートナーのコンプライアンス対応状態を無視します。
 
 > [!IMPORTANT] 

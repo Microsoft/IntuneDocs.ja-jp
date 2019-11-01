@@ -7,14 +7,28 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 9965c6e85173ea9958182be43b6c93d9578d534f
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: a2675b1b601261e673923ab5e3ac41d0f3d83264
+ms.sourcegitcommit: 71b0cd7b81178e2f9e9f80830fa9a7985781628b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749363"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73057320"
 ---
 以下の通知では、今後の Intune の変更と機能に備えるために役立つ重要な情報が提供されます。
+
+### <a name="plan-for-change-the-server-side-logging-for-siri-commands-setting-will-be-removed-from-the-intune-console----5468501--"></a>変更の計画: Intune コンソールからの 'Siri コマンドに対するサーバー側のログ記録' 設定の削除 <!-- 5468501-->
+
+Intune サービスの 11 月の更新で、Intune コンソールから設定 "Siri コマンドに対するサーバー側のログ記録" が削除される予定です。 この変更により、既にこの設定が削除されている Apple との連携がもたらされます。
+
+#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
+11 月の更新、または 11 月中旬の 1911 のロールアウトが行われると、ユーザーは、Intune コンソールで、iOS 構成プロファイルの [デバイスの制限] メニュー (組み込みアプリ) からこの設定が削除されていることを確認できます。 ポリシーと対象デバイスの管理プロファイルにこの設定が表示される場合がありますが、デバイスには影響しません。 管理プロファイルに表示されたとしても、これは現在デバイス上で機能していないため、機能に対する大きな影響はないと予測されます。
+
+次の 2 つのパスのどちらかを選択できます。
+- ポリシーからこの設定を削除したい場合は、この設定が含まれているプロファイルに移動し、小規模の編集を行ってポリシーを保存することができます。 バックエンドでポリシーが再計算され、ポリシーから設定が削除されます。
+- この操作を行わないことを選んだ場合、エンド ユーザーのデバイスの管理プロファイルにこの設定が表示されますが、この設定による影響はありません。
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
+上記のセクションに従って対応策を取るか、ポリシーをそのままにしておくことができます。 この変更がロールアウトされたとき、Microsoft の新機能に関するページとドキュメントが更新されます。
 
 ### <a name="end-of-support-for-legacy-pc-management"></a>従来の PC 管理のサポート終了
 
@@ -71,8 +85,8 @@ Azure portal では、Intune に対する更新された UI 作成および編�
 #### <a name="additional-information"></a>追加情報 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-october---4911065---"></a>変更の計画:Android 用の Intune App SDK およびアプリ保護ポリシーで 10 月に Android 5.0 以降のサポートを開始 <!--4911065 -->
-Intune では、10月に Android 5.x (Lollipop) 以降のサポートが開始されます。 ラップされたすべてのアプリを最新の Intune App SDK で更新し、デバイスを更新してください。
+### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-an-upcoming-release---4911065---"></a>変更の計画:今後のリリースで、Android 用の Intune App SDK およびアプリ保護ポリシーによる Android 5.0 以降のサポートを開始 <!--4911065 -->
+Intune では、今後のリリースで、Android 5.x (Lollipop) 以降のサポートが開始されます。 ラップされたすべてのアプリを最新の Intune App SDK で更新し、デバイスを更新してください。
 
 #### <a name="how-does-this-affect-me"></a>ユーザーへの影響
 Android 用の SDK またはアプリを使用していない、または使用する予定がない場合は、この変更による影響はありません。 Intune App SDK を使用している場合は、必ず最新バージョンに更新し、またデバイスも Android 5.x 以降に更新してください。 お客様が更新を行わなかった場合、アプリで更新プログラムを受信できなくなり、時間の経過と共にそのエクスペリエンスの質が低下していきます。

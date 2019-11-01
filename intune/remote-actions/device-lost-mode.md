@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aecbcd91eef668ba2a92acfc9b42e6c68df3672a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 34a4c8adeef7e8b28c90ad38579f0f9ac7c4784d
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509439"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057537"
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Intune を使って iOS デバイスの紛失モードを有効にする
 
@@ -43,8 +43,10 @@ ms.locfileid: "72509439"
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 3. **[デバイス]** 、 **[すべてのデバイス]** の順に選択します。
-4. 管理対象のデバイスのリストから、iOS デバイスを選択して **[...詳細を表示]** を選択します。 次に、 **[紛失モード]** リモート アクションを選択します。
-5. **[紛失モード]** で、この機能を有効にします。 次に、表示するメッセージを入力し、連絡先の電話番号を入力します。
+4. 管理するデバイスの一覧から iOS デバイスを選択した後、 **[紛失モード (監視モードのみ)]** を選択します。
+5. **[紛失モード]** の下で **[有効]** を選択します。
+6. **[Message to display on lock screen]\(ロック画面に表示するメッセージ\)** に、デバイスのロック画面に表示されるメッセージを入力します。
+7. 必要に応じて、 **[表示する電話番号]** ボックスに電話番号を入力します。
 6. **[OK]** を選択して変更を保存します。
 
 紛失モードを有効にすると、デバイスのすべての利用がブロックされます。 エンド ユーザーは、紛失モードを無効にするまでデバイスにアクセスできなくなります。 紛失モードを有効にした場合は、[[デバイスを検索する]](device-locate.md) アクションを使用してデバイスを検索します。

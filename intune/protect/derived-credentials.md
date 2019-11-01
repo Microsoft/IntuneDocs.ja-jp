@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c42e5ef50f8a5a8514bc43670fc743f42b1b2d6
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 1716da820fd0d9a4b6d1bbc5024440cfb141c5a1
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585827"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889551"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>Microsoft Intune で派生資格情報を使用する
 
@@ -64,7 +64,7 @@ Intune では、テナントごとに 1 つの派生資格情報の発行者が�
 - **Entrust Datacard**: https://www.entrustdatacard.com/
 - **Intercede**: https://www.intercede.com/
 
-さまざまな発行者の使用に関する重要な詳細については、発行者のエンドユーザー ワークフローを含む、その発行者のガイダンスを確認してください。 詳細については、この記事の「[派生資格情報の計画](#plan-for-derived-credentials)」を参照してください。
+さまざまな発行者の使用に関する重要な詳細については、その発行者に関するガイダンスを確認してください<!-- , including the issuers end-user workflow-->。 詳細については、この記事の「[派生資格情報の計画](#plan-for-derived-credentials)」を参照してください。
 
 > [!IMPORTANT]  
 > テナントから派生資格情報の発行者を削除すると、その発行者によって設定された派生資格情報は機能しなくなります。  
@@ -101,11 +101,14 @@ iOS デバイスの場合は、「[iOS ストア アプリを Microsoft Intune �
 
 ### <a name="2-review-the-end-user-workflow-for-your-chosen-issuer"></a>2) 選択した発行者のエンドユーザー ワークフローを確認する
 
-サポートされている各パートナーの重要な考慮事項と、その発行者のエンドユーザー ワークフローへのリンクを次に示します。  この情報をよく理解しておくと、お使いの Intune のポリシーと構成によって、ユーザーとデバイスが、その発行者からの派生資格情報の登録を正常に完了することをブロックされることが確実になくなるようにすることができます。
+サポートされている各パートナーに関する主な考慮事項を次に示します<!--  , and links to that issuers end-user workflow -->。  この情報をよく理解しておくと、お使いの Intune のポリシーと構成によって、ユーザーとデバイスが、その発行者からの派生資格情報の登録を正常に完了することをブロックされることが確実になくなるようにすることができます。
 
 #### <a name="disa-purebred"></a>DISA Purebred
 
-[DISA Purebred のユーザー ワークフロー](https://docs.microsoft.com/intune-user-help/enroll-ios-device-disa-purebred)を確認します。 このワークフローの主な要件は次のとおりです。  
+エンドユーザーのワークフローと主な要件について説明します。  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for DISA Purebred](https://docs.microsoft.com/intune-user-help/enroll-ios-device-disa-purebred). Key requirements for this workflow include:  
+-->
 
 - ユーザーは、自身のスマート カードを使用して発行者に対して認証することができるコンピューターまたはキオスクにアクセスする必要があります。 
 
@@ -120,8 +123,11 @@ iOS デバイスの場合は、「[iOS ストア アプリを Microsoft Intune �
 DISA Purebred アプリの取得と構成の詳細については、この記事で後述する「[DISA Purebred アプリの展開](#deploy-the-disa-purebred-app)」を参照してください。  
 
 #### <a name="entrust-datacard"></a>Entrust Datacard  
-[Entrust Datacard のユーザー ワークフロー](https://docs.microsoft.com/intune-user-help/enroll-ios-device-entrust)を確認します。 このワークフローの主な要件は次のとおりです。 
 
+エンドユーザーのワークフローと主な要件について説明します。  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for Entrust Datacard](https://docs.microsoft.com/intune-user-help/enroll-ios-device-entrust). Key requirements for this workflow include: 
+--> 
 - ユーザーは、自身のスマート カードを使用して発行者に対して認証することができるコンピューターまたはキオスクにアクセスする必要があります。 
 
 - 派生資格情報に登録するデバイスに Intune ポータル サイト アプリをインストールする必要があります。
@@ -129,8 +135,11 @@ DISA Purebred アプリの取得と構成の詳細については、この記事
 - デバイス カメラを使用して、認証要求をモバイル デバイスからの派生資格情報要求にリンクする QR コードをスキャンします。
 
 #### <a name="intercede"></a>Intercede
-[Intercede のユーザー ワークフロー](https://docs.microsoft.com/intune-user-help/enroll-ios-device-intercede)を確認します。 このワークフローの主な要件は次のとおりです。 
 
+エンドユーザーのワークフローと主な要件について説明します。  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for Intercede](https://docs.microsoft.com/intune-user-help/enroll-ios-device-intercede). Key requirements for this workflow include: 
+-->
 - ユーザーは、自身のスマート カードを使用して発行者に対して認証することができるコンピューターまたはキオスクにアクセスする必要があります。 
 
 - 派生資格情報に登録するデバイスに Intune ポータル サイト アプリをインストールする必要があります。

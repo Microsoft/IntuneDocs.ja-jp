@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 10/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9fec08511303c15a7197014fd80834d95948191
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2bd9fe52bcaa6295d452ade59d6c3c32e1e81a67
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504890"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999681"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune でサポートされるオペレーティング システムとブラウザー
 
@@ -89,6 +89,15 @@ Microsoft Intune をセットアップする前に、サポートされている
 ### <a name="windows-pc-software-client"></a>Windows PC ソフトウェア クライアント
 
 代替登録方法として、[Intune ソフトウェア クライアント](../manage-windows-pcs-with-microsoft-intune.md)を Windows PC に展開し、インストールできます。 この機能は、Intune クラシック ポータルを使用する場合のみ利用可能です。 Intune ソフトウェア クライアントを利用し、Windows 10 Home エディションを除く、Windows 7 以降の PC を管理できます。
+
+> [!Note]
+> Microsoft により、2020 年 1 月 14 日に Windows 7 のサポートが終了することが発表されました。 この日に、Intune でも Windows 7 を実行しているデバイスに対するサポートが廃止されます。
+
+> 詳細については、「[Intune の変更の計画: Windows 7 のサポート終了間近](https://docs.microsoft.com/en-us/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)」をご覧ください
+
+> Microsoft Intune での Silverlight ベースの Intune コンソールのサポートは、2020 年 10 月 15 日に廃止されます。 この廃止には、Silverlight コンソールで構成された PC ソフトウェア クライアント (PC エージェントとも呼ばれます) のサポート終了も含まれています
+
+> 詳細については、[Microsoft Intune での Silverlight ベースの管理コンソールのサポート終了](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249)に関するページをご覧ください
 
 <!--  ### Exchange ActiveSync management
 

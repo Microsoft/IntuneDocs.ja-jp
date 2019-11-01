@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/04/2018
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ba94a649f9d7b49437d5d97bb621b0b0a94466c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d843cf707cf182655d0044dde289caca730ccd6b
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508688"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810304"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Zimperium を Intune と統合する
 
@@ -31,8 +31,7 @@ Zimperium Mobile Threat Defense ソリューションを Intune と統合する�
 
 ## <a name="before-you-begin"></a>始める前に
 
-> [!NOTE]
-> 次の手順はすべて、[Zimperium MTD コンソール](https://www.zimperium.com/platform)で実行します。
+[Zimperium MTD コンソール](https://www.zimperium.com/platform)内で、以下の手順を実行します。これにより、Intune に登録されているデバイス (デバイス コンプライアンスを使用) および登録されていないデバイス (アプリ保護ポリシーを使用) の両方で Lookout のサービスに接続できるようになります。
 
 Zimperium と Intune の統合を始める前に、次のサブスクリプションと資格情報があることを確認します。
 
@@ -90,4 +89,5 @@ Zimperium アプリ承認プロセスは以下で構成されます。
 
 ## <a name="next-steps"></a>次の手順
 
-- [Zimperium アプリを設定する](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [登録されたデバイスに Zimperium アプリを設定する](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [登録されていないデバイスに Zimperium アプリを設定する](~/protect/mtd-add-apps-unenrolled-devices.md)

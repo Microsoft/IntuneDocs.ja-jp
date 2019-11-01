@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd48eea5ee09562590844e11ac372480c892a7af
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 4fcec6c264a97d710e3061c289d6898297ef61be
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585003"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999540"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune ポータル サイト アプリを構成する方法
 
@@ -137,6 +137,10 @@ Intune では、資格情報プロバイダーの DISA Purebred、Entrust Dataca
 
 iOS デバイスの派生資格情報の詳細については、「[Microsoft Intune で派生資格情報を使用する](~/protect/derived-credentials.md)」を参照してください。
 
+## <a name="dark-mode-for-ios-company-portal"></a>iOS ポータル サイトのダーク モード
+
+iOS ポータル サイトでダーク モードを使用できます。 ユーザーは、デバイス設定に基づく任意の配色で、会社のアプリをダウンロードし、デバイスを管理し、IT サポートを受けることができます。 iOS ポータル サイトは、ダーク モードまたはライト モードについて、エンド ユーザーのデバイス設定に自動的に一致します。 
+
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Windows ポータル サイトのキーボード ショートカット
 
 エンドユーザーは、Windows ポータル サイト内でキーボード ショートカット (アクセラレータ) を使用して、ナビゲーション、アプリおよびデバイスのアクションをトリガーできます。
@@ -180,25 +184,24 @@ Windows ポータル サイト アプリで使用できるキーボード ショ
 
 一部のプラットフォームおよび構成では、セルフサービス デバイス アクションは許可されていません。 次の表では、セルフサービス アクションについての詳細を示します。
 
-|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup><sup>(5)</sup> | Android<sup>(3)</sup> |
+|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup> | Android<sup>(3)</sup> |
 |----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
-| インベントリから削除 | 利用可能<sup>(1)</sup> | 使用可能<sup>(8)</sup> | 利用可能 | 利用可能<sup>(7)</sup> |
-| ワイプ | 利用可能 | 利用可能 | N/A | 利用可能<sup>(7)</sup> |
-| 名前の変更 <sup>(4)</sup> | 利用可能 | 使用可能<sup>(8)</sup> | 利用可能 | 利用可能 |
+| インベントリから削除 | 利用可能<sup>(1)</sup> | 利用可能 | 利用可能 | 利用可能<sup>(7)</sup> |
+| ワイプ | 利用可能 | 利用可能<sup>(5)</sup> | N/A | 利用可能<sup>(7)</sup> |
+| 名前の変更 <sup>(4)</sup> | 利用可能 | 利用可能 | 利用可能 | 利用可能 |
 | 同期 | 利用可能 | 利用可能 | 利用可能 | 利用可能 |
 | リモート ロック | Windows Phone のみ | 利用可能 | 利用可能 | 利用可能 |
-| パスコードのリセット | Windows Phone のみ | 利用可能 | N/A | 利用可能<sup>(6)</sup> |
+| パスコードのリセット | Windows Phone のみ | 使用可能<sup>(8)</sup> | N/A | 利用可能<sup>(6)</sup> |
 | キーの回復 | N/A | N/A | 利用可能<sup>(2)</sup> | N/A |
-| ダーク モード | N/A | 利用可能 | N/A | N/A |
 
 <sup>(1)</sup> Azure AD に参加している Windows デバイスでは、**インベントリからの削除**は常にブロックされます。<br>
 <sup>(2)</sup> MacOS の**キーの回復**は、Web ポータルでのみ使用できます。<br>
 <sup>(3)</sup> デバイス登録マネージャーの登録を使用している場合は、すべてのリモート アクションが無効になります。<br>
-<sup>(4)</sup> **名前の変更**では、ポータル サイト アプリまたは Web サイトでのデバイス名のみが変更され、デバイスでは変更されません。<br>
-<sup>(5)</sup> **リモート ワイプ**は MacOS デバイスでは使用できません。<br>
+<sup>(4)</sup> **名前の変更**では、ポータル サイト アプリまたは Web ポータル内のデバイス名が変更されるだけで、デバイス上では変更されません。<br>
+<sup>(5)</sup> **ワイプ**は、ユーザーが登録した iOS デバイス上では利用できません。<br>
 <sup>(6)</sup> **パスコードのリセット**は、一部の Android および Android エンタープライズの構成ではサポートされていません。 詳しくは、「[Intune でデバイスのパスコードをリセットまたは削除する](../remote-actions/device-passcode-reset.md)」をご覧ください。<br>
 <sup>(7)</sup> **インベントリからの削除**と**ワイプ**は、Android エンタープライズ デバイス所有者のシナリオでは使用できません (COPE、COBO、COSU)。<br> 
-<sup>(8)</sup> **インベントリからの削除** (デバイスの削除) と**名前の変更**は、すべての種類の登録で使用できます。 ユーザー登録では、その他のアクションはサポートされていません。<br> 
+<sup>(8)</sup> **パスコードのリセット**は、ユーザーが登録した iOS デバイス上ではサポートされません。
 
 ## <a name="next-steps"></a>次の手順
 

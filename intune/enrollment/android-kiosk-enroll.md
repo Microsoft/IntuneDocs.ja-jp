@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1a1c03dc480ad66de22b4a5ee44a9b8c221980c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: edc884850b70ff7621224c5b01a68d016f27504e
+ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503391"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72923391"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Android Enterprise 専用デバイスの Intune 登録を設定する
 
@@ -78,7 +78,7 @@ Android Enterprise 専用デバイスの管理を設定するには、次の手�
 4. **[動的メンバーシップ ルール]** ブレードで、次のようにフィールドに入力します。
     - **[動的メンバーシップ ルールの追加]** :簡易ルール
     - **[追加するデバイスの場所]** : enrollmentProfileName
-    - 中央のボックスで **[一致]** を選択します。
+    - 中央のボックスで **[等しい]** を選択します。
     - 最後のフィールドには、先ほど作成した登録プロファイル名を入力します。
     動的メンバーシップ ルールの詳細については、[AAD 内のグループに対する動的メンバーシップ ルール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership)に関する記事を参照してください。 
 5. **[クエリの追加]**  >  **[作成]** を選択します。
