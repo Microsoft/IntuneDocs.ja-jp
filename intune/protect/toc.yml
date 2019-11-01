@@ -249,6 +249,8 @@
               href: security-baseline-settings-mdm-all.md
             - name: Microsoft Defender ATP のベースラインの設定
               href: security-baseline-settings-defender-atp.md
+            - name: Microsoft Edge のベースライン設定
+              href: security-baseline-settings-edge.md
         - name: Windows Update の設定
           href: windows-update-settings.md
         - name: コンプライアンス ポリシー設定 - Android

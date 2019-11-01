@@ -64,8 +64,14 @@
 ## [iOS デバイスを使用する](using-your-iOS-device-with-intune.md)
 ### [iOS デバイスのリセットの影響](effects-of-device-reset-company-portal-ios.md)
 ### [ポータル サイトをインストールしてサインインする](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
-### [iOS デバイスを登録する](enroll-your-device-in-intune-ios.md)
-### [組織で提供される iOS デバイスを登録する](enroll-your-device-dep-ios.md)
+### デバイスを登録する
+#### [iOS デバイスを登録する](enroll-your-device-in-intune-ios.md)
+#### [組織が提供する iOS デバイスを登録する](enroll-your-device-dep-ios.md)
+#### 派生した資格情報で登録する
+##### [Entrust Datacard で登録する](enroll-ios-device-entrust-datacard.md)
+##### [Intercede に登録する](enroll-ios-device-intercede.md)
+##### [DISA Purebred を使用して登録する](enroll-ios-device-disa-purebred.md)
+
 
 ### [デバイスで管理対象アプリを使用する](use-managed-apps-on-your-device-ios.md)
 ### [パスコードを設定または変更する](set-or-change-your-passcode-ios.md)
