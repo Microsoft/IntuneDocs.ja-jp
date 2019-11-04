@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48cca2c894067439943bdfff33b953463e513490
-ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
+ms.openlocfilehash: 3d0cff4ad624d35843f3388535b60549d1893eeb
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72776900"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143162"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune での macOS デバイスの機能設定
 
@@ -129,7 +129,7 @@ AirPrinter サーバーを追加するには、プリンターの IP アドレ�
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>設定の適用先: すべての登録の種類 
 
-- **Sso アプリ拡張機能の種類**: 資格情報 sso アプリ拡張機能の種類を選択します。 SSO アプリ拡張機能プロファイルを保存するときに、SSO アプリ拡張機能の種類を変更することはできません。 次のようなオプションがあります。
+- **Sso アプリ拡張機能の種類**: 資格情報 sso アプリ拡張機能の種類を選択します。 次のようなオプションがあります。
 
   - **未構成**: アプリの拡張機能は使用されません。 SSO アプリ拡張機能を無効にするには、SSO アプリ拡張機能の種類を**Kerberos**または**資格情報**から **[未構成]** に切り替えます。
   - **資格情報**: SSO を使用するには、カスタマイズ可能な汎用の資格情報アプリ拡張機能を使用します。 組織の SSO アプリ拡張機能の拡張機能 ID とチーム ID がわかっていることを確認してください。  
@@ -143,7 +143,7 @@ AirPrinter サーバーを追加するには、プリンターの IP アドレ�
 
   [チーム ID を検索](https://help.apple.com/developer-account/#/dev55c3c710c)します (Apple の web サイトを開きます)。詳細については、こちらを参照してください。
 
-- **領域**: Kerberos 領域の名前を入力します。 領域名は、`CONTOSO.COM` のように大文字で指定する必要があります。 通常、領域名は DNS ドメイン名と同じですが、すべて大文字で指定します。
+- **領域**: 認証領域の名前を入力します。 領域名は、`CONTOSO.COM` のように大文字で指定する必要があります。 通常、領域名は DNS ドメイン名と同じですが、すべて大文字で指定します。
 - **ドメイン**: SSO 経由で認証できるサイトのドメイン名またはホスト名を入力します。 たとえば、web サイトが `mysite.contoso.com` 場合、`mysite` はホスト名、`contoso.com` がドメイン名になります。 ユーザーがこれらのサイトのいずれかに接続すると、アプリ拡張機能によって認証チャレンジが処理されます。 この認証により、ユーザーは顔 ID、タッチ ID、または Apple pincode/パスコードを使用してサインインできます。
 
   - シングルサインオンアプリ拡張機能の Intune プロファイル内のすべてのドメインは一意である必要があります。 さまざまな種類の SSO アプリ拡張機能を使用している場合でも、どのサインオンアプリ拡張機能プロファイルでもドメインを繰り返すことはできません。

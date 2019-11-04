@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 10/28/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3baa1972593c5d836c49905b59e9a28932329fbe
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e3e0ea523d71ff036f1f23c9436c65e105328d8b
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506727"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057640"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>Intune で一般的な iOS 機能を使用するための iOS および iPadOS のデバイス設定
 
@@ -266,7 +266,7 @@ iPhone にポリシーを割り当てると、ページは次の画像のよう�
   - **[特定の Web サイトのみ]** (Safari Web ブラウザーのみ): これらの URL は Safari ブラウザーのブックマークに追加されます。 ユーザーはこれらのサイトに**のみ**アクセスが許可され、他のサイトを開くことはできません。 このオプションは、ユーザーがアクセスできる URL の正確な一覧がわかっている場合にのみ使います。
 
     - **[URL]** : 許可する Web サイトの URL を入力します。 たとえば、「`https://www.contoso.com`」と入力します。
-    - **[ブックマークのパス]** : ブックマークを保存するパスを入力しします。 たとえば、「`/Contoso/Business Apps`」と入力します。 パスを追加しないと、デバイス上の既定のブックマーク フォルダーにブックマークが追加されます。
+    - **ブックマークパス**: Apple はこの設定を変更しました。 すべてのブックマークは、 **[承認済みサイト]** フォルダーにあります。 ブックマークは、入力したブックマークパスには入りません。
     - **[タイトル]** : ブックマークのわかりやすいタイトルを入力します。
 
     URL を入力しないと、エンド ユーザーは `microsoft.com`、`microsoft.net`、および `apple.com` 以外の Web サイトにアクセスできません。 これらの URL は Intune によって自動的に許可されます。
@@ -280,14 +280,14 @@ iPhone にポリシーを割り当てると、ページは次の画像のよう�
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>設定の適用先: すべての登録の種類
 
-- **Sso アプリ拡張機能の種類**: 資格情報 sso アプリ拡張機能の種類を選択します。 SSO アプリ拡張機能プロファイルを保存するときに、SSO アプリ拡張機能の種類を変更することはできません。 次のようなオプションがあります。
+- **Sso アプリ拡張機能の種類**: 資格情報 sso アプリ拡張機能の種類を選択します。 次のようなオプションがあります。
 
   - **未構成**: アプリの拡張機能は使用されません。 アプリの拡張機能を無効にするには、SSO アプリの拡張機能の種類を**Kerberos**または**資格情報**から **[未構成]** に切り替えることができます。
   - **資格情報**: SSO を実行するために、カスタマイズ可能な汎用の資格情報アプリ拡張機能を使用します。 組織の SSO アプリ拡張機能の拡張機能 ID がわかっていることを確認してください。
   - **Kerberos**: iOS 13.0 (およびそれ以降) および iPadOS 13.0 (およびそれ以降) に含まれる Apple の組み込みの Kerberos 拡張機能を使用します。 このオプションは、Kerberos 固有の**資格情報**アプリ拡張機能です。
 
   > [!TIP]
-  > **資格情報**の種類を使用して、独自の構成値を追加して拡張機能を通過させることができます。 代わりに、Apple が提供する、 **Kerberos**の種類に組み込まれている構成設定を使用することを検討してください。
+  > **資格情報**の種類を使用して、独自の構成値を追加して拡張機能を通過させることができます。 代わりに、 **Kerberos**の種類で Apple が提供する組み込みの構成設定を使用することを検討してください。
 
 - [**拡張機能 ID** (資格情報のみ)]: `com.apple.extensiblesso` など、SSO アプリ拡張機能を識別するバンドル識別子を入力します。
 - [**チーム ID** (資格情報のみ)]: SSO アプリ拡張機能のチーム識別子を入力します。 チーム識別子は、`ABCDE12345` など、Apple によって生成される10文字の英数字 (数字と文字) 文字列です。 チーム ID は必要ありません。
