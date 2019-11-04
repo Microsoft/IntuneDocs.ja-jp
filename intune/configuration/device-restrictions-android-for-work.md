@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 10/30/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec6009096ac6ed39c8a217f8832661a575d83b78
-ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
+ms.openlocfilehash: 14fa330b0c158d98c96e0d151f8a4ec7d0c95b97
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915715"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143045"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように Android エンタープライズ デバイスを設定する
 
@@ -42,7 +42,7 @@ ms.locfileid: "72915715"
   - **[自動許可]** : アクセス許可が自動的に付与されます。
   - **[自動拒否]** : アクセス許可が自動的に拒否されます。
 - **[日付と時刻の変更]** : **[ブロック]** を選択すると、ユーザーが手動で日付と時刻を設定できなくなります。 **[未構成]** では、ユーザーがデバイス上で日付と時刻を設定できるようになります。
-- **[ボリュームの変更]** : **[ブロック]** を選択すると、ユーザーがデバイスのボリュームを変更できなくなります。 **[未構成]** では、デバイスで音量設定を使用できるようになります。
+- **ボリュームの変更**:**ブロック**すると、ユーザーはデバイスのボリュームを変更できなくなり、マスタボリュームもミュートされます。 **[未構成]** では、デバイスで音量設定を使用できるようになります。
 - **[出荷時の設定にリセット]** : **[ブロック]** を選択すると、ユーザーがデバイスの設定で出荷時の設定にリセットするオプションを使用できなくなります。 **[未構成]** では、ユーザーがデバイス上でこの設定を使用できるようになります。
 - **[Safe boot]\(セーフ ブート\)** : **[ブロック]** を選択すると、ユーザーがデバイスをセーフ モードで再起動できなくなります。 **[未構成]** では、ユーザーがデバイスをセーフ モードで再起動できるようになります。
 - **[ステータス バー]** : **[ブロック]** を選択すると、通知やクイック設定を含むステータス バーにアクセスできなくなります。 **[未構成]** では、ユーザーがステータス バーにアクセスできるようになります。

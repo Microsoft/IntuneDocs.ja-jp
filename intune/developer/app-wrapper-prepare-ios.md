@@ -17,24 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b42642ec593112b0b247cd85b9230f68d6a803b8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 783ae8bf3216c514bac183ed1945c454cbaa1708
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490975"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413871"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために iOS アプリを準備する
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 iOS 用 Microsoft Intune アプリ ラッピング ツールを使用すれば、アプリ自体のコードを変更せずに社内の iOS アプリの Intune アプリ保護ポリシーを有効にすることができます。
 
 このツールはアプリを囲むように "ラッパー" を作成する macOS コマンド ライン アプリケーションです。 アプリが処理されると、[アプリ保護ポリシー](../apps/app-protection-policies.md)をアプリに展開することで、アプリの機能を変更できます。
 
 このツールをダウンロードする場合は、GitHub の「[iOS 用 Microsoft Intune アプリ ラッピング ツール](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)」を参照してください。
-
-
 
 ## <a name="general-prerequisites-for-the-app-wrapping-tool"></a>アプリ ラッピング ツールの一般的な前提条件
 
@@ -74,6 +70,7 @@ Intune によってラップされたアプリを配布するには、次が必�
 * 社内配布プロビジョニング プロファイル。
 
 ### <a name="steps-to-create-an-apple-developer-enterprise-account"></a>Apple Developer Enterprise アカウントを作成する手順
+
 1. [Apple Developer Enterprise Program のサイト](https://developer.apple.com/programs/enterprise/)に移動します。
 
 2. ページの右上にある **[Enroll]** (登録) をクリックします。
@@ -86,11 +83,11 @@ Intune によってラップされたアプリを配布するには、次が必�
 
 6. 組織の情報をフォームに入力します。 **[続行]** をクリックします。 この時点で、組織を登録する権限があるかどうかが Apple によって確認されます。
 
-8. 確認したら、 **[Agree to License]** (ライセンスに同意する) をクリックします。
+7. 確認したら、 **[Agree to License]** (ライセンスに同意する) をクリックします。
 
-9. ライセンスに同意したら、**プログラムを購入し、アクティブ化して**終了します。
+8. ライセンスに同意したら、**プログラムを購入し、アクティブ化して**終了します。
 
-10. チーム エージェント (組織に代わって Apple Developer Enterprise Program に参加する人) である場合は、最初にチーム メンバーを招待して役割を割り当てて、チームを作成します。 チームを管理する方法については、Apple のドキュメント「[開発者アカウント チームの管理](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1)」を参照してください。
+9. チーム エージェント (組織に代わって Apple Developer Enterprise Program に参加する人) である場合は、最初にチーム メンバーを招待して役割を割り当てて、チームを作成します。 チームを管理する方法については、Apple のドキュメント「[開発者アカウント チームの管理](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1)」を参照してください。
 
 ### <a name="steps-to-create-an-apple-signing-certificate"></a>Apple 署名証明書を作成する手順
 
@@ -145,8 +142,6 @@ Intune によってラップされたアプリを配布するには、次が必�
 
     ![iPhone 情報 - [Fingerprints] (指紋) の [SHA1] 文字列](./media/app-wrapper-prepare-ios/iOS-signing-cert-9.png)
 
-
-
 ### <a name="steps-to-create-an-in-house-distribution-provisioning-profile"></a>社内配布プロビジョニング プロファイルを作成する手順
 
 1. [Apple Developer アカウント ポータル](https://developer.apple.com/account/)に戻り、組織の Apple ID で**サインイン**します。
@@ -164,8 +159,6 @@ Intune によってラップされたアプリを配布するには、次が必�
 6. 手順に従って、macOS コンピューターにプロファイル (拡張子 .mobileprovision) をダウンロードします。
 
 7. ファイルを覚えやすい場所に保存します。 このファイルは、アプリ ラッピング ツールを使用しているときに -p パラメータで使用されます。
-
-
 
 ## <a name="download-the-app-wrapping-tool"></a>アプリ ラッピング ツールをダウンロードする
 
@@ -195,6 +188,7 @@ macOS ターミナルを開き、次のコマンドを実行します。
 ```
 
 ### <a name="command-line-parameters"></a>コマンド ライン パラメーター
+
 アプリ ラッピング ツールでは次のコマンド ライン パラメーターを使用できます。
 
 |プロパティ|使用方法|
@@ -216,6 +210,7 @@ macOS ターミナルを開き、次のコマンドを実行します。
 |**-f**|(省略可能) `<Path to a plist file specifying arguments.>` このフラグは plist テンプレートを使用して -i、-o、-p といった残りの IntuneMAMPackager プロパティを指定する場合に、[plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) ファイルの前に使用します。 「plist を使用して引数を入力する」を参照してください。 |
 
 ### <a name="use-a-plist-to-input-arguments"></a>plist を使用して引数を入力する
+
 すべてのコマンド引数を [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) ファイルに置くと、アプリ ラッピング ツールを簡単に実行できます。 Plist は XML に似たファイル形式で、フォームのインターフェイスを使用してコマンドライン引数を入力できます。
 
 [IntuneMAMPackager/Contents/MacOS] フォルダーで、`Parameters.plist` (空白の plist テンプレート) をテキスト エディターまたは Xcode で開きます。 次のキーの引数を入力します。
@@ -236,7 +231,6 @@ macOS ターミナルを開き、次のコマンドを実行します。
 | Citrix XenMobile App SDK を含める (ネットワークのみのバリアント)|ブール型|false| -Citrix と同じ|
 | 拡張機能のプロビジョニング プロファイルのパス |文字列の配列|空| アプリの拡張機能のプロビジョニング プロファイルの配列。
 
-
 次のように IntuneMAMPackager と plist を単一の引数として実行します。
 
 ```bash
@@ -255,19 +249,24 @@ macOS ターミナルを開き、次のコマンドを実行します。
 これで、アプリをユーザー グループに展開し、そのアプリをアプリ保護ポリシーの対象にすることができます。 アプリは、指定したアプリ保護ポリシーを使用して、デバイスで実行されます。
 
 ## <a name="how-often-should-i-rewrap-my-ios-application-with-the-intune-app-wrapping-tool"></a>どれくらいの頻度で自分の iOS アプリケーションを Intune アプリ ラッピング ツールで再ラップする必要がありますか。
+
 アプリケーションを再ラップしなければならない主なシナリオは、次のとおりです。
+
 * アプリケーション自体で、新しいバージョンがリリースされた。 以前のバージョンのアプリがラップされ、Intune コンソールにアップロードされた。
 * iOS 用 Intune アプリ ラッピング ツールで新しいバージョンがリリースされ、主要なバグ修正、または新しい具体的な Intune アプリケーション保護ポリシー機能が有効になった。 これは、[iOS 用 Microsoft Intune アプリ ラッピング ツール](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)の GitHub リポジトリで 6 ～ 8 週間後に行われます。
 
 iOS では、アプリへの署名に元々使用されたものとは異なる証明書/プロビジョニング プロファイルでラップすることができますが、アプリで指定された資格が新しいプロビジョニング プロファイルに含まれていないと、ラップは失敗します。 このシナリオで強制的にラッピングが失敗しないように、アプリから不足している資格を削除する "-e" コマンドライン オプションを使用すると、アプリの機能が損なわれる可能性があります。
 
 再ラップの場合、次のようなベスト プラクティスがあります。
+
 * 別のプロビジョニング プロファイルが、以前のプロビジョニング プロファイルと同じ必須の資格を持っていることを確認します。 
 
 ## <a name="error-messages-and-log-files"></a>エラー メッセージとログ ファイル
+
 アプリ ラッピング ツールに関する問題を解決するには、次の情報を参照してください。
 
 ### <a name="error-messages"></a>エラー メッセージ
+
 アプリ ラッピング ツールが正常に完了できない場合、次のエラー メッセージのいずれかがコンソールに表示されます。
 
 |エラー メッセージ|詳細情報|
@@ -291,6 +290,7 @@ iOS では、アプリへの署名に元々使用されたものとは異なる�
 |警告: SHA1 証明書ハッシュを指定しませんでした。 展開前にラッピングされたアプリケーションが署名されていることを確認します。|-c コマンドライン フラグの後に有効な SHA1 ハッシュを指定します。 |
 
 ### <a name="log-files-for-the-app-wrapping-tool"></a>アプリ ラッピング ツールのログ ファイル
+
 アプリ ラッピング ツールでラッピングされているアプリはログを生成し、ログが iOS クライアント デバイス コンソールに書き込まれます。 この情報は、アプリケーションで問題が発生し、問題がアプリ ラッピング ツールに関連するかどうかを判断する必要がある場合に役立ちます。 この情報を取得するには、次の手順を使用します。
 
 1. アプリケを実行し、問題を再現します。
@@ -310,7 +310,6 @@ iOS では、アプリへの署名に元々使用されたものとは異なる�
 
     ラッピングしたアプリはまた、アプリのクラッシュ後に電子メールでデバイスからログを直接送信するオプションをユーザーに提供します。 ユーザーはログをあなたに送信し、あなたはそれを調べ、必要に応じて Microsoft に転送できます。
 
-
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>証明書、プロビジョニング プロファイル、認証に関する要件
 
 iOS 用アプリ ラッピング ツールには、すべての機能を保証するために満たす必要があるいくつかの要件があります。
@@ -321,8 +320,8 @@ iOS 用アプリ ラッピング ツールには、すべての機能を保証�
 |iOS 署名証明書|署名証明書を指定する前に、これが有効であるかどうかを確認します。 このツールは、iOS アプリを処理するとき、証明書の有効期限が切れているかどうかを確認しません。 有効期限が切れた証明書のハッシュを指定すると、このツールはアプリを処理し、署名しますが、デバイスにインストールすると失敗します。<br /><br />ラッピングされたアプリに署名するために提供された証明書がプロビジョニング プロファイルと一致することを確認します。 このツールは、ラッピングされたアプリケーションに署名するために提供された証明書とプロビジョニング プロファイルが一致するかどうかを検証しません。|
 |認証|暗号化を機能させるには、デバイスに PIN を設定する必要があります。 ラッピングされたアプリを展開したデバイスで、デバイスのステータス バーに触れると、ユーザーは職場のアカウントまたは学校のアカウントを使用して再度サインするように求められます。 ラッピングしたアプリの既定のポリシーは、*再起動時に認証*です。 iOS はアプリを終了してから、再起動して、あらゆる外部通知 (電話の着信など) を処理します。
 
-
 ## <a name="setting-app-entitlements"></a>アプリ権利の設定
+
 アプリをラップする前に、アプリに*権利*を付与して、通常のアプリよりも多くのアクセス許可と機能を与えることができます。 *権利ファイル*は、アプリ内に特殊なアクセス許可 (たとえば、共有キーチェーンへのアクセスなど) を指定するコード署名で使用されます。 アプリの開発中に、Xcode 内で特定のアプリケーション サービス (*機能*と呼ばれます) が有効になります。 機能が有効になると、権利ファイルに反映されます。 権利と機能の詳細については、iOS 権利および機能の詳細については、iOS 開発者ライブラリの「[Adding Capabilities (機能の追加)](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)」を参照してください。 サポートされる機能の一覧については、「[Supported capabilities (サポートされる機能)](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html)」を参照してください。
 
 ### <a name="supported-capabilities-for-the-app-wrapping-tool-for-ios"></a>iOS 用アプリ ラッピング ツールでサポートされる機能
@@ -363,6 +362,7 @@ iOS 用アプリ ラッピング ツールには、すべての機能を保証�
 3. すべての前提条件を満たしていることを確認してから、アプリをラップします。
 
 ### <a name="troubleshoot-common-errors-with-entitlements"></a>権利に関する一般的なエラーのトラブルシューティング
+
 iOS 用アプリ ラッピング ツールで権利のエラーが表示される場合は、次のトラブルシューティング手順を実行します。
 
 |問題|原因|解決策|
@@ -371,6 +371,7 @@ iOS 用アプリ ラッピング ツールで権利のエラーが表示され�
 |プロビジョニング プロファイルに足りない権利があります (不足している権利が表示されます)。 不足している権利を含むプロビジョニング プロファイルを使用してアプリを再パッケージします。|プロビジョニング プロファイルで有効な権利と、アプリで有効な機能が一致していません。 この不一致は、一部の機能 (アプリ グループ、キーチェーンのアクセスなど) に関連付けられた ID にも適用されます。|通常、アプリと同じ機能を有効にした新しいプロビジョニング プロファイルを作成できます。 プロファイルとアプリ間で ID が一致しない場合、アプリ ラッピング ツールは可能であれば ID を置き換えます。 新しいプロビジョニング プロファイルを作成した後もこのエラーが発生する場合、–e パラメーターを使用して権利を削除できます (以下の「–e パラメーターを使用してアプリから権利を削除する」セクションを参照してください)。|
 
 ### <a name="find-the-existing-entitlements-of-a-signed-app"></a>署名済みアプリの既存の権利を検索する
+
 署名済みアプリの既存の権利とプロビジョニング プロファイルを確認するには:
 
 1. .ipa ファイルを検索して、拡張子を .zip に変更します。
@@ -390,6 +391,7 @@ iOS 用アプリ ラッピング ツールで権利のエラーが表示され�
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>–e パラメーターを使用してアプリから権利を削除する
+
 このコマンドは、権利ファイルに含まれていないアプリで有効になっているすべての機能を削除します。 アプリが使用している権利を削除すると、アプリは損なわれます。 欠落している機能を削除する例とは、既定ですべての機能を備えているベンダー製のアプリがある場合です。
 
 ```bash
@@ -397,6 +399,7 @@ iOS 用アプリ ラッピング ツールで権利のエラーが表示され�
 ```
 
 ## <a name="security-and-privacy-for-the-app-wrapping-tool"></a>アプリ ラッピング ツールのセキュリティとプライバシー
+
 アプリ ラッピング ツールを使用するとき、セキュリティとプライバシーの次のベスト プラクティスを使用します。
 
 - 指定した署名証明書、プロビジョニング プロファイル、基幹業務アプリは、アプリ ラッピング ツールを実行する同じ macOS マシンに置く必要があります。 ファイルが UNC パスにある場合、ファイルに macOS マシンからアクセスできることを確認します。 パスは IPsec または SMB 署名を使用して保護する必要があります。
@@ -414,6 +417,7 @@ iOS 用アプリ ラッピング ツールで権利のエラーが表示され�
 - ラッピングされたアプリ内からデバイスのドキュメント フォルダーをユーザーが監視するとき、.msftintuneapplauncher という名前のフォルダーが表示されることがあります。 このファイルを変更または削除すると、制限付きのアプリの正常な動作に影響を与える可能性があります。
 
 ## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>Citrix MDX mVPN のための iOS 用 Intune アプリ ラッピング ツール
+
 この機能は iOS 用の Citrix MDX アプリ ラッパーとの統合です。 この統合は、コマンドライン フラグ `-citrix` を指定するだけで、通常の Intune アプリ ラッピング ツールに追加されます。
 
 ### <a name="requirements"></a>要件
@@ -424,6 +428,7 @@ iOS 用アプリ ラッピング ツールで権利のエラーが表示され�
 > Intune と Citrix の統合は iOS 10 以降のデバイスのみでサポートされます。
 
 ### <a name="use-the--citrix-flag"></a>`-citrix` フラグを使用する
+
 通常のアプリ ラッピング コマンドを実行するときに、`-citrix` フラグを追加するだけです。 現在、`-citrix` フラグの引数はありません。
 
 **使用形式**:
@@ -439,6 +444,7 @@ iOS 用アプリ ラッピング ツールで権利のエラーが表示され�
 ```
 
 ## <a name="getting-logs-for-your-wrapped-applications"></a>ラッピングされたアプリケーションのログを取得する
+
 トラブルシューティング時に、次の手順を使用して、ラッピングされたアプリケーションのログを取得します。
 
 1. デバイスで iOS の設定アプリに移動し、LOB アプリを選択します。

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c3f96b6a548536459162e81d0ea34d102ef8d1c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e88741609dc1a351d1971c907cd2e442cfd4b905
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509736"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999516"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune クラシック ポータルの新機能 (過去数か月)
 
@@ -179,7 +179,6 @@ Windows 10 ポータル サイト アプリのダウンロードおよびサイ�
 中国では Google Play ストアを利用できないため、Android デバイスの場合は中国のマーケットプレースからアプリを入手する必要があります。 ポータル サイトでは、中国の Android ユーザーをリダイレクトして、ローカルのアプリ ストアからポータル サイトおよび Outlook のアプリをダウンロードできるようにし、このワークフローをサポートします。 これにより、モバイル デバイス管理およびモバイル アプリケーション管理の両方について、条件アクセス ポリシーが有効な場合に、ユーザー エクスペリエンスが向上します。 Android 用ポータル サイト アプリおよび Outlook アプリは、次の中国のアプリ ストアで入手できます。
 
 - [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
-- [Xiaomi](http://en.miui.com/thread-469541-1-1.html)
 - [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
 - [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
 - [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
@@ -329,7 +328,6 @@ Android 用ポータル サイト アプリが中国でダウンロードでき�
 * [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
 * [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
 * [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
-* [Xiaomi](http://en.miui.com/thread-469541-1-1.html)
 
 Android 用ポータル サイト アプリは、Google Play 開発者サービスを使って Microsoft Intune サービスと通信します。 中国では Google Play 開発者サービスをまだ利用できないので、次のタスクには最大 8 時間かかることがあります。
 

@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: a2675b1b601261e673923ab5e3ac41d0f3d83264
-ms.sourcegitcommit: 71b0cd7b81178e2f9e9f80830fa9a7985781628b
+ms.openlocfilehash: 0aa78ec17aba5deb0c914c3698676219f203b856
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73057320"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415068"
 ---
 以下の通知では、今後の Intune の変更と機能に備えるために役立つ重要な情報が提供されます。
 
@@ -105,7 +105,7 @@ Intune に登録されていて、Android バージョン 4.x を稼働してい
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
 最新の Intune App SDK でアプリをラップしてください。 また、[最低限の OS バージョンを必要とします (警告のみ)] という条件付き起動を設定して、個人用デバイスを使用しているエンド ユーザーにアップグレードするよう通知することもできます。
 
-### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7----3042987---"></a>Intune の変更の計画:Windows 7 のサポート終了間近 <!-- 3042987 -->
+### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7---3042987---"></a>Intune の変更の計画:Windows 7 のサポート終了間近<!-- 3042987 -->
 2018 年 9 月に投稿した MC148476 および 2019 年 3 月の MC176794 で再びお伝えしたとおり、Windows 7 の延長サポートは 2020 年 1 月 14 日に終了いたします。 その時点で、Windows 7 を稼働しているデバイスに対する Intune のサポートは終了します。これにより、より新しいテクノロジのサポートと、優れた新しいエンド ユーザー エクスペリエンスの提供に注力することが可能になります。 当該日付以降は、お使いの Windows 7 PC を保護するための技術的なサポートと自動更新が Intune で利用できなくなります。 もう利用できないサービスやサポートが必要になるシナリオを回避するために、2020 年 1 月より前に Windows 10 に移行することを強くお勧めします。 Windows のサポート ライフサイクルについて詳しくは、[こちら](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)をご覧ください。
 
 #### <a name="how-does-this-affect-me"></a>ユーザーへの影響

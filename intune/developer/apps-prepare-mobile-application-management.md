@@ -17,20 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1750f789cfac98af998ebbd86b10a4e93a1772a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ba1ec201cdb7e44570b53ce831b4e5ae26504973
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490821"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413825"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>アプリ保護ポリシーを利用するために基幹業務アプリで準備を行う
-
-[!INCLUDE[both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Intune アプリ ラッピング ツールまたは Intune アプリ SDK のどちらかを使って、アプリでアプリ保護ポリシーを使えるようにできます。 ここでは、これら 2 つの方法の内容と用途について説明します。
 
 ## <a name="intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツール
+
 アプリ ラッピング ツールは、主として、**内部**基幹業務 (LOB) アプリケーションに使います。 このツールは、アプリのラッパーを作成するコマンド ライン アプリケーションです。このラッパーにより、アプリを Intune アプリ保護ポリシーで管理できるようになります。 独立系ソフトウェア ベンダー (ISV) から提供されるアプリを保護するときは、ラッピングされたアプリが ISV によってサポートされるかどうかを明確にすることが重要です。
 
 このツールを使うためにソース コードは必要ありませんが、署名資格情報が必要です。 署名資格情報の詳細については、[Intune のブログ](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)を参照してください。 アプリ ラッピング ツールのドキュメントとしては、[Android アプリ ラッピング ツール](app-wrapper-prepare-android.md)と [iOS アプリ ラッピング ツール](app-wrapper-prepare-ios.md)に関するページをご覧ください。
@@ -40,6 +39,7 @@ Intune アプリ ラッピング ツールまたは Intune アプリ SDK のど�
 Intune に登録されていないデバイスのアプリ保護ポリシー用アプリ ラッピング ツールの詳細については、「[Microsoft Intune に登録されていないデバイスの基幹業務アプリとデータを保護する](../apps/apps-add.md)」を参照してください。
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>アプリ ラッピング ツールを使用する理由
+
 * アプリに組み込みのデータ保護機能がない。
 * アプリが単純である。
 * アプリが内部的に展開される。
@@ -55,11 +55,13 @@ Intune に登録されていないデバイスのアプリ保護ポリシー用�
 |**Android**|いいえ - [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md) を使用します。|はい|
 
 ## <a name="intune-app-sdk"></a>Intune App SDK
+
 App SDK は、主として、Apple App Store または Google Play ストアにあるアプリを Intune で管理できるようにするお客様向けに設計されています。 ただし、どのようなアプリでも (基幹業務アプリでさえ)、SDK の統合を利用できます。
 
 SDK の詳細については、「[概要](app-sdk.md)」を参照してください。 SDK で作業を開始するには、「[Microsoft Intune App SDK を使ってみる](app-sdk-get-started.md)」を参照してください。
 
 ### <a name="reasons-to-use-the-sdk"></a>SDK を使用する理由
+
 * アプリに組み込みのデータ保護機能がない。
 * アプリが複雑で、多くのエクスペリエンスを含んでいる。
 * アプリが Google Play や Apple の App Store などのパブリック アプリ ストアに展開される。
@@ -74,10 +76,12 @@ SDK の詳細については、「[概要](app-sdk.md)」を参照してくだ�
 |**Android**|はい – [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md) を使用します。|[いいえ]|
 |**Android**| はい – [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md) を使用します。|[いいえ]|
 
-### <a name="not-using-an-app-development-platform-listed-above"></a>上に一覧表示されているアプリ開発プラットフォームを使用していない場合は、 
+### <a name="not-using-an-app-development-platform-listed-above"></a>上に一覧表示されているアプリ開発プラットフォームを使用していない場合は、
+
 Intune SDK の開発チームは、ネイティブの Android、iOS (Obj-C、Swift)、Xamarin、Xamarin.Forms、および Cordova プラットフォームを使ってビルドされたアプリに対するサポートを、積極的にテストして管理しています。 一部のお客様は、Intune SDK とその他のプラットフォーム (React Native や NativeScript など) の統合に成功されていますが、Microsoft では、サポートされているプラットフォーム以外を使うアプリ開発者に向けた明示的なガイダンスやプラグインは提供されません。 
 
 ## <a name="feature-comparison"></a>機能の比較
+
 アプリ SDK とアプリ ラッピング ツールに対して利用できる設定を、次の表に示します。
 
 > [!NOTE]
