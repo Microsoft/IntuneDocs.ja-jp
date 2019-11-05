@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 10/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f32637173ec6cf5f7c284a87193eafffb6a16e6c
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 0faa7c7ec70ce7647a6a91ae732d8b15878964b7
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72786130"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057636"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 
@@ -54,20 +54,90 @@ ms.locfileid: "72786130"
 -->  
 
 
-<!-- ########################## -->
+## <a name="week-of-october-28-2019"></a>2019 年 10 月 28 日の週
 
+### <a name="app-management"></a>アプリ管理 
+
+#### <a name="dark-mode-for-ios-company-portal----4911422---"></a>iOS ポータル サイトのダーク モード <!-- 4911422 -->
+iOS ポータル サイトでダーク モードを使用できます。 ユーザーは、デバイス設定に基づく任意の配色で、会社のアプリをダウンロードし、デバイスを管理し、IT サポートを受けることができます。 iOS ポータル サイトは、ダーク モードまたはライト モードについて、エンド ユーザーのデバイス設定に自動的に一致します。 詳細については、「[iOS 用 Microsoft Intune ポータル サイトのダーク モードの概要](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Introducing-dark-mode-on-Microsoft-Intune-Company-Portal-for-iOS/ba-p/918453)」をご覧ください。 iOS ポータル サイトの詳細については、「[Microsoft Intune ポータル サイト アプリを構成する方法](~/apps/company-portal-app.md)」をご覧ください。
+
+#### <a name="android-company-portal-enforced-minimum-app-version----2378776---"></a>Android ポータル サイトでの最小アプリ バージョンの適用 <!-- 2378776 -->
+アプリ保護ポリシーの **[ポータル サイトの最小バージョン]** 設定を使用することにより、エンド ユーザーのデバイスに適用される、ポータル サイトの特定の定義済み最小バージョンを指定できます。 この条件付き起動の設定を使用すると、その値が満たされなかった場合に、実行可能なアクションとして **[アクセスのブロック]** 、 **[データのワイプ]** 、 **[警告]** を行うことができます。 この値に使用できる形式は、" *[メジャー].[マイナー]* "、" *[メジャー].[マイナー].[ビルド]* "、または " *[メジャー].[マイナー].[ビルド].[リビジョン]* " というパターンに従います。 
+
+**[ポータル サイトの最小バージョン]** 設定を構成した場合、バージョン 5.0.4560.0 のポータル サイトおよび今後のバージョンのポータル サイトを取得したすべてのエンド ユーザーに影響があります。 この設定は、この機能がリリースされたバージョンより古いバージョンのポータル サイトを使用しているユーザーには影響しません。 デバイス上でアプリの自動更新を使用しているエンド ユーザーは、おそらく最新バージョンのポータル サイトを使用しているため、この機能のダイアログが表示されない可能性があります。 この設定は、登録済みのデバイスと未登録のデバイスのアプリ保護と共に、Android に対してのみ使用できます。 詳細については、[Android アプリ保護ポリシー設定 - 条件付き起動](~/apps/app-protection-policy-settings-android.md#conditional-launch)に関する記事をご覧ください。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+
+### <a name="microsoft-365-device-management"></a>Microsoft 365 デバイス管理
+
+#### <a name="introducing-endpoint-security-node-in-microsoft-365-device-management-------5630102---"></a>Microsoft 365 デバイス管理のエンドポイント セキュリティ ノードの概要    <!-- 5630102 -->
+
+Microsoft 365 デバイス管理のスペシャリスト向けワークスペース (https://devicemanagement.microsoft.com ) で、**エンドポイント セキュリティ** ノードの一般提供が開始されました。これにより、エンドポイントをセキュリティで保護するための次のような機能がまとめてグループ化されます。
+
+- セキュリティ ベースライン:Microsoft によって推奨される設定および規定値の既知のグループを適用するのに役立つ、事前構成された設定のグループ。
+
+- セキュリティ タスク:Microsoft Defender ATP の Threat and Vulnerability Management (TVM) の利用と Intune の使用により、エンドポイントの脆弱性を修復します。
+
+- Microsoft Defender ATP:セキュリティ違反を防ぐのに役立つ、統合された Microsoft Defender Advanced Threat Protection (ATP)。
+
+これらの設定は、デバイスなどの他の適用可能なノードから、引き続きアクセスできます。また、どこでこれらの機能にアクセスし、有効化したかに関係なく、現在構成されている状態は同じになります。
+
+これらの機能強化の詳細については、Microsoft Tech Community の Web サイトの [Intune Customer Success に関するブログ記事](https://aka.ms/Endpoint_security_node)をご覧ください。
+
+### <a name="device-management"></a>デバイス管理
+
+#### <a name="intune-supports-ios-11-and-later----4665324----"></a>Intune による iOS 11 以降のサポート <!-- 4665324  -->
+
+Intune の登録とポータル サイトで、iOS バージョン 11 以降がサポートされるようになりました。 以前のバージョンはサポートされません。
+
+### <a name="monitor-and-troubleshoot"></a>監視とトラブルシューティング
+
+#### <a name="updated-support-experience------5012398---"></a>更新されたサポート エクスペリエンス   <!-- 5012398 -->
+
+[Intune のヘルプとサポートの取得](get-support.md)に関するコンソール内のエクスペリエンスが更新され、合理化されました。  コンソール内でのよくあるイシューの検索とフィードバック、およびサポートへの問い合わせに使用するワークフローが改善されました。 サポート イシューを作成するときに、コールバックまたはメールの返信をいつ受け取ることができるのかについての推定が、リアルタイムで表示されます。また、Premier および統合サポートのお客様は、より迅速なサポートを受けるために、それぞれのイシューについて、簡単に重大度を指定できます。
+
+<!-- ########################## -->
 ## <a name="week-of-october-21-2019"></a>2019 年 10 月 21 日の週
 
-### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073-idready-wnready---"></a>Windows 10 以降のデバイス用の新しいデバイス ファームウェア構成インターフェイス プロファイル <!-- 2266073 idready wnready -->
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="microsoft-365-device-management"></a>Microsoft 365 デバイス管理
 
-Windows 10 以降では、デバイス構成プロファイルを作成し、設定と機能を制御できます ( **[デバイスの構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  **[Windows 10 以降]** (プラットフォーム))。 この更新には、Intune で UEFI (BIOS) 設定の管理を可能にする新しいデバイス ファームウェア構成インターフェイスがあります。
+#### <a name="improved-administration-experience-in-microsoft-365-device-management"></a>Microsoft 365 デバイス管理の管理エクスペリエンスの改善
+
+Microsoft 365 デバイス管理のスペシャリスト向けワークスペース ([https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com)) で、更新され合理化された管理エクスペリエンスの一般提供が開始されました。これには以下が含まれます。
+
+- **更新されたナビゲーション**:機能が論理的にグループ化される、簡略化された第 1 レベルのナビゲーションが提供されます。
+- **新しいプラットフォーム フィルター**:[デバイスとアプリ] ページで、単一のプラットフォームを選択できます。これにより、選択したプラットフォームのポリシーとアプリだけが表示されます。
+- **新しいホーム ページ**:新しいホーム ページでは、サービスの正常性、テナントの状態、ニュースなどを、すばやく確認できます。
+
+これらの機能強化の詳細については、Microsoft Tech Community の Web サイトの [Enterprise Mobility + Security に関するブログ記事](https://go.microsoft.com/fwlink/?linkid=2109094)をご覧ください。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>アプリ管理
+
+#### <a name="add-mobile-threat-defense-apps-to-unenrolled-devices----3005337---"></a>Mobile Threat Defense アプリを未登録のデバイスに追加する <!-- 3005337 -->
+お客様は、デバイスの正常性に基づいてユーザーの会社データをブロックしたり、選択的にワイプしたりすることができる、Intune アプリ保護ポリシーを作成できます。 デバイスの正常性は、お客様が選択した Mobile Threat Defense (MTD) ソリューションを使って判断されます。 現在、この機能は、Intune に登録されたデバイスで、デバイス コンプライアンス設定として使用できます。 この新機能では、脅威検出が Mobile Threat Defense ベンダーから拡張され、未登録デバイス上で機能するようになります。 Android でこの機能を使用するには、デバイス上に最新の Intune ポータル サイトが必要です。 iOS では、アプリに最新の Intune SDK (v 12.0.15+) が統合されている場合に、この機能を使用できるようになります。 最新の Intune SDK が最初のアプリで採用されたときに、新機能に関するトピックが更新されます。 残りのアプリは、ローリング方式で利用可能になっていきます。 詳細については、「[Intune で Mobile Threat Defense アプリ保護ポリシーを作成する](~/protect/mtd-app-protection-policy.md)」をご覧ください。
+
+### <a name="device-configuration"></a>デバイス構成
+
+#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073----"></a>Windows 10 以降のデバイス用の新しいデバイス ファームウェア構成インターフェイス プロファイル <!-- 2266073  -->
+
+Windows 10 以降では、デバイス構成プロファイルを作成し、設定と機能を制御できます ( **[デバイスの構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  **[Windows 10 以降]** (プラットフォーム))。 この更新には、Intune で UEFI (BIOS) 設定の管理を可能にする新しいデバイス ファームウェア構成インターフェイスがあります。 この機能をすべてのお客様にロールアウトしている最中であり、来週の終わりまでに完了する予定です。
 
 この機能の詳細については、「[Microsoft Intune で Windows デバイスの DFCI プロファイルを使用する](../configuration/device-firmware-configuration-interface-windows.md)」を参照してください。
 
 適用対象:
-
 - Windows 10 RS5 (1809) 以降でサポートされているファームウェア
 
+### <a name="device-enrollment"></a>デバイスの登録
+
+#### <a name="toggle-to-only-show-enrollment-status-page-on-devices-provisioned-by-out-of-box-experience-oobe---3959566--"></a>out-of-box experience (OOBE) によってプロビジョニングされたデバイスにのみ登録ステータス ページを表示するように切り替える <!--3959566-->
+Autopilot OOBE によってプロビジョニングされたデバイスにのみ、登録ステータス ページを表示するように選択できるようになりました。
+
+新しい切り替えを表示するには、 **[Intune]**  >  **[デバイスの登録]**  >  **[Windows の登録]**  >  **[登録ステータス ページ]**  >  **[プロファイルの作成]**  >  **[設定]**  >  **[out-of-box experience (OOBE) でプロビジョニングされたデバイスにのみページを表示する]** の順に選択します。
+
+
+<!-- ########################## -->
 ## <a name="week-of-october-14-2019"></a>2019 年 10 月 14 日の週
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -77,7 +147,12 @@ Windows 10 以降では、デバイス構成プロファイルを作成し、設
 Android Enterprise の仕事用プロファイル デバイス、専用デバイス、フル マネージド デバイスに使用できるアプリのインストールについては、アプリのインストール状態とマネージド Google Play アプリのインストール バージョンを確認できます。 詳細については、[アプリの保護ポリシーを監視する方法](~/apps/app-protection-policies-monitor.md)、[Intune を使用した Android の仕事用プロファイル デバイスの管理](~/enrollment/android-enterprise-overview.md)、および[マネージド Google Play アプリの種類](~/apps/apps-add-android-for-work.md#managed-google-play-app-types)に関する記事を参照してください。
 
 #### <a name="microsoft-edge-version-77-and-later-for-windows-10-and-macos-public-preview----3872025-4678761----"></a>Windows 10 と macOS 向けの Microsoft Edge バージョン 77 以降 (パブリック プレビュー) <!-- 3872025, 4678761  -->
-Microsoft Edge バージョン 77 以降は、Windows 10 と macOS を実行している PC に展開できるようになりました。 パブリック プレビューからは、Windows 10 の **Dev** チャンネルと **Beta** チャンネルが、macOS の **Beta** チャンネルが提供されます。 展開は英語版 (EN) のみですが、エンド ユーザーはブラウザーの **[設定]**  >  **[言語]** で表示言語を変更することができます。 Microsoft Edge は、システム コンテキスト、およびアーキテクチャに合わせてインストールされる Win32 アプリです (x86 OS の場合は x86、x64 OS の場合は x64)。 さらに、ブラウザーの自動更新は既定で**オン**になっています。また、Microsoft Edge はアンインストールできません。 詳細については、「[Microsoft Edge for Windows 10 を Microsoft Intune に追加する](~/apps/apps-windows-edge.md)」と「[Microsoft Edge ドキュメント](https://go.microsoft.com/fwlink/?linkid=2103823)」を参照してください。
+Microsoft Edge バージョン 77 以降は、Windows 10 と macOS を稼働している PC に展開できるようになります。 
+
+>[!NOTE]
+>この機能のロールアウトは、今月の後半まで延期されています。
+
+パブリック プレビューからは、Windows 10 の **Dev** チャンネルと **Beta** チャンネルが、macOS の **Beta** チャンネルが提供されます。 展開は英語版 (EN) のみですが、エンド ユーザーはブラウザーの **[設定]**  >  **[言語]** で表示言語を変更することができます。 Microsoft Edge は、システム コンテキスト、およびアーキテクチャに合わせてインストールされる Win32 アプリです (x86 OS の場合は x86、x64 OS の場合は x64)。 さらに、ブラウザーの自動更新は既定で**オン**になっています。また、Microsoft Edge はアンインストールできません。 詳細については、「[Microsoft Edge for Windows 10 を Microsoft Intune に追加する](~/apps/apps-windows-edge.md)」と「[Microsoft Edge ドキュメント](https://go.microsoft.com/fwlink/?linkid=2103823)」を参照してください。
 
 #### <a name="update-to-app-protection-ui-and-ios-app-provisioning-ui----4102027-4102029-----"></a>アプリ保護 UI と iOS アプリ プロビジョニング UI の更新 <!-- 4102027, 4102029   -->
 Intune でアプリ保護ポリシーと iOS アプリ プロビジョニング プロファイルを作成し、編集するための UI が更新されました。 UI に対する次のような変更があります。
@@ -178,7 +253,7 @@ Intune のデバイスの種類の制限を利用し、Android Enterprise 仕事
 Windows デバイスの名前を変更するとき、新しい規則に従う必要があります。
 - 15 文字以下 (後続の NULL を除き、63 バイト以下にする必要があります)
 - null または空の文字列にしない
-- 許可される ASCII:文字 (a-z、A-Z)、数字 (0-9)、ハイフン
+- 許可される ASCII: 文字 (a-z、A-Z)、数字 (0-9)、ハイフン
 - 許可される Unicode: 文字数 >= 0x80、有効な UTF8 であることが必須、IDN マッピング可能であることが必須 (つまり、RtlIdnToNameprepUnicode は合格です。RFC 3492 参照)
 - 名前は数字だけにすることができない
 - 名前にスペースを使用できない

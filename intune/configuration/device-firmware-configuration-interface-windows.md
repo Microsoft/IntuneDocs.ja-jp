@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,16 +15,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1f34e321476ea634030a5e602bc362d409eee8f5
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 2bfc49f772331113314e45bc49360b8435b88037
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785550"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889566"
 ---
-# <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune"></a>Microsoft Intune で Windows デバイスのデバイスのファームウェア構成インターフェイス プロファイルを使用する
+# <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Microsoft Intune で Windows デバイスに対してデバイスのファームウェア構成インターフェイス プロファイルを使う (パブリック プレビュー)
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
+> [!Note]
+> [毎月の更新](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)はそれぞれ、ロールアウトに数日かかる場合があります。 一部の機能は数週間にわたってロールアウトされる場合があり、すべてのお客様がすぐにご利用いただけるとは限りません。
 
 Intune を使用して Autopilot デバイスを管理するときは、デバイスのファームウェア構成インターフェイス (DFCI) を使用して、デバイスの登録後に UEFI (BIOS) の設定を管理できます。 利点、シナリオ、前提条件の概要については、「[DFCI の概要](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/)」を参照してください。
 
@@ -167,15 +170,9 @@ DFCI を使用するには、次のプロファイルを作成し、グループ
 
 ### <a name="recover"></a>復旧する
 
-デバイスをワイプし、UEFI (BIOS) メニューのロックを解除する前に Autopilot レコードを削除すると、メニューはロックされたままになります。 Intune では、プロファイルの更新を送信してロックを解除することはできません。 デバイスのロックは、次のいずれかで解除できます。
+デバイスをワイプし、UEFI (BIOS) メニューのロックを解除する前に Autopilot レコードを削除すると、メニューはロックされたままになります。 Intune では、プロファイルの更新を送信してロックを解除することはできません。
 
-- **オプション 1**:CSP または OEM ダイレクト デバイスのベンダーに、デバイスを Autopilot に再登録するよう依頼します。 Intune に再登録し、Autopilot および DFCI のプロファイルを再適用します。
-
-  その後、この記事の[デバイスのインベントリからの削除](#retire)に関する説明の手順に従って、UEFI メニューのロックを解除します。
-
-- **オプション 2**:UEFI (BIOS) メニューを開き、回復オプションを選択します。 デバイスが DFCI 管理に登録されていないことを確認し、メニューのロックを解除します。 回復オプションを使用すると、すべての UEFI (BIOS) の設定は最後の Intune DFCI プロファイルの値のままになります。
-
-  その後、この記事の[デバイスのインベントリからの削除](#retire)に関する説明の手順に従って、UEFI メニューのロックを解除します。
+デバイスのロックを解除するには、UEFI (BIOS) メニューを開き、ネットワークから管理を更新します。 復旧によってメニューのロックが解除されますが、UEFI (BIOS) 設定はすべて、前の Intune DFCI プロファイルの値に設定されたままになります。
 
 ## <a name="end-user-impact"></a>エンド ユーザーへの影響
 
