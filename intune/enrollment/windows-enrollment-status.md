@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a6b427552e545421e329b900833c889e67bf35
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d69bd040929da08d7d23db764c5b01f6aca6a9ea
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503029"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143180"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>登録ステータス ページを設定する
  
@@ -191,7 +191,6 @@ ms.locfileid: "72503029"
 - ESP プロファイルを無効にしてもデバイスから ESP ポリシーは削除されず、ユーザーが初めてデバイスにログインするときに ESP が引き続き使用されます。 ESP プロファイルを無効にしても、ポリシーは削除されません。 ESP を無効にするには、OMA-URI を展開する必要があります。 OMA-URI を使用して ESP を無効にする方法については、上記を参照してください。 
 - 再起動を保留すると、常にタイムアウトが発生します。 タイムアウトが発生するのは、デバイスを再起動する必要があるためです。 登録ステータス ページで追跡されている項目が完了するまでの時間を確保するため、再起動が必要です。 再起動すると登録ステータス ページは終了し、再起動後に、デバイスはアカウント セットアップ中にはなりません。  アプリケーションのインストールで再起動が必要ないようにすることを検討してください。 
 - デバイス セットアップの間に再起動すると、アカウント セットアップ フェーズに移行する前に、ユーザーは資格情報の入力を強制されます。 再起動時に、ユーザーの資格情報は保持されません。 ユーザーが資格情報を入力すると、登録ステータス ページは続行できます。 
-- Windows Hello for Business ポリシーを使用する SCEP 証明書では、ユーザーが SCEP 証明書のインストールを許可するための Hello PIN の構成を完了できないため、タイムアウトが発生します。  回避策はありません。 修正の ETA は 2019 年夏です。 
 - 1903 より前の Windows 10 バージョンでは、職場または学校アカウントの登録の追加の間に、登録ステータス ページが常にタイムアウトします。 登録ステータス ページは Azure AD の登録が完了するのを待機しています。 この問題は、Windows 10 バージョン 1903 以降で修正されています。  
 - ESP を使用する Hybrid Azure AD の Autopilot 展開には、ESP プロファイルで定義されているタイムアウト時間より長い時間がかかります。 Hybrid Azure AD の Autopilot 展開の ESP には、ESP プロファイルで設定された値より 40 分長くかかります。 この遅延により、オンプレミス AD コネクタは Azure AD に新しいデバイス レコードを作成できます。 
 - Autopilot のユーザー主導モードでは、Windows ログオン ページにユーザー名が事前設定されません。 ESP のデバイス セットアップ フェーズ中に再起動が行われた場合、次のようになります。

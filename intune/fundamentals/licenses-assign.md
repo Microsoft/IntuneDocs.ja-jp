@@ -16,24 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f09f4ba58e3da5821eea06fcfec6e55c9c007d44
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: dcdc2b69de52ea3bf23f4e3c5d11399b62bc8daa
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502705"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414086"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Intune にデバイスを登録できるようにライセンスをユーザーに割り当てる
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 ユーザーを手動で追加する場合も、オンプレミスの Active Directory から同期する場合も、まず各ユーザーに Intune のライセンスを割り当ててから、Intune にデバイスを登録する必要があります。 ライセンスのリストについては、「[Licenses that include Intune](../licenses.md)」 (Intune が含まれているライセンス) を参照してください。
 
 ## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで、Intune のライセンスを割り当てる
 
-[Microsoft 365 管理センター](http://go.microsoft.com/fwlink/p/?LinkId=698854)を使用して、手動でクラウドベースのユーザーを追加し、クラウドベースのユーザー アカウントと、オンプレミスの Active Directory から Azure AD に同期されているアカウントの両方にライセンスを割り当てることができます。
+[Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?LinkId=698854)を使用して、手動でクラウドベースのユーザーを追加し、クラウドベースのユーザー アカウントと、オンプレミスの Active Directory から Azure AD に同期されているアカウントの両方にライセンスを割り当てることができます。
 
-1. テナント管理者の資格情報を使用して [Microsoft 365 管理センター](http://go.microsoft.com/fwlink/p/?LinkId=698854)にサインインした後、 **[ユーザー]**  >  **[アクティブ ユーザー]** の順に選択します。
+1. テナント管理者の資格情報を使用して [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?LinkId=698854)にサインインした後、 **[ユーザー]**  >  **[アクティブ ユーザー]** の順に選択します。
 
 2. Intune ユーザー ライセンスを割り当てるユーザー アカウントを選択し、 **[製品ライセンス]**  >  **[編集]** の順に選択します。
 
@@ -51,6 +49,7 @@ ms.locfileid: "72502705"
 Azure Active Directory を使用してユーザーに Intune ライセンスを割り当てることもできます。 詳しくは、[Azure Active Directory でのユーザーへのライセンスの割り当て](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal)に関するページをご覧ください。 
 
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>School Data Sync を使って Intune for Education のユーザーにライセンスを割り当てる
+
 教育組織の場合、School Data Sync (SDS) を使用して Intune for Education のライセンスを同期されたユーザーに割り当てることができます。 SDS プロファイルを設定するときに、Intune for Education のチェック ボックスをオンにするだけです。  
 
 ![SDS プロファイル設定のスクリーンショット](./media/licenses-assign/i4e-sds-profile-setup-setting.png)
@@ -62,6 +61,7 @@ Intune for Education のライセンスを割り当てるときは、Intune A Di
 SDS について詳しくは、「[School Data Sync と Classroom の概要](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91)」をご覧ください。
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>ユーザー ライセンスとデバイス ライセンスがサービスへのアクセスに与える影響
+
 * ユーザー ソフトウェア ライセンスが割り当てられた各**ユーザー**は、オンライン サービスと関連するソフトウェア (System Center ソフトウェアを含む) にアクセスしてそれらを使用し、複数のアプリケーションと最大 15 台の MDM デバイスを管理できます。 Intune PC エージェントでは、ユーザー ライセンスごとに 5 台の物理コンピューターと 1 台の仮想マシンを使用できます。
 * ユーザー ライセンスとは別にあらゆるデバイス用のライセンスを購入できます。 デバイス ライセンスはデバイスに割り当てる必要はありません。 オンライン サービスと関連ソフトウェア (System Center ソフトウェアを含む) にアクセスして使用する各デバイスに、デバイス ライセンスが必要です。
 * デバイスが 2 人以上のユーザーによって使用される場合は、各デバイスにデバイス ソフトウェア ライセンス、またはすべてのユーザーにユーザー ソフトウェア ライセンスが必要です。
@@ -73,9 +73,6 @@ Intune の購入方法により、サブスクリプション情報が決まり�
 - Enterprise Agreement を通じて Intune を購入された場合は、ボリューム ライセンス ポータルの **[サブスクリプション]** で、ご自分のサブスクリプション情報を見つけることができます。
 - クラウド ソリューション プロバイダーを通じて Intune を購入された場合は、販売店に確認してください。
 - CC # または請求書で Intune を購入された場合、ライセンスはユーザー ベースになります。
-
-
-
 
 ## <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>PowerShell を使用して、EMS ユーザー ライセンスを選択的に管理する
 Microsoft Enterprise Mobility + Security (旧 Enterprise Mobility Suite) を使用している組織には、EMS パッケージの Azure Active Directory Premium または Intune サービスのみを必要とするユーザーがいる可能性があります。 [Azure Active Directory PowerShell コマンドレット](https://msdn.microsoft.com/library/jj151815.aspx)を使用して、いずれかのサービスまたはサービスのサブセットを割り当てることができます。
@@ -97,7 +94,6 @@ EMS サービスのユーザー ライセンスを選択的に割り当てるに
 
     $CustomEMS = New-MsolLicenseOptions -AccountSkuId "<TenantName>:EMS" -DisabledPlans INTUNE_A
     Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -AddLicenses <TenantName>:EMS -LicenseOptions $CustomEMS
-
 
 次のコマンドで確認します。
 

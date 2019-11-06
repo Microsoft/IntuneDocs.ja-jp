@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 807b33867d827415165eb65d81b91683830735f5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a1a3dcd7068a004f94b97b5ec6c43c609662a76d
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502860"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414571"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
  このトピックでは、アプリ保護ポリシーが適用されているアプリを使用するときのユーザー エクスペリエンスについて説明します。 アプリ保護ポリシーが適用されるのは、仕事でアプリが使用される場合に限られます。たとえば、職場のアカウントを使用してアプリにアクセスしたり、会社の OneDrive 事業拠点に格納されたファイルにアクセスしたりする場合です。
 
@@ -35,7 +33,6 @@ ms.locfileid: "72502860"
 デバイスが**Intune に登録されていない**場合、ユーザーはアプリを初めて使用すると、アプリの再起動を求められます。 再起動すると、アプリ保護ポリシーをアプリに適用することができます。
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
-
 
 <!---  ![Screenshot of the iOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
 
@@ -56,8 +53,9 @@ ms.locfileid: "72502860"
 複数 ID のアプリケーションでは、ユーザーが複数のアカウントを追加できます。  Intune APP は、1 つの管理アカウントのみをサポートします。  Intune APP では、管理されていないアカウントの数が制限されていません。
 
 1 つのアプリケーションに 1 つの管理アカウントが存在する場合:
-* ユーザーが 2 つ目の管理アカウントを追加しようとすると、使用する管理アカウントの選択を求められます。  その他のアカウントは削除されます。
-* IT 管理者が 2 つ目の既存のアカウントにポリシーを追加すると、ユーザーは使用する管理アカウントの選択を求められます。  その他のアカウントは削除されます。
+
+- ユーザーが 2 つ目の管理アカウントを追加しようとすると、使用する管理アカウントの選択を求められます。  その他のアカウントは削除されます。
+- IT 管理者が 2 つ目の既存のアカウントにポリシーを追加すると、ユーザーは使用する管理アカウントの選択を求められます。  その他のアカウントは削除されます。
 
 次のサンプル シナリオを読んで、複数のユーザー アカウントがどのように処理されるかを深く理解してください。
 
@@ -68,4 +66,5 @@ ms.locfileid: "72502860"
 iOS デバイスを使用している場合は、そのデバイスに 2 つ目の作業アカウントを追加しようとすると、ブロック メッセージが表示されることがあります。 アカウントが表示され、削除するアカウントを選択できるようになります。
 
 ## <a name="next-steps"></a>次の手順
+
 [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](end-user-mam-apps-android.md)

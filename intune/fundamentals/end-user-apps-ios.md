@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc298691ea3df923d1804005be61217325f52112
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 06cc977ce8b0b892e1020436f89ada4a40bac3f2
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510272"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413995"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>iOS ユーザーがアプリを入手する方法
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Microsoft Intune を通して配布したアプリをエンド ユーザーがどこでどのように取得するかについて説明します。
 
@@ -48,12 +46,12 @@ Apple の制限により、基幹業務アプリおよび管理対象アプリ �
 
 - **[カテゴリ]** 。ポータル Web サイトの [カテゴリ] タブをポイントします。
 
-
 ![iOS ポータル サイト アプリの画面](./media/end-user-apps-ios/ios-cp-app-main-apps-screen.png)
 
 アプリを追加する方法の詳細については、「[アプリを Microsoft Intune に追加する方法](../apps/apps-add.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
+
 [Android ユーザーがアプリを入手する方法](end-user-apps-android.md)
 
 [Windows ユーザーがアプリを入手する方法](end-user-apps-windows.md)

@@ -18,20 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a3ecf2872832af6199620863a05b4275731db5c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0507d607bfac6c084f1ce0b1f59d7474810ec8b7
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505232"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415111"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune のネットワーク構成の要件と帯域幅
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 この情報を使用して、Intune 展開の帯域幅の要件を把握できます。
 
 ## <a name="average-network-traffic"></a>ネットワーク トラフィックの平均
+
 次の表は、各クライアントのネットワークで通信される一般的なコンテンツの概算のサイズと頻度を一覧にしたものです。
 
 > [!NOTE]
@@ -53,9 +52,11 @@ ms.locfileid: "72505232"
 |ソフトウェアの配布|不定<br /><br />サイズは、展開するソフトウェアによって異なります。|**随時**<br /><br />ソフトウェアを展開する時間に依存します。|
 
 ## <a name="ways-to-reduce-network-bandwidth-use"></a>ネットワーク帯域幅の使用量を削減する方法
+
 次の方法を使用して、Intune クライアントのネットワーク帯域幅の使用量を削減できます。
 
 ### <a name="use-a-proxy-server-to-cache-content-requests"></a>コンテンツ要求のキャッシュにプロキシ サーバーを使用する
+
 プロキシ サーバーは、重複するダウンロードを削減し、インターネットのコンテンツで使用されるネットワーク帯域幅を減らすために、コンテンツをキャッシュできます。
 
 クライアントからコンテンツ要求を受信するキャッシュ機能付きプロキシ サーバーは、そのコンテンツを取得し、Web 応答とダウンロードの両方をキャッシュできます。 サーバーは、キャッシュされたデータを使用して、クライアントからの後続の要求に応答します。
@@ -74,6 +75,7 @@ Intune クライアント用にコンテンツをキャッシュするプロキ�
 コンテンツをキャッシュするプロキシ サーバーの仕様に関する詳細については、使用するプロキシ サーバー ソリューションのドキュメントを参照してください。
 
 ### <a name="use-background-intelligent-transfer-service-bits-on-computers"></a>コンピューターでバックグラウンド インテリジェント転送サービス (BITS) を使用する
+
 構成する時間中は、Windows コンピューター上で BITS を使用して、ネットワーク帯域幅を減らすことができます。 BITS のポリシーは、Intune エージェント ポリシーの **[ネットワーク帯域幅]** ページで構成できます。
 
 > [!NOTE]
@@ -82,14 +84,15 @@ Intune クライアント用にコンテンツをキャッシュするプロキ�
 BITS と Windows コンピューターの詳細については、TechNet ライブラリの「[バックグラウンド インテリジェント転送サービス](https://technet.microsoft.com/library/bb968799.aspx)」を参照してください。
 
 ### <a name="delivery-optimization"></a>配信の最適化
+
 配信の最適化では、Intune を使用して、Windows 10 デバイスでアプリケーションおよび更新プログラムをダウンロードするときに消費される帯域幅を削減することができます。 自己整理型の分散キャッシュを使用すると、従来のサーバーや代替ソース (ネットワーク ピアなど) からダウンロードをプルできます。
 
 配信の最適化によってサポートされる Windows 10 のバージョンとコンテンツの種類の完全な一覧については、「[Windows 10 更新プログラムの配信の最適化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#requirements)」をご覧ください。
 
 デバイスの構成プロファイルの一部として、[配信の最適化を設定する](../configuration/delivery-optimization-settings.md)ことができます。
 
-
 ### <a name="use-branchcache-on-computers"></a>コンピューターで BranchCache を使用する
+
 Intune クライアントは、BranchCache を使用してワイド エリア ネットワーク (WAN) トラフィックを削減できます。 次のオペレーティング システムでは、BranchCache をサポートします。
 
 - Windows 7

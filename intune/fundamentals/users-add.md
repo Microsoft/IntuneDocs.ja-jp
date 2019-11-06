@@ -18,23 +18,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90066bf55f50819ba77babee1e1d4230bdead613
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b5b469c759ac34a6d8de09163534a580346e48a1
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504871"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415022"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Intune にユーザーを追加して管理アクセス許可を付与する
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 管理者は、ユーザーを直接追加することも、オンプレミスの Active Directory からユーザーを同期することもできます。 追加されたユーザーは、デバイスを登録し、会社のリソースにアクセスできます。 また、*グローバル管理者*や*サービス管理者*など、追加のアクセス許可をユーザーに与えることができます。
 
 ## <a name="add-users-to-intune"></a>Intune にユーザーを追加する
+
 [Microsoft 365 管理センター](https://admin.microsoft.com) または [Azure portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) を使って、Intune サブスクリプションにユーザーを手動で追加することができます。 管理者はユーザー アカウントを編集し、Intune ライセンスを割り当てることができます。 Microsoft 365 管理センターまたは Intune Azure portal でライセンスを割り当てることができます。 Microsoft 365 管理センターの使い方について詳しくは、[Microsoft 365 管理センターにユーザーを個別または一括して追加する](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)方法に関するページをご覧ください。
 
 ### <a name="add-intune-users-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで Intune ユーザーを追加する
+
 1. グローバル管理者またはユーザー管理の管理者アカウントで、[Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
 2. Office 365 メニューで、 **[管理者]** を選択します。
 3. 管理センターで、 **[ユーザーの追加]** を選択します。
@@ -56,6 +56,7 @@ ms.locfileid: "72504871"
 6. **[追加]** を選択して新しいユーザーを作成します。
 
 ### <a name="add-intune-users-in-the-azure-portal"></a>Azure Portal で Intune ユーザーを追加する
+
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 2. **[ユーザー]**  >  **[すべてのユーザー]** の順に選択します。
 3. 管理センターで、 **[新しいユーザー]** を選びます。
@@ -78,6 +79,7 @@ ms.locfileid: "72504871"
 Intune サブスクリプションにユーザーを追加した後で、ごく一部のユーザーに管理者アクセス許可を付与することをお勧めします。  管理者アクセス許可を付与するには、次の手順のようにします。
 
 ### <a name="give-admin-permissions-in-office-365"></a>Office 365 の管理者アクセス許可を付与する
+
 1. グローバル管理者アカウントで [Microsoft 365 管理センター](https://admin.microsoft.com) にサインインします。
 2. Office 365 メニューで、 **[管理者]** を選択します。
 3. 管理センターで、 **[アクティブなユーザー]** を選び、管理者アクセス許可を付与するユーザーを選びます。
@@ -91,6 +93,7 @@ Intune サブスクリプションにユーザーを追加した後で、ごく�
 6. **[保存]** を選びます。
 
 ### <a name="give-admin-permissions-in-the-azure-portal"></a>Azure Portal で管理者アクセス許可を付与する
+
 1. グローバル管理者アカウントで [Azure Portal](https://portal.azure.com) にサインインします。
 2. Azure Portal で **[ユーザー]** を選び、管理者アクセス許可を付与するユーザーを選びます。
 3. **[ディレクトリ ロール]** を選び、アクセス許可を選びます。
@@ -113,9 +116,11 @@ Microsoft Intune サブスクリプションの作成に使うアカウントは
 Microsoft 365 管理センターにアクセスするには、アカウントに**サインインが許可されている**必要があります。 Azure Portal の **[プロファイル]** で、 **[サインインのブロック]** を **[いいえ]** に設定し、アクセスを許可します。 これは、サブスクリプションのライセンスを与えられていることとは別です。 既定では、すべてのユーザー アカウントは、"**許可済み**" の状態です。 管理者権限を持たないユーザーは、Microsoft 365 管理センターを使って、Intune パスワードをリセットすることができます。
 
 ## <a name="sync-active-directory-and-add-users-to-intune"></a>Active Directory を同期化して Intune にユーザーを追加する
+
 ディレクトリの同期化によって、オンプレミスの Active Directory から Intune ユーザーを含む Microsoft Azure Active Directory (Azure AD) に、ユーザー アカウントをインポートできます。 オンプレミスの Active Directory サービスが Azure Active Directory ベースの全サービスに反映され、ユーザー ID の管理が大幅に単純化されます。 また、シングル サインオン機能を構成することによってユーザー認証の利便性を高めることもできます。 同じ [Azure AD テナント](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)を複数のサービスとリンクすることにより、前に同期したユーザー アカウントをすべてのクラウド ベース サービスで使用できるようになります。
 
 ### <a name="how-to-sync-on-premises-users-with-azure-ad"></a>オンプレミスのユーザーを Azure AD と同期する方法
+
 ユーザー アカウントを Azure AD と同期するために必要なツールは、[Azure AD Connect ウィザード](https://www.microsoft.com/download/details.aspx?id=47594)のみです。 Azure AD Connect ウィザードでは、簡単な画面の指示に従って、オンプレミスの ID インフラストラクチャをクラウドに接続できます。 トポロジと要件 (単一ディレクトリまたは複数ディレクトリ、パスワード ハッシュ同期、パススルー認証、またはフェデレーション) を選択します。 ウィザードにより、接続を稼働させるために必要なすべてのコンポーネントがデプロイされて構成されます。 接続した機能が稼働するために必要なすべてのコンポーネントが自動的に展開されて構成されます。
 
 > [!TIP]

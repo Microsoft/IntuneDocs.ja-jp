@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bd9fe52bcaa6295d452ade59d6c3c32e1e81a67
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: 2b58cbd0aa07babd36c7a7e5aa3dcc5b8d32d58a
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999681"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415060"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune でサポートされるオペレーティング システムとブラウザー
 
@@ -37,14 +37,14 @@ Microsoft Intune をセットアップする前に、サポートされている
 
 以下のオペレーティング システムを実行しているデバイスを管理できます。
 
-[!INCLUDE [mdm-supported-devices](../../intune-classic/includes/mdm-supported-devices.md)]
+[!INCLUDE [mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ### <a name="supported-samsung-knox-standard-devices"></a>Samsung KNOX Standard デバイスのサポート
 
 ポータル サイト アプリは、[サポートされている KNOX デバイスの一覧](https://www.samsungknox.com/knox-supported-devices/knox-workspace)に掲載されている登録対象のデバイスでのみ、MDM の登録を阻止する Knox のライセンス認証エラーを回避するために MDM 登録時に、Samsung KNOX ライセンス認証を試みます。 Samsung KNOX ライセンス認証をサポートしていないデバイスは、標準の Android デバイスとして登録されます。 Samsung デバイスには、KNOX をサポートするモデル番号を持つものがある一方で、そうでないものもあります。 Samsung デバイスを購入および展開する前に、デバイスの再販業者に KNOX 対応の有無について確認してください。
 
 > [!NOTE]
-> Samsung KNOX デバイスの登録では、[Samsung サーバーへのアクセスを有効にする](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers)必要がある場合があります。 
+> Samsung KNOX デバイスの登録では、[Samsung サーバーへのアクセスを有効にする](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers)必要がある場合があります。
 
 以下の Samsung デバイス モデル一覧では、Knox をサポートしていません。 これらは、Android 用のポータル サイト アプリにより、ネイティブの Android デバイスとして登録されています。
 
@@ -85,18 +85,17 @@ Microsoft Intune をセットアップする前に、サポートされている
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-
 ### <a name="windows-pc-software-client"></a>Windows PC ソフトウェア クライアント
 
-代替登録方法として、[Intune ソフトウェア クライアント](../manage-windows-pcs-with-microsoft-intune.md)を Windows PC に展開し、インストールできます。 この機能は、Intune クラシック ポータルを使用する場合のみ利用可能です。 Intune ソフトウェア クライアントを利用し、Windows 10 Home エディションを除く、Windows 7 以降の PC を管理できます。
+代替登録方法として、[Intune ソフトウェア クライアント](manage-windows-pcs-with-microsoft-intune.md)を Windows PC に展開し、インストールできます。 この機能は、Intune クラシック ポータルを使用する場合のみ利用可能です。 Intune ソフトウェア クライアントを利用し、Windows 10 Home エディションを除く、Windows 7 以降の PC を管理できます。
 
 > [!Note]
 > Microsoft により、2020 年 1 月 14 日に Windows 7 のサポートが終了することが発表されました。 この日に、Intune でも Windows 7 を実行しているデバイスに対するサポートが廃止されます。
-
-> 詳細については、「[Intune の変更の計画: Windows 7 のサポート終了間近](https://docs.microsoft.com/en-us/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)」をご覧ください
-
+>
+> 詳細については、「[Intune の変更の計画: Windows 7 のサポート終了間近](https://docs.microsoft.com/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)」をご覧ください
+>
 > Microsoft Intune での Silverlight ベースの Intune コンソールのサポートは、2020 年 10 月 15 日に廃止されます。 この廃止には、Silverlight コンソールで構成された PC ソフトウェア クライアント (PC エージェントとも呼ばれます) のサポート終了も含まれています
-
+>
 > 詳細については、[Microsoft Intune での Silverlight ベースの管理コンソールのサポート終了](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249)に関するページをご覧ください
 
 <!--  ### Exchange ActiveSync management
@@ -107,24 +106,23 @@ You can manage [Exchange ActiveSync devices](../enrollment/device-enrollment.md#
 
 さまざまな管理タスクで、次の管理 Web サイトのいずれかを使用する必要があります。
 
-- [Microsoft 365 管理センター](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Azure Portal](https://portal.azure.com/)
 
 Intune ポータルでは、次のブラウザーがサポートされています。
+
 - Microsoft Edge (最新バージョン)
 - Microsoft Internet Explorer 11
 - Safari (最新バージョン、Mac のみ)
 - Chrome (最新バージョン)
 - Firefox (最新バージョン)
 
-
-
-
 ### <a name="intune-classic-portal"></a>Intune クラシック ポータル
 
 Intune クラシック ポータルは、Intune PC ソフトウェア クライアントで登録されたデバイスの管理にのみ使用されます (https://manage.microsoft.com) 。 Intune クラシック ポータルには、Silverlight のブラウザー サポートが必要です。
 
 次の Silverlight ブラウザーは、Intune コンソールをサポートしています。
+
 - Internet Explorer 10 以降
 - Google Chrome (バージョン 42 より前のバージョン)
 - Silverlight が有効な Mozilla Firefox (バージョン 56 より前のバージョン)

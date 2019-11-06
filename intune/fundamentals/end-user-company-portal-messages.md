@@ -17,16 +17,14 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a9fb3e006489603a04039e0810684a6fef152dd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 57467d3d073666c1c22ac0a412f68a258d5b3d75
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510287"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414067"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>ポータル サイト アプリで表示されるメッセージに関してエンド ユーザーをサポートする
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 > [!NOTE]
 > 次の情報は、Android 6.0 以降および iOS 10 以降のデバイスにのみ適用されます。
@@ -42,9 +40,11 @@ ms.locfileid: "72510287"
 ## <a name="allow-company-portal-to-make-and-manage-phone-calls"></a>電話での通話とその管理をポータル サイトに許可しますか?
 
 ### <a name="where-it-appears"></a>表示内容
+
 ユーザーがデバイスを登録するときにポータル サイト アプリで **[登録]** をタップすると、 **[電話での通話とその管理をポータル サイトに許可しますか?]** のメッセージが表示されます。
 
 ### <a name="what-it-means"></a>意味
+
 ユーザーがこの同意すると、デバイスの電話番号と IMEI 番号が Intune サービスに送信されるようになります。 これらは管理コンソールの __[ハードウェア]__ ページに表示されます。
 
 > [!NOTE]
@@ -53,6 +53,7 @@ ms.locfileid: "72510287"
 **[ハードウェア]** ページを参照するには、 **[グループ]**  >  **[すべてのモバイル デバイス]**  >  **[デバイス]** に移動します。 ユーザーのデバイスを選択し、 **[プロパティの表示]**  >  **[ハードウェア]** に移動します。
 
 ### <a name="what-happens-if-users-deny-access"></a>ユーザーがアクセスを拒否した場合の動作
+
 ユーザーはアクセスを拒否した場合でも、引き続きポータル サイト アプリを使用してデバイスを登録できます。 ただし、管理コンソールの __[ハードウェア]__ ページでデバイスの電話番号と IMEI 番号が空白になります。 アクセスを拒否したあとで、ユーザーがポータル サイト アプリに 2 回目にサインインしたときに、メッセージに **[今後このメッセージを表示しない]** チェック ボックスが表示されます。これを選択すると、プロンプトが表示されなくなります。
 
 ユーザーがアクセスを許可し、その後アクセスを拒否した場合は、登録後、次回ユーザーがポータル サイト アプリにサインインしたときに、メッセージが表示されます。
@@ -60,20 +61,24 @@ ms.locfileid: "72510287"
 後でアクセスを許可する場合は、 **[設定]**  >  **[アプリ]**  >  **[ポータル サイト]**  >  **[アクセス許可]**  >  **[電話]** の順に移動して、アクセス許可を有効にします。
 
 ### <a name="how-to-explain-this-to-your-users"></a>ユーザーへの説明方法
+
 ユーザーは、「[Intune に Android デバイスを登録する](/intune-user-help/enroll-device-android-company-portal)」で詳細を参照できます。
 
 ## <a name="allow-company-portal-to-access-your-contacts"></a>ポータル サイトに連絡先へのアクセスを許可しますか?
 
 ### <a name="where-it-appears"></a>表示内容
+
 ユーザーがデバイスを登録するときに、ポータル サイト アプリで **[登録]** をタップすると、 **[連絡先へのアクセスをポータル サイトに許可しますか?]** のメッセージが表示されます。
 
 ### <a name="what-it-means"></a>意味
+
 ユーザーが同意すると、Intune が職場アカウントを作成し、そのデバイスでユーザーに登録されている Azure Active Directory ID を管理できるようになります。
 
 > [!NOTE]
 > **Microsoft が連絡先にアクセスすることはありません。** このメッセージ テキストは Google によって制御されているので、変更することはできません。
 
 ### <a name="what-happens-if-users-deny-access"></a>ユーザーがアクセスを拒否した場合の動作
+
 ユーザーがアクセスを拒否すると、デバイスは Intune に登録されず、管理できません。 アクセスを拒否したあとで、ユーザーがポータル サイト アプリに 2 回目にサインインしたときに、メッセージに **[今後このメッセージを表示しない]** チェック ボックスが表示されます。これを選択すると、プロンプトが表示されなくなります。
 
 ユーザーがアクセスを許可し、その後アクセスを拒否した場合は、登録後、次回ユーザーがポータル サイト アプリにサインインしたときに、メッセージが表示されます。
@@ -81,31 +86,37 @@ ms.locfileid: "72510287"
 後でアクセスを許可する場合は、 **[設定]**  >  **[アプリ]**  >  **[ポータル サイト]**  >  **[アクセス許可]**  >  **[電話]** の順に移動して、アクセス許可を有効にします。
 
 ### <a name="how-to-explain-this-to-your-users"></a>ユーザーへの説明方法
+
 ユーザーは、「[Intune に Android デバイスを登録する](/intune-user-help/enroll-device-android-company-portal)」で詳細を参照できます。  
 
 ## <a name="allow-company-portal-to-access-photos-media-and-files-on-your-device"></a>デバイス上の写真、メディア、およびファイルへのアクセスをポータル サイトに許可しますか?
 
 ### <a name="where-it-appears"></a>表示内容
+
 ユーザーがログを IT 管理者に送信するときに、 **[データを送信]** をタップすると、 **[デバイス上の写真、メディア、およびファイルへのアクセスをポータル サイトに許可しますか?]** のメッセージが表示されます。
 
 ### <a name="what-it-means"></a>意味
+
 これに同意すると、データ ログがユーザーのデバイスの SD カードに書き込まれます。 また、それらのログを USB ケーブルを使用して移動することを許可します。   
 
 > [!NOTE]
 > **ポータル サイト アプリはユーザーの写真、メディア、およびファイルにアクセスしません。** このメッセージ テキストは Google によって制御されているので、変更することはできません。
 
 ### <a name="what-happens-if-users-deny-access"></a>ユーザーがアクセスを拒否した場合の動作
+
 ユーザーがアクセスを拒否した場合、ユーザーは引き続きデータ ログを電子メールで送信できますが、ログはデバイスの SD カードにコピーされません。
 
 アクセスを拒否すると、ユーザーがポータル サイト アプリに 2 回目にサインインしたときに、メッセージに **[今後このメッセージを表示しない]** チェック ボックスが表示されます。ユーザーはこれを選ぶことによって、メッセージが再び表示されないようにできます。 ユーザーがアクセスを許可し、その後アクセスを拒否した場合は、次回ユーザーがログを送信しようとすると、メッセージが表示されます。 ただし、後でアクセスを許可する場合は、 **[設定]**  >  **[アプリ]**  >  **[ポータル サイト]**  >  **[アクセス許可]**  >  **[ストレージ]** に移動して、アクセス許可を有効にします。
 
 
 ### <a name="how-to-explain-this-to-your-users"></a>ユーザーへの説明方法
+
 ユーザーは、[IT 管理者への電子メールによるログの送信](/intune-user-help/send-logs-to-your-it-admin-by-email-android)に関する記事を参照できます。 
 
 ## <a name="your-company-support-needs-to-give-you-access-to-company-resources"></a>会社のサポートが会社のリソースへのアクセス権を与える必要がある
 
 ### <a name="where-it-appears"></a>表示内容
+
 ポータル サイト アプリを **[許可されたアプリ]** または **[適用から除外されるアプリ]** の一覧に追加していない場合にユーザーがサインインしようとすると、サインインが失敗します。 次のメッセージが表示されます。
 
 > **Your company support needs to give you access to company resources\(会社のサポートから会社のリソースへのアクセス権を付与してもらう必要があります\)**  
@@ -118,11 +129,13 @@ ms.locfileid: "72510287"
 ## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>iOS デバイスで iOS 業務用アプリ (基幹業務アプリ) を承認する 
 
 ### <a name="where-it-appears"></a>表示内容
+
 App Store で使用できない組織によって開発された iOS アプリは、既定でデバイスによって信頼されません。 Intune ポータル サイトを使用してこのようなアプリをインストールし、アプリを起動すると、次のメッセージが表示されます。
 
 ![iOS アプリ メッセージ - 信頼されていないエンタープライズ開発元](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
 
 ### <a name="what-it-means"></a>意味
+
 このメッセージは、iOS デバイスで会社によって開発されたアプリを承認し、インストールするために iOS デバイスの設定を変更する必要があることを意味します。
 
 Intune ポータル サイトを使用してこのようなアプリをインストールし、アプリを起動したら、以下の手順に従って、ダウンロード後にアプリを承認します。
