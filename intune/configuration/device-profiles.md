@@ -131,7 +131,7 @@ Microsoft Intune には、組織内のさまざまなデバイスで有効また
 
 [教育設定 - iOS](../fundamentals/education-settings-configure-ios-shared.md) では、iOS Classroom アプリを使用し、教室で学習を指導し、生徒のデバイスを操作します。 多数の学生が 1 台のデバイスを共有できるように iPad デバイスを構成できます。
 
-## <a name="email"></a>Email
+## <a name="email"></a>電子メール
 
 [電子メールの設定](email-settings-configure.md)では、デバイス上の Exchange ActiveSync 電子メール設定の作成、割り当て、監視を行います。 電子メール プロファイルにより、一貫性の確保とサポート負荷の軽減が可能になり、エンド ユーザーは自分では何の設定もせずに個人デバイスで会社の電子メールにアクセスできるようになります。 
 
@@ -153,7 +153,7 @@ Microsoft Defender Advanced Threat Protection (WDATP) と Microsoft Intune を�
 
 - Windows 10 以降
 
-## <a name="esim-cellular---public-preview"></a>eSIM 携帯電話 - パブリック プレビュー
+## <a name="esim-cellular---public-preview"></a>eSIM 携帯ネットワーク - パブリック プレビュー
 
 管理者は [eSIM 携帯電話プロファイル](esim-device-configuration.md)を使用して、インターネットおよびデータ アクセスに関する、マネージド デバイスの携帯データ通信プランを構成できます。 携帯電話会社からアクティブ化コードを取得した後、Intune を使用して、このアクティブ化コードをインポートし、eSIM 対応デバイスに割り当てます。
 
