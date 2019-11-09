@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb992747765ea087d5ef536c2da7c444bfa2d987
-ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
+ms.openlocfilehash: e8747f3dfa9169a4f1f2de9dcf45db0f5cccadd1
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915728"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756763"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Microsoft Intune の OEMConfig で Android エンタープライズデバイスを使用および管理する
 
@@ -80,8 +80,8 @@ OEMConfig を使用する場合は、次の情報に注意してください。
 
 ## <a name="create-an-oemconfig-profile"></a>OEMConfig プロファイルを作成する
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]**  >  **[構成プロファイル]**  >  **[プロファイルの作成]** を選択します。
 3. 次のプロパティを入力します。
 
     - **名前**: 新しいプロファイルのわかりやすい名前を入力します。
@@ -108,11 +108,11 @@ OEMConfig を使用する場合は、次の情報に注意してください。
       - 多くの設定には、OEM によって提供される既定値があります。 既定値があるかどうかを確認するには、設定の横にある情報アイコンをポイントします。 ツールヒントには、その設定の既定値 (該当する場合) と、OEM によって提供される詳細情報が表示されます。
 
       - **[クリア]** をクリックすると、プロファイルから設定が削除されます。 プロファイルに設定がない場合、プロファイルが適用されても、デバイスの値は変わりません。
-        
+
       - 構成デザイナーで空の (未構成の) バンドルを作成した場合は、JSON エディターに切り替えると削除されます。
 
     - **Json エディター**: このオプションを選択すると、アプリに埋め込まれた完全な構成スキーマのテンプレートが json エディターで開きます。 エディターで、さまざまな設定の値を使用してテンプレートをカスタマイズします。 **構成デザイナー**を使用して値を変更すると、JSON エディターによってテンプレートが上書きされ、構成デザイナーの値が使用されます。
-    
+
       - 既存のプロファイルを更新している場合、JSON エディターには、プロファイルと共に最後に保存された設定が表示されます。
 
       - OEMConfig スキーマは、大規模で複雑な場合があります。 別のエディターを使用してこれらの設定を更新する場合は、 **[JSON テンプレートのダウンロード]** ボタンを選択します。 任意のエディターを使用して、構成値をテンプレートに追加します。 次に、更新された JSON をコピーして、 **json エディター**プロパティに貼り付けます。

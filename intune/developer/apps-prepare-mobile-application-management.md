@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba1ec201cdb7e44570b53ce831b4e5ae26504973
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: dbddb0fcecfd5a0b021346a3a20b3c7e4f696a49
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413825"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635331"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>アプリ保護ポリシーを利用するために基幹業務アプリで準備を行う
 
@@ -110,7 +110,7 @@ Intune SDK の開発チームは、ネイティブの Android、iOS (Obj-C、Swi
 |アプリ データのフル ワイプ|○|○|
 |複数 ID のシナリオにおける職場および学校のデータの選択的ワイプ <br><br>**注:** iOS では、管理プロファイルを削除するとアプリも削除されます。|○||
 |[[名前を付けて保存] を禁止する]|○||
-|対象のアプリケーション構成 (または "MAM チャネル" を介したアプリ構成)|○|○|
+|対象のアプリケーション構成 (または "MAM チャネル" を介したアプリ構成)|○||
 |[マルチ ID アプリのサポート]|○||
 |カスタマイズ可能なスタイル |○|||
 |Citrix mVPN でのオンデマンドのアプリケーション VPN 接続|○|○| 

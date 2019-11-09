@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 164c34f4a46ca11e2788b72dee70bdd40c25e7f3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 288ff693e7e46b7953cffad3d0a54b8621141373
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493901"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755260"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように Windows 10 (以降) のデバイスを設定する
 
@@ -223,12 +223,12 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 
 - **[アクション センターの通知 (モバイルのみ)]** : **[ブロック]** にすると、デバイスのロック画面にアクション センターの通知が表示されなくなります。 **[未構成]** (既定値) にすると、ユーザーがロック画面に通知を表示するアプリを選択することが許可されます。
 
-  [AboveLock/AllowActionCenterNotifications CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowactioncenternotifications)
+  [AboveLock/AllowActionCenterNotifications CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#AboveLock_AllowActionCenterNotifications)
 
 - **[ロック画面の画像の URL (デスクトップのみ)]** : Windows のロック画面の壁紙として使用される、JPG、JPEG、または PNG 形式の画像への URL を入力します。 たとえば、「`https://contoso.com/image.png`」と入力します。 この設定によって画像が固定され、後で変更することはできません。
 - **[ユーザーが構成可能なスクリーン タイムアウト (モバイルのみ)]** : **[許可]** にすると、ユーザーが画面のタイムアウトを構成できます。 **[未構成]** (既定値) にすると、ユーザーにこのオプションは提供されません。
 
-  [DeviceLock/AllowScreenTimeoutWhileLockedUserConfig CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-allowscreentimeoutwhilelockeduserconfig)
+  [DeviceLock/AllowScreenTimeoutWhileLockedUserConfig CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_AllowScreenTimeoutWhileLockedUserConfig)
 
 - **[ロック画面での Cortana (デスクトップのみ)]** : **[ブロック]** にすると、デバイスがロック画面になっているとき、ユーザーは Cortana と対話できなくなります。 **[未構成]** (既定値) にすると、Cortana との対話が許可されます。
 
@@ -240,7 +240,7 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 
 - **[スクリーン タイムアウト (モバイルのみ)]** : 画面がロックされてから画面がオフになるまでの期間を (秒単位で) 設定します。 サポートされる値は 11 から 1800 です。 たとえば、このタイムアウトを 5 分に設定するには、`300` と入力します。
 
-  [DeviceLock/ScreenTimeoutWhileLocked CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-screentimeoutwhilelocked)
+  [DeviceLock/ScreenTimeoutWhileLocked CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_ScreenTimeoutWhileLocked)
 
 ## <a name="messaging"></a>メッセージング
 

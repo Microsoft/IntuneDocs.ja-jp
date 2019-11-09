@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 11/05/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e2e7dc729879eb6d16a4ab3555d8fe319501a53e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 687505a3ca2bbdffd26e8870705971aafb4783d2
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492126"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754961"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Intune でのポリシーとプロファイルのトラブルシューティング
 
@@ -32,11 +32,12 @@ Microsoft Intune には、トラブルシューティング機能がいくつか
 この記事では、一般的なトラブルシューティング手法の一覧を示し、発生する可能性があるいくつかの問題について説明します。
 
 ## <a name="check-tenant-status"></a>テナントの状態の確認
+
 テナントの[状態](../fundamentals/tenant-status.md)を確認し、サブスクリプションがアクティブであることを確認します。 また、ポリシーまたはプロファイルの展開に影響する可能性があるアクティブなインシデントとアドバイザリの詳細を表示することもできます。
 
 ## <a name="use-built-in-troubleshooting"></a>組み込みのトラブルシューティングを使用する
 
-1. [[Intune]](https://go.microsoft.com/fwlink/?linkid=2090973) で **[トラブルシューティング]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[トラブルシューティング + サポート]** を選択します。
 
     ![Intune で、[ヘルプとサポート] に移動し、[トラブルシューティング] を選択する](./media/troubleshoot-policies-in-microsoft-intune/help-and-support-troubleshoot.png)
 
@@ -102,7 +103,7 @@ Microsoft Intune には、トラブルシューティング機能がいくつか
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>プロファイルが正しく適用されているかどうかわからない
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 2. **[デバイス]**  >  **[すべてのデバイス]** を選択し、デバイスを選択して、 **[デバイスの構成]** を選択します。 
 
     すべてのデバイスで、プロファイルが一覧表示されます。 各プロファイルには **[状態]** があります。 ハードウェアと OS の制限と要件を含む、すべての割り当てられたプロファイルがまとめて考慮されると、状態が適用されます。 可能性のある状態は次のとおりです。
