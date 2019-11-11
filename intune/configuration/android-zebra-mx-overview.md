@@ -5,24 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: jieyan
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e5804b415d26b07944c500b0158cf84a2d4412c
-ms.sourcegitcommit: d1b36501186e867355843ddd67c795ade800b76a
-ms.translationtype: HT
+ms.openlocfilehash: 7f343ace48c917e65d9d59cd7c42c53e9b892968
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73182866"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756718"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Microsoft Intune で Zebra モビリティ拡張機能を備えた Zebra デバイスを使用および管理する
 
@@ -52,7 +52,6 @@ Intune を使用すると、Zebra デバイスを登録して、ご利用の基�
 - Zebra Technologies 社から提供されている最新バージョンの StageNow デスクトップ アプリを必ずご用意ください。
 - [Zebra の完全な MX 機能マトリックス](http://techdocs.zebra.com/mx/compatibility) (Zebra の Web サイトが開かれる) を調べて、作成するプロファイルがデバイスの MX バージョン、OS バージョン、およびモデルと互換性があることを必ず確認してください。
 - TC20/25 デバイスなどの特定のデバイスでは、StageNow で提供されている MX 機能がすべてサポートされているわけではありません。 [Zebra の機能マトリックス](http://techdocs.zebra.com/mx/tc2x/) (Zebra の Web サイトが開きます) を調べて、最新のサポート情報を必ず確認してください。
-
 
 ## <a name="step-1-install-the-latest-company-portal-app"></a>ステップ 1: 最新のポータル サイト アプリをインストールする
 
@@ -134,8 +133,8 @@ StageNow でプロファイルを作成するときの最後の手順で、 **[E
 
 Intune で、デバイス構成プロファイルを作成します。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]**  >  **[構成プロファイル]**  >  **[プロファイルの作成]** を選択します。
 3. 次のプロパティを入力します。
 
     - **名前**: 新しいプロファイルのわかりやすい名前を入力します。

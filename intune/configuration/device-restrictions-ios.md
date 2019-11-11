@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6dbe26dba4e78e9f5f29a5adedffa3de1df662a6
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
-ms.translationtype: HT
+ms.openlocfilehash: 488794fdce8f6ebb074648c8e399cb2aecc73b25
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73414691"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709741"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用した機能を許可または制限するための iOS および iPadOS デバイスの設定
 
@@ -417,6 +417,9 @@ IOS 9.3 以降を実行しているデバイスに適用されます。
 - **アプリの種類の一覧**: 表示または非表示にするアプリの一覧を作成します。 組み込みのアプリや基幹業務アプリの表示と非表示を切り替えることができます。 Apple の web サイトには、[組み込みの apple アプリ](https://support.apple.com/HT208094)の一覧があります。 次のようなオプションがあります。
 
   - **[非表示のアプリ]** : ユーザーに対して非表示にするアプリの一覧を入力します。 ユーザーはこれらのアプリを表示することも開くこともできません。
+  
+    Apple では、一部のネイティブアプリを非表示にできません。 たとえば、デバイスの**設定**や**ウォレット**アプリを非表示にすることはできません。 [組み込みの Apple アプリを削除](https://support.apple.com/HT208094)すると、非表示にできるアプリが一覧表示されます。
+  
   - **[表示するアプリ]** : ユーザーが表示および起動できるアプリの一覧を入力します。 他のアプリは表示または起動できません。
 
 - **[アプリの url]** : 表示または非表示にするアプリのストアアプリの url を入力します。 次に例を示します。
