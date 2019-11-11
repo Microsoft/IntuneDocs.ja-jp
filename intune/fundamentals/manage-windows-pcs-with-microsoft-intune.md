@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb9fb439bd0bc59ae2c69ec966587d58c8c97bf4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fb67cf2cb17b78c4034c3b73e229e160723d975e
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510104"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414390"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune ソフトウェア クライアントを使用して Windows PC をコンピューターとして管理する
 
@@ -30,7 +30,7 @@ ms.locfileid: "72510104"
 > [!WARNING]
 > Microsoft は、[2020 年 1 月 14 日に Windows 7 のサポートが終了する](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)ことを発表しました。 この日に、Intune でも Windows 7 を実行しているデバイスに対するサポートが廃止されます。 Microsoft は、任意のサービスやサポートの中断を回避するために、Windows 10 に移行することを強くお勧めします。
 > 
-> 詳細については、「 [Intune の変更の計画: Windows 7 のサポート終了間近](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7-)」を参照してください。
+> 詳細については、「[Intune plan for change: nearing end of support for Windows 7](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7)」(Intune の変更の計画: Windows 7 のサポート終了間近) をご覧ください。
 
 > [!NOTE]
 > 以下に説明するように、Microsoft Intune を使用して、[モバイル デバイス管理 (MDM) によりモバイル デバイスとして](../enrollment/windows-enroll.md)、または Intune ソフトウェア クライアントによりコンピューターとして、Windows PC を管理できます。 しかし、Microsoft では、可能な場合は常に [MDM 管理ソリューションを使用する](../enrollment/windows-enroll.md)ことをお勧めします。 詳細については、「[Windows PC のコンピューターとしての管理とモバイル デバイスとしての管理の比較](pc-management-comparison.md)」をご覧ください。 
@@ -62,7 +62,7 @@ Intune クライアント ソフトウェアをインストールするハード
 |---------------|--------------------|
 |オペレーティング システム | Windows 7 SP1 および Windows 8.1 以降を実行している Windows デバイスであること。 </br></br>**Home エディションのバージョンはサポートされていません。**|
 |管理者のアクセス許可|クライアント ソフトウェアをインストールするアカウントは、そのデバイスのローカル管理者のアクセス許可を持っている必要があります。|
-|Windows インストーラー 3.1|PC には Windows インストーラー 3.1 以降がインストールされている必要があります。<br /><br />PC で Windows インストーラーのバージョンを確認するには<br /><br />  PC で、 **%windir%\System32\msiexec.exe** を右クリックし、 **[プロパティ]** をクリックします。<br /><br />最新バージョンの Windows インストーラーは、Microsoft Developer Network Web サイトの「 [Windows Installer Redistributables (Windows インストーラー再頒布可能パッケージ)](http://go.microsoft.com/fwlink/?LinkID=234258) 」からダウンロードできます。|
+|Windows インストーラー 3.1|PC には Windows インストーラー 3.1 以降がインストールされている必要があります。<br /><br />PC で Windows インストーラーのバージョンを確認するには<br /><br />  PC で、 **%windir%\System32\msiexec.exe** を右クリックし、 **[プロパティ]** をクリックします。<br /><br />最新バージョンの Windows インストーラーは、Microsoft Developer Network Web サイトの「 [Windows Installer Redistributables (Windows インストーラー再頒布可能パッケージ)](https://go.microsoft.com/fwlink/?LinkID=234258) 」からダウンロードできます。|
 |互換性のないクライアント ソフトウェアを削除する|Intune クライアント ソフトウェアをインストールする前に、その PC から Configuration Manager、Operations Manager、および Service Manager のクライアント ソフトウェアをアンインストールします。|
 
 ## <a name="deploying-the-intune-software-client"></a>Intune ソフトウェア クライアントの展開

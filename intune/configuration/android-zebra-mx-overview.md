@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13e5e7d49ec7e808f7cb5ba419dc881717539564
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
-ms.translationtype: MTE75
+ms.openlocfilehash: 3e5804b415d26b07944c500b0158cf84a2d4412c
+ms.sourcegitcommit: d1b36501186e867355843ddd67c795ade800b76a
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496044"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73182866"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Microsoft Intune で Zebra モビリティ拡張機能を備えた Zebra デバイスを使用および管理する
 
@@ -30,7 +30,7 @@ ms.locfileid: "72496044"
 
 Intune には、アプリの管理やデバイス設定の構成など、豊富な機能が含まれています。 これらの組み込みの機能と設定は、Zebra Technologies 社によって製造された Android デバイス ("Zebra デバイス" とも呼ばれる) を管理します。
 
-Android デバイスでは、**モビリティ拡張機能 (MX)** プロファイルを使用して、Zebra 固有の設定をカスタマイズしたり、さらにそれらの設定を追加したりします。
+Android デバイスでは、Zebra の**モビリティ拡張機能 (MX)** プロファイルを使用して、Zebra 固有の設定をカスタマイズしたり、さらにそれらの設定を追加したりします。
 
 この記事では、Microsoft Intune で Zebra デバイス上の Zebra モビリティ拡張機能 (MX) を使用する方法について説明します。
 
@@ -52,6 +52,7 @@ Intune を使用すると、Zebra デバイスを登録して、ご利用の基�
 - Zebra Technologies 社から提供されている最新バージョンの StageNow デスクトップ アプリを必ずご用意ください。
 - [Zebra の完全な MX 機能マトリックス](http://techdocs.zebra.com/mx/compatibility) (Zebra の Web サイトが開かれる) を調べて、作成するプロファイルがデバイスの MX バージョン、OS バージョン、およびモデルと互換性があることを必ず確認してください。
 - TC20/25 デバイスなどの特定のデバイスでは、StageNow で提供されている MX 機能がすべてサポートされているわけではありません。 [Zebra の機能マトリックス](http://techdocs.zebra.com/mx/tc2x/) (Zebra の Web サイトが開きます) を調べて、最新のサポート情報を必ず確認してください。
+
 
 ## <a name="step-1-install-the-latest-company-portal-app"></a>ステップ 1: 最新のポータル サイト アプリをインストールする
 
