@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5776ebf3241968cca6da537bb58b7ab2a06f00ba
-ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+ms.openlocfilehash: 348768be4a42667f579df0ccb500434425258db0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892535"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712861"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune での Windows デバイスの登録に関する問題のトラブルシューティング
 
@@ -60,7 +60,7 @@ ms.locfileid: "72892535"
 この問題には、いくつかの解決策が考えられます。
 
 ##### <a name="remove-devices-that-were-enrolled"></a>登録されたデバイスの削除
-1. [Azure ポータル](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)にサインインします。    
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。    
 2. [**ユーザー**  > **すべてのユーザー**] にアクセスします。    
 3. 影響を受けるユーザーアカウントを選択し、 **[デバイス]** をクリックします。    
 4. 未使用または不要なデバイスを選択し、 **[削除]** をクリックします。 
@@ -70,12 +70,12 @@ ms.locfileid: "72892535"
 > [!NOTE]
 > このメソッドは、影響を受けるユーザーだけでなく、すべてのユーザーのデバイス登録制限を増やします。
 
-1. [Azure ポータル](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)にサインインします。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 2. [**デバイスの登録** > ] **[登録の制限]** の順に選択し、デバイスの **[制限]** の制限 を選択します。    
 3. **デバイスの制限**値を増やす。 
 
 ##### <a name="check-device-type-restrictions"></a>デバイスの種類の制限を確認する
-1. グローバル管理者アカウントで [Intune ポータル](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)にサインインします。
+1. グローバル管理者アカウントを使用して、 [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 2. [**デバイスの登録** > ] **[登録の制限]** の順に選択し、デバイスの **[種類の制限]** で**既定**の制限を選択します。    
 3. **[プラットフォーム]** を選択し、[Windows に対して**許可** **(MDM)** ] を選択します。
 
@@ -376,7 +376,7 @@ Description:
 3. **制御の委任**ウィザードで、 **[次へ]**  >  **[追加]**  >  **[オブジェクトの種類]** を選択します。
 4. **[オブジェクトの種類]** ウィンドウで、 **[コンピューター]** チェック ボックスをオンにして、 **[OK]** を選択します。
 5. **[ユーザー]** 、 **[コンピューター]** 、または **[グループ]** のいずれかのウィンドウの **[選択するオブジェクト名を入力してください]** ボックスに、コネクタがインストールされている場所コンピューターの名前を入力します。
-6. **名前の確認** を選択して入力を検証 > **OK**  > **次へ** をクリックします。
+6. **名前の確認** を選択して入力を検証 > **OK** > **次へ** をクリックします。
 7. **[委任するカスタム タスクを作成する]**  >  **[次へ]** を選択します。
 8. **[フォルダー内の次のオブジェクトのみ]** チェック ボックスをオンにし、 **[コンピューター オブジェクト]** 、 **[選択されたオブジェクトをこのフォルダーに作成する]** 、および **[選択されたオブジェクトをこのフォルダーから削除する]** チェック ボックスをオンにします。
 9. **[次へ]** を選択します。

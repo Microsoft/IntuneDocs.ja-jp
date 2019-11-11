@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/17/2019
+ms.date: 11/05/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 101f414955a3b60d22003f61678854fecc16910d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 15c78d7e7f602b60b6e9f2cee365c9a02eb904df
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506588"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755006"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Microsoft Intune の電子メール プロファイルに関する一般的な問題と解決方法
 
@@ -32,8 +32,7 @@ ms.locfileid: "72506588"
 ## <a name="what-you-need-to-know"></a>知っておく必要がある情報
 
 - 電子メールプロファイルは、デバイスを登録したユーザーに対して展開されます。 電子メールプロファイルを構成するために、Intune では、登録時にユーザーの電子メールプロファイルで Azure Active Directory (AD) プロパティを使用します。 [デバイスへの電子メール設定の追加](email-settings-configure.md)は、適切なリソースである可能性があります。
-- Configuration Manager ハイブリッドから Intune スタンドアロンに移行した後、Configuration Manager ハイブリッドからの電子メールプロファイルは、デバイスに7日間保持されます。 これは通常の動作です。 電子メールプロファイルをすぐに削除する必要がある場合は、 [Intune サポート](../fundamentals/get-support.md)にお問い合わせください。
-- Android Enterprise の場合は、管理された Google Play ストアを使用して Gmail または9の for Work をデプロイします。 管理された[Google Play アプリの追加](../apps/apps-add-android-for-work.md)の手順を示します。
+- Android Enterprise の場合は、管理された Google Play ストアを使用して Gmail または9の for Work をデプロイします。 [管理された[Google Play アプリの追加](../apps/apps-add-android-for-work.md)の手順を示します。
 - IOS および Android 用の Microsoft Outlook では、電子メールプロファイルはサポートされていません。 代わりに、アプリ構成ポリシーを展開します。 詳細については、「 [Outlook の構成設定](../apps/app-configuration-policies-outlook.md)」を参照してください。
 - デバイスグループ (ユーザーグループではない) を対象とした電子メールプロファイルがデバイスに配信されない可能性があります。 デバイスにプライマリユーザーがいる場合は、デバイスのターゲット設定が機能します。 電子メールプロファイルにユーザー証明書が含まれている場合は、必ずユーザーグループを対象にしてください。
 - ユーザーは、電子メールプロファイルのパスワードの入力を繰り返し求められる場合があります。 このシナリオでは、電子メールプロファイルで参照されているすべての証明書を確認します。 証明書のいずれかがユーザーを対象としていない場合、Intune は電子メールプロファイルの展開を再試行します。
@@ -62,22 +61,10 @@ Samsung KNOX の EAS プロファイルおよびソース ポリシーの構成�
 
 電子メール アカウントを自動的に構成したユーザーが、自分のデバイスから画像を送信することができません。 このシナリオは、 **[サードパーティ アプリケーションからの電子メール送信を許可する]** が有効ではない場合に発生する可能性があります。
 
-### <a name="intune-solution"></a>Intune での解決方法
-
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[デバイス構成]**  >  **[プロファイル]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. [**デバイス** > **構成プロファイル**] を選択します。
 3. 電子メールプロファイル >**プロパティ** > **設定** を選択します。
 4. **[サードパーティ製アプリケーションからの電子メールの送信を許可]** する 設定を **[有効]** に設定します。
-
-### <a name="configuration-manager-hybrid"></a>Configuration Manager ハイブリッド
-
-1. Configuration Manager コンソール > **[資産とコンプライアンス]** の順に開きます。
-
-2. **[概要]**  >  **[コンプライアンス設定]**  >  **[会社のリソースへのアクセス]** の順に展開して、 **[電子メール プロファイル]** を選択します。
-
-3. 電子メール プロファイルを右クリックし、 **[プロパティ]** を開きます。
-
-4. **[同期設定]** タブで、 **[サード パーティ アプリケーションから電子メールを送信できるようにする]** をオンにします。
 
 ## <a name="next-steps"></a>次の手順
 
