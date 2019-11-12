@@ -171,4 +171,4 @@ Windows 10 デバイスの一部の設定では、"適用できません" と表
 
 ## <a name="next-steps"></a>次の手順
 
-さらに支援が必要ですか。 「[Microsoft Intune のサポートを受ける方法](../fundamentals/get-support.md)」を参照してください。
+さらに支援が必要ですか? 「[Microsoft Intune のサポートを受ける方法](../fundamentals/get-support.md)」を参照してください。
