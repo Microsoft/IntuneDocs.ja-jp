@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6886060cce77004b107dac02ecea57f2090ac8f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 428da4581e9946b62bd6ee7c5f7d17d69f93ad9b
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503472"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592018"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK の概要
 
@@ -63,7 +63,7 @@ Microsoft が、アンケートに入力された電子メール アドレスを
 アプリのディープ リンクを今後変更する場合は、アプリを再登録する必要があります。
 
 > [!NOTE]
-> 新しいバージョンの Intune アプリ SDK を使用してアプリを更新する場合には、ご連絡ください。
+> 新しいバージョンの Intune App SDK を使用してアプリを更新する場合は、Microsoft にご連絡いただく必要があります。
 
 ## <a name="download-the-sdk-files"></a>SDK ファイルをダウンロードする
 
@@ -72,7 +72,7 @@ Microsoft が、アンケートに入力された電子メール アドレスを
 * [iOS 用 Intune App SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [Android 用 Intune App SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
-アプリが Xamarin アプリの場合は、次の SDK バリアントを使用してください。
+お使いのアプリが Xamarin アプリの場合は、次の異なる SDK を使用してください。
 
 * [Intune App SDK Xamarin Bindings](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
 
@@ -181,6 +181,9 @@ iOS または Android アプリを Intune アプリ SDK と統合するために
 5. 検索ボックスに「**Microsoft Mobile Application Management**」と入力します。
 6. **[委任されたアクセス許可]** で **[DeviceManagementManagedApps.ReadWrite: Read and Write the User’s App Management Data]\(DeviceManagementManagedApps.ReadWrite: ユーザーのアプリ管理データの読み取りと書き込み\)** * チェックボックスをオンにします。
 7. **[アクセス許可の追加]** をクリックします。
+
+> [!NOTE]
+> アプリがこのリソースにアクセスするときにエラーが発生したためにサインインが制限されている場合: https://intunemam.microsoftonline.com 、アプリのクライアント ID で msintuneappsdk@microsoft.com にメモを送信する必要があります。 これは、今日の手動承認プロセスです。
 
 ### <a name="badge-your-app-optional"></a>アプリにバッジを付ける (省略可能)
 

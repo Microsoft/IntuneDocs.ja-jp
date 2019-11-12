@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/12/2019
+ms.date: 11/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 783ae8bf3216c514bac183ed1945c454cbaa1708
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: c0fac5e9d34890272253eaefd82ed13dc1014ba0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413871"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713487"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために iOS アプリを準備する
 
@@ -44,7 +44,7 @@ iOS 用 Microsoft Intune アプリ ラッピング ツールを使用すれば�
 
   * 入力アプリのファイルの拡張子は、 **.ipa** または **.app** でなければなりません。
 
-  * 入力アプリは、iOS 10 以降用にコンパイルする必要があります。
+  * 入力アプリは、iOS 11 以降用にコンパイルする必要があります。
 
   * 入力アプリは暗号化できません。
 
@@ -289,26 +289,27 @@ iOS では、アプリへの署名に元々使用されたものとは異なる�
 |指定した入力アプリは既にラッピングされていて、最新のポリシー テンプレート バージョンです。|アプリ ラッピング ツールは、既にラッピングされ、ポリシー テンプレート バージョンが最新のアプリを再ラッピングしません。|
 |警告: SHA1 証明書ハッシュを指定しませんでした。 展開前にラッピングされたアプリケーションが署名されていることを確認します。|-c コマンドライン フラグの後に有効な SHA1 ハッシュを指定します。 |
 
-### <a name="log-files-for-the-app-wrapping-tool"></a>アプリ ラッピング ツールのログ ファイル
+### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>ラップされたアプリケーションのログをデバイスから収集しています
+トラブルシューティング時に、次の手順を使用して、ラッピングされたアプリケーションのログを取得します。
 
-アプリ ラッピング ツールでラッピングされているアプリはログを生成し、ログが iOS クライアント デバイス コンソールに書き込まれます。 この情報は、アプリケーションで問題が発生し、問題がアプリ ラッピング ツールに関連するかどうかを判断する必要がある場合に役立ちます。 この情報を取得するには、次の手順を使用します。
+1. デバイスで iOS の設定アプリに移動し、LOB アプリを選択します。
+2. **[診断コンソール]** を **[オン]** に切り替えます。
+3. LOB アプリケーションを起動します。
+4. "開始" リンクをクリックします。
+5. メールまたは OneDrive の保存先にコピーする方法を利用して、ログを共有できるようになりました。
+
+> [!NOTE]
+> ログ記録機能は、バージョン 7.1.13 以降の Intune アプリ ラッピング ツールでラッピングされたアプリで使用できます。
+
+### <a name="collecting-crash-logs-from-the-system"></a>システムからのクラッシュログの収集
+
+アプリによっては、iOS クライアントデバイスコンソールに有用な情報が記録されている可能性があります。 この情報は、アプリケーションで問題が発生していて、その問題がアプリ ラッピング ツールに関連するか、またはアプリ自体に関連するかを判断する必要がある場合に役立ちます。 この情報を取得するには、次の手順を使用します。
 
 1. アプリケを実行し、問題を再現します。
 
 2. 「 [展開された iOS アプリのデバッグ](https://developer.apple.com/library/ios/qa/qa1747/_index.html)」にある Apple の指示に従い、コンソール出力を集めます。
 
-3. 次のスクリプトをコンソールに入力し、アプリ制限出力の保存ログをフィルター処理します。
-
-    ```bash
-    grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
-    ```
-
-    Microsoft にフィルター処理したログを送信できます。
-
-    > [!NOTE]
-    > ログ ファイルで、「build version」という項目は Xcode のビルド バージョンを表します。
-
-    ラッピングしたアプリはまた、アプリのクラッシュ後に電子メールでデバイスからログを直接送信するオプションをユーザーに提供します。 ユーザーはログをあなたに送信し、あなたはそれを調べ、必要に応じて Microsoft に転送できます。
+ラッピングしたアプリはまた、アプリのクラッシュ後に電子メールでデバイスからログを直接送信するオプションをユーザーに提供します。 ユーザーはログをあなたに送信し、あなたはそれを調べ、必要に応じて Microsoft に転送できます。
 
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>証明書、プロビジョニング プロファイル、認証に関する要件
 
@@ -442,19 +443,6 @@ iOS 用アプリ ラッピング ツールで権利のエラーが表示され�
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
-
-## <a name="getting-logs-for-your-wrapped-applications"></a>ラッピングされたアプリケーションのログを取得する
-
-トラブルシューティング時に、次の手順を使用して、ラッピングされたアプリケーションのログを取得します。
-
-1. デバイスで iOS の設定アプリに移動し、LOB アプリを選択します。
-2. **[診断コンソール]** を **[オン]** に切り替えます。
-3. LOB アプリケーションを起動します。
-4. "開始" リンクをクリックします。
-5. メールまたは OneDrive の保存先にコピーする方法を利用して、ログを共有できるようになりました。
-
-> [!NOTE]
-> ログ記録機能は、バージョン 7.1.13 以降の Intune アプリ ラッピング ツールでラッピングされたアプリで使用できます。
 
 ## <a name="see-also"></a>関連項目
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19202d4387635b7cd1f7e4604d755fb8a213d327
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ec234a3d93127a26af4203a4776545602334858b
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503441"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709551"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin バインディング
 
@@ -80,7 +80,7 @@ Intune SDK では、その[認証](https://azure.microsoft.com/documentation/art
 
       呼び出し時にユーザーの UPN が不明な場合、アプリは null を渡すことがあります。 この場合、ユーザーはメール アドレスとパスワードの両方を入力するよう求められます。
       
-      アプリが既に ADAL または MSAL を使用してユーザーを認証している場合は、アプリと Intune SDK 間のシングルサインオン (SSO) エクスペリエンスを構成できます。 まず、Intune Xamarin Bindings for iOS (com.microsoft.adalcache) で使用されているものと同じキーチェーン アクセス グループにトークンを格納するように ADAL/MSAL を構成する必要があります。 ADAL の場合、この処理を行うには、[AuthenticationContext の iOSKeychainSecurityGroup プロパティを設定します](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/iOS-Keychain-Access)。 MSAL の場合、[PublicClientApplication の iOSKeychainSecurityGroup プロパティを設定する](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Xamarin-iOS-specifics#enable-keychain-access)必要があります。 次に、Intune SDK で使用される既定の AAD 設定をアプリの設定でオーバーライドする必要があります。 これを行うには、[iOS 用 Intune App SDK 開発者ガイド](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk)で説明しているように、アプリの Info.plist 内にある IntuneMAMSettings ディクショナリを利用できます。または IntuneMAMPolicyManager インスタンスで AAD の override プロパティを使用することも可能です。 ADAL 設定が静的なアプリケーションでは Info.plist を使用する方法をお勧めしますが、実行時にその値が決定されるアプリケーションでは override プロパティをお勧めします。 すべての SSO 設定が構成されたら、アプリが正常に認証された後、IntuneMAMEnrollmentManager の RegisterAndEnrollAccount メソッドにユーザーの UPN を指定する必要があります。
+      アプリが既に ADAL または MSAL を使用してユーザーを認証している場合は、アプリと Intune SDK 間のシングルサインオン (SSO) エクスペリエンスを構成できます。 まず、Intune SDK で使用される既定の AAD 設定を、使用するアプリの設定でオーバーライドする必要があります。 これを行うには、[iOS 用 Intune App SDK 開発者ガイド](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk)で説明しているように、アプリの Info.plist 内にある IntuneMAMSettings ディクショナリを利用できます。または、IntuneMAMSettings クラスの AAD のオーバーライド プロパティを使用し、コードでこれを実行することもできます。 ADAL 設定が静的なアプリケーションでは Info.plist を使用する方法をお勧めしますが、実行時にその値が決定されるアプリケーションでは override プロパティをお勧めします。 すべての SSO 設定が構成されたら、アプリが正常に認証された後、IntuneMAMEnrollmentManager の RegisterAndEnrollAccount メソッドにユーザーの UPN を指定する必要があります。
 
       ```csharp
       IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
