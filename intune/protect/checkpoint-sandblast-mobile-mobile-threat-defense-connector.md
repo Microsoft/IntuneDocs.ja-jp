@@ -6,24 +6,24 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
-ms.reviewer: heenamac
+ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c1d6620c120a3102803c84270ac1880c6904320
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c4cffafd4145ab536157ea55c732ac27bec29538
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504710"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801607"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Intune との Check Point SandBlast Mobile Threat Defense コネクタ
 
@@ -36,9 +36,6 @@ Intune デバイス コンプライアンス ポリシーで有効にした Chec
 Android および iOS 向け Check Point Sandblast Mobile アプリは、ファイル システム、ネットワーク スタック、デバイスとアプリケーションの製品利用統計情報を可能な限り記録し、Check Point SandBlast クラウド サービスにテレメトリ データを送信し、モバイル デバイスの脅威に対するリスクを評価します。
 
 Intune デバイス コンプライアンス ポリシーには、Check Point SandBlast リスク評価に基づく、Check Point SandBlast Mobile Threat Defense のルールが含まれています。 このルールを有効にすると、Intune は、有効にされたポリシーに基づいてデバイスの準拠状態を評価します。 デバイスが準拠していないことが判明した場合、ユーザーは Exchange Online や SharePoint Online などの会社リソースへのアクセスをブロックされます。 また、ユーザーは、デバイスにインストールされている Check Point SandBlast Mobile アプリから、問題を解決して会社リソースへのアクセスを回復するための案内を受け取ります。
-
-<!-- ## Sample scenarios 
-closing syntax for comment above is missing. Please insert closing syntax at intended location. -->
 
 一般的なシナリオを次に示します。
 

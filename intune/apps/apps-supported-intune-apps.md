@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24b69b6da846d54d4f45ede47c932574e006f99f
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 4e0cef06f2f939c996fe59d5b6acb10560125718
+ms.sourcegitcommit: e7798c9faa7b7471d0994de2dcd94c259ee8874c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785999"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73931025"
 ---
 # <a name="microsoft-intune-protected-apps"></a>保護されている Microsoft Intune アプリ  
 
@@ -53,7 +53,7 @@ ms.locfileid: "72785999"
 | **Microsoft Excel**<p><img alt="Microsoft app - Microsoft Excel icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-excel.png" width="100"> | タブレットとスマートフォン上での Excel スプレッドシートの外観が以前よりも向上しました。 スプレッドシートを編集または作成するときに、コンピューター、Mac、タブレット、スマートフォン全体で確実に望ましい外観が得られます。 すばやく起動し、使い慣れた Office のルック アンド フィールと直感的なタッチ エクスペリエンスを利用できます。<p><p>このアプリは Android および iOS 用の複数 ID アプリとして使用できます。 | [Android ストアのリンク](https://play.google.com/store/apps/details?id=com.microsoft.office.excel)、<br>[iOS ストアのリンク](https://itunes.apple.com/us/app/microsoft-excel/id586683407?mt=8) |  
 | **Microsoft Flow**<p><img alt="Microsoft Flow icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-flow.png" width="100"> | Microsoft Flow の全機能をどこでも利用できます。 Flow を使うと、お気に入りのアプリやサービス間で自動化されたワークフローを作成し、ビジネスの効率化、時間の節約、より効率的な作業を実現できます。| [Android ストアのリンク](https://play.google.com/store/apps/details?id=com.microsoft.flow)、<br>[iOS ストアのリンク](https://itunes.apple.com/us/app/microsoft-flow/id1094928825) |  
 | **Microsoft Intune Managed Browser**<p><img alt="Microsoft app - Microsoft Intune Managed Browser icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-intune-managed-browser.png" width="100"> | Intune のモバイル アプリケーション管理ポリシーを使って、企業の IT 管理者が管理する Web 閲覧ソリューションを提供します。 | [Android ストアのリンク](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.managedbrowser)、<br>[iOS ストアのリンク](https://itunes.apple.com/us/app/microsoft-intune-managed-browser/id943264951?mt=8) |   
-| **Microsoft Invoicing**<p><img alt="Microsoft app - Microsoft Invoicing icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-invoicing.png" width="100"> | Microsoft Invoicing は小規模企業向けに、洗練された外観の見積もりと請求書の作成、支払いの高速化、および時間の節約を実行しやすくします。 Invoicing を使うと、職場でも外出先でも、ご自分の資金についてよく把握しながら、請求書をすばやく作成して送信し、オンラインで支払いを受け取り、ペーパーワークにかかる時間を減らすことができます。 | [Android ストアのリンク](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.invoice&hl=en)、<br>[iOS ストアのリンク](https://itunes.apple.com/us/app/microsoft-invoicing/id1145475572?mt=8) |  
+| **Microsoft Invoicing**<p><img alt="Microsoft app - Microsoft Invoicing icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-invoicing.png" width="100"> | Microsoft Invoicing は小規模企業向けに、洗練された外観の見積もりと請求書の作成、支払いの高速化、および時間の節約を実行しやすくします。 Invoicing を使うと、職場でも外出先でも、ご自分の資金についてよく把握しながら、請求書をすばやく作成して送信し、オンラインで支払いを受け取り、ペーパーワークにかかる時間を減らすことができます。 | [Android ストアのリンク](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.ProjectMadeira)、<br>[iOS ストアのリンク](https://itunes.apple.com/us/app/microsoft-invoicing/id1145475572?mt=8) |  
 | **Microsoft Kaizala**<p><img alt="Microsoft app - Microsoft Kaizala icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-kiazala.png" width="100"> | Microsoft Kaizala は、大規模なグループ コミュニケーションと作業管理用に設計された、モバイル アプリおよびサービスです。 Kaizala を使うと、あらゆる場所にいる現場の従業員、ベンダー、パートナー、顧客など、バリュー チェーン全体と連絡し、作業を調整しやすくなります。 | [Android ストアのリンク](https://play.google.com/store/apps/details?id=com.microsoft.mobile.polymer)、<br>[iOS ストアのリンク](https://itunes.apple.com/in/app/microsoft-kaizala/id1112208399) |  
 | **Microsoft Launcher**<p><img alt="Microsoft app - Microsoft Launcher icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-launcher.png" width="100"> | Microsoft Launcher (旧称 Arrow Launcher) では、壁紙、テーマの色、アイコンのパックなどを使って、ご自身のスタイルに一致するように Android デバイスをカスタマイズできます。 Microsoft アカウントまたは職場/学校のアカウントを使って、カスタマイズしたフィード内でご自分のカレンダー、ドキュメント、最近のアクティビティにアクセスできます。 Windows PC 上にある写真、ドキュメント、Web ページを開いて、すべてのデバイス上で効率よく作業することもできます。 | [Android ストアのリンク](https://play.google.com/store/apps/details?id=com.microsoft.launcher) |  
 | **Microsoft OneDrive for Business**<p><img alt="Microsoft app - Microsoft OneDrive for Business icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-onedrive-for-business.png" width="100"> | 作業ファイル用のオンライン ストレージを取得して、職場や学校の他のユーザーと共有し、共同作業を行います。 さらに、外出先で個人用および作業用のファイルに簡単にアクセスできます。<p><p>このアプリは Android および iOS 用の複数 ID アプリとして使用できます。 | [Android ストアのリンク](https://play.google.com/store/apps/details?id=com.microsoft.skydrive)、<br>[iOS ストアのリンク](https://itunes.apple.com/us/app/onedrive-cloud-storage-for/id477537958?mt=8) |  

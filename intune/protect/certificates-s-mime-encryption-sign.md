@@ -2,8 +2,8 @@
 title: S/MIME を使用して電子メールに署名して暗号化する - Microsoft Intune - Azure | Microsoft Docs
 description: Microsoft Intune の電子メール デジタル証明書を使用してデバイス上で電子メールの署名および暗号化を実行する方法について説明します。 このような証明書は S/MIME と呼ばれ、デバイス構成プロファイルを使用して構成されています。 署名証明書と暗号化証明書は PKCS、つまりプライベート証明書を使用し、コネクタを使用して証明書をインポートします。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/10/2018
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b16953b3402bf8aa48f0a01e5e11d9f90d56f2d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: adea17c0e013d922c0bc3ccf06ed590828bd79dd
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502508"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801491"
 ---
 # <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>Intune で電子メールに署名し、暗号化する S/MIME の概要
 
