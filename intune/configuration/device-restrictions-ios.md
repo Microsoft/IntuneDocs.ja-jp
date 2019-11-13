@@ -18,7 +18,7 @@ ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 488794fdce8f6ebb074648c8e399cb2aecc73b25
 ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/06/2019
 ms.locfileid: "73709741"
@@ -316,7 +316,7 @@ ms.locfileid: "73709741"
   - Allow
   - すべての Cookie をブロックする
   - アクセスした Web サイトからの Cookie を許可する
-  - 現在の Web サイトからの Cookie を許可します
+  - 現在の Web サイトからの Cookie を許可する
 
 - **[Safari の JavaScript]** : **[ブロック]** では、ブラウザー内の Java スクリプトがデバイス上で実行されなくなります。 **未構成**(既定) Java スクリプトが許可されます。
 
