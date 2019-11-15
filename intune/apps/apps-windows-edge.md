@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22a957e6df2c7f9126cbe9f22c4f3a96213551d3
-ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+ms.openlocfilehash: af24b5fe33bc1e794529ef5a5ab6975eed4fb9cc
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892568"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709922"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Microsoft Edge for Windows 10 を Microsoft Intune に追加する
 
 アプリの展開、構成、監視、または保護を行うには、対象のアプリを事前に Intune に追加しておく必要があります。 使用可能な[アプリの種類](~/apps/apps-add.md#app-types-in-microsoft-intune)の 1 つに、Microsoft Edge *バージョン 77 以降*があります。 Intune でこの種類のアプリを選択することで、Windows 10 を実行し、自分で管理しているデバイスに Microsoft Edge *バージョン 77 以降*を割り当て、インストールできます。
 
 > [!IMPORTANT]
-> このアプリの種類は**パブリック プレビュー**段階で、Windows 10 向けの Developer Channel と Beta Channel が提供されています。 展開は英語版 (EN) のみですが、エンド ユーザーはブラウザーの **[設定]**  >  **[言語]** で表示言語を変更することができます。 Microsoft Edge はアーキテクチャに合わせてインストールされる Win32 アプリです (x86 OS の場合は x86、x64 OS の場合は x64)。 さらに、Edge の自動更新は既定で**オン**になっています。また、Edge はアンインストールできません。
+> このアプリの種類は**パブリック プレビュー**段階で、Windows 10 向けの Developer Channel と Beta Channel が提供されています。 展開は英語版 (EN) のみですが、エンド ユーザーはブラウザーの **[設定]**  >  **[言語]** で表示言語を変更することができます。 Microsoft Edge は、システム コンテキスト、およびアーキテクチャに合わせてインストールされる Win32 アプリです (x86 OS の場合は x86、x64 OS の場合は x64)。 Intune で既存の Microsoft Edge インストールが検出されます。 ユーザー コンテキストでインストールされている場合、システムのインストール時に上書きされます。 システム コンテキストでインストールされている場合、インストールの成功が報告されます。 さらに、Microsoft Edge の自動更新は既定で**オン**になっています。また、Microsoft Edge はアンインストールできません。
 
 > [!NOTE]
 > macOS では、Microsoft Edge *バージョン 77 以降*も利用できます。

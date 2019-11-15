@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7ca53786d372f53d63388fef1179ca271fdb9d9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: be6a254360d8e8e9ef1396515d261b6ff9077b87
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508589"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713122"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune でデバイスのパスコードをリセットまたは削除する
 
@@ -57,10 +57,9 @@ Android デバイスの場合、これは、デバイス レベルのパスコ�
 ## <a name="reset-a-passcode"></a>パスコードのリセット
 
 
-1. [Azure portal](https://portal.azure.com) に Azure Active Directory グローバル管理者、Azure Active Directory Intune サービスの管理者、ヘルプデスク担当者、ロール管理者のいずれかでサインインします。
-2. **[すべてのサービス]** を選択し、 **[Intune]** をフィルターとして適用し、 **[Microsoft Intune]** を選択します。
-3. **[デバイス]** 、 **[すべてのデバイス]** の順に選択します。
-4. 管理対象のデバイスのリストから、デバイスを選択して **[...詳細を表示]** を選択します。 次に、 **[パスコードの削除]** デバイス リモート アクションを選択します。
+1. 次のいずれかのロールで [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。Azure Active Directory グローバル管理者、Azure Active Directory Intune サービスの管理者、ヘルプデスク担当者、ロール管理者のいずれかでサインインします。
+2. **[デバイス]** 、 **[すべてのデバイス]** の順に選択します。
+3. 管理対象のデバイスのリストから、デバイスを選択して **[...詳細を表示]** を選択します。 次に、 **[パスコードの削除]** デバイス リモート アクションを選択します。
 
 ## <a name="reset-android-work-profile-passcodes"></a>Android の仕事用プロファイルのパスコードをリセットする
 

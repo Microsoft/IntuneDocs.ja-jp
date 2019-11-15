@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34a4c8adeef7e8b28c90ad38579f0f9ac7c4784d
-ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
+ms.openlocfilehash: 2956be9e32587c3bf86ce009a6927269c11ffced
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73057537"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712239"
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Intune を使って iOS デバイスの紛失モードを有効にする
 
@@ -41,7 +41,7 @@ ms.locfileid: "73057537"
 
 ## <a name="enable-lost-mode"></a>紛失モードを有効にする
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 3. **[デバイス]** 、 **[すべてのデバイス]** の順に選択します。
 4. 管理するデバイスの一覧から iOS デバイスを選択した後、 **[紛失モード (監視モードのみ)]** を選択します。
 5. **[紛失モード]** の下で **[有効]** を選択します。

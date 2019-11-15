@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a813d3bb574ae940b0003ac451b6e76638a0dd0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 02d0fb91df07d8bba233a6f814ffcf36d408e95d
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508648"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712365"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Intune で、監視されている iOS デバイス上のアクティベーション ロックをバイパスする
 
@@ -74,7 +74,7 @@ Intune では、iOS 8.0 以降を実行している監視対象デバイスの�
 
 Intune の **[アクティベーション ロックのバイパス]** のリモート デバイス操作では、ユーザーの Apple ID とパスワードを要求することなく iOS デバイスのアクティベーション ロックを解除します。 アクティベーション ロックをバイパスした後に iPhone を探すアプリを起動すると、デバイスのアクティベーション ロックが再度有効になります。 デバイスに物理的にアクセスできる場合にのみアクティベーション ロックをバイパスしてください。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 3. **[Intune]** ブレードで、 **[デバイス]** を選択します。
 4. **[デバイス]** ブレードで、 **[すべてのデバイス]** を選択します。
 5. 管理対象のデバイスの一覧で、 **[アクティベーション ロックのバイパス]** デバイス リモート操作を選択します。

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c438ebeaae8a7259efb74089f51a6ca92003cfea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 817f46558932c074abc37b45d2885496419a0db0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509468"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712417"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>紛失したまたは盗まれた iOS デバイスを Intune で検索する
 
@@ -41,7 +41,7 @@ ms.locfileid: "72509468"
 
 ## <a name="locate-a-lost-or-stolen-device"></a>紛失したまたは盗まれたデバイスを見つける方法
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 3. **[デバイス]** 、 **[すべてのデバイス]** の順に選択します。
 4. 管理対象のデバイスのリストから、iOS デバイスを選択して **[...詳細を表示]** を選択します。 次に、 **[デバイスを検索する]** リモート アクションを選択します。
 5. デバイスが見つかると、 **[デバイスを検索する]** にその位置が表示されます。

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3ee6240d9efb0d09c41a6a9b1260cd4189927a8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8c31bbd8eb9efb2b748163223ce1b8fa555f0dc6
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509418"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713536"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune デバイスの管理とは
 
@@ -33,7 +33,7 @@ IT 管理者はデータをリスクから保護しながら、ユーザーが�
 
 ## <a name="get-to-your-devices"></a>デバイスにアクセスする
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 3. **[デバイス]** を選択します。 このビューには、次のような、個々のデバイスの詳細情報と、デバイスでできることが示されます。
 
    - **[概要]** には登録済みデバイスのビジュアル スナップショットが表示されます。また、Android、iOS などのさまざまなプラットフォームを使用しているデバイスの数が表示されます。

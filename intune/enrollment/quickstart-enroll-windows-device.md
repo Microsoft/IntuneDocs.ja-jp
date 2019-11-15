@@ -2,7 +2,7 @@
 title: クイック スタート - Microsoft Intune に Windows 10 デスクトップ デバイスを登録する
 description: クイック スタート - Intune ポータル サイトを使用して Windows 10 デスクトップ デバイスを Microsoft Intune に登録します。
 services: microsoft-intune
-author: ErikRe
+author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 07/30/2019
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0aeeb55804a2bdd3ef1143bbb88dee968892c5c7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 91f20411f668428c8bf3af8b0bd4ae6f4b0b545f
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509292"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713517"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>クイック スタート:Windows 10 デバイスを登録する
 
@@ -91,7 +91,7 @@ Windows 10 デスクトップを登録する前に、インストールされて
 
 ## <a name="confirm-your-device-enrollment-in-intune"></a>Intune でのデバイス登録を確認する
 
-1. グローバル管理者または Intune サービス管理者として [Intune](https://aka.ms/intuneportal) にサインインします。
+1. 全体管理者または Intune サービス管理者として、[Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 2. **[デバイス]**  >  **[すべてのデバイス]** を選択して、Intune に登録されたデバイスを表示します。
 3. Intune に追加したデバイスが登録されていることを確認します。
 

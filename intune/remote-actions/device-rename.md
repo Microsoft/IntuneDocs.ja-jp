@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1c02248b3208073a3bb09cafe69cf0473eacb2b
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 0f5ee9a0fe27c3cf9de758fd7155dbd127fb1e5e
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584535"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712220"
 ---
 # <a name="rename-a-device-in-intune"></a>Intune 上でデバイスの名前を変更する
 
@@ -36,7 +36,7 @@ ms.locfileid: "72584535"
 
 ## <a name="rename-a-device"></a>デバイスの名前を変更する
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 3. **[デバイス]**  >  **[すべてのデバイス]** > デバイスの選択 > **[その他]**  >  **[デバイスの名前を変更]** の順に選択します。
 4. **[デバイスの名前を変更]** ブレードで、テキスト ボックスに新しい名前を入力します。 文字、数字、ハイフンを使用できます。 名前には、少なくとも 1 つの文字またはハイフンを含める必要があります。
 5. 名前の変更後、デバイスを再起動する場合、 **[名前を変更したら再起動する]** の横の **[はい]** を選択します。

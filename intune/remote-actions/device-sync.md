@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86dc2e26e3c4091785cb6462a84e75b770634881
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1001a7a3fde9c203fdad3d146ace57736ae7128d
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508558"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713427"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>デバイスを Intune と同期して最新のポリシーとアクションを取得する
 
@@ -38,8 +38,8 @@ ms.locfileid: "72508558"
 
 ## <a name="sync-a-device"></a>デバイスを同期する
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。 
-3. **Intune** で、 **[デバイス]**  >  **[すべてのデバイス]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。 
+3. **[デバイス]**  >  **[すべてのデバイス]** の順に選択します。
 4. 管理するデバイスの一覧で、デバイスを選択して *[概要]* ウィンドウを開いた後、 **[同期]** を選択します。
 5. 確定するには、 **[はい]** を選択します。
 

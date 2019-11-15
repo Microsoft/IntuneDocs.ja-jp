@@ -1,7 +1,7 @@
 ---
 title: アプリのデータ転送ポリシーの例外
 titleSuffix: Microsoft Intune
-description: Intune モバイル アプリケーション管理 (MAM) データ転送ポリシーの例外を作成します。
+description: Intune App Protection Policy (APP) データ転送ポリシーの例外を作成します。
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6453f5b5886c5691383bc81fb76598146e884e0e
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: 18b1b8feda00f5c669b39bc365c637dcd3968078
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813334"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984073"
 ---
-# <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Intune モバイル アプリケーション管理 (MAM) データ転送ポリシーの例外を作成する方法
+# <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>Intune App Protection Policy (APP) データ転送ポリシーの例外を作成する方法
 
-管理者の場合、Intune モバイル アプリケーション管理 (MAM) データ転送ポリシーの例外を作成することができます。 例外を使用すると、管理対象アプリとの間でデータをやりとりできる管理対象ではないアプリを指定できます。 管理者が例外一覧に追加した管理対象ではないアプリは、IT 部門に信頼されている必要があります。 
+管理者は Intune App Protection Policy (APP) データ転送ポリシーの例外を作成できます。 例外を使用すると、管理対象アプリとの間でデータをやりとりできる管理対象ではないアプリを指定できます。 管理者が例外一覧に追加した管理対象ではないアプリは、IT 部門に信頼されている必要があります。 
 
 >[!WARNING] 
 > 管理者は、データ転送の例外ポリシーを変更する責任があります。 管理対象ではないアプリ (Intune によって管理されていないアプリケーション) は、このポリシーに追加すると、管理対象アプリによって保護されているデータにアクセスできるようになります。 このような保護されたデータのアクセスで、データ セキュリティの漏えいが発生する可能性があります。 組織で使用する必要があり、Intune APP (アプリケーション保護ポリシー) をサポートしていないアプリについてのみ、データ転送の例外を追加してください。 また、データ漏えいのリスクとは見なされないアプリについてのみ、例外を追加してください。
@@ -65,6 +65,8 @@ Android をターゲットとするポリシーの場合、アプリ パッケ�
     <code>com.android.mms</code>
     
     <code>com.samsung.android.messaging</code>
+
+- Android **証明書インストーラー**の例:Outlook for Android で S/MIME 証明書 (電子メール添付として配信される) を Android KeyStore にインストールできるようにネイティブの**証明書インストーラー** アプリを除外するには、文字列 <code>com.android.certinstaller</code> のデータ転送例外を追加する必要があります。 詳細については、「[iOS 向けおよび Android 向け Outlook の秘密度ラベルと保護](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android)」を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

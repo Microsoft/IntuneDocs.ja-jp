@@ -6,28 +6,26 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/11/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
-ms.reviewer: chrisgre
+ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d3cae06c3ce763fe8ca94bbed9bf35e8abef52c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f0b5e67c433f2d3633219650f48307dccae196e9
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502602"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713288"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Intune でのアプリベースの条件付きアクセス
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 [Intune アプリ保護ポリシー](../apps/app-protection-policy.md)を使用すると、Intune に登録されているデバイス上の会社のデータを保護できます。 Intune での管理対象に登録されていない従業員所有のデバイスでも、アプリ保護ポリシーを使用できます。 この場合、会社はデバイスを管理しなくても、会社のデータとリソースが保護されるようにする必要はあります。
 
@@ -39,6 +37,7 @@ ms.locfileid: "72502602"
 Microsoft Outlook アプリのみが Exchange Online にアクセスできるようにすると、iOS や Android 上の組み込みメール アプリをブロックできます。 また、Intune アプリ保護ポリシーを適用していないアプリが SharePoint Online にアクセスするのをブロックできます。
 
 ## <a name="prerequisites"></a>必要条件
+
 アプリベースの条件付きアクセス ポリシーを作成するには、以下を保有している必要があります。
 
 - **Enterprise Mobility + Security (EMS)** または **Azure Active Directory (AD) Premium サブスクリプション**
@@ -57,7 +56,7 @@ Microsoft Outlook アプリのみが Exchange Online にアクセスできるよ
 この例では、管理者は Outlook アプリにアプリ保護ポリシーを適用し、その後、会社の電子メールへのアクセス時に使用できるアプリの承認済みリストに Outlook アプリを追加する条件付きアクセス ルールを適用しています。
 
 > [!NOTE]
-> 下のフローチャートの構造は、他の管理対象アプリでも使用できます。
+> 次のフローチャートは、他の管理対象アプリでも使用できます。
 
 ![フローチャートで説明されているアプリベースの条件付きアクセス](./media/app-based-conditional-access-intune/ca-intune-common-ways-3.png)
 

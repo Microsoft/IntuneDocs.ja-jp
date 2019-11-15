@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 030d455c366a9c447444c247e9690e5d31613982
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 772cdbe203b0489a9b2312a1cc10ea1b3182b35d
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508601"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713159"
 ---
 # <a name="remove-a-user-from-a-shared-ios-device"></a>共有の iOS デバイスからユーザーを削除する
 
@@ -41,12 +41,11 @@ ms.locfileid: "72508601"
 
 ## <a name="remove-a-user"></a>ユーザーを削除する
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-3. **[Intune]** ウィンドウで、 **[デバイス]** を選択します。
-4. **[デバイス]** ウィンドウで、 **[すべてのデバイス]** を選択します。
-5. 管理対象のデバイスのリストで、iOS デバイスを選択します。
-6. デバイスのウィンドウで、 **[ユーザー]** を選択します。
-7. リストで、削除するユーザーを右クリックして、 **[ユーザーの削除]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]**  >  **[すべてのデバイス]** の順に選択します。
+3. 管理対象のデバイスのリストで、iOS デバイスを選択します。
+4. デバイスのウィンドウで、 **[ユーザー]** を選択します。
+5. リストで、削除するユーザーを右クリックして、 **[ユーザーの削除]** を選択します。
 
 ## <a name="next-steps"></a>次の手順
 

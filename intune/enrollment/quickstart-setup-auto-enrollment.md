@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e64c7d977fef66af0fedf556eea34bef9b9079d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 78620818bfd13f0292e159c6a3670b5e3af53dab
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503132"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709505"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>クイック スタート:Windows 10 デバイスの自動登録を設定する
 
@@ -35,7 +35,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 ## <a name="sign-in-to-intune"></a>Intune にサインインする
 
-グローバル管理者または Intune サービス管理者として [Intune](https://aka.ms/intuneportal) にサインインします。 Intune の試用版サブスクリプションを作成した場合、サブスクリプションを作成したアカウントがグローバル管理者になります。
+全体管理者または Intune サービス管理者として、[Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。 Intune の試用版サブスクリプションを作成した場合、サブスクリプションを作成したアカウントがグローバル管理者になります。
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Windows 10 の自動登録を設定する
 

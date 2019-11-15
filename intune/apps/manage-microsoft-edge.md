@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ee68392feaa59ef5207edce75250e539407273b
-ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
+ms.openlocfilehash: 890709ccf176f2b0cc6c4a3af986d1bce642572d
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72593691"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754411"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Edge と Microsoft Intune を使用して Web アクセスを管理する
 
@@ -106,7 +106,7 @@ Microsoft Edge 用のアプリの構成を作成するには:
 7. **[構成設定]** を選択します。 **[構成]** ブレードで、Microsoft Edge の構成を指定するためのキーと値のペアを定義します。 定義できる別のキーと値のペアについては、この記事の後半のセクションで説明します。
 
     > [!NOTE]
-    > Microsoft Edge は、Managed Browser と同じキーと値のペアを使用します。 
+    > Microsoft Edge は、Managed Browser と同じキーと値のペアを使用します。 Android では、アプリ構成ポリシーを有効にするには、Microsoft Edge がアプリ保護ポリシーの対象になっている必要があります。
 
 8. 終了したら、 **[OK]** を選択します。
 9. **[構成ポリシーの追加]** ブレードで、 **[追加]** を選択します。<br>
@@ -301,4 +301,4 @@ Microsoft Edge のセキュリティとプライバシーに関するその他�
 
 ## <a name="next-steps"></a>次の手順
 
-- [アプリ保護ポリシーとは](app-protection-policy.md) 
+- [アプリ保護ポリシーとは?](app-protection-policy.md) 

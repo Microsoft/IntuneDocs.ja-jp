@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a72477351425e9230200995658cc6f73a8565fb7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 918468bf8948ce54082f3fccc0325db07e116966
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509497"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713199"
 ---
 # <a name="see-device-details-in-intune"></a>Intune でデバイスの詳細を確認する
 
@@ -33,7 +33,7 @@ ms.locfileid: "72509497"
 
 ## <a name="view-the-device-details"></a>デバイスの詳細を表示する
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 3. **[デバイス]**  >  **[すべてのデバイス]** を選択します。次に、一覧表示されているデバイスのいずれかを選択して、その詳細を開きます。
 
    - **[概要]** には、デバイス名が表示され、Bring-Your-Own-Device (BYOD) デバイスであるかどうかや、チェックイン時刻など、デバイスの主なプロパティがいくつか一覧表示されます。 デバイスでは、次のことを実行できます。
