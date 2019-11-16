@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7c7ec23d0408aa4d4cf81baff2d7cdf749fb65e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 03ceaf5493f544dbb815146eb67c3fae8856d29e
+ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509235"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74126156"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune での iOS デバイスの登録に関する問題のトラブルシューティング
 
@@ -84,6 +84,8 @@ ms.locfileid: "72509235"
 1. デバイスからポータル サイト アプリを削除します。
 2. **App Store**から **Microsoft Intune ポータル サイト** アプリをダウンロードしてインストールします。
 3. デバイスを再度登録します。
+ > [!NOTE]
+    > このエラーは、デバイスの登録が許可するように構成されているよりも多くのデバイスをユーザーが登録しようとした場合にも発生する可能性があります。 これらの手順で問題が解決しない場合は、下記の**デバイス上限に達し**た場合の解決手順に従ってください。
 
 ### <a name="device-cap-reached"></a>デバイス キャップに達しました
 

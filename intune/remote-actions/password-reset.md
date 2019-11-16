@@ -3,8 +3,8 @@ title: ヘルプ デスクのコストの削減
 titleSuffix: Microsoft Intune
 description: セルフサービスのパスワード リセットでヘルプ デスクのコストを削減する
 keywords: Azure Active Directory SSPR パスワード リセット
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: archived
@@ -15,16 +15,17 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1da1758dcc1743087191f69bd4d57bc113774d81
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 08dc14a3abed634721b39fedaae840e2b18c151b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509304"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058109"
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>セルフサービスのパスワード リセットでヘルプ デスクのコストを削減する
 
 社員がヘルプ デスクのサポートなしで職場や学校のアカウントのパスワードをリセットすることを許可できます。 この種類のセルフ サービス パスワード リセットは次のような状況で推奨されます。
+
 * 会社や学校が仕事や学校のアカウントに Azure Active Directory を利用している。
 * 社員や学生がインターネットにアクセスできる。
 * ヘルプ デスクのコストを下げたい。
@@ -39,6 +40,7 @@ ms.locfileid: "72509304"
 ## <a name="next-steps"></a>次の手順
 
 次の記事について学習します。
+
 * [パスワードのベスト プラクティス](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [セルフサービス パスワード リセットのライセンスを与える](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 

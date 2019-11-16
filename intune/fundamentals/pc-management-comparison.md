@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 11/13/2018
 ms.topic: archived
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ab16d79549a7fe7b0249c0c4af79ed56817ecec
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d8fd53e9d12dd38639d204e214aea03d733e584b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510050"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059196"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Windows PC のコンピューターとしての管理とモバイル デバイスとしての管理の比較
 
@@ -42,11 +42,11 @@ ms.locfileid: "72510050"
 |**ソフトウェア更新管理**| Windows の更新プログラムと Microsoft アプリの更新プログラム<br>[ソフトウェア更新プログラムを使用して Windows PC を最新の状態に保つ](../keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)|Windows 10 と Microsoft アプリの更新プログラム用のビジネス向け Microsoft ストア<br> [ビジネス設定向けの Windows Update の構成](../protect/windows-update-for-business-configure.md) |
 |**ソフトウェア ライセンスの管理**|利用可能 <br>[Windows PC ソフトウェアのライセンス契約を管理する](../manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)|ビジネス向け Microsoft ストア (.appx アプリのみ)<br>[ビジネス向け Microsoft ストアから購入したアプリの管理](../apps/windows-store-for-business.md)|
 |**インベントリ**|利用可能 <br>[Windows PC のハードウェアとソフトウェアのインベントリを表示する](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md)|利用可能 <br>[アプリ情報を監視する方法](../apps/apps-monitor.md)<br>[デバイス管理とは](../remote-actions/device-management.md)|
-|**Windows ファイアウォールのポリシー**|利用可能 <br>[Windows ファイアウォール ポリシーを使用して Windows PC を保護する](../help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |利用可能 <br>[Windows Defender ファイアウォール](../protect/endpoint-protection-windows-10.md#windows-defender-firewall)|
-|**マルウェア対策**|Endpoint Protection<br>[Endpoint Protection を使用した Windows PC の保護](../help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Windows Defender<br>[Windows Defender を有効にする](../protect/advanced-threat-protection.md)|
+|**Windows ファイアウォールのポリシー**|利用可能 <br>[Windows ファイアウォール ポリシーを使用して Windows PC を保護する](../help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |利用可能 <br>[Microsoft Defender ファイアウォール](../protect/endpoint-protection-windows-10.md#microsoft-defender-firewall)|
+|**マルウェア対策**|Endpoint Protection<br>[Endpoint Protection を使用した Windows PC の保護](../help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Microsoft Defender<br>[Microsoft Defender を有効にする](../protect/advanced-threat-protection.md)|
 |**リモート アシスタンス** |TeamViewer<br>[Windows PC のリモート アシスタンス要求と提供](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [TeamViewer を使用して、Intune デバイスをリモートで管理する](../remote-actions/teamviewer-support.md) |
 |**アプリの展開** | ビジネス向け Microsoft ストアでは使用できません。<br>.exe、.appx、マルチファイル .msi のみ<br>[Intune ソフトウェア クライアントを実行している Windows PC にアプリを追加する](add-apps-for-windows-pcs-in-microsoft-intune.md)|Microsoft ストア アプリと基幹業務アプリに使用可能<br>[Windows ストア アプリを追加する方法](../apps/store-apps-windows.md)<br>[Windows の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法](../apps/lob-apps-windows.md)|
-|**アプリ保護**|利用不可|利用可能 <br>[アプリ保護ポリシーとは](../apps/app-protection-policy.md)|
+|**アプリ保護**|利用不可|利用可能 <br>[アプリ保護ポリシーとは?](../apps/app-protection-policy.md)|
 |**正常性構成証明書**|利用不可|利用可能|
 
 

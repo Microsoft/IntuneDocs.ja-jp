@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17dce8f7c5aa55a2044e663f724a5784cee8b375
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 42ccb1d1654ba45b63672eebf00acd10fdc56a67
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506686"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059343"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune で Windows 10 以降のデバイスをキオスクとして実行するための設定
 
@@ -40,6 +40,8 @@ Intune での Windows キオスク機能の詳細については、[キオスク
 
   1. このキオスク プロファイルを作成し、キオスク モードでデバイスを実行します。
   2. [デバイスの制限プロファイル](device-restrictions-windows-10.md#microsoft-edge-browser)を作成し、Microsoft Edge で許可された特定の機能と設定を構成します。
+
+- すべてのファイル、スクリプト、およびショートカットがローカルシステム上にあることを確認してください。 その他の Windows 要件を含む詳細については、「[スタートレイアウトのカスタマイズとエクスポート](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout)」を参照してください。
 
 > [!IMPORTANT]
 > このキオスク プロファイルは必ず [Microsoft Edge プロファイル](device-restrictions-windows-10.md#microsoft-edge-browser)と同じデバイスに割り当ててください。
@@ -194,3 +196,5 @@ Intune での Windows キオスク機能の詳細については、[キオスク
 [プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
 
 また、[Android](device-restrictions-android.md#kiosk)、[Android エンタープライズ](device-restrictions-android-for-work.md#dedicated-device-settings)、[Windows Holographic for Business](kiosk-settings-holographic.md) デバイス用のキオスク プロファイルを作成することもできます。
+
+また、「[シングルアプリキオスクのセットアップ](https://docs.microsoft.com/windows/configuration/kiosk-single-app)」または「[マルチアプリキオスクの](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps)セットアップ」も参照してください。
