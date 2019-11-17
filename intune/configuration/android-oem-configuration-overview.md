@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8747f3dfa9169a4f1f2de9dcf45db0f5cccadd1
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: bacb7e26df8a5b0d6c7500b24a5e749a85ca62f2
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73756763"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059643"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Microsoft Intune の OEMConfig で Android エンタープライズデバイスを使用および管理する
 
@@ -81,7 +81,7 @@ OEMConfig を使用する場合は、次の情報に注意してください。
 ## <a name="create-an-oemconfig-profile"></a>OEMConfig プロファイルを作成する
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-2. **[デバイス]**  >  **[構成プロファイル]**  >  **[プロファイルの作成]** を選択します。
+2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 3. 次のプロパティを入力します。
 
     - **名前**: 新しいプロファイルのわかりやすい名前を入力します。
@@ -141,7 +141,7 @@ OEMConfig を使用する場合は、次の情報に注意してください。
 
 | OEM | バンドル ID | OEM ドキュメント (利用可能な場合) |
 | --- | --- | ---|
-| Samsung | com. android. knox. kpu | [Knox サービスプラグイン管理者ガイド](https://docs.samsungknox.com/knox-service-plugin/admin-guide/welcome.htm) |
+| Samsung | com. android. knox. kpu | [Knox サービスプラグイン管理者ガイド](https://docs.samsungknox.com/knox-service-plugin/admin-guide/index.htm) |
 | ゼブラテクノロジ | ゼブラを構成します。 | [ゼブラ OEMConfig の概要](http://techdocs.zebra.com/oemconfig ) |
 | Datalogic | com. datalogic. oemconfig | [Datalogic OEMConfig のユーザードキュメント](https://datalogic.github.io/oemconfig/) |
 | Honeywell | honeywell 構成 |  |

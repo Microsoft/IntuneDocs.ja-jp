@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f343ace48c917e65d9d59cd7c42c53e9b892968
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 829d8f6b2691f91c14029e4f29e2ef11b070e596
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73756718"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059616"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Microsoft Intune で Zebra モビリティ拡張機能を備えた Zebra デバイスを使用および管理する
 
@@ -134,7 +134,7 @@ StageNow でプロファイルを作成するときの最後の手順で、 **[E
 Intune で、デバイス構成プロファイルを作成します。
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-2. **[デバイス]**  >  **[構成プロファイル]**  >  **[プロファイルの作成]** を選択します。
+2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 3. 次のプロパティを入力します。
 
     - **名前**: 新しいプロファイルのわかりやすい名前を入力します。

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3e0ea523d71ff036f1f23c9436c65e105328d8b
-ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
+ms.openlocfilehash: 381ceea979dedf9b33cb7ef9c47291e3ac6ce20c
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73057640"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74117901"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>Intune で一般的な iOS 機能を使用するための iOS および iPadOS のデバイス設定
 
@@ -289,8 +289,8 @@ iPhone にポリシーを割り当てると、ページは次の画像のよう�
   > [!TIP]
   > **資格情報**の種類を使用して、独自の構成値を追加して拡張機能を通過させることができます。 代わりに、 **Kerberos**の種類で Apple が提供する組み込みの構成設定を使用することを検討してください。
 
-- [**拡張機能 ID** (資格情報のみ)]: `com.apple.extensiblesso` など、SSO アプリ拡張機能を識別するバンドル識別子を入力します。
-- [**チーム ID** (資格情報のみ)]: SSO アプリ拡張機能のチーム識別子を入力します。 チーム識別子は、`ABCDE12345` など、Apple によって生成される10文字の英数字 (数字と文字) 文字列です。 チーム ID は必要ありません。
+- [**拡張機能 ID** (資格情報のみ)]: SSO アプリ拡張機能を識別するバンドル識別子 (`com.apple.extensiblesso`など) を入力します。
+- [**チーム ID** (資格情報のみ)]: SSO アプリ拡張機能のチーム識別子を入力します。 チーム識別子は、`ABCDE12345`のように、Apple によって生成される10文字の英数字 (数字と文字) 文字列です。 チーム ID は必要ありません。
 
   [チーム ID を検索](https://help.apple.com/developer-account/#/dev55c3c710c)します (Apple の web サイトを開きます)。詳細については、こちらを参照してください。
 
@@ -302,11 +302,11 @@ iPhone にポリシーを割り当てると、ページは次の画像のよう�
   - これらのドメインでは大文字と小文字が区別されません。
 
 - **追加の構成**(資格情報のみ): SSO アプリ拡張機能に渡す追加の拡張機能固有のデータを入力します。
-  - **[構成キー]** : `user name` など、追加する項目の名前を入力します。
+  - **[構成キー]** : `user name`など、追加する項目の名前を入力します。
   - **値の種類**: データの種類を入力します。 次のようなオプションがあります。
 
     - 文字列型
-    - ブール値: **[構成値]** に、`True` または `False` を入力します。
+    - ブール: **構成値** に、`True` または `False`を入力します。
     - 整数: **構成値** に数値を入力します。
     
   - **構成値**: データを入力します。
@@ -322,11 +322,12 @@ iPhone にポリシーを割り当てると、ページは次の画像のよう�
   > - 複数のレルムを使用している場合は、この設定**を有効に**します。 これにより、入力した**領域**の値が既定の領域として設定されます。
   > - 領域が1つしかない場合は、**構成しません**(既定)。
 
-- [**プリンシパル名**(kerberos のみ)]: kerberos プリンシパルのユーザー名を入力します。 領域名を含める必要はありません。 たとえば、`user@contoso.com` の場合、`user` がプリンシパル名、`contoso.com` が領域名です。
+- [**プリンシパル名**(kerberos のみ)]: kerberos プリンシパルのユーザー名を入力します。 領域名を含める必要はありません。 たとえば、`user@contoso.com`では、`user` がプリンシパル名、`contoso.com` が領域名です。
 - **Active Directory サイトコード**(kerberos のみ): kerberos 拡張機能で使用する Active Directory サイトの名前を入力します。 Kerberos 拡張機能によって Active Directory サイトコードが自動的に検出される可能性があるため、この値を変更する必要はありません。
 - [**キャッシュ名**(kerberos のみ)]: kerberos キャッシュの汎用セキュリティサービス (GSS) 名を入力します。 多くの場合、この値を設定する必要はありません。
 - **アプリバンドル id** (Kerberos のみ): デバイスでシングルサインオンを使用する必要があるアプリバンドル識別子を**追加**します。 これらのアプリには、Kerberos チケット保証チケットと認証チケットへのアクセス権が付与され、アクセスが許可されているサービスに対してユーザーを認証します。
 - [**ドメイン領域マッピング**(Kerberos のみ)]: 領域にマップするドメイン DNS サフィックスを**追加**します。 ホストの DNS 名が領域名と一致しない場合に、この設定を使用します。 このカスタムドメインから領域へのマッピングを作成する必要はほとんどありません。
+- [ **Pkinit 証明書**(Kerberos のみ)]: ユーザー操作なしで Kerberos 資格情報を更新するために使用できる、初期認証用の公開キー暗号化 (PKINIT) 証明書を**選択し**ます。 証明書は、以前に Intune に追加した PKCS または SCEP 証明書である必要があります。
 
 ## <a name="wallpaper"></a>壁紙
 

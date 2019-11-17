@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e69f1b11833da0906aaf831f8bb82b04241e442f
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: bce6b99723c5eada8f8f29e875a1df1daa02751a
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755175"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059364"
 ---
 # <a name="add-macos-kernel-extensions-in-intune"></a>Intune で macOS カーネル拡張機能を追加する
 
@@ -68,7 +68,7 @@ Intune では、"構成プロファイル" を使用して、お客様の組織�
 ## <a name="create-the-profile"></a>プロファイルの作成
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-2. **[デバイス]**  >  **[構成プロファイル]**  >  **[プロファイルの作成]** を選択します。
+2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 3. 次のプロパティを入力します。
 
     - **名前**: 新しいプロファイルのわかりやすい名前を入力します。
