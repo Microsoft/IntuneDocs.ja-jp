@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d69bd040929da08d7d23db764c5b01f6aca6a9ea
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: 5e453002493e95bd5147cca115075a17a6e7a298
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143180"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709327"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>登録ステータス ページを設定する
  
@@ -48,7 +48,7 @@ ms.locfileid: "73143180"
  登録ステータス ページの動作をカスタマイズするには、次の設定を構成できます。
 
 <table>
-<th align="left">Setting<th align="left">はい<th align="left">[いいえ]
+<th align="left">設定<th align="left">はい<th align="left">[いいえ]
 <tr><td>アプリとプロファイルのインストールの進行状況を表示する<td>登録ステータス ページは表示されます。<td>登録ステータス ページは表示されません。
 <tr><td>すべてのアプリとプロファイルがインストールされるまでデバイスの使用をブロックする<td>このテーブルの設定を使用して、ユーザーがインストールに関する潜在的な問題に対処できるように、登録ステータス ページの動作をカスタマイズできます。
 <td>登録のステータス ページには、インストールの失敗を解決するための追加オプションは表示されません。
@@ -64,14 +64,14 @@ ms.locfileid: "73143180"
 
 登録ステータス ページを有効にするには、以下の手順のようにします。
  
-1. [Intune](https://aka.ms/intuneportal) で、 **[デバイス登録]**  >  **[Windows 登録]**  >  **[登録ステータス ページ]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Windows の登録]** 、 **[登録状態ページ]** の順に選択します。
 2. **[登録ステータス ページ]** ブレードで、 **[既定]**  >  **[設定]** の順に選択します。
 3. **[Show app and profile installation progress]\(アプリとプロファイルのインストールの進行状況を表示する\)** で、 **[はい]** を選択します。
 4. 有効にするその他の設定を選択してから、 **[保存]** を選びます。
 
 ## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>登録ステータス ページのプロファイルを作成してグループに割り当てる
 
-1. [Intune](https://aka.ms/intuneportal) で、 **[デバイス登録]**  >  **[Windows 登録]**  >  **[登録ステータス ページ]**  >  **[プロファイルの作成]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Windows の登録]** 、 **[登録状態ページ]** 、 **[プロファイルの作成]** の順に選択します。
 2. **名前**と**説明**を入力します。
 3. **[作成]** を選択します。
 4. **[登録ステータス ページ]** リストで新しいプロファイルを選択します。
@@ -82,7 +82,7 @@ ms.locfileid: "73143180"
 
 1 人のユーザーが、複数のグループに属し、多くの登録ステータス ページ プロファイルを使用することができます。 そのような競合に対処するため、プロファイルごとに優先順位を設定することができます。 登録時に、ユーザーが複数の登録ステータス ページ プロファイルを持っている場合は、優先順位の最も高いプロファイルのみがデバイスの登録に適用されます。
 
-1. [Intune](https://aka.ms/intuneportal) で、 **[デバイス登録]**  >  **[Windows 登録]**  >  **[登録ステータス ページ]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Windows の登録]** 、 **[登録状態ページ]** の順に選択します。
 2. 一覧内のプロファイルにカーソルを合わせます。
 3. 3 つの縦向きドットを使用して、そのプロファイルを一覧上の目的の位置にドラッグします。
 
@@ -90,7 +90,7 @@ ms.locfileid: "73143180"
 
 ユーザーがデスクトップにアクセスするためにインストールしておく必要があるアプリを指定できます。
 
-1. Intune で、 **[デバイス登録]**  >  **[Windows 登録]**  >  **[登録ステータス ページ]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Windows の登録]** 、 **[登録状態ページ]** の順に選択します。
 2. プロファイルを選択して、 **[設定]** を選択します。
 3. **[アプリとプロファイルのインストールの進行状況を表示する]** で、 **[はい]** を選択します。
 4. **[すべてのアプリとプロファイルがインストールされるまでデバイスの使用をブロックする]** で **[はい]** を選択します。

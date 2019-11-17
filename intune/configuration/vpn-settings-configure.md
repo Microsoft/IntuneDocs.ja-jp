@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5628ba39cafe38cc66827d69584d009c15326bd4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 59a1b5679b81a8de90e39d6ec13bbe87dac90947
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72491754"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984182"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Intune で VPN サーバーに接続するための VPN プロファイルを作成する
 
@@ -50,7 +50,7 @@ ms.locfileid: "72491754"
 |Check Point Capsule VPN|- Android<br/>- Android エンタープライズ仕事用プロファイル<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
 |Cisco AnyConnect|- Android<br/>- Android エンタープライズ仕事用プロファイル<br/>- Android エンタープライズ デバイス所有者 (フル マネージド)<br/>- iOS<br/>- macOS|
 |Cisco (IPSec)|iOS|
-|Citrix SSO|- Android<br/>- Android エンタープライズ仕事用プロファイル:[アプリ構成ポリシー](../apps/app-configuration-policies-use-android.md)を使用する<br/>- iOS<br/>- Windows 10|
+|Citrix SSO|- Android<br/>- Android エンタープライズ仕事用プロファイル:[アプリ構成ポリシー](../apps/app-configuration-policies-use-android.md)を使用する<br/>- Android エンタープライズ デバイス所有者 (フル マネージド):[アプリ構成ポリシー](../apps/app-configuration-policies-use-android.md)を使用する<br/>- iOS<br/>- Windows 10|
 |カスタム VPN|- iOS<br/>- macOS|
 |F5 Access|- Android<br/>- Android エンタープライズ仕事用プロファイル<br/>- Android エンタープライズ デバイス所有者 (フル マネージド)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
 |IKEv2| - iOS<br/>- Windows 10|
@@ -68,8 +68,9 @@ URI の設定を使ってカスタム VPN プロファイルを作成する方�
 
 ## <a name="create-a-device-profile"></a>デバイス プロファイルの作成
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) で、 **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
-2. 次のプロパティを入力します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
+3. 次のプロパティを入力します。
 
     - **名前**: プロファイルのわかりやすい名前を入力します。 後で簡単に識別できるよう、プロファイルに名前を付けます。 たとえば、「**会社全体の VPN プロファイル**」は適切なプロファイル名です。
     - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
@@ -86,7 +87,7 @@ URI の設定を使ってカスタム VPN プロファイルを作成する方�
 
     - **[プロファイルの種類]** : **[VPN]** を選択します。
 
-3. 選択したプラットフォームによって構成できる設定が異なります。 各プラットフォームの詳細な設定については、次の記事を参照してください。
+4. 選択したプラットフォームによって構成できる設定が異なります。 各プラットフォームの詳細な設定については、次の記事を参照してください。
 
     - [Android の設定](vpn-settings-android.md)
     - [Android エンタープライズの設定](vpn-settings-android-enterprise.md)
@@ -96,7 +97,7 @@ URI の設定を使ってカスタム VPN プロファイルを作成する方�
     - [Windows 8.1 の設定](vpn-settings-windows-8-1.md)
     - [Windows 10 の設定](vpn-settings-windows-10.md) (Windows Holographic for Business を含む)
 
-4. 完了したら、プロファイルを **[作成]** します
+5. 完了したら、 **[OK]**  >  **[作成]** を選択して変更を保存します。
 
 プロファイルが作成され、プロファイル一覧に表示されます。 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルの割り当て](device-profile-assign.md)に関するページを参照してください。
 

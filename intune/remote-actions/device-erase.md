@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0379ffc6a3c3ffd83a9d121e622e9ee8f7c0af5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 428b4040eb0d91b7fe32fcf71842ce5bd1910013
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509505"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713221"
 ---
 # <a name="erase-all-data-from-a-macos-device"></a>MacOS デバイスからすべてのデータを消去する
 
@@ -31,7 +31,7 @@ ms.locfileid: "72509505"
 
 macOS デバイスから、オペレーティング システムを含むすべてのデータを消去することができます。 デバイスは Intune の管理からも削除されます。 エンド ユーザーに警告は表示されません。
 
-1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、 **[デバイス]**  >  **[すべてのデバイス]** の順に選び、消去するデバイスを選びます。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]** 、 **[すべてのデバイス]** の順に選択し、消去するデバイスを選択します。
 ![スクリーンショット](./media/device-erase/choosedevice.png)
 2. **[その他]**  >  **[消去]** の順にクリックし、 **[Recovery Pin]\(回復用 PIN\)** に 6 桁の数字を入力します。 これは、ユーザーが自分のデバイスにオペレーティング システムを再インストールできるようにユーザーに与える必要がある PIN です。 この PIN は、消去操作が完了した後では表示できないので、必ず書き留めておいてください。
 ![スクリーンショット](./media/device-erase/providepin.png)

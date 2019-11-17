@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b0f31add65063665da5a7961e2caf9eb30a847e2
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 3db085e6e88f8f57eb0276afa77290df8574568f
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72787869"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801700"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune で PKCS 証明書を構成して使用する
 
@@ -142,13 +142,14 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
 > [!IMPORTANT]  
 > Microsoft Intune Certificate Connector を、発行元証明機関 (CA) にインストールすることはできません。代わりに、別の Windows サーバーにインストールする必要があります。  
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[デバイス構成]**  >  **[証明書のコネクタ]**  >  **[追加]** の順に選択します。
-3. コネクタのインストール先となるサーバーからアクセスできる場所にコネクタ ファイルをダウンロードして保存します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 
-    ![Microsoft Intune Certificate Connector のダウンロード](./media/certficates-pfx-configure/download-ndes-connector.png)
+2. **[テナント管理]** 、 **[コネクタとトークン]** 、 **[証明書のコネクタ]** 、 **[+ 追加]** の順に選択します。
+
+3. PKCS #12 のコネクタの *[Certificate Connector ソフトウェアをネットワーク上のセキュリティで保護された場所にダウンロード]* をクリックし、コネクタのインストール先となるサーバーからアクセスできる場所にファイルを保存します。
+
+   ![Microsoft Intune Certificate Connector のダウンロード](./media/certficates-pfx-configure/download-ndes-connector.png)
  
-
 4. ダウンロードが完了したら、サーバーにサインインします。 次のことを行います。
 
     1. .NET Framework 4.5 以降がインストールされていることを確認します。NDES 証明書コネクタで必要となるからです。 .NET Framework 4.5 は、Windows Server 2012 R2 およびそれ以降の新しいバージョンには自動的に含められます。
@@ -166,39 +167,46 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
 
 ## <a name="create-a-trusted-certificate-profile"></a>信頼済み証明書プロファイルを作成する
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインして、 **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に移動します。
-    ![Intune に移動して信頼済み証明書用に新しいプロファイルを作成する](./media/certficates-pfx-configure/certificates-pfx-configure-profile-new.png)
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 
-2. 次のプロパティを入力します。
+2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
+
+   ![Intune に移動して信頼済み証明書用に新しいプロファイルを作成する](./media/certficates-pfx-configure/certificates-pfx-configure-profile-new.png)
+
+3. 次のプロパティを入力します。
 
     - プロファイルの**名前**
     - オプションで説明を設定
     - プロファイルをデプロイする**プラットフォーム**
     - **[プロファイルの種類]** に **[信頼済み証明書]** を設定
 
-3. **[設定]** に移動し、以前エクスポートした .cer ファイルのルート CA 証明書を入力します。
+4. **[設定]** を選択し、以前エクスポートした .cer ファイルのルート CA 証明書を指定します。
 
    > [!NOTE]
    > **手順 2** で選択したプラットフォームに応じて、証明書の**保存先ストア**を選択するオプションが使用できる場合と使用できない場合があります。
 
-   ![プロファイルを作成し、信頼済み証明書をアップロードする](./media/certficates-pfx-configure/certificates-pfx-configure-profile-fill.png) 
+   ![プロファイルを作成し、信頼済み証明書をアップロードする](./media/certficates-pfx-configure/certificates-pfx-configure-profile-fill.png)
 
-4. **[OK]**  >  **[作成]** を選択してプロファイルを保存します。
-5. 1 つ以上のデバイスに新しいプロファイルを割り当てる場合は、[Microsoft Intune のデバイス プロファイルの割り当て](../configuration/device-profile-assign.md)に関するページをご覧ください。
+5. **[OK]**  >  **[作成]** を選択してプロファイルを保存します。
+
+6. 1 つ以上のデバイスに新しいプロファイルを割り当てる場合は、[Microsoft Intune のデバイス プロファイルの割り当て](../configuration/device-profile-assign.md)に関するページをご覧ください。
 
 ## <a name="create-a-pkcs-certificate-profile"></a>PKCS 証明書プロファイルを作成する
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインして、 **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に移動します。
-2. 次のプロパティを入力します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+
+2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に移動します。
+
+3. 次のプロパティを入力します。
 
     - プロファイルの**名前**
     - オプションで説明を設定
     - プロファイルをデプロイする**プラットフォーム**
     - **[プロファイルの種類]** に **[PKCS 証明書]** を設定
 
-3. **[設定]** にアクセスし、選択したプラットフォームに適用されるプロパティを構成します。  
+4. **[設定]** を選択し、選択したプラットフォームに適用されるプロパティを構成します。
    
-   |Setting     | プラットフォーム     | 説明   |
+   |設定     | プラットフォーム     | 説明   |
    |------------|------------|------------|
    |**[更新しきい値 (%)]**        |すべて         |推奨値は 20% です  | 
    |**[証明書の有効期間]**  |すべて         |証明書テンプレートを変更していない場合、このオプションはおそらく 1 年に設定されています。 |
@@ -212,8 +220,9 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
    |**[すべてのアプリが秘密キーにアクセスできるようにする]** |macOS  |**[有効にする]** に設定すると、PKCS 証明書の秘密キーへのアクセスが関連 mac デバイスに構成されているアプリに与えられます。 <br><br> この設定の詳細については、Apple 開発者ドキュメントにある「[Configuration Profile Reference](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)」の「Certificate Payload」セクションに記載されている *AllowAllAppsAccess* を参照してください。 |
    |**ルート証明書**             |**-** Android デバイス管理者 <br> **-** Android エンタープライズ (*デバイス所有者*、*仕事用プロファイル*) |前に割り当てられたルート CA 証明書プロファイルを選択します。 |
 
-4. **[OK]**  >  **[作成]** を選択してプロファイルを保存します。
-5. 1 つ以上のデバイスに新しいプロファイルを割り当てる場合は、[Microsoft Intune のデバイス プロファイルの割り当て](../configuration/device-profile-assign.md)に関するページをご覧ください。
+5. **[OK]**  >  **[作成]** を選択してプロファイルを保存します。
+
+6. 1 つ以上のデバイスに新しいプロファイルを割り当てる場合は、[Microsoft Intune のデバイス プロファイルの割り当て](../configuration/device-profile-assign.md)に関するページをご覧ください。
 
    > [!NOTE]
    > Android エンタープライズ プロファイルを使用しているデバイスでは、PKCS 証明書プロファイルを使用してインストールされた証明書は、デバイス上に表示されません。 証明書の展開に成功したことを確認するには、Intune コンソール上でプロファイルの状態を確認します。
@@ -262,7 +271,7 @@ macOS PKCS 証明書プロファイルを作成するとき、サブジェクト
   - **{{DeviceName}}**
   - **{{FullyQualifiedDomainName}}** *(Windows およびドメインに参加しているデバイスにのみ適用)*
   - **{{MEID}}**
-   
+
   これらの変数は、テキスト ボックスで指定し、その後に変数のテキストを続けることができます。 たとえば、*Device1* という名前のデバイスの共通名は、**CN={{DeviceName}}Device1** として追加できます。
 
   > [!IMPORTANT]  
@@ -273,21 +282,25 @@ macOS PKCS 証明書プロファイルを作成するとき、サブジェクト
 
 
 ## <a name="whats-new-for-connectors"></a>コネクタの新機能
-2 つの証明書コネクタの更新プログラムは、定期的にリリースされます。 コネクタが更新された場合、その変更についてここから確認することができます。 
+
+2 つの証明書コネクタの更新プログラムは、定期的にリリースされます。 コネクタが更新された場合、その変更についてここから確認することができます。
 
 *PFX Certificates Connector for Microsoft Intune* が[自動更新をサポート](#requirements)しているのに対し、*Intune Certificate Connector* は手動で更新されます。
 
-### <a name="may-17-2019"></a>2019 年 5 月 17 日  
+### <a name="may-17-2019"></a>2019 年 5 月 17 日
+
 - **PFX Certificate Connector for Microsoft Intune - バージョン 6.1905.0.404**  
   このリリースの変更点:  
   - コネクタで新しい要求の処理が停止される原因となる、既存の PFX 証明書の再処理が続行される問題を修正しました。 
 
-### <a name="may-6-2019"></a>2019 年 5 月 6 日  
+### <a name="may-6-2019"></a>2019 年 5 月 6 日
+
 - **PFX Certificate Connector for Microsoft Intune - バージョン 6.1905.0.402**  
   このリリースの変更点:  
   - コネクタのポーリング間隔が、5 分から 30 秒に短縮されました。
  
-### <a name="april-2-2019"></a>2019 年 4 月 2 日  
+### <a name="april-2-2019"></a>2019 年 4 月 2 日
+
 - **Intune Certificate Connector - バージョン 6.1904.1.0**  
   このリリースの変更点:  
   - グローバル管理者アカウントを使用してコネクタにサインインした後に、コネクタが Intune への登録に失敗することがある問題を修正しました。  

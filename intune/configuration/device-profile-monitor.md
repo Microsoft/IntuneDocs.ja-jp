@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1c68421bf7c5dea0d93d45e0cbb748204d0f66b
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 4dc349ef7af2683b4dafeaa1cc09f5b7a727e843
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749392"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755293"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Microsoft Intune でデバイス プロファイルを監視する
 
@@ -32,8 +32,8 @@ Intune には、デバイス構成プロファイルの監視と管理に役立�
 
 ## <a name="view-existing-profiles"></a>既存のプロファイルを表示する
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[デバイス構成]**  >  **[プロファイル]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]** 、 **[構成プロファイル]** の順に選択します。
 
 既存のプロファイルがすべて一覧表示され、プラットフォームなどの詳細が含まれ、プロファイルがいずれかのデバイスに割り当てられているかどうかが示されます。
 

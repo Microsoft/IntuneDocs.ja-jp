@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff1dc2565ef52f81619abe8f14e78c58da0fce7d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 294f06b078b06cfba9376ba6db0eb42cb884e141
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508622"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712327"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>[新たに開始] を使用して Intune が稼働する Windows 10 デバイスをリセットする
 
@@ -30,7 +30,7 @@ ms.locfileid: "72508622"
 
 **[新たに開始]** デバイス操作は、Windows 10 バージョン 1703 以降を実行している PC にインストールされているすべてのアプリを削除します。 [新たに開始] は、一般的に新しい PC にプレインストールされている (OEM) アプリケーションを削除するために役立ちます。 
 
-1. [Azure Portal](https://portal.azure.com) にサインインし、 **[Microsoft Intune]**  >  **[デバイス]**  >  **[すべてのデバイス]** に移動します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインし、 **[デバイス]** 、 **[すべてのデバイス]** の順に選択します。
 2. 管理するデバイスの一覧から Windows 10 デスクトップ デバイスを選択します。
 3. **[新たに開始]** をクリックします。 
 4. 以下の目的で **[このデバイスにあるユーザー データを保持する]** を選択します。

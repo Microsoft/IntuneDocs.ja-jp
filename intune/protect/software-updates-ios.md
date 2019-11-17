@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ada1f6e5292684803fbea40430cdd43d61796746
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72681352"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984196"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Intune に iOS ソフトウェア更新プログラム ポリシーを追加する
 
@@ -28,7 +28,7 @@ ms.locfileid: "72681352"
 
 - iOS 10.3 以降 (監督下)
 
-デバイスは約 8 時間ごとに Intune でチェックインされます。 更新プログラムが利用可能な場合は、制限された時間を除き、デバイスによってそれがダウンロードおよびインストールされます。 デバイスを更新するために必要なユーザーの操作はありません。 ポリシーにより、ユーザーが手動で OS を更新できなくなることはありません。
+デバイスは約 8 時間ごとに Intune でチェックインされます。 更新プログラムが利用可能な場合は、制限された時間を除き、デバイスによってそれがダウンロードおよびインストールされます。 更新プロセスでは通常、ユーザーは何も操作しませんが、デバイスにパスコードが与えられている場合、ソフトウェア更新を開始する目的でコードの入力がユーザーに求められます。 これは、iOS 10.3 以降のバージョンに該当します。 ポリシーにより、ユーザーが手動で OS を更新できなくなることはありません。
 
 ## <a name="configure-the-policy"></a>ポリシーの構成
 

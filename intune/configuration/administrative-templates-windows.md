@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7f5a85896a2e6e7be845b2314c4f837dcaeb7b0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 50fc2d274531dce3d2466ba40a4738035b9b6811
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507025"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756772"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10 テンプレートを使用し、Microsoft Intune でグループ ポリシー設定を構成する
 
@@ -43,8 +43,8 @@ Windows の設定は、Active Directory (AD) のグループ ポリシー (GPO) 
 
 ## <a name="create-a-template"></a>テンプレートを作成する
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 3. 次のプロパティを入力します。
 
     - **名前**: プロファイルの名前を入力します。
@@ -59,7 +59,7 @@ Windows の設定は、Active Directory (AD) のグループ ポリシー (GPO) 
     > [!TIP]
     > Intune の Windows の設定は、ローカル グループ ポリシー エディター (`gpedit`) に表示されるオンプレミスのグループ ポリシー パスに関連付けられます。
 
-5. 既定では、ドロップダウン リストに **[すべての製品]** が表示されます。 リストから設定をフィルター処理し、**Windows** の設定のみを表示したり、**Office** の設定のみを表示したり、**Edge バージョン 77 以降**の設定のみを表示したりすることもできます。
+5. ドロップダウン リストで **[すべての製品]** を選択します。 リストから設定をフィルター処理し、**Windows** の設定のみを表示したり、**Office** の設定のみを表示したり、**Edge バージョン 77 以降**の設定のみを表示したりすることもできます。
 
     ![Intune の管理用テンプレートで、リストをフィルター処理して Windows または Office の設定をすべて表示する](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 

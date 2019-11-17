@@ -5,22 +5,23 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/31/2018
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
+ms.reviewer: ericor
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84103c6264431773ab5928f1da22c37a80cc9036
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 15af657ec63c664d91c370fa0f18ff8c4f140b47
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492716"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755230"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune で eSIM 携帯電話プロファイルを構成する - パブリック プレビュー
 
@@ -69,11 +70,10 @@ Intune を使ってご利用のデバイスに eSIM を展開するには、次�
 
 携帯電話のアクティブ化コードは、コンマ区切りファイル (csv) として、携帯電話会社によって提供されます。 このファイルがある場合は、次の手順を使用して Intune に追加します。
 
-1. [Azure ポータル](https://portal.azure.com/)にサインインします。
-2. **[すべてのサービス]** を選択し、 **[Intune]** をフィルターとして適用し、 **[Microsoft Intune]** を選択します。
-3. **[デバイス構成]**  >  **[eSIM 携帯ネットワーク プロファイル]**  >  **[追加]** の順に選択します。
-4. ご利用のアクティブ化コードが含まれている CSV ファイルを選択します。
-5. **[OK]** を選択して変更を保存します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]** 、 **[eSIM 携帯電話のプロファイル]** 、 **[追加]** の順に選択します。
+3. ご利用のアクティブ化コードが含まれている CSV ファイルを選択します。
+4. **[OK]** を選択して変更を保存します。
 
 ### <a name="csv-file-requirements"></a>CSV ファイルの要件
 
@@ -111,8 +111,8 @@ eSIM 対応デバイスを含むデバイス グループを作成します。 �
 
 ご利用の eSIM デバイスを含む Azure AD グループにプロファイルを割り当てます。
 
-1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com/) を選択し、 **[Intune]** をフィルター処理して **[Microsoft Intune]** を選びます。
-2. **[デバイス構成]**  >  **[eSIM cellular]\(eSIM 携帯電話\)**  >  **[プロファイル]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]** 、 **[eSIM 携帯電話のプロファイル]** の順に選択します。
 3. プロファイルの一覧で、割り当てる eSIM 携帯電話サブスクリプション プールを選び、 **[割り当て]** を選択します。
 4. グループを**含める**か**除外する**かを選んでから、グループを選択します。
 
@@ -129,15 +129,15 @@ eSIM アクティブ化コードは一度使用されます。 Intune によっ�
 
 プロファイルを割り当てた後、サブスクリプション プールの展開状態を監視することができます。
 
-1. [Azure ポータル](https://portal.azure.com/)にサインインします。
-2. **[すべてのサービス]** を選択し、 **[Intune]** をフィルターとして適用し、 **[Microsoft Intune]** を選択します。
-3. **[デバイス構成]**  >  **[eSIM 携帯ネットワーク プロファイル]** の順に選択します。 既存の eSIM 携帯電話サブスクリプション プールがすべて一覧表示されます。
-4. サブスクリプションを選択して、 **[展開状態]** を確認します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]** 、 **[eSIM 携帯電話のプロファイル]** の順に選択します。 既存の eSIM 携帯電話サブスクリプション プールがすべて一覧表示されます。
+3. サブスクリプションを選択して、 **[展開状態]** を確認します。
 
 ### <a name="check-the-profile-status"></a>プロファイルの状態を確認する
+
 デバイス プロファイルを作成すると、Intune でグラフィカルなチャートが提供されるようになります。 これらのチャートには、プロファイルがデバイスに正常に割り当てられていることや、プロファイルが競合を示しているかどうかなど、プロファイルの状態が表示されます。
 
-1. **[デバイス構成]**  >  **[eSIM 携帯ネットワーク プロファイル]** の順に選択し、既存のサブスクリプションを選びます。
+1. **[デバイス]** 、 **[eSIM 携帯電話のプロファイル]** の順に選択し、既存のサブスクリプションを選択します。
 2. **[概要]** タブでは、上のグラフィカル チャートに、特定の eSIM 携帯電話サブスクリプション プールの展開に割り当てられたデバイスの数が表示されます。
 
     また、同じデバイス プロファイルが割り当てられている他のプラットフォーム用のデバイスの数も表示されます。
@@ -153,7 +153,7 @@ eSIM アクティブ化コードは一度使用されます。 Intune によっ�
 
 [デバイスの状態] で表示できるデバイスの詳細な一覧を監視して、表示することができます。**
 
-1. **[デバイス構成]**  >  **[eSIM 携帯ネットワーク プロファイル]** の順に選択し、既存のサブスクリプションを選びます。
+1. **[デバイス]** 、 **[eSIM 携帯電話のプロファイル]** の順に選択し、既存のサブスクリプションを選択します。
 2. **[デバイスの状態]** を選択します。 Intune には、以下のデバイスに関する追加の詳細情報が表示されます。
 
     - **デバイス名**: ターゲットとなるデバイスの名前

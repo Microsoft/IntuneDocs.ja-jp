@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8961614a85992b927e31d590c7abadca75a85a6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 75644ac4d8ccfb8a63e077f2b6625ac96364f5d7
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492865"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755197"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>Intune を使用してデバイスに電子メールの設定を追加する
 
@@ -39,8 +39,8 @@ Microsoft Intune には、組織内のデバイスに展開できるさまざま
 
 ## <a name="create-a-device-profile"></a>デバイス プロファイルの作成
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 3. 次のプロパティを入力します。
 
     - **名前**: ポリシーのわかりやすい名前を入力します。 後で簡単に識別できるよう、ポリシーに名前を付けます。 たとえば、"**すべての Windows デバイスに対する電子メールの設定**" はよいポリシー名です。
@@ -71,7 +71,7 @@ Microsoft Intune には、組織内のデバイスに展開できるさまざま
 
 電子メール プロファイルはユーザー グループではなく、デバイス グループに割り当てられます。 デバイスに電子メール プロファイルが 1 つしかないときでも、電子メール プロファイルはさまざまな方法でデバイスから削除できます。
 
-- **オプション 1**:電子メール プロファイルを開き ( **[デバイス構成]**  >  **[プロファイル]** の順に選択します)、 **[割り当て]** を選択します。 **[必要]** タブには、プロファイルが割り当てられているグループが表示されます。 グループを右クリックし、 **[削除]** を選択します。 **[保存]** をクリックし、必ず変更を保存します。
+- **オプション 1**:電子メール プロファイルを開き ( **[デバイス]** 、 **[構成プロファイル]** の順に選択し、お使いのプロファイルを選択します)、 **[割り当て]** を選択します。 **[必要]** タブには、プロファイルが割り当てられているグループが表示されます。 グループを右クリックし、 **[削除]** を選択します。 **[保存]** をクリックし、必ず変更を保存します。
 
 - **オプション 2**:[デバイスをワイプするか、インベントリから削除します](../remote-actions/devices-wipe.md)。 これらのアクションを使用し、データや設定を選択した上で削除するか、すべて削除します。
 
@@ -103,4 +103,4 @@ Microsoft Intune には、組織内のデバイスに展開できるさまざま
 
 ## <a name="next-steps"></a>次の手順
 
-プロファイルを作成しましたが、まだ何も行っていません。 次は、[デバイスにプロファイルを割り当てます](../device-profile-assign.md)。
+プロファイルを作成しましたが、まだ何も行っていません。 次に、[プロファイルを割り当てます](../device-profile-assign.md)。

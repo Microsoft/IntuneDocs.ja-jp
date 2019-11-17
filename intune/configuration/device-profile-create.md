@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97227d5ca75b3584cb4e603a16601b2a22deb919
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.openlocfilehash: 51ec328a60ef2737c776bf6cf5d4b8dc1b32460c
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72681459"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755317"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune でのデバイス プロファイルの作成
 
@@ -39,16 +39,16 @@ ms.locfileid: "72681459"
 
 ## <a name="create-the-profile"></a>プロファイルの作成
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 
-2. **[デバイス構成]** を選択します。 次のオプションがあります。
+2. **[デバイス]** 、 **[構成プロファイル]** の順に選択します。 次のオプションがあります。
 
     - **概要**:プロファイルの状態を一覧表示し、ユーザーとデバイスに割り当てたプロファイルに関する追加の詳細を提供します。
     - **管理**:デバイス プロファイルを作成し、カスタムの [PowerShell スクリプト](../apps/intune-management-extension.md)をアップロードしてプロファイル内で実行し、[eSIM](esim-device-configuration.md) を使用してデバイスにデータ プランを追加します。
     - **監視**:プロファイルの状態が成功か失敗かを確認し、プロファイルのログも表示します。
     - **セットアップ**:SCEP または PFX 証明書機関を追加するか、プロファイルで[通信費管理サービス](telecom-expenses-monitor.md)を有効にします。
 
-3. **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。 次のプロパティを入力します。
+3. **[プロファイルの作成]** を選択します。 次のプロパティを入力します。
 
    - **名前**: プロファイルのわかりやすい名前を入力します。 後で簡単に識別できるよう、プロファイルに名前を付けます。 たとえば、適切なプロファイル名は、**会社全体の WP 電子メール プロファイル**などです。
    - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。

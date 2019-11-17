@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39ea8b3859d3d2525433c4cafdf566e7a2c8d2ab
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f8e319c68abd8965b84323bc3b7a5451dee42bc2
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509201"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709195"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>チュートリアル: Autopilot を使用して Intune に Windows デバイスを登録する
 
@@ -60,7 +60,7 @@ Windows Autopilot の設定で最初にやることは、Intune への Windows �
 
 2. CSV ファイルを保存します。
 
-3. [Azure Portal の Intune](https://aka.ms/intuneportal) で、 **[デバイスの登録]**  >  **[Windows の登録]**  >  **[デバイス]**  >  **[インポート]** の順に選択します。
+3. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Windows の登録]** 、 **[デバイス]** 、 **[インポート]** の順に選択します。
 
     ![Windows Autopilot デバイスのスクリーンショット](./media/tutorial-use-autopilot-enroll-devices/autopilot-import-device.png)
 
@@ -78,7 +78,7 @@ Windows Autopilot の設定で最初にやることは、Intune への Windows �
 
 次に、デバイス グループを作成し、読み込んだ Autopilot デバイスをそこに格納します。
 
-1. [Azure portal の Intune](https://aka.ms/intuneportal) で、 **[グループ]**  >  **[新しいグループ]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[グループ]** を選択し、 **[新しいグループ]** を選択します。
 2. **[グループ]** ブレードで、次の手順を実行します。
     1. **[グループの種類]** で、 **[セキュリティ]** を選択します。
     2. **[グループ名]** に、「*Autopilot Group*」と入力します。 **[グループの説明]** に「*Test group for Autopilot devices*」と入力します。
@@ -90,7 +90,7 @@ Windows Autopilot の設定で最初にやることは、Intune への Windows �
 
 デバイス グループを作成した後は、Autopilot デバイスを構成できるように、展開プロファイルを作成する必要があります。
 
-1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、 **[デバイスの登録]**  >  **[Windows の登録]**  >  **[Deployment mode]\(展開プロファイル\)**  >  **[プロファイルの作成]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Windows の登録]** 、 **[デプロイ プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 2. **[基本]** ページで、 **[名前]** に「*Autopilot Profile*」と入力します。 **[説明]** に「*Test profile for Autopilot devices*」と入力します。
 3. **[すべての対象デバイスを Autopilot に変換する]** を **[はい]** に設定します。 この設定により、リスト内のすべてのデバイスが確実に Autopilot 展開サービスに登録されます。 登録が処理されるまで 48 時間待ちます。
 4. **[次へ]** を選択します。
@@ -116,7 +116,7 @@ Autopilot デバイスを使用しなくなった場合は、それらを削除�
 
 1. デバイスが Intune に登録されている場合、最初に [Azure Active Directory ポータルから削除する](../remote-actions/devices-wipe.md#delete-devices-from-the-azure-active-directory-portal)必要があります。
 
-2. [Azure Portal の Intune](https://aka.ms/intuneportal) で、 **[デバイスの登録]**  >  **[Windows の登録]**  >  **[デバイス]** の順に選びます。
+2. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Windows の登録]** 、 **[デバイス]** の順に選択します。
 
 3. **[Windows AutoPilot デバイス]** で、削除するデバイスを選んでから、 **[削除]** を選びます。
 

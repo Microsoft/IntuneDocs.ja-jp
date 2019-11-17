@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac9d22ff4b203a4e7a85121df6c021eec1bcd1e3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d03859d5775193e6bbc482c06b28942a1a5bce2f
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508538"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712150"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>TeamViewer を使用して、Intune デバイスをリモートで管理する
 
@@ -47,8 +47,8 @@ TeamViewer を使用すると、Intune コネクタ用 TeamViewer での TeamVie
 
 デバイスにリモート アシスタンスを提供するには、以下の手順で Intune TeamViewer コネクタを構成します。
 
-1. [Azure Portal](https://portal.azure.com) で、 **[すべてのサービス]** を選択し、**Microsoft Intune** を検索します。
-2. **Microsoft Intune** で、 **[デバイス]** 、 **[TeamViewer Connector]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]** 、 **[TeamViewer コネクタ]** の順に選択します。
 3. **[接続]** を選択し、使用許諾契約書に同意します。
 4. **[TeamViewer にログインして承認する]** を選択します。
 5. TeamViewer サイトの Web ページが開きます。 TeamViewer ライセンスの資格情報を入力して、**サインイン**します。
@@ -57,8 +57,8 @@ TeamViewer を使用すると、Intune コネクタ用 TeamViewer での TeamVie
 
 コネクタを構成したら、デバイスをリモートで管理する準備ができました。 次の手順を使用します。 
 
-1. [Azure Portal](https://portal.azure.com) で、 **[すべてのサービス]** を選択し、**Microsoft Intune** を検索します。
-2. **Microsoft Intune** で、 **[デバイス]** 、 **[すべてのデバイス]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]** 、 **[すべてのデバイス]** の順に選択します。
 3. リストから、リモートで管理するデバイスを選択します。 デバイスのプロパティで、 **[新しいリモート アシスタンス セッション]** を選択します。
 4. Intune を TeamViewer サービスに接続すると、デバイスの情報が表示されます。 **接続**してリモート セッションを開始します。
 

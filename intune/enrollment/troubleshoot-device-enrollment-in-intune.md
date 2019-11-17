@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f770db6927ed87786f7806e011cdc6cb9bae6b3f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 190322392909a14681a4b68a79d9a3537360206b
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509271"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713500"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune でのデバイス登録に関するトラブルシューティング
 
@@ -64,9 +64,9 @@ ms.locfileid: "72509271"
 
 次の手順に従って、割り当てられているユーザーの数が最大デバイス数を超えていないことを確認します。
 
-1. Intune で、 **[デバイスの登録]**  >  **[登録制限]**  >  **[デバイス数の制限]** の順に選択します。 **[デバイス制限]** 列の値に注目してください。
+1. [Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[登録制限]** 、 **[デバイス数の制限]** の順に選択します。 **[デバイス制限]** 列の値に注目してください。
 
-2. Intune で、 **[ユーザー]**  >  **[すべてのユーザー]** > 目的のユーザー > **[デバイス]** の順に選択します。 デバイス数に注目してください。
+2. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[ユーザー]** 、 **[すべてのユーザー]** の順に選択し、ユーザーを選択し、 **[デバイス]** を選択します。 デバイス数に注目してください。
 
 3. ユーザーの登録済みデバイス数が既にデバイス数の上限に達している場合、以下の操作が行われるまでユーザーはそれ以上の登録を実行することができません。
     - [既存のデバイスが削除される](../remote-actions/devices-wipe.md)、または

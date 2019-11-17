@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab90dc9a95e461ad8c5913131a23a0355e9d072c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3724072144a78e1f4f5a17914eff941469e27242
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509225"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709585"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Intune と Windows Autopilot を使用して Hybrid Azure AD 参加済みデバイスをデプロイする
 Intune と Windows Autopilot を使用して、Hybrid Azure Active Directory (Azure AD) 参加済みデバイスを設定できます。 そのためには、この記事の手順のようにします。
@@ -42,7 +42,7 @@ Intune と Windows Autopilot を使用して、Hybrid Azure Active Directory (Az
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Windows 10 の自動登録を設定する
 
-1. [Azure portal](https://portal.azure.com) にサインインし、左側のウィンドウで **[Azure Active Directory]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインし、左側のウィンドウで **[Azure Active Directory]** を選択します。
 
    ![Azure portal](./media/windows-autopilot-hybrid/auto-enroll-azure-main.png)
 
@@ -107,7 +107,7 @@ Active Directory 用の Intune コネクタでは、オンプレミスの Active
 
 Active Directory 用の Intune コネクタは、Windows Server 2016 以降を実行しているコンピューターにインストールする必要があります。 コンピューターは、インターネットとお使いの Active Directory にもアクセスできる必要があります。 スケールと可用性を高めたり、複数の Active Directory ドメインをサポートしたりするため、環境内に複数のコネクタをインストールできます。 コネクタは、他の Intune コネクタが実行されていないサーバーにインストールすることをお勧めします。
 
-1. [Intune](https://aka.ms/intuneportal) で、 **[デバイスの登録]**  >  **[Windows の登録]**  >  **[Active Directory の Intune コネクタ]**  >  **[追加]** を選択します。 
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Windows の登録]** 、 **[Active Directory の Intune コネクタ]** 、 **[追加]** の順に選択します。 
 2. 手順に従ってコネクタをダウンロードします。
 3. ダウンロードしたコネクタのセットアップ ファイル *ODJConnectorBootstrapper.exe* を開いて、コネクタをインストールします。
 4. セットアップの最後に、 **[構成]** を選択します。
@@ -117,7 +117,7 @@ Active Directory 用の Intune コネクタは、Windows Server 2016 以降を�
 7. **[デバイスの登録]**  >  **[Windows の登録]**  >  **[Active Directory の Intune コネクタ]** に移動し、接続の状態が **[アクティブ]** であることを確認します。
 
 > [!NOTE]
-> コネクタにサインインした後、それが [Intune](https://aka.ms/intuneportal) に表示されるまでに数分かかる場合があります。 Intune サービスと正常に通信できる場合にのみ表示されます。
+> コネクタにサインインした後、それが [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)に表示されるまでに数分かかる場合があります。 Intune サービスと正常に通信できる場合にのみ表示されます。
 
 ### <a name="turn-off-ie-enhanced-security-configuration"></a>[IE セキュリティ強化の構成] をオフにする
 Windows Server では既定で、Internet Explorer セキュリティ強化の構成がオンになっています。 Intune Connector for Active Directory にサインインできない場合、管理者向けの [IE セキュリティ強化の構成] をオフにします。 「[How To Turn Off Internet Explorer Enhanced Security Configuration (Internet Explorer セキュリティ強化の構成をオフにする方法)](https://blogs.technet.microsoft.com/chenley/2011/03/10/how-to-turn-off-internet-explorer-enhanced-security-configuration)」
@@ -128,7 +128,7 @@ Windows Server では既定で、Internet Explorer セキュリティ強化の�
 
 
 ## <a name="create-a-device-group"></a>デバイス グループを作成する
-1. [Intune](https://aka.ms/intuneportal) で、 **[グループ]**  >  **[新しいグループ]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[グループ]** を選択し、 **[新しいグループ]** を選択します。
 
 1. **[グループ]** ウィンドウで、次のようにします。
 
@@ -183,7 +183,7 @@ Autopilot デバイスが "*登録*" された後は、次の 4 つの場所に�
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>AutoPilot Deployment プロファイルを作成して割り当てる
 Autopilot Deployment プロファイルは、Autopilot デバイスを構成する場合に使用されます。
 
-1. [Intune](https://aka.ms/intuneportal) で、 **[デバイスの登録]**  >  **[Windows の登録]**  >  **[デプロイ プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Windows の登録]** 、 **[デプロイ プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 2. **[基本]** ページ上で、 **[名前]** と省略可能な **[説明]** に入力します。
 3. 割り当てられたグループ内のデバイスのすべてが自動的に Autopilot に変換されるようにする場合は、 **[すべての対象デバイスを Autopilot に変換する]** を **[はい]** に設定します。 割り当てられたグループ内にある会社所有の Autopilot 以外のデバイスは、すべて Autopilot デプロイ サービスに登録されます。 個人所有のデバイスは、Autopilot に変換されません。 登録が処理されるまで 48 時間待ちます。 デバイスが登録解除されリセットされると、Autopilot によってそのデバイスが登録されます。 この方法でデバイスを登録すると、このオプションを無効にしてもプロファイルの割り当てを削除しても、Autopilot 展開サービスからデバイスは削除されません。 [デバイスを直接削除](enrollment-autopilot.md#delete-autopilot-devices)する必要があります。
 4. **[次へ]** を選択します。
@@ -200,7 +200,7 @@ Autopilot Deployment プロファイルは、Autopilot デバイスを構成す�
 
 ## <a name="optional-turn-on-the-enrollment-status-page"></a>(省略可能) 登録状態ページを有効にする
 
-1. [Intune](https://aka.ms/intuneportal) で、 **[デバイスの登録]**  >  **[Windows の登録]**  >  **[登録ステータス ページ]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Windows の登録]** 、 **[登録状態ページ]** の順に選択します。
 1. **[登録ステータス ページ]** ウィンドウで、 **[既定]**  >  **[設定]** の順に選択します。
 1. **[アプリとプロファイルのインストール進行状況を表示する]** ボックスで、 **[はい]** を選択します。
 1. 必要に応じて、他のオプションを構成します。
@@ -208,7 +208,7 @@ Autopilot Deployment プロファイルは、Autopilot デバイスを構成す�
 
 ## <a name="create-and-assign-a-domain-join-profile"></a>ドメイン参加プロファイルを作成して割り当てる
 
-1. [Intune](https://aka.ms/intuneportal) で、 **[デバイスの構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス構成]** 、 **[プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 1. 次のプロパティを入力します。
    - **[名前]** :新しいプロファイルのわかりやすい名前を入力します。
    - **説明**:プロファイルの説明を入力します。

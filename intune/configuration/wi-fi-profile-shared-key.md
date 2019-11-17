@@ -1,11 +1,11 @@
 ---
-title: 事前共有キーを使用して WiFi プロファイルを作成する - Microsoft Intune - Azure | Microsoft Docs
+title: Microsoft Intune で事前共有キーを使用して WiFi プロファイルを作成する - Azure | Microsoft Docs
 description: カスタム プロファイルを使用して、事前共有キーで Wi-Fi プロファイルを作成し、Microsoft Intune で Android、Windows、EAP ベースの Wi-Fi プロファイル用のサンプルの XML コードを取得します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,21 +17,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 623c6652964ae5a4f16a9c689dda3aee99c50d31
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f7f888a5a384503393c086a27d1c2ce6410357fd
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506497"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755028"
 ---
-# <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>カスタム デバイス プロファイルを使用し、事前共有キーを使用した WiFi プロファイルを作成する - Intune
+# <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key-in-intune"></a>Intune でカスタム デバイス プロファイルを使用し、事前共有キーを含む WiFi プロファイルを作成する
+
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 通常、事前共有キー (PSK) は、WiFi ネットワーク、またはワイヤレス LAN のユーザーを認証するために使用されます。 Intune では、事前共有キーを使用して WiFi プロファイルを作成できます。 プロファイルを作成するには、Intune 内で**カスタム デバイス プロファイル**機能を使用します。 この記事には、EAP ベースの Wi-Fi プロファイルを作成する方法の例も含まれています。
 
+この機能では以下をサポートします。
+
+- Android
+- Windows
+- EAP ベースの Wi-Fi
+
 > [!IMPORTANT]
->- Windows 10 で事前共有キーを使用すると、Intune に修復エラーが表示されます。 この場合は、Wi-Fi プロファイルがデバイスに正常に割り当てられ、プロファイルは想定どおりに動作します。
->- 事前共有キーが含まれている Wi-Fi プロファイルをエクスポートする場合は、ファイルが保護されていることを確認します。 キーはプレーン テキスト形式であるため、ユーザーはキーを保護する必要があります。
+> - Windows 10 で事前共有キーを使用すると、Intune に修復エラーが表示されます。 この場合は、Wi-Fi プロファイルがデバイスに正常に割り当てられ、プロファイルは想定どおりに動作します。
+> - 事前共有キーが含まれている Wi-Fi プロファイルをエクスポートする場合は、ファイルが保護されていることを確認します。 キーはプレーン テキスト形式であるため、ユーザーはキーを保護する必要があります。
 
 ## <a name="before-you-begin"></a>始める前に
 
@@ -41,32 +48,37 @@ ms.locfileid: "72506497"
 - PSK には、64 桁の 16 進数文字列、または 8 から 63 個の印刷可能な ASCII 文字のパスフレーズが必要です。 アスタリスク (*) など、一部の文字はサポートされていません。
 
 ## <a name="create-a-custom-profile"></a>カスタム プロファイルの作成
-Android、Windows、または EAP ベースの Wi-Fi プロファイル用の事前共有キーを使用して、カスタム プロファイルを作成できます。 Azure Portal を使用してプロファイルを作成するには、[カスタム デバイス設定の作成に関するページ](custom-settings-configure.md)を参照してください。 デバイス プロファイルを作成する場合、デバイス プラットフォームに **[カスタム]** を選択します。 Wi-Fi プロファイルは選択しないでください。 カスタムを選択するときに、次の操作を行うようにしてください。 
 
-1. プロファイルの名前と説明を入力します。
-2. 次のプロパティで新しい OMA-URI 設定を追加します。 
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
+3. 次のプロパティを入力します。
 
-   」を参照します。 この Wi-Fi ネットワーク設定の名前を入力します。
+    - **名前**: ポリシーのわかりやすい名前を入力します。 後で簡単に識別できるよう、ポリシーに名前を付けます。 たとえば、「**Android デバイス向けカスタム OMA-URI Wi-F プロファイル設定**」はポリシー名として申し分ありません。
+    - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
+    - **[プラットフォーム]** :お使いのプラットフォームを選択します。
+    - **[プロファイルの種類]** : **[カスタム]** を選択します。
 
-   b. (省略可能) OMA-URI 設定の説明を入力するか、空白のままにします。
+4. **[設定]** で **[追加]** を選択します。 次のプロパティで新しい OMA-URI 設定を入力します。
 
-   c. **[データ型]** を **[文字列]** に設定します。
+    1. **名前**: OMA-URI 設定の名前を入力します。
+    2. **説明**:OMA-URI 設定の説明を入力します。 この設定は省略可能ですが、推奨されます。
+    3. **OMA-URI**:次のいずれかのオプションを入力します。
 
-   d. **OMA-URI**:
+        - **Android の場合**: `./Vendor/MSFT/WiFi/Profile/SSID/Settings`
+        - **Windows の場合**: `./Vendor/MSFT/WiFi/Profile/SSID/WlanXml`
 
-   - **Android の場合**: ./Vendor/MSFT/WiFi/Profile/SSID/Settings
-   - **Windows の場合**: ./Vendor/MSFT/WiFi/Profile/SSID/WlanXml
+        > [!NOTE]
+        > 先頭にピリオドを必ず入力してください。
 
-     > [!NOTE]
-     > 先頭にピリオドを必ず入力してください。
+        SSID は、作成しているポリシーの SSID です。 たとえば、Wi-Fi に `Hotspot-1` という名前が付けられている場合は、「`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`」と入力します。
 
-     SSID は、作成しているポリシーの SSID です。 たとえば、Wi-Fi に `Hotspot-1` という名前が付けられている場合は、「`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`」と入力します。
+    4. **データ型**: **[文字列]** を選択します。
 
-   e. **値フィールド**に、XML コードを貼り付けます。 この記事内の例を参照してください。 ご利用のネットワーク設定に一致する値にそれぞれ更新します。 コードのコメント セクションには、一部のポインターが含まれます。
-3. **[OK]** を選択して保存し、ポリシーを割り当てます。
+    5. **値**: XML コードを貼り付けます。 この記事の[例](#android-or-windows-wi-fi-profile-example)を参照してください。 ご利用のネットワーク設定に一致する値にそれぞれ更新します。 コードのコメント セクションには、一部のポインターが含まれます。
 
-    > [!NOTE]
-    > このポリシーは、ユーザー グループにのみ割り当てることができます。
+5. 完了したら、 **[OK]**  >  **[作成]** を選択して変更を保存します。
+
+プロファイルの一覧にプロファイルが表示されます。 次に、ユーザー グループに[このプロファイルを割り当て](../device-profile-assign.md)ます。 このポリシーは、ユーザー グループにのみ割り当てることができます。
 
 次回各デバイスがチェックインするときに、ポリシーが適用され、そのデバイスに Wi-Fi プロファイルが作成されます。 これで、デバイスは自動的にネットワークに接続できるようになります。
 
@@ -74,7 +86,7 @@ Android、Windows、または EAP ベースの Wi-Fi プロファイル用の事
 
 Android または Windows の Wi-Fi プロファイルの XML コードの例は、次のとおりです。 この例は、適切な形式を表示し、詳細情報を提供するために用意されています。 これは単なる例であり、ご使用の環境に推奨される構成として意図されたものではありません。
 
-### <a name="important-considerations"></a>重要な考慮事項
+### <a name="what-you-need-to-know"></a>知っておく必要がある情報
 
 - `<protected>false</protected>` は **false** に設定する必要があります。 **true** に設定すると、デバイスはパスワードが暗号化されているものと見なし、暗号化の解除を試みます。その結果、接続が失敗する場合があります。
 
@@ -127,7 +139,7 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 </WLANProfile>
 ```
 
-## <a name="eap-based-wi-fi-profile-example"></a>EAP ベースの Wi-Fi プロファイルの例
+### <a name="eap-based-wi-fi-profile-example"></a>EAP ベースの Wi-Fi プロファイルの例
 EAP ベースの Wi-Fi プロファイルの XML コードの例は、次のとおりです。この例は、適切な形式を表示し、詳細情報を提供するために用意されています。 これは単なる例であり、ご使用の環境に推奨される構成として意図されたものではありません。
 
 
@@ -222,9 +234,9 @@ EAP ベースの Wi-Fi プロファイルの XML コードの例は、次のと�
 
     - 事前共有キーが含まれている Wi-Fi プロファイルをエクスポートする場合は、`key=clear` をコマンドに追加します。
   
-      `netsh wlan export profile name="YourProfileName" key=clear folder=c:\Wifi`
+        `netsh wlan export profile name="YourProfileName" key=clear folder=c:\Wifi`
 
-      `key=clear` を指定すると、キーがプレーン テキストでエクスポートされます。プロファイルを正常に使用するにはこれが必要です。
+        `key=clear` を指定すると、キーがプレーン テキストでエクスポートされます。プロファイルを正常に使用するにはこれが必要です。
 
 XML ファイルを作成した後、XML 構文をコピーして OMA-URI 設定の **[データの種類]** に貼り付けます。 「[カスタム プロファイルの作成](#create-a-custom-profile)」(この記事) に、手順が示されています。
 
@@ -238,3 +250,7 @@ XML ファイルを作成した後、XML 構文をコピーして OMA-URI 設定
 - キー (パスワードまたはパスフレーズ) をローテーションで使用するときは、ダウンタイムを予想し、展開を適切に計画します。 新しい Wi-Fi プロファイルは非稼働時間中にプッシュすることを検討してください。 また、接続に影響が出る可能性をユーザーに知らせます。
 
 - 切り替えがスムーズに行われるように、エンド ユーザーのデバイスにインターネットへの代替接続があることを確認します。 たとえば、エンド ユーザーをゲスト WiFi (または他の何らかの WiFi ネットワーク) に戻したり、セルラー接続で Intune と通信したりする必要があります。 追加の接続により、ユーザーは、企業の Wi-Fi プロファイルがデバイスで更新されたときに、ポリシーの更新を受信できます。
+
+## <a name="next-steps"></a>次の手順
+
+必ず[プロファイルを割り当て](device-profile-assign.md)、その状態を[監視](device-profile-monitor.md)してください。

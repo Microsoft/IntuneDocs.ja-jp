@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 271b49a4c927bccb5cd967ea99b0d7bd5c2bd515
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b7d09700847eae6a43111b0a4e865522f01862b9
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492361"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755168"
 ---
 # <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>Intune を使用して専用キオスクとして実行するための Windows 10 および Windows Holographic for Business デバイスの設定
 
@@ -39,8 +39,8 @@ Intune では、"構成プロファイル" を使用して、お客様の組織�
 
 ## <a name="create-the-profile"></a>プロファイルの作成
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[デバイス構成]** 、 **[プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 3. 次のプロパティを入力します。
 
    - **[名前]** :新しいプロファイルのわかりやすい名前を入力します。
@@ -60,7 +60,7 @@ Intune では、"構成プロファイル" を使用して、お客様の組織�
       - [Windows 10 のキオスク設定](kiosk-settings-windows.md)
       - [Windows Holographic for Business のキオスク設定](kiosk-settings-holographic.md)
 
-5. 完了したら、 **[OK]**  >  **[作成]** を選択して変更を保存します。 
+5. 完了したら、 **[OK]**  >  **[作成]** を選択して変更を保存します。
 
 プロファイルが作成され、プロファイル一覧に表示されます。 次に、プロファイルを[割り当てます](device-profile-assign.md)。
 
