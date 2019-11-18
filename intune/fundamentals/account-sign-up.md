@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c3cf75c1b5d6984a7f922af8b969458b4e4336e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 78d38b72c9853a9eadaf71fcdff7567fc66d35ca
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509160"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414665"
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Microsoft Intune にサインアップまたはサインインする
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 このトピックでは、システム管理者が Intune アカウントにサインアップする方法を説明します。
 
@@ -46,14 +44,17 @@ Intune にサインアップする前に、Microsoft Online Services アカウ�
 2. サインアップ ページで、Intune の新しいサブスクリプションを管理するために、サインアップまたはサインインします。
 
 ## <a name="post-sign-up-considerations"></a>サインアップ後の考慮事項
+
 新しいサブスクリプションにサインアップした後、アカウント情報の記載されたメール メッセージが、サインアップ過程で登録したメール アドレスに送信されます。 このメールで、サブスクリプションがアクティブになったことが確認されます。
 
 サインアップ プロセスが完了すると、ユーザーの追加とライセンスの割り当てに使われる Microsoft 365 管理センターが表示されます。 既定の onmicrosoft.com ドメイン名を使ったクラウドベースのアカウントだけがある場合は、この時点でユーザーを追加し、ライセンスを割り当てることができます。 一方、組織の[カスタム ドメイン名](custom-domain-name-configure.md)を使う場合や、オンプレミスの Active Directory から[ユーザー アカウント情報を同期する](users-add.md#sync-active-directory-and-add-users-to-intune)場合は、そのブラウザー ウィンドウを閉じてかまいません。
 
 ## <a name="sign-in-to-microsoft-intune"></a>Microsoft Intune にサインインする
+
 Intune にサインアップしたら、[サポートされているブラウザー](supported-devices-browsers.md#intune-supported-web-browsers)がインストールされている任意のデバイスを使用して、[Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインし、サービスを管理できます。
 
 既定では、アカウントに Azure AD の次のいずれかのアクセス許可が必要です。
+
 - グローバル管理者
 - Intune サービス管理者 (Intune 管理者 とも呼ばれます)
 
@@ -76,4 +77,5 @@ Microsoft 365 Business: https://portal.microsoft.com/adminportal
 Office 365 モバイル デバイス管理: https://portal.office.com/adminportal/home#/MifoDevices
 
 ## <a name="see-also"></a>関連項目
+
 [Office 365、Azure、または Intune にサインインできない](https://support.microsoft.com/help/2412085)

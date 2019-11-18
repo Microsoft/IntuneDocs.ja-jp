@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 10/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,19 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bfc49f772331113314e45bc49360b8435b88037
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 899d667ca271ae5c3edced18fab8da987c49b2ca
+ms.sourcegitcommit: 85c894cb4df34a5ff558e3b45e28a8b91054d9e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889566"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432531"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Microsoft Intune で Windows デバイスに対してデバイスのファームウェア構成インターフェイス プロファイルを使う (パブリック プレビュー)
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-> [!Note]
-> [毎月の更新](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)はそれぞれ、ロールアウトに数日かかる場合があります。 一部の機能は数週間にわたってロールアウトされる場合があり、すべてのお客様がすぐにご利用いただけるとは限りません。
 
 Intune を使用して Autopilot デバイスを管理するときは、デバイスのファームウェア構成インターフェイス (DFCI) を使用して、デバイスの登録後に UEFI (BIOS) の設定を管理できます。 利点、シナリオ、前提条件の概要については、「[DFCI の概要](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/)」を参照してください。
 
@@ -45,7 +42,7 @@ Intune では、この機能を使用して BIOS の設定を制御します。 
 
 ## <a name="before-you-begin"></a>始める前に
 
-- デバイスの製造元により、製造プロセスにおいて、またはユーザーがインストールするファームウェアの更新プログラムとして、UEFI ファームウェアに DFCI が追加されている必要があります。 デバイスのベンダーと協力して、DFCI をサポートしている製造元、または DFCI を使用するために必要なファームウェアのバージョンを確認します。
+- デバイスの製造元により、製造プロセスにおいて、またはユーザーがインストールするファームウェアの更新プログラムとして、UEFI ファームウェアに DFCI が追加されている必要があります。 デバイスのベンダーと協力して、[DFCI をサポートしている製造元](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Scenarios/DfciScenarios/#oems-that-support-dfci)、または DFCI を使用するために必要なファームウェアのバージョンを確認します。
 
 - デバイスは、[Microsoft クラウド ソリューション プロバイダー (CSP) パートナー](https://partner.microsoft.com/cloud-solution-provider)によって Windows Autopilot 用に登録されているか、OEM によって直接登録されている必要があります。 
 

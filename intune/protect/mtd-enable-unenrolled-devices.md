@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63079757ee3610d825601921da1d33aa94f851b6
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: b2744a27a733824bab9d920f4de0b49e951c1c34
+ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72794408"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627635"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune-for-unenrolled-devices"></a>未登録デバイスに対して Intune で Mobile Threat Defense コネクタを有効にする
 
@@ -51,8 +51,8 @@ Mobile Threat Defense (MTD) のセットアップ中、Mobile Threat Defense パ
 組織の要件に基づき、有効にする MTD 切り替えオプションを決定できます。 詳細を次に示します。
 
 **アプリ保護ポリシー設定**
-- **バージョン 4.1 以上の Android デバイスを *\<MTD パートナー名>* に接続し、アプリ保護ポリシーを評価する**:このオプションを有効にすると、デバイスの脅威レベルの規則を使用したアプリ保護ポリシーによって、このコネクタのデータを含むデバイスが評価されます。
-- **バージョン 8.0 以上の iOS デバイスを *\<MTD パートナー名>* に接続し、アプリ保護ポリシーを評価する**:このオプションを有効にすると、デバイスの脅威レベルの規則を使用したアプリ保護ポリシーによって、このコネクタのデータを含むデバイスが評価されます。
+- **[アプリ保護ポリシーの評価のため、バージョン 4.4 以降の Android デバイスを \<*MTD パートナー名*> に接続します]** : このオプションを有効にすると、デバイスの脅威レベルの規則を使用したアプリ保護ポリシーによって、このコネクタのデータを含むデバイスが評価されます。
+- **[アプリ保護ポリシーの評価のため、バージョン 11 以降の iOS デバイスを \<*MTD パートナー名*> に接続します]** : このオプションを有効にすると、デバイスの脅威レベルの規則を使用したアプリ保護ポリシーによって、このコネクタのデータを含むデバイスが評価されます。
 
 **共通の共有設定**
 - **[パートナーが無応答になるまでの日数]** :接続が失われたためにパートナーが応答していないと Intune が判断するまでの、非アクティブ状態の日数。 Intune は、応答しない MTD パートナーのコンプライアンス対応状態を無視します。

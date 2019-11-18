@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b80b0dbd8128606db9220178baf0d05af1a3800
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2f667940cc238fe243b05c7ab6f1459f63f18faa
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498804"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635487"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Intune を使用して Android デバイス用 Google Chrome を構成する 
 
@@ -46,7 +46,7 @@ Intune アプリ構成ポリシーを使用して、Android デバイス用 Goog
 
 managed Google Play アプリを Intune に追加する方法の詳細については、「[マネージド Google Play ストア アプリ](~/apps/apps-add-android-for-work.md#managed-google-play-store-apps)」を参照してください。
 
-## <a name="add-an-app-configuration-policy-for-managed-android-enterprise-devices"></a>マネージド Android Enterprise デバイス用にアプリ構成ポリシーを追加する
+## <a name="add-app-configuration-for-managed-ae-devices"></a>マネージド AE デバイスのアプリ構成を追加する
 
 1. [[Intune]](https://go.microsoft.com/fwlink/?linkid=2090973) ウィンドウで、 **[アプリ構成ポリシー]**  >  **[追加]** を選択します。
 2. ポリシー名を追加し、[デバイス登録の種類] で **[マネージド デバイス]** を選択し、[プラットフォーム] で **[Android]** を選択します。

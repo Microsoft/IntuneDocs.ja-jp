@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d447f2bf45d1bf3e6355a9d5dcc42b4bc2f3a9f3
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: 53014376a7e220e975878031ffd759da40db7f6b
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999753"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413835"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune でのセキュリティ ベースラインを使用した Windows 10 デバイスの構成
 
@@ -79,7 +79,10 @@ Intune では、次のセキュリティ ベースラインのインスタンス
   - [Microsoft Defender ATP ベースライン](security-baseline-settings-defender-atp.md)
 
   > [!NOTE]
-  > Microsoft Defender ATP のセキュリティ ベースラインは、物理デバイス用に最適化されており、現在は仮想マシン (VM) や VDI エンドポイントでの使用は推奨されていません。 特定のベースライン設定が、仮想化された環境でのリモート対話型セッションに影響を与える可能性があります。  詳細については、Windows ドキュメントの「[Increase compliance to the Microsoft Defender ATP security baseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)」 (Microsoft Defender ATP のセキュリティ ベースラインのコンプライアンスの強化) を参照してください。
+  > Microsoft Defender ATP のセキュリティ ベースラインは、物理デバイス用に最適化されており、現在は仮想マシン (VM) や VDI エンドポイントでの使用は推奨されていません。 特定のベースライン設定が、仮想化された環境でのリモート対話型セッションに影響を与える可能性があります。  詳細については、Windows ドキュメントの「[Increase compliance to the Microsoft Defender ATP security baseline (Microsoft Defender ATP のセキュリティ ベースラインに対するコンプライアンスの強化)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)」をご覧ください。
+
+- **Microsoft Edge ベースライン** 
+  - [プレビュー:Microsoft Edge ベースライン](security-baseline-settings-edge.md)
 
 前にプレビュー テンプレートに基づいて作成したプロファイルは、そのプレビュー テンプレートが新しいプロファイルの作成にもう使えない場合であっても、引き続き使用および変更することができます。
 

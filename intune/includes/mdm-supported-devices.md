@@ -1,24 +1,20 @@
 ---
-ms.openlocfilehash: 797d1c66c50bed91f58eab535696b34001fcb28d
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: a20d1df2bf1e5052bcb2d3d83e919e190f8d9175
+ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "71239565"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445866"
 ---
 
 
 ### <a name="apple"></a>Apple
-- Apple iOS 10.0 以降
+- Apple iOS および iPadOS 11.0 以降
 - Mac OS X 10.12 以降
 
 ### <a name="google"></a>Google
-- Android 4.4 以降 (Samsung KNOX Standard 4.4 以降を含む)
-
-  検証済みの Samsung KNOX Standard デバイスの完全な一覧については、「[Android and Samsung KNOX Standard policy settings (Android および Samsung KNOX Standard のポリシー設定)](/intune/supported-devices-browsers#supported-samsung-knox-standard-devices)」をご覧ください。
-
-
-- Android エンタープライズの[要件](https://support.google.com/work/android/answer/6174145?hl=en)。
+- Android 5.0 以降 (Samsung KNOX Standard 2.4 以降を含む: [要件](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+))
+- Android エンタープライズ: [要件](https://support.google.com/work/android/topic/9428066)
 
 ### <a name="microsoft"></a>Microsoft
 
@@ -26,18 +22,18 @@ ms.locfileid: "71239565"
 - Windows 10 (Home、S、Pro、Education、および Enterprise バージョン)
 - Windows 10 Enterprise 2019 LTSC
 
-  Windows 10 2019 LTSC が実行されているデバイスの管理について詳しくは、「[Windows 10 Enterprise 2019 LTSC の新機能](https://docs.microsoft.com/en-us/windows/whats-new/ltsc/whats-new-windows-10-2019)」をご覧ください
+  Windows 10 2019 LTSC が実行されているデバイスの管理について詳しくは、「[Windows 10 Enterprise 2019 LTSC の新機能](https://docs.microsoft.com/windows/whats-new/ltsc/whats-new-windows-10-2019)」をご覧ください
   
 - Windows 10 Mobile
 - Windows 10 IoT Enterprise (x86、x64)
 - Windows 10 IoT Mobile Enterprise
 - Windows Holographic for Business
 
-  Windows Holographic for Business を実行しているデバイスの管理については、[Window Holographic for Business のサポート](../windows-holographic-for-business.md)に関する説明を参照してください。
+  Windows Holographic for Business を実行しているデバイスの管理については、[Window Holographic for Business のサポート](../fundamentals/windows-holographic-for-business.md)に関する説明を参照してください。
 
 - Windows 10 Teams (Surface Hub)
 
-   Windows 10 Teams が実行されているデバイスの管理について詳しくは、[MDM での Surface Hub の管理](https://docs.microsoft.com/en-us/surface-hub/manage-settings-with-mdm-for-surface-hub)に関する記事をご覧ください
+   Windows 10 Teams が実行されているデバイスの管理について詳しくは、[MDM での Surface Hub の管理](https://docs.microsoft.com/surface-hub/manage-settings-with-mdm-for-surface-hub)に関する記事をご覧ください
 - Windows Phone 8.1、Windows 8.1 RT、Windows 8.1 (維持モード) が稼働している PC
 
 > [!NOTE]

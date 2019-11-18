@@ -1,12 +1,12 @@
 ---
-title: Microsoft Intune で Windows 10 デバイスに Office 365 アプリを割り当てる
+title: Microsoft Intune を使用して Windows 10 デバイスに Office 365 アプリを追加する
 titleSuffix: ''
 description: Microsoft Intune を使用し、Office 365 アプリを Windows 10 デバイスにインストールする方法について説明します。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35545d6c01e3acf7e54c3b932a4450c93f3dd4a9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2cb247ec25b134fa9810a426be88b7fc90999394
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507315"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635392"
 ---
-# <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune で Windows 10 デバイスに Office 365 アプリを割り当てる
+# <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune を使用して Windows 10 デバイスに Office 365 アプリを追加する
 
 アプリの割り当て、監視、構成、または保護を行うには、対象のアプリを事前に Intune に追加しておく必要があります。 使用できる[種類のアプリ](apps-add.md#app-types-in-microsoft-intune)の 1 つに Windows 10 向け Office 365 アプリがあります。 Intune でこの種類のアプリを選択することで、Windows 10 を実行し、自分で管理しているデバイスに Office 365 アプリを割り当て、インストールできます。 ライセンスを所有している場合は、Microsoft Project Online デスクトップ クライアントおよび Microsoft Visio Online Plan 2 のアプリを割り当て、インストールすることもできます。 利用できる Office 365 は、Azure 内の Intune コンソールのアプリ一覧に単一のエントリとして表示されます。
 
@@ -142,12 +142,60 @@ ms.locfileid: "72507315"
 
 ## <a name="finish-up"></a>完了
 
-終わったら、 **[アプリの追加]** ウィンドウで **[追加]** を選びます。 作成したアプリがアプリの一覧に表示されます。
+終わったら、 **[アプリの追加]** ウィンドウで **[追加]** を選びます。 作成したアプリがアプリの一覧に表示されます。 次のステップは、選択したグループにアプリを割り当てることです。 詳細については、[アプリをグループに割り当てる方法](~/apps/apps-deploy.md)に関するページを参照してください。
+
+## <a name="deployment-details"></a>展開の詳細
+
+[Office 構成サービス プロバイダー (CSP) の](https://docs.microsoft.com/windows/client-management/mdm/office-csp) によって Intune から展開ポリシーがターゲット コンピューターに割り当てられると、エンド デバイスで *officecdn.microsoft.com* の場所からインストール パッケージが自動的にダウンロードされます。 *Program Files* ディレクトリには 2 つのディレクトリが表示されます。
+
+![Program Files ディレクトリ内の Office インストール パッケージ](./media/apps-add-office365/office-folder.png)
+
+*Microsoft Office* ディレクトリの下には、インストール ファイルが格納される新しいフォルダーが作成されます。
+
+![Microsoft Office ディレクトリの下に作成された新しいフォルダー](./media/apps-add-office365/created-folder.png)
+
+*Microsoft Office 15* ディレクトリの下には、Office のクイック実行インストール ランチャー ファイルが格納されます。 割り当ての種類が必須の場合は、インストールが自動的に開始されます。
+
+![クイック実行インストール ランチャー ファイル](./media/apps-add-office365/clicktorun-files.png)
+
+Office 365 スイートの割り当てが必須として構成されている場合、インストールはサイレント モードになります。 インストールが成功すると、ダウンロードされたインストール ファイルは削除されます。 割り当てが**使用可能**として構成されている場合、Office アプリケーションは Intune ポータル サイト アプリケーションに表示され、エンド ユーザーはインストールを手動でトリガーできます。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 Intune では、[Office 展開ツール](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool)により、[Office 365 CDN](https://docs.microsoft.com/office365/enterprise/content-delivery-networks) を使ってクライアント コンピューターに Office 365 ProPlus がダウンロードされて展開されます。 不必要な待機時間の発生を防ぐため、「[Managing Office 365 endpoints (Office 365 のエンドポイントの管理)](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)」で説明されているベスト プラクティスを参考にして、CDN トラフィックが中央のプロキシ経由でルーティングされるのではなく、クライアントが CDN に直接アクセスできるように、ネットワークを構成してください。
 
 インストールまたは実行時に問題が発生する場合は、対象のデバイスで [Microsoft Office 365 サポート/回復アシスタント](https://diagnostics.office.com)を実行してください。
+
+### <a name="additional-troubleshooting-details"></a>他のトラブルシューティングの詳細
+
+O365 アプリをデバイスにインストールできない場合は、問題が Intune 関連か OS/Office 関連かを明らかにする必要があります。 2 つのフォルダー *Microsoft Office* と *Microsoft Office 15* がデバイスの *Program Files* ディレクトリに表示される場合は、Intune によって展開が正常に開始されたことを確認できます。 *Program Files* に 2 つのフォルダーが表示されない場合は、次のことを確認する必要があります。
+
+- デバイスが Microsoft Intune に適切に登録されています。 
+- デバイスにアクティブなネットワーク接続があります。 デバイスが機内モードである場合、オフになっている場合、またはサービスがない場所にある場合は、ネットワーク接続が確立されるまでポリシーは適用されません。
+- Intune と Office 365 両方のネットワーク要件が満たされており、次の記事に基づいて、関連する IP 範囲にアクセスできます。
+
+  - [Intune のネットワーク構成の要件と帯域幅](https://docs.microsoft.com/intune/network-bandwidth-use)
+  - [Office 365 の URL と IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+
+- 適切なグループに O365 アプリ スイートが割り当てられています。 
+
+さらに、*C:\Program Files\Microsoft Office\Updates\Download* ディレクトリのサイズ を監視します。 Intune クラウドからダウンロードされたインストール パッケージは、この場所に格納されます。 サイズが増えない場合、または非常にゆっくりとしか増えない場合は、ネットワークの接続と帯域幅を再確認することをお勧めします。
+
+Intune とネットワーク インフラストラクチャの両方が想定どおりに動作していることを確認したら、OS の観点から問題をさらに分析する必要があります。 次の条件を考慮します。
+
+- ターゲット デバイスでは、Windows 10 Creators Update 以降が実行されている必要があります。
+- Intune によってアプリケーションが展開される間、既存の Office アプリを開かないようにします。
+- Office の既存の MSI バージョンを、デバイスから適切に削除します。 Intune では、Office MSI と互換性のないクイック実行が利用されます。 この動作については、次のドキュメントで詳しく説明されています。<br>
+  [同一コンピューターでクイック実行および Window インストーラーを使ってインストールされた Office はサポートされない](https://support.office.com/article/office-installed-with-click-to-run-and-windows-installer-on-same-computer-isn-t-supported-30775ef4-fa77-4f47-98fb-c5826a6926cd)
+- サインイン ユーザーは、デバイスにアプリケーションをインストールするためのアクセス許可を持っている必要があります。
+- Windows イベント ビューアーのログ **[Windows ログ]**  ->  **[アプリケーション]** を基にして、問題がないことを確認します。
+- インストールの間に、Office インストールの詳細ログをキャプチャします。 この操作を行うには、次の手順に従います。<br>
+    1. ターゲット コンピューターで Office インストールの詳細ログを有効にします。 これを行うには、次のコマンドを実行してレジストリを変更します。<br>
+        `reg add HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /t REG_DWORD /d 3`<br>
+    2. Office 365 スイートをターゲット デバイスにもう一度展開します。<br>
+    3. 約 15 から 20 分待ってから、 **%temp%** フォルダーおよび **%windir%\temp** フォルダーに移動し、**更新日時**で並べ替えて、再現時刻に従って変更された " *<コンピューター名>-<タイムスタンプ>.log*" ファイルを選択します。<br>
+    4. 次のコマンドを実行して、詳細ログを無効にします。<br>
+        `reg delete HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /f`<br>
+        詳細ログでは、インストール プロセスに関するさらに詳細な情報を確認できます。
 
 ## <a name="errors-during-installation-of-the-app-suite"></a>アプリ スイートのインストール中のエラー
 

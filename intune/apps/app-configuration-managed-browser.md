@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57ae1b5a51533bf14d4299fcf0248564562289f7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a3fab0b14f8ed68d13021a0e141d5997532df2ec
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507573"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592095"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune のポリシーで保護されたブラウザーを使用して Web アクセスを管理する
 
@@ -179,7 +179,7 @@ SSO では、iOS 上の Microsoft Authenticator アプリまたは Android 上�
 > [!NOTE]
 > Microsoft Edge とアプリの構成で指定されている関連アプリを管理するアプリ保護ポリシーにおいて、次のデータ保護ポリシー設定が設定されていることを確認します。
 > - 組織のデータを他のアプリに送信:**ポリシーで管理されているアプリ**
-> - ポリシーで管理されているブラウザーで Web コンテンツを共有する:**必要**
+> - その他のアプリでの Web コンテンツの転送を制限する: **ポリシーで管理されているブラウザー**
 
 ## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>保護ブラウザーのアプリケーション プロキシ設定を構成する方法
 

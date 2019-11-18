@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a75b1403e351981d1f6ab827d4c10648430b21fb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 39d687c8c9b75182ba0e7d4020c6b840c753a231
+ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504615"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627663"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>コンプライアンスのために Jamf Pro を Intune と統合する
 
@@ -94,7 +94,7 @@ Intune を Jamf Pro に接続するには:
 
    **[アクセス許可の追加]** を選択して、この構成を保存します。  
 
-8. **[API のアクセス許可]** ページで **[*\<テナント>* に管理者の同意を与えます]** を選択し、 **[はい]** を選択します。  アプリが正常に登録されると、API のアクセス許可は次のように表示されます。![成功したアクセス許可](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
+8. **[API のアクセス許可]** ページで **[\<_テナント_> に管理者の同意を与えます]** を選択し、 **[はい]** を選択します。  アプリが正常に登録されると、API のアクセス許可は次のように表示されます。![成功したアクセス許可](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 
    Azure AD でのアプリの登録プロセスは完了です。
 

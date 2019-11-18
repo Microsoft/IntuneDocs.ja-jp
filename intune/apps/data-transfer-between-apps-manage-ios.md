@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db583b1fc89edf72f329a605cc86363593eaaa9d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: cdc849405b7404203faa6e86d3fed1ea8e35ec43
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497916"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414632"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune で iOS アプリ間のデータ転送を管理する方法
 
@@ -81,7 +81,7 @@ Intune またはサード パーティの EMM ソリューションによって�
    |ManageEngine Mobile Device Manager | IntuneMAMUPN | 文字列型 | %upn% |
 
 > [!NOTE]  
-> iOS の Outlook アプリでは、[構成デザイナーを使用する] オプションを指定して App Configuration のポリシーを展開した場合、ポリシーに対して構成キー IntuneMAMUPN が暗黙で自動的に構成されます。 詳しくは、「[New Outlook for iOS and Android App Configuration Policy Experience – General App Configuration (iOS および Android 用 Outlook の新しい App Configuration ポリシー エクスペリエンス – 一般的なアプリの構成)](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481)」の FAQ セクションをご覧ください。 
+> Outlook for iOS では、[構成デザイナーを使用する] オプションを指定してマネージド デバイスの App Configuration のポリシーを展開し、 **[職場または学校アカウントのみ許可する]** を有効にした場合、ポリシーに対して構成キー IntuneMAMUPN が暗黙で自動的に構成されます。 詳しくは、「[iOS および Android 用 Outlook の新しい App Configuration ポリシー エクスペリエンス – 一般的なアプリの構成](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481)」の FAQ セクションをご覧ください。 
 
 
 ### <a name="example-2-end-user-experience"></a>例 2:エンドユーザー エクスペリエンス

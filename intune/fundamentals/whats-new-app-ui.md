@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 10/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7517a2b60c4b5a893b90b09be72ddb363f23552a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 85f9bb72c6c40c67874326b06ebd41286d2d7220
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509985"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415181"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
 
@@ -36,6 +36,23 @@ Microsoft Intune アプリに対する最新の更新プログラムについて
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/whats-new-app-ui/account-move-rom-iwp-user-1712.png)--->
 
+
+## <a name="week-of-october-28-2019"></a>2019 年 10 月 28 日の週  
+
+### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>Android 用 Intune ポータル サイト アプリでのチェックリストの設計の改良 <!-- 5550857 -->  
+Android 用 Intune ポータル サイト アプリのセットアップ チェックリストが、軽量のデザインと新しいアイコンによって更新されました。 この変更は、iOS 用 Intune ポータル サイト アプリに対して行われた最近の更新に合わせたものです。 アプリの更新をすべてのお客様にロールアウトしている最中であり、来週の終わりまでに完了する予定です。 更新された登録手順の詳細については、「[Android 仕事用プロファイルを使用して登録する](/intune-user-help/enroll-device-android-work-profile)」および「[Android デバイスを登録する](/intune-user-help/enroll-device-android-company-portal)」をご覧ください。  
+
+次の画面では、Android 仕事用プロファイルの登録に関する更新されたチェックリストを示します。
+
+|更新済み|前へ|  
+|---|---|  
+|![簡素化されたチェックリストと新しいアイコンが示されている、Intune ポータル サイトでの仕事用プロファイルのセットアップの画像の例。](./media/whats-new-app-ui/work-profile-checklist-1911.png)|![繁雑なチェックリストが示されている、Intune ポータル サイトでの以前の仕事用プロファイルのセットアップの画像の例。](./media/whats-new-app-ui/work-profile-checklist-1904.png)|   
+
+次の画面では、Android デバイス管理者の登録に関する更新されたチェックリストを示します。  
+
+|更新済み|前へ|  
+|---|---|  
+|![簡素化されたチェックリストと新しいアイコンが示されている、Intune ポータル サイトでの Android デバイス管理者のセットアップの画像の例。](./media/whats-new-app-ui/android-checklist-1911.png)|![繁雑なチェックリストが示されている、Intune ポータル サイトでの以前の Android デバイス管理者のセットアップの画像の例。](./media/whats-new-app-ui/android-checklist-1904.png)|  
 
 ## <a name="week-of-september-9-2019"></a>2019 年 9 月 9 日の週
 
@@ -572,6 +589,6 @@ __変更後__ ![変更後のバージョンの読み込み画面の画像。イ�
 
 
 ## <a name="see-also"></a>関連項目
-* [Microsoft Intune のブログ](http://go.microsoft.com/fwlink/?LinkID=273882)
+* [Microsoft Intune のブログ](https://go.microsoft.com/fwlink/?LinkID=273882)
 * [クラウド プラットフォームのロードマップ](https://www.microsoft.com/cloud-platform/roadmap)
-* [Intune の新機能](../whats-new.md)
+* [Intune の新機能](whats-new.md)

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2a1d964f157f33e439f659713fe8c2e02f852b3
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 9e2f654d9e505afba00a1a9090febe4c06ca77ff
+ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749403"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445348"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot を使用して Intune に Windows デバイスを登録する  
 Windows Autopilot を使用すると、Intune でのデバイスの登録が簡単になります。 カスタマイズされたオペレーティング システム イメージのビルドおよび維持は、時間のかかるプロセスです。 また、これらのカスタム オペレーティング システム イメージを新しいデバイスに適用し、エンド ユーザーに提供する前に使用の準備を行う場合にも、時間がかかることがあります。 Microsoft Intune と Autopilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および新しいデバイスへの適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 Intune を使用して Autopilot デバイスを管理する場合、デバイスの登録後にポリシー、プロファイル、アプリなどを管理することができます。 利点、シナリオ、および前提条件の概要については、「[Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)」 (Windows Autopilot の概要) を参照してください。
@@ -87,8 +87,8 @@ CSV ファイルの情報をインポートすることにより、Windows Autop
 5. **[作成]** を選択します。  
 
 ## <a name="create-an-autopilot-deployment-profile"></a>Autopilot Deployment プロファイルを作成する
-Autopilot Deployment プロファイルは、Autopilot デバイスを構成する場合に使用されます。
-1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、 **[デバイスの登録]**  >  **[Windows の登録]**  >  **[Deployment mode]\(展開プロファイル\)**  >  **[プロファイルの作成]** の順に選択します。
+Autopilot Deployment プロファイルは、Autopilot デバイスを構成する場合に使用されます。 テナントごとに最大 350 個のプロファイルを作成できます。
+1. [Azure portal の Intune](https://aka.ms/intuneportal) で、 **[デバイスの登録]**  >  **[Windows の登録]**  >  **[デプロイ プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
 2. **[基本]** ページ上で、 **[名前]** と省略可能な **[説明]** に入力します。
 
     ![基本ページのスクリーンショット](./media/enrollment-autopilot/create-profile-basics.png)
@@ -132,7 +132,7 @@ Autopilot Deployment プロファイルは、Autopilot デバイスを構成す�
 > Intune は、割り当てられているグループ内の新しいデバイスを定期的に確認し、これらのデバイスにプロファイルを割り当てるプロセスを開始します。 このプロセスの完了には数分かかることがあります。 デバイスをデプロイする前に、このプロセスが完了したことを確認します。  この確認は、 **[デバイスの登録]**  >  **[Windows の登録]**  >  **[デバイス]** で行うことができます。ここで、プロファイルの状態が "未割り当て" から "割り当て中" に変わり、最後に "割り当て済み" になります。
 
 ## <a name="edit-an-autopilot-deployment-profile"></a>Autopilot Deployment プロファイルを編集する
-Autopilot Deployment プロファイルを作成したら、その展開プロファイルの特定の部分を編集することができます。   
+Autopilot Deployment プロファイルを作成したら、そのデプロイ プロファイルの特定の部分を編集することができます。   
 
 1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、 **[デバイスの登録]** を選択します。
 2. **[Windows の登録]** の **[Windows Autopilot]** セクションで、 **[Deployment Profiles]\(展開プロファイル\)** を選択します。
