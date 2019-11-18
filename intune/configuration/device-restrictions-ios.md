@@ -682,7 +682,7 @@ iOS 監視モードは、Apple の Device Enrollment Program または Apple Con
 > - 明示的なコンテンツ
 > - iCloud のドキュメントおよびデータ
 > - マルチプレイヤー ゲーム
-> - Game Center のフレンドの追加
+> - Game Center の友達の追加
 > - Siri
 
 ## <a name="next-steps"></a>次の手順
