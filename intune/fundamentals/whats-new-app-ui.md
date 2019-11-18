@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85f9bb72c6c40c67874326b06ebd41286d2d7220
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: d75e75dbce2563aaf31edede8eeab7249aad8e19
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73415181"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801776"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
 
@@ -40,7 +40,7 @@ Microsoft Intune アプリに対する最新の更新プログラムについて
 ## <a name="week-of-october-28-2019"></a>2019 年 10 月 28 日の週  
 
 ### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>Android 用 Intune ポータル サイト アプリでのチェックリストの設計の改良 <!-- 5550857 -->  
-Android 用 Intune ポータル サイト アプリのセットアップ チェックリストが、軽量のデザインと新しいアイコンによって更新されました。 この変更は、iOS 用 Intune ポータル サイト アプリに対して行われた最近の更新に合わせたものです。 アプリの更新をすべてのお客様にロールアウトしている最中であり、来週の終わりまでに完了する予定です。 更新された登録手順の詳細については、「[Android 仕事用プロファイルを使用して登録する](/intune-user-help/enroll-device-android-work-profile)」および「[Android デバイスを登録する](/intune-user-help/enroll-device-android-company-portal)」をご覧ください。  
+Android 用 Intune ポータル サイト アプリのセットアップ チェックリストが、軽量のデザインと新しいアイコンによって更新されました。 この変更は、iOS 用 Intune ポータル サイト アプリに対して行われた最近の更新に合わせたものです。 更新された登録手順の詳細については、「[Android 仕事用プロファイルを使用して登録する](/intune-user-help/enroll-device-android-work-profile)」および「[Android デバイスを登録する](/intune-user-help/enroll-device-android-company-portal)」をご覧ください。  
 
 次の画面では、Android 仕事用プロファイルの登録に関する更新されたチェックリストを示します。
 
