@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac6da1b15d482d20340163b0bb79e88d74e8e375
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 37ed7bfd204289c963b8134252d9d76f2379ecba
+ms.sourcegitcommit: 768d581cb8bcc5fdcb8ade95d402b11223ab226c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635354"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73882493"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 
@@ -53,12 +53,20 @@ ms.locfileid: "73635354"
 ### Role-based access control
 -->  
 
+## <a name="week-of-november-4-2019"></a>2019 年 11 月 4 日の週
+
+### <a name="device-security"></a>デバイス セキュリティ
+
+#### <a name="security-baselines-are-supported-on-microsoft-azure-government---4062552---"></a>セキュリティ ベースラインが Microsoft Azure Government でサポートされる<!-- 4062552 -->
+
+*Microsoft Azure Government* でホストされている Intune のインスタンスで、[セキュリティ ベースライン](../protect/security-baselines.md)を使用して、ユーザーとデバイスのセキュリティ保護と保護を行えるようになりました。
+
 ## <a name="week-of-october-28-2019"></a>2019 年 10 月 28 日の週
 
 ### <a name="app-management"></a>アプリ管理
 
 #### <a name="improved-checklist-design-in-company-portal-app-for-android---5550857---"></a>Android 用 Intune ポータル サイト アプリでのチェックリストの設計の改良<!-- 5550857 -->  
-Android 用 Intune ポータル サイト アプリのセットアップ チェックリストが、軽量のデザインと新しいアイコンによって更新されました。 この変更は、iOS 用 Intune ポータル サイト アプリに対して行われた最近の更新に合わせたものです。 アプリの更新をすべてのお客様にロールアウトしている最中であり、来週の終わりまでに完了する予定です。 変更の比較については、「[アプリの UI の新機能](whats-new-app-ui.md)」を参照してください。 更新された登録手順の詳細については、「[Android 仕事用プロファイルを使用して登録する](/intune-user-help/enroll-device-android-work-profile)」および「[Android デバイスを登録する](/intune-user-help/enroll-device-android-company-portal)」をご覧ください。  
+Android 用 Intune ポータル サイト アプリのセットアップ チェックリストが、軽量のデザインと新しいアイコンによって更新されました。 この変更は、iOS 用 Intune ポータル サイト アプリに対して行われた最近の更新に合わせたものです。 変更の比較については、「[アプリの UI の新機能](whats-new-app-ui.md)」を参照してください。 更新された登録手順の詳細については、「[Android 仕事用プロファイルを使用して登録する](/intune-user-help/enroll-device-android-work-profile)」および「[Android デバイスを登録する](/intune-user-help/enroll-device-android-company-portal)」をご覧ください。  
 
 #### <a name="win32-apps-on-windows-10-s-mode-devices---3747604---"></a>Windows 10 S モード デバイス上の Win32 アプリ<!-- 3747604 --> 
 Windows 10 S モードのマネージド デバイスに Win32 アプリをインストールして実行できます。 そのために、Windows Defender アプリケーション制御 (WDAC) PowerShell ツールを使用して、S モード用の補足ポリシーを作成できます。 Device Guard 署名ポータルで補足ポリシーに署名した後、Intune 経由でポリシーをアップロードして配布します。 Intune でこの機能を利用するには、 **[クライアント アプリ]**  >  **[Windows 10S 補足ポリシー]** を選択します。 詳しくは、「[S モード デバイスで Win32 アプリを有効にする](~/apps/apps-win32-s-mode.md)」をご覧ください。

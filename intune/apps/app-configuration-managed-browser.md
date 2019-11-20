@@ -115,7 +115,7 @@ Azure AD に接続された Web アプリをモバイル プラットフォー�
 
 9. **[割り当て]** セクションで、 **[クラウド アプリ]** を選択して、このポリシーで保護するアプリを選択します。
 
-上記のポリシーが構成されると、ユーザーは強制的に Intune Managed Browser を使用して、このポリシーで保護している Azure AD に接続されている Web アプリにアクセスします。 ユーザーが、このシナリオで管理されていないブラウザーを使用しようとすると、Intune Managed Browser を代わりに使用する必要があることが通知されます。
+上記のポリシーが構成されると、ユーザーは強制的に Intune Managed Browser を使用して、このポリシーで保護している Azure AD に接続されている Web アプリにアクセスすることになります。 ユーザーが、このシナリオで管理されていないブラウザーを使用しようとすると、Intune Managed Browser を代わりに使用する必要があることが通知されます。
 
 Managed Browser では、従来の条件付きアクセス ポリシーはサポートされていません。 詳細については、「[Azure Portal でクラシック ポリシーを移行する](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration)」をご覧ください。
 

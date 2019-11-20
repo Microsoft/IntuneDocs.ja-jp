@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 899d667ca271ae5c3edced18fab8da987c49b2ca
-ms.sourcegitcommit: 85c894cb4df34a5ff558e3b45e28a8b91054d9e6
+ms.openlocfilehash: e9fe2b2174252aa1081eb311d79b4b5ba37f96f2
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432531"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755354"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Microsoft Intune で Windows デバイスに対してデバイスのファームウェア構成インターフェイス プロファイルを使う (パブリック プレビュー)
 
@@ -77,8 +77,8 @@ DFCI を使用するには、次のプロファイルを作成し、グループ
 
 このプロファイルには、構成する DFCI の設定が含まれています。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 3. 次のプロパティを入力します。
 
     - **名前**: プロファイルのわかりやすい名前を入力します。 後で簡単に識別できるよう、ポリシーに名前を付けます。 適切なプロファイル名の例は、"**Windows: Windows デバイスで DFCI 設定を構成する**" です。
@@ -127,9 +127,11 @@ DFCI を使用するには、次のプロファイルを作成し、グループ
 
 作成が済んだプロファイルは、[割り当てることができる状態](../configuration/device-profile-assign.md)になります。 必ず、DFCI デバイスが含まれる Azure AD セキュリティ グループにプロファイルを割り当ててください。
 
-次にデバイスが同期されるとき、またはデバイスが再起動されるときに、DFCI プロファイルの設定が適用されます。 ポリシーが適用された後、デバイスを再起動します。
+デバイスで Windows Autopilot が実行されると、DFCI によって登録ステータス ページの間に再起動が強制される場合があります。 この最初の再起動により、UEFI が Intune に登録されます。 
 
-デバイスで Windows デバイスのセットアップが実行されると、DFCI によって登録ステータス ページの間に再起動が強制される場合があります。 セットアップが完了したら、デバイスを再起動して、DFCI の設定がアクティブであることを確認できます。 次に、デバイスの製造元の指示に従って、UEFI メニューを開きます。
+デバイスが登録されていることを確認する場合は、デバイスをもう一度再起動することができますが、これは必須ではありません。 デバイスの製造元の指示に従って、UEFI メニューを開き、UFEI がマネージド状態になっていることを確認します。
+
+次にデバイスが Intune と同期されたときに、Windows は DFCI 設定を受信します。 デバイスを再起動します。 この 3 回目の再起動は、UEFI が Windows から DFCI 設定を受信するために必要です。
 
 ## <a name="update-existing-dfci-settings"></a>既存の DFCI の設定を更新する
 
@@ -156,7 +158,7 @@ DFCI を使用するには、次のプロファイルを作成し、グループ
 
 デバイスをインベントリから削除して管理から解放する準備ができたら、終了状態で使用する UEFI (BIOS) の設定に DFCI プロファイルを更新します。 通常は、すべての設定を有効にします。 次に例を示します。
 
-1. DFCI プロファイルを開きます ( **[デバイスの構成]**  >  **[プロファイル]** )。
+1. DFCI プロファイルを開きます ( **[デバイス]**  >  **[プロファイル]** )。
 2. **[ローカル ユーザーが UEFI 設定を変更できるようにする]** を **[構成されていない設定のみ]** に変更します。
 3. その他の設定はすべて、 **[未構成]** に設定します。
 4. 設定を保存します。
