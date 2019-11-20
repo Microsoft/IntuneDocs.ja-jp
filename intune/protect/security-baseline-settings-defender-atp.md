@@ -5,7 +5,7 @@ description: Microsoft Defender Advanced Threat Protection を管理するため
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/25/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa3cb3481de6e1fdc3790b7330ac521772e252be
-ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
+ms.openlocfilehash: b7363682960cff6688e9727d2b6869b6bf357084
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72923403"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060065"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 向けの Microsoft Defender Advanced Threat Protection ベースライン設定
 
@@ -91,7 +91,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
   **既定値**: ブロック 
 
 - **Prevent credential stealing type (資格情報盗難防止タイプ)**  
-  *[有効]* に設定すると、[Credential Guard によりドメインの派生資格情報が保護されます](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard)。 Windows Defender Credential Guard は、特権を持つシステム ソフトウェアだけがシークレットにアクセスできるように、仮想化ベースのセキュリティを使用してシークレットを分離します。 これらのシークレットへの不正アクセスは、Pass-the-Hash や Pass-The-Ticket などの、資格情報を盗む攻撃につながる可能性があります。 Windows Defender Credential Guard は、NTLM パスワード ハッシュ、Kerberos の Ticket Granting Ticket、およびアプリケーションによってドメイン資格情報として格納された資格情報を保護することで、これらの攻撃を防ぎます。  
+  *[有効]* に設定すると、[Credential Guard によりドメインの派生資格情報が保護されます](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard)。 Microsoft Defender Credential Guard では、仮想化ベースのセキュリティを使用してシークレットを分離し、特権を持つシステム ソフトウェアだけがアクセスできるようにします。 これらのシークレットへの不正アクセスは、Pass-the-Hash や Pass-The-Ticket などの、資格情報を盗む攻撃につながる可能性があります。 Microsoft Defender Credential Guard では、NTLM パスワード ハッシュ、Kerberos のチケット保証チケット、およびアプリケーションによってドメイン資格情報として格納された資格情報を保護することで、これらの攻撃を防ぎます。  
 
   **既定値**: 有効にする
 
@@ -227,7 +227,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
   - **Hardware device identifiers that are blocked (ブロックされているハードウェア デバイス識別子)**  
     この設定は *[Hardware device installation by device identifiers]\(デバイス識別子でハードウェア デバイスをインストールする\)* が *[Block hardware device installation]\(ハードウェア デバイスのインストールをブロックする\)* に設定されているときのみ使用できます。 この設定を構成するには、オプションを展開し、 **[+ 追加]** を選択して、ブロックするハードウェア デバイスの識別子を指定します。  
 
-    **既定値**: PCI\CC_0C0A
+    **既定値**: PCI \ CC_0C0A
 
 - **Block direct memory access (ダイレクト メモリ アクセスをブロックする)**  
   [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) - このポリシー設定を使用すると、ユーザーが Windows にログインするまで、デバイス上のホット プラグ可能なすべての PCI ダウンストリーム ポートへのダイレクト メモリ アクセス (DMA) をブロックできます。 ユーザーがログインすると、Windows はホット プラグ PCI ポートに接続されている PCI デバイスを列挙します。 ユーザーがコンピューターをロックするたびに、ユーザーが再ログインするまで、子デバイスが接続されていないホット プラグ PCI ポートで DMA がブロックされます。 コンピューターのロックが解除された際に既に列挙されていたデバイスは、取り外されるまで機能を維持します。 
@@ -281,7 +281,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
   既存の EMET 構成 XML ファイルを変換して Exploit Protection 構成 XML にインポートすることもできます。
 
 - **悪用に対する保護のオーバーライドをブロックする**  
-  [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) – *[はい]* に設定すると、Windows Defender Security Center 内の悪用に対する保護設定に対してユーザーは変更を加えることができなくなります。 この設定を無効にした場合、または構成しなかった場合、ローカルユーザーは悪用に対する保護設定の領域で変更を加えることができます。  
+  [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) – *[はい]* に設定すると、Microsoft Defender Security Center 内の悪用に対する保護設定に対してユーザーは変更を加えることができなくなります。 この設定を無効にした場合、または構成しなかった場合、ローカルユーザーは悪用に対する保護設定の領域で変更を加えることができます。  
   **既定値**: はい  
 
 ## <a name="microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策  
@@ -289,17 +289,17 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 詳細については、Windows ドキュメントの「[Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender)」(ポリシー CSP - Defender) を参照してください。
 
 - **Microsoft Web ブラウザーに読み込まれたスクリプトをスキャンする**:  
-  [Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning) – *[はい]* に設定すると、Windows Defender のスクリプト スキャン機能が使用できるようになります。  
+  [Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning) – *[はい]* に設定すると、Microsoft Defender のスクリプト スキャン機能が使用できるようになります。  
 
   **既定値**: はい
 
 - **受信メール メッセージをスキャンする**  
-  [Defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) – *[はい]* に設定すると、Windows Defender で電子メールをスキャンできるようになります。  
+  [Defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) – *[はい]* に設定すると、Microsoft Defender で電子メールをスキャンできるようになります。  
 
   **既定値**: はい
 
 - **Defender サンプル送信の同意**  
-  [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) - Windows Defender でデータを送信するためのユーザーの同意レベルを確認します。 必要な同意が既に与えられている場合、Windows Defender からそれらが送信されます。 それ以外の場合 (かつユーザーが "確認しない" を指定した場合)、( *[クラウドによる保護]* が *[はい]* に設定されている場合は) データを送信する前にユーザーの同意を求める UI が起動します。  
+  [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) - Microsoft Defender でデータを送信するためのユーザーの同意レベルを確認します。 必要な同意が既に与えられている場合、Microsoft Defender からそれらが送信されます。 それ以外の場合 (かつユーザーが "確認しない" を指定した場合)、( *[クラウドによる保護]* が *[はい]* に設定されている場合は) データを送信する前にユーザーの同意を求める UI が起動します。  
 
   **既定値**: 安全なサンプルを自動的に送信します
 
@@ -319,7 +319,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
     **既定値**: はい
 
 - **アクセス保護に対する Defender のブロック**  
-  [Defender/AllowOnAccessProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection) – *[はい]* に設定すると、Windows Defender の常時保護が有効にされます。  
+  [Defender/AllowOnAccessProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection) – *[はい]* に設定すると、Microsoft Defender の常時保護が有効になります。  
 
   **既定値**: はい
 
@@ -346,30 +346,30 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
   **既定値**: 午前 2 時
 
 - **Cloud-delivered protection (クラウドによる保護)**  
-  [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) – *[はい]* に設定すると、検出された問題に関する情報が Windows Defender から Microsoft に送信されます。 Microsoft は、その情報を分析し、報告者や他の顧客に影響する問題について詳細に把握して、強化されたソリューションを提供します。
+  [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) – *[はい]* に設定すると、検出された問題に関する情報が Microsoft Defender から Microsoft に送信されます。 Microsoft は、その情報を分析し、報告者や他の顧客に影響する問題について詳細に把握して、強化されたソリューションを提供します。
 
   このポリシーを *[はい]* に設定すると、 *[Defender のサンプル送信の同意の種類]* を使用して、ユーザーに自分のデバイスからの情報の送信を制御させることができます。  
 
   **既定値**: はい
 
 - **Defender potentially unwanted app action (Defender の望ましくないアプリに対するアクション)**  
-  [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection) – Windows Defender ウイルス対策では、*望ましくない可能性のあるアプリケーション*を識別し、それがご利用のネットワーク内のエンドポイント上にダウンロードおよびインストールされるのをブロックすることができます。 
+  [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection) – Microsoft Defender ウイルス対策では、"*望ましくない可能性のあるアプリケーション*" (PUA) を識別し、それがご利用のネットワーク内のエンドポイント上にダウンロードされてインストールされるのをブロックすることができます。 
  
-  - *[ブロック]* に設定すると、Windows Defender によって PUA がブロックされ、他の脅威と一緒に履歴内に一覧表示されます。
-  - *[監査]* に設定すると、Windows Defender によって PUA は検出されますが、ブロックされません。 Windows Defender がアクションを実行したアプリケーションに関する情報は、Windows Defender によって作成されたイベントをイベント ビューアーで検索することで確認できます。  
+  - *[ブロック]* に設定すると、Microsoft Defender によって PUA がブロックされ、他の脅威と一緒に履歴内に一覧表示されます。
+  - *[監査]* に設定すると、Microsoft Defender によって PUA は検出されますが、ブロックされません。 Microsoft Defender によってアクションが実行されたアプリケーションに関する情報は、Microsoft Defender によって作成されたイベントをイベント ビューアーで検索することで確認できます。  
   - *[デバイスの既定値]* に設定すると、PUA 保護はオフになります。  
  
   **既定値**: ブロック
 
 - **Defender クラウド延長タイムアウト**  
-  [Defender/CloudExtendedTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout) - Windows Defender ウイルス対策がクラウドからの結果を待機している間にファイルをブロックする最大追加時間を指定します。 Windows Defender が待機する基本的な時間の長さは 10 秒です。 ここで指定した追加の時間 (最大 50 秒) は、それらの 10 秒に追加されます。 ほとんどの場合、スキャンにかかる時間は最大値より短くなります。 時間を延長すると、クラウドは疑わしいファイルを徹底的に調査できます。  
+  [Defender/CloudExtendedTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout) - Microsoft Defender ウイルス対策がクラウドからの結果を待機している間にファイルをブロックする最大追加時間を指定します。 Microsoft Defender が待機する基本的な時間の長さは 10 秒です。 ここで指定した追加の時間 (最大 50 秒) は、それらの 10 秒に追加されます。 ほとんどの場合、スキャンにかかる時間は最大値より短くなります。 時間を延長すると、クラウドは疑わしいファイルを徹底的に調査できます。  
 
   既定では、延長時間の値は 0 (無効) です。 Intune では、この設定を有効にし、少なくとも 20 秒の追加を指定することが推奨されています。  
  
   **既定値**: 0
 
 - **アーカイブ ファイルをスキャンする**  
-  [Defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning) – *[はい]* に設定すると、Windows Defender でアーカイブ ファイルがスキャンされます。  
+  [Defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning) – *[はい]* に設定すると、Microsoft Defender でアーカイブ ファイルがスキャンされます。  
 
   **既定値**: はい
 
@@ -381,17 +381,17 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
   **既定値**: ユーザー定義
 
 - **動作の監視**  
-  [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) – *[はい]* に設定すると、Windows Defender の動作監視機能がオンになります。 Windows 10 内蔵の、Windows Defender の動作監視機能センサーでは、オペレーティング システムから動作信号を収集して処理し、プライベート クラウドに他から切り離されて存在する Microsoft Defender ATP インスタンスにこのセンサー データを送信します。  
+  [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) – *[はい]* に設定すると、Microsoft Defender の動作監視機能がオンになります。 Windows 10 に内蔵されている Microsoft Defender の動作監視機能センサーでは、オペレーティング システムから動作信号を収集して処理され、プライベート クラウドに他から切り離されて存在する Microsoft Defender ATP インスタンスにこのセンサー データが送信されます。  
 
   **既定値**: はい
 
 - **ネットワーク フォルダーから開いたファイルをスキャンする**  
-  [Defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) – *[はい]* に設定すると、Windows Defender によってネットワーク上のファイルがスキャンされます。 ユーザーは、読み取り専用のファイルから検出されたマルウェアを削除することはできません。  
+  [Defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) – *[はい]* に設定すると、Microsoft Defender によってネットワーク上のファイルがスキャンされます。 ユーザーは、読み取り専用のファイルから検出されたマルウェアを削除することはできません。  
 
   **既定値**: はい
 
 - **Defender cloud block level (Defender クラウド ブロック レベル)**  
-  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) – このポリシーを使用すると、Windows Defender ウイルス対策で悪意のあるファイルをブロックおよびスキャンする際にどの程度積極的に行うかを決定できます。 次のオプションがあります。
+  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) – このポリシーを使用すると、Microsoft Defender ウイルス対策で悪意のあるファイルをブロックおよびスキャンする際にどの程度積極的に行うかを決定できます。 次のオプションがあります。
 
   - 高 - クライアントのパフォーマンスの最適化中に不明なファイルを積極的にブロックします (誤検知の可能性が高くなります)
   - \+ 高 - 不明なファイルを積極的にブロックし、追加の保護策を適用します (クライアントのパフォーマンスに影響を及ぼす可能性があります)
@@ -400,24 +400,24 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
   **既定値**: 未構成
 
 - **リアルタイム監視**:  
-  [Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring) – *[はい]* に設定すると、Windows Defender リアルタイム監視が許可されます。  
+  [Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring) – *[はい]* に設定すると、Microsoft Defender リアルタイム監視が許可されます。  
 
   **既定値**: はい
 
 - **スキャン中の CPU 使用率の制限**  
-  [Defender/AvgCPULoadFactor](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor) – Windows Defender がスキャン中に使用できる最大平均 CPU 使用率を指定します。  
+  [Defender/AvgCPULoadFactor](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor) – Microsoft Defender がスキャン中に使用できる最大平均 CPU 使用率を指定します。  
 
   **既定値**: 50
 
 - **フル スキャン中に、マップされたネットワーク ドライブをスキャンする**  
-  [Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives) - *[はい]* に設定すると、Windows Defender によってネットワーク上のファイルがスキャンされます。 ユーザーは読み取り専用ファイルから検出されたマルウェアを削除することはできません。
+  [Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives) - *[はい]* に設定すると、Microsoft Defender によってネットワーク上のファイルがスキャンされます。 ユーザーは読み取り専用ファイルから検出されたマルウェアを削除することはできません。
 
   このリスト内の関連設定: *Defender/AllowScanningNetworkFiles*
 
   **既定値**: はい
 
 - **エンドユーザーによる Defender へのアクセスをブロックする**  
-  [Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess) – *[はい]* に設定すると、エンドユーザーは自分のデバイス上での Windows Defender UI へのアクセスをブロックされます。  
+  [Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess) – *[はい]* に設定すると、エンドユーザーは自分のデバイス上での Microsoft Defender UI へのアクセスをブロックされます。  
 
   **既定値**: はい
 
@@ -426,7 +426,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 
   **既定値**: 午前 2 時
 
-## <a name="windows-defender-firewall"></a>Windows Defender ファイアウォール
+## <a name="microsoft-defender-firewall"></a>Microsoft Defender ファイアウォール
 詳細については、Windows のドキュメントの「[Firewall CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)」 (ファイアウォール CSP) を参照してください。
 
 - **セキュリティ アソシエーションが削除されるまでのアイドル時間** - *MdmStore/Global/SaIdleTime*   
@@ -560,29 +560,29 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 ## <a name="web--network-protection"></a>Web とネットワークの保護  
 
 - **Network protection type (ネットワーク保護タイプ)**  
-  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)  - このポリシーでは、Windows Defender Exploit Guard 内でネットワーク保護をオンまたはオフにすることができます。 ネットワーク保護は Windows Defender Exploit Guard の機能であり、任意のアプリを使用する従業員がインターネット上のフィッシング詐欺、悪用ホスティング サイト、悪意のあるコンテンツにアクセスするのを防ぎます。 これには、サード パーティ製のブラウザーが危険なサイトに接続するのを防ぐことが含まれます。  
+  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)  - このポリシーでは、Microsoft Defender Exploit Guard 内でネットワーク保護をオンまたはオフにすることができます。 ネットワーク保護は Microsoft Defender Exploit Guard の機能であり、任意のアプリを使用する従業員がインターネット上のフィッシング詐欺、悪用ホスティング サイト、悪意のあるコンテンツにアクセスするのを防ぎます。 これには、サード パーティ製のブラウザーが危険なサイトに接続するのを防ぐことが含まれます。  
 
-  *[有効]* または *[監査モード]* のいずれかに設定すると、ユーザーはネットワーク保護を無効にできなくなります。Windows Defender セキュリティ センターを使用すれば、接続の試行に関する情報を表示できます。  
+  *[有効]* または *[監査モード]* のいずれかに設定すると、ユーザーはネットワーク保護を無効にできなくなります。Microsoft Defender セキュリティ センターを使用して、接続の試行に関する情報を表示できます。  
  
   - *[有効]* に設定すると、ユーザーおよびアプリが危険なドメインに接続するのをブロックできます。  
   - *[監査モード]* に設定した場合、ユーザーおよびアプリが危険なドメインに接続するのを防ぐことはできません。  
 
-  *[ユーザー定義]* に設定すると、ユーザーおよびアプリが危険なドメインに接続するのをブロックすることはできず、Windows Defender セキュリティ センターで接続に関する情報は提供されません。  
+  *[ユーザー定義]* に設定すると、ユーザーとアプリが危険なドメインに接続するのをブロックすることはできず、接続に関する情報は Microsoft Defender セキュリティ センターに提供されません。  
 
   **既定値**: 監査モード
 
 - **Require SmartScreen for Microsoft Edge (Microsoft Edge で SmartScreen が必要)**  
-  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - Microsoft Edge では、(有効に設定された) Windows Defender SmartScreen を使用して、フィッシング詐欺にあう可能性や悪意のあるソフトウェアから既定でユーザーを保護しています。 既定では、このポリシーは有効になっています ( *[はい]* に設定されています)。有効になっている場合、ユーザーは Windows Defender SmartScreen をオフすることができません。  デバイス用の有効なポリシーが [未構成] に相当する場合、ユーザーは Windows Defender SmartScreen を無効にして、デバイスを保護されていない状態にすることができます。  
+  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - Microsoft Edge では、(有効に設定された) Microsoft Defender SmartScreen を使用して、フィッシング詐欺にあう可能性や悪意のあるソフトウェアから既定でユーザーを保護しています。 既定では、このポリシーは有効になっています ( *[はい]* に設定されています)。有効になっている場合、ユーザーが Microsoft Defender SmartScreen をオフにすることができません。  デバイス用の有効なポリシーが [未構成] に相当する場合、ユーザーは Microsoft Defender SmartScreen を無効にして、デバイスを保護されていない状態にすることができます。  
 
   **既定値**: はい
   
 - **Block malicious site access (悪意のあるサイトへのアクセスをブロックする)**  
-  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - 既定では、Microsoft Edge を使用する場合、ユーザーは悪意のある可能性があるサイトに関する Windows Defender SmartScreen の警告を無視してそのサイトへのアクセスを続行できます。 このポリシーを有効にした場合 ( *[はい]* に設定)、Microsoft Edge を使用しているユーザーは警告を無視してサイトへのアクセスを続行することはできません。  
+  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - 既定では、Microsoft Edge では、ユーザーは悪意のある可能性があるサイトに関する Windows Defender SmartScreen の警告をバイパス (無視) してそのサイトへのアクセスを続行できます。 このポリシーを有効にした場合 ( *[はい]* に設定)、Microsoft Edge を使用しているユーザーは警告を無視してサイトへのアクセスを続行することはできません。  
 
   **既定値**: はい
 
 - **Block unverified file download (確認されていないファイルのダウンロードをブロックする)**  
-  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - Microsoft Edge では、悪意のある可能性があるファイルに関する Windows Defender SmartScreen の警告を既定で無視して、確認されていないファイルのダウンロードを続行することができます。 このポリシーを有効にすると ( *[はい]* に設定)、ユーザーは警告を無視して確認されていないファイルをダウンロードすることはできません。  
+  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - 既定では、Microsoft Edge では、ユーザーが悪意のある可能性があるファイルに関する Windows Defender SmartScreen の警告を無視して、確認されていないファイルのダウンロードを続行することができます。 このポリシーを有効にすると ( *[はい]* に設定)、ユーザーは警告を無視して確認されていないファイルをダウンロードすることはできません。  
 
   **既定値**: はい
 

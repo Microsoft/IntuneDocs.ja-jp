@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune での Windows 10 デバイス向けの保護設定 - Azure | Microsoft Docs
-description: Windows 10 デバイスで、エンドポイント保護設定を使用または構成して、Windows Defender 機能を有効にします。これには、Application Guard、ファイアウォール、SmartScreen、暗号化と BitLocker、Exploit Guard、Application Control、セキュリティ センター、Microsoft Intune のローカル デバイスのセキュリティが含まれます。
+description: Windows 10 デバイスで、エンドポイント保護設定を使用または構成して、Microsoft Defender の機能を有効にします。これには、Application Guard、ファイアウォール、SmartScreen、暗号化と BitLocker、Exploit Guard、Application Control、Security Center、Microsoft Intune のローカル デバイスのセキュリティが含まれます。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,20 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40865dcca0b0109ae36f65b6691672c0035732b5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e2909e7ad1ced9483a6cec58f1f3009f56946f5f
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502287"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058427"
 ---
-# <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune を使用してデバイスを保護するための Windows 10 (以降) の設定  
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]  
+# <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune を使用してデバイスを保護するための Windows 10 (以降) の設定
 
 Microsoft Intune には、デバイスの保護に役立つ多くの設定が含まれています。 この記事では、Windows 10 以降のデバイスで有効にして構成できるすべての設定について説明します。 これらの設定は、BitLocker や Windows Defender を含む、セキュリティを制御するための Intune のエンドポイント保護構成プロファイルで作成されます。  
 
-Windows Defender ウイルス対策を構成する場合は、[Windows 10 のデバイス制限](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)に関するページを参照してください。  
+Microsoft Defender ウイルス対策を構成するには、[Windows 10 のデバイス制限](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)に関するページを参照してください。  
 
 ## <a name="before-you-begin"></a>始める前に  
 
@@ -38,9 +36,9 @@ Windows Defender ウイルス対策を構成する場合は、[Windows 10 のデ
 
 構成サービスプロバイダー (Csp) の詳細については、「[構成サービスプロバイダーのリファレンス](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)」を参照してください。  
 
-## <a name="windows-defender-application-guard"></a>Windows Defender Application Guard  
+## <a name="microsoft-defender-application-guard"></a>Microsoft Defender Application Guard  
 
-Microsoft Edge を使用しているときは、Windows Defender Application Guard が組織で信頼されていないサイトから環境を保護します。 分離ネットワーク境界のリストに含まれないサイトにユーザーがアクセスすると、そのサイトは Hyper-V 仮想ブラウズ セッションで開きます。 信頼済みサイトはネットワーク境界によって定義され、デバイス構成で構成されます。  
+Microsoft Edge を使用しているとき、ご利用の環境は Windows Defender Application Guard によって、組織で信頼されていないサイトから保護されます。 分離ネットワーク境界のリストに含まれないサイトにユーザーがアクセスすると、そのサイトは Hyper-V 仮想ブラウズ セッションで開きます。 信頼済みサイトはネットワーク境界によって定義され、デバイス構成で構成されます。  
 
 Application Guard は Windows 10 (64 ビット) デバイスでのみ使用可能です。 このプロファイルを使用すると、Application Guard をアクティブ化するための Win32 コンポーネントがインストールされます。  
 
@@ -122,7 +120,7 @@ Application Guard は Windows 10 (64 ビット) デバイスでのみ使用可�
   - **[有効]** - ユーザーは仮想ブラウザーからホスト オペレーティング システムにファイルをダウンロードできます。  
   - **[未構成]** - デバイスにローカルでファイルが保存されます。ホスト ファイル システムにはダウンロードされません。  
 
-## <a name="windows-defender-firewall"></a>Windows Defender ファイアウォール  
+## <a name="microsoft-defender-firewall"></a>Microsoft Defender ファイアウォール  
  
 ### <a name="global-settings"></a>グローバル設定  
 
@@ -196,7 +194,7 @@ Application Guard は Windows 10 (64 ビット) デバイスでのみ使用可�
 
 #### <a name="general-settings"></a>全般設定  
 
-- **Windows Defender ファイアウォール**  
+- **Microsoft Defender ファイアウォール**  
   **既定値**: 未構成  
   ファイアウォール CSP: [Enablefirewall](https://go.microsoft.com/fwlink/?linkid=872558)  
   
@@ -224,7 +222,7 @@ Application Guard は Windows 10 (64 ビット) デバイスでのみ使用可�
   **既定値**: 未構成  
   ファイアウォール CSP:[シールド](https://go.microsoft.com/fwlink/?linkid=872561)  
     - **未構成**  
-    - **ブロック**-Windows Defender ファイアウォールがオンになっていて、この設定が [*ブロック*] に設定されている場合、他のポリシー設定に関係なく、すべての受信トラフィックがブロックされます。 
+    - **ブロック**-Microsoft Defender ファイアウォールがオンになっていて、この設定が [*ブロック*] に設定されている場合、他のポリシー設定に関係なく、すべての受信トラフィックがブロックされます。 
     - **許可**-[*許可*] に設定されている場合、この設定はオフになり、着信トラフィックは他のポリシー設定に基づいて許可されます。
 
 - **[マルチキャスト ブロードキャストへのユニキャスト応答]**  
@@ -264,7 +262,7 @@ Application Guard は Windows 10 (64 ビット) デバイスでのみ使用可�
 
 #### <a name="rule-merging"></a>規則のマージ  
 
-- **[ローカル ストアからの Windows Defender ファイアウォール規則の承認された適用]**  
+- **[ローカル ストアからの Microsoft Defender ファイアウォール規則の承認された適用]**  
   **既定値**: 未構成  
   ファイアウォール CSP: [AuthAppsAllowUserPrefMerge](https://go.microsoft.com/fwlink/?linkid=872565)  
 
@@ -273,7 +271,7 @@ Application Guard は Windows 10 (64 ビット) デバイスでのみ使用可�
   - **[許可]** -
     **[有効]** を選択すると、ローカル ストアにあるファイアウォール規則が認識され、適用されます。  
 
-- **[ローカル ストアからのグローバル ポート Windows Defender ファイアウォール規則]**  
+- **[ローカル ストアからのグローバル ポート Microsoft Defender ファイアウォール規則]**  
   **既定値**: 未構成  
   ファイアウォール CSP: [GlobalPortsAllowUserPrefMerge](https://go.microsoft.com/fwlink/?linkid=872566)  
 
@@ -281,7 +279,7 @@ Application Guard は Windows 10 (64 ビット) デバイスでのみ使用可�
   - **ブロック**-ローカルストア内のグローバルポートファイアウォール規則は無視され、適用されません。  
   - **[許可]** - ローカル ストアのグローバル ポート ファイアウォール規則の適用が認識され、適用されます。  
 
-- **[ローカル ストアからの Windows Defender ファイアウォール規則]**  
+- **[ローカル ストアからの Microsoft Defender ファイアウォール規則]**  
   **既定値**: 未構成  
   ファイアウォール CSP: [Allowlocalpolicymerge](https://go.microsoft.com/fwlink/?linkid=872567)  
 
@@ -336,7 +334,7 @@ Application Guard は Windows 10 (64 ビット) デバイスでのみ使用可�
 #### <a name="application-settings"></a>アプリケーションの設定  
 
 - **アプリケーション**  
-  **既定**: すべて  
+  **既定値**: すべて  
 
   アプリまたはプログラムの接続を制御します。 次のいずれかのオプションを選択し、追加の構成を完了します。  
   - **パッケージファミリ名**–パッケージファミリ名を指定します。 パッケージファミリ名を検索するには、PowerShell コマンド**get-appxpackage**を使用します。   
@@ -422,7 +420,7 @@ Application Guard は Windows 10 (64 ビット) デバイスでのみ使用可�
   この規則に対して承認されたローカルユーザーの一覧を指定します。 この規則が Windows サービスに適用される場合は、承認されたユーザーの一覧を指定することはできません。  
 
 
-## <a name="windows-defender-smartscreen-settings"></a>Windows Defender SmartScreen 設定  
+## <a name="microsoft-defender-smartscreen-settings"></a>Windows Defender SmartScreen 設定  
  
 Microsoft Edge がデバイスにインストールされている必要があります。  
 
@@ -443,8 +441,6 @@ Microsoft Edge がデバイスにインストールされている必要があ�
 ## <a name="windows-encryption"></a>Windows の暗号化  
  
 ### <a name="windows-settings"></a>Windows の設定  
-
-これらの暗号化の設定は、Windows 10 のすべてのバージョンに適用されます。  
 
 - **デバイスの暗号化**  
   **既定値**: 未構成  
@@ -479,7 +475,7 @@ Microsoft Edge がデバイスにインストールされている必要があ�
   [*ブロック*] に設定すると、次の設定を構成できます。  
 
   - **[Azure AD 参加中の暗号化の有効化を標準ユーザーに許可する]**  
-    *この設定は、参加している (Azure の Azure Active Directory) デバイスにのみ適用され、前の設定 (`Warning for other disk encryption`) に依存します。*  
+    *この設定は、参加している (Azure の Azure Active Directory) デバイスにのみ適用され、`Warning for other disk encryption`前の設定に依存します。*  
     **既定値**: 未構成  
     BitLocker CSP: [Allowstandarduserencryption](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#allowstandarduserencryption)
 
@@ -775,7 +771,7 @@ Microsoft Edge がデバイスにインストールされている必要があ�
     - **[ブロック]** - 別の組織で構成されたデバイスへの書き込みアクセスをブロックします。  
     - **未構成**-書き込みアクセス権を拒否します。  
  
-## <a name="windows-defender-exploit-guard"></a>Windows Defender Exploit Guard  
+## <a name="microsoft-defender-exploit-guard"></a>Microsoft Defender Exploit Guard  
 
 [悪用保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)を使用して、従業員が使用するアプリの攻撃対象領域を管理し、軽減します。  
 
@@ -825,7 +821,7 @@ Office アプリによる次の操作をブロックします。
 
 - **子プロセスを起動する Office アプリ**  
   **既定値**: 未構成  
-  ルール:[すべての Office アプリケーションによる子プロセスの作成をブロック](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-all-office-applications-from-creating-child-processes)します。  
+  ルール: [すべての Office アプリケーションによる子プロセスの作成をブロックする](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-all-office-applications-from-creating-child-processes)  
 
   - **未構成**  
   - **ブロック**-Office アプリが子プロセスを起動するのをブロックします。  
@@ -971,21 +967,20 @@ Office アプリによる次の操作をブロックします。
 
   この設定の目的は、フィッシング詐欺、悪用ホストサイト、およびインターネット上の悪意のあるコンテンツにアクセスするアプリからエンドユーザーを保護することです。 また、サードパーティのブラウザーが危険なサイトに接続するのを防ぐことができます。  
 
-  - **[未構成]** - この機能が無効になります。 ユーザーとアプリケーションが危険なドメインに接続できない。 管理者はこのアクティビティを Windows Defender セキュリティ センターで確認できません。  
-  - **有効にする**-ネットワーク保護を有効にし、ユーザーとアプリが危険なドメインに接続するのをブロックします。 管理者はこのアクティビティを Windows Defender セキュリティ センターで確認できます。  
-  - **監査のみ**:-ユーザーとアプリは危険なドメインへの接続をブロックされません。 管理者はこのアクティビティを Windows Defender セキュリティ センターで確認できます。  
+  - **[未構成]** - この機能が無効になります。 ユーザーとアプリケーションが危険なドメインに接続できない。 管理者は、このアクティビティを Microsoft Defender セキュリティ センターで確認することはできません。  
+  - **有効にする**-ネットワーク保護を有効にし、ユーザーとアプリが危険なドメインに接続するのをブロックします。 管理者は、このアクティビティを Microsoft Defender セキュリティ センターで確認できます。  
+  - **監査のみ**:-ユーザーとアプリは危険なドメインへの接続をブロックされません。 管理者は、このアクティビティを Microsoft Defender セキュリティ センターで確認できます。  
 
 ### <a name="exploit-protection"></a>悪用に対する保護  
- 
 
 - **XML のアップロード**  
   **既定値**: *[未構成]*  
 
-  Exploit protection を使用して、悪用[からデバイスを保護](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)するには、必要なシステムとアプリケーションの軽減策を含む XML ファイルを作成します。 XML ファイルを作成するには、次の2つの方法があります。  
+  Exploit protection を使用して、悪用[からデバイスを保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)するには、必要なシステムとアプリケーションの軽減策を含む XML ファイルを作成します。 XML ファイルを作成するには、次の2つの方法があります。  
 
   - *PowerShell* - *Get-ProcessMitigation*、*Set-ProcessMitigation*、*ConvertTo-ProcessMitigationPolicy* のうちの 1 つ以上の PowerShell コマンドレットを使います。 これらのコマンドレットは、軽減策設定を構成し、それらの XML 表現をエクスポートします。  
 
-  - "*Windows Defender セキュリティ センターの UI*" - Windows Defender セキュリティ センターで [アプリとブラウザー コントロール] をクリックしてから、結果画面の一番下までスクロールして Exploit Protection を見つけます。 まず、[システム設定] と [プログラム設定] タブを使用して、軽減策設定を構成します。 次に、画面の一番下にある [設定のエクスポート] リンクを見つけ、それらの XML 表現をエクスポートします。  
+  - "*Microsoft Defender セキュリティ センターの UI*" - Microsoft Defender セキュリティ センターで [アプリとブラウザー コントロール] をクリックしてから、結果画面の一番下までスクロールして Exploit Protection を見つけます。 まず、[システム設定] と [プログラム設定] タブを使用して、軽減策設定を構成します。 次に、画面の一番下にある [設定のエクスポート] リンクを見つけ、それらの XML 表現をエクスポートします。  
 
 - **Exploit protection インターフェイスのユーザーによる編集**  
   **既定値**: 未構成  
@@ -995,9 +990,9 @@ Office アプリによる次の操作をブロックします。
   - **ブロック**-メモリ、制御フロー、およびポリシーの制限を構成するための XML ファイルをアップロードします。 XML ファイル内の設定を使って、アプリケーションが悪用されるのをブロックできます。  
   - **未構成**-カスタム構成は使用されません。  
 
-## <a name="windows-defender-application-control"></a>Windows Defender アプリケーション制御  
+## <a name="microsoft-defender-application-control"></a>Microsoft Defender アプリケーション制御  
 
-によって監査される必要がある、または Windows Defender Application Control によって実行するために信頼できる、追加のアプリを選択します。 Windows コンポーネントと Windows ストアのすべてのアプリは、実行しても差し支えないという信頼を自動的に得ます。  
+によって監査される必要がある、または Microsoft Defender Application Control によって実行するために信頼できる、追加のアプリを選択します。 Windows コンポーネントと Windows ストアのすべてのアプリは、実行しても差し支えないという信頼を自動的に得ます。  
 
 
 - **アプリケーション制御コード整合性ポリシー**  
@@ -1012,9 +1007,9 @@ Office アプリによる次の操作をブロックします。
  
   - **監査のみ**-アプリケーションはブロックされません。 すべてのイベントは、ローカルクライアントのログに記録されます。  
 
-## <a name="windows-defender-credential-guard"></a>Windows Defender Credential Guard  
+## <a name="microsoft-defender-credential-guard"></a>Microsoft Defender Credential Guard  
 
-Windows Defender Credential Guard は、資格情報盗難攻撃から保護します。 特権のあるシステム ソフトウェアだけがアクセスできるように、シークレットを分離します。  
+Windows Defender Credential Guard によって、資格情報盗難攻撃から保護されます。 特権のあるシステム ソフトウェアだけがアクセスできるように、シークレットを分離します。  
 
 - **[Credential Guard]**  
   **既定値**: 無効にする  
@@ -1036,19 +1031,19 @@ Windows Defender Credential Guard は、資格情報盗難攻撃から保護し�
   - **ディレクトリ メモリ アクセスによるセキュア ブート**  
     セキュア ブートと直接メモリ アクセス (DMA) の保護による VBS が有効になります。 DMA 保護は、ハードウェアのサポートを必要とし、正しく構成されたデバイスでのみ有効にされます。  
 
-## <a name="windows-defender-security-center"></a>Windows Defender セキュリティ センター  
+## <a name="microsoft-defender-security-center"></a>Microsoft Defender セキュリティ センター  
 
-Windows Defender セキュリティ センターは、個々の機能とは別のアプリまたはプロセスとして動作します。 アクション センターで通知を表示します。 コレクターまたは 1 つの場所として機能し、状態の表示、各機能の一部の構成を実行します。 詳細については、[Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) のドキュメントを参照してください。  
+Microsoft Defender セキュリティ センターは、個々の機能とは別のアプリまたはプロセスとして動作します。 アクション センターで通知を表示します。 コレクターまたは 1 つの場所として機能し、状態の表示、各機能の一部の構成を実行します。 詳細については、 [Microsoft Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center)のドキュメントを参照してください。  
 
-### <a name="windows-defender-security-center-app-and-notifications"></a>Windows Defender セキュリティ センターのアプリと通知  
+### <a name="microsoft-defender-security-center-app-and-notifications"></a>Microsoft Defender セキュリティ センターのアプリと通知  
 
-Windows Defender セキュリティ センターのアプリのさまざまな領域に対するエンド ユーザー アクセスをブロックします。 セクションを非表示にすると、関連する通知もブロックされます。  
+Microsoft Defender セキュリティ センターのアプリのさまざまな領域に対するエンド ユーザー アクセスをブロックします。 セクションを非表示にすると、関連する通知もブロックされます。  
 
 - **ウイルスと脅威の防止**  
   **既定値**: 未構成  
   WindowsDefenderSecurityCenter CSP: [DisableVirusUI](https://go.microsoft.com/fwlink/?linkid=873662)  
 
-  エンドユーザーが Windows Defender Security Center の [ウイルスと脅威の保護] 領域を表示できるようにするかどうかを構成します。 このセクションを非表示にすると、ウイルスおよび脅威保護に関連するすべての通知もブロックされます。  
+  エンドユーザーが Microsoft Defender Security Center の [ウイルスと脅威の保護] 領域を表示できるようにするかどうかを構成します。 このセクションを非表示にすると、ウイルスおよび脅威保護に関連するすべての通知もブロックされます。  
 
   - **未構成**  
   - **非表示**  
@@ -1057,7 +1052,7 @@ Windows Defender セキュリティ センターのアプリのさまざまな�
   **既定値**: 未構成  
   WindowsDefenderSecurityCenter CSP: [HideRansomwareDataRecovery](https://go.microsoft.com/fwlink/?linkid=873664)  
 
-  Windows Defender Security Center で、エンドユーザーがランサムウェア対策領域を表示できるかどうかを構成します。 このセクションを非表示にすると、ランサムウェアの保護に関連するすべての通知もブロックされます。  
+  Microsoft Defender Security Center で、エンドユーザーがランサムウェア対策領域を表示できるかどうかを構成します。 このセクションを非表示にすると、ランサムウェアの保護に関連するすべての通知もブロックされます。  
 
   - **未構成**  
   - **非表示**  
@@ -1066,7 +1061,7 @@ Windows Defender セキュリティ センターのアプリのさまざまな�
   **既定値**: 未構成  
   WindowsDefenderSecurityCenter CSP: [Disableaccountprotectionui](https://go.microsoft.com/fwlink/?linkid=873666)  
 
-  エンドユーザーが Windows Defender Security Center でアカウント保護領域を表示できるようにするかどうかを構成します。 このセクションを非表示にすると、アカウント保護に関連するすべての通知もブロックされます。  
+  Microsoft Defender Security Center で、エンドユーザーがアカウント保護領域を表示できるようにするかどうかを構成します。 このセクションを非表示にすると、アカウント保護に関連するすべての通知もブロックされます。  
 
   - **未構成**  
   - **非表示**  
@@ -1075,7 +1070,7 @@ Windows Defender セキュリティ センターのアプリのさまざまな�
   **既定値**: 未構成  
   WindowsDefenderSecurityCenter CSP: [DisableNetworkUI](https://go.microsoft.com/fwlink/?linkid=873668)  
 
-  エンドユーザーが Windows Defender セキュリティセンターで [ファイアウォールとネットワーク保護] 領域を表示できるようにするかどうかを構成します。 このセクションを非表示にすると、ファイアウォールとネットワーク保護に関連するすべての通知もブロックされます。  
+  エンドユーザーが Microsoft Defender Security center で [ファイアウォールとネットワーク保護] 領域を表示できるようにするかどうかを構成します。 このセクションを非表示にすると、ファイアウォールとネットワーク保護に関連するすべての通知もブロックされます。  
 
   - **未構成**  
   - **非表示**  
@@ -1084,7 +1079,7 @@ Windows Defender セキュリティ センターのアプリのさまざまな�
   **既定値**: 未構成  
   WindowsDefenderSecurityCenter CSP: [Disableappbrowserui](https://go.microsoft.com/fwlink/?linkid=873669)  
 
-  エンドユーザーが Windows Defender セキュリティセンターでアプリとブラウザーのコントロール領域を表示できるようにするかどうかを構成します。 このセクションを非表示にすると、アプリとブラウザーの制御に関連するすべての通知もブロックされます。  
+  エンドユーザーが Microsoft Defender Security center でアプリとブラウザーのコントロール領域を表示できるようにするかどうかを構成します。 このセクションを非表示にすると、アプリとブラウザーの制御に関連するすべての通知もブロックされます。  
 
   - **未構成**  
   - **非表示**  
@@ -1093,7 +1088,7 @@ Windows Defender セキュリティ センターのアプリのさまざまな�
   **既定値**: 未構成  
   WindowsDefenderSecurityCenter CSP: [DisableDeviceSecurityUI](https://go.microsoft.com/fwlink/?linkid=873670)  
 
-  エンドユーザーが Windows Defender Security Center の [ハードウェア保護] 領域を表示できるようにするかどうかを構成します。 このセクションを非表示にすると、ハードウェア保護に関連するすべての通知もブロックされます。  
+  エンドユーザーが Microsoft Defender Security Center の [ハードウェア保護] 領域を表示できるようにするかどうかを構成します。 このセクションを非表示にすると、ハードウェア保護に関連するすべての通知もブロックされます。  
 
   - **未構成**  
   - **非表示**  
@@ -1102,7 +1097,7 @@ Windows Defender セキュリティ センターのアプリのさまざまな�
   **既定値**: 未構成  
   WindowsDefenderSecurityCenter CSP: [DisableHealthUI](https://go.microsoft.com/fwlink/?linkid=873671)  
 
-  エンドユーザーが Windows Defender セキュリティセンターの [デバイスのパフォーマンスとヘルス] 領域を表示できるようにするかどうかを構成します。 このセクションを非表示にすると、デバイスのパフォーマンスと正常性に関連するすべての通知もブロックされます。  
+  エンドユーザーが Microsoft Defender Security center でデバイスのパフォーマンスと正常性の領域を表示できるようにするかどうかを構成します。 このセクションを非表示にすると、デバイスのパフォーマンスと正常性に関連するすべての通知もブロックされます。  
   
   - **未構成**  
   - **非表示**  
@@ -1111,7 +1106,7 @@ Windows Defender セキュリティ センターのアプリのさまざまな�
   **既定値**: 未構成  
   WindowsDefenderSecurityCenter CSP: [DisableFamilyUI](https://go.microsoft.com/fwlink/?linkid=873673)  
 
-  エンドユーザーが Windows Defender セキュリティセンターで [ファミリオプション] 領域を表示できるようにするかどうかを構成します。 このセクションを非表示にすると、ファミリオプションに関連するすべての通知もブロックされます。  
+  エンドユーザーが Microsoft Defender Security center の [ファミリオプション] 領域を表示できるようにするかどうかを構成します。 このセクションを非表示にすると、ファミリオプションに関連するすべての通知もブロックされます。  
   
   - **未構成**  
   - **非表示**  
@@ -1120,7 +1115,7 @@ Windows Defender セキュリティ センターのアプリのさまざまな�
   **既定値**: 未構成  
   WindowsDefenderSecurityCenter CSP: [DisableNotifications](https://go.microsoft.com/fwlink/?linkid=873675)  
 
-  エンド ユーザーに表示する通知を選択します。 重大ではない通知には、スキャンが完了したときの通知など、Windows Defender ウイルス対策アクティビティの概要が含まれます。 その他のすべての通知は重要とみなされます。  
+  エンド ユーザーに表示する通知を選択します。 重大ではない通知には、スキャンが完了したときの通知など、Microsoft Defender ウイルス対策アクティビティの概要が含まれます。 その他のすべての通知は重要とみなされます。  
 
   - **未構成**  
   - **重大でない通知をブロックする**  
@@ -1160,7 +1155,7 @@ Windows Defender セキュリティ センターのアプリのさまざまな�
 
 ### <a name="it-contact-information"></a>IT の連絡先情報  
 
-Windows Defender セキュリティ センターのアプリとアプリ通知に表示する IT の連絡先情報を指定します。  
+Microsoft Defender セキュリティ センターのアプリとアプリ通知に表示する IT の連絡先情報を指定します。  
 
 **[アプリと通知に表示]** 、 **[アプリにのみ表示]** 、 **[通知にのみ表示]** または **[Don't display]\(表示しない\)** を選択できます。 **IT 組織名**と、以下の連絡先オプションの 1 つ以上を入力します。  
 
@@ -1292,7 +1287,7 @@ Windows Defender セキュリティ センターのアプリとアプリ通知�
   LocalPoliciesSecurityOptions CSP: [InteractiveLogon_MachineInactivityLimit](https://go.microsoft.com/fwlink/?linkid=867891)  
 
 
-  時間を分単位で入力します。デスクトップの対話型サインイン画面で操作のないままこの時間を経過すると、スクリーンセーバーが起動します。 (**0** - **99999**)  
+  時間を分単位で入力します。デスクトップの対話型サインイン画面で操作のないままこの時間を経過すると、スクリーン セーバーが起動します。 (**0** - **99999**)  
 
 - **[ログオンに Ctrl+Alt+Del が必要]**  
   **既定値**: 未構成  
@@ -1334,8 +1329,8 @@ Windows Defender セキュリティ センターのアプリとアプリ通知�
   - **[有効]** -ユーザー名を非表示にします。  
   - **[未構成]** -最後のユーザー名を表示します。  
 
-- **サインイン時にユーザー名を非表示**にする 
-  **既定**: 構成されていません。  
+- **サインイン時にユーザー名を非表示**
+  **既定**: 構成されていません  
   LocalPoliciesSecurityOptions CSP: [InteractiveLogon_DoNotDisplayUsernameAtSignIn](https://go.microsoft.com/fwlink/?linkid=867959)  
 
   
@@ -1639,6 +1634,240 @@ Windows Defender セキュリティ センターのアプリとアプリ通知�
   - **[手動]**
   - **Automatic**
   - **[無効]**
+
+## <a name="user-rights"></a>ユーザー権利
+
+- **資格情報マネージャーに信頼された呼び出し側としてアクセス**  
+  **既定値**: 未構成  
+  CSP: [Userrights/AccessCredentialManagerAsTrustedCaller](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-accesscredentialmanagerastrustedcaller)
+
+  このユーザー権利は、バックアップおよび復元操作中に Credential Manager によって使用されます。 この特権が他のエンティティに与えられていると、ユーザーの保存された資格情報が侵害される可能性があります。
+  - **未構成**
+  - **許可**
+
+- **ローカルログオンを許可する**  
+  **既定値**: 未構成  
+  CSP: [Userrights/AllowLocalLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-allowlocallogon)
+
+  このユーザー権利は、コンピューターにログオンできるユーザーを決定します。
+  - **未構成**
+  - **許可**
+
+- **ネットワークからのアクセスを許可する**  
+  **既定値**: 未構成  
+  CSP: [Userrights/AccessFromNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-accessfromnetwork)
+
+  このユーザー権利は、ネットワーク経由でコンピューターに接続することが許可されているユーザーとグループを決定します。
+  - **未構成**
+  - **許可**
+
+- **OS の一部として機能**  
+  **既定値**: 未構成  
+  CSP: [Userrights/ActAsPartOfTheOperatingSystem](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-actaspartoftheoperatingsystem)
+
+  OS の一部として機能
+  - **未構成**
+  - **許可**  
+
+- **ファイルとディレクトリのバックアップ**  
+  **既定値**: 未構成  
+  CSP: [Userrights/BackupFilesAndDirectories](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-backupfilesanddirectories)
+
+  このユーザー権利は、ファイルとディレクトリをバックアップするときに、ファイル、ディレクトリ、レジストリ、およびその他の永続的なオブジェクトのアクセス許可をバイパスできるユーザーを決定します。
+  - **未構成**
+  - **許可**
+
+- **システム時刻の変更**  
+  **既定値**: 未構成  
+  CSP: [Userrights/ChangeSystemTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-changesystemtime)
+
+  このユーザー権利は、コンピューターの内部時計の時刻と日付を変更できるユーザーとグループを決定します。
+  - **未構成**
+  - **許可**
+
+- **グローバル オブジェクトの作成**  
+  **既定値**: 未構成  
+  CSP: [Userrights/CreateGlobalObjects](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createglobalobjects)
+
+  このセキュリティ設定では、すべてのセッションで使用できるグローバルオブジェクトをユーザーが作成できるかどうかを決定します。 グローバルオブジェクトを作成できるユーザーは、他のユーザーのセッションで実行されるプロセスに影響を与える可能性があります。これにより、アプリケーションのエラーやデータの破損を招く可能性があります。
+  - **未構成**
+  - **許可**
+
+- **ページファイルの作成**  
+  **既定値**: 未構成  
+  CSP: [Userrights/CreatePageFile ファイル](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createpagefile)
+
+  このユーザー権利は、内部 API を呼び出してページファイルのサイズを作成および変更できるユーザーとグループを決定します。
+  - **未構成**
+  - **許可**
+
+- **永続的共有オブジェクトの作成**  
+  **既定値**: 未構成  
+  CSP: [Userrights/CreatePermanentSharedObjects](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createpermanentsharedobjects)
+
+  このユーザー権利は、オブジェクトマネージャーを使用してディレクトリオブジェクトを作成するために、プロセスで使用できるアカウントを決定します。
+  - **未構成**
+  - **許可**
+
+- **シンボリック リンクの作成**  
+  **既定値**: 未構成  
+  CSP: [Userrights/ページの iclinks](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createsymboliclinks)
+
+  このユーザー権利は、ユーザーがログオンしているコンピューターからシンボリックリンクを作成できるかどうかを決定します。
+  - **未構成**
+  - **許可**
+
+- **トークンの作成**  
+  **既定値**: 未構成  
+  CSP: [Userrights/CreateToken](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createtoken)
+
+  このユーザー権利によって、プロセスが内部 API を使用してアクセストークンを作成するときに、ローカルリソースにアクセスするために使用できるトークンを作成するために、プロセスで使用できるユーザー/グループが決定されます。
+  - **未構成**
+  - **許可**
+
+- **プログラムのデバッグ**  
+  **既定値**: 未構成  
+    CSP: [Userrights/DebugPrograms](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-debugprograms)
+
+  このユーザー権利によって、任意のプロセスまたはカーネルにデバッガーをアタッチできるユーザーが決まります。
+  - **未構成**
+  - **許可**
+
+- **ネットワークからのアクセスを拒否する**  
+  **既定値**: 未構成  
+  CSP: [Userrights/DenyAccessFromNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denyaccessfromnetwork)
+
+  このユーザー権利は、ネットワーク経由でコンピューターにアクセスできないユーザーを決定します。
+  - **未構成**
+  - **許可**
+
+- **サービスとしてのログオン権限を拒否する**  
+  **既定値**: 未構成  
+  CSP: [Userrights/DenyLocalLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denylocallogon)
+
+  このセキュリティ設定によって、プロセスをサービスとして登録できないサービスアカウントが決まります。
+  - **未構成**
+  - **許可**
+
+- **リモート デスクトップ サービスを使ったログオンを拒否**  
+  **既定値**: 未構成  
+  CSP: [Userrights/Denyremotedesktopサービスログオン](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denyremotedesktopserviceslogon)
+
+  このユーザー権利によって、リモートデスクトップサービスクライアントとしてログオンすることが禁止されているユーザーとグループが決まります。
+  - **未構成**
+  - **許可**
+
+- **委任を有効にする**  
+  **既定値**: 未構成  
+  CSP: [Userrights/EnableDelegation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-enabledelegation)
+
+ このユーザー権利によって、ユーザーまたはコンピューターオブジェクトの委任の信頼を設定できるユーザーが決まります。
+  - **未構成**
+  - **許可**
+
+- **セキュリティ監査の生成**  
+  **既定値**: 未構成  
+  CSP: [Userrights/GenerateSecurityAudits](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-generatesecurityaudits)
+
+  このユーザー権利によって、プロセスがセキュリティログにエントリを追加するために使用できるアカウントが決まります。 セキュリティログは、未承認のシステムアクセスを追跡するために使用されます。
+  - **未構成**
+  - **許可**
+
+- **クライアントの偽装**  
+  **既定値**: 未構成  
+  CSP: [Userrights/ImpersonateClient](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-impersonateclient)
+
+  このユーザー権利をユーザーに割り当てると、そのユーザーに代わって実行されるプログラムは、クライアントの権限を借用できます。 この種類の偽装にこのユーザー権利を要求すると、承認されていないユーザーが、作成したサービスに接続してそのクライアントを偽装することを防ぐことができます。これにより、承認されていないユーザーのアクセス許可を昇格させることができます。管理レベルまたはシステムレベル。
+  - **未構成**
+  - **許可**
+
+- **スケジューリング優先順位の繰り上げ**  
+  **既定値**: 未構成  
+  CSP: [Userrights/IncreaseSchedulingPriority](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-increaseschedulingpriority)
+
+  このユーザー権利は、他のプロセスに割り当てられた実行の優先度を上げるために、書き込みプロパティアクセスを持つプロセスを別のプロセスに使用できるアカウントを決定します。
+  - **未構成**
+  - **許可**
+
+- **デバイス ドライバーのロードとアンロード**  
+  **既定値**: 未構成  
+  CSP: [Userrights/LoadUnloadDeviceDrivers](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-loadunloaddevicedrivers)
+
+  このユーザー権利は、デバイスドライバーまたはその他のコードをカーネルモードに動的に読み込んでアンロードできるユーザーを決定します。
+  - **未構成**
+  - **許可**
+
+- **メモリ内のページのロック**  
+  **既定値**: 未構成  
+  CSP: [Userrights/LockMemory](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-lockmemory)
+
+  このユーザー権利により、プロセスを使用して物理メモリにデータを保持できるアカウントが判断され、ディスク上の仮想メモリへのデータのページングが防止されます。
+  - **未構成**
+  - **許可**
+
+- **監査とセキュリティ ログの管理**  
+  **既定値**: 未構成  
+  CSP: [Userrights/ManageAuditingAndSecurityLog](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-manageauditingandsecuritylog)
+
+  このユーザー権利は、ファイル、Active Directory オブジェクト、レジストリキーなど、個々のリソースに対してオブジェクトアクセスの監査オプションを指定できるユーザーを決定します。
+  - **未構成**
+  - **許可**
+
+- **ボリュームの保守タスクを実行**  
+  **既定値**: 未構成  
+  CSP: [Userrights/ManageVolume](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-managevolume)
+
+  このユーザー権利は、リモート最適化など、ボリューム上でメンテナンスタスクを実行できるユーザーとグループを決定します。
+  - **未構成**
+  - **許可**
+
+- **ファームウェア環境値の修正**  
+  **既定値**: 未構成  
+  CSP: [Userrights/ModifyFirmwareEnvironment](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-modifyfirmwareenvironment)
+
+  このユーザー権利は、ファームウェア環境値を変更できるユーザーを決定します。
+  - **未構成**
+  - **許可**
+
+- **オブジェクト ラベルの変更**  
+  **既定値**: 未構成  
+  CSP: [Userrights/ModifyObjectLabel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-modifyobjectlabel)
+
+  このユーザー権利は、ファイル、レジストリキー、または他のユーザーが所有するプロセスなど、オブジェクトの整合性ラベルを変更できるユーザーアカウントを決定します。
+  - **未構成**
+  - **許可**
+
+- **単一プロセスのプロファイル**  
+  **既定値**: 未構成  
+  CSP: [Userrights/プロファイル Ingleprocess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-profilesingleprocess)
+
+  このユーザー権利は、パフォーマンス監視ツールを使用してシステムプロセスのパフォーマンスを監視できるユーザーを決定します。
+  - **未構成**
+  - **許可**
+
+- **リモートシャットダウン**  
+  **既定値**: 未構成  
+  CSP: [Userrights/RemoteShutdown](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-remoteshutdown)
+
+  このユーザー権利は、ネットワーク上のリモートの場所からコンピューターをシャットダウンできるユーザーを決定します。 このユーザー権利を誤用すると、サービス拒否が発生する可能性があります。
+  - **未構成**
+  - **許可**
+  
+- **ファイルとディレクトリの復元**  
+  **既定値**: 未構成  
+  CSP: [Userrights/RestoreFilesAndDirectories](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-restorefilesanddirectories)
+  
+  このユーザー権利は、バックアップされたファイルとディレクトリを復元するときに、ファイル、ディレクトリ、レジストリ、およびその他の永続的なオブジェクトのアクセス許可をバイパスできるユーザーを決定し、オブジェクトの所有者として有効なセキュリティプリンシパルを設定できるユーザーを決定します。
+  - **未構成**
+  - **許可**
+  
+- **ファイルまたはオブジェクトの所有権の取得**  
+  **既定値**: 未構成  
+  CSP: [Userrights/所有権](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-takeownership)
+
+  このユーザー権利は、Active Directory オブジェクト、ファイルとフォルダー、プリンター、レジストリキー、プロセス、スレッドなど、システム内のセキュリティ保護可能なオブジェクトの所有権を取得できるユーザーを決定します。
+  - **未構成**
+  - **許可**
 
 ## <a name="next-steps"></a>次の手順
 

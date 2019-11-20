@@ -1,11 +1,11 @@
 ---
 title: Intune での一般的なエンドポイント保護メッセージ - Azure | Microsoft Docs
-description: Microsoft Intune でエンドポイント保護と Windows Defender を使用し、トラブルシューティングする際の一般的なメッセージと考えられる解決方法について説明します。
+description: Microsoft Intune でエンドポイント保護と Microsoft Defender を使用し、トラブルシューティングする際の一般的なメッセージと考えられる解決方法について説明します。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 11/13/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,20 +18,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e34e1cb30469593c8ec9e756659ad03589ae38bc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 819586a923f5c0f3a81a6d59c4a3895898182f6b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509782"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059170"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Microsoft Intune のエンドポイント保護の問題と考えられる解決方法
 
 この記事では、いくつかのエラーと警告に対して考えられる原因と解決方法について説明します。 Endpoint Protection の使用中に発生した問題を解決するには、この情報を参考にしてください。
 
-## <a name="windows-defender-error-codes"></a>Windows Defender のエラー コード
+## <a name="microsoft-defender-error-codes"></a>Microsoft Defender のエラーコード
 
-イベント ログとエラー コードを調べて [Windows Defender AV での問題をトラブルシューティング](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus)します。
+イベント ログとエラー コードを調べて [Microsoft Defender AV での問題をトラブルシューティング](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus)します。
 
 ## <a name="common-intune-errors-and-possible-resolutions"></a>一般的な Intune のエラーと考えられる解決方法
 
@@ -48,7 +48,7 @@ ms.locfileid: "72509782"
 
 ### <a name="features-are-disabled"></a>機能が無効になっている
 
-一部の機能が無効になっているというメッセージが表示されることがあります。 これらのメッセージは、管理者が構成プロファイルを使用して Intune エンドポイント保護または Windows Defender を無効にした場合に発生することがあります。 または、デバイスのエンド ユーザーが無効にしています。 考えられるメッセージ:
+一部の機能が無効になっているというメッセージが表示されることがあります。 これらのメッセージは、管理者が構成プロファイルを使用して Intune エンドポイント保護または Microsoft Defender を無効にした場合に発生することがあります。 または、デバイスのエンド ユーザーが無効にしています。 考えられるメッセージ:
 
 `Endpoint Protection disabled`  
 `Real-time protection disabled`  
@@ -61,20 +61,20 @@ ms.locfileid: "72509782"
 **考えられる解決方法**: これらの機能を有効にします。 ガイダンスについては、以下を参照してください。
 
 - [エンドポイント保護設定を追加する](../protect/endpoint-protection-configure.md)
-- [Windows Defender ウイルス対策](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)
+- [Microsoft Defender ウイルス対策](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)
 - [エンド ユーザー: Windows Defender をオンにし、会社のリソースにアクセスする](/intune-user-help/turn-on-defender-windows)
 
 ### <a name="malware-definitions-out-of-date"></a>マルウェア定義が最新ではない
 
 このメッセージは、デバイスのマルウェア定義の更新が 14 日以上遅れた場合に表示されます。 たとえば、デバイスがインターネットから切断されているか、マルウェア定義が古くなっているかを示すメッセージが表示されることがあります。
 
-**考えられる解決方法:** マルウェア定義が古い場合は、[Windows Defender ウイルス対策](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)を使用して定義を更新することができます。
+**考えられる解決方法**: マルウェア定義が古い場合は、[Microsoft Defender ウイルス対策](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)を使用して定義を更新することができます。
 
 ### <a name="full-scan-overdue-or-quick-scan-overdue"></a>フル スキャンの期限が過ぎています、またクイック スキャンの期限が過ぎています
 
 フル スキャンまたはクイック スキャンが 14 日間完了していません。 このシナリオは、フル スキャン中にデバイスが再起動した場合に発生する可能性があります。
 
-**考えられる解決方法**: スキャンの期限が過ぎている場合は、1 回限りのスキャンを実行するか、定期的なスキャンのスケジュールを設定することができます。 「[Windows Defender ウイルス対策](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)」をご覧ください。
+**考えられる解決方法**: スキャンの期限が過ぎている場合は、1 回限りのスキャンを実行するか、定期的なスキャンのスケジュールを設定することができます。 「 [Microsoft Defender ウイルス対策](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)」を参照してください。
 
 ### <a name="another-endpoint-protection-application-running"></a>別のエンドポイント保護アプリケーションが実行されています。
 

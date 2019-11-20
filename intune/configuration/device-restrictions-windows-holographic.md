@@ -1,11 +1,11 @@
 ---
 title: Windows Holographic Business デバイスの設定 - Microsoft Intune - Azure | Microsoft Docs
-description: 登録解除、位置情報、パスワード、アプリ ストアからのアプリのインストール、Microsoft Edge の Cookie とポップアップ、Windows Defender、検索、クラウドと記憶域、Bluetooth の接続、システム時刻、Azure の使用状況データなど、Windows Holographic for Business の Microsoft Intune でのデバイス制限設定について説明し、これらの設定を構成します。
+description: 登録解除、位置情報、パスワード、アプリ ストアからのアプリのインストール、Microsoft Edge の Cookie とポップアップ、Microsoft Defender、検索、クラウドと記憶域、Bluetooth の接続、システム時刻、Azure の使用状況データなど、Windows Holographic for Business の Microsoft Intune でのデバイス制限設定について説明し、これらの設定を構成します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e28a697b841d8b264a19d97059d272b7119bc7f4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1f90a5a13859ff19765e22444a84b9c11405af73
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493909"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059507"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限する Windows Holographic for Business デバイスの設定
 
@@ -57,7 +57,7 @@ ms.locfileid: "72493909"
 - **[パスワード マネージャー]** : Microsoft Edge Password Manager 機能を有効または無効にします。
 - **[トラッキング拒否ヘッダーを送信する]** : ユーザーがアクセスする Web サイトに Do Not Track ヘッダーを送信するように、Microsoft Edge ブラウザーを構成します。
 
-## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
+## <a name="microsoft-defender-smart-screen"></a>Microsoft Defender Smart Screen
 
 - **[SmartScreen for Microsoft Edge]\(Microsoft Edge の SmartScreen\)** : サイトへのアクセスとファイルのダウンロードに対して Microsoft Edge の SmartScreen を有効にします。
 

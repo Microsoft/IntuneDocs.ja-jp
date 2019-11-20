@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,18 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d88705cbce0d5045ba7f45baf80de7b6e5d383d3
-ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
+ms.openlocfilehash: dd37813e5ea0b6a64d7fae22cada06cccb01a942
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72593765"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059213"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune で iOS デバイス向けの Wi-Fi 設定を追加する
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-特定の Wi-Fi 設定でプロファイルを作成し、iOS デバイスにこのプロファイルを展開することができます。 Microsoft Intune では、ネットワークに対する認証や、PK または SCEP 証明書の追加など、多くの機能が提供されています。
+特定の Wi-Fi 設定でプロファイルを作成し、iOS デバイスにこのプロファイルを展開することができます。 Microsoft Intune では、ネットワークに対する認証や、PKCS または SCEP 証明書の追加など、多くの機能が提供されています。
 
 これらの Wi-Fi 設定は、基本設定とエンタープライズ レベル設定の 2 つのカテゴリに分かれています。
 
@@ -81,9 +79,9 @@ ms.locfileid: "72593765"
     - **[サーバー検証のためのルート証明書]** : 既存の信頼されたルート証明書プロファイルを選択します。 この証明書により、クライアントはワイヤレスネットワークアクセスサーバーの証明書を信頼することができます。
 
     - **[クライアント認証]** **[認証方法]** を選択します。 次のようなオプションがあります。
-      
-      - **派生した資格情報**: 派生した資格情報の発行者が構成されていない場合は、そのことを求めるメッセージが表示されます。
-      
+
+      - 派生された**資格情報**: ユーザーのスマートカードから派生した証明書を使用します。 派生した資格情報発行者が構成されていない場合は、Intune によって追加するように求められます。 詳細については、「 [Microsoft Intune での派生資格情報の使用](../protect/derived-credentials.md)」を参照してください。
+
       - **[証明書]** : やはりデバイスに展開される SCEP または PKCS クライアント証明書プロファイルを選択します。 この証明書は、接続の認証のためにデバイスによってサーバーに提示される ID です。
 
     - **[ID プライバシー (外部 ID)]** : EAP ID 要求への応答で送信されるテキストを入力します。 このテキストには任意の値を指定できます (例: `anonymous`)。 認証時に、この匿名の ID が最初に送信され、その後、セキュリティで保護されたトンネルで実際の ID が送信されます。
@@ -95,8 +93,8 @@ ms.locfileid: "72593765"
 
     - **[クライアント認証]** - **[認証方法]** を選択します。 次のようなオプションがあります。
 
-      - **派生した資格情報**: 派生した資格情報の発行者が構成されていない場合は、そのことを求めるメッセージが表示されます。  
-      
+      - 派生された**資格情報**: ユーザーのスマートカードから派生した証明書を使用します。 派生した資格情報発行者が構成されていない場合は、Intune によって追加するように求められます。 詳細については、「 [Microsoft Intune での派生資格情報の使用](../protect/derived-credentials.md)」を参照してください。
+
       - **[ユーザー名とパスワード]** : 接続の認証のためにユーザーにユーザー名とパスワードを要求します。 次の項目も入力します。
         - **[EAP 以外の方法 (内部 ID)]** : 接続を認証する方法を選択します。 Wi-Fi ネットワークで構成されているものと同じプロトコルを選択する必要があります。
 
@@ -115,8 +113,8 @@ ms.locfileid: "72593765"
 
     - **[クライアント認証]** - **[認証方法]** を選択します。 次のようなオプションがあります。
 
-      - **派生した資格情報**: 派生した資格情報の発行者が構成されていない場合は、そのことを求めるメッセージが表示されます。  
-      
+      - 派生された**資格情報**: ユーザーのスマートカードから派生した証明書を使用します。 派生した資格情報発行者が構成されていない場合は、Intune によって追加するように求められます。 詳細については、「 [Microsoft Intune での派生資格情報の使用](../protect/derived-credentials.md)」を参照してください。
+
       - **[ユーザー名とパスワード]** : 接続の認証のためにユーザーにユーザー名とパスワードを要求します。 
 
       - **[証明書]** : やはりデバイスに展開される SCEP または PKCS クライアント証明書プロファイルを選択します。 この証明書は、接続の認証のためにデバイスによってサーバーに提示される ID です。

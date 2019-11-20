@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fcec6c264a97d710e3061c289d6898297ef61be
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: b750c09207b1950aa27a5f2cae1267503537b6e7
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999540"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199211"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune ポータル サイト アプリを構成する方法
 
@@ -32,7 +32,7 @@ ms.locfileid: "72999540"
 ユーザーは、Microsoft Intune の会社のポータルを使用して、会社のデータにアクセスしたり、デバイスの登録、アプリケーションのインストール、IT 部門からのサポート情報の検索などの一般的なタスクを実行したりできます。 さらに、ポータル サイト アプリを使用すると、ユーザーは会社のリソースに安全にアクセスできます。 ポータル サイト アプリでは、ホーム、アプリ、アプリの詳細、デバイス、デバイスの詳細など、いくつかの異なるページが提供されています。 ポータル サイト内のアプリをすばやく検索するため、[アプリ] ページでアプリをフィルター処理できます。
 
 > [!IMPORTANT]
-> Google の Firebase Cloud Messaging (FCM) をサポートするには、Android ポータル サイト アプリを最新バージョンに更新する必要があります。 詳細については、新機能の「[Android 用ポータル サイト アプリを最新バージョンに更新する](../fundamentals/whats-new.md#update-your-android-company-portal-app-to-the-latest-version-)」を参照してください。
+> Google の Firebase Cloud Messaging (FCM) をサポートするには、Android ポータル サイト アプリを最新バージョンに更新する必要があります。  
 
 > [!Tip]
 > ポータル サイトをカスタマイズすると、構成がポータル サイトの Web サイトとポータル サイト アプリの両方に適用されます。 ユーザーは、ポータル サイトの Web サイトにアクセスするために Intune ライセンスを割り当てられている必要があることに注意してください。

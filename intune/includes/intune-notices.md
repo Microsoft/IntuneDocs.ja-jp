@@ -7,14 +7,48 @@ ms.topic: include
 ms.date: 11/4/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: edef1f43caff97ab75aa3c58034ed4fc2dffd208
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 3d49d31ed08683508d3d231521e578688dd21bac
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73612103"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74125527"
 ---
 以下の通知では、今後の Intune の変更と機能に備えるために役立つ重要な情報が提供されます。
+
+### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune の変更の計画: Windows 10 バージョン 1703 ポータル サイトのサポートが終了<!--5026679-->
+Windows 10 バージョン 1703 (Windows 10、RS2 とも呼ばれます) は、2019 年 10 月 8 日に Enterprise エディションと EDU エディションのサービスを終了しました。 Intune では、2019 年 12 月 26 日より、RS2/RS1 に対応するポータル サイト アプリのサポートが終了します。
+
+#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
+今後、特定のバージョンのポータル サイト アプリの新機能は表示されませんが、2019 年 12 月 26 日まではこのバージョンのポータル サイト アプリが引き続きサポートされます。必要に応じてポータル サイト アプリに対するセキュリティ更新プログラムも提供します。 ただし、Windows 10 バージョン 1703 では、サービスの終了後、セキュリティ更新プログラムを受信しなくなるため、お使いの Windows デバイスを新しいバージョンの Windows に更新して、最新のポータル サイト アプリを使用することを強くお勧めします。これにより、引き続き新機能と追加機能が受信されます。
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
+実行するステップは、環境の構成によって異なります。 ただし、一般的には、古いバージョンの OS またはポータル サイトが搭載されているデバイスを特定して更新する必要があります。 Windows 10 更新リングを設定するには、Intune にログインし、ソフトウェア更新プログラムで Windows 10 更新リングを選択します。 ポータル サイトの最新バージョンは、10.3.5601.0 です。 今後のリリースでも最新の状態を維持するため、ユーザーには Microsoft Store から取得するように指示してください。 Intune を使用して、[ビジネス向け Microsoft Store](https://docs.microsoft.com/intune/windows-store-for-business) から Windows デバイスに最新のものをインストールすることもできます。
+
+#### <a name="additional-information"></a>追加情報
+[Microsoft Intune を使用して Windows 10 ポータル サイト アプリを手動で追加する](https://docs.microsoft.com/intune/store-apps-company-portal-app)
+
+
+### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>アクションの実行: 保護されている Intune ブラウザーエクスペリエンスに Microsoft Edge を使用する<!--5728447-->
+過去 1 年にわたってお伝えしているように、Microsoft Edge モバイルでは Managed Browser と同じ管理機能セットをサポートしながら、エンド ユーザー エクスペリエンスも大幅に向上しています。 Microsoft Edge で提供されている堅牢なエクスペリエンスを推進するため、Intune Managed Browser を廃止します。 2020 年 1 月 27 日から、Intune では Intune Managed Browser がサポートされなくなります。  
+
+#### <a name="how-does-this-affect-me"></a>ユーザーへの影響 
+2020 年 2 月 1 日以降、Intune Managed Browser は Google Play ストアまたは iOS アプリ ストアでは入手できなくなります。 この時点では、新しいアプリ保護ポリシーを Intune Managed Browser に適用することはできますが、新しいユーザーは Intune Managed Browser アプリをダウンロードできません。 また、iOS では、MDM に登録されたデバイスにプッシュされた新しい Web クリップは、Intune Managed Browser ではなく Microsoft Edge で開きます。  
+
+2020 年 3 月 31 日に、Intune Managed Browser は Azure コンソールから削除されます。 これで、Intune Managed Browser に新しいポリシーを作成できなくなります。 既に設定されている Intune Managed Browser ポリシーは影響を受けません。 Intune Managed Browser は、コンソールでアイコンのない基幹業務アプリとして表示され、既存のポリシーは引き続きアプリの対象として表示されます。 この時点で、[アプリ保護] ポリシーの [データ保護] セクション内の Intune Managed Browser に Web コンテンツをリダイレクトするオプションも削除されます。  
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備 
+Intune Managed Browser から Microsoft Edge へのスムーズな移行を実現するために、次のステップを事前に行うことをお勧めします。 
+
+1. アプリ保護ポリシー (MAM とも呼ばれます) とアプリ構成設定を使用して、Microsoft Edge を iOS と Android の対象とします。 これらの既存のポリシーを Microsoft Edge にも適用するだけで、Microsoft Edge で Intune Managed Browser のポリシーを再利用できます。  
+2. 環境内のすべての MAM で保護されたアプリで、アプリ保護ポリシーの設定 [その他のアプリでの Web コンテンツの転送を制限する] が [ポリシーで管理されているブラウザー] に設定されているようにします。 
+3. MAM で保護されているものすべてのマネージド アプリ構成設定 "com.microsoft.intune.useEdge" を true に設定します。 翌月以降の 1911 のリリースで、ステップ 2 と 3 を簡単に実行できるようになります。[アプリ保護] ポリシーの [データ保護] セクションで [その他のアプリでの Web コンテンツの転送を制限する] の設定に "Microsoft Edge" を含めるだけです。 
+
+iOS および Android での Web クリップのサポートが予定されています。 このサポートがリリースされたら、既存の Web クリップの対象を再設定して、それらが Managed Browser ではなく Microsoft Edge で開くようにする必要があります。 
+
+#### <a name="additional-information"></a>追加情報
+詳細については、[Microsoft Edge とアプリ保護ポリシーの使用](../apps/manage-microsoft-edge.md) に関するドキュメント、または[サポートのブログ記事](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269)を参照してください。
+
 
 ### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>変更の計画: Intune に Android エンタープライズ専用デバイスを登録するときのエクスペリエンスの更新<!--5198878-->
 Intune の 11 月または 1911 のリリースでは、SCEP デバイス証明書の展開のサポートが Android エンタープライズ専用デバイスに追加され、Wi-Fi プロファイルへの証明書ベースのアクセスが可能になります。 この変更には、Android エンタープライズ専用デバイスを登録するときのフローに関する若干の変更も含まれます。

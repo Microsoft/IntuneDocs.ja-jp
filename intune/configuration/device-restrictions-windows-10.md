@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune での Windows 10 用のデバイスの制限設定 - Azure | Microsoft Docs
-description: Windows 10 およびそれ以降のデバイスに対するデバイス制限を作成するには、すべての設定とその説明の一覧を参照してください。 これらの設定を構成プロファイル内で使用すると、スクリーン ショット、パスワード要件、キオスク設定、ストア内アプリ、Microsoft Edge ブラウザー、Windows ディフェンダー、クラウドへのアクセス、[スタート] メニューなどを Microsoft Intune で制御できます。
+description: Windows 10 およびそれ以降のデバイスに対するデバイス制限を作成するには、すべての設定とその説明の一覧を参照してください。 これらの設定を構成プロファイル内で使用すると、スクリーン ショット、パスワード要件、キオスク設定、ストア内アプリ、Microsoft Edge ブラウザー、Microsoft Defender、クラウドへのアクセス、[スタート] メニューなどを Microsoft Intune で制御できます。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 288ff693e7e46b7953cffad3d0a54b8621141373
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
-ms.translationtype: MTE75
+ms.openlocfilehash: f0cf7d6f18b0d345a8c491984987b9ffa234d66e
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755260"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059478"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように Windows 10 (以降) のデバイスを設定する
 
@@ -523,7 +523,7 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 
 - **[使用状況データの共有]** : 送信される診断データのレベルを選択します。 次のようなオプションがあります。
   - **[未構成]** : 共有されるデータはありません。
-  - **[セキュリティ]** : Windows のセキュリティ保護を維持するために必要な情報。接続ユーザー エクスペリエンスとテレメトリ コンポーネントの設定に関するデータ、Malicious Software Removal Tool、および Windows Defender が含まれます。
+  - **セキュリティ**: 接続されたユーザー エクスペリエンスとテレメトリ コンポーネントの設定、悪意のあるソフトウェアの削除ツール、Microsoft Defender に関するデータなどの Windows のセキュリティを強化するために必要な情報です。
   - **[基本]** : 基本的なデバイス情報。品質に関連するデータ、アプリの互換性、アプリの使用状況データ、およびセキュリティ レベルのデータが含まれます。
   - **[Enhanced]\(拡張\)** : 追加の分析情報。Windows、Windows Server、System Center、およびアプリの利用状況、それらのパフォーマンス、詳細な信頼性データ、および基本レベルとセキュリティ レベルの両方の情報が含まれます。
   - **[完全]** : 問題を識別するために必要で、問題を修正するのに役立つすべてのデータと、セキュリティ、基本、および拡張レベルのデータ。
@@ -632,19 +632,19 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
   - **[非表示]** : ショートカットが非表示になり、設定アプリの設定が無効になります。
   - **[表示]** : ショートカットが表示され、設定アプリの設定が無効になります。
 
-## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
+## <a name="microsoft-defender-smart-screen"></a>Microsoft Defender Smart Screen
 
-- **[Microsoft Edge の SmartScreen]** : **[必須]** にすると Windows Defender SmartScreen がオフになり、ユーザーがそれをオンにすることはできなくなります。 **[未構成]** (既定値) にすると、SmartScreen がオンになります。 潜在的な脅威からユーザーを保護するために役立ち、ユーザーがそれをオフにすることはできなくなります。
+- **[Microsoft Edge の SmartScreen]** : **[必須]** にすると Microsoft Defender SmartScreen がオフになり、ユーザーがそれをオンにすることはできなくなります。 **[未構成]** (既定値) にすると、SmartScreen がオンになります。 潜在的な脅威からユーザーを保護するために役立ち、ユーザーがそれをオフにすることはできなくなります。
 
-  Microsoft Edge では、(有効に設定された) Windows Defender SmartScreen を使用して、フィッシング詐欺にあう可能性や悪意のあるソフトウェアからユーザーを保護しています。
+  Microsoft Edge では、(オンになった) Microsoft Defender SmartScreen を使用して、フィッシング詐欺にあう可能性や悪意のあるソフトウェアからユーザーを保護しています。
 
   [ブラウザー/AllowSmartScreen CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)
 
-- **[悪意のあるサイトへのアクセス]** : **[ブロック]** にすると、ユーザーが Windows Defender SmartScreen フィルターの警告を無視してサイトに移動することはできなくなります。 **[未構成]** (既定値) にすると、ユーザーは警告を無視してサイトに進むことができます。
+- **[悪意のあるサイトへのアクセス]** : **[ブロック]** にすると、ユーザーが Microsoft Defender SmartScreen フィルターの警告を無視してサイトに移動することはできなくなります。 **[未構成]** (既定値) にすると、ユーザーは警告を無視してサイトに進むことができます。
 
   [ブラウザー/PreventSmartScreenPromptOverride CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride)
 
-- **[確認されていないファイルのダウンロード]** : **[ブロック]** にすると、ユーザーが Windows Defender SmartScreen フィルターの警告を無視して、確認されていないファイルをダウンロードすることはできなくなります。 **[未構成]** (既定値) にすると、ユーザーは警告を無視して、確認されていないファイルのダウンロードに進むことができます。
+- **[確認されていないファイルのダウンロード]** : **[ブロック]** にすると、ユーザーが Microsoft Defender SmartScreen フィルターの警告を無視して、確認されていないファイルをダウンロードすることはできなくなります。 **[未構成]** (既定値) にすると、ユーザーは警告を無視して、確認されていないファイルのダウンロードに進むことができます。
 
   [ブラウザー/PreventSmartScreenPromptOverrideForFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
 
@@ -833,9 +833,9 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
   [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
 
 - **[望ましくない可能性のあるアプリケーションの検出]** : Windows で望ましくない可能性のあるアプリケーションが検出されたときの保護レベルを選択します。 次のようなオプションがあります。
-  - **[未構成]** (既定値): Windows Defender による望ましくない可能性があるアプリケーションからの保護が無効になります。
-  - **[ブロック]** : Windows Defender で、望ましくない可能性のあるアプリケーションが検出され、検出された項目がブロックされます。 これらの項目は、その他の脅威と共に履歴に表示されます。
-  - **[監査]** : Windows Defender で、望ましくない可能性のあるアプリケーションが検出されますが、対策は何も行われません。 Windows Defender でアクションが実行されるアプリケーションに関する情報を確認できます。 たとえば、Windows Defender によって作成されたイベントをイベント ビューアーで検索します。
+  - **[未構成]** (既定値): Microsoft Defender による望ましくない可能性があるアプリケーションからの保護が無効になります。
+  - **[ブロック]** : Microsoft Defender で、望ましくない可能性のあるアプリケーションが検出され、検出された項目がブロックされます。 これらの項目は、その他の脅威と共に履歴に表示されます。
+  - **[監査]** : Microsoft Defender で、望ましくない可能性のあるアプリケーションが検出されますが、対策は何も行われません。 Microsoft Defender でアクションが実行されるアプリケーションに関する情報を確認できます。 たとえば、Microsoft Defender によって作成されたイベントをイベント ビューアーで検索します。
 
   望ましくない可能性のあるアプリの詳細については、「[Detect and block potentially unwanted applications (望ましくない可能性があるアプリケーションの検出とブロック)](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus)」をご覧ください。
 
@@ -850,11 +850,11 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
   - **ユーザー定義**
   - **ブロック**
 
-  操作ができない場合、Windows Defender は、脅威が修復されるように最適なオプションを選択します。 
+  アクションが不可能な場合は、Microsoft Defender が最適なオプションを選択して、脅威が修復されていることを確認します。 
 
   [Defender/ThreatSeverityDefaultAction CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
-### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender ウイルス対策の除外
+### <a name="microsoft-defender-antivirus-exclusions"></a>Windows Defender ウイルス対策の除外
 
 - **[Files and folders to exclude from scans and real-time protection]\(スキャンおよびリアルタイム保護から除外するファイルとフォルダー\)** : **C:\Path** や **%ProgramFiles%\Path\filename.exe** などのファイルやフォルダーを、除外リストに 1 つ以上追加します。 これらのファイルとフォルダーは、リアルタイムまたはスケジュールされたスキャンの対象外となります。
 - **[File extensions to exclude from scans and real-time protection]\(スキャンおよびリアルタイム保護から除外するファイル拡張子\)** : **jpg** や **txt** などのファイル拡張子を除外リストに 1 つ以上追加します。 これらの拡張子が付いたファイルは、リアルタイム スキャンやスケジュールされたスキャンの対象外です。

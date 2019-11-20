@@ -2,8 +2,8 @@
 title: Microsoft Intune でのアプリ保護ポリシーと仕事用プロファイル | Microsoft Docs
 description: Microsoft Intune 内で個人用または BYOD の Android エンタープライズ デバイスに対してアプリ保護ポリシーと仕事用プロファイルのどちらを使用するかを決定する際の相違点および長所と短所を確認します。 登録なしのアプリ保護ポリシー (APP-WE) と Android エンタープライズ仕事用プロファイルの相違点と利用できる機能を比較します。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 02/13/2019
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a2c71e04cf842fda7b16fb8ad4a05668ccbfaa84
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d0b4f8d5124924d013e7ac131dafc947a95c7b65
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507605"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059791"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Intune での Android エンタープライズ デバイス上のアプリケーション保護ポリシーと仕事用プロファイル
 

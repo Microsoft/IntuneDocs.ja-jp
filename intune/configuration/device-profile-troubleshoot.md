@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7779e265680ded1b5d5d5b670bcf694376ee8016
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4a1177a37ddbfa7f760339c4ad0cd7773d670540
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72494402"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199183"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Microsoft Intune でのデバイス ポリシーとプロファイルの一般的な質問、問題と解決策
 
@@ -73,10 +73,6 @@ Intune では、Intune サービスにチェックインするようデバイス
 | Windows 8.1 | 15 分まで 5 分ごと、その後の 2 時間は 15 分ごと、その後は約 8 時間ごと | 
 
 ユーザーはいつでもポータル サイト アプリを開き、 **[設定]**  >  **[同期]** でポリシーまたはプロファイルの更新をすぐに確認できます。
-
-ユーザー アフィニティなしのデバイスでは、登録直後の同期頻度は数時間から 1 日以上とさまざまである場合があります。 Intune は、さまざまな間隔でデバイスに対して Intune へのチェックイン要求を送信します。 ただし、それでもチェックインするかどうかはデバイス次第です。 初期登録後、デバイスがチェックインを完了するまでに要する時間は予測できません。 デバイスの登録の種類と、デバイスに割り当てられているポリシーとプロファイルによっても異なります。 デバイスが登録され、すべての初期ポリシーとプロファイルが適用されると、デバイスでは Intune に登録された時間に基づいて、およそ 6 から 8 時間ごとに新しいポリシーとプロファイルが確認されます。
-
-ベスト プラクティスとして、最適な結果を得るには、デバイスが少なくとも 8 時間連続してオンラインになっていることを確認してください。
 
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>どのような操作を行うと Intune は通知をデバイスにすぐに送信しますか。
 

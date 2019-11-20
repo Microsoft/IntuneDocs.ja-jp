@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/9/2018
+ms.date: 11/14/2019
 ms.topic: archived
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 893c663902f4b33ba9082550c22031fc9ab4229a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0dd9a97fdafff784bab2eae1d466855082fd397a
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510297"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74117826"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>iOS Classroom アプリの Intune 設定を構成する方法
 
 > [!NOTE]
-> Classroom アプリの Intune 設定は、Intune では非推奨になりました。 この記事は、Intune に既存の教育プロファイルがあるユーザーにのみ適用されます。
+> 現在、Intune では、クラスルームアプリの構成はサポートしていません。 この記事は、Intune に既存の iOS 教育プロファイルがあるユーザーにのみ適用されます。  
 
 ## <a name="introduction"></a>概要
 [Classroom](https://itunes.apple.com/app/id1085319084) は、教師が教室で学習を指導し、生徒のデバイスを操作するのを支援するアプリです。 たとえば、教師はこのアプリを使用して次のことができます。

@@ -2,8 +2,8 @@
 title: Microsoft Intune で Windows 10 デバイスに PowerShell スクリプトを追加する - Azure | Microsoft Docs
 description: Microsoft Intune で Windows 10 デバイスに対して、PowerShell スクリプトの作成および実行、Azure Active Directory グループへのスクリプト ポリシーの割り当て、レポートを使用したスクリプトの監視、追加したスクリプトの削除を行います。 一般的な問題とその解決策についても説明します。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 09/16/2019
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94653c51bccc59fde93fdacc16f2b83e7860346b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1d73d28f34258bce99199731579969604c0a3d97
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497798"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059722"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Intune で Windows 10 デバイスに対して PowerShell スクリプトを使用する
 

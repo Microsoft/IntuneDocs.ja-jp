@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f667940cc238fe243b05c7ab6f1459f63f18faa
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 14e9aa6e82d7b3e24350de8770f02b0a08695e1a
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635487"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801663"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Intune を使用して Android デバイス用 Google Chrome を構成する 
 
@@ -63,7 +63,7 @@ managed Google Play アプリを Intune に追加する方法の詳細につい�
 
     共通設定の例を次に示します。
     - **URL の一覧へのアクセスをブロックする**: `["*"]`
-    - **URL の一覧へのアクセスを許可する**: `["baidu.com", "yahoo.com", "chrome://*"]`
+    - **URL の一覧へのアクセスを許可する**: `["baidu.com", "youtube.com", "chromium.org", "chrome://*"]`
     - **マネージド ブックマーク**: `[{"toplevel_name": "My managed bookmarks folder"  },  {"url": "baidu.com",   "name": "Baidu"},  {"url": "youtube.com", "name": "Youtube"},  {"name": "Chrome links",  "children": [{"url": "chromium.org", "name": "Chromium"},    {"url": "dev.chromium.org", "name": "Chromium Developers"}]}]`
     - **シークレット モードの可用性**: `Incognito mode disabled`
 
@@ -71,7 +71,7 @@ managed Google Play アプリを Intune に追加する方法の詳細につい�
 
     ![共通設定](~/apps/media/apps-configure-chrome-android/common-settings.png)
 
-    上記の設定によりブックマークが作成され、`baidu.com`、`yahoo.com`、および `chrome://` を除くすべての Web サイトへのアクセスが許可されます。
+    上記の設定によりブックマークが作成され、`baidu.com`、`yahoo.com`、`chromium.org`、`chrome://` を除くすべての URL へのアクセスがブロックされます。
 
 5. **[OK]** と **[追加]** をクリックして、構成ポリシーを Intune に追加します。
 6. この構成ポリシーをユーザー グループに割り当てます。 詳細については、「[Microsoft Intune を使用してアプリをグループに割り当てる方法](~/apps/apps-deploy.md)」を参照してください。 
