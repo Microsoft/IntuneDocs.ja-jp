@@ -145,6 +145,8 @@
           items:
             - name: ネットワークの構成
               href: network-bandwidth-use.md
+            - name: Intune での Windows 10 VM の使用
+              href: windows-10-virtual-machines.md
             - name: Intune エンドポイント
               href: intune-endpoints.md
             - name: Intune 米国政府機関のエンドポイント
