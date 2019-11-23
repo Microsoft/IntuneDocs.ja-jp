@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bacb7e26df8a5b0d6c7500b24a5e749a85ca62f2
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 075e7a99f72de30e83447a2869154859e33356b9
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059643"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390833"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Microsoft Intune の OEMConfig で Android エンタープライズデバイスを使用および管理する
 
@@ -146,10 +146,15 @@ OEMConfig を使用する場合は、次の情報に注意してください。
 | Datalogic | com. datalogic. oemconfig | [Datalogic OEMConfig のユーザードキュメント](https://datalogic.github.io/oemconfig/) |
 | Honeywell | honeywell 構成 |  |
 | Kyocera | kyocera。 enterprisedeviceconfig |  |
+| Spectralink-バーコード | spectralink. サービス |  |
+| Spectralink | spectralink |  |
+| Spectralink-デバイス | spectralink を設定します。  |  |
+| Spectralink-ログ記録 | spectralink. slnklogger |  |
+| Spectralink - VQO | spectralink. slnkvqo |  |
 
 -----------------
 
-デバイスに対して OEMConfig アプリケーションが存在するが、上の表にない場合、または Intune コンソールに表示されない場合は、電子メール `IntuneOEMConfig@microsoft.com` を送信してください。
+デバイスに対して OEMConfig アプリケーションが存在するが、上の表にない場合、または Intune コンソールに表示されない場合は、電子メール `IntuneOEMConfig@microsoft.com`を送信してください。
 
 > [!NOTE]
 > Oemconfig アプリは、OEMConfig プロファイルを使用して構成する前に、Intune によってオンボードされている必要があります。 アプリがサポートされたら、テナントでの設定について Microsoft に連絡する必要はありません。 このページの指示に従ってください。
