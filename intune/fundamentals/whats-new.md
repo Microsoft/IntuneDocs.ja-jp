@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/08/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37ed7bfd204289c963b8134252d9d76f2379ecba
-ms.sourcegitcommit: 768d581cb8bcc5fdcb8ade95d402b11223ab226c
+ms.openlocfilehash: 71045489ac703860073a3023e6d6170778117d33
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73882493"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199286"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 
@@ -52,6 +52,46 @@ ms.locfileid: "73882493"
 ### Monitor and troubleshoot
 ### Role-based access control
 -->  
+
+## <a name="week-of-november-18-2019"></a>2019 年 11 月 18 日の週
+
+### <a name="device-configuration"></a>デバイス構成
+
+#### <a name="windows-10-feature-updates-public-preview---2384877---"></a>Windows 10 機能更新プログラム (パブリック プレビュー)<!-- 2384877 -->
+
+[Windows 10 機能更新プログラム](../protect/windows-update-for-business-configure.md#windows-10-feature-updates)を Windows 10 デバイスに展開できるようになりました。 Windows 10 機能更新プログラムは、デバイスにインストールして維持する必要がある Windows 10 のバージョンを設定できる、新しいソフトウェア更新プログラムのポリシーです。 この新しいポリシーの種類は、既存の Windows 10 更新プログラムのリングと共に使用できます。
+
+Windows 10 機能更新ポリシーを受け取ったデバイスでは、指定されたバージョンの Windows がインストールされ、そのポリシーが編集または削除されるまでそのバージョンにとどまります。 より新しいバージョンの Windows を稼働しているデバイスは、その現在のバージョンにとどまります。 Windows の特定のバージョンで固定されているデバイスでも、Windows 10 更新プログラムのリングから、そのバージョンの品質更新プログラムおよびセキュリティ更新プログラムをインストールできます。
+
+この新しい種類のポリシーは、今週テナントへのロールアウトが開始されます。 ご自分のテナントでまだこのポリシーを使用できない場合は、間もなく使用できるようになります。
+
+### <a name="monitor-and-troubleshoot"></a>監視とトラブルシューティング
+
+#### <a name="updated-support-experience---5012398---"></a>更新されたサポート エクスペリエンス<!-- 5012398 -->
+
+本日から、[Intune のヘルプとサポートの取得](get-support.md)に関する、更新および合理化されたコンソール内のエクスペリエンスがテナントにロールアウトされます。 お客様がまだこの新しいエクスペリエンスを利用できない場合は、間もなく利用できるようになります。
+
+コンソール内でのよくあるイシューの検索とフィードバック、およびサポートへの問い合わせに使用するワークフローが改善されました。 サポート イシューを作成するときに、コールバックまたはメールの返信をいつ受け取ることができるのかについての推定が、リアルタイムで表示されます。また、Premier および統合サポートのお客様は、より迅速なサポートを受けるために、それぞれのイシューについて、簡単に重大度を指定できます。
+
+## <a name="week-of-november-11-2019"></a>2019 年 11 月 11 日の週  
+
+### <a name="app-management"></a>アプリ管理  
+
+#### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>ポータル サイトにおける macOS の登録エクスペリエンスの改善 <!-- 5074349 WNready -->  
+macOS の登録エクスペリエンス用のポータル サイトには、よりシンプルな登録プロセスが備わっています。これにより、iOS の登録エクスペリエンス用のポータル サイトと、より厳密な一致がとれます。 デバイス ユーザーに次が表示されるようになりました。  
+
+* より洗練されたユーザー インターフェイス。  
+* 強化された登録チェックリスト。  
+* デバイスの登録方法に関するより明確な説明。  
+* 強化されたトラブルシューティング オプション。  
+
+#### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>Windows ポータル サイト アプリから起動する Web アプリ<!-- 5030972 -->
+エンドユーザーは、Windows ポータル サイト アプリから直接 Web アプリを起動できるようになりました。 エンドユーザーは、Web アプリを選択してから、 **[ブラウザーで開く]** オプションを選択できます。 発行された Web URL は、Web ブラウザー内で直接開かれます。 この機能は、来週にわたってロールアウトされます。 Web アプリの詳細については、「[Web アプリを Microsoft Intune に追加する](~/apps/web-app.md)」をご覧ください。  
+
+
+#### <a name="new-assignment-type-column-in-company-portal-for-windows-10----5459950-wnready---"></a>Windows 10 のポータル サイトにおける新しい割り当ての種類の列 <!-- 5459950 WNready -->
+ポータル サイト > **[インストール済みアプリ]**  >  **[割り当ての種類]** 列の名前が、 **[組織で必要]** に変更されました。  その列の下に、アプリが組織によって必須、省略可能のいずれに設定されているかを示す **[はい]** または **[いいえ]** の値がユーザーに表示されます。 デバイス ユーザーが利用可能なアプリの概念について混乱していたため、このような変更が行われました。 ユーザーは、「[デバイスにアプリをインストールして共有する](/intune-user-help/install-apps-cpapp-windows)」で、ポータル サイトからのアプリのインストールに関する詳細情報を参照できます。 ユーザーに対するポータル サイト アプリの構成方法の詳細については、「[Microsoft Intune ポータル サイト アプリを構成する方法](~/apps/company-portal-app.md)」をご覧ください。  
+
 
 ## <a name="week-of-november-4-2019"></a>2019 年 11 月 4 日の週
 
@@ -139,7 +179,7 @@ Microsoft 365 デバイス管理のスペシャリスト向けワークスペー
 
 ### <a name="device-configuration"></a>デバイス構成
 
-#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices---2266073----"></a>Windows 10 以降のデバイス用の新しいデバイス ファームウェア構成インターフェイス プロファイル<!-- 2266073  -->
+#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices-public-preview---2266073----"></a>Windows 10 以降のデバイス用の新しいデバイス ファームウェア構成インターフェイス プロファイル (パブリック プレビュー)<!-- 2266073  -->
 
 Windows 10 以降では、デバイス構成プロファイルを作成し、設定と機能を制御できます ( **[デバイスの構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  **[Windows 10 以降]** (プラットフォーム))。 この更新には、Intune で UEFI (BIOS) 設定の管理を可能にする新しいデバイス ファームウェア構成インターフェイスがあります。
 
@@ -516,7 +556,7 @@ Intune Endpoint Protection の設定を使用して、Windows バージョン 19
 この設定により、OS ドライブの復旧 (bootmgr または WinRE を使用して) および固定データ ドライブでの回復パスワードのロック解除の後で、クライアント主導の回復パスワード更新が開始します。 この設定により、使用されていた特定の回復パスワードは更新され、ボリューム上の他の未使用のパスワードは変更されません。 詳しくは、[ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) に関する BitLocker CSP のドキュメントをご覧ください。
 
 #### <a name="tamper-protection-for-windows-defender-antivirus---4705448----------"></a>Windows Defender ウイルス対策の改ざん保護<!-- 4705448        -->
-Intune を使用して、Windows Defender ウイルス対策の "*改ざん保護*" を管理します。 Windows 10 エンドポイント保護用のデバイス構成プロファイルを使用するときに、Microsoft Defender セキュリティ センター グループで[改ざん保護の設定](../protect/endpoint-protection-windows-10.md#windows-defender-security-center)を探します。 改ざん保護を "*有効*" に設定すると改ざん保護の制限をオンにでき、"*無効*" に設定するとオフにでき、"*未構成*" に設定するとデバイスを現在の構成のままにすることができます。  
+Intune を使用して、Windows Defender ウイルス対策の "*改ざん保護*" を管理します。 Windows 10 エンドポイント保護用のデバイス構成プロファイルを使用するときに、Microsoft Defender セキュリティ センター グループで[改ざん保護の設定](../protect/endpoint-protection-windows-10.md#microsoft-defender-security-center)を探します。 改ざん保護を "*有効*" に設定すると改ざん保護の制限をオンにでき、"*無効*" に設定するとオフにでき、"*未構成*" に設定するとデバイスを現在の構成のままにすることができます。  
 
 改ざん保護について詳しくは、Windows ドキュメントの「[改ざん防止機能によってセキュリティ設定の変更を防止する](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection)」をご覧ください。
 
