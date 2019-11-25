@@ -4,17 +4,37 @@ description: ファイルを含める
 author: ErikjeMS
 ms.service: microsoft-intune
 ms.topic: include
-ms.date: 11/4/2019
+ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 3d49d31ed08683508d3d231521e578688dd21bac
-ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
+ms.openlocfilehash: b59419be9f381a1c646a7778b73ed172526f6ef6
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74125527"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188439"
 ---
 以下の通知では、今後の Intune の変更と機能に備えるために役立つ重要な情報が提供されます。
+
+### <a name="update-your-intune-outlook-app-protection-policies-app--2576686--"></a>Intune Outlook アプリ保護ポリシー (APP) の更新<!--2576686-->
+お使いのメッセージ センターで MC195618 を受け取っている場合は、アクションの実行が必要になる場合があります。 Microsoft 365 ロードマップの機能 ID:56325 および 56326 でお知らせしたとおり、iOS および Android 用 Intune および Outlook では、メール通知および予定表のリマインダーにおける機密データの制限のサポートがロールアウトされます。 これらの機能強化に伴い、iOS および Android 用 Outlook から、お客様が現在通知を管理するために利用しているいくつかのデータ保護アプリの構成キーのサポートが削除されます。
+
+#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
+この新機能はまだ配布されていませんが、配布されると、次のアプリの構成キーが iOS および Android 用 Outlook で機能しなくなります。
+- com.microsoft.outlook.Mail.NotificationsEnabled
+- com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed
+- com.microsoft.outlook.Calendar.NotificationsEnabled
+- com.microsoft.outlook.Calendar.NotificationsEnabled.UserChangeAllowed
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
+この新機能のための準備として、Intune App Protection ポリシーのデータ保護設定 "組織のデータ通知" を、"組織データをブロックする" という値を使って構成することをお勧めします。 2019 年 12 月 16 日から、iOS および Android 用 Outlook では、"組織のデータ通知" データ保護設定が利用可能になり、前述のキーがサポートされなくなります。 この新しい設定を構成することで、上記の構成キーがサポートされなくなったときに、機密データが漏洩しないようにすることができます。 さらに、Outlook でデータ保護設定 "組織のデータ通知" を、追加のアプリ構成設定 "予定表の通知" を使って "組織データをブロックする" に設定した場合、追加の細分性が提供されます。 アプリ保護ポリシー設定とこのアプリ構成設定の組み合わせを使うと、メール通知の機密情報は制限されますが、予定表の通知の機密情報は公開されます。このため、ユーザーは通知や通知センターをすばやく確認して、各自の会議に参加できるようになります。
+
+#### <a name="additional-information"></a>追加情報
+APP の設定と Outlook の設定の詳細については、以下を参照してください。
+- [アプリ保護ポリシー設定 (Android)](../apps/app-protection-policy-settings-android.md)
+- [アプリ保護ポリシー設定 (iOS)](../apps/app-protection-policy-settings-ios.md)
+- [iOS および Android 用 Outlook のアプリ構成設定の展開](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
+
 
 ### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune の変更の計画: Windows 10 バージョン 1703 ポータル サイトのサポートが終了<!--5026679-->
 Windows 10 バージョン 1703 (Windows 10、RS2 とも呼ばれます) は、2019 年 10 月 8 日に Enterprise エディションと EDU エディションのサービスを終了しました。 Intune では、2019 年 12 月 26 日より、RS2/RS1 に対応するポータル サイト アプリのサポートが終了します。
@@ -40,7 +60,7 @@ Windows 10 バージョン 1703 (Windows 10、RS2 とも呼ばれます) は、2
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備 
 Intune Managed Browser から Microsoft Edge へのスムーズな移行を実現するために、次のステップを事前に行うことをお勧めします。 
 
-1. アプリ保護ポリシー (MAM とも呼ばれます) とアプリ構成設定を使用して、Microsoft Edge を iOS と Android の対象とします。 これらの既存のポリシーを Microsoft Edge にも適用するだけで、Microsoft Edge で Intune Managed Browser のポリシーを再利用できます。  
+1. アプリ保護ポリシー (MAM とも呼ばれます) とアプリ構成設定を使用して、Microsoft Edge を iOS と Android の対象とします。 これらの既存のポリシーを Microsoft Edge にも適用することで、Microsoft Edge で Intune Managed Browser のポリシーを再利用できます。  
 2. 環境内のすべての MAM で保護されたアプリで、アプリ保護ポリシーの設定 [その他のアプリでの Web コンテンツの転送を制限する] が [ポリシーで管理されているブラウザー] に設定されているようにします。 
 3. MAM で保護されているものすべてのマネージド アプリ構成設定 "com.microsoft.intune.useEdge" を true に設定します。 翌月以降の 1911 のリリースで、ステップ 2 と 3 を簡単に実行できるようになります。[アプリ保護] ポリシーの [データ保護] セクションで [その他のアプリでの Web コンテンツの転送を制限する] の設定に "Microsoft Edge" を含めるだけです。 
 
@@ -48,7 +68,6 @@ iOS および Android での Web クリップのサポートが予定されて�
 
 #### <a name="additional-information"></a>追加情報
 詳細については、[Microsoft Edge とアプリ保護ポリシーの使用](../apps/manage-microsoft-edge.md) に関するドキュメント、または[サポートのブログ記事](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269)を参照してください。
-
 
 ### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>変更の計画: Intune に Android エンタープライズ専用デバイスを登録するときのエクスペリエンスの更新<!--5198878-->
 Intune の 11 月または 1911 のリリースでは、SCEP デバイス証明書の展開のサポートが Android エンタープライズ専用デバイスに追加され、Wi-Fi プロファイルへの証明書ベースのアクセスが可能になります。 この変更には、Android エンタープライズ専用デバイスを登録するときのフローに関する若干の変更も含まれます。
@@ -65,23 +84,9 @@ Intune の 11 月または 1911 のリリースでは、SCEP デバイス証明�
 #### <a name="additional-information"></a>追加情報
 [https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
-### <a name="plan-for-change-the-server-side-logging-for-siri-commands-setting-will-be-removed-from-the-intune-console----5468501--"></a>変更の計画: Intune コンソールからの 'Siri コマンドに対するサーバー側のログ記録' 設定の削除 <!-- 5468501-->
-
-Intune サービスの 11 月の更新で、Intune コンソールから設定 "Siri コマンドに対するサーバー側のログ記録" が削除される予定です。 この変更により、既にこの設定が削除されている Apple との連携がもたらされます。
-
-#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
-11 月の更新、または 11 月中旬の 1911 のロールアウトが行われると、ユーザーは、Intune コンソールで、iOS 構成プロファイルの [デバイスの制限] メニュー (組み込みアプリ) からこの設定が削除されていることを確認できます。 ポリシーと対象デバイスの管理プロファイルにこの設定が表示される場合がありますが、デバイスには影響しません。 管理プロファイルに表示されたとしても、これは現在デバイス上で機能していないため、機能に対する大きな影響はないと予測されます。
-
-次の 2 つのパスのどちらかを選択できます。
-- ポリシーからこの設定を削除したい場合は、この設定が含まれているプロファイルに移動し、小規模の編集を行ってポリシーを保存することができます。 バックエンドでポリシーが再計算され、ポリシーから設定が削除されます。
-- この操作を行わないことを選んだ場合、エンド ユーザーのデバイスの管理プロファイルにこの設定が表示されますが、この設定による影響はありません。
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
-上記のセクションに従って対応策を取るか、ポリシーをそのままにしておくことができます。 この変更がロールアウトされたとき、Microsoft の新機能に関するページとドキュメントが更新されます。
-
 ### <a name="end-of-support-for-legacy-pc-management"></a>従来の PC 管理のサポート終了
 
-従来の PC 管理は 2020 年 10 月 15 日にサポートが終了します。 デバイスを Windows 10 にアップグレードし、Intune による管理が継続されるように MDM デバイスとして再登録してください。
+従来の PC 管理は 2020 年 10 月 15 日にサポートが終了します。 デバイスを Windows 10 にアップグレードし、Intune による管理が継続されるようにモバイル デバイス管理 (MDM) デバイスとして再登録してください。
 
 [詳細情報](https://go.microsoft.com/fwlink/?linkid=2107122)
 
@@ -93,7 +98,7 @@ Google によるこのような変更により、Intune ユーザーは次のよ
 - Intune では、デバイス管理者が管理する Android デバイスで、Android 10 以降 (Android Q とも呼ばれる) を稼働しているもののサポートを、2020 年夏までのみ提供できます。 これは、Android の次のメジャー バージョンのリリースが予定されている日付です。   
 - 2020 年夏以降、デバイス管理者が管理するデバイスで、Android 10 以降を稼働しているものは、完全には管理できなくなります。       
 - デバイス管理者が管理する Android デバイスで、Android 10 より前の Android バージョンのままであるものは影響を受けません。デバイス管理者で引き続き完全に管理できます。    
-- Google では、Android 10 以降を稼働しているすべてのデバイスに対して、ポータル サイトのようなデバイス管理者の管理エージェントを使ってデバイス識別子の情報にアクセスする機能を制限しています。 これにより、Android 10 以降にデバイスを更新した後、次の Intune 機能が影響を受けます。  
+- Google では、Android 10 以降を稼働しているすべてのデバイスに対して、ポータル サイトのようなデバイス管理者の管理エージェントを使ってデバイス識別子の情報にアクセスする機能を制限しています。 この制限により、Android 10 以降にデバイスを更新した後、次の Intune 機能が影響を受けます。  
     - VPN のネットワーク アクセス制御が機能しなくなる。   
     - IMEI またはシリアル番号を使用した企業所有のデバイスの識別で、デバイスが企業所有として自動的にマークされなくなる。  
     - Intune で IT 管理者に IMEI とシリアル番号が表示されなくなる。 
@@ -108,31 +113,6 @@ Google によるこのような変更により、Intune ユーザーは次のよ
 #### <a name="additional-information"></a>追加情報
 - [デバイス管理者から Android Enterprise への移行に関する Google のガイダンス](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
 - [デバイス管理者 API の廃止計画に関する Google のドキュメント](https://developers.google.com/android/work/device-admin-deprecation)
-
-### <a name="update-your-android-company-portal-app-to-the-latest-version---4536963--"></a>Android 用ポータル サイト アプリを最新バージョンに更新する <!--4536963-->
-Intune では、Android 用ポータル サイト アプリに対する更新プログラムが定期的にリリースされます。 2018 年 11 月に、ポータル サイトの更新プログラムがリリースされました。これには、Google による既存の通知プラットフォームから Google の Firebase Cloud Messaging (FCM) への変更に備えるための、バックエンド スイッチが含まれていました。 Google が既存の通知プラットフォームを終了して FCM に移行したとき、エンド ユーザーは、Google Play ストアとの交信を継続するために、各自のポータル サイト アプリを少なくとも 2018 年 11 月のリリースに更新済みである必要があります。
-
-#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
-利用統計情報では、5.0.4269.0 よりも前のバージョンのポータル サイトを備えたデバイスがあることが示されています。 このバージョン以上のポータル サイト アプリをインストールしないと、ワイプ、パスワードのリセット、入手可能な必須アプリのインストール、証明書の登録のような、IT プロフェッショナルが開始したデバイス アクションが意図したとおりに機能しない場合があります。 ご自身のデバイスが Intune の MDM に登録されている場合は、[クライアント アプリ] – [検出されたアプリ] に移動することで、ポータル サイトのバージョンとユーザーを確認できます。 以前のバージョンのポータル サイト アプリを選択すると、どのエンド ユーザーがポータル サイト アプリを更新していないデバイスを持っているのかを確認できます。
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
-更新していない Android デバイスを使っているエンド ユーザーに、Google Play を使ってポータル サイト アプリを更新するよう依頼します。 ユーザーがポータル サイト アプリの自動更新を維持していない場合は、ヘルプ デスクに通知します。 Google の FCM プラットフォームと変更について詳しくは、"*追加情報*" にあるリンクをご覧ください。
-
-#### <a name="additional-information"></a>追加情報
-https://firebase.google.com/docs/cloud-messaging/
-
-
-### <a name="new-full-screen-experience-coming-to-intune---4593669--"></a>Intune に追加された新しい全画面のエクスペリエンス <!--4593669-->
-Azure portal では、Intune に対する更新された UI 作成および編集のエクスペリエンスがロールアウトされています。 この新しいエクスペリエンスでは、1 つのブレード内にまとめられたウィザード形式のフォーマットを使用することで、既存のワークフローが簡素化されます。 この更新によって、"ブレードが無秩序に増える" ことや、ブレードを詳細にドリルダウンしていくことが求められる作成および編集のフローが回避されます。 また、作成のワークフローは、割り当て (アプリ割り当て以外) を含むように更新されます。
-
-#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
-全画面のエクスペリエンスは、次の数か月間にわたって、portal.azure.com および devicemanagement.microsoft.com の両方で Intune にロールアウトされます。 この UI の更新は、既存のポリシーとプロファイルの機能には影響を及ぼしませんが、少し変更されたワークフローが表示されます。 たとえば、新しいポリシーを作成するときに、いくつかの割り当てをポリシーの作成後に行うのではなく、このフローの一部として設定できます。 コンソールでの新しいエクスペリエンスの外観を示したスクリーンショットは、"*追加情報*" にあるブログ投稿で確認してください。
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
-何らかのアクションを行う必要はありませんが、必要に応じて IT プロフェッショナル向けのガイダンスの更新を検討できます。 Microsoft では、Azure portal 上で Intune 内の各種のブレードに対してこのエクスペリエンスが公開され次第、ドキュメントを更新する予定です。
-
-#### <a name="additional-information"></a>追加情報 
-https://aka.ms/intune_fullscreen
 
 ### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-an-upcoming-release---4911065---"></a>変更の計画:今後のリリースで、Android 用の Intune App SDK およびアプリ保護ポリシーによる Android 5.0 以降のサポートを開始 <!--4911065 -->
 Intune では、今後のリリースで、Android 5.x (Lollipop) 以降のサポートが開始されます。 ラップされたすべてのアプリを最新の Intune App SDK で更新し、デバイスを更新してください。
@@ -171,3 +151,5 @@ PC 管理機能は Windows 10 オペレーティング システムに直接組�
 - 既存のレガシ Intune ソフトウェア クライアントのマネージド デバイスを Microsoft 推奨のソリューションに移行し、MDM 管理を使用して Windows 10 を管理する。 すべての新しい Windows 10 PC を、Azure portal で Intune の MDM 管理を使って登録する。
 
 さらなる情報については、[こちらのブログ投稿](https://aka.ms/Windows7_Intune)を参照してください。
+
+
