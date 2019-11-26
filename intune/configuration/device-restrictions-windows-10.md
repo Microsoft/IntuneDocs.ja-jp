@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0cf7d6f18b0d345a8c491984987b9ffa234d66e
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
-ms.translationtype: HT
+ms.openlocfilehash: e5e1e1de0c8ec80a390f76f5e8de3965d4f800a9
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059478"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188166"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように Windows 10 (以降) のデバイスを設定する
 
@@ -213,9 +213,11 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 
   次回デバイスがワイプまたはリセットされたときに、この設定が有効になります。 その他の Intune の構成のように、構成設定を受信するには、デバイスを Intune で登録して管理する必要があります。 ただし、一度登録され、ポリシーを受信すると、デバイスをリセットにより、次の Windows のセットアップ中に設定が適用されます。
 
+  [TenantLockdown CSP](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp)
+
 - **[Direct Memory Access]\(ダイレクト メモリ アクセス\)** : **[ブロック]** では、ユーザーが Windows にサインインするまで、ホット プラグ可能なすべての PCI ダウンストリーム ポートへの直接メモリ アクセス (DMA) が禁止されます。 **[有効]** (既定値) にすると、ユーザーがサインインしていない場合でも、DMA へのアクセスが許可されます。
 
-  CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
+  [DataProtection/AllowDirectMemoryAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
 
 - **[タスク マネージャーからのプロセスを終了する]** : この設定により、管理者以外がタスク マネージャーを使用してタスクを終了できるかどうかが決まります。 **[ブロック]** は、標準ユーザー (管理者以外) がタスク マネージャーを使用してデバイス上でプロセスまたはタスクを終了するのを防ぎます。 **[未構成]** (既定値) は、標準ユーザーがタスク マネージャーを使用してプロセスまたはタスクを終了するのを許可します。
 

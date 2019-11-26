@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 11/18/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03ceaf5493f544dbb815146eb67c3fae8856d29e
-ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
+ms.openlocfilehash: e71ae2d2bcee22040c256ea711edd22b1d1fc80a
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74126156"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199266"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune での iOS デバイスの登録に関する問題のトラブルシューティング
 
@@ -67,7 +67,51 @@ ms.locfileid: "74126156"
 5. **[プラットフォームの構成]** を選択し、個人所有の iOS デバイスに対して **[許可]** を選択して、[ **OK]** をクリックします。
 6. デバイスを再度登録します。
 
-### <a name="this-service-is-not-supported-no-enrollment-policy"></a>このサービスはサポートされていません。 登録ポリシーがありません。
+**原因:** DNS に必要な CNAME レコードが存在しません。
+
+#### <a name="resolution"></a>解決策
+会社のドメインの CNAME DNS リソース レコードを作成します。 たとえば、会社のドメインが contoso.com の場合、EnterpriseEnrollment.contoso.com を EnterpriseEnrollment-s.manage.microsoft.com にリダイレクトする CNAME を DNS に作成します。
+
+CNAME DNS エントリの作成は省略可能ですが、CNAME レコードにより登録が簡単になります。 CNAME レコードの登録が見つからない場合、ユーザーは手動で MDM サーバー名 enrollment.manage.microsoft.com を入力するように求められます。
+
+検証済みドメインが複数ある場合、ドメインごとに CNAME レコードを作成します。 CNAME リソース レコードには次の情報を含める必要があります。
+
+|種類:|ホスト名|指定先|TTL|
+|------|------|------|------|
+|CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com|1 時間|
+|CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 時間|
+
+会社でユーザーの資格情報に複数のドメインを使用する場合は、各ドメインに CNAME レコードを作成します。
+
+> [!NOTE]
+> DNS レコードの変更が反映されるまでには、最大で 72 時間かかります。 DNS レコードの変更が反映されるまで、Intune で DNS の変更を確認することはできません。
+
+**原因:** 以前に別のユーザーアカウントで登録されていたデバイスを登録すると、以前のユーザーは適切に Intune から削除されませんでした。
+
+#### <a name="resolution"></a>解決策
+1. 現在のプロファイルのインストールを取り消します。
+2. Safari で[https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)を開きます。
+3. デバイスを再度登録します。
+
+> [!NOTE]
+> 登録がまだ失敗する場合は、Safari の cookie を削除し (cookie をブロックしません)、デバイスを再登録します。
+
+**原因:** デバイスは、既に別の MDM プロバイダーに登録されています。
+
+#### <a name="resolution"></a>解決策
+1. IOS デバイスの **[設定]** を開き、 **[全般 > デバイス管理**] にアクセスします。
+2. 既存の管理プロファイルを削除します。
+3. デバイスを再度登録します。
+
+**原因:** デバイスを登録しようとしているユーザーには Microsoft Intune ライセンスがありません。
+
+#### <a name="resolution"></a>解決策
+1. [Office 365 管理センター](https://portal.office.com/adminportal/home#/homepage)にアクセスし、 **[ユーザー > アクティブユーザー]** を選択します。
+2. Intune ユーザー ライセンスを割り当てるユーザー アカウントを選択し、 **[製品ライセンス] > [編集]** の順に選択します。
+3. このユーザーに割り当てるライセンスの **[オン**] の位置に切り替え、 **[保存]** を選択します。
+4. デバイスを再度登録します。
+
+### <a name="this-service-is-not-supported-no-enrollment-policy"></a>このサービスはサポート対象外です。 登録ポリシーがありません。
 
 **原因**: Intune で Apple MDM プッシュ通知証明書が構成されていないか、証明書が無効です。 
 
@@ -95,7 +139,7 @@ ms.locfileid: "74126156"
 1. [Intune 管理ポータル](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) >  台の**デバイス** > **すべてのデバイス** を開き、ユーザーが登録したデバイスの数を確認します。
     > [!NOTE]
     > また、影響を受けるユーザーが[Intune ユーザーポータル](https://portal.manage.microsoft.com/)にログオンし、登録されているデバイスを確認する必要があります。 Intune[ユーザーポータル](https://portal.manage.microsoft.com/)に表示されるデバイスもありますが、 [intune 管理ポータル](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)には表示されません。このようなデバイスは、デバイスの登録制限にもカウントされます。
-2. [**管理** > **モバイルデバイス管理** >  の**登録ルール**] に移動して、デバイスの登録制限を確認 > ます。 既定では、制限は 15 に設定されています。 
+2. [**管理** > **モバイルデバイス管理** > の**登録ルール**] に移動して、デバイスの登録制限を確認 > ます。 既定では、制限は 15 に設定されています。 
 3. 登録されているデバイスの数が制限に達した場合は、不要なデバイスを削除するか、デバイスの登録制限を増やします。 登録されているすべてのデバイスで Intune ライセンスが使用されるため、まず不要なデバイスを必ず削除することをお勧めします。
 4. デバイスを再度登録します。
 
@@ -186,7 +230,7 @@ iPhone mobileassetd[83] <Notice>: 0x1a49aebc0 Client connection: XPC_TYPE_ERROR 
 #### <a name="resolution"></a>解決策
 
 1. 登録プロファイルを編集します。 プロファイルに変更を加えることができます。 目的は、プロファイルの変更時刻を更新することです。
-2. DEP で管理されているデバイスの同期: Intune ポータル >**管理** > **モバイルデバイス管理**の  > **iOS**  > **Device Enrollment Program**  >  同期 を**開始**します。 同期要求が Apple に送信されます。
+2. DEP で管理されているデバイスの同期: Intune ポータル >**管理** > **モバイルデバイス管理**の > **iOS** > **Device Enrollment Program** > 同期 を**開始**します。 同期要求が Apple に送信されます。
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>ユーザーログイン時の DEP 登録スタック
 登録プロファイルが割り当てられている DEP 管理対象デバイスを有効にすると、資格情報を入力した後に初期セットアップが表示されます。

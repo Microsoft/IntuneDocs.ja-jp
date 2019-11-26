@@ -205,6 +205,10 @@
           href: use-docs.md
         - name: サポートを受ける
           href: get-support.md
+    - name: Reports
+      items:
+        - name: Intune レポート
+          href: reports.md
 - name: リファレンス
   items:
     - name: エラー コードと説明

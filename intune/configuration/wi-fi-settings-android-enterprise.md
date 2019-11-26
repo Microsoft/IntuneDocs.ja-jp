@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 266786de3122f8886bb3ed310764459568e1df6a
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 04d35f49f9e07cb72a1fea92210b05e0a95ec256
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585360"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390806"
 ---
-# <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>Microsoft Intune で Android エンタープライズおよび Android キオスクを実行するデバイス用の Wi-Fi 設定を追加する
+# <a name="add-wi-fi-settings-for-android-enterprise-dedicated-and-fully-managed-devices-in-microsoft-intune"></a>Android Enterprise 専用デバイスと完全に管理されたデバイスの Wi-fi 設定を Microsoft Intune に追加する
 
-特定の Wi-Fi 設定でプロファイルを作成してから、Android エンタープライズ デバイスおよび Android 専用デバイスにこのプロファイルを展開することができます。 Microsoft Intune では、ネットワークに対する認証や、事前共有キーの使用など、多くの機能が提供されています。
+特定の Wi-Fi 設定でプロファイルを作成してから、Android エンタープライズのフル マネージドおよび専用デバイスにこのプロファイルを展開することができます。 Microsoft Intune では、ネットワークに対する認証や、事前共有キーの使用など、多くの機能が提供されています。
 
 この記事では、これらの設定について説明します。 [デバイス上で Wi-Fi を使用する](wi-fi-settings-configure.md)方法に関するページでは、Microsoft Intune の Wi-Fi 機能についてさらに詳しく説明されています。
 
@@ -35,7 +35,7 @@ ms.locfileid: "72585360"
 
 ## <a name="device-owner-only"></a>デバイスの所有者のみ
 
-Android エンタープライズ専用デバイスをキオスクとして使用する場合は、このオプションを選択します。
+Android Enterprise 専用または完全に管理されたデバイスに展開する場合は、このオプションを選択します。  Android Enterprise 専用および完全に管理されたデバイスは、現在 SCEP 証明書の展開をサポートしていますが、PKCS はサポートしていません
 
 ### <a name="basic"></a>基本
 
@@ -60,7 +60,7 @@ Android エンタープライズ専用デバイスをキオスクとして使用
 
     - **[サーバー信頼]**  -  **[サーバー検証のためのルート証明書]** : 既存の信頼されたルート証明書プロファイルを選択します。 クライアントがネットワークに接続すると、この証明書がサーバーに対して提示され、接続が認証されます。
 
-    - **[クライアント認証]**  -  **[クライアント認証に使用するクライアント証明書 (ID 証明書)]** : やはりデバイスに展開される SCEP または PKCS クライアント証明書プロファイルを選択します。 この証明書は、接続の認証のためにデバイスによってサーバーに提示される ID です。
+    - **[クライアント認証]**  -  **[クライアント認証に使用するクライアント証明書 (ID 証明書)]** : 同じくデバイスに展開される SCEP クライアント証明書プロファイルを選択します。 この証明書は、接続の認証のためにデバイスによってサーバーに提示される ID です。
 
     - **[ID プライバシー (外部 ID)]** : EAP ID 要求への応答で送信されるテキストを入力します。 このテキストには任意の値を指定できます (例: `anonymous`)。 認証時に、この匿名の ID が最初に送信され、その後、セキュリティで保護されたトンネルで実際の ID が送信されます。
 
@@ -77,7 +77,7 @@ Android エンタープライズ専用デバイスをキオスクとして使用
           - **Microsoft CHAP (MS-CHAP)**
           - **Microsoft CHAP バージョン 2 (MS-CHAP v2)**
 
-      - **[証明書]** : やはりデバイスに展開される SCEP または PKCS クライアント証明書プロファイルを選択します。 この証明書は、接続の認証のためにデバイスによってサーバーに提示される ID です。
+      - **[証明書]** : 同じくデバイスに展開される SCEP クライアント証明書プロファイルを選択します。 この証明書は、接続の認証のためにデバイスによってサーバーに提示される ID です。
 
       - **[ID プライバシー (外部 ID)]** : EAP ID 要求への応答で送信されるテキストを入力します。 このテキストには任意の値を指定できます (例: `anonymous`)。 認証時に、この匿名の ID が最初に送信され、その後、セキュリティで保護されたトンネルで実際の ID が送信されます。
 
@@ -93,7 +93,7 @@ Android エンタープライズ専用デバイスをキオスクとして使用
           - **なし**
           - **Microsoft CHAP バージョン 2 (MS-CHAP v2)**
 
-      - **[証明書]** : やはりデバイスに展開される SCEP または PKCS クライアント証明書プロファイルを選択します。 この証明書は、接続の認証のためにデバイスによってサーバーに提示される ID です。
+      - **[証明書]** : 同じくデバイスに展開される SCEP クライアント証明書プロファイルを選択します。 この証明書は、接続の認証のためにデバイスによってサーバーに提示される ID です。
 
       - **[ID プライバシー (外部 ID)]** : EAP ID 要求への応答で送信されるテキストを入力します。 このテキストには任意の値を指定できます (例: `anonymous`)。 認証時に、この匿名の ID が最初に送信され、その後、セキュリティで保護されたトンネルで実際の ID が送信されます。
 
