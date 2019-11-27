@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8e61be086323a16a6220573874ed80ce4e9bd32
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ecde59d81ebeba7de64f2693eecb576faac6e722
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498978"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164705"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune にアプリを追加する 
 
@@ -151,7 +151,7 @@ Web アプリ、ストア アプリ、LOB アプリに加えて、Volume Purchas
 - アップロードするファイルの最大ファイルサイズは 8 GB。
 
   > [!NOTE]
-  > Windows の基幹業務 (LOB) アプリには、アプリごとに最大 8 GB のサイズ制限があります。 iOS の LOB アプリには、アプリごとに最大 4 GB のサイズ制限があります。
+  > Windows 基幹業務 (LOB) アプリ (Win32、Windows Universal AppX、Windows Universal AppX バンドル、Windows Universal MSI X、windows Universal MSI X バンドルなど) のサイズは、アプリごとに最大 8 GB に制限されています。 iOS LOB アプリなど、その他のすべての LOB アプリのサイズは、アプリごとに最大 2 GB に制限されています。
 
 ## <a name="create-and-edit-categories-for-apps"></a>アプリのカテゴリを作成して編集する
 

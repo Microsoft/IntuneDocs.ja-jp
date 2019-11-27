@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3372fc83e467b08b479490b3707f2be03409156
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: f78f3696827ebd50084f0e4b012c5f94427eeb35
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749330"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164569"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>ガイド付きシナリオ - クラウド マネージド モダン デスクトップ
 
-モダン デスクトップは、インフォメーション ワーカー向けの最先端の生産性向上プラットフォームです。 Office 365 ProPlus および Windows 10 は、モダン デスクトップの主要なコンポーネントであり、Windows 10 および Windows Defender Advanced Threat Protection 用の最新のセキュリティ ベースラインと共に使用されます。 
+モダン デスクトップは、インフォメーション ワーカー向けの最先端の生産性向上プラットフォームです。 Office 365 ProPlus および Windows 10 は、モダン デスクトップの主要なコンポーネントであり、Windows 10 および Microsoft Defender Advanced Threat Protection 用の最新のセキュリティ ベースラインと共に使用されます。 
 
 モダン デスクトップをクラウドから管理することで、インターネット全体でのリモート操作の利点を活用できます。 クラウド管理では、組み込みの Windows モバイル デバイス管理ポリシーが利用され、ローカルの Active Directory グループ ポリシーに対する依存関係が削除されます。 
 
@@ -33,7 +33,7 @@ ms.locfileid: "72749330"
 
 ## <a name="prerequisites"></a>必要条件
 - [MDM 機関を Intune に設定する](~/fundamentals/mdm-authority-set.md#set-mdm-authority-to-intune) - モバイル デバイス管理 (MDM) 機関の設定によって、デバイスの管理方法が決まります。 IT 管理者が MDM 機関を設定してからでないと、ユーザーは管理対象のデバイスを登録できません。
-- 最低でも M356 E3 (最適なセキュリティには M365 E5)
+- 最低でも M365 E3 (最良のセキュリティのためには M365 E5)
 - Windows 10 1903 デバイス (Windows Autopilot に登録することで最適なエンドユーザー エクスペリエンスを実現)
 - このガイド付きシナリオを完了するために必要な Intune 管理者のアクセス許可:
   - デバイスの構成の読み取り、作成、削除、割り当て、および更新
@@ -118,5 +118,5 @@ Windows Autopilot では新しいデバイスの構成が自動化されてい�
 
 ## <a name="next-steps"></a>次の手順
 
-- Windows Defender Advanced Threat Detection を使用する場合は、[Intune コンプライアンス ポリシー](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy)を作成して、Defender 脅威分析がコンプライアンスを満たすようにする必要があります。
+- Microsoft Defender Advanced Threat Detection を使用する場合は、[Intune コンプライアンス ポリシー](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy)を作成して、Defender 脅威分析がコンプライアンスを満たすようにする必要があります。
 - デバイスが Intune コンプライアンスを満たしていない場合は、[デバイスベースの条件付きアクセス ポリシー](~/protect/advanced-threat-protection.md#create-a-conditional-access-policy)を作成してアクセスをブロックします。

@@ -16,6 +16,8 @@
           href: whats-new-app-ui.md
         - name: 開発中の機能
           href: in-development.md
+        - name: 重要な通知
+          href: 'whats-new.md#notices'
 - name: クイックスタート
   items:
     - name: Intune を無料で試す

@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune のデバイスの機能と設定 - Azure | Microsoft Docs
-description: さまざまな Microsoft Intune デバイス プロファイルの概要。 機能、制限事項、電子メール、WiFi、VPN、教育、証明書、Windows 10 のアップグレード、BitLocker と Windows Defender、Windows 情報保護、管理用テンプレート、および Azure portal のカスタム デバイス構成設定に関する情報が得られます。 これらのプロファイルを使用して、社内のデータとデバイスを管理および保護します。
+description: さまざまな Microsoft Intune デバイス プロファイルの概要。 機能、制限事項、電子メール、WiFi、VPN、教育、証明書、Windows 10 のアップグレード、BitLocker と Microsoft Defender、Windows Information Protection、管理用テンプレート、および Azure portal のカスタム デバイス構成設定に関する情報が得られます。 これらのプロファイルを使用して、社内のデータとデバイスを管理および保護します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c49445800f5d34fbb6ce0a845d4f29c3e587483
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: f0dd9eddd986e6717e6bf706b02a7b06f712a032
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749338"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059895"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune でデバイス プロファイルを使用してデバイスに機能と設定を適用する
 
@@ -145,7 +145,7 @@ Microsoft Intune には、組織内のさまざまなデバイスで有効また
 
 ## <a name="endpoint-protection"></a>Endpoint Protection
 
-[Windows 10 用の Endpoint Protection 設定](../protect/endpoint-protection-windows-10.md)は、Windows 10 デバイス用の BitLocker および Windows Defender の設定を構成します。
+[Windows 10 用の Endpoint Protection 設定](../protect/endpoint-protection-windows-10.md)では、Windows 10 デバイス用の BitLocker および Microsoft Defender の設定が構成されます。
 
 Microsoft Defender Advanced Threat Protection (WDATP) と Microsoft Intune をオンボードするには、[モバイル デバイス管理ツール (MDM) を使用したエンドポイントの構成](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-mdm)に関する記事を参照してください。
 

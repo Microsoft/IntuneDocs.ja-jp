@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3fb99a363bda762ccfb834388f3abb4ab80f81a
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: cc950f9e60f5549a7a74c2963f33c36369d3ebd3
+ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709700"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74126171"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>チュートリアル: Apple Business Manager (ABM) にある Apple の Corporate Device Enrollment 機能を使用して、iOS デバイスを Intune に登録する
 Apple Business Manager の Device Enrollment 機能では、デバイスを簡単に登録できます。 Intune では Apple の以前の Device Enrollment Program (DEP) ポータルもサポートしていますが、Apple Business Manager でやり直すことをお勧めします。 デバイスは、Microsoft Intune と Apple Corporate Device Enrollment で、ユーザーが最初にデバイスをオンにしたときに、安全に自動的に登録されます。 そのため、各デバイスを個別に設定することなく、デバイスを多くのユーザーに配送できます。 
@@ -90,7 +90,7 @@ Device Enrollment トークンの作成には、ABM または DEP ポータル�
 
 5. デバイスの登録を、**ユーザー アフィニティ**を使用して、または使用しないで行うかを決めます。 ユーザー アフィニティは、特定のユーザー向けのデバイス用に設計されています。 ユーザーが、アプリのインストールなどのサービスにポータル サイトを使用する場合、 **[ユーザー アフィニティとともに登録する]** を選択します。 ユーザーがポータル サイトを必要としない場合、または多数のユーザーに対してデバイスをプロビジョニングする場合は、 **[ユーザー アフィニティを使用しないで登録する]** を選択します。
 
-6. 登録をユーザー アフィニティを使用して行う場合、ポータル サイトまたは Apple 設定アップ アシスタントのどちらで認証を行うかを決めます。 Multi-Factor Authentication を使用する場合、最初のサインイン時にユーザーにパスワードを変更することを許可するか、登録時にユーザーに有効期限が切れたパスワードをリセットすることを求めます。これには、 **[Apple セットアップ アシスタントの代わりにポータル サイトで認証します]** で **[はい]** を選択します。 Apple が提供している Apple 設定アシスタントの基本の HTTP 認証で十分な場合は、 **[いいえ]** を選択します。
+6. 登録をユーザー アフィニティを使用して行う場合、ポータル サイトまたは Apple 設定アップ アシスタントのどちらで認証を行うかを決めます。 Multi-Factor Authentication を使用する場合、最初のサインイン時にユーザーにパスワードを変更することを許可するか、登録時にユーザーに有効期限が切れたパスワードをリセットすることを求めます。これには、 **[Apple セットアップ アシスタントの代わりにポータル サイトで認証します]** で **[はい]** を選択します。 Apple が提供している Apple 設定アシスタントの基本の HTTP 認証で十分な場合は、 **[いいえ]** を選択します。 **[はい]** を選択し、ポータル サイト アプリケーションをエンド ユーザーのデバイス上で自動的に更新する場合は、Apple の Volume Purchasing Program (VPP) を使用して、そのユーザーに対してポータル サイトを必須アプリとして個別に展開します。
 
 7. ユーザー アフィニティで登録を行い、ポータル サイトで認証を行う場合、Apple の Volume Purchase Program (VPP) でポータル サイトをインストールするかどうかを決定します。 VPP トークンを使用してポータル サイトをインストールする場合、ユーザーは登録時に、App Store からポータル サイトをダウンロードするときに、Apple ID とパスワードを入力する必要がありません。 **[VPP によるポータル サイトのインストール]** の下の **[使用するトークン]** を選択し、使用可能なポータル サイトの無料ライセンスがある VPP トークンを選択します。 ポータル サイトの展開に VPP を使用しない場合、 **[VPP によるポータル サイトのインストール]** の下の **[Don't use VPP]** \(VPP を使用しない\) を選択します。 
 

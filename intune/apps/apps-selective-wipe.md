@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5bcdf9c3218df91bea85858ea21e88718e81633
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0fafe7c17c698a5eb4e5ad6825bee0ae3fe874c2
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498319"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199247"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Intune で管理されているアプリから会社のデータをワイプする方法
 
@@ -44,23 +44,12 @@ ms.locfileid: "72498319"
 
 ## <a name="create-a-wipe-request"></a>ワイプ要求の作成
 
-1. [Azure ポータル](https://portal.azure.com)にサインインします。
-
-2. **[すべてのサービス]** を選択し、フィルター ボックスに「**Intune**」と入力して、 **[Intune]** を選択します。 Intune ウィンドウが開いたら、 **[クライアント アプリ]** ウィンドウを選びます。
-
-    ![Microsoft Intune ウィンドウのスクリーンショット](./media/apps-selective-wipe/apps-selective-wipe01.png)
-
-3. **[クライアント アプリ]** ウィンドウで、 **[アプリの選択的ワイプ]** を選択します。
-
-4. **[新しいワイプ要求]** を選択します。 **[新しいワイプ要求]** ウィンドウが開きます。
-
-    ![[新しいワイプ要求] ウィンドウのスクリーンショット](./media/apps-selective-wipe/AzurePortal_MAM_NewWipeRequest.png)
-
-5. ユーザーを選び、 **[選択]** を選んで、ワイプしたいアプリ データを持つユーザーを選択します。
-
-6. 次に、 **[新しいワイプ要求]** ウィンドウで **[デバイス]** を選びます。 **[デバイスの選択]** ブレードが開き、選んだユーザーに関連付けられているデバイスの一覧が表示されます。また、このブレードには 2 つの列があり、デバイス名 (ユーザーによって定義されるフレンドリ名) とデバイスの種類 (デバイスのプラットフォーム) が示されます。 ワイプするデバイスを選びます。
-
-7. **[新しいワイプ要求]** ウィンドウに戻ります。 **[OK]** を選んでワイプ要求を行います。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+2. [Intune] ウィンドウで、 **[クライアント アプリ]**  >  **[アプリの選択的ワイプ]**  >  **[ワイプ要求を作成します]** の順に選択します。<br>
+   **[ワイプ要求を作成します]** ウィンドウが表示されます。
+3. **[ユーザーの選択]** をクリックし、アプリ データをワイプするユーザーを選択して、 **[ユーザー]** ウィンドウの下部にある **[選択]** をクリックします。
+4. **[デバイスの選択]** をクリックし、デバイスを選択して、 **[デバイスの選択]** ウィンドウの下部にある **[選択]** をクリックします。
+5. **[作成]** をクリックして、ワイプ要求を行います。
 
 サービスでは、デバイス上の保護されているアプリごとにワイプ要求が作成および追跡され、そのワイプ要求にはユーザーが関連付けられています。
 

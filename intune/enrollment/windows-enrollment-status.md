@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/28/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e453002493e95bd5147cca115075a17a6e7a298
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 6f9c09105ab7286eb315c6bf0f04f1801706bfa8
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709327"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059700"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>登録ステータス ページを設定する
  
@@ -197,7 +197,7 @@ ms.locfileid: "73709327"
     - ユーザーの資格情報は保持されません
     - ユーザーは、デバイス セットアップ フェーズからアカウント セットアップ フェーズに進む前に、資格情報をもう一度入力する必要があります
 - ESP の "識別" フェーズが、長時間かかるか、完了しません。 Intune では、識別フェーズの間に ESP ポリシーが計算されます。 現在のユーザーに Intune ライセンスが割り当てられていない場合、ESP ポリシーの計算が完了しないことがあります。  
-- Windows Defender アプリケーション制御を構成すると、Autopilot の間に再起動を求められます。 Windows Defender アプリケーション (AppLocker CSP) を構成するには、再起動が必要です。 このポリシーが構成されていると、Autopilot の間にデバイスが再起動される可能性があります。 現時点では、再起動を抑制または延期する方法はありません。
+- Microsoft Defender アプリケーション制御を構成すると、Autopilot の間に再起動を求められます。 Microsoft Defender アプリケーション (AppLocker CSP) を構成するには、再起動が必要です。 このポリシーが構成されていると、Autopilot の間にデバイスが再起動される可能性があります。 現時点では、再起動を抑制または延期する方法はありません。
 - ESP プロファイルの一部として DeviceLock ポリシー (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) が有効になっている場合、OOBE またはユーザー デスクトップの自動ログオンは、次の 2 つの理由で予期せず失敗する可能性があります。
   - ESP デバイス セットアップ フェーズ終了前にデバイスが再起動しなかった場合、ユーザーは Azure AD 資格情報の入力を求められることがあります。 自動ログオンが成功して Windows 初回ログイン アニメーションがユーザーに表示される代わりに、この要求が発生します。
   - ユーザーが Azure AD 資格情報を入力した後、ESP デバイス セットアップ フェーズが終了する前に、デバイスが再起動された場合、自動ログオンは失敗します。 この失敗は、ESP デバイス セットアップ フェーズが完了していないために発生します。 それを回避するには、デバイスをリセットします。

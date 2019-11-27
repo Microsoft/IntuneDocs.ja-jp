@@ -17,27 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb9dd31c87d27ec7885d25269988cfd968e81e08
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 179d135ee8e216495cd7435bf38d8087e5c990e8
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504565"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188273"
 ---
 # <a name="learn-about-conditional-access-and-intune"></a>条件付きアクセスと Intune について説明します
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+条件付きアクセスを使用すると、自分のメールや会社のリソースに接続できるデバイスやアプリを制御できます。 
 
-条件付きアクセスとは、自分のメールや会社のリソースに接続することが許可されたデバイスやアプリを制御する手段です。 このトピックでは、デバイスベースとアプリベースの条件付きアクセスと、Intune で条件付きアクセスを利用する一般的なシナリオについて説明します。
-
-Enterprise Mobility + Security (EMS) 条件付きアクセスはスタンドアロン製品ではありませんが、EMS の一部であるすべてのサービスと製品にかかわるソリューションです。 細かいアクセス制御を提供することで会社のデータをセキュリティで保護し、任意の場所と任意のデバイスで最適な仕事ができるエクスペリエンスをユーザーに提供します。
+Enterprise Mobility + Security (EMS) は、スタンドアロン製品ではありません。 これは、EMS の一部であるすべてのサービスと製品にかかわるソリューションです。 条件付きアクセスにより、会社のデータをセキュリティで保護するためのきめ細かいアクセスの制御を提供すると同時に、任意の場所と任意のデバイスで最適な仕事ができるエクスペリエンスをユーザーに提供します。
 
 場所、デバイス、ユーザーの状態、アプリケーションの機密度に基づいて、会社のデータへのアクセスを制限する条件を定義できます。
 
-> [!NOTE] 
+> [!NOTE]
 > 条件付きアクセスは、その機能を[Office 365 サービス](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)にも拡張しています。
 
-![条件付きアクセスのアーキテクチャ ダイアグラム](./media/conditional-access/ca-diagram-1.png)
+![条件付きアクセスの図](./media/conditional-access/ca-diagram-1.png)
 
 ## <a name="use-conditional-access-with-intune"></a>Intune で条件付きアクセスを使用する
 

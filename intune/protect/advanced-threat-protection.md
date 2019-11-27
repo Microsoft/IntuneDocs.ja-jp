@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6026cf3ef8d044c92680cf4c4c88ba55c9777e0
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 889b0a7562f1a663556e955271681e0747aeb3c4
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713250"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199164"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Intune で条件付きアクセスによる Microsoft Defender ATP のコンプライアンスを強制する
 
@@ -31,7 +31,7 @@ Mobile Threat Defense ソリューションとして Microsoft Defender Advanced
 
 - **Intune と Microsoft Defender ATP の間にサービス間接続を確立する**。 この接続により、Microsoft Defender ATP が Intune で管理する Windows 10 デバイスからコンピューターのリスクに関するデータを収集できるようになります。
 - **デバイス構成プロファイルを使用して、デバイスを Microsoft Defender ATP にオンボードする**。 デバイスをオンボードして、Microsoft Defender ATP と通信を行い、そのリスク レベルを評価するのに役立つデータを提供するようにそれらを構成します。
-- **デバイス コンプライアンス ポリシーを使用して、許可するリスクのレベルを設定する**。 リスク レベルは Microsoft Defender ATP によって報告されます。  許可したリスク レベルを超えているデバイスは、非準拠として識別されます。
+- **デバイス コンプライアンス ポリシーを使用して、許可するリスクのレベルを設定する**。 リスク レベルは Microsoft Defender ATP によって報告されます。 許可したリスク レベルを超えているデバイスは、非準拠として識別されます。
 - **条件付きアクセス ポリシーを使用**して、ユーザーが非準拠のデバイスから企業リソースにアクセスできないようにします。
 
 Intune を Microsoft Defender ATP と統合する場合、ATP の脅威と脆弱性の管理 (TVM) を利用し、[Intune を使って TVM によって検出されたエンドポイントの脆弱性を修復](atp-manage-vulnerabilities.md)できます。
@@ -62,7 +62,7 @@ Intune で Microsoft Defender ATP を使用する場合は、以下が構成済�
 - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) および Microsoft Defender セキュリティ センター (ATP ポータル) へのアクセス
 
 > [!NOTE]
-> Microsoft Defender ATP は、Intune アプリ保護ポリシーではサポートされていません。
+> Microsoft Defender ATP は、iOS および Android の Intune アプリ保護ポリシーではサポートされていません。
 
 ## <a name="enable-microsoft-defender-atp-in-intune"></a>Intune で Microsoft Defender ATP を有効にする
 
@@ -70,7 +70,7 @@ Intune で Microsoft Defender ATP を使用する場合は、以下が構成済�
 
 ### <a name="to-enable-defender-atp"></a>Defender ATP を有効にするには
 
-Defender ATP を有効にする必要があるのは、テナントごとに 1 回だけです。 
+Defender ATP を有効にする必要があるのは、テナントごとに 1 回だけです。
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 
@@ -92,6 +92,8 @@ Defender ATP を有効にする必要があるのは、テナントごとに 1 �
 
 > [!TIP]
 > 新しいアプリケーションを Intune Mobile Threat Defense に統合し、Intune への接続を有効にすると、Intune によって Azure Active Directory 内に従来の条件付きアクセス ポリシーが作成されます。 統合する各 MTD アプリ ([Defender ATP](advanced-threat-protection.md) や追加の [MTD パートナー](mobile-threat-defense.md#mobile-threat-defense-partners)など) によって、新しい従来の条件付きアクセス ポリシーが作成されます。 これらのポリシーは無視してもかまいませんが、編集、削除、または無効にすることはできません。
+>
+> 従来のポリシーを削除した場合は、その作成に使用された Intune への接続を削除してから、それを再設定する必要があります。 これにより、従来のポリシーが再作成されます。 MTD アプリ用の従来のポリシーを、条件付きアクセス用の新しいポリシーの種類に移行することは、サポートされていません。
 >
 > MTD アプリ用の従来の条件付きアクセス ポリシーは:
 >
@@ -130,7 +132,7 @@ Microsoft Defender ATP への接続を確立したときに、Intune は Microso
      これらの Microsoft Defender ATP の設定について詳しくは、「[System Center Configuration Manager を使用する Windows 10 コンピューターのオンボード](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm)」をご覧ください。
 
 7. **[OK]** 、 **[作成]** の順に選択して変更を保存します。これで、プロファイルが作成されます。
-8. Microsoft Defender ATP を使用して評価するデバイスに[デバイス構成プロファイルを割り当てます](../configuration/device-profile-assign.md)。  
+8. Microsoft Defender ATP を使用して評価するデバイスに[デバイス構成プロファイルを割り当てます](../configuration/device-profile-assign.md)。
 
 ## <a name="create-and-assign-the-compliance-policy"></a>コンプライアンス ポリシーを作成して割り当てる
 

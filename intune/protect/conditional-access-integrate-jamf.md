@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/20/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39d687c8c9b75182ba0e7d4020c6b840c753a231
-ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
+ms.openlocfilehash: 6615933f604f2ff4156885bc6559af7e46d4ccb2
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73627663"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188511"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>コンプライアンスのために Jamf Pro を Intune と統合する
 
@@ -70,7 +70,7 @@ Intune を Jamf Pro に接続するには:
 2. Intune の Jamf Pro との統合を有効にします。
 3. Jamf Pro 内で条件付きアクセスを構成します。
 
-## <a name="create-an-application-in-azure-active-directory"></a>Azure Active Directory でアプリケーションを作成する
+### <a name="create-an-application-in-azure-active-directory"></a>Azure Active Directory でアプリケーションを作成する
 
 1. [Azure portal](https://portal.azure.com) で、 **[Azure Active Directory]**  >  **[アプリの登録]** に移動し、 **[New registration]\(新規登録\)** を選択します。 
 
@@ -102,15 +102,17 @@ Intune を Jamf Pro に接続するには:
     > [!NOTE]
     > クライアント シークレットの有効期限が切れた場合は、Azure で新しいクライアント シークレットを作成し、Jamf Pro で条件付きアクセス データを更新する必要があります。 Azure では、サービスの中断を防ぐため、古いシークレットと新しいキーの両方をアクティブにすることができます。
 
-## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Intune の Jamf Pro との統合を有効にする
+### <a name="enable-intune-to-integrate-with-jamf-pro"></a>Intune の Jamf Pro との統合を有効にする
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインし、 **[Microsoft Intune]**  >  **[デバイスのポリシー準拠]**  >  **[パートナー デバイスの管理]** に移動します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 
-2. 前の手順で保存したアプリケーション ID を **[Jamf Azure Active Directory App ID]** フィールドに貼り付けることによって、Jamf 用コンプライアンス コネクタを有効にします。
+2. **[テナント管理]**  >  **[コネクタとトークン]**  >  **[パートナー デバイスの管理]** の順に選択します。
 
-3. **[保存]** を選択します。
+3. 前の手順の間に保存したアプリケーション ID を **[Jamf の Azure Active Directory アプリ ID を指定します]** フィールドに貼り付けることによって、 *[Jamf の準拠コネクタ]* を有効にします。
 
-## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Jamf Pro で Microsoft Intune 統合を構成する
+4. **[保存]** を選択します。
+
+### <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Jamf Pro で Microsoft Intune 統合を構成する
 
 1. Jamf Pro で、 **[グローバル管理]**  >  **[条件付きアクセス]** に移動します。 **[macOS Intune Integration]\(macOS Intune 統合\)** タブの **[編集]** ボタンをクリックします。
 
@@ -125,17 +127,22 @@ Intune を Jamf Pro に接続するには:
 Intune と Jamf の統合を構成したら、[Jamf で管理されたデバイスにコンプライアンス ポリシーを適用する](conditional-access-assign-jamf.md)必要があります。
 
 
-## <a name="disconnect-jamf-pro-and-intune"></a>Jamf Pro と Intune を切断する 
+## <a name="disconnect-jamf-pro-and-intune"></a>Jamf Pro と Intune を切断する
 
-Jamf Pro を使用して組織内の Mac を管理しなくなった場合、ユーザーを Intune で管理するには、Jamf Pro と Intune 間の接続を削除する必要があります。 Jamf Pro コンソールを使用して接続を削除します。 
+Jamf Pro を使用して組織内の Mac を管理しなくなった場合、ユーザーを Intune で管理するには、Jamf Pro と Intune 間の接続を削除する必要があります。 Jamf Pro コンソールを使用して接続を削除します。
 
 1. Jamf Pro で、 **[グローバル管理]**  >  **[条件付きアクセス]** に移動します。 **[macOS Intune Integration]\(macOS Intune 統合\)** タブで、 **[編集]** を選択します。
+
 2. **[Enable Intune Integration for macOS]\(macOS の Intune 統合の有効化\)** チェック ボックスをオフにします。
+
 3. **[保存]** を選択します。 Jamf Pro によって構成が Intune に送信され、統合が終了します。
-4. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。 **[Microsoft Intune]**  >  **[デバイスのポリシー準拠]**  >  **[パートナー デバイスの管理]** に移動して、状態が **[終了]** になっていることを確認します。 
+
+4. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+
+5. **[テナント管理]**  >  **[コネクタとトークン]**  >  **[パートナー デバイスの管理]** の順に選択して、状態が **[終了]** になっていることを確認します。
 
    > [!NOTE]
-   > 組織の Mac デバイスは、コンソールに表示されている日付 (3 か月後) に削除されます。 
+   > 組織の Mac デバイスは、コンソールに表示されている日付 (3 か月後) に削除されます。
 
 ## <a name="next-steps"></a>次の手順
 

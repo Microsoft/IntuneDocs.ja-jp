@@ -2,10 +2,10 @@
 title: Microsoft Intune - Azure でネットワークの場所に基づいて Android デバイスをバインドする | Microsoft Docs
 description: Microsoft Intune で Android デバイスのネットワークの場所を作成または構成します。 デバイスのネットワークの場所に基づいて、デバイスを非準拠としてマークすることができます。 デバイスがネットワークの場所の外に移動された場合、会社のリソースへのアクセスをブロックすることができます。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 648ccd889714c2ee4f7ee1fa04301490ad9fd001
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 847ab759b697d402acb07d9c8d83d3a3ef9aaef2
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749453"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058150"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Intune で場所 (ネットワーク フェンス) を使用する
 
@@ -50,7 +50,7 @@ ms.locfileid: "72749453"
 
 ## <a name="create-a-location"></a>場所を作成する
 
-1. Intune で、 **[デバイスのポリシー準拠]**  >  **[場所]**  >  **[作成]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[コンプライアンス ポリシー]**  >  **[場所]**  >  **[作成]** の順に選択します。
 
 2. 次のプロパティを入力します。  
 
@@ -69,8 +69,7 @@ ms.locfileid: "72749453"
 
 ## <a name="create-the-location-compliance-policy"></a>場所のコンプライアンス ポリシーを作成する
 
-[コンプライアンス ポリシーを作成する](create-compliance-policy.md)ときは、 **[プラットフォーム]** として **[Android]** を選択します。 **場所**では、追加した 1 つ以上のネットワークの場所を選択できます。 これらの場所は、デバイス用に作成するネットワーク フェンスの一部です。 
-
+[コンプライアンス ポリシーを作成する](create-compliance-policy.md)ときは、 **[プラットフォーム]** として **[Android]** を選択します。 **場所**では、追加した 1 つ以上のネットワークの場所を選択できます。 これらの場所は、デバイス用に作成するネットワーク フェンスの一部です。
 
 ## <a name="configure-the-actions-for-noncompliance"></a>コンプライアンス違反に対するアクションを構成する
 
@@ -83,5 +82,6 @@ ms.locfileid: "72749453"
 デバイスがご利用の場所に接続されている場合、そのデバイスはポータル サイト アプリに準拠として表示されます。 デバイスがどの場所にも接続されていない場合、そのデバイスは非準拠として表示されます。
 
 ## <a name="next-steps"></a>次の手順
+
 [Intune デバイスのコンプライアンス対応ポリシーの監視](compliance-policy-monitor.md)  
 [Intune のコンプライアンス ポリシーの概要](device-compliance-get-started.md)

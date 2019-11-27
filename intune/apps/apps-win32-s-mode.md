@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/30/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3a9eb45898102e9d5fcde88f69026467255c513
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: d2ab21321b171c8fe8f5f9dab3032507c0e740cf
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445279"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059767"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>S モード デバイスで Win32 アプリを有効にする
 
-[Windows 10 S モード](https://docs.microsoft.com/windows/deployment/s-mode)は、Store アプリのみが実行される、ロックダウンされたオペレーティング システムです。 既定では、Windows S モード デバイスで Win32 アプリをインストールして実行することはできません。 このようなデバイスには、S モード デバイスによる Win32 アプリの実行をロックする 1 つの "*Win 10 S 基本ポリシー*" が含まれています。 ただし、Intune で **S モード補足ポリシー**を作成して使用することにより、Windows 10 S モードのマネージド デバイスに Win32 アプリをインストールして実行できます。 [Windows Defender アプリケーション制御 (WDAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) PowerShell ツールを使用して、Windows S モード用の補足ポリシーを作成できます。 [Device Guard 署名サービス (DGSS)](https://go.microsoft.com/fwlink/?linkid=2095629) または [SignTool.exe](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/signing-policies-with-signtool) を使用して補足ポリシーに署名した後、Intune を使用してポリシーをアップロードおよび配布する必要があります。 別の方法として、組織のコード署名証明書を使用して補足ポリシーに署名することもできますが、DGSS を使用することをお勧めします。 組織のコード署名証明書を使用するインスタンスでは、コード署名証明書がチェーンされているルート証明書が、デバイス上に存在している必要があります。
+[Windows 10 S モード](https://docs.microsoft.com/windows/deployment/s-mode)は、Store アプリのみが実行される、ロックダウンされたオペレーティング システムです。 既定では、Windows S モード デバイスで Win32 アプリをインストールして実行することはできません。 このようなデバイスには、S モード デバイスによる Win32 アプリの実行をロックする 1 つの "*Win 10 S 基本ポリシー*" が含まれています。 ただし、Intune で **S モード補足ポリシー**を作成して使用することにより、Windows 10 S モードのマネージド デバイスに Win32 アプリをインストールして実行できます。 [Microsoft Defender アプリケーション制御 (WDAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) PowerShell ツールを使用して、Windows S モード用に 1 つ以上の補足ポリシーを作成できます。 [Device Guard 署名サービス (DGSS)](https://go.microsoft.com/fwlink/?linkid=2095629) または [SignTool.exe](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/signing-policies-with-signtool) を使用して補足ポリシーに署名した後、Intune を使用してポリシーをアップロードおよび配布する必要があります。 別の方法として、組織のコード署名証明書を使用して補足ポリシーに署名することもできますが、DGSS を使用することをお勧めします。 組織のコード署名証明書を使用するインスタンスでは、コード署名証明書がチェーンされているルート証明書が、デバイス上に存在している必要があります。
 
 Intune で S モード補足ポリシーを割り当てることにより、デバイスで既存の S モード ポリシーに対する例外を作成できます。これにより、アップロードされた対応する署名済みアプリ カタログが許可されます。 ポリシーでは、S モード デバイスで使用できるアプリ (アプリ カタログ) の許可リストが設定されます。
 
@@ -40,7 +40,7 @@ S モードの Windows 10 デバイスで Win32 アプリの実行を許可す�
 
 1. Windows 10 S の登録プロセスの一環として、Intune で S モード デバイスを有効にします。
 2. Win32 アプリを許可する補足ポリシーを作成します。
-   - [Windows Defender アプリケーション制御 (WDAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) ツールを使用して、補足ポリシーを作成できます。 ポリシー内の基本ポリシー ID は、(クライアントでハード コーディングされている) S モード基本ポリシー ID と一致している必要があります。 また、ポリシーのバージョンが以前のバージョンより高いことを確認します。
+   - [Microsoft Defender アプリケーション制御 (WDAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) ツールを使用して、補足ポリシーを作成できます。 ポリシー内の基本ポリシー ID は、(クライアントでハード コーディングされている) S モード基本ポリシー ID と一致している必要があります。 また、ポリシーのバージョンが以前のバージョンより高いことを確認します。
    - DGSS を使用して、補足ポリシーに署名します。 詳しくは、「[Device Guard の署名を使ったコード整合性ポリシーへの署名](https://docs.microsoft.com/microsoft-store/sign-code-integrity-policy-with-device-guard-signing)」をご覧ください。
    - Windows 10 S モード補足ポリシーを作成して、署名済み補足ポリシーを Intune にアップロードします (下記参照)。
 3. Intune で Win32 アプリ カタログを許可します。
