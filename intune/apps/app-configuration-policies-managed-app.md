@@ -18,21 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a31a4777537db6f656dbf9eaf0b30a6e95412a8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 6ddb9ec795b9cc8842cbc6c9d33897b5e0f45e88
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72499766"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74548007"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>デバイス登録なしで管理対象アプリ用アプリ構成ポリシーを追加する
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 登録されていないデバイスでも、Intune App SDK をサポートする管理対象アプリにアプリ構成ポリシーを使用できます。 
-
-> [!NOTE]
-> アプリ構成ポリシーを受信するには、Intune App Protection ポリシーを利用して、アプリをターゲットとする必要があります。 Intune アプリ保護ポリシーの作成の詳細については、「[アプリ保護ポリシーとは](app-protection-policy.md)」をご覧ください。
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 3. **[クライアント アプリ]** ワークロードを選択します。

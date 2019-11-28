@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e0cef06f2f939c996fe59d5b6acb10560125718
-ms.sourcegitcommit: e7798c9faa7b7471d0994de2dcd94c259ee8874c
+ms.openlocfilehash: 752b4ae8440df0ebefbabbf7e5ccb48fed684827
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73931025"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540814"
 ---
 # <a name="microsoft-intune-protected-apps"></a>保護されている Microsoft Intune アプリ  
 
@@ -72,7 +72,6 @@ ms.locfileid: "73931025"
 | **Microsoft Visio Viewer**<p><img alt="Microsoft app - Microsoft Visio Viewer icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-visio-viewer.png" width="100"> | iPhone で外出先から無料で Visio 図面を表示し、対話できます。 Microsoft アカウントでサインインするかメールから Visio の添付ファイルを開いて、iOS 9.0 以降を稼働しているあらゆる iPhone 上で Visio 図面のすばらしいビューをお楽しみください。 また、図面はだれとでも共有でき、各自の Windows デスクトップに Visio がインストールされていなくても、それぞれの iPhone や Web ブラウザー上で Visio 図面を表示できます。| [iOS ストアのリンク](https://itunes.apple.com/us/app/microsoft-visio-viewer-flowcharts-and-diagrams/id1139787983?mt=8) |  
 | **Microsoft Word**<p><img alt="Microsoft app - Microsoft Word icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-word.png" width="100"> | タブレットとスマートフォン上での Word 文書の外観が以前よりも向上しました。 文書を編集または作成するときに、コンピューター、Mac、タブレット、スマートフォン全体で確実に望ましい外観が得られます。 すばやく起動し、使い慣れた Office のルック アンド フィールと直感的なタッチ エクスペリエンスを利用できます。<p><p>このアプリは Android および iOS 用の複数 ID アプリとして使用できます。 | [Android ストアのリンク](https://play.google.com/store/apps/details?id=com.microsoft.office.word)、<br>[iOS ストアのリンク](https://itunes.apple.com/us/app/microsoft-word/id586447913?mt=8) |  
 | **Microsoft Work Folders**<p><img alt="Microsoft app - Microsoft Work Folders icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-work-folders.png" width="100"> | Windows Server の機能であるワーク フォルダーを使って、個々の従業員が企業環境の内外から各自のファイルに安全にアクセスできるようにします。 | [iOS ストアのリンク](https://itunes.apple.com/us/app/work-folders/id950878067?mt=8) | 
-| **Microsoft Whiteboard**<p><img alt="Microsoft app - Microsoft Whiteboard icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-whiteboard.png" width="100"> | Microsoft Whiteboard アプリでは、チームがクラウドを使用して視覚的に想像、作成、および共同作業を行うことができる、自由形式のインテリジェントなキャンバスが提供されます。  すべてのチーム メンバーがどこにいても、リアルタイムでキャンバス上で直接編集およびコメントを行うことができるため、チームワークが強化されます。 すべての作業はクラウド内で安全に維持され、任意のデバイスからバックアップを取得できます。 | [iOS ストアのリンク](https://apps.apple.com/us/app/microsoft-whiteboard/id1352499399) |  
 | **Yammer**<p><img alt="Microsoft app - Yammer icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-yammer.png" width="100"> | Yammer を使って組織のサイロを分割し、チームの共同作業を容易にします。 組織内の適切な人に連絡したり、チーム全体で情報を共有および検索したり、プロジェクトとアイデアを整理したりすることで、より多くの成果を実現します。 | [Android ストアのリンク](https://play.google.com/store/apps/details?id=com.yammer.v1)、<br>[iOS ストアのリンク](https://itunes.apple.com/us/app/yammer/id289559439?mt=8) |  
 
 ## <a name="partner-apps"></a>パートナー アプリ 
