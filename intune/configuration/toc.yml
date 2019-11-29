@@ -14,7 +14,11 @@
     - name: プロファイルを作成する
       href: device-profile-create.md
     - name: Windows の管理用テンプレート
-      href: administrative-templates-windows.md
+      items:
+        - name: Windows の管理用テンプレート
+          href: administrative-templates-windows.md
+        - name: 管理用テンプレートを使用して Office を更新する
+          href: administrative-templates-update-office.md
     - name: iOS と macOS のデバイス機能
       href: device-features-configure.md
     - name: デバイスの設定と機能を制限する
@@ -47,6 +51,8 @@
       items:
         - name: 事前共有キーを使用する Wi-Fi
           href: wi-fi-profile-shared-key.md
+        - name: Wi-Fi のトラブルシューティング
+          href: troubleshoot-wi-fi-profiles.md
     - name: macOS での拡張機能
       href: kernel-extensions-overview-macos.md
     - name: Education Take a Test アプリ
