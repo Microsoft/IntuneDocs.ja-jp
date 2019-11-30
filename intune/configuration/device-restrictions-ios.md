@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/12/2019
+ms.date: 11/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 751ddfae96ebcd190d4d9ce2ca93bfccba972df5
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 6fde277e16043662420864adcc0458e3dccad308
+ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390857"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74465661"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用した機能を許可または制限するための iOS および iPadOS デバイスの設定
 
@@ -244,6 +244,10 @@ ms.locfileid: "74390857"
 ### <a name="settings-apply-to-all-enrollment-types"></a>設定の適用先: すべての登録の種類
 
 - **[アンマネージド アプリで会社のドキュメントを表示]** : **[ブロック]** では、アンマネージド アプリで会社のドキュメントを表示できなくなります。 **[未構成]** (既定値) では、すべてのアプリで会社のドキュメントを表示できるようになります。 たとえば、ユーザーが OneDrive アプリから Dropbox にファイルを保存できないようにしたい場合です。 この設定を **[ブロック]** として構成します。 デバイスがポリシーを受信した後 (たとえば、再起動後)、保存は許可されなくなります。
+
+
+  > [!NOTE]
+  > この設定がブロックされると、アプリストアからインストールされたサードパーティ製のキーボードもブロックされます。
 
   - 管理されていない**アプリで管理対象の連絡先アカウントからの読み取りを許可**する: **[許可]** に設定すると、組み込みの iOS 連絡先アプリなどの管理されていないアプリは、Outlook モバイルアプリなどの管理対象アプリから連絡先情報を読み取り、アクセスできるようになります。 **[未構成]** (既定値) では、デバイス上の組み込みの連絡先アプリから、重複の削除を含む読み取りができなくなります。  
   

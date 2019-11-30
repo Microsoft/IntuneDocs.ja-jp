@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 796439581ca0ae91e788a91ab0bc2ef8f6019626
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 04b284a62076122cec70b6b455151a0377470521
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199337"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540733"
 ---
 # <a name="in-development-for-microsoft-intune---december-2019"></a>Microsoft Intune の開発中の機能 - 2019 年 12 月
 
@@ -181,34 +181,12 @@ IOS デバイスでは、デバイスの制限プロファイルを作成して�
 <!--## Device enrollment-->
 
 <!-- ***********************************************-->
-## <a name="device-management"></a>デバイス管理
+<!--## Device management-->
 
-
-
-### <a name="edit-device-name-value-for-autopilot-devices---2640074----"></a>自動操縦デバイスのデバイス名の値を編集する<!-- 2640074  -->
-Azure AD に参加している自動操縦デバイスのデバイス名の値を編集できるようになります。 これを行うには、 > **Intune**の **[デバイスの登録]**  > [windows の > **登録**] の順に選択し、[ **windows の自動操縦** > **デバイス**] > デバイスを選択 > 右側のウィンドウの **[デバイス名]** の値を変更します。>**保存**します。
-
-### <a name="edit-the-group-tag-value-for-autopilot-devices---4816775---"></a>自動操縦デバイスのグループタグの値を編集する<!-- 4816775 -->
-自動操縦デバイスの**グループタグ**の値は、次のように編集できます。
-
-1. [ **Intune** > **デバイスの登録**] を選択し、[windows の**登録**] > [ **windows 自動** >  > **デバイス**] を選択します。
-1. デバイスを選択します。
-1. 右側のペインで、**グループタグ**の値を変更します。
-1. **[保存]** を選択します。
-
-### <a name="target-macos-user-groups-to-require-jamf-management---4061739---"></a>Jamf の管理を必要とする macOS ユーザーグループをターゲットにする<!-- 4061739 -->
-特定のユーザーグループを対象にして、macOS デバイスを Jamf で管理するように要求することができます。 このターゲット設定を使用すると、Jamf コンプライアンス統合を macOS デバイスのサブセットに適用できますが、他のデバイスは Intune によって引き続き管理されます。 ターゲットを設定することにより、ユーザーのデバイスを1つのモバイルデバイス管理 (MDM) システムから別のデバイスに段階的に移行することもできます。
 
 <!-- ***********************************************-->
-## <a name="intune-apps"></a>Intune アプリ
-
-### <a name="improved-macos-enrollment-experience-in-company-portal---5074349----"></a>ポータルサイトでの macOS の登録エクスペリエンスが向上しました<!-- 5074349  -->
-MacOS の登録エクスペリエンスのポータルサイトには、より簡単な登録プロセスが用意されています。これは、iOS の登録エクスペリエンスのポータルサイトにより密接に連携します。 デバイスのユーザーには次のように表示されます。  
-
-* Sleeker ユーザーインターフェイス。  
-* 強化された登録チェックリスト。  
-* デバイスを登録する方法について、より明確に説明します。  
-* トラブルシューティングオプションの向上。  
+<!--## Intune apps-->
+ 
 
 <!-- ***********************************************-->
 ## <a name="monitoring-and-troubleshooting"></a>監視とトラブルシューティング
@@ -217,10 +195,8 @@ MacOS の登録エクスペリエンスのポータルサイトには、より�
 新しい一元化された監査ログエクスペリエンスでは、すべてのカテゴリの監査ログが1ページに収集されます。 ログをフィルター処理して、探しているデータを取得できるようになります。 監査ログを表示するには、[**テナント管理** > **監査ログ**] にアクセスします。 詳細については、「 [Intune での監査ログの今後の変更」を](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Upcoming-change-to-Audit-logs-in-Intune/ba-p/1015858)参照してください。
 
 <!-- ***********************************************-->
-## <a name="role-based-access-control"></a>ロールベースのアクセス制御
+<!--## Role-based access control-->
 
-### <a name="duplicate-custom-or-built-in-roles---1081938---"></a>カスタムロールまたは組み込みロールの重複<!-- 1081938 -->
-組み込みロールとカスタムロールをコピーすることができます。 これを行うには、[ **Intune** > **ロール** > **すべてのロール**] の順に選択し > **[複製]** > 一覧でロールを選択します。 一意の新しい名前を入力してください。
 
 <!-- ***********************************************-->
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 107624ac5d0c5eab423c0d5051ceca45e41de0b9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8fa63540afa18450f731180da3c2cee729010a65
+ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490758"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74465708"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために Android アプリを準備する
 
@@ -55,8 +55,9 @@ Android 用 Microsoft Intune アプリ ラッピング ツールを使用して�
     > Intune アプリ ラッピング ツールでは、アプリの署名で Google の v2 とまもなくリリースされる v3 の署名スキームはサポートされません。 Intune アプリ ラッピング ツールを使用して .apk ファイルをラッピングした後で、[Google 提供の Apksigner ツール]( https://developer.android.com/studio/command-line/apksigner)を使用することをお勧めします。 そうすると、アプリがエンド ユーザー デバイスで使用されるとき、Android 標準によって適切に起動されるようになります。 
 
 - (省略可能) ラッピング中に追加される Intune MAM SDK クラスにより、アプリが Dalvik Executable (DEX) サイズの上限に達する場合があります。 DEX ファイルは、Android アプリのコンパイルの一部です。 Intune アプリ ラッピング ツールでは、21 以上の最小 API レベルでのアプリのラッピング中に、DEX ファイル オーバーフローが自動的に処理されます ([v.1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases) 現在)。 < 21 の最小 API レベルを持つアプリでは、ラッパーの `-UseMinAPILevelForNativeMultiDex` フラグを使用して min API レベルを上げることをお勧めします。 アプリの最小 API レベルを上げることができない場合は、次のような DEX オーバーフローの回避策を使用できます。 特定の組織では、アプリをコンパイルするユーザー (例: アプリのビルド チーム) と共同作業する必要がある場合があります。
-* ProGuard を使用して、アプリのプライマリ DEX ファイルから使用されていないクラス参照を削除します。
-* Android Gradle プラグインを使用しているお客様については、 [D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html)を無効にしてください。  
+
+  - ProGuard を使用して、アプリのプライマリ DEX ファイルから使用されていないクラス参照を削除します。
+  - Android Gradle プラグインを使用しているお客様については、 [D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html)を無効にしてください。  
 
 ## <a name="install-the-app-wrapping-tool"></a>アプリ ラッピング ツールをインストールする
 

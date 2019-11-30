@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbddb0fcecfd5a0b021346a3a20b3c7e4f696a49
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 901eaafb24cda185540ffc4b1a56484042af74c1
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635331"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547700"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>アプリ保護ポリシーを利用するために基幹業務アプリで準備を行う
 
@@ -83,9 +83,6 @@ Intune SDK の開発チームは、ネイティブの Android、iOS (Obj-C、Swi
 ## <a name="feature-comparison"></a>機能の比較
 
 アプリ SDK とアプリ ラッピング ツールに対して利用できる設定を、次の表に示します。
-
-> [!NOTE]
-> アプリ ラッピング ツールは、スタンドアロンの Intune または Configuration Manager と統合した Intune で使用できます。
 
 |機能|アプリ SDK|アプリ ラッピング ツール|
 |-----------|---------------------|-----------|
