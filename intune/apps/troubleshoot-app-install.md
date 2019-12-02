@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/26/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1067c8ef23add50c921217b9e4b115346be2951
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4783d24e3fc25583a61f88c2e7375d4eed673186
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497048"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563478"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>アプリのインストールに関する問題のトラブルシューティング
 
@@ -32,8 +32,8 @@ Microsoft Intune の MDM で管理されたデバイスでは、アプリのイ�
 
 Intune では、特定のユーザーのデバイスにインストールされているアプリに基づいて、アプリのトラブルシューティングの詳細が提供されます。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-3. **[Intune]** ウィンドウで、 **[トラブルシューティング]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+3. **[トラブルシューティング + サポート]** を選択します。
 4. **[ユーザーの選択]** をクリックして、トラブルシューティングするユーザーを選択します。 **[ユーザーの選択]** ウィンドウが表示されます。
 5. 名前または電子メール アドレスを入力して、ユーザーを選択します。 ウィンドウの下部にある **[選択]** をクリックします。 ユーザーに対するトラブルシューティング情報が、 **[トラブルシューティング]** ウィンドウに表示されます。 
 6. トラブルシューティングするデバイスを、 **[デバイス]** の一覧から選択します。
@@ -57,12 +57,12 @@ Intune では、特定のユーザーのデバイスにインストールされ�
 - アプリがポータルサイトに表示されない場合は、アプリが**使用可能**なインテントで展開されていることと、ユーザーがアプリでサポートされているデバイスの種類を使用してポータルサイトにアクセスしていることを確認します。
 - Windows BYOD デバイスの場合、ユーザーは仕事用アカウントをデバイスに追加する必要があります。
 - ユーザーが AAD デバイスの制限を超えているかどうかを確認します。
-  1. [ [Azure Active Directory デバイスの設定](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId)] に移動します。
+  1. [ [Azure Active Directory デバイスの設定](https://portal.azure.com/#pane/Microsoft_AAD_IAM/DevicesMenupane/DeviceSettings/menuId)] に移動します。
   2. **ユーザーごとのデバイスの最大**数の設定値をメモしておきます。
-  3. [ [Azure Active Directory のユーザー](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers)] に移動します。
+  3. [ [Azure Active Directory のユーザー](https://portal.azure.com/#pane/Microsoft_AAD_IAM/UsersManagementMenupane/AllUsers)] に移動します。
   4. 影響を受けるユーザーを選択し、 **[デバイス]** をクリックします。
   5. ユーザーが設定された制限を超えている場合は、不要になった古いレコードを削除します。
-- IOS DEP デバイスの場合は、ユーザーが Intune デバイスの概要ブレードで **[ユーザーによる登録]** として表示されていることを確認します。 NA と表示されている場合は、Intune ポータルサイトの構成ポリシーを展開します。 詳細については、[ポータル サイト アプリの構成](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices)に関する記事をご覧ください。
+- IOS DEP デバイスの場合、ユーザーが Intune の デバイスの概要 ウィンドウの **ユーザーによる登録** として表示されていることを確認します。 NA と表示されている場合は、Intune ポータルサイトの構成ポリシーを展開します。 詳細については、[ポータル サイト アプリの構成](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices)に関する記事をご覧ください。
 
 ## <a name="win32-app-installation-troubleshooting"></a>Win32 アプリのインストールのトラブルシューティング
 
@@ -75,7 +75,7 @@ Intune 管理拡張機能を使用して展開された Win32 アプリを選択
 
 Win32 アプリのインストール ログを収集するには、まずセクション「[アプリのトラブルシューティングの詳細情報](troubleshoot-app-install.md#app-troubleshooting-details)」に記載されている手順を実行します。 次に、以下の手順に進みます。
 
-1. **[インストールの詳細]** ブレードの **[ログの収集]** オプションをクリックします。
+1. **[インストールの詳細]** ウィンドウの **[ログの収集]** オプションをクリックします。
 
     <image alt="Win32 app installation details - Collect log option" src="./media/troubleshoot-app-install/troubleshoot-app-install-04.png" width="500" />
 
@@ -189,4 +189,4 @@ Win32 アプリのインストール ログを収集するには、まずセク�
 
 - Intune のトラブルシューティングに関する追加情報については、「[トラブルシューティング ポータルを使用して社内のユーザーをサポートする](../fundamentals/help-desk-operators.md)」をご覧ください。 
 - Microsoft Intune の既知の問題について学習します。 詳細については、「 [Intune のお客様の成功](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)」を参照してください。
-- さらに支援が必要ですか。 「[Microsoft Intune のサポートを受ける方法](../fundamentals/get-support.md)」を参照してください。
+- さらに支援が必要ですか? 「[Microsoft Intune のサポートを受ける方法](../fundamentals/get-support.md)」を参照してください。
