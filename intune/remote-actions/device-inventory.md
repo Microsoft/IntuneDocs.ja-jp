@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 918468bf8948ce54082f3fccc0325db07e116966
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 5a3081ece10bb25c6381f4a8f891152433bc9661
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713199"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564379"
 ---
 # <a name="see-device-details-in-intune"></a>Intune でデバイスの詳細を確認する
 
@@ -84,7 +84,7 @@ ms.locfileid: "73713199"
 |ICCID|SIM カードの一意の識別番号である IC カードの識別子。|Windows、iOS、Android|
 |登録日|デバイスが Intune に登録された日時。|Windows、iOS、Android|
 |最終接続日時|デバイスが最後に Intune に接続された日時。|Windows、iOS、Android|
-|アクティベーション ロックのバイパス コード|アクティベーション ロックのバイパスに使用できるコード。|Windows、iOS、Android|
+|アクティベーション ロックのバイパス コード|アクティベーション ロックのバイパスに使用できるコード。|iOS|
 |Azure AD に登録済み|**[はい]** の場合、デバイスが Azure Active Directory に登録されています。|Windows、iOS、Android|
 |Intune 登録済み|**[はい]** の場合、デバイスが Intune に登録されます|Windows、iOS、Android|
 |コンプライアンス|デバイスのコンプライアンスの状態。|Windows、iOS、Android|
