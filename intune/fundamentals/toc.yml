@@ -31,6 +31,8 @@
       href: quickstart-create-custom-role.md
 - name: チュートリアル
   items:
+    - name: Microsoft Endpoint Manager の Intune のチュートリアル
+      href: tutorial-walkthrough-endpoint-manager.md
     - name: Azure portal での Intune のチュートリアル
       href: tutorial-walkthrough-intune-portal.md
 - name: 概念
