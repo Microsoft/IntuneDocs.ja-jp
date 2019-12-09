@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9f9d6626d26e919efbd3a3d8b5dd735ecb7fb62
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 321595a2ce8849b3d150b68f9dcc38dfda6ad940
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199131"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390301"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Intune で SCEP 証明書プロファイルを作成して割り当てる
 
@@ -53,6 +53,9 @@ Simple Certificate Enrollment Protocol (SCEP) 証明書をサポートするよ�
 
    2. Intune を使用して、デバイス所有者の SCEP 証明書プロファイルによってプロビジョニングされた証明書を失効させることはできません。 失効を管理するには、外部プロセスを使用するか、証明機関で直接行います。 
 
+   4. Android Enterprise 専用デバイスの場合、SCEP 認証プロファイルは Wi-Fi ネットワーク構成と認証でのみサポートされます。  Android Enterprise 専用デバイスの SCEP 証明書プロファイルは、VPN またはアプリの認証ではサポートされていません。   
+
+   
 7. **[設定]** を選択し、次の構成を完了します。
 
    - **[証明書の種類]** :

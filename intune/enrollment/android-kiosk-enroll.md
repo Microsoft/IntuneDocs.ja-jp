@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c06fe931bf17b812def3f22b3d9a5d92d9933e2b
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: d4ff9126fec182d1e0d2f3eb75297ede8a632e2e
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709471"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390717"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Android Enterprise 専用デバイスの Intune 登録を設定する
 
@@ -101,6 +101,9 @@ Android Enterprise 専用デバイスの管理を設定するには、次の手�
 ## <a name="enroll-the-dedicated-devices"></a>専用デバイスを登録する
 
 これで[専用デバイスを登録](android-dedicated-devices-fully-managed-enroll.md)できるようになりました。
+
+> [!NOTE]
+> **Microsoft Intune** アプリは、専用デバイスの登録時に自動的にインストールされます。  このアプリは登録に必要であり、アンインストールすることはできません。 
 
 ## <a name="managing-apps-on-android-enterprise-dedicated-devices"></a>Android Enterprise 専用デバイスでアプリを管理する
 

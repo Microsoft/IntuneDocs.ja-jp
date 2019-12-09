@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/20/2019
+ms.date: 1/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84ef86a0b3c0ffbfffde572c9759c62645d57dc5
-ms.sourcegitcommit: 8c651a3ed1f358f19b65206a52f7808282de97c3
+ms.openlocfilehash: 844e93f3a063ae43342d2967cbd544f3ec425c21
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73844785"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410164"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune デバイスのコンプライアンス対応ポリシーの監視
 
@@ -56,7 +57,7 @@ ms.locfileid: "73844785"
 
 このレポートを表示すると、設定別のコンプライアンス状態など、特定のデバイスに適用される特定のコンプライアンス ポリシーとコンプライアンス設定も確認できます。
 
-### <a name="device-compliance-status-report"></a>デバイスのコンプライアンス状態レポート
+### <a name="device-compliance-status"></a>デバイスの準拠の状態
 
 **[デバイスのコンプライアンス状態]** グラフには、Intune に登録されているすべてのデバイスのコンプライアンス状態が表示されます。 デバイスのコンプライアンス状態は、Intune と Azure Active Directory という 2 つの異なるデータベースで保持されます。
 
@@ -119,7 +120,8 @@ ms.locfileid: "73844785"
 
 Intune には、そのデバイスに適用されているデバイス コンプライアンス ポリシー設定の詳細が表示されます。 特定のポリシーを選択すると、ポリシーに含まれるすべての設定が表示されます。
 
-### <a name="devices-without-compliance-policy"></a>コンプライアンス ポリシーのないデバイス
+### <a name="devices-without-compliance"></a>コンプライアンスのないデバイス
+
 *[対応状態]* ページにある *[ポリシーへの準拠]* グラフの隣で **[コンプライアンス ポリシーのないデバイス]** タイルを選択すると、コンプライアンス ポリシーが割り当てられていないデバイスに関する情報を表示できます。
 
 ![コンプライアンス ポリシーのないデバイスが表示されます](./media/compliance-policy-monitor/devices-without-policies.png)
@@ -136,13 +138,13 @@ Intune には、そのデバイスに適用されているデバイス コンプ
 
 - 何らかの種類のコンプライアンス ポリシーが割り当てられているユーザーは、デバイスのプラットフォームに関係なく、このレポートに表示されません。 たとえば、Android デバイスの利用者に Windows コンプライアンス ポリシーを割り当てた場合、そのデバイスはこのレポートに表示されません。 ただし、Intune ではその Android デバイスは準拠と見なされません。 問題を回避するために、デバイス プラットフォームごとにポリシーを作成し、それをすべてのユーザーにデプロイすることをお勧めします。
 
-### <a name="per-policy-device-compliance-report"></a>ポリシーごとのデバイスのコンプライアンス対応レポート
+### <a name="per-policy-device-compliance"></a>ポリシーごとのデバイスのコンプライアンス対応
 
 **[ポリシーへの準拠]** グラフには、ポリシーと、準拠しているデバイスの数、準拠していないデバイスの数が表示されます。 
 
 ![ポリシーの一覧、そのポリシーに準拠しているデバイスの数、準拠していないデバイスの数が表示されます](./media/compliance-policy-monitor/idc-8.png)
 
-## <a name="setting-compliance-report"></a>準拠レポートの設定
+### <a name="setting-compliance"></a>コンプライアンスの設定
 
 **[コンプライアンスの設定]** グラフには、すべてのコンプライアンス ポリシーからのすべてのデバイス コンプライアンス ポリシー設定、ポリシー設定が適用されているプラットフォーム、非準拠デバイスの数が表示されます。
 
@@ -152,6 +154,24 @@ Intune には、そのデバイスに適用されているデバイス コンプ
 > ポリシーは、デバイスと、同じデバイス上のユーザーに割り当てることができます。 デバイスの再起動時など、一部のシナリオでは、ユーザーがサインインする前にデバイスが同期されることがあります。 コンプライアンスによってこのユーザーが評価され、デバイスが非準拠として表示される場合があります。 この動作によって、システム アカウントが非準拠ユーザーとして表示される場合もあります。
 >
 > これは、マルチユーザーの Windows 10 デバイスに関する既知の問題です。 この動作に対するすべての変更または更新は、[開発中](../fundamentals/in-development.md)や[新機能](../fundamentals/whats-new.md)に関するページで発表されます。
+
+## <a name="view-compliance-reports"></a>コンプライアンス レポートを表示する
+
+"*対応状態*" のグラフを使用するだけでなく、管理センターの *[モニター]* ページからコンプライアンス レポートを表示することができます。
+
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+
+2. **[デバイス]**  >  **[モニター]** を選択し、次に **[コンプライアンス]** から表示するレポートを選択します。 次のようなコンプライアンス レポートを使用できます。
+
+   - デバイスのポリシー準拠
+   - 非準拠デバイス
+   - コンプライアンス ポリシーのないデバイス
+   - コンプライアンスの設定
+   - ポリシーへの準拠
+   - Windows 正常性構成レポート
+   - 脅威エージェントの状態
+
+レポートについて詳しくは、「[Intune のレポート](../fundamentals/reports.md)」をご覧ください
 
 ## <a name="view-status-of-device-policies"></a>デバイス ポリシーの状態を表示する
 

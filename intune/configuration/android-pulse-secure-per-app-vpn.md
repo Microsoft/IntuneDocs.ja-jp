@@ -6,30 +6,31 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
-ms.reviewer: chrisbal
+ms.reviewer: tycast
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3683d2aeada791c6ec827e915e02365a336e6045
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 62f418e396c5030a47ea0bcb31914cd4e1069c40
+ms.sourcegitcommit: eb2e420b304c7da9d3be5ef49a676cba66766d2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059671"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74319839"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Microsoft Intune のカスタム プロファイルを使って、Android デバイス用にアプリごとの VPN プロファイルを作成する
 
-[!INCLUDE[azure_portal](../includes/azure_portal.md)]
-
 Intune で管理する、アプリごとの VPN プロファイルを Android 5.0 以降のデバイスに作成できます。 まず、Pulse Secure または Citrix 接続の種類を使用する VPN プロファイルを作成します。 次に、特定のアプリと VPN プロファイルを関連付けるカスタム構成ポリシーを作成します。
+
+> [!NOTE]
+> Android Enterprise デバイスでアプリごとの VPN を使用する目的でもこの手順を利用できます。 ただし、VPN クライアント アプリには[アプリ構成ポリシー](../apps/app-configuration-policies-use-android.md)を使用することをお勧めします。
 
 Android デバイスまたはユーザー グループにポリシーが割り当てられた後、ユーザーは Pulse Secure または Citrix VPN クライアントを開始する必要があります。 その後、VPN クライアントは、指定されたアプリからのトラフィックのみに OpenVPN 接続の使用を許可します。
 
@@ -48,7 +49,7 @@ Android デバイスまたはユーザー グループにポリシーが割り�
     - **[プラットフォーム]** : **[Android]** を選択します。
     - **[プロファイルの種類]** : **[VPN]** を選択します。
 
-4. **[設定]**  >  **[構成]** の順に選択し、[VPN 設定を構成する方法](vpn-settings-configure.md)に関する記事および [Android デバイス用の Intune VPN 設定](vpn-settings-android.md)に関する記事の設定に従って VPN プロファイルを構成します。
+4. **[設定]**  >  **[構成]** の順に選択します。 次に、VPN プロファイルを構成します。 詳細については、[VPN 設定の構成方法](vpn-settings-configure.md)と [Android デバイス向けの Intune VPN 設定](vpn-settings-android.md)に関するページを参照してください。
 
 VPN プロファイルの作成時に指定した**接続名**の値を書き留めてください。 この名前は次の手順で必要になります。 たとえば、**MyAppVpnProfile** です。
 
@@ -75,7 +76,7 @@ VPN プロファイルの作成時に指定した**接続名**の値を書き留
 
 ### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>アプリの一覧をブラックリストまたはホワイトリストとして設定する (省略可能)
 
-**BLACKLIST** 値を使用すると、VPN 接続を使用*できない*アプリの一覧を入力できます。 その他のすべてのアプリは、VPN 経由で接続します。 または、**WHITELIST** 値を使用し、VPN 接続を使用*できる*アプリの一覧を入力できます。 一覧に含まれないアプリは、VPN 経由で接続しません。
+VPN 接続を使用*できない*アプリの一覧を入力するには、**BLACKLIST** 値を使用します。 その他のすべてのアプリは、VPN 経由で接続します。 あるいは、**WHITELIST** 値を使用し、VPN 接続を使用*できる*アプリの一覧を入力します。 一覧に含まれないアプリは、VPN 経由で接続しません。
 
 1. **[OMA-URI のカスタム設定]** ウィンドウで、 **[追加]** を選択します。
 2. 設定の名前を入力します。

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02603651587837211d9a67d7e4bbeb90cb358dc5
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 0c4c995322234a4a2486d8e6c5e9efd88f78dd63
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059572"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390867"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune でのデバイス プロファイルの作成
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 デバイス プロファイルでは、設定を追加および構成してから、組織内のデバイスにこれらの設定をプッシュすることができます。 「[デバイス プロファイルを使用してデバイスに機能と設定を適用する](device-profiles.md)」では、可能な操作を含め、詳細について説明しています。
 
@@ -78,6 +76,7 @@ ms.locfileid: "74059572"
        - [キオスク](kiosk-settings.md)
        - [PKCS 証明書](../protect/certficates-pfx-configure.md)
        - [PKCS のインポートされた証明書](../protect/certificates-imported-pfx-configure.md)
+       - [設定ファイル](preference-file-settings-macos.md)
        - [SCEP 証明書](../protect/certificates-scep-configure.md)
        - [信頼された証明書](../protect/certificates-configure.md)
        - [更新ポリシー](../software-updates-ios.md)
@@ -160,6 +159,32 @@ ms.locfileid: "74059572"
 Intune では、複数の更新サイクルを使用して、構成プロファイルへの更新が確認されます。 登録してすぐのデバイスでは、チェックインの実行頻度が高くなります。 「[ポリシーとプロファイルの更新サイクル](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)に、おおよその更新間隔が一覧表示されています。
 
 ユーザーはいつでもポータル サイト アプリを起動し、デバイスを同期して、プロファイルの更新をすぐに確認できます。
+
+## <a name="recommendations"></a>推奨事項
+
+プロファイルを作成するとき、次の推奨設定を考慮してください。
+
+- それが何であり、何をするものなのかわかるようにポリシーに名前を付けます。 [コンプライアンス ポリシー](../protect/create-compliance-policy.md)と[構成プロファイル](../configuration/device-profile-create.md)にはすべて、省略可能な **[説明]** プロパティがあります。 **[説明]** には、ポリシーの内容を他のユーザーが理解できるよう、具体的な情報を入力します。
+
+  いくつかの構成プロファイルの例を次に示します。
+
+  **プロファイル名**:管理者テンプレート - Windows 10 の全ユーザー用の OneDrive 構成プロファイル  
+  **プロファイルの説明**:Windows 10 の全ユーザー用の最小設定と基本設定が含まれる OneDrive 管理者テンプレート プロファイル。 ユーザーが組織データを個人 OneDrive アカウントと共有することを禁止する目的で user@contoso.com により作成されます。
+
+  **プロファイル名**:iOS の全ユーザー用の VPN プロファイル  
+  **プロファイルの説明**:すべての iOS ユーザーが Contoso VPN に接続するための最小設定と基本設定が含まれる VPN プロファイル。 ユーザー名とパスワードをユーザーに求めず、ユーザーが VPN で自動的に認証されるよう、user@contoso.com によって作成されます。
+
+- Microsoft Edge 設定を構成する、Microsoft Defender のウイルス対策設定を有効にする、iOS 脱獄デバイスをブロックするなど、そのタスク別にプロファイルを作成します。
+
+- マーケティング、販売、IT 管理者などの特定のグループに適用されるプロファイルや、場所や学校のシステム別に適用されるプロファイルを作成します。
+
+- ユーザー ポリシーとデバイス ポリシーを分離します。
+
+  たとえば、[Intune の管理テンプレート](administrative-templates-windows.md)には、数百の ADMX 設定があります。 それらの設定からは、設定がユーザーに適用されるのか、デバイスに適用されるのかがわかります。 管理テンプレートを作成するときは、ユーザー設定をユーザー グループに割り当て、デバイス設定をデバイス グループに割り当てます。
+
+  次の画像は、ユーザーとデバイスに適用できる設定の例です。
+
+  ![ユーザーとデバイスに適用される Intune 管理テンプレート](./media/device-profile-create/setting-applies-to-user-and-device.png)
 
 ## <a name="next-steps"></a>次の手順
 

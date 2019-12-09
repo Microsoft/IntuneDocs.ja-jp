@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,14 +17,14 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ce5db670f0084626f1c053b64679623ccf28eb21
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.openlocfilehash: 13d6a2b9cdc8596c7f5cf81218377754e9412be1
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164650"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390340"
 ---
-# <a name="use-device-encryption-with-intune"></a>Intune でデバイスの暗号化を使用する  
+# <a name="use-device-encryption-with-intune"></a>Intune でデバイスの暗号化を使用する
 
 Intune を使用して、デバイス上のデータを保護する組み込みディスクまたはドライブ暗号化デバイスを管理します。
 
@@ -68,7 +68,7 @@ Intune で管理できる FileVault 設定の詳細については、macOS エ�
 
    自分のデバイスの回復キーを取得する方法について、エンド ユーザーを支援するガイドにメッセージを追加することを検討してください。 この情報は、個人用回復キーの交換の設定を使用するときに、デバイスの新しい回復キーを定期的に自動生成することができるため、エンド ユーザーにとって役立ちます。
 
-   次に例を示します。紛失した、または最近交換した回復キーを取得するには、任意のデバイスから Intune ポータル Web サイトにサインインします。 ポータルで、 *[デバイス]* に移動し、FileVault が有効になっているデバイスを選択し、 *[回復キーを取得する]* を選択します。 現在の回復キーが表示されます。  
+   次に例を示します。紛失した、または最近交換した回復キーを取得するには、任意のデバイスから Intune ポータル Web サイトにサインインします。 ポータルで、 *[デバイス]* に移動し、FileVault が有効になっているデバイスを選択し、 *[回復キーを取得する]* を選択します。 現在の回復キーが表示されます。
 
 7. ご自身のビジネス ニーズに合うよう残りの [FileVault 設定](endpoint-protection-macos.md#filevault)を構成した後、 **[OK]** を選択します。
 
@@ -114,13 +114,37 @@ Windows 10 以降のプラットフォームのエンドポイント保護用の
 
 6. 追加設定の構成を完了したら、プロファイルを保存します。
 
-### <a name="manage-bitlocker"></a>BitLocker の管理  
+### <a name="manage-bitlocker"></a>BitLocker の管理
 
 Intune で BitLocker を使用して Windows 10 デバイスを暗号化すると、Intune の[暗号化レポート](encryption-monitor.md)を表示したときに、BitLocker 回復キーを表示して取得できます。
 
+### <a name="rotate-bitlocker-recovery-keys"></a>BitLocker 回復キーを交換する
+
+Intune デバイス アクションを使用することで、Windows 10 バージョン 1909 以降を実行するデバイスの BitLocker 回復キーをリモートで交換できます。
+
+#### <a name="prerequisites"></a>必要条件
+
+BitLocker 回復キーの交換をサポートするには、デバイスで次の前提条件を満たしている必要があります。
+
+- デバイスで Windows 10 バージョン 1909 以降を実行している必要があります。
+
+- Azure AD 参加デバイスと Hybrid 参加デバイスで、キーの交換のサポートを有効にしておく必要があります。
+
+  - **クライアント主導の回復パスワードの交換**
+
+  この設定は、Windows 10 Endpoint Protection のデバイス構成ポリシーの一部として *[Windows 暗号化]* にあります。
+  
+#### <a name="to-rotate-the-bitlocker-recovery-key"></a>BitLocker 回復キーを交換するには
+
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+
+2. **[デバイス]**  >  **[すべてのデバイス]** の順に選択します。
+
+3. 管理するデバイスの一覧で、デバイスを選択して、 **[詳細]** を選択し、 **[BitLocker キーの交換]** デバイス リモート アクションを選択します。
+
 ## <a name="next-steps"></a>次の手順
 
-[デバイス コンプライアンス](compliance-policy-create-windows.md) ポリシーの作成
+[デバイス コンプライアンス](compliance-policy-create-windows.md) ポリシーを作成します。
 
 暗号化レポートを使用して、次の管理を行います。
 

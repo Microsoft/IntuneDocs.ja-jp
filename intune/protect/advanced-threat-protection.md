@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 889b0a7562f1a663556e955271681e0747aeb3c4
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: c8c756ad2df00a97df7289491daf830e584c0045
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199164"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410208"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Intune で条件付きアクセスによる Microsoft Defender ATP のコンプライアンスを強制する
 
@@ -193,6 +193,12 @@ Microsoft Defender ATP への接続を確立したときに、Intune は Microso
 2. **[デバイス]** 、 **[モニター]** 、 **[ポリシー コンプライアンス]** の順に選択します。
 
 3. 一覧から Microsoft Defender ATP ポリシーを探し、どのデバイスが準拠または非準拠なのかを確認します。
+
+また、同じ場所から非準拠デバイスに対する "*運用*" レポートを使用することもできます。
+
+1. **[デバイス]**  >  **[モニター]**  >  **[非準拠デバイス]** を選択します。
+
+レポートについて詳しくは、「[Intune のレポート](../fundamentals/reports.md)」をご覧ください。
 
 ## <a name="view-onboarding-status"></a>オンボードの状態を表示する
 
