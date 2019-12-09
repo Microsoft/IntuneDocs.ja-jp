@@ -5,22 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: aiwang
+ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53ac86ce88481176ab6f2472b1c0fbae8d3453c1
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 01866bba0ef47ac807b24a66f773e212c76ff7df
+ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199332"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291099"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Intune で Windows 10 ソフトウェア更新プログラムを管理する
 
@@ -208,13 +208,18 @@ Windows Update のポリシーの詳細については、Windows クライアン
 
 - 更新リングで "*一時停止*" を使用する場合 (35 日後に期限切れになります) とは異なり、Windows 10 機能の更新ポリシーは有効なままです。 ユーザーが Windows 10 機能の更新ポリシーを変更または削除するまで、デバイスに新しい Windows バージョンはインストールされません。 ポリシーを編集して新しいバージョンを指定すると、デバイスにその Windows バージョンの機能をインストールできるようになります。
 
-> [!IMPORTANT]
-> "*Windows 10 機能の更新プログラム*" と "*Windows 10 更新リング*" の両方のポリシーを同じデバイスに展開する場合は、更新リングの次の構成について確認してください。
->
-> - **[機能更新プログラムの延期期間 (日数)]** を **0** に設定する必要があります
-> - 更新リングの機能の更新プログラムは "*実行中*" である必要があります。 それらを一時停止しないでください。
+### <a name="limitations-for-windows-10-feature-updates"></a>Windows 10 機能の更新プログラムに関する制限事項
 
-Windows 10 機能の更新プログラムは、Windows Autopilot ではサポートされていません。
+- "*Windows 10 機能の更新プログラム*" ポリシーを展開するデバイスで "*Windows 10 更新リング*" ポリシーも受け取る場合は、更新リングの次の構成について確認してください。
+  - **[機能更新プログラムの延期期間 (日数)]** を **0** に設定する必要があります。
+  - 更新リングの機能の更新プログラムは "*実行中*" である必要があります。 それらを一時停止しないでください。
+
+- "*Windows 10 機能の更新プログラム*" ポリシーは、Autopilot ではサポートされていません。 Intune では、ポリシーは以下に対して展開されません。
+  - Autopilot によってプロビジョニング中のデバイス。
+  - 以前に Autopilot によってプロビジョニングされたデバイス。
+
+  この制限については、今後サポートできるかどうかを確認中です。
+
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Windows 10 機能の更新プログラムを作成して割り当てる
 

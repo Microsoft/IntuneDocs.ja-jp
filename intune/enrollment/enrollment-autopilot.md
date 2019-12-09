@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 454d23038a593829ea8a14929dc435e9f9ddb457
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 8d24a858ec66433e72d63bea922eac0c4072a27c
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709479"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547736"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot を使用して Intune に Windows デバイスを登録する  
 Windows Autopilot を使用すると、Intune でのデバイスの登録が簡単になります。 カスタマイズされたオペレーティング システム イメージのビルドおよび維持は、時間のかかるプロセスです。 また、これらのカスタム オペレーティング システム イメージを新しいデバイスに適用し、エンド ユーザーに提供する前に使用の準備を行う場合にも、時間がかかることがあります。 Microsoft Intune と Autopilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および新しいデバイスへの適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 Intune を使用して Autopilot デバイスを管理する場合、デバイスの登録後にポリシー、プロファイル、アプリなどを管理することができます。 利点、シナリオ、および前提条件の概要については、「[Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)」 (Windows Autopilot の概要) を参照してください。
@@ -49,7 +49,7 @@ Autopilot の展開の種類には次の 4 種類があります。
 
 CSV ファイルの情報をインポートすることにより、Windows Autopilot デバイスを追加できます。
 
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Windows の登録]** 、 **[デバイス]** 、 **[インポート]** の順に選択します。
+1. [Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[Windows]**  >  **[デバイス]** ( **[Windows Autopilot Deployment プログラム]**  >  **[インポート]** の下) を選択します。
 
     ![Windows Autopilot デバイスのスクリーンショット](./media/enrollment-autopilot/autopilot-import-device.png)
 
@@ -65,7 +65,7 @@ CSV ファイルの情報をインポートすることにより、Windows Autop
 
 3. **[インポート]** を選んでデバイス情報のインポートを開始します。 インポートには、数分かかる場合があります。
 
-4. インポートが完了したら、 **[デバイスの登録]**  >  **[Windows の登録]**  >  **[Windows Autopilot]**  >  **[デバイス]**  >  **[同期]** の順に選択します。同期が進行中であることを示すメッセージが表示されます。 同期されているデバイスの数に応じて、プロセスが完了するまで数分かかる場合があります。
+4. インポートが完了したら、 **[デバイス]**  >  **[Windows]**  >  **[Windows の登録]**  >  **[デバイス]** ( **[Windows Autopilot Deployment プログラム]**  >  **[同期]** の下) を選択します。同期が進行中であることを示すメッセージが表示されます。 同期されているデバイスの数に応じて、プロセスが完了するまで数分かかる場合があります。
 
 5. ビューを更新して、新しいデバイスを表示します。
 
@@ -88,7 +88,7 @@ CSV ファイルの情報をインポートすることにより、Windows Autop
 
 ## <a name="create-an-autopilot-deployment-profile"></a>Autopilot Deployment プロファイルを作成する
 Autopilot Deployment プロファイルは、Autopilot デバイスを構成する場合に使用されます。 テナントごとに最大 350 個のプロファイルを作成できます。
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Windows の登録]** 、 **[デプロイ プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
+1. [Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[Windows]**  >  **[Windows の登録]**  >  **[デプロイ プロファイル]**  >  **[プロファイルの作成]** を選択します。
 2. **[基本]** ページ上で、 **[名前]** と省略可能な **[説明]** に入力します。
 
     ![基本ページのスクリーンショット](./media/enrollment-autopilot/create-profile-basics.png)
@@ -129,25 +129,35 @@ Autopilot Deployment プロファイルは、Autopilot デバイスを構成す�
     ![確認ページのスクリーンショット](./media/enrollment-autopilot/create-profile-review.png)
 
 > [!NOTE]
-> Intune は、割り当てられているグループ内の新しいデバイスを定期的に確認し、これらのデバイスにプロファイルを割り当てるプロセスを開始します。 このプロセスの完了には数分かかることがあります。 デバイスをデプロイする前に、このプロセスが完了したことを確認します。  この確認は、 **[デバイスの登録]**  >  **[Windows の登録]**  >  **[デバイス]** で行うことができます。ここで、プロファイルの状態が "未割り当て" から "割り当て中" に変わり、最後に "割り当て済み" になります。
+> Intune は、割り当てられているグループ内の新しいデバイスを定期的に確認し、これらのデバイスにプロファイルを割り当てるプロセスを開始します。 このプロセスの完了には数分かかることがあります。 デバイスをデプロイする前に、このプロセスが完了したことを確認します。  この確認は、 **[デバイス]**  >  **[Windows]**  >  **[Windows の登録]**  >  **[デバイス]** ( **[Windows Autopilot Deployment プログラム]** の下) で行うことができます。ここで、プロファイルの状態が "未割り当て" から "割り当て中" に変わり、最後に "割り当て済み" になります。
 
 ## <a name="edit-an-autopilot-deployment-profile"></a>Autopilot Deployment プロファイルを編集する
 Autopilot Deployment プロファイルを作成したら、そのデプロイ プロファイルの特定の部分を編集することができます。   
 
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** を選択します。
-2. **[Windows の登録]** の **[Windows Autopilot]** セクションで、 **[Deployment Profiles]\(展開プロファイル\)** を選択します。
-3. 編集するプロファイルを選択します。
-4. 左側の **[プロパティ]** をクリックして、デプロイ プロファイルの名前または説明を変更します。 変更したら、 **[保存]** をクリックします。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[Windows]**  >  **[Windows の登録]**  >  **[デプロイ プロファイル]** を選択します。
+2. 編集するプロファイルを選択します。
+3. 左側の **[プロパティ]** を選択して、デプロイ プロファイルの名前または説明を変更します。 変更したら、 **[保存]** をクリックします。
 5. **[設定]** をクリックして、OOBE 設定を変更します。 変更したら、 **[保存]** をクリックします。
 
 > [!NOTE]
 > プロファイルの変更は、そのプロファイルに割り当てられているデバイスに適用されます。 ただし、更新されたプロファイルは、デバイスがリセットされ、再登録されるまで、Intune に既に登録されているデバイスには適用されません。
 
+## <a name="edit-autopilot-device-attributes"></a>オートパイロット デバイス属性の編集
+オートパイロット デバイスをアップロードしたら、デバイスの特定の属性を編集できます。
+
+1. [Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[Windows]**  >  **[Windows の登録]**  >  **[デバイス]** ( **[Windows Autopilot Deployment プログラム]** の下) を選択します。
+2. 編集するデバイスを選択します。
+3. 画面の右側のウィンドウで、デバイス名、グループ タグ、またはユーザー フレンドリ名 (ユーザーを割り当てている場合) を編集できます。
+4. **[保存]** を選択します。
+
+> [!NOTE]
+> デバイス名はすべてのデバイスに対して構成できますが、Hybrid Azure AD 参加済みデプロイでは無視されます。 デバイス名は、Hybrid Azure AD デバイスのドメイン参加プロファイルから引き続き取得されます。
+
 ## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Windows Autopilot の未割り当てデバイスのアラート  <!-- 163236 -->  
 
 アラートには、Autopilot Deployment プロファイルを備えていない Autopilot プログラム デバイスの数が示されます。 アラート内の情報を利用してプロファイルを作成し、未割り当てデバイスに割り当てます。 アラートをクリックすると、Windows Autopilot デバイスの完全な一覧とそれらに関する詳細が表示されます。
 
-未割り当てデバイスのアラートを表示するには、[Azure Portal の Intune](https://aka.ms/intuneportal) で、 **[デバイスの登録]**  >  **[概要]**  >  **[Unassigned devices]\(未割り当てのデバイス\)** の順に選択します。  
+未割り当てデバイスのアラートを表示するには、[Azure portal の Intune](https://aka.ms/intuneportal) で、 **[デバイス]**  >  **[概要]**  >  **[登録のアラート]**  >  **[割り当てられていないデバイス]** を選択します。  
 
 ## <a name="assign-a-user-to-a-specific-autopilot-device"></a>特定の Autopilot デバイスにユーザーを割り当てる
 
@@ -155,7 +165,7 @@ Autopilot Deployment プロファイルを作成したら、そのデプロイ �
 
 前提条件:Azure Active Directory ポータル サイトが構成されていること。Windows 10 バージョン 1809 以降。
 
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]**  >  **[Windows の登録]**  >  **[デバイス]** の順に選択し、デバイスを選び、 **[ユーザーの割り当て]** を選択します。
+1. [Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[Windows]**  >  **[Windows の登録]**  >  **[デバイス]** ( **[Windows Autopilot Deployment プログラム]** の下でデバイスを選択して **[ユーザーの割り当て]** の下) を選択します。
 
     ![ユーザー割り当てのスクリーンショット](./media/enrollment-autopilot/assign-user.png)
 
@@ -171,7 +181,7 @@ Autopilot Deployment プロファイルを作成したら、そのデプロイ �
 
 ## <a name="autopilot-deployments-report"></a>Autopilot 展開レポート
 Windows Autopilot によって展開された各デバイスについての詳細を見ることができます。
-レポートを表示するには、**Intune** に移動し、 **[モニター]** の **[Autopilot Deployment]** を選択します。
+レポートを表示するには、[Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にアクセスし、 **[デバイス]**  >  **[監視]**  >  **[Autopilot Deployment]** を選択します。
 データは、展開後 30 日間使用できます。
 
 
@@ -179,7 +189,7 @@ Windows Autopilot によって展開された各デバイスについての詳�
 
 Intune に登録されていない Windows Autopilot デバイスは削除することができます。
 
-- **[デバイスの登録]**  >  **[Windows の登録]**  >  **[デバイス]** で Windows Autopilot からデバイスを削除します。 削除するデバイスを選んで、 **[削除]** を選択します。 Windows Autopilot デバイスの削除は、完了までに数分かかる場合があります。
+- **[デバイス]**  >  **[Windows]**  >  **[Windows の登録]**  >  **[デバイス]** ( **[Windows Autopilot Deployment プログラム]** の下) で、Windows オートパイロットからデバイスを削除します。 削除するデバイスを選んで、 **[削除]** を選択します。 Windows Autopilot デバイスの削除は、完了までに数分かかる場合があります。
 
 テナントからデバイスを完全に削除するには、Intune デバイス、Azure Active Directory デバイス、および Windows Autopilot デバイスの各レコードを削除する必要があります。 これはすべて Intune から実行できます。
 
@@ -187,7 +197,7 @@ Intune に登録されていない Windows Autopilot デバイスは削除する
 
 2. **[デバイス]**  >  **[Azure AD デバイス]** で Azure Active Directory デバイスのデバイスを削除します。
 
-3. **[デバイスの登録]**  >  **[Windows の登録]**  >  **[デバイス]** で Windows Autopilot からデバイスを削除します。 削除するデバイスを選んで、 **[削除]** を選択します。 Windows Autopilot デバイスの削除は、完了までに数分かかる場合があります。
+3. **[デバイス]**  >  **[Windows]**  >  **[Windows の登録]**  >  **[デバイス]** ( **[Windows Autopilot Deployment プログラム]** の下) で、Windows オートパイロットからデバイスを削除します。 削除するデバイスを選んで、 **[削除]** を選択します。 Windows Autopilot デバイスの削除は、完了までに数分かかる場合があります。
 
 ## <a name="using-autopilot-in-other-portals"></a>他のポータルでの Autopilot の使用
 モバイル デバイス管理に関心がない場合は、他のポータルで Autopilot を使用できます。 他のポータルの使用はオプションですが、ご利用の Autopilot Deployment を管理する場合には Intune のみを使用することをお勧めします。 Intune と別のポータルを使用する場合、Intune では以下の操作を行うことはできません。  

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b346f41f5198a4aabcb05dcdd4b35a8c56977f53
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: c420446d9293ae2a2d1905dcff218056e8e6c875
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059777"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540716"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune の Android アプリ保護ポリシー設定
 この記事では、Android デバイスのアプリ保護ポリシーの設定について説明します。 説明されているポリシーの設定は、Azure Portal の **[設定]** ブレードでアプリ保護ポリシー用に[構成](app-protection-policies.md)することができます。
@@ -66,7 +66,7 @@ ms.locfileid: "74059777"
 
 ## <a name="data-transfer-exemptions"></a>データ転送の除外対象
 
-  Intune アプリ保護ポリシーによってデータ転送が許可される可能性のある除外対象のアプリとプラットフォーム サービスがいくつかあります。 たとえば、Android 上のすべての Intune 管理対象アプリは、モバイル デバイス画面のテキストを読み上げることができるように、Google テキスト読み上げとの間でデータをやり取りできる必要があります。 このリストは、セキュリティで保護された生産性向上に役立つと考えられるサービスとアプリを表しており、変更される可能性があります。
+  Intune アプリ保護ポリシーによってデータ転送が許可される除外対象のアプリとプラットフォーム サービスがいくつかあります。 たとえば、Android 上のすべての Intune 管理対象アプリは、モバイル デバイス画面のテキストを読み上げることができるように、Google テキスト読み上げとの間でデータをやり取りできる必要があります。 このリストは、セキュリティで保護された生産性向上に役立つと考えられるサービスとアプリを表しており、変更される可能性があります。
 
 ### <a name="full-exemptions"></a>完全除外対象
 

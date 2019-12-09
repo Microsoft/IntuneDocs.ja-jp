@@ -18,20 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99d946366724b03ecdf5c47d8ba7b1d820ed3055
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.openlocfilehash: 55fc7149d23336519af76c423862bd81f065b88f
+ms.sourcegitcommit: cdb2a484b059bd8d8c3985cde1e883c24a4c1cad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164732"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239234"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する
 
 Apple の [Device Enrollment Program (DEP)](https://deploy.apple.com) で購入した iOS デバイスを登録するように Intune を設定できます。 DEP によって、多数のデバイスを自動で登録できます。 iPhone や iPad などのデバイスは、ユーザーに直接配布できます。 ユーザーがデバイスの電源をオンにすると、セットアップ アシスタントが構成済み設定で実行され、デバイスが管理対象として登録されます。
 
-DEP 登録を有効にするには、Intune ポータルと Apple DEP ポータルの両方を使います。 管理するために Intune にデバイスを割り当てられるように、シリアル番号のリストまたは注文番号が必要になります。 登録時にデバイスに適用された設定を含む DEP 登録プロファイルを作成します。
-
-なお、DEP 登録は[デバイス登録マネージャー](device-enrollment-manager-enroll.md)では動作しません。
+DEP 登録を有効にするには、Intune ポータルと Apple DEP ポータルの両方を使います。 管理するために Intune にデバイスを割り当てられるように、シリアル番号のリストまたは注文番号が必要になります。 登録時にデバイスに適用された設定を含む DEP 登録プロファイルを作成します。 DEP 登録は、[デバイス登録マネージャー](device-enrollment-manager-enroll.md) アカウントと同時には使用できないことに注意してください。
 
 > [!NOTE]
 > DEP では、エンド ユーザーが削除できないデバイス構成が設定されます。 そのため、[DEP に移行する](../fundamentals/migration-guide-considerations.md)前に、デバイスをワイプして出荷時 (新品) の状態に戻す必要があります。

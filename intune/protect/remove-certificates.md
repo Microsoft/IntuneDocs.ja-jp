@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: lacranda
-ms.openlocfilehash: e00600abb8327623eff4efe8509670779710ab7d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: dbf6d95c8902a95993b972ff7639d4afb4324ac8
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509038"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410172"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Microsoft Intune で SCEP 証明書と PKCS 証明書を削除する
 
@@ -55,14 +55,17 @@ SCEP 証明書は次の場合に取り消され、*その上*、削除されま�
 - 証明書プロファイルがグループ割り当てから削除される。
 
 SCEP 証明書は次の場合に取り消されます。
+
 - 管理者が SCEP プロファイルを変更または更新する。
 
 ルート証明書は次の場合に削除されます。
+
 - ユーザーの登録が解除される。
 - 管理者が[ワイプ](../remote-actions/devices-wipe.md#wipe) アクションを実行する。
 - 管理者が[インベントリからの削除](../remote-actions/devices-wipe.md#retire)アクションを実行する。
 
 SCEP 証明書は次の場合にデバイスに*残ります* (証明書は取り消されず、削除されません)。
+
 - エンドユーザーが Intune ライセンスを失う。
 - 管理者が Intune ライセンスを取り消す。
 - 管理者が Azure AD からユーザーまたはグループを削除する。
@@ -76,11 +79,13 @@ PKCS 証明書は次の場合に取り消され、*その上*、削除されま�
 - 管理者が[インベントリからの削除](../remote-actions/devices-wipe.md#retire)アクションを実行する。
 
 ルート証明書は次の場合に削除されます。
+
 - ユーザーの登録が解除される。
 - 管理者が[ワイプ](../remote-actions/devices-wipe.md#wipe) アクションを実行する。
 - 管理者が[インベントリからの削除](../remote-actions/devices-wipe.md#retire)アクションを実行する。
 
 PKCS 証明書は次の場合にデバイスに*残ります* (証明書は取り消されず、削除されません)。
+
 - エンドユーザーが Intune ライセンスを失う。
 - 管理者が Intune ライセンスを取り消す。
 - 管理者が Azure AD からユーザーまたはグループを削除する。
@@ -101,14 +106,17 @@ SCEP 証明書は次の場合に取り消され、*その上*、削除されま�
 - 証明書プロファイルがグループ割り当てから削除される。
 
 SCEP 証明書は次の場合に取り消されます。
+
 - 管理者が SCEP プロファイルを変更または更新する。
 
 ルート証明書は次の場合に削除されます。
+
 - ユーザーの登録が解除される。
 - 管理者が[ワイプ](../remote-actions/devices-wipe.md#wipe) アクションを実行する。
 - 管理者が[インベントリからの削除](../remote-actions/devices-wipe.md#retire)アクションを実行する。
 
 SCEP 証明書は次の場合にデバイスに*残ります* (証明書は取り消されず、削除されません)。
+
 - エンドユーザーが Intune ライセンスを失う。
 - 管理者が Intune ライセンスを取り消す。
 - 管理者が Azure AD からユーザーまたはグループを削除する。
@@ -122,14 +130,17 @@ PKCS 証明書は次の場合に取り消され、*その上*、削除されま�
 - 管理者が[インベントリからの削除](../remote-actions/devices-wipe.md#retire)アクションを実行する。
 
 PKCS 証明書は次の場合に削除されます。
+
 - 証明書プロファイルがグループ割り当てから削除される。
 
 ルート証明書は次の場合に削除されます。
+
 - ユーザーの登録が解除される。
 - 管理者が[ワイプ](../remote-actions/devices-wipe.md#wipe) アクションを実行する。
 - 管理者が[インベントリからの削除](../remote-actions/devices-wipe.md#retire)アクションを実行する。
 
 PKCS 証明書は次の場合にデバイスに*残ります* (証明書は取り消されず、削除されません)。
+
 - エンドユーザーが Intune ライセンスを失う。
 - 管理者が Intune ライセンスを取り消す。
 - 管理者が Azure AD からユーザーまたはグループを削除する。
@@ -140,10 +151,12 @@ PKCS 証明書は次の場合にデバイスに*残ります* (証明書は取�
 ### <a name="scep-certificates"></a>SCEP 証明書
 
 SCEP 証明書は次の場合に取り消され、*その上*、削除されます。
+
 - ユーザーの登録が解除される。
 - 管理者が[ワイプ](../remote-actions/devices-wipe.md#wipe) アクションを実行する。
 
 SCEP 証明書は次の場合に取り消されます。
+
 - 管理者が[インベントリからの削除](../remote-actions/devices-wipe.md#retire)アクションを実行する。
 - Azure AD グループからデバイスが削除される。
 - 証明書プロファイルがグループ割り当てから削除される。
@@ -151,11 +164,13 @@ SCEP 証明書は次の場合に取り消されます。
 - 管理者が SCEP プロファイルを変更または更新する。
 
 ルート証明書は次の場合に削除されます。
+
 - ユーザーの登録が解除される。
 - 管理者が[ワイプ](../remote-actions/devices-wipe.md#wipe) アクションを実行する。
 - 管理者が[インベントリからの削除](../remote-actions/devices-wipe.md#retire)アクションを実行する。
 
 SCEP 証明書は次の場合にデバイスに*残ります* (証明書は取り消されず、削除されません)。
+
 - エンドユーザーが Intune ライセンスを失う。
 - 管理者が Intune ライセンスを取り消す。
 - 管理者が Azure AD からユーザーまたはグループを削除する。
@@ -169,12 +184,14 @@ PKCS 証明書は次の場合に取り消され、*その上*、削除されま�
 - 管理者が[インベントリからの削除](../remote-actions/devices-wipe.md#retire)アクションを実行する。
 
 ルート証明書は次の場合に削除されます。
+
 - ユーザーの登録が解除される。
 - 管理者が[ワイプ](../remote-actions/devices-wipe.md#wipe) アクションを実行する。
 - 管理者が[インベントリからの削除](../remote-actions/devices-wipe.md#retire)アクションを実行する。
 
 PKCS 証明書は次の場合にデバイスに*残ります* (証明書は取り消されず、削除されません)。
 - エンドユーザーが Intune ライセンスを失う。
+
 - 管理者が Intune ライセンスを取り消す。
 - 管理者が Azure AD からユーザーまたはグループを削除する。
 - 管理者が PKCS プロファイルを変更または更新する。
@@ -190,15 +207,18 @@ PKCS 証明書は次の場合にデバイスに*残ります* (証明書は取�
 ### <a name="scep-certificates"></a>SCEP 証明書
 
 SCEP 証明書は次の場合に取り消され、*その上*、削除されます。
+
 - ユーザーの登録が解除される。
 - 管理者が[インベントリからの削除](../remote-actions/devices-wipe.md#retire)アクションを実行する。
 - Azure AD グループからデバイスが削除される。
 - 証明書プロファイルがグループ割り当てから削除される。
 
 SCEP 証明書は次の場合に取り消されます。
+
 - 管理者が SCEP プロファイルを変更または更新する。
 
 SCEP 証明書は次の場合にデバイスに*残ります* (証明書は取り消されず、削除されません)。
+
 - エンドユーザーが Intune ライセンスを失う。
 - 管理者が Intune ライセンスを取り消す。
 - 管理者が Azure AD からユーザーまたはグループを削除する。
@@ -210,3 +230,6 @@ SCEP 証明書は次の場合にデバイスに*残ります* (証明書は取�
 
 PKCS 証明書は macOS ではサポートされていません。
 
+## <a name="next-steps"></a>次の手順
+
+[認証に証明書を使用する](certificates-configure.md)

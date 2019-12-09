@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 11/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14ff8ad2d41a6f2235c18f155e3a5b865e3a32e4
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 5aca7dbae7a74af399bcbf21aec1dd9dd2d1e851
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199305"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390762"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune のサポートを受ける方法
 
@@ -39,7 +39,7 @@ Intune 管理者は、 **[ヘルプとサポート]** オプションを使用�
 
 ## <a name="help-and-support-experience"></a>ヘルプとサポート エクスペリエンス
 
-Intune のヘルプとサポート エクスペリエンスは、[Microsoft 365 デバイス管理ポータル](https://devicemanagement.microsoft.com)、および Azure portal の Intune のすべてのブレード (またはページ) から使用できます。
+Intune のヘルプとサポート エクスペリエンスは、[Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)、および Azure portal の Intune のすべてのブレード (またはページ) から使用できます。
 
 "*ヘルプとサポート*" のエクスペリエンスは、[Microsoft 365 管理センター](https://admin.microsoft.com/)で表示されるエクスペリエンスと似ており、Azure の他のサービスには残っている以前の "*ヘルプとサポート*" に代わるものです。
 
@@ -48,16 +48,27 @@ Intune のヘルプとサポート エクスペリエンスは、[Microsoft 365 
 
 ### <a name="options-to-access-help-and-support"></a>ヘルプとサポートにアクセスするためのオプション
 
-- **Azure portal で:**
+Intune 用に新しく作成されたテナントを使用するとき、*ヘルプとサポート*を開けず、次のメッセージが返されることがあります。
+
+- *不明な問題が発生しました。ページを更新しても問題が解決されない場合、[M365 管理センター](https://admin.microsoft.com)でサポート案件を作成し、表示されたセッション ID を参照してください。*
+
+エラーの詳細には、*セッション ID* や*拡張機能*の詳細などが含まれます。 
+ 
+この問題は、 https://admin.microsoft.com の **M365 管理センター**または https://portal.office.com の **Office 365 ポータル**で新しいテナント アカウントを認証していない場合に発生します。 この問題を解決するには、メッセージに含まれている *M365 管理センター*のリンクを選択するか、 https://portal.office.com にアクセスしてサインインします。 いずれかの場所での認証後、Intune の*ヘルプとサポート*にアクセスできるようになります。
+
+
+**ヘルプとサポート**にアクセスする:
+
+- **Azure portal で**
 
   - Intune の任意のブレードまたはページから **[ヘルプとサポート]** を選択します。
 
   > [!NOTE]  
   > お使いの Intune のインスタンスが、Azure Government のような政府機関向けのプライベート クラウド (ソブリン クラウドとも呼ばれます) でホストされている場合は、この記事で後述する「[Intune での政府機関向けのプライベート クラウドのサポート](#intune-support-for-private-cloud-for-government)」を参照してください。 Intune の *[ヘルプとサポート]* エクスペリエンスは、来年まで、政府機関向けのプライベート クラウドでは利用できません。
 
-- **デバイス管理ダッシュボードから:**
+- **Microsoft Endpoint Manager 管理センターから**
   - Intune の機能領域を選択した後、 **[ヘルプとサポート]** のオプションを選択します。
-  - デバイス管理ポータルの任意のノードから、 **[?]** アイコン (ポータルの右上隅) を選択し、ドロップダウンを使用してヘルプの必要なサービスを選択します。 **[?]** アイコン (デバイス管理ポータル) では複数のサービスがサポートされており、支援が必要な特定のサービスを選択する必要があります。  
+  - Microsoft Endpoint Manager 管理センターの任意のノードで **?** を選択します。 アイコン (ポータルの右上隅) を選択し、ドロップダウンを使用してヘルプの必要なサービスを選択します。 **[?]** アイコン (Microsoft Endpoint Manager 管理センター) では複数のサービスがサポートされており、支援が必要な特定のサービスを選択する必要があります。  
 
     ![サービスを選択する](./media/get-support/select-a-service.png)
 

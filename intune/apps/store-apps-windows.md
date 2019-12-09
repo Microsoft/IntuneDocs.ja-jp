@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7624800b1f53c6e8dcdf0b37f9e352deb47563a5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c19d14b2f2cfa838d79af1c6fbb3c3500004e56e
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497509"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74548041"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Microsoft Store アプリを Microsoft Intune に追加する
 
@@ -43,7 +43,7 @@ ms.locfileid: "72497509"
     - **名前**: アプリの名前を入力します。この名前は会社のポータルに表示されます。 使用するアプリ名が一意であることを確認してください。 アプリ名が重複している場合、会社のポータルでは 1 つの名前のみがユーザーに表示されます。
     - **説明**:アプリの説明を入力します。 この説明は会社のポータルでユーザーに表示されます。
     - **[発行元]** : アプリの発行元の名前を入力します。
-    - **[アプリ ストアの URL]** : 作成するアプリのアプリ ストア URL を入力します。
+    - **[アプリ ストアの URL]** : 作成するアプリのアプリ ストア URL を入力します。 URL は、目的のアプリの [Microsoft Store](https://store.microsoft.com) を検索することで見つけることができます。 ブラウザーのアドレス バーから URL を使用します。
     - **[カテゴリ]** : (省略可能) 1 つ以上の組み込みアプリ カテゴリ、または作成したカテゴリを選択します。 そうすると、会社のポータルを閲覧するときに、ユーザーがアプリを探しやすくなります。
     - **[会社のポータルでおすすめアプリとして表示します]** : ユーザーがアプリを参照するとき、会社のポータルのメイン ページにアプリ スイートが目立つように表示するには、このオプションを選びます。
     - **[情報 URL]** : このアプリに関する情報が含まれる Web サイトの URL を入力することもできます。 この URL は会社のポータルでユーザーに表示されます。

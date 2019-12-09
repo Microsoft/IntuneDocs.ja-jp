@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61771ce2b6179b2e74a4d13f72794ece97907034
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 9454353ec4f8291d4d8c0001cc977838ecec787b
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502574"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540797"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP を使用して Intune でパートナーの証明機関を追加する
 
@@ -57,7 +57,8 @@ Azure Active Directory (Azure AD) アプリケーションを使って、デバ�
 
 次の図では、サード パーティの SCEP と Intune の統合の詳細なフローを示します。
 
-![サード パーティの SCEP 証明機関を Microsoft Intune に統合する方法](./media/certificate-authority-add-scep-overview/scep-certificate-vendor-integration.png)
+> [!div class="mx-imgBorder"]
+> ![サード パーティの SCEP 証明機関を Microsoft Intune に統合する方法](./media/certificate-authority-add-scep-overview/scep-certificate-vendor-integration.png)
 
 ## <a name="set-up-third-party-ca-integration"></a>サード パーティの CA の統合をセットアップする
 

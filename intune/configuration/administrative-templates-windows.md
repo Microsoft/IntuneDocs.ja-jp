@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9cec7395fc766f6a937e6c43ef3a32fb21610be
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: ca087ec67542102a0cd3111d27a860500b23d3c4
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059986"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547982"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10 テンプレートを使用し、Microsoft Intune でグループ ポリシー設定を構成する
 
@@ -101,3 +101,5 @@ Windows の設定は、Active Directory (AD) のグループ ポリシー (GPO) 
 ## <a name="next-steps"></a>次の手順
 
 テンプレートは作成されましたが、まだ何も行われていません。 次に、[テンプレート (プロファイルとも呼ばれる) を割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
+
+[管理用テンプレートを使用して Office 365 を更新します](administrative-templates-update-office.md)。
