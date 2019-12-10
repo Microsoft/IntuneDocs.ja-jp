@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7242b661668f994208aa36a8f9fc5d350623ccd
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: ba3b145c3a48992b1e8a01ad2cee4be60646df6f
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390385"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781245"
 ---
 # <a name="ios-app-protection-policy-settings"></a>iOS アプリ保護ポリシー設定
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-この記事では、iOS デバイスのアプリ保護ポリシーの設定について説明します。 新しいポリシーを作成する場合、説明されているポリシーの設定は、Azure portal の **[設定]** ブレード上でアプリ保護ポリシー用に[構成](app-protection-policies.md)することができます。
+この記事では、iOS デバイスのアプリ保護ポリシーの設定について説明します。 新しいポリシーを作成する場合、説明されているポリシーの設定は、Azure portal の **[設定]** ウィンドウ上でアプリ保護ポリシー用に[構成](app-protection-policies.md)することができます。
 
 ポリシー設定にはカテゴリが 3 つあります。*データ再配置*、*アクセス要件*、および*条件付き起動*です。 この記事の "***ポリシーで管理されているアプリ***" という用語は、アプリ保護ポリシーで構成されるアプリを示します。
 
@@ -88,7 +88,7 @@ ms.locfileid: "74390385"
 | <ul><ui> **PIN の最小長を選択** | PIN シーケンスの最小桁数を指定します。  | **4**  |
 | <ul><ui> **アクセスに PIN ではなく Touch ID を使用 (iOS 8 以降)** | **[許可]** を選択すると、アプリへのアクセスに、PIN の代わりに [Touch ID](https://support.apple.com/HT201371) を使用できるようになります。    | **許可**  |
 |<ul><ui><ul><ui>**タイムアウト後は PIN で Touch ID をオーバーライドする**|  この設定を使用するには、 **[必要]** を選択し、非アクティブ タイムアウトを構成します。  |**必要**  |
-| <ul><ui><ul><ui><ul><ui> **タイムアウト (非アクティブ分数)** |  時間を分単位で指定します。この時間を過ぎると、指紋の代わりにパスコード、数値のいずれか (構成のとおり) の PIN が使用されます。 このタイムアウト値は、[(非アクティブ分数) 後にアクセス要件を再確認する] に指定した値よりも大きい必要があります。  |**30**  |
+| <ul><ui><ul><ui><ul><ui> **タイムアウト (非アクティブ分数)** |  時間を分単位で指定します。この時間を過ぎると、指紋または顔認証の代わりにパスコード、数値のいずれか (構成のとおり) の PIN がアクセス方法として使用されます。 このタイムアウト値は、[(非アクティブ分数) 後にアクセス要件を再確認する] に指定した値よりも大きい必要があります。  |**30**  |
 | <ul><ui><ul><ui>**アクセスに PIN ではなく Face ID を使用 (iOS 11 以降)** | **[許可]** を選択すると、iOS デバイスで顔認証技術を使用したユーザー認証ができるようになります。 許可すると、Face ID 対応デバイスでは Face ID を使用してアプリにアクセスする必要があります。    | **許可**  |
 | <ul><ui>**PIN をリセットするまでの日数** | **[はい]** を選択すると、ユーザーは設定された期間の経過後にアプリの PIN を変更する必要があります。  <br><br>*[はい]* に設定した場合は、PIN のリセットが要求されるまでの日数を構成します。 |**いいえ**  |  
 | <ul><ui><ul><ui> **日数** | PIN のリセットが要求されるまでの日数を構成します。  |**90**  |

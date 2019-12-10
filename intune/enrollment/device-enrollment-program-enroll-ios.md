@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55fc7149d23336519af76c423862bd81f065b88f
-ms.sourcegitcommit: cdb2a484b059bd8d8c3985cde1e883c24a4c1cad
+ms.openlocfilehash: 39775f3acf1a1c3da7c836afe1699958560d509a
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74239234"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691849"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する
 
@@ -70,7 +70,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>手順 1. トークンを作成するために必要な Intune 公開キー証明書をダウンロードする
 
-1. [Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Apple の登録]** 、 **[Enrollment Program トークン]** 、 **[追加]** の順に選択します。
+1. [Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Enrollment Program トークン]**  >  **[追加]** を選択します。
 
     ![Enrollment Program トークンを取得します。](./media/device-enrollment-program-enroll-ios/image01.png)
 
@@ -125,7 +125,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 > VPP トークンに十分なポータル サイト ライセンスがない場合、またはトークンの有効期限が切れている場合は、デバイスがブロックされます。 トークンの有効期限が近づいている場合、またはライセンスが不足している場合は、Intune でアラートが表示されます。
  
 
-1. [Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Apple の登録]** 、 **[Enrollment Program トークン]** の順に選択します。
+1. [Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Enrollment Program トークン]** を選択します。
 2. トークンを選択して、 **[プロファイル]**  >  **[プロファイルの作成]**  >  **[iOS]** の順に選択します。
 
     ![プロファイルの作成のスクリーンショット。](./media/device-enrollment-program-enroll-ios/image04.png)
@@ -241,7 +241,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 ## <a name="sync-managed-devices"></a>マネージド デバイスを同期する
 デバイスを管理するアクセス許可を Intune に割り当てたので、Intune と Apple を同期して、マネージド デバイスを Azure ポータルの Intune に表示できます。
 
-1. [Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Apple の登録]** 、 **[Enrollment Program トークン]** の順に選択し、一覧からトークンを選択し、 **[デバイス]** 、 **[同期]** の順に選択します。![Enrollment Program デバイス ノードと同期リンクのスクリーンショット。](./media/device-enrollment-program-enroll-ios/image06.png)
+1. [Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]** > **[iOS]** > **[iOS の登録]** > **[Enrollment Program トークン]** の順に選択し、一覧からトークンを選択し、 **[デバイス]** > **[同期]** の順に選択します。![Enrollment Program デバイス ノードと同期リンクのスクリーンショット。](./media/device-enrollment-program-enroll-ios/image06.png)
 
    許容される Enrollment Program トラフィックについての Apple の規約に準拠するために、Intune では次の制限が課せられています。
    - 完全な同期は 7 日に 1 回だけ実行できます。 完全な同期中に、Intune に接続された Apple MDM サーバーに割り当てられているシリアル番号の完全な最新の一覧を Intune がフェッチします。 DEP デバイスが Intune ポータルから削除された場合、DEP ポータルでは Apple MDM サーバーからの割り当てを解除する必要があります。 割り当てが解除されていない場合、完全な同期が実行されるまでは Intune に再インポートされません。   
@@ -254,7 +254,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 >[!NOTE]
 >**[Apple Serial Numbers\(Apple シリアル番号\)]** ブレードでプロファイルにシリアル番号を割り当てることもできます。
 
-1. [Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Apple の登録]** 、 **[Enrollment Program トークン]** の順に選択し、一覧からトークンを選択します。
+1. [Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Enrollment Program トークン]** を選択し、一覧からトークンを選択します。
 2. **[デバイス]** を選択し、リスト内でデバイスを選択し、 **[プロファイルの割り当て]** を選択します。
 3. **[プロファイルの割り当て]** の下でデバイス用のプロファイルを選択し、 **[割り当て]** を選択します。
 
@@ -262,7 +262,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 
 特定のトークンを使用して登録するすべてのデバイスに適用される既定のプロファイルを選択することができます。
 
-1. [Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Apple の登録]** 、 **[Enrollment Program トークン]** の順に選択し、一覧からトークンを選択します。
+1. [Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Enrollment Program トークン]** を選択し、一覧からトークンを選択します。
 2. **[既定のプロファイルの設定]** を選択し、ドロップダウン リストでプロファイルを選択し、 **[保存]** を選択します。 このプロファイルは、トークンに登録されたすべてのデバイスに適用されます。
 
 ## <a name="distribute-devices"></a>デバイスを配布する
@@ -278,7 +278,7 @@ Apple と Intune の間の同期と管理を有効にし、DEP デバイスを�
     ![生成された新しいトークンのスクリーンショット。](./media/device-enrollment-program-enroll-ios/generatenewtoken.png)
 
 4. **[Your Server Token]\(サーバー トークン\)** を選択します。  
-5. [Azure portal の Intune](https://aka.ms/intuneportal) で、 **[デバイスの登録]**  >  **[Apple の登録]**  >  **[Enrollment Program トークン]** 、トークンの順に選択します。
+5. [Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Enrollment Program トークン]** を選択して、トークンを選択します。
     ![Enrollment Program トークンのスクリーンショット。](./media/device-enrollment-program-enroll-ios/enrollmentprogramtokens.png)
 
 6. **[トークンを更新する]** を選択し、元のトークンの作成に使用した Apple ID を入力します。  

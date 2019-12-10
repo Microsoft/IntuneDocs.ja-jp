@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e827075b56d1751e837c25d85c304201bcafa01
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 9c0ca82b434b83937c7962b2676ce3c2a12c1424
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390408"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564017"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Intune で管理されているアプリから会社のデータをワイプする方法
 
@@ -44,8 +44,8 @@ ms.locfileid: "74390408"
 
 ## <a name="create-a-wipe-request"></a>ワイプ要求の作成
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. [Intune] ウィンドウで、 **[クライアント アプリ]**  >  **[アプリの選択的ワイプ]**  >  **[ワイプ要求を作成します]** の順に選択します。<br>
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[アプリ]**  >  **[アプリの選択的ワイプ]**  >  **[ワイプ要求を作成します]** の順に選択します。<br>
    **[ワイプ要求を作成します]** ウィンドウが表示されます。
 3. **[ユーザーの選択]** をクリックし、アプリ データをワイプするユーザーを選択して、 **[ユーザーの選択]** ウィンドウの下部にある **[選択]** をクリックします。
 
@@ -65,7 +65,7 @@ ms.locfileid: "74390408"
 
 ワイプ要求の全体的状態、保留中の要求の数、失敗の数がまとめてある概要レポートを設定できます。 さらに詳しい情報が必要な場合、次の手順を実行します。
 
-1. **[クライアント アプリ]** の **[アプリの選択的ワイプ]** ウィンドウでは、要求をユーザー別にグループ化して一覧表示できます。 ワイプ要求はデバイスで実行されている保護アプリごとに作成されるため、1 ユーザーに対する要求が複数ある場合があります。 状態は、ワイプ要求が **[保留中]** 、 **[失敗]** 、または **[成功]** のいずれかであることを示します。
+1. **[アプリ]**  >  **[アプリの選択的ワイプ]** ウィンドウでは、要求をユーザー別にグループ化して一覧表示できます。 ワイプ要求はデバイスで実行されている保護アプリごとに作成されるため、1 ユーザーに対する要求が複数ある場合があります。 状態は、ワイプ要求が **[保留中]** 、 **[失敗]** 、または **[成功]** のいずれかであることを示します。
 
     ![[アプリの選択的ワイプ] ウィンドウでのワイプ要求の状態のスクリーンショット](./media/apps-selective-wipe/wipe-request-status-1.png)
 

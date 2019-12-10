@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b2f483415d050486ae9979899d9308154a9b131
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 348d1fe2fd236a2af11f7e58dc11530a5ce397bc
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74411360"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564205"
 ---
 # <a name="configure-smime-with-outlook-for-ios"></a>Outlook for iOS で S/MIME を構成する
 
@@ -62,14 +62,14 @@ Outlook for iOS では、S/MIME に使用できるよう、2 つの方法でデ�
 Outlook for iOS で使用できる S/MIME 証明書の自動配信など、エンドポイント マネージャーで Outlook for iOS の S/MIME を構成するには、次の手順にのようにします。
 
 ### <a name="add-the-microsoft-outlook-app"></a>Microsoft Outlook アプリを追加する
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 2. Microsoft Outlook for iOS をアプリ ストアからエンドポイント マネージャーに追加するか、Apple Volume Purchase Program から Outlook for iOS を同期します。 詳しくは、「[iOS ストア アプリを Microsoft Intune に追加する](~/apps/store-apps-ios.md)」または「[Apple Volume Purchase Program で購入した iOS アプリと macOS アプリを Microsoft Intune で管理する方法](~/apps/vpp-apps-ios.md)」をご覧ください。
 
 ### <a name="create-the-outlook-for-ios-smime-configuration-policy"></a>Outlook for iOS の S/MIME 構成ポリシーを作成する
 
 次の手順のようにして、エンドポイント マネージャーで Outlook for iOS の S/MIME ポリシーを作成して構成できます。 これらの設定により、署名証明書と暗号化証明書が自動的に配信されます。
 
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[アプリ]**  >  **[Apps configuration policies]\(アプリ構成ポリシー\)**  >  **[追加]** の順に選択します。<br>
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインし、 **[アプリ]**  >  **[Apps configuration policies]\(アプリの構成ポリシー\)**  >  **[追加]** を選択します。<br>
 **[構成ポリシーの追加]** ウィンドウが表示されます。
 2. 構成ポリシーの **[名前]** と **[説明]** を入力します。
 3. **[デバイス登録の種類]** として **[マネージド デバイス]** を選択します。

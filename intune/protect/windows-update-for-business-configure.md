@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01866bba0ef47ac807b24a66f773e212c76ff7df
-ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
+ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291099"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691768"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Intune で Windows 10 ソフトウェア更新プログラムを管理する
 
@@ -214,9 +214,7 @@ Windows Update のポリシーの詳細については、Windows クライアン
   - **[機能更新プログラムの延期期間 (日数)]** を **0** に設定する必要があります。
   - 更新リングの機能の更新プログラムは "*実行中*" である必要があります。 それらを一時停止しないでください。
 
-- "*Windows 10 機能の更新プログラム*" ポリシーは、Autopilot ではサポートされていません。 Intune では、ポリシーは以下に対して展開されません。
-  - Autopilot によってプロビジョニング中のデバイス。
-  - 以前に Autopilot によってプロビジョニングされたデバイス。
+- Windows 10 の機能更新ポリシーは、Out-of-Box Experience (OOBE) 中には適用できず、デバイスのプロビジョニングの完了後 (通常は 1 日)、最初の Windows Update のスキャン時にのみ適用されます。 また、AutoPilot によってプロビジョニングされたデバイスはポリシーを受け取りません。
 
   この制限については、今後サポートできるかどうかを確認中です。
 
