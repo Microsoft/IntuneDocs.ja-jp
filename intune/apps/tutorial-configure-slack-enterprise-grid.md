@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/26/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86e9d100847641064f472f0c3da0c9ec694f72dd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a3b01c1444b44e3f5c66fc129f78f321c9c9f5aa
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496727"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563397"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>チュートリアル: EMM とアプリ構成に Intune を使用するように Slack を構成する
 
@@ -55,7 +55,7 @@ iOS アプリの Slack for EMM を Intune テナントに追加し、組織の i
 
 ### <a name="add-slack-for-emm-to-intune"></a>Intune に Slack for EMM を追加する
 Intune でマネージド iOS アプリとして Slack for EMM を追加し、Slack ユーザーを割り当てます。 アプリはプラットフォーム固有なので、Android デバイス上の Slack ユーザーには別の Intune アプリを追加する必要があります。
-1. Intune で、 **[クライアント アプリ]**  >  **[アプリ]**  >  **[追加]** を選択します。
+1. Intune で、 **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** を選択します。
 2. [アプリの種類] で、 **[ストア アプリ - iOS]** を選択します。
 3. **[アプリ ストアを検索します]** を選びます。 検索語句「Slack for EMM」を入力してアプリを選択します。
 4. **[アプリ情報]** を選択し、必要に応じて変更を構成します。
@@ -71,7 +71,7 @@ Intune でマネージド iOS アプリとして Slack for EMM を追加し、Sl
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Slack for EMM のアプリ構成ポリシーを追加する
 Slack for EMM iOS のアプリ構成ポリシーを追加する マネージド デバイスのアプリ構成ポリシーはプラットフォーム固有なので、Android デバイス上の Slack ユーザーには別のポリシーを追加する必要があります。
-1. Intune で **[クライアント アプリ]**  >  **[アプリ構成ポリシー]**  >  **[追加]** の順に選択します。
+1. Intune で、 **[アプリ]**  >  **[アプリ構成ポリシー]**  >  **[追加]** を選択します。
 2. [名前] に「Slack app configuration policy test」と入力します。
 3. [デバイス登録の種類] で **[マネージド デバイス]** を選択します。
 4. [プラットフォーム] で **[iOS]** を選択します。
@@ -107,7 +107,7 @@ Slack マネージド Google Play アプリを Intune テナントに追加し�
 
 ### <a name="add-slack-to-intune"></a>Slack を Intune に追加する
 Intune でマネージド Google Play アプリとして Slack を追加し、Slack ユーザーを割り当てます。 アプリはプラットフォーム固有なので、iOS デバイス上の Slack ユーザーには別の Intune アプリを追加する必要があります。
-1. Intune で、 **[クライアント アプリ]**  >  **[アプリ]**  >  **[追加]** を選択します。
+1. Intune で、 **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** を選択します。
 2. [アプリの種類] で **[ストア アプリ - マネージド Google Play]** を選択します。
 3. **[マネージド Google Play - 承認]** を選択します。 検索語句「Slack for EMM」を入力してアプリを選択します。
 4. **[承認]** を選択します。
@@ -122,7 +122,7 @@ Intune でマネージド Google Play アプリとして Slack を追加し、Sl
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Slack のアプリ構成ポリシーを追加する
 Slack のアプリ構成ポリシーを追加します。 マネージド デバイスのアプリ構成ポリシーはプラットフォーム固有なので、iOS デバイス上の Slack ユーザーには別のポリシーを追加する必要があります。
-1. Intune で **[クライアント アプリ]**  >  **[アプリ構成ポリシー]**  >  **[追加]** の順に選択します。
+1. Intune で、 **[アプリ]**  >  **[アプリ構成ポリシー]**  >  **[追加]** を選択します。
 2. [名前] に「Slack app configuration policy test」と入力します。
 3. [デバイス登録の種類] で **[マネージド デバイス]** を選択します。
 4. [プラットフォーム] で、 **[Android]** を選択します。

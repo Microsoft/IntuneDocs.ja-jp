@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af24b5fe33bc1e794529ef5a5ab6975eed4fb9cc
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: b4839340ba1f3bad6f28a1120d882d0f600b1d44
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709922"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563572"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Microsoft Edge for Windows 10 を Microsoft Intune に追加する
 
@@ -34,7 +34,7 @@ ms.locfileid: "73709922"
 > [!NOTE]
 > macOS では、Microsoft Edge *バージョン 77 以降*も利用できます。
 > 
-> ワークプレースに参加させるコンピューターに Microsoft Edge の組み込みのアプリケーション展開を使用することはできません。 組み込みのアプリケーション展開には、Intune 管理拡張機能が必要ですが、これは AAD 参加済みデバイスにのみ存在します。 **クライアント アプリ**にアップロードされた *.msi* を使用すれば、引き続き Microsoft Edge *バージョン 77 以降*を展開することができます。「[Windows の基幹業務アプリを Microsoft Intune に追加する](~/apps/lob-apps-windows.md)」を参照してください。
+> ワークプレースに参加させるコンピューターに Microsoft Edge の組み込みのアプリケーション展開を使用することはできません。 組み込みのアプリケーション展開には、Intune 管理拡張機能が必要ですが、これは AAD 参加済みデバイスにのみ存在します。 **アプリ**にアップロードされた *.msi* を使用すれば、引き続き Microsoft Edge "*バージョン 77 以降*" を展開することができます。「[Windows の基幹業務アプリを Microsoft Intune に追加する](~/apps/lob-apps-windows.md)」を参照してください。
 
 ## <a name="prerequisites"></a>必要条件
 - Windows 10 RS2 以上が必要です。
@@ -43,15 +43,15 @@ ms.locfileid: "73709922"
 ## <a name="configure-the-app-in-intune"></a>Intune でアプリを構成する
 Microsoft Edge バージョン 77 以降を Intune に追加するには、次の手順を行います。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[Intune]** ウィンドウで、 **[クライアント アプリ]**  >  **[アプリ]**  >  **[追加]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** の順に選択します。
 3. **Microsoft Edge バージョン 77 以降**の **[アプリの種類]** リストで、 **[Windows 10]** を選択します。
 
 ## <a name="configure-app-information"></a>アプリ情報の構成
 この手順では、このアプリの展開に関する情報を指定します。 この情報は、Intune でアプリを識別する場合に役立ち、会社のポータルでユーザーがアプリを探す場合にも役立ちます。
 
-1. **[アプリ情報]** をクリックして **[アプリ情報]** ブレードを表示します。
-2. **[アプリ情報]** ブレードで、このアプリの展開に関する情報を指定します。 この情報は、Intune でアプリを識別する場合に役立ち、会社のポータルでユーザーがアプリを探す場合にも役立ちます。
+1. **[アプリ情報]** をクリックして **[アプリ情報]** ウィンドウを表示します。
+2. **[アプリ情報]** ウィンドウで、このアプリの展開に関する情報を指定します。 この情報は、Intune でアプリを識別する場合に役立ち、会社のポータルでユーザーがアプリを探す場合にも役立ちます。
     - **名前**: アプリの名前を入力します。この名前は会社のポータルに表示されます。 すべての名前が一意であることを確認します。 同じアプリ名が 2 つ存在する場合、会社のポータルではそのいずれかのみがユーザーに表示されます。
     - **説明**:アプリの説明を入力します。 たとえば、説明にターゲット ユーザーを一覧表示することができます。
     - **[発行元]** : Microsoft が発行者として表示されます。
@@ -67,8 +67,8 @@ Microsoft Edge バージョン 77 以降を Intune に追加するには、次�
 ## <a name="configure-app-settings"></a>アプリの設定の構成
 この手順では、アプリのインストール オプションを構成します。
 
-1. **[アプリの追加]** ブレードで **[アプリの設定]** を選択します。
-2. **[アプリの設定]** ブレードで、 **[Channel]** リストから **[Beta]** または **[Dev]** を選択して、アプリの展開元となる Edge Channel を決定します。
+1. **[アプリの追加]** ウィンドウで、 **[アプリ設定]** を選びます。
+2. **[アプリ設定]** ウィンドウで、 **[Channel]** リストから **[Beta]** または **[Dev]** を選択して、アプリの展開元となる Edge Channel を決定します。
     - **[Beta]** Channel は、Microsoft Edge の最も安定したプレビュー エクスペリエンスであり、組織内での完全なパイロットに最適な選択肢です。 6 週間ごとにメジャー アップデートが行われ、各リリースには、Dev Channel の学習と改良が組み込まれています。
     - **[Dev]** Channel は、Windows、Windows Server、macOS に関するエンタープライズ フィードバックの準備ができています。 毎週更新され、最新の機能強化と修正が含まれています。
 
@@ -85,7 +85,7 @@ Microsoft Edge バージョン 77 以降を Intune に追加するには、次�
 4.  **[選択]**  >  **[OK]** の順に選択します。
 
 ## <a name="add-the-app"></a>アプリを追加する
-アプリの構成が完了したら、 **[アプリの追加]** ブレードから **[追加]** を選択します。 
+アプリの構成が完了したら、 **[アプリの追加]** ウィンドウから **[追加]** を選択します。 
 
 作成したアプリはアプリの一覧に表示され、選択したグループに割り当てることができるようになります。 
 

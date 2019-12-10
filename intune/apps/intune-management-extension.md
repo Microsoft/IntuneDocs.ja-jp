@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d73d28f34258bce99199731579969604c0a3d97
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: cef30238a4470395ccf58cf4d0619db78dd85b5a
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059722"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563460"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Intune で Windows 10 デバイスに対して PowerShell スクリプトを使用する
 
@@ -62,7 +62,7 @@ Intune 管理拡張機能には次の前提条件があります。 前提条件
     
     - ユーザーが自分の Azure AD アカウントを使用してデバイスにサインインし、Intune に登録している。
 
-  - Configuration Manager と Intune を使用して共同管理しているデバイス。 **[クライアント アプリ]** ワークロードが **[Pilot Intune]\(パイロット Intune\)** または **[Intune]** に設定されていることを確認します。 ガイダンスについては、次の記事を参照してください。 
+  - Configuration Manager と Intune を使用して共同管理しているデバイス。 **[アプリ]** のワークロードが **[パイロット Intune]** または **[Intune]** に設定されていることを確認します。 ガイダンスについては、次の記事を参照してください。 
   
     - [共同管理とは](https://docs.microsoft.com/sccm/comanage/overview) 
     - [クライアント アプリ ワークロード](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
@@ -73,8 +73,8 @@ Intune 管理拡張機能には次の前提条件があります。 前提条件
 
 ## <a name="create-a-script-policy-and-assign-it"></a>スクリプト ポリシーを作成して割り当てる
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[デバイス構成]**  >  **[PowerShell スクリプト]**  >  **[追加]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]**  >  **[PowerShell スクリプト]**  >  **[追加]** を選択します。
 
     ![Microsoft Intune で PowerShell スクリプトを追加および使用する](./media/intune-management-extension/mgmt-extension-add-script.png)
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/07/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14e9aa6e82d7b3e24350de8770f02b0a08695e1a
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.openlocfilehash: c344a518890a2309a7805d61a5675e2646029bbb
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801663"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564042"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Intune を使用して Android デバイス用 Google Chrome を構成する 
 
@@ -36,8 +36,8 @@ Intune アプリ構成ポリシーを使用して、Android デバイス用 Goog
 
 ## <a name="add-the-google-chrome-app-to-intune"></a>Google Chrome アプリを Intune に追加する
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[Intune]** ウィンドウで、 **[クライアント アプリ]**  >  **[アプリ]**  >  **[追加]** を選択し、**managed Google Play** アプリを追加します
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** を選択し、**マネージド Google Play** アプリを追加します。
 3. managed Google Play に移動し、**Google Chrome** を検索して承認します。
 
     ![Google Chrome を検索して承認する](~/apps/media/apps-configure-chrome-android/search.png)

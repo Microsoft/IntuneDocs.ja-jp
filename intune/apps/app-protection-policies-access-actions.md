@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5983742043dca9d07242315d4aaa97de2ead8d6
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: a0440e2d6f5890b20ccf020c40bb1037bcfcae38
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984015"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564135"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Intune でアプリ保護ポリシーの条件付き起動アクションを使用してデータを選択的にワイプする
 
@@ -33,16 +33,16 @@ Intune のアプリ保護ポリシーを利用することで、エンド ユー
 
 ## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>条件付き起動アクションを使用してアプリ保護ポリシーを作成する
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-3. **[Intune]** ウィンドウで、 **[クライアント アプリ]**  >  **[アプリ保護ポリシー]** の順に選択します。
-4. **[ポリシーの追加]** をクリックします (既存のポリシーも編集できます)。 
-5. **[必要な設定の構成]** をクリックし、ポリシーに構成できる設定の一覧を表示します。 
-6. [設定] ウィンドウで下にスクロールすると、 **[条件付き起動]** というタイトルのセクションと編集可能なテーブルが表示されます。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[アプリ]**  >  **[アプリ保護ポリシー]** を選択します。
+3. **[ポリシーの作成]** をクリックし、ポリシー用のデバイスのプラットフォームを選択します。 
+4. **[必要な設定の構成]** をクリックし、ポリシーに構成できる設定の一覧を表示します。 
+5. [設定] ウィンドウで下にスクロールすると、 **[条件付き起動]** というタイトルのセクションと編集可能なテーブルが表示されます。
 
     ![Intune アプリ保護アクセス アクションのスクリーンショット](./media/app-protection-policies-access-actions/apps-selective-wipe-access-actions01.png)
 
-7. **[設定]** を選択し、会社のアプリにサインインする際、一致しなければならない**値**を入力します。 
-8. ユーザーが要件を満たさない場合に講じる**アクション**を選択します。 場合によっては、1 つの設定で複数のアクションを設定できます。 詳細については、「[アプリ保護ポリシーを作成して割り当てる方法](app-protection-policies.md)」を参照してください。
+6. **[設定]** を選択し、会社のアプリにサインインする際、一致しなければならない**値**を入力します。 
+7. ユーザーが要件を満たさない場合に講じる**アクション**を選択します。 場合によっては、1 つの設定で複数のアクションを設定できます。 詳細については、「[アプリ保護ポリシーを作成して割り当てる方法](app-protection-policies.md)」を参照してください。
 
 ## <a name="policy-settings"></a>ポリシー設定 
 

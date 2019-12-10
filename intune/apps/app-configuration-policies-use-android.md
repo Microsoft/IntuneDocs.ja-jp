@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9561c50e21a9667ccec3f9de3627e7a933cf0736
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 80d6068a17e1d278f9226e26c9efab24d597e52e
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584993"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564260"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>マネージド Android Enterprise デバイス用にアプリ構成ポリシーを追加する
 
@@ -34,7 +34,7 @@ Microsoft Intune でのアプリ構成ポリシーによって、マネージド
 > [!NOTE]  
 > アプリ構成をサポートしていないアプリもあります。 アプリ上でアプリ構成ポリシーがサポートされているかどうかを確認するには、アプリの開発者にお問い合わせください。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) で、 **[クライアント アプリ]**  >  **[アプリ構成ポリシー]**  >   **[追加]** の順に選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) で、 **[アプリ]**  >  **[アプリ構成ポリシー]**  >   **[追加]** を選択します。
 2. 次のプロパティを入力します。
 
     - **名前**: ポリシーのわかりやすい名前を入力します。 後で簡単に識別できるよう、ポリシーに名前を付けます。 たとえば、適切なポリシー名は、**Android Enterprise Nine Work app policy for entire company (企業全体での Android Enterprise Nine Work アプリ ポリシー)** となります。
@@ -110,7 +110,7 @@ Android デバイス機能にアクセスするために、アプリのアクセ
 
 たとえば、アプリでは、デバイスのマイクを使用します。 ユーザーは、マイクを使用するためのアクセス許可をアプリに付与するように求められます。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) で、 **[クライアント アプリ]**  >  **[アプリ構成ポリシー]**  >   **[追加]** の順に選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) で、 **[アプリ]**  >  **[アプリ構成ポリシー]**  >   **[追加]** を選択します。
 2. 次のプロパティを入力します。
 
     - **名前**: ポリシーのわかりやすい名前を入力します。 後で簡単に識別できるよう、ポリシーに名前を付けます。 たとえば、適切なポリシー名は、**Android Enterprise prompt permissions app policy for entire company (Android Enterprise による企業全体でのアプリ ポリシーへのアクセス許可の要求)** となります。

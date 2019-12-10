@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82a2414e7458d1eb0ce48c5afb8ac1bc9bddb636
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: a92699ccce4f0b2590e526b3442cd45bfda6407c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712919"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563601"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>組み込みアプリを Microsoft Intune に追加する
 
@@ -37,24 +37,20 @@ ms.locfileid: "73712919"
 ## <a name="add-a-built-in-app"></a>組み込みアプリを追加する
 
 Microsoft Intune の使用可能なアプリに組み込みアプリを追加するには、次の手順を実行します。
-1. Azure ポータルにサインインします。
-2. Microsoft Intune ウィンドウを表示するには、 **[その他のサービス]**  >  **[監視 + 管理]**  >  **[Intune]** の順に選択します。
-3. **[Intune]** ウィンドウで、 **[クライアント アプリ]** を選択します。
-4. **[クライアント アプリ]** ウィンドウで、 **[管理]** の **[アプリ]** を選択します。
-5. **[追加]** を選択します。
-6. **[追加]** アプリ ウィンドウの **[アプリの種類]** 一覧で **[組み込みアプリ]** を選択します。
-7. **[アプリの選択]** を選択します。
-8. **[組み込みアプリ]** ウィンドウで、含めるアプリケーションを選択します。
-9. **[アプリの追加]** ウィンドウで **[追加]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** の順に選択します。
+3. **[追加]** アプリ ウィンドウの **[アプリの種類]** 一覧で **[組み込みアプリ]** を選択します。
+4. **[アプリの選択]** を選択します。
+5. **[組み込みアプリ]** ウィンドウで、含めるアプリケーションを選択します。
+6. **[アプリの追加]** ウィンドウで **[追加]** を選択します。
 
 
 ## <a name="configure-app-information"></a>アプリ情報の構成
 
 組み込みアプリに関する情報を変更できます。 この情報は、アプリを Intune で識別する場合と、ユーザーが会社のポータルでアプリを探す場合に役立ちます。
-1. **[クライアント アプリ] - [アプリ]** ウィンドウで、変更する組み込みアプリを選択します。  
-    組み込みアプリのウィンドウが表示されます。
-2. **[管理]** の **[プロパティ]** オプションを選択します。
-3. 組み込みアプリ情報を変更するには、 **[構成]** オプションを選択します。
+1. **[アプリ]**  >  **[すべてのアプリ]** を選択し、変更する組み込みアプリを選択します。  
+   組み込みアプリのウィンドウが表示されます。
+2. **[プロパティ]**  >  **[構成]** を選択します。
 4. **[アプリ情報]** ウィンドウでは、以下の情報を変更できます。
     - **名前**: 組み込みアプリの名前を入力します。この名前は会社のポータルに表示されます。 使用する名前はすべて一意にします。 同じアプリ名が 2 つ存在する場合、会社のポータルではそのいずれかのみがユーザーに表示されます。
     - **説明**:アプリの説明を入力します。 

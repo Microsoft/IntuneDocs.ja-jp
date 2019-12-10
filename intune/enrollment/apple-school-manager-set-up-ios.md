@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a62a048ebb15bac620ad9aad57ed3903e9568cf
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 1c574714b4bd4f748c2dbe898555de35b0e03190
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712983"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691825"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager での iOS デバイス登録の設定
 
@@ -48,9 +48,9 @@ Apple School Manager で企業所有の iOS デバイスを登録するには、
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-an-apple-token"></a>手順 1. Apple トークンを作成するために必要な Intune 公開キー証明書をダウンロードする
 
-1. [Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Apple の登録]** 、 **[Enrollment Program トークン]** 、 **[追加]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Enrollment Program トークン]**  >  **[追加]** を選択します。
 
-   ![Enrollment Program トークンを取得します。](./media/apple-school-manager-set-up-ios/image01.png)
+   ![Enrollment Program トークンを取得します。](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. **[Enrollment Program トークン]** ブレードで、 **[公開キーをダウンロードします]** を選択して、暗号化キー (.pem) ファイルをダウンロードし、ローカルに保存します。 .pem ファイルは、Apple School Manager ポータルから信頼関係証明書を要求するために使用します。
      ![[Enrollment Program トークン] ブレード](./media/apple-school-manager-set-up-ios/image02.png)
@@ -81,7 +81,7 @@ Apple School Manager で企業所有の iOS デバイスを登録するには、
 ## <a name="create-an-apple-enrollment-profile"></a>Apple 登録プロファイルの作成
 これでトークンがインストールされました。Apple School デバイスの登録プロファイルを作成することができます。 デバイス登録プロファイルで、デバイス グループに対して登録時に適用する設定を定義します。
 
-1. [Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Apple の登録]** 、 **[Enrollment Program トークン]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Enrollment Program トークン]** を選択します。
 2. トークンを選択し、 **[プロファイル]** を選択し、 **[プロファイルの作成]** を選択します。
 
 3. **[プロファイルの作成]** で、管理用にプロファイルの **[名前]** と **[説明]** を入力します。 ユーザーには、これらの詳細は表示されません。 この **[名前]** フィールドを使用して、Azure Active Directory で動的グループを作成できます。 この登録プロファイルに対応するデバイスを割り当てるために enrollmentProfileName パラメーターを定義する場合はプロファイル名を使用します。 Azure Active Directory の動的グループの詳細については[こちら](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#rules-for-devices)を参照してください。
@@ -155,7 +155,7 @@ Apple School Manager で企業所有の iOS デバイスを登録するには、
 ## <a name="connect-school-data-sync"></a>School Data Sync の接続
 (省略可能) Apple School Manager では、Microsoft School Data Sync (SDS) を使用した Azure Active Directory (AD) へのクラス リスト データの同期がサポートされています。 SDS と同期できるのは 1 つのトークンのみです。 School Data Sync で別のトークンを設定した場合、SDS を含んでいる以前のトークンから SDS が削除されます。 新しい接続によって現在のトークンが置き換えられます。 SDS を使用して学校のデータを同期するには、次の手順を完了します。
 
-1. [Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Apple の登録]** 、 **[Enrollment Program トークン]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Enrollment Program トークン]** を選択します。
 2. Apple School Manager トークンを選択し、 **[School Data Sync]** を選択します。
 3. **[School Data Sync]** で、 **[許可]** を選択します。 この設定により、Intune は Office 365 で SDS に接続できます。
 4. Apple School Manager と Azure AD の間の接続を有効にするには、 **[Microsoft School Data Sync の設定]** を選択します。[School Data Sync の設定方法](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1)について詳しく学びます。
@@ -165,7 +165,7 @@ Apple School Manager で企業所有の iOS デバイスを登録するには、
 
 Intune に Apple School Manager デバイスを管理するためのアクセス許可を割り当てたら、Intune と Apple サービスを同期して、Intune でマネージド デバイスを表示させます。
 
-[Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Apple の登録]** 、 **[Enrollment Program トークン]** の順に選択し、一覧からトークンを選択し、 **[デバイス]** 、 **[同期]** の順に選択します。![Enrollment Program デバイス ノードと同期リンクのスクリーンショット。](./media/apple-school-manager-set-up-ios/image06.png)
+[Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Enrollment Program トークン]** を選択します。一覧からトークンを選択し、 **[デバイス]**  >  **[同期]** を選択します。![Enrollment Program デバイス ノードと同期リンクのスクリーンショット。](./media/apple-school-manager-set-up-ios/image06.png)
 
 許容される Enrollment Program トラフィックについての Apple の規約に準拠するために、Intune では次の制限が課せられています。
 - 完全な同期は 7 日に 1 回だけ実行できます。 Intune は、完全な同期中に、Intune に割り当てられているすべての Apple シリアル番号を更新します。 前回の完全同期の 7 日以内に完全同期が試みられると、Intune では、Intune にまだ一覧表示されていないシリアル番号のみが更新されます。
@@ -178,7 +178,7 @@ Intune に Apple School Manager デバイスを管理するためのアクセス
 ## <a name="assign-a-profile-to-devices"></a>デバイスにプロファイルを割り当てる
 Intune によって管理される Apple School Manager デバイスを登録する前に、デバイスに登録プロファイルを割り当てる必要があります。
 
-1. [Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Apple の登録]** 、 **[Enrollment Program トークン]** の順に選択し、一覧からトークンを選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Enrollment Program トークン]** を選択し、一覧からトークンを選択します。
 2. **[デバイス]** を選択し、リスト内でデバイスを選択し、 **[プロファイルの割り当て]** を選択します。
 3. **[プロファイルの割り当て]** の下でデバイス用のプロファイルを選択し、 **[割り当て]** を選択します。
 

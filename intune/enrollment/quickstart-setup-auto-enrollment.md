@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78620818bfd13f0292e159c6a3670b5e3af53dab
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: e9649a84650a555e964cd9200ed2295fee5efb9a
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709505"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562308"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>クイック スタート:Windows 10 デバイスの自動登録を設定する
 
@@ -41,7 +41,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 この例では、会社のデバイスと個人所有デバイスの両方を自動登録できるように MDM 登録を使用します。 無料の Azure Active Directory Premium サブスクリプションにサインアップします。
 
-1. Azure で、 **[Azure Active Directory]**  >  **[モビリティ (MDM および MAM)]** の順に選択します。
+1. [Azure portal](https://portal.azure.com) で、 **[Azure Active Directory]**  >  **[モビリティ (MDM および MAM)]** を選択します。
 2. **[無料の Premium 評価版を入手してこの機能を使用する]** を選択します。 このオプションを選択すると、Azure Active Directory の無料 Premium 試用版を使用して自動登録できます。 
 
     ![Azure Active Directory 無料 Premium 評価版を選択する](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3afd51fe27feb0c058ba703ed11e4a15a5ea2f0d
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: d09857c4e5b63947a6e3b3140f673f0887f7f920
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813413"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563414"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>クイック スタート:クライアント アプリの追加および割り当て
 
@@ -44,7 +44,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 Intune でそのアプリの側面を管理できるように、アプリを追加することができます。 
 
 Intune にアプリを追加するには、次の手順に従います。
-1. [Intune](https://aka.ms/intuneportal) で、 **[クライアント アプリ]**  >  **[アプリ]**  >  **[追加]** を選択します。 
+1. [Intune](https://aka.ms/intuneportal) で、 **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** を選択します。 
 2. **[アプリの種類]** ドロップダウン ボックスの **[Office 365 スイート]** セクションで **[Windows 10]** を選択します。
 3. **[アプリ スイートの構成]** を選択し、Intune ユーザーに割り当てる Office アプリを選択します。
 4. **[OK]** をクリックし、既定で選択されているアプリを受け入れます。
@@ -68,9 +68,9 @@ Intune にアプリを追加するには、次の手順に従います。
 > このクイック スタートは、このシリーズの前のクイック スタートに基づいています。 詳細については、このクイック スタートの「[Prerequisites](quickstart-add-assign-app.md#prerequisites)」(前提条件) を参照してください。
 
 グループにアプリを割り当てるには、次の手順に従います。
-1. [Intune](https://aka.ms/intuneportal) で、 **[クライアント アプリ]**  >  **[アプリ]** を選択します。 
+1. [Intune](https://aka.ms/intuneportal) で、 **[アプリ]**  >  **[すべてのアプリ]** を選択します。 
 2. グループに割り当てるアプリを選びます。
-3. **[割り当て]**  >  **[グループの追加]** をクリックし、 **[グループの追加]** ブレードを表示します。
+3. **[割り当て]**  >  **[グループの追加]** をクリックして、 **[グループの追加]** ウィンドウを表示します。
 4. **[割り当ての種類]** ドロップダウン ボックスで **[Available for enrolled devices]** \(登録済みデバイスで利用可能\) を選択します。 
 5. **[組み込まれたグループ]**  >  **[含めるグループを選択]**  >  **[Contoso テスト担当者]** の順に選択します。
 6. **[選択]**  >  **[OK]**  >  **[OK]**  >  **[保存]** をクリックして、グループを割り当てます。

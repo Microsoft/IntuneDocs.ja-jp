@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30a1c9b1fddaa59d633c8dc969063b26b25097de
-ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
+ms.openlocfilehash: 5f12feca6d43a4194e7c60639a93747c7f389f93
+ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74098186"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74558207"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows デバイスの登録をセットアップする
 
@@ -102,7 +102,7 @@ EnterpriseEnrollment-s.manage.microsoft.com は、登録用の優先 FQDN です
 CNAME の構成以外の方法を使用することは、サポートされていません。 たとえば、プロキシ サーバーを使用して enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc を enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc または manage.microsoft.com/EnrollmentServer/Discovery.svc のいずれかにリダイレクトすることは、サポートされていません。
 
 **手順 2: CNAME を確認する** (省略可能)<br>
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Windows の登録]** 、 **[CNAME 検証]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[Windows]**  >  **[Windows の登録]**  >  **[CNAME 検証]** を選択します。
 2. **[ドメイン]** ボックスに、企業の Web サイトを入力し、 **[テスト]** を選択します。
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>Windows デバイスの登録方法をユーザーに通知する

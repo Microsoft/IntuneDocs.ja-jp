@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 11/26/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bcda312274e78d327a3a515eb6c95454e38c96f1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1800fa91ed5650fd57a31d24fdb3767a60dc5816
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507128"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563791"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>クイック スタート:アプリ保護ポリシーを作成して割り当てる
 
@@ -43,7 +43,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 次の手順に従って、アプリ保護ポリシーを作成します。
 
-1. [Intune](https://aka.ms/intuneportal) で、 **[クライアント アプリ]**  >  **[アプリ保護ポリシー]**  >  **[ポリシーの作成]** の順に選択します。 
+1. [Intune](https://aka.ms/intuneportal) で、 **[アプリ]**  >  **[アプリ保護ポリシー]**  >  **[ポリシーの作成]** を選択します。 
 2. 次の詳細を入力します。 
 
     - **名前**: *Windows 10 コンテンツの保護*
@@ -67,7 +67,7 @@ Intune でアプリ保護ポリシーを作成したら、グループに割り�
 
 アプリ保護ポリシーは、次の手順で割り当てます。
 
-1. [Intune](https://aka.ms/intuneportal) で、 **[Intune]**  >  **[クライアント アプリ]**  >  **[アプリ保護ポリシー]** の順に選択します。 
+1. [Intune](https://aka.ms/intuneportal) で、 **[Intune]**  >  **[アプリ]**  >  **[アプリ保護ポリシー]** を選択します。 
 2. 前に作成したアプリ保護ポリシーを選択します。 このクイック スタートでは、そのポリシーは「**Windows 10 コンテンツの保護**」になります。
 3. **[割り当て]** を選択します。
 4. **[含める]** タブで **[含めるグループを選択]** を選択します。

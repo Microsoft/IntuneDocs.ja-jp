@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/19/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 890709ccf176f2b0cc6c4a3af986d1bce642572d
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: e4761e2565402b4c3cdc993ff89cbedea8273609
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754411"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563891"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Edge と Microsoft Intune を使用して Web アクセスを管理する
 
@@ -58,15 +58,15 @@ Microsoft Edge が Intune ポリシーの対象ではない場合、ユーザー
 Azure AD の条件付きアクセスを使って、Microsoft Edge を介してのみ、会社のコンテンツにアクセスするようにユーザーをリダイレクトすることができます。 これにより、Azure AD に接続されている Web アプリへのモバイル ブラウザーからのアクセスは、ポリシーで保護された Microsoft Edge に制限されます。 これにより、Safari や Chrome などの他の保護されていないブラウザーからのアクセスはブロックされます。 条件付きアクセスは、Exchange Online や SharePoint Online のような Azure リソース、Microsoft 365 管理センター、および [Azure AD アプリケーション プロキシ](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)を介して外部ユーザーに公開されているオンプレミス サイトにも適用できます。
 
 Azure AD に接続された Web アプリで iOS および Android 上の Microsoft Edge が使われるように制限するには:
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 2. Intune ノードで、 **[条件付きアクセス]**  >  **[新しいポリシー]** の順に選択します。
-3. ブレードの **[アクセス制御]** セクションから **[許可]** を選びます。
+3. ウィンドウの **[アクセス制御]** セクションから **[許可]** を選択します。
 4. **[承認されたクライアント アプリが必要です]** を選択します。
-5. **[許可]** ブレードで **[選択]** を選びす。 このポリシーは、Intune Managed Browser アプリにのみアクセス可能にするクラウド アプリに割り当てる必要があります。
+5. **[許可]** ウィンドウで **[選択]** を選択します。 このポリシーは、Intune Managed Browser アプリにのみアクセス可能にするクラウド アプリに割り当てる必要があります。
 
     ![条件付きアクセス ポリシー - 許可のスクリーンショット](./media/manage-microsoft-edge/manage-microsoft-edge-01.png)
 
-6. [割り当て] セクションで、 **[条件]**  >  **[クライアント アプリ]** の順に選択します。 **[クライアント アプリ]** ブレードが表示されます。
+6. [割り当て] セクションで、 **[条件]**  >  **[アプリ]** を選択します。 **[アプリ]** ウィンドウが表示されます。
 7. **[構成]** で **[はい]** を選択して、特定のクライアント アプリにポリシーを適用します。
 8. **[ブラウザー]** がクライアント アプリとして選択されていることを確認します。
 
@@ -97,29 +97,29 @@ SSO では、iOS デバイス用の Microsoft Authenticator アプリ、また�
 
 Microsoft Edge 用のアプリの構成を作成するには:
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[クライアント アプリ]**  >  **[アプリ構成ポリシー]**  >  **[追加]** の順に選択します。
-3. **[構成ポリシーの追加]** ブレードで **[名前]** を入力し、必要に応じてアプリ構成設定の **[説明]** を入力します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[アプリ]**  >  **[アプリ構成ポリシー]**  >  **[追加]** を選択します。
+3. **[構成ポリシーの追加]** ウィンドウで **[名前]** を入力し、必要に応じてアプリ構成設定の **[説明]** を入力します。
 4. **[デバイス登録の種類]** には、 **[管理対象アプリ]** を選択します。
-5. **[必要なアプリの選択]** を選択します。 その後、 **[対象アプリ]** ブレードで、iOS、Android、またはその両方に対して、 **[Managed Browser]** または **[Edge]** を選択します。
-6. **[OK]** を選択して、 **[構成ポリシーの追加]** ブレードに戻ります。
-7. **[構成設定]** を選択します。 **[構成]** ブレードで、Microsoft Edge の構成を指定するためのキーと値のペアを定義します。 定義できる別のキーと値のペアについては、この記事の後半のセクションで説明します。
+5. **[必要なアプリの選択]** を選択します。 その後、 **[対象アプリ]** ウィンドウで、iOS、Android、またはその両方に対して、 **[Managed Browser]** または **[Edge]** を選択します。
+6. **[OK]** を選択して、 **[構成ポリシーの追加]** ウィンドウに戻ります。
+7. **[構成設定]** を選択します。 **[構成]** ウィンドウで、Microsoft Edge の構成を指定するためのキーと値のペアを定義します。 定義できる別のキーと値のペアについては、この記事の後半のセクションで説明します。
 
     > [!NOTE]
     > Microsoft Edge は、Managed Browser と同じキーと値のペアを使用します。 Android では、アプリ構成ポリシーを有効にするには、Microsoft Edge がアプリ保護ポリシーの対象になっている必要があります。
 
 8. 終了したら、 **[OK]** を選択します。
-9. **[構成ポリシーの追加]** ブレードで、 **[追加]** を選択します。<br>
-    新しい構成が作成され、 **[アプリの構成]** ブレードに表示されます。
+9. **[構成ポリシーの追加]** ウィンドウで、 **[追加]** を選択します。<br>
+    新しい構成が作成され、 **[アプリの構成]** ウィンドウに表示されます。
 
 ## <a name="assign-the-configuration-settings-you-created"></a>作成した構成設定を割り当てる 
 
 Azure AD のユーザーのグループに設定を割り当てます。 ユーザーが対象の保護ブラウザー アプリをインストールしている場合、そのアプリは指定された設定で管理されます。
 
-1. Intune モバイル アプリケーション管理ダッシュボードの **[クライアント アプリ]** ブレードで、 **[アプリ構成ポリシー]** を選択します。
+1. Intune モバイル アプリケーション管理ダッシュボードの **[アプリ]** ウィンドウで、 **[アプリ構成ポリシー]** を選択します。
 2. アプリの構成の一覧から、割り当てる構成を選択します。
-3. 次のブレードで、 **[割り当て]** を選択します。
-4. **[割り当て]** ブレードで、アプリの構成を割り当てる Azure AD グループを選択し、 **[OK]** を選択します。
+3. 次のウィンドウで、 **[割り当て]** を選択します。
+4. **[割り当て]** ウィンドウで、アプリの構成を割り当てる Azure AD グループを選択し、 **[OK]** を選択します。
 
 ## <a name="direct-users-to-microsoft-edge-instead-of-the-intune-managed-browser"></a>ユーザーに Intune Managed Browser ではなく Microsoft Edge を指示する 
 
@@ -282,7 +282,7 @@ Microsoft Edge に組み込まれているデュアル ID モデルでは、Intu
 
 iOS デバイスに Microsoft Edge をインストールしているユーザーは、Microsoft で公開されたすべてのアプリの管理状態を表示できます。 管理対象 iOS アプリの問題を解決するためにログを送信できます。 次に手順を示します。
 1. iOS デバイスで Microsoft Edge を開きます。
-2. アドレス バー「`about:intunehelp`」と入力します。 
+2. アドレス バーに「`about:intunehelp`」と入力します。 
 3. Microsoft Edge がトラブルシューティング モードで起動されます。
 
 アプリ ログに格納されている設定の一覧については、「[Managed Browser 内のアプリの保護ログのレビュー](app-protection-policy-settings-log.md)」を参照してください。

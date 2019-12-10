@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 12/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecde59d81ebeba7de64f2693eecb576faac6e722
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.openlocfilehash: ef9548a77a3a745eda24b927118d1447d5afd1f0
+ms.sourcegitcommit: 78faf608510fbaca09bc410d63df1aa5254dee45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164705"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74784240"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune にアプリを追加する 
 
@@ -58,6 +58,8 @@ Intune では、広範囲に及ぶさまざまな種類のアプリをサポー�
 | 管理対象の Google Play アプリ | ストア アプリ  | **[アプリの種類]** として **[managed Google Play]** を選択し、アプリを検索し、Intune でアプリを選択します。 |
 | Windows 10 用の Office 365 アプリ  | ストア アプリ (Office 365) | **[アプリの種類]** として **[Office 365 スイート]** の下から **[Windows 10]** を選択し、インストールする Office 365 アプリを選択します。  |
 | macOS 用の Office 365 アプリ | ストア アプリ (Office 365) | **[アプリの種類]** として **[Office 365 スイート]** の下から **[macOS]** を選択し、Office 365 アプリ スイートを選択します。 |
+| Windows 10 向け Microsoft Edge バージョン 77 以降 | ストア アプリ | **[アプリの種類]** として、 **[Microsoft Edge バージョン 77 以降]** の **[Windows 10]** を選択します。 |
+| macOS 向け Microsoft Edge バージョン 77 以降 | ストア アプリ | **[アプリの種類]** として、 **[Microsoft Edge バージョン 77 以降]** の下の **[macOS]** を選択します。 |
 | Android 基幹業務 (LOB) アプリ | LOB アプリ | **[アプリの種類]** として **[基幹業務]** を選択し、 **[アプリのパッケージ ファイル]** を選択し、拡張子が **.apk** の Android のインストール ファイルを入力します。  |
 | iOS LOB アプリ | LOB アプリ | **[アプリの種類]** として **[基幹業務]** を選択し、 **[アプリのパッケージ ファイル]** を選択し、拡張子が **.ipa** の iOS のインストール ファイルを入力します。  |
 | Windows Phone LOB アプリ | LOB アプリ | **[アプリの種類]** として **[基幹業務]** を選択し、 **[アプリのパッケージ ファイル]** を選択し、拡張子が **.xap** の Windows Phone のインストール ファイルを入力します。  |
@@ -72,7 +74,7 @@ Intune では、広範囲に及ぶさまざまな種類のアプリをサポー�
 
 <sup>1</sup> Android Enterprise および Android 仕事用プロファイルに関する詳細については、後述する「[ライセンスされたアプリを把握する](apps-add.md#understanding-licensed-apps)」を参照してください。
 
-Microsoft Intune にアプリを追加するには、 **[クライアント アプリ]**  >  **[アプリ]**  >  **[追加]** の順に選択します。 **[アプリの追加]** ウィンドウが表示され、 **[アプリの種類]** の選択が可能になります。 
+Microsoft Intune にアプリを追加するには、 **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** の順に選択します。 **[アプリの追加]** ウィンドウが表示され、 **[アプリの種類]** の選択が可能になります。 
 
 >[!TIP]
 > LOB アプリとは、アプリのインストール ファイルから追加するアプリのことです。 たとえば、iOS LOB アプリをインストールするには、 **[アプリの追加]** ウィンドウで **[アプリの種類]** として **[基幹業務アプリ]** を選択してアプリを追加します。 次に、アプリ パッケージ ファイル (拡張子 .ipa) を選択します。 この種のアプリは、通常、社内で作成されます。
@@ -159,9 +161,8 @@ Web アプリ、ストア アプリ、LOB アプリに加えて、Volume Purchas
 
 アプリを Intune に追加するときに、必要なカテゴリを選択するためのオプションが表示されます。 プラットフォーム固有のトピックを使用してアプリを追加し、カテゴリを割り当てます。 独自のカテゴリを作成して編集するには、次の手順を実行します。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-3. **[Intune]** ウィンドウで、 **[クライアント アプリ]** を選択します。
-4. **[クライアント アプリ]** ワークロード ウィンドウの **[設定]** で **[アプリのカテゴリ]** を選択します。  
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+3. **[アプリ]**  >  **[アプリのカテゴリ]** を選択します。  
     **[アプリのカテゴリ]** ウィンドウには、現在のカテゴリの一覧が表示されます。 
 5. 次のいずれかの操作を行います。
     - カテゴリを追加するには、 **[カテゴリの作成]** ウィンドウで **[追加]** を選択し、カテゴリの名前を入力します。  
@@ -206,6 +207,8 @@ Intune アプリのインストール エラーについて詳しくは、[ア�
 - [Windows LOB アプリ](lob-apps-windows.md)
 - [Windows 10 用の Office 365 アプリ](apps-add-office365.md)
 - [macOS 用の Office 365 アプリ](apps-add-office365-macos.md)
+- [Windows 10 用 Microsoft Edge](apps-windows-edge.md)
+- [macOS 用 Microsoft Edge](apps-edge-macos.md)
 - [組み込みアプリ](apps-add-built-in.md)
 - [Android Enterprise システム アプリ](apps-ae-system.md)
 - [Win32 アプリ](app-management.md)

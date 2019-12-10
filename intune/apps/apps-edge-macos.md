@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6726f731fba5bc41893f999ac627bff9a8aca1e
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: c31dd652022ae0d394ab2229a0c25b362ad8574d
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754842"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563580"
 ---
 # <a name="add-microsoft-edge-to-macos-devices-using-microsoft-intune"></a>Microsoft Intune を使用して Microsoft Edge を macOS デバイスに追加する
 
@@ -40,15 +40,15 @@ ms.locfileid: "73754842"
 ## <a name="add-microsoft-edge-to-intune"></a>Microsoft Edge を Intune に追加する
 Microsoft Edge バージョン 77 以降を Intune に追加するには、次の手順を行います。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[Intune]** ウィンドウで、 **[クライアント アプリ]**  >  **[アプリ]**  >  **[追加]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** の順に選択します。
 3. **Microsoft Edge バージョン 77 以降の**の **[アプリの種類]** リストで、 **[macOS]** を選択します。
 
 ## <a name="configure-app-information"></a>アプリ情報の構成
 この手順では、このアプリの展開に関する情報を指定します。 この情報は、Intune でアプリを識別する場合に役立ち、会社のポータルでユーザーがアプリを探す場合にも役立ちます。
 
-1. **[アプリ情報]** をクリックして **[アプリ情報]** ブレードを表示します。
-2. **[アプリ情報]** ブレードで、このアプリの展開に関する情報を指定します。 この情報は、Intune でアプリを識別する場合に役立ち、会社のポータルでユーザーがアプリを探す場合にも役立ちます。
+1. **[アプリ情報]** をクリックして **[アプリ情報]** ウィンドウを表示します。
+2. **[アプリ情報]** ウィンドウで、このアプリの展開に関する情報を指定します。 この情報は、Intune でアプリを識別する場合に役立ち、会社のポータルでユーザーがアプリを探す場合にも役立ちます。
     - **名前**: アプリの名前を入力します。この名前は会社のポータルに表示されます。 すべての名前が一意であることを確認します。 同じアプリ名が 2 つ存在する場合、会社のポータルではそのいずれかのみがユーザーに表示されます。
     - **説明**:アプリの説明を入力します。 たとえば、説明にターゲット ユーザーを一覧表示することができます。
     - **[発行元]** : Microsoft が発行者として表示されます。
@@ -64,8 +64,8 @@ Microsoft Edge バージョン 77 以降を Intune に追加するには、次�
 ## <a name="configure-microsoft-edge-settings"></a>Microsoft Edge の設定の構成
 この手順では、アプリのインストール オプションを構成します。
 
-1. **[アプリの追加]** ブレードで **[アプリの設定]** を選択します。
-2. **[アプリの設定]** ブレードでは、 **[Beta]** Channel が自動的に選択され、変更することはできません。
+1. **[アプリの追加]** ウィンドウで、 **[アプリ設定]** を選びます。
+2. **[アプリの設定]** ウィンドウで、 **[Beta]** Channel が自動的に選択され、変更することはできません。
     - **[Beta]** Channel は、Microsoft Edge の最も安定したプレビュー エクスペリエンスであり、組織内での完全なパイロットに最適な選択肢です。 6 週間ごとにメジャー アップデートが行われます。
 
     > [!NOTE]
@@ -80,7 +80,7 @@ Microsoft Edge バージョン 77 以降を Intune に追加するには、次�
 4.  **[選択]**  >  **[OK]** の順に選択します。
 
 ## <a name="add-the-app"></a>アプリを追加する
-構成が完了したら、 **[アプリの追加]** ブレードから **[追加]** を選択します。 
+構成が完了したら、 **[アプリの追加]** ウィンドウから **[追加]** を選択します。 
 
 作成したアプリはアプリの一覧に表示され、選択したグループに割り当てることができるようになります。 
 

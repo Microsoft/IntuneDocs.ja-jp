@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 796b1709260c7f507e78aa8404129fa996b59088
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 01ca17c9f8e3fd86e12f225621e6dc0e07bb4acb
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498813"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564073"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Microsoft Intune を使用して macOS デバイスに Office 365 を割り当てる
 
@@ -41,14 +41,12 @@ macOS に Office 365 を追加し始める前に、次の詳細を理解して�
 ## <a name="create-and-configure-the-app-suite"></a>アプリ スイートの作成と構成
 
 **[アプリ]** ウィンドウから Office 365 を追加します。
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-3. **[Intune]** ウィンドウで、 **[クライアント アプリ]** を選択します。
-4. **[クライアント アプリ]** ワークロード ウィンドウで、 **[管理]** の **[アプリ]** を選択します。 
-5. **[追加]** を選択します。
-6. **[アプリの種類]** 一覧で、 **[Office 365 スイート]** グループの **[macOS]** を選択します。
-7. アプリ スイートに関する情報を指定するには、 **[アプリ スイートの情報]** を選択します。  
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** の順に選択します。
+3. **[アプリの種類]** 一覧で、 **[Office 365 スイート]** グループの **[macOS]** を選択します。
+4. アプリ スイートに関する情報を指定するには、 **[アプリ スイートの情報]** を選択します。  
     この情報は、Intune でアプリ スイートを識別し、ユーザーが会社のポータルでアプリを探す場合に役立ちます。
-8. 次の情報を入力します。
+5. 次の情報を入力します。
     - **[スイート名]** : 会社のポータルに表示される、アプリ スイートの名前を入力します。 使用するスイート名はすべて一意にします。 同じアプリ スイート名が 2 つ存在する場合、会社のポータルではそのアプリのいずれかのみがユーザーに表示されます。
     - **[スイートの説明]** : アプリ スイートの説明を入力します。
     - **[発行元]** : Microsoft が発行者として表示されます。
@@ -60,8 +58,8 @@ macOS に Office 365 を追加し始める前に、次の詳細を理解して�
     - **[所有者]** : Microsoft が所有者として表示されます。
     - **[メモ]** : (省略可能) このアプリに関連付けるメモを入力します。
     - **[ロゴ]** : ユーザーがポータル サイトを閲覧するとき、アプリと一緒に Office 365 のロゴが表示されます。
-9. **[OK]** を選択します。
-10. **[アプリの追加]** ウィンドウで **[追加]** を選択します。  
+6. **[OK]** を選択します。
+7. **[アプリの追加]** ウィンドウで **[追加]** を選択します。  
     アプリの一覧に、このスイートが 1 つのエントリとして表示されます。
 
 ## <a name="configure-app-assignments"></a>アプリの割り当てを構成する

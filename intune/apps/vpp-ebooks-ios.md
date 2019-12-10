@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae29d2ee5add475db89f6895b22299793a94ac36
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: 08275e2573fe8aae8c59ea25c85cdd8f7a3246ee
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984096"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563762"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Volume Purchase Program で購入した iOS 電子ブックを Microsoft Intune で管理する方法
 
@@ -57,15 +57,14 @@ iOS ブックの複数のライセンスを購入するには、[ビジネス向
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Apple VPP トークンを取得およびアップロードするには
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-3. **[Intune]** ウィンドウで、**[クライアント アプリ]** を選択します。
-1. **[クライアント アプリ]** ワークロードで、**[セットアップ]** > **[iOS VPP トークン]** の順に選択します。
-2. VPP トークンの一覧ウィンドウで、**[作成]** をクリックします。
-3. **[新しい VPP トークン]** ウィンドウで、次の情報を指定します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[テナント管理]**  >  **[コネクタとトークン]**  >  **[Apple VPP トークン]** を選択します。
+3. VPP トークンの一覧ウィンドウで、 **[作成]** をクリックします。
+5. **[新しい VPP トークン]** ウィンドウで、次の情報を指定します。
     - **[VPP トークン ファイル]** - Volume Purchase Program for Business または Volume Purchase Program for Education にサインインしていることを確認します。 次に、アカウントの Apple VPP トークンをダウンロードし、ここでそのトークンを選択します。
     - **[Apple ID]** - Volume Purchase Program に関連付けられているアカウントの Apple ID を入力します。
     - **[VPP アカウントの種類]** - **[ビジネス]** または **[教育]** を選択します。
-4. 完了したら [**作成**] をクリックします。
+5. 完了したら **[作成]** をクリックします。
 
 トークンがトークンの一覧ウィンドウに表示されます。
 
@@ -74,13 +73,12 @@ iOS ブックの複数のライセンスを購入するには、[ビジネス向
 
 ## <a name="to-assign-a-volume-purchased-app"></a>ボリューム購入アプリを割り当てるには
 
-3. **[Intune]** ウィンドウで、**[電子ブック]** を選択します。
-1. **[電子ブック]** ワークロードで、**[管理]** > **[すべての電子ブック]** を選択します。
-2. ブックの一覧ウィンドウで、割り当てるブックを選択し、**[...]**、**[グループの割り当て]** の順に選択します。
-3. **[<*ブック名*> - 割り当てられたグループ]** ウィンドウで、**[管理]** > **[割り当てられたグループ]** の順に選択します。
-4. **[グループの割り当て]** を選択し、**[グループの選択]** ウィンドウで、ブックを割り当てる Azure AD ユーザー グループを選択します。 現時点では、デバイス グループはサポートされていません。
+1. **[アプリ]**  >  **[電子ブック]**  >  **[すべての電子ブック]** を選択します。
+2. ブックの一覧ウィンドウで、割り当てるブックを選択し、 **[...]** 、 **[グループの割り当て]** の順に選択します。
+3. **[<*ブック名*> - 割り当てられたグループ]** ウィンドウで、 **[管理]**  >  **[割り当てられたグループ]** の順に選択します。
+4. **[グループの割り当て]** を選択し、 **[グループの選択]** ウィンドウで、ブックを割り当てる Azure AD ユーザー グループを選択します。 現時点では、デバイス グループはサポートされていません。
 割り当て操作として **[利用可能]** または **[必須]** を選択します。 
-5. 完了したら、**[保存]** を選択します。
+5. 完了したら、 **[保存]** を選択します。
 
 ## <a name="next-steps"></a>次の手順
 

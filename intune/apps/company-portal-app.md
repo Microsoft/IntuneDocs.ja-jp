@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b750c09207b1950aa27a5f2cae1267503537b6e7
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 7a4d6db4f61dea1b073ccce7c4c3f727a91402c1
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199211"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563636"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune ポータル サイト アプリを構成する方法
 
@@ -37,7 +37,7 @@ ms.locfileid: "74199211"
 > [!Tip]
 > ポータル サイトをカスタマイズすると、構成がポータル サイトの Web サイトとポータル サイト アプリの両方に適用されます。 ユーザーは、ポータル サイトの Web サイトにアクセスするために Intune ライセンスを割り当てられている必要があることに注意してください。
 
-Intune ポータル サイトをカスタマイズすることで、エンド ユーザーの利便性を向上させることができます。 このためには、Intune ポータルで **[クライアント アプリ]**  >  **[ブランド化とカスタマイズ]** を選択し、必要な設定を構成します。
+Intune ポータル サイトをカスタマイズすることで、エンド ユーザーの利便性を向上させることができます。 これを行うには、Intune ポータルで **[アプリ]**  >  **[ブランド化とカスタマイズ]** を選択し、必要な設定を構成します。
 
 ユーザーがポータル サイトから iOS アプリケーションをインストールすると、プロンプトが表示されます。 これは、iOS アプリがアプリ ストアにリンクされている場合、ボリューム購入プログラム (VPP) にリンクされている場合、または基幹業務 (LOB) アプリにリンクされている場合に発生します。 プロンプトでは、ユーザーは操作を受け入れるか、アプリの管理を許可することができます。 プロンプトでは、会社名が表示されます。会社名が使用できない場合は、 **[ポータル サイト]** が表示されます。 
 
@@ -92,7 +92,7 @@ Intune 関連の質問に対する連絡先を従業員に示すために、会�
 
 ### <a name="brand-image-for-company-portal"></a>ポータル サイトのブランド画像
 
-会社のブランドを反映したブランド画像を表示します。 変更の保存後、ブレードの上部にある **[Intune Web ポータルで設定をプレビューします]** を選択して、構成がどのように表示されるかを確認できます。 ブランド画像をプレビューできるのは、Intune Web ポータルではなく、iOS デバイスのみである点に注意してください。 
+会社のブランドを反映したブランド画像を表示します。 変更の保存後、ウィンドウの上部にある [Intune Web ポータルで**設定をプレビューします**] を選択して、構成がどのように表示されるかを確認できます。 ブランド画像をプレビューできるのは、Intune Web ポータルではなく、iOS デバイスのみである点に注意してください。 
 
 |フィールド名|詳細情報|
 |---|---|

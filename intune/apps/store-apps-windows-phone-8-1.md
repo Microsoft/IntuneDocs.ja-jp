@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 12218ec20f8cc00ebcf2294387f711ea39d79256
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3168d517ebbb59dc9d6fe5a9c262ad8e1c909619
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507069"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563801"
 ---
 # <a name="add-windows-phone-81-store-apps-to-microsoft-intune"></a>Windows Phone 8.1 ストア アプリを Microsoft Intune に追加する
 
@@ -34,12 +34,10 @@ ms.locfileid: "72507069"
 ## <a name="add-an-app-to-intune"></a>Intune にアプリを追加する
 次の操作を行うことで、Azure Portal から Intune に Windows Phone 8.1 ストア アプリを追加できます。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-3. **[Intune]** ウィンドウで、 **[クライアント アプリ]** を選択します。
-4. **[クライアント アプリ]** ワークロード ウィンドウで、 **[管理]** の **[アプリ]** を選択します。
-5. **[アプリ]** ウィンドウで **[追加]** を選択します。
-6. **[アプリの追加]** ウィンドウの **[アプリの種類]** で **[Windows Phone 8.1]** を選び、 **[アプリ情報]** を選択します。
-7. **[アプリ情報]** ウィンドウで、アプリの情報を追加します。 選択したアプリによっては、このウィンドウ内の一部の値が自動的に入力されている場合があります。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** の順に選択します。
+3. **[アプリの追加]** ウィンドウの **[アプリの種類]** で **[Windows Phone 8.1]** を選び、 **[アプリ情報]** を選択します。
+4. **[アプリ情報]** ウィンドウで、アプリの情報を追加します。 選択したアプリによっては、このウィンドウ内の一部の値が自動的に入力されている場合があります。
     - **名前**: アプリの名前を入力します。この名前は会社のポータルに表示されます。 使用するアプリ名が一意であることを確認してください。 アプリ名が重複している場合、会社のポータルでは 1 つの名前のみがユーザーに表示されます。
     - **説明**:アプリの説明を入力します。 この説明は会社のポータルでユーザーに表示されます。
     - **[発行元]** : アプリの発行元の名前を入力します。
@@ -52,8 +50,8 @@ ms.locfileid: "72507069"
     - **[所有者]** : (省略可能) このアプリの所有者の名前 ("*人事部*" など) を入力します。
     - **[メモ]** : (省略可能) このアプリに関連付けるメモを入力します。
     - **[ロゴ]** : (省略可能) アプリに関連付けるアイコンをアップロードします。 ユーザーが会社のポータルを参照するとき、アプリにこのアイコンが表示されます。
-8. **[OK]** を選択します。
-9. **[追加]** を選択します。
+5. **[OK]** を選択します。
+6. **[追加]** を選択します。
 
 作成したアプリはアプリの一覧に表示され、選択したグループに割り当てることができるようになります。
 

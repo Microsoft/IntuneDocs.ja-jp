@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cb247ec25b134fa9810a426be88b7fc90999394
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 73848ee8301362f14fe2866a57329425d5e5cfbe
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635392"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563677"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune を使用して Windows 10 デバイスに Office 365 アプリを追加する
 
@@ -49,11 +49,9 @@ ms.locfileid: "73635392"
 
 ## <a name="get-started"></a>作業開始
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-3. **[Intune]** ウィンドウで、 **[クライアント アプリ]** を選択します。
-4. **[クライアント アプリ]** ワークロード ウィンドウで、 **[管理]** の **[アプリ]** を選択します。
-5. **[追加]** を選択します。
-6. **[アプリの追加]** ウィンドウの **[アプリの種類]** の一覧で、 **[Office 365 スイート]** の **[Windows 10]** を選びます。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** の順に選択します。
+3. **[アプリの追加]** ウィンドウの **[アプリの種類]** の一覧で、 **[Office 365 スイート]** の **[Windows 10]** を選びます。
 
 ## <a name="select-settings-format"></a>設定の形式を選択する
 
@@ -61,13 +59,13 @@ ms.locfileid: "73635392"
 - 構成デザイナー
 - XML データを入力する
 
-**[構成デザイナー]** を選択すると、 **[アプリの追加]** ブレードが変更され、2 つの設定オプションが追加されます。
+**[構成デザイナー]** を選択すると、 **[アプリの追加]** ウィンドウが変更されて、さらに 2 つの設定オプションが表示されます。
 - アプリ スイートの構成
 - アプリ スイートの設定
 
 <img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-**[XML データを入力する]** を選択すると、 **[アプリの追加]** ブレードに **[XML データを入力する]** オプションが表示されます。 これを選択すると、 **[構成ファイル]** ブレードが表示されます。 
+**[XML データを入力する]** を選択すると、 **[アプリの追加]** ウィンドウに **[XML データを入力する]** オプションが表示されます。 これを選択すると、 **[構成ファイル]** ウィンドウが表示されます。 
 
 ![Office 365 構成デザイナーの追加](./media/apps-add-office365/apps-add-office365-01.png)
     
@@ -94,7 +92,7 @@ ms.locfileid: "73635392"
 
 ## <a name="configure-app-suite"></a>アプリ スイートの構成
 
-**[設定の形式]** ドロップダウン ボックスで **[構成デザイナー]** オプションを選択した場合、 **[アプリの追加]** ブレードに **[アプリ スイートの構成]** オプションが表示されます。 デバイスに割り当てる Office アプリを選びます。
+**[設定の形式]** ドロップダウン ボックスで **[構成デザイナー]** オプションを選択した場合、 **[アプリの追加]** ウィンドウに **[アプリ スイートの構成]** オプションが表示されます。 デバイスに割り当てる Office アプリを選びます。
 
 1. **[アプリの追加]** ウィンドウで、 **[アプリ スイートの構成]** を選びます。
 2. **[アプリ スイートの構成]** ウィンドウで、デバイスに割り当てる標準の Office アプリを選びます。  
@@ -103,7 +101,7 @@ ms.locfileid: "73635392"
 
 ## <a name="configure-app-suite-settings"></a>アプリ スイート設定の構成
 
-**[設定の形式]** ドロップダウン ボックスで **[構成デザイナー]** を選択した場合、 **[アプリの追加]** ブレードに **[アプリ スイートの設定]** オプションが表示されます。 この手順では、アプリ スイートのインストール オプションを構成します。 この設定は、スイートに追加したすべてのアプリに適用されます。
+**[設定の形式]** ドロップダウン ボックスで **[構成デザイナー]** を選択した場合、 **[アプリの追加]** ウィンドウに **[アプリ スイートの設定]** オプションが表示されます。 この手順では、アプリ スイートのインストール オプションを構成します。 この設定は、スイートに追加したすべてのアプリに適用されます。
 
 1. **[アプリの追加]** ウィンドウで、 **[アプリ スイートの設定]** を選びます。
 2. **[アプリ スイートの設定]** ウィンドウで、次のようにします。
@@ -126,7 +124,7 @@ ms.locfileid: "73635392"
     - **[アプリのソフトウェア ライセンス条項を自動的に受け入れる]** : エンド ユーザーにライセンス契約への承諾を要求しない場合は、このオプションを選びます。 その後、Intune で契約書を自動的に承諾します。
     - **[共有コンピューターのライセンス認証を使用]** : 複数のユーザーでコンピューターを共有する場合は、このオプションを選びます。 詳細については、[Office 365 に対する共有コンピューターのライセンス認証の概要](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)に関するページを参照してください。
     - **[言語]** : Office は、エンド ユーザーのデバイス上の Windows にインストールされている任意のサポート言語で自動的にインストールされます。 アプリ スイートと共に追加の言語をインストールする場合は、このオプションを選択します。 <p></p>
-    Intune によって管理されている Office 365 Pro Plus アプリに追加の言語を展開することができます。 使用可能な言語のリストには、言語パックの **種類** (コア、部分、校正) が含まれます。 Azure Portal で、 **[Microsoft Intune]**  >  **[クライアント アプリ]**  >  **[アプリ]**  >  **[追加]** の順に選びます。 **[アプリの追加]** ブレードの **[アプリの種類]** 一覧で、 **[Office 365 スイート]** の **[Windows 10]** を選びます。 **[アプリ スイートの設定]** ブレードで **[言語]** を選びます。 詳細については、「[Office 365 ProPlus での言語の展開の概要](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus)」を参照してください。
+    Intune によって管理されている Office 365 Pro Plus アプリに追加の言語を展開することができます。 使用可能な言語のリストには、言語パックの **種類** (コア、部分、校正) が含まれます。 Azure portal で、 **[Microsoft Intune]**  >  **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** を選択します。 **[アプリの追加]** ウィンドウの **[アプリの種類]** の一覧で、 **[Office 365 スイート]** の **[Windows 10]** を選びます。 **[アプリ スイートの設定]** ウィンドウで **[言語]** を選びます。 詳細については、「[Office 365 ProPlus での言語の展開の概要](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus)」を参照してください。
 
 ## <a name="select-scope-tags-optional"></a>スコープのタグを選択する (省略可能)
 スコープのタグを使って、Intune のクライアント アプリの情報を表示できるユーザーを決定することができます。 スコープのタグの詳細については、[分散 IT のためのロールベースのアクセス制御とスコープのタグの使用](../fundamentals/scope-tags.md)に関するページをご覧ください。
@@ -138,7 +136,7 @@ ms.locfileid: "73635392"
 
 ## <a name="enter-xml-format"></a>XML 形式を入力する
 
-**[設定の形式]** ドロップダウン ボックスで **[XML データを入力する]** を選択した場合、 **[アプリの追加]** ブレードに **[Enter XML format]\(XML 形式を入力する\)** オプションが表示されます。 詳細については、「[Office 展開ツールのオプションの構成](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool)」を参照してください。
+**[設定の形式]** ドロップダウン ボックスで **[XML データを入力する]** オプションを選択した場合、 **[アプリの追加]** ウィンドウに **[Enter XML format]\(XML 形式を入力する\)** オプションが表示されます。 詳細については、「[Office 展開ツールのオプションの構成](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool)」を参照してください。
 
 ## <a name="finish-up"></a>完了
 

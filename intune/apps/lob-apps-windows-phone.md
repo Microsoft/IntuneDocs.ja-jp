@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1540abcc9ff7a5958da55154258e1fc1d9555dd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: dd8025c18ef10580eb16883727bf08a316989d2e
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507163"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563527"
 ---
 # <a name="add-a-windows-phone-line-of-business-app-to-microsoft-intune"></a>Windows Phone の基幹業務アプリを Microsoft Intune に追加する
 
@@ -33,11 +33,9 @@ ms.locfileid: "72507163"
 
 ## <a name="step-1-specify-the-software-setup-file"></a>手順 1.ソフトウェアのセットアップ ファイルを指定する
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-3. **[Intune]** ウィンドウで、 **[クライアント アプリ]** を選択します。
-4. **[クライアント アプリ]** ワークロードで、 **[管理]**  >  **[アプリ]** の順に選択します。
-5. アプリの一覧の上にある **[追加]** を選択します。
-6. **[アプリの追加]** ウィンドウで、 **[基幹業務アプリ]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** の順に選択します。
+3. **[アプリの追加]** ウィンドウで、 **[アプリの種類]** として **[基幹業務アプリ]** を選択します。
 
 ## <a name="step-2-configure-the-app-package-file"></a>手順 2: アプリのパッケージ ファイルを構成する
 

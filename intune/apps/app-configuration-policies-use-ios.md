@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ee3ecd64254c0e212ffc86155d677bf18ba647a
-ms.sourcegitcommit: f6b82c62af81a2643a1aaec774afa42d02eef352
+ms.openlocfilehash: a104b4d41a364c552a8ebac73ff3341af71d6d21
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566172"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564159"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>管理対象の iOS デバイス用アプリ構成ポリシーを追加する
 
@@ -51,8 +51,7 @@ Microsoft Intune 管理者は、マネージド デバイス上の Microsoft Off
 ## <a name="create-an-app-configuration-policy"></a>アプリ構成ポリシーを作成する
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-3. **[クライアント アプリ]** ワークロードを選択します。
-4. **[管理]** グループの **[アプリ構成ポリシー]** を選択し、 **[追加]** を選択します。
+3. **[アプリ]**  >  **[アプリ構成ポリシー]**  >  **[追加]** を選択します。
 5. 次の詳細を設定します。
     - **名前**: Azure portal に表示されるプロファイルの名前。
     - **説明**: Azure portal に表示されるプロファイルの説明。
@@ -74,7 +73,7 @@ Microsoft Intune 管理者は、マネージド デバイス上の Microsoft Off
 13. **[必要なし]** タブを選びます。 
 14. **[含めないグループを選択]** をクリックして、関連するウィンドウを表示します。
 
-    ![ポリシーの割り当ての [含めないグループを選択] ウィンドウのスクリーンショット](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+    ![ポリシーの割り当てのスクリーンショット - [含めないグループを選択] ウィンドウ](./media/app-configuration-policies-use-ios/app-config-policy03.png)
 15. 除外するグループを選んで、 **[選択]** をクリックします。
 
     >[!NOTE]
@@ -181,10 +180,9 @@ Intune は、プロパティ リストで次のデータ型をサポートしま
 
 DEP (Apple の Device Enrollment Program) の登録には、アプリ ストア バージョンのポータル サイト アプリとの互換性はありません。 ただし、次の手順に従って、iOS DEP デバイスをサポートするようにポータル サイト アプリを構成できます。
 
-1. Azure portal 上の Intune で、次の手順を実行します。
-    - 必要に応じて、Intune ポータル サイトを追加します。そのためには、 **[Intune]**  >  **[クライアント アプリ]**  >  **[アプリ]**  >  **[追加]** に移動します。
-    - **[クライアント アプリ]**  >  **[アプリ構成ポリシー]** に移動し、ポータル サイト アプリのアプリ構成ポリシーを作成します。
-2. 次の XML を使用して、アプリ構成ポリシーを作成します。 アプリ構成ポリシーを作成して XML データを入力する方法の詳細については、「[Add app configuration policies for managed iOS devices (マネージド iOS デバイスのアプリ構成ポリシーを追加する)](app-configuration-policies-use-ios.md)」を参照してください。ハイブリッド MDM の場合は、「[System Center Configuration Manager でアプリ構成ポリシーを使用し、iOS アプリに設定を適用する](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies)」を参照してください。
+1. Intune で、必要に応じて Intune ポータル サイトを追加します。そのためには、 **[Intune]**  >  **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** に移動します。
+2. **[アプリ]**  >  **[アプリ構成ポリシー]** に移動し、ポータル サイト アプリのアプリ構成ポリシーを作成します。
+3. 次の XML を使用して、アプリ構成ポリシーを作成します。 アプリ構成ポリシーを作成して XML データを入力する方法の詳細については、「[Add app configuration policies for managed iOS devices (マネージド iOS デバイスのアプリ構成ポリシーを追加する)](app-configuration-policies-use-ios.md)」を参照してください。ハイブリッド MDM の場合は、「[System Center Configuration Manager でアプリ構成ポリシーを使用し、iOS アプリに設定を適用する](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies)」を参照してください。
 
     ``` xml
     <dict>
@@ -202,7 +200,7 @@ DEP (Apple の Device Enrollment Program) の登録には、アプリ ストア 
 4. ポータル サイト アプリが自動的にインストールされたらサインインするように、エンド ユーザーに指示します。
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>デバイスごとに iOS アプリ構成の状態を監視する 
-構成ポリシーが割り当てられたら、マネージド デバイスごとに iOS アプリ構成の状態を監視することができます。 Azure Portal の **[Microsoft Intune]** から、 **[デバイス]**  >  **[すべてのデバイス]** の順に選びます。 管理対象デバイスの一覧から、デバイスのブレードを表示する特定のデバイスを選びます。 デバイスのブレードで、 **[アプリの構成]** を選びます。  
+構成ポリシーが割り当てられたら、マネージド デバイスごとに iOS アプリ構成の状態を監視することができます。 Azure Portal の **[Microsoft Intune]** から、 **[デバイス]**  >  **[すべてのデバイス]** の順に選びます。 マネージド デバイスの一覧から、デバイス用のウィンドウを表示する特定のデバイスを選択します。 デバイスのウィンドウで、 **[アプリの構成]** を選択します。  
 
 ## <a name="additional-information"></a>追加情報
 

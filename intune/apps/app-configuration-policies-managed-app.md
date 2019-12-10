@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ddb9ec795b9cc8842cbc6c9d33897b5e0f45e88
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 68032f47be043e8c49b6ad922392d14549293c35
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74548007"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564290"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>デバイス登録なしで管理対象アプリ用アプリ構成ポリシーを追加する
 
@@ -31,18 +31,15 @@ ms.locfileid: "74548007"
 
 登録されていないデバイスでも、Intune App SDK をサポートする管理対象アプリにアプリ構成ポリシーを使用できます。 
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-3. **[クライアント アプリ]** ワークロードを選択します。
-4. **[管理]** グループの **[アプリ構成ポリシー]** を選択し、 **[追加]** を選択します。
-5. 次の詳細を設定します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[アプリ]**  >  **[アプリ構成ポリシー]**  >  **[追加]**  >  **[マネージド アプリ]** を選択します。
+3. 次の詳細を設定します。
     - **名前**  
       Azure Portal に表示されるプロファイルの名前。
     - **説明**  
       Azure Portal に表示されるプロファイルの説明。
-    - **デバイス登録の種類**  
-      **[アプリの管理]** を選択します。
-6. **[関連アプリ]** を選択して、構成するアプリを選択します。 承認して Intune に同期したアプリの一覧からアプリを選択します。
-7. アプリでサポートする構成設定ごとに、 **[名前]** と **[値]** を入力し、省略記号 ( **[...]** ) を選択します。  
+4. 構成するアプリを選択するために、 **[パブリック アプリの選択]** または **[カスタム アプリの選択]** のいずれかを選択します。 承認して Intune に同期したアプリの一覧からアプリを選択します。
+5. アプリでサポートする構成設定ごとに、 **[名前]** と **[値]** を入力します。  
     構成を削除するには、省略記号 ( **[...]** ) を選択し、 **[削除]** を選択します。  
     
 Intune App SDK 対応のアプリでは、キー/値のペアの構成がサポートされます。 サポートされるキーと値の構成の詳細については、各アプリのドキュメントを参照してください。 さらに、アプリケーションから生成されるデータが動的に設定されるトークンを使用できます。 Outlook for iOS アプリ構成ポリシー設定の詳細については、「[Microsoft Intune で Outlook for iOS のアプリ構成を管理する](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx)」を参照してください。

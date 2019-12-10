@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff9a37a1dd815b6ec9d7522604796310e7f0b5ce
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: eed0b8a74e69bc1552ae3e2badf485364ba37e94
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984102"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563824"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Apple Volume Purchase Program で購入した iOS アプリと macOS アプリを Microsoft Intune で管理する方法
 
@@ -82,8 +82,8 @@ iOS アプリと macOS アプリの複数のライセンスを[ビジネス向�
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Apple VPP トークンを取得およびアップロードするには
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-3. **[Intune]** ウィンドウで、 **[設定]** の下の **[クライアント アプリ]**  >  **[Apple VPP トークン]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+3. **[テナント管理]**  >  **[コネクタとトークン]**  >  **[Apple VPP トークン]** を選択します。
 4. VPP トークンの一覧ウィンドウで、 **[作成]** を選択します。
 5. **[VPP トークンの作成]** ウィンドウで、次の情報を指定します。
     - **[VPP トークン ファイル]** - サインアップしていない場合は、ビジネス向け Volume Purchase Program または教育向けプログラムにサインアップします。 サインアップした後、アカウントの Apple VPP トークンをダウンロードし、ここで選択します。
@@ -110,7 +110,7 @@ iOS アプリと macOS アプリの複数のライセンスを[ビジネス向�
 
 ## <a name="to-assign-a-volume-purchased-app"></a>ボリューム購入アプリを割り当てるには
 
-1. **[Intune]** ウィンドウの **[管理]** で、 **[クライアント アプリ]**  >  **[アプリ]** の順に選択します。
+1. **[アプリ]**  >  **[すべてのアプリ]** を選択します。
 2. アプリの一覧ウィンドウで、割り当てるアプリを選択し、 **[割り当て]** を選択します。
 3. ***[アプリ名*** - **割り当て]** ウィンドウで **[グループの追加]** を選択し、 **[グループの追加]** ウィンドウで **[割り当ての種類]** を選択して、アプリを割り当てる Azure AD ユーザーまたはデバイス グループを選択します。
 5. 選択したグループごとに、次の設定を選択します。
@@ -176,8 +176,8 @@ Apple Volume Purchase Program ポータルから新しいトークンをダウ�
 
 Intune のカスタム管理者ロールに割り当てられたアクセス許可を使用して、Apple VPP トークンと VPP アプリへのアクセスを個別に制御できます。
 
-* Intune カスタム ロールで Apple VPP トークンを管理できるようにするには、 **[クライアント アプリ]**  >  **[Apple VPP トークン]** で、 **[マネージド アプリ]** のアクセス許可を割り当てます。
-* 購入した iOS VPP トークンを使用するアプリを Intune のカスタム ロールで管理できるようにするには、 **[クライアント アプリ]**  >  **[アプリ]** で、 **[モバイル アプリ]** のアクセス許可を割り当てます。 
+* Intune カスタム ロールで Apple VPP トークンを管理できるようにするには、 **[アプリ]**  >  **[Apple VPP トークン]** で、 **[マネージド アプリ]** のアクセス許可を割り当てます。
+* Intune カスタム ロールで、iOS VPP トークンを使用して購入したアプリを管理できるようにするには、 **[アプリ]**  >  **[すべてのアプリ]** で、 **[モバイル アプリ]** のアクセス許可を割り当てます。 
 
 ## <a name="additional-information"></a>追加情報
 
@@ -196,7 +196,7 @@ Apple では、VPP トークンを作成および更新するために直接サ�
 はい。 Intune 管理者は、アプリをオーバーサブスクライブできます。 たとえば、管理者は、アプリ XYZ のライセンスを 100 個購入し、500 人のメンバーがいるグループをアプリの対象にします。 最初の 100 メンバー (ユーザーまたはデバイス) にはライセンスが割り当てられ、残りのメンバーに対するライセンスの割り当ては失敗します。
 
 ### <a name="how-frequently-does-intune-sync-vpp-tokens-with-apple"></a>Intune と Apple の VPP トークンとの同期頻度
-Intune では、1 日に 2 回、Apple との VPP トークンとライセンスの同期が実行されます。 Intune 管理者は、 **[クライアント アプリ]**  >  **[Apple VPP トークン]** で、手動同期を開始できます。
+Intune では、1 日に 2 回、Apple との VPP トークンとライセンスの同期が実行されます。 Intune 管理者は、 **[アプリ]**  >  **[Apple VPP トークン]** で、手動同期を開始できます。
 
 ## <a name="next-steps"></a>次の手順
 

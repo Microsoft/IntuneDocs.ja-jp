@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e538204306ce80d6a13739fc981edf2748a622de
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: d77a275e3a48845f56b22ecc21b75f664ea619c5
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713455"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691753"
 ---
 # <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>iOS と iPadOS のユーザー登録を設定する (プレビュー)
 
@@ -43,7 +43,7 @@ Apple のユーザー登録プロセスを使用して、iOS デバイスと iPa
 
 登録プロファイルで、デバイス グループに対して登録時に適用する設定を定義します。 
 
-1. [Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Apple の登録]** 、 **[Enrollment types (preview)]\(登録の種類 (プレビュー)\)** 、 **[プロファイルの作成]** 、 **[iOS]** の順に選択します。 このプロファイルでは、iOS および iPadOS のエンド ユーザーが、会社の Apple メソッドで登録されていないデバイスでどのような登録エクスペリエンスを利用できるかを指定します。 変更が必要な場合は、作成後にこのプロファイルを編集できます。
+1. [Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[登録の種類 (プレビュー)]**  >  **[プロファイルの作成]**  >  **[iOS/iPadOS]** を選択します。 このプロファイルでは、iOS および iPadOS のエンド ユーザーが、会社の Apple メソッドで登録されていないデバイスでどのような登録エクスペリエンスを利用できるかを指定します。 変更が必要な場合は、作成後にこのプロファイルを編集できます。
 
     ![Apple 登録プロファイルを作成する](./media/ios-user-enrollment/create-profile.png)
 
@@ -88,7 +88,7 @@ Apple のユーザー登録プロセスを使用して、iOS デバイスと iPa
 
 複数の登録の種類のプロファイルを作成した後は、適用される優先順位を変更できます。
 
-1. [Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Apple の登録]** 、 **[Enrollment types (preview)]\(登録の種類 (プレビュー)\)** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[登録の種類 (プレビュー)]** を選択します。
 2. 一覧のプロファイルを、適用する順序でドラッグ アンド ドロップします。
 
 ユーザーのプロファイル間で競合が生じた場合は、優先順位の高いプロファイルがユーザーに適用されます。

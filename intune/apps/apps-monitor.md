@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee22ee435830137a423423aa692376aabbb6cecb
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 72e1f95e2bd81d974d900acbcb0f785bb7966eaa
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585412"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563700"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune でアプリの情報と割り当てを監視する
 
@@ -31,10 +31,9 @@ ms.locfileid: "72585412"
 
 Intune には、管理しているアプリのプロパティを監視し、アプリの割り当て状態を管理する方法が複数あります。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-3. **[Intune]** ウィンドウで、 **[クライアント アプリ]** を選択します。
-4. メニューの **[管理]** セクションで、 **[アプリ]** を選びます。
-5. アプリの一覧で、監視するアプリを選びます。 デバイスの状態とユーザーの状態の概要を含む、アプリ ウィンドウが表示されます。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[アプリ]**  >  **[すべてのアプリ]** を選択します。
+3. アプリの一覧で、監視するアプリを選びます。 デバイスの状態とユーザーの状態の概要を含む、アプリ ウィンドウが表示されます。
 
 > [!NOTE]
 > **利用可能**として展開されている Android ストア アプリでは、そのインストール状態は報告されません。

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2ab21321b171c8fe8f5f9dab3032507c0e740cf
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 7e17972a3a87bd9c42db54753d4da3bb81703377
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059767"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563617"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>S モード デバイスで Win32 アプリを有効にする
 
@@ -58,7 +58,7 @@ S モードの Windows 10 デバイスで Win32 アプリの実行を許可す�
 Windows 10 S モード補足ポリシーを作成するには、次の手順のようにします。
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[Intune]** ウィンドウで、 **[クライアント アプリ]**  >  **[S モードの補足ポリシー]**  >  **[ポリシーの作成]** を選択します。
+2. **[アプリ]**  >  **[S モードの補足ポリシー]**  >  **[ポリシーの作成]** を選択します。
 3. **ポリシー ファイル**を追加する前に、作成して署名する必要があります。 詳細については、次をご覧ください。
     - [PowerShell ツールを使用して WDAC ポリシーを作成し、バイナリ形式に変換する](https://go.microsoft.com/fwlink/?linkid=2095387)
     - [Device Guard 署名サービスを使用して署名する](https://go.microsoft.com/fwlink/?linkid=2095629) **(推奨)**

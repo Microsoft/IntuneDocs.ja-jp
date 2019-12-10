@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6a9c6b824f8d6369f7bf2d06b44fa8a20417d1c
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: f80312c2bd82063ed0b61c36bef9b8bf4ae3e1aa
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713143"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691797"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Apple Configurator を使用した iOS デバイス登録の設定
 
@@ -48,7 +48,7 @@ Apple Configurator の登録方法は、[デバイス登録マネージャー](d
 
 デバイス登録プロファイルで、登録時に適用する設定を定義します。 これらの設定は、1 回だけ適用されます。 Apple Configurator を使用して iOS デバイスを登録するための登録プロファイルを作成するには、以下の手順に従います。
 
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Apple の登録]** 、 **[Apple Configurator]** 、 **[プロファイル]** 、 **[作成]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Apple Configurator]**  >  **[プロファイル]**  >  **[作成]** の順に選択します。
 
     ![Apple Configurator のプロファイルを作成する](./media/apple-configurator-enroll-ios/apple-config-create-profile.png)
 
@@ -88,7 +88,7 @@ Apple Configurator の登録方法は、[デバイス登録マネージャー](d
     DLXQPCWVGHMJ,デバイスの詳細
 
    [iOS デバイスのシリアル番号の見つけ方については、こちらをご覧ください](https://support.apple.com/HT204073)。
-2. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Apple の登録]** 、 **[Apple Configurator]** 、 **[デバイス]** 、 **[追加]** の順に選択します。
+2. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Apple Configurator]**  >  **[デバイス]**  >  **[追加]** の順に選択します。
 
 5. インポートするシリアル番号に適用する**登録プロファイル**を選択します。 新しいシリアル番号の詳細で既存の詳細を上書きする場合は、 **[既存の ID の詳細を上書きします]** を選択します。
 6. **[デバイスのインポート]** でシリアル番号の csv ファイルを参照して、 **[追加]** を選択します。
@@ -100,18 +100,18 @@ Apple Configurator 登録用の iOS シリアル番号をインポートする�
 - **AC プロファイル**
 
 #### <a name="assign-from-apple-configurator-devices"></a>Apple Configurator デバイスからの割り当て
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Apple の登録]** 、 **[Apple Configurator]** 、 **[デバイス]** の順に選択し、シリアル番号を選択し、 **[プロファイルの割り当て]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Apple Configurator]**  >  **[デバイス]** を選択します。シリアル番号を選択し、 **[プロファイルの割り当て]** を選択します。
 2. **[プロファイルの割り当て]** で、割り当てる**新しいプロファイル**を選択し、 **[割り当て]** を選択します。
 
 #### <a name="assign-from-profiles"></a>プロファイルからの割り当て
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Apple の登録]** 、 **[Apple Configurator]** 、 **[プロファイル]** の順に選択し、プロファイルを選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Apple Configurator]**  >  **[プロファイル]** の順に選択し、プロファイルを選択します。
 2. プロファイルで **[割り当てられたデバイス]** を選択し、次に **[割り当て]** を選択します。
 3. フィルターを使って、プロファイルに割り当てるシリアル番号を見つけ、デバイスを選択して、 **[割り当て]** を選択します。
 
 ### <a name="export-the-profile"></a>プロファイルのエクスポート
 プロファイルを作成してシリアル番号を割り当てた後、Intune からプロファイルを URL としてエクスポートする必要があります。 エクスポートしたプロファイルは、Mac の Apple Configurator にインポートしてデバイスに展開します。
 
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Apple の登録]** 、 **[Apple Configurator]** 、 **[プロファイル]** の順に選択し、エクスポートするプロファイルを選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Apple Configurator]**  >  **[プロファイル]** の順に選択し、エクスポートするプロファイルを選択します。
 2. プロファイルで、 **[プロファイルのエクスポート]** を選択します。
 3. **プロファイルの URL** をコピーします。 Apple Configurator にこれを追加すれば、iOS デバイスで使用する Intune プロファイルを定義できます。
 
@@ -147,7 +147,7 @@ iOS デバイスを Apple Configurator で直接登録する場合は、デバ�
 
 ### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>プロファイルを .mobileconfig として iOS デバイスにエクスポートする
 
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Apple の登録]** 、 **[Apple Configurator]** 、 **[プロファイル]** の順に選択し、エクスポートするプロファイルを選択し、 **[プロファイルのエクスポート]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Apple Configurator]**  >  **[プロファイル]** を選択します。エクスポートするプロファイルを選択し、 **[プロファイルのエクスポート]** を選択します。
 2. **[直接登録]** で、 **[プロファイルのダウンロード]** を選択して、ファイルを保存します。 登録プロファイルのファイルは 2 週間のみ有効で、これを過ぎると再作成が必要です。
 3. [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) を実行している Mac コンピューターにファイルを転送し、管理プロファイルとして iOS デバイスに直接プッシュします。
 4. 次の手順に従って、Apple Configurator を使用してデバイスを準備します。

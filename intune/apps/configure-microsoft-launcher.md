@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e404f6591eb042fa4d035f3377e211a219fabe4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1dc2e2ce7e19933accdb1063ccacf99fa3f54b09
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497961"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563963"
 ---
 # <a name="configure-microsoft-launcher"></a>Microsoft Launcher の構成
 
@@ -33,7 +33,7 @@ Android Enterprise のフル マネージド デバイスで Launcher を使用�
 
 ## <a name="how-to-configure-the-microsoft-managed-home-screen-app"></a>Microsoft Managed Home Screen アプリを構成する方法 
 
-Azure portal で Intune コンソールに移動して、 **[クライアント アプリ]**  >  **[アプリ構成ポリシー]** に移動します。 **Android** が実行されている**マネージド デバイス**用の構成ポリシーを追加し、関連付けられているアプリとして **[Microsoft Launcher]** を選択します。 **[構成設定]** をクリックして、利用可能なさまざまな Managed Home Screen 設定を構成します。 
+[Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)に移動し、 **[アプリ]**  >  **[アプリ構成ポリシー]** を選択します。 **Android** が実行されている**マネージド デバイス**用の構成ポリシーを追加し、関連付けられているアプリとして **[Microsoft Launcher]** を選択します。 **[構成設定]** をクリックして、利用可能なさまざまな Managed Home Screen 設定を構成します。 
 
 ## <a name="choosing-a-configuration-settings-format"></a>構成設定の形式を選択する 
 

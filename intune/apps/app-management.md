@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56814550cae814bd89d55a6f72df98dd24df4caf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 09b4cfad0490f35a85e4c72b937b2ba5c0472030
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507464"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564364"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune アプリの管理とは
 
@@ -76,14 +76,14 @@ Intune では、アプリを実行するデバイス上で必要なアプリを�
 
 ## <a name="get-started"></a>作業開始
 
-アプリに関連する情報は、ほとんどが **[クライアント アプリ]** ワークロード内にあり、以下の手順でアクセスできます。
+アプリに関連する情報は、ほとんどが **[アプリ]** ワークロード内にあり、以下の手順でアクセスできます。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-3. **[Microsoft Intune]** ウィンドウで、 **[クライアント アプリ]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+3. **[アプリ]** を選択します。
 
-    ![[クライアント アプリ] ワークロード ウィンドウ](./media/app-management/apps-workload.png)
+    ![[アプリ] ワークロード ウィンドウ](./media/app-management/apps-workload.png)
 
-次の 4 つのセクションでは、 **[クライアント アプリ]** ウィンドウで使用可能なオプションについて説明します。
+次の 4 つのセクションでは、 **[アプリ]** ウィンドウで使用可能なオプションについて説明します。
 
 ### <a name="manage"></a>管理
 - **[アプリ]** :従業員が使用するアプリの追加、表示、割り当て、監視を行うには、このオプションを選択します。 詳細については、次をご覧ください。

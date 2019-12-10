@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcc5dea1a3f9e6a1f2bec877688962d7be70cc7c
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445314"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562405"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Apple ユーザー登録でサポートされている Intune のアクションとオプション
 
@@ -57,13 +57,18 @@ ms.locfileid: "73445314"
 - リモート ロック
 - 状態を確認する
 
+## <a name="app-deployment-options"></a>アプリの展開オプション
+次のアプリの種類をユーザー登録デバイスに展開できます。
+- カスタム アプリが含まれるユーザー ライセンス ボリューム購入プラン (VPP) アプリ
+- 基幹業務 (LOB) アプリ
+- Web アプリ
+
 ## <a name="other-supported-options"></a>サポートされているその他のオプション
 
 Apple ユーザー登録を使用して登録したデバイスの Intune では、次のオプションがサポートされています。
 - アプリごとの VPN。 ユーザー登録で Safari 設定の構成がサポートされていないため、このサポートでは Safari ドメインが除外されます。
 - WiFi 
 - 登録解除時の企業アプリの削除
-- ユーザー ライセンス ボリューム購入プラン (VPP) を使用したアプリの展開
 - 脱獄の検出
 
 次の制限がサポートされています。
@@ -94,9 +99,10 @@ Apple ユーザー登録を使用して登録したデバイスの Intune では
 - UDID とその他の永続的なデバイス識別子を収集します。
 - ユーザー登録では、登録されている各デバイスの一意の登録 ID がサポートされますが、この ID は登録解除後に保持されません。
 - この制限があるため、次の Intune 機能はサポートされません。
-- シリアル番号のサブジェクト名形式の SCEP ユーザー プロファイル。
+- シリアル番号のサブジェクト名形式を含む SCEP ユーザー プロファイル。
 - デバイスレベルの VPN。
 - デバイスでライセンスされている VPP アプリの展開。
+- App Store アプリをマネージド アプリとしてインストールします。
 - マネージド APFS ボリュームの外部にあるアプリケーションの MDM コントロール。
 - アプリケーション保護ポリシーは、引き続きこれらのアプリに適用されます。 ただし、ユーザーが自分のデバイスから削除しない限り、管理を引き継いだり、アプリのマネージド バージョンを展開したりすることはできません。
 - 監視を必要とするアクション、構成、設定、およびコマンド。 

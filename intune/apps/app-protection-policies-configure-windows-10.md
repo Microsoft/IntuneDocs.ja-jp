@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0e1ff8fd39d301bd685e9806c319f49e9189d7f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 41c08d1912bf9c79507c2a6627205979504f340d
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507421"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564238"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Windows 10 用のアプリ保護ポリシーを構成する準備をする 
 
@@ -33,13 +33,12 @@ Azure AD で MAM プロバイダーを設定して、Windows 10 用モバイル 
 
 ## <a name="to-configure-the-mam-provider"></a>MAM プロバイダーを構成するには
 
-1. Azure Portal にサインインして、 **[Azure Active Directory]** を選択します。
-
-2. **[管理]** グループで **[モビリティ (MDM および MAM)]** を選択します。
-
-3. **[Microsoft Intune]** をクリックします。
-
-4. **[構成]** ブレードの **[既定の MAM URL を復元する]** グループで設定を構成します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[すべてのサービス]** を選択し、 **[M365 Azure Active Directory]** を選択してダッシュボードを切り替えます。
+3. **Azure Active Directory** を選択します。
+4. **[管理]** グループで **[モビリティ (MDM および MAM)]** を選択します。
+5. **[Microsoft Intune]** をクリックします。
+6. **[構成]** ウィンドウの **[既定の MAM URL を復元する]** グループで設定を構成します。
 
    **MAM ユーザー スコープ**  
    MAM の自動登録を使用して、従業員の Windows デバイス上のエンタープライズ データを管理します。 MAM 自動登録は、Bring Your Own Device シナリオ向けに構成されます。<ul><li>**なし**<br>MAM に登録できるユーザーがいない場合に選択します。</li><li>**一部**<br>MAM に登録するユーザーが含まれる Azure AD グループを選択します。</li><li>**すべて**<br>MAM にすべてのユーザーを登録する場合に選択します。</li></ul>
@@ -53,7 +52,7 @@ Azure AD で MAM プロバイダーを設定して、Windows 10 用モバイル 
    **MAM 準拠 URL**  
    MAM 準拠 URL は、Microsoft Intune ではサポートされていません。 保護ポリシーを適用するには、この入力ボックスを空白のままにする必要があります。 
 
-5. **[Save]** (保存) をクリックします。
+7. **[Save]** (保存) をクリックします。
 
 ## <a name="next-steps"></a>次の手順
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8519ad00024be43371cd118e3f37ae2fbc57898b
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: eff4ccdc8b40da4d72394001b88446653ff71bd0
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813373"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564242"
 ---
 # <a name="intune-discovered-apps"></a>Intune で検出されたアプリ
 
@@ -33,18 +33,18 @@ Intune で**検出されたアプリ**は、テナント内の Intune に登録�
 
 Intune では、テナント内の Intune に登録されているデバイス上で検出されたアプリを集計した一覧が提供されます。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[Intune]** ウィンドウで、 **[クライアント アプリ]**  >  **[検出されたアプリ]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[アプリ]**  >  **[監視]**  >  **[検出されたアプリ]** を選択します。
 
 >[!NOTE]
->検出されたアプリの一覧を .csv ファイルにエクスポートするには、 **[検出されたアプリ]** ブレードの **[エクスポート]** を選択します。
+>**[検出されたアプリ]** ウィンドウの **[エクスポート]** を選択することで、検出されたアプリの一覧を .csv ファイルにエクスポートできます。
 >
 >検出された Win32 アプリについては、現在は集計にカウントされません。 この種類のデータは、デバイスごとにのみ表示できます。
 
 Intune では、テナント内の個々のデバイスについて検出されたアプリの一覧も提供されます。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. [Intune] ウィンドウで、 **[デバイス]**  >  **[すべてのデバイス]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]**  >  **[すべてのデバイス]** を選択します。
 3. デバイスを選択します。
 4. このデバイスで検出されたアプリを表示するには、 **[監視]** セクションで **[検出されたアプリ]** を選択します。
 
@@ -69,7 +69,7 @@ Intune では、テナント内の個々のデバイスについて検出され�
 
 検出されたアプリの数が、インストール状態のアプリの数と一致しない場合があります。 一致しないケースとしては次の可能性があります。
 
-- インストールされている管理対象アプリのターゲットが変更されて、状態ブレードのインストール数が減少したが、検出されたアプリについてそのまま報告されることがあります。
+- インストールされているマネージド アプリのターゲットの変更によって、[状態] ウィンドウのインストール数が減少するが、検出されたアプリには報告されたままになることがあります。
 - テナント内の同一アプリの複数インスタンスをターゲットにすると、ユーザーまたはデバイスが重複する可能性があり、結果として件数が異なることがあります。 アプリの各インスタンスが重複するユーザーをカウントし、検出されたアプリが重複したカウントを含んでいることがあります。
 - 検出されたアプリとアプリの状態が異なる間隔で収集されるため、アプリ数の不一致が引き起こされることがあります。
 
