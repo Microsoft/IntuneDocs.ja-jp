@@ -17,17 +17,17 @@ search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f0e2e2101706b9b9afa77553244a438a2299903b
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73414022"
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Microsoft Intune の一般的な使用方法
 
 実装を始める前に、自社のエンタープライズ モビリティの関係者と、Intune の使用におけるビジネス目標に関する認識を合わせておくことが重要です。 これは、エンタープライズ モビリティを初めて導入する場合も、別の製品から移行する場合も同様です。  
 
-エンタープライズ モビリティ関連のニーズは動的に進化しており、これらのニーズに対応する Microsoft のアプローチが市場の他のソリューションとは異なる場合もあります。 ビジネス目標に関する認識を合わせる最善の方法は、実現するシナリオの目標を従業員、パートナー、IT に対して明確にすることです。  
+エンタープライズ モビリティ関連のニーズは動的に進化しており、これらのニーズに対応する Microsoft のアプローチが市場の他のソリューションとは異なる場合もあります。 ビジネス目標に関する認識を合わせる最善の方法は、実現するシナリオの目標を従業員、パートナー、IT 部門に対して明確にすることです。  
 
 以下では、Intune を使用する 6 つの一般的なシナリオについて簡単に説明します。また、各シナリオを計画および展開する方法を詳しく説明する記事のリンクも示します。
 

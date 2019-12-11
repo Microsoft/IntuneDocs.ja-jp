@@ -145,6 +145,8 @@
               href: vpn-settings-macos.md
             - name: Wi-Fi
               href: wi-fi-settings-macos.md
+            - name: 有線ネットワーク
+              href: wired-network-settings-macos.md
             - name: カスタム
               href: custom-settings-macos.md
         - name: Windows 10 以降
