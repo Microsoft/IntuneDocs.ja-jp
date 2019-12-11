@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b1264f5113ded280ed9d5cb9b9d4ece8e0187fe7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502870"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>クイック スタート:Microsoft Intune を無料で試す
@@ -48,7 +48,7 @@ Intune は 30 日間無料で試用できます。 既に職場または学校�
 
     ![Microsoft Intune 試用版アカウントのサインアップ Web ページのスクリーンショット](./media/free-trial-sign-up/account-sign-up-site-full-browser.png)
 
-    IT 運用チームやユーザーの多くが自分と異なるロケールに属している場合は、そのロケールを **[国または地域]** で選択することをお勧めします。 Azure は地域情報を使用して適切なサービスを提供しています。 この設定は後で変更できます。
+    IT 運用チームやユーザーの多くが自分と異なる場所に属している場合は、その場所を **[国または地域]** で選択することをお勧めします。 Azure は地域情報を使用して適切なサービスを提供しています。 この設定は後で変更できます。
 
 2. 会社名に続けて「 **.onmicrosoft.com**」と入力してアカウントを作成します。 
 
