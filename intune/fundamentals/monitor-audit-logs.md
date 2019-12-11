@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd00a0ae4cb6c3b150fe40cfc6cd7b71cfa973f3
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: d6af0718f2b926383bb943b6321b4d5839346ce7
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585242"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991980"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>監査ログを使用し、Microsoft Intune のイベントを追跡し、監視する
 
@@ -40,9 +40,14 @@ ms.locfileid: "72585242"
 
 各 Intune ワークロードの監視グループで監査ログを確認できます。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. 監査ログを確認するワークロードを選択します。 たとえば、 **[デバイス]** を選択します。
-3. **[監視]** の下で **[監査ログ]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. [**テナント管理** > **監査ログ**] を選択します。
+3. 結果をフィルター処理するには、 **[フィルター]** を選択し、次のオプションを使用して結果を絞り込みます。
+    - **カテゴリ**:**コンプライアンス**、**デバイス**、**ロール**など。
+    - **アクティビティ**: ここに示されているオプションは、 **[カテゴリ]** で選択したオプションによって制限されます。
+    - **[日付範囲]** : 前の月、週、または日のログを選択できます。
+4. **[適用]** を選択します。
+4. リスト内の項目を選択すると、アクティビティの詳細が表示されます。
 
 ## <a name="route-logs-to-azure-monitor"></a>ログを Azure Monitor にルーティングする
 
@@ -53,32 +58,10 @@ ms.locfileid: "72585242"
 > [!NOTE]
 > この機能の詳細と、それを使用するための前提条件を確認するには、「[ストレージ、イベントハブ、またはログ分析にログデータを送信する](review-logs-using-azure-monitor.md)」を参照してください。
 
-## <a name="review-audit-events"></a>監査イベントの確認
-
-![Intune で監査ログを選択し、イベントが発生したときのアクションと日付を表示する](./media/monitor-audit-logs/monitor-audit-logs.png "監査ログ")
-
-監査ログには、次の項目を表示する既定のリスト ビューがあります。
-
-- 発生した日時
-- 開始者 (アクター)
-- アプリケーション名
-- アクティビティ
-- ターゲット
-- Category
-- 状態
-
-イベントのさらに具体的な情報を見るには、一覧で項目を選択します。
-
-![Intune の監査ログで操作者および操作内容についてさらに具体的な情報を得る](./media/monitor-audit-logs/monitor-audit-log-detail.png "|::ref2::|")
-
 > [!NOTE]
 > **開始者 (アクター)** には、タスクの実行者と、実行された場所についての情報が含まれます。 たとえば、Azure portal で Intune のアクティビティを実行する場合、 **[アプリケーション]** には常に **[Microsoft Intune portal extension]\(Microsoft Intune ポータル拡張機能\)** が表示され、 **[アプリケーション ID]** には常に同じ GUID が使用されます。
 >
 > **[ターゲット]** セクションには、複数のターゲットとその変更されたプロパティが一覧表示されます。  
-
-## <a name="filter-audit-events"></a>監査イベントのフィルター
-
-各ワークロードには、そのウィンドウに関連付けられた監査イベントのカテゴリを事前にフィルターするメニュー項目があります。 別個のフィルター オプションを使用すると、別のカテゴリに変更したり、そのカテゴリ内のイベント アクションの詳細に変更したりできます。 そのアクションを行ったユーザーなどを UPN で検索することができます。 日付範囲フィルターは、24 時間、7 日間、または 30 日間から選べます。 既定では、過去 30 日の監査イベントが表示されます。
 
 ## <a name="use-graph-api-to-retrieve-audit-events"></a>Graph API を使用した監査イベントの取得
 

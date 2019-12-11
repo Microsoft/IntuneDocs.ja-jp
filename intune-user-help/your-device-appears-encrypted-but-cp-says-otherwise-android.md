@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: af1c7d1f9d8236fd95413317acefbe8887d90f47
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72507672"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>デバイスは暗号化されますが、それ以外の場合は
@@ -32,7 +32,7 @@ ms.locfileid: "72507672"
 
 ## <a name="add-a-startup-pin"></a>スタートアップ PIN の追加
 
-いくつかの Android デバイスでは、デバイスがセキュリティ保護されていることを確認するためにスタートアップ PIN を作成する必要があります。 この設定の場所は、デバイスの**設定**アプリにあります。 設定の名前と場所が異なる場合があります。 たとえば、Samsung Galaxy S7 では、この設定は "**安全な起動**" と呼ばれます。 これを有効にしてパスコードを作成するには、 **[設定]**  >  [**ロック画面とセキュリティ** >  のセキュリティ**で保護された起動**] にアクセスします。  
+いくつかの Android デバイスでは、デバイスがセキュリティ保護されていることを確認するためにスタートアップ PIN を作成する必要があります。 この設定の場所は、デバイスの**設定**アプリにあります。 設定の名前と場所が異なる場合があります。 たとえば、Samsung Galaxy S7 では、この設定は "**安全な起動**" と呼ばれます。 これを有効にしてパスコードを作成するには、 **[設定]**  > [**ロック画面とセキュリティ** > のセキュリティ**で保護された起動**] にアクセスします。  
 
 ## <a name="encrypt-the-entire-device"></a>デバイス全体を暗号化します
 

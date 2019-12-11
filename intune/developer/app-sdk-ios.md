@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 93b48fd5f6482669da923e4c15dcb09c7d328197
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503459"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS 用 Microsoft Intune App SDK 開発者ガイド
@@ -232,7 +232,7 @@ MSAL-開発者[は、ここ](https://github.com/AzureAD/microsoft-authentication
 ### <a name="special-considerations-when-using-msal"></a>MSAL を使用する場合の特別な考慮事項 
 
 1. **Webview を確認**してください。アプリケーションでは、アプリによって開始される msal 対話型認証操作のために、webview として SFSafariViewController、SFAuthSession、または ASWebAuthSession を使用しないことをお勧めします。 何らかの理由で、アプリが対話型の MSAL auth 操作に対してこれらの webview のいずれかを使用する必要がある場合は、アプリケーションのの `IntuneMAMSettings` 辞書の下で `true` するように `SafariViewControllerBlockedOverride` も設定する必要があります。 警告: 認証セッションを有効にするために、Intune のすべての Saf を無効にします。 これにより、アプリケーションで、会社のデータを表示するためにユーザーのデータが表示される場合に、アプリの他の場所でデータが漏洩する可能性があります。そのため、アプリケーションは、これらの webview の種類のいずれにも企業データを表示しません。
-2. **Adal と MSAL の両方をリンク**する-開発者は、このシナリオで、INTUNE で adal を優先するかどうかを選択する必要があります。 既定では、Intune でサポートされている ADAL バージョンが、実行時にリンクされている場合、サポートされる MSAL バージョンに優先されます。 Intune では、Intune の最初の認証操作時に `NSUserDefaults` で `true` `IntuneMAMUseMSALOnNextLaunch` がサポートされている場合にのみ、サポートされる MSAL バージョンが優先されます。 `IntuneMAMUseMSALOnNextLaunch` が `false` であるか設定されていない場合、Intune は既定の動作に戻ります。 名前が示すように、`IntuneMAMUseMSALOnNextLaunch` の変更は、次回の起動時に有効になります。
+2. **Adal と MSAL の両方をリンク**する-開発者は、このシナリオで、INTUNE で adal を優先するかどうかを選択する必要があります。 既定では、Intune でサポートされている ADAL バージョンが、実行時にリンクされている場合、サポートされる MSAL バージョンに優先されます。 Intune では、Intune の最初の認証操作時に `NSUserDefaults`で `true` `IntuneMAMUseMSALOnNextLaunch` がサポートされている場合にのみ、サポートされる MSAL バージョンが優先されます。 `IntuneMAMUseMSALOnNextLaunch` が `false` であるか設定されていない場合、Intune は既定の動作に戻ります。 名前が示すように、`IntuneMAMUseMSALOnNextLaunch` の変更は、次回の起動時に有効になります。
 
 
 ## <a name="configure-settings-for-the-intune-app-sdk"></a>Intune App SDK の設定を構成する
@@ -243,7 +243,7 @@ IntuneMAMSettings ディクショナリの下に、次のサポートされる�
 
 これらの設定の一部は前のセクションで説明しています。一部の設定はすべてのアプリには適用されません。
 
-Setting  | Type  | 定義 | 必須
+設定  | Type  | 定義 | 必須
 --       |  --   |   --       |  --
 ADALClientId  | 文字列型  | アプリの Azure AD クライアント識別子。 | MSAL を使用するすべてのアプリと、Intune 以外の AAD リソースにアクセスするすべての ADAL アプリに必要です。 |
 ADALAuthority | 文字列型 | 使用されているアプリの Azure AD 機関。 AAD アカウントが構成されている独自の環境を使用する必要があります。 | アプリが ADAL または MSAL を使用して Intune 以外の AAD リソースにアクセスする場合に必要です。 この値が存在しない場合は、Intune の既定値が使用されます。|
@@ -332,7 +332,7 @@ ADAL または MSAL を使用してユーザーをサインインしないアプ
 
 Intune SDK で、アプリの起動が完了する前に ADAL/MSAL を使用するすべての認証と登録を処理する必要があり、アプリで常に APP ポリシーが必要な場合、`loginAndEnrollAccount` API を使用する必要はありません。 アプリの Info.plist の IntuneMAMSettings ディクショナリで以下の 2 つの設定を YES に設定するだけです。
 
-Setting  | Type  | 定義 |
+設定  | Type  | 定義 |
 --       |  --   |   --       |  
 AutoEnrollOnLaunch| ブール型| 既存の管理対象の ID が検出され、それがまだ登録されていない場合、起動時に自動登録を試みるかどうかを指定します。 既定は [いいえ] です。 <br><br> 注意: マネージド ID が検出されない場合、またはその ID に対する有効なトークンが ADAL/MSAL キャッシュ内に存在しない場合は、アプリで MAMPolicyRequired も [はい] に設定されていない限り、資格情報を求めるメッセージを表示することなく登録の試みは失敗します。 |
 MAMPolicyRequired| ブール型| アプリに Intune アプリ保護ポリシーがない場合に、アプリの起動をブロックするかどうかを指定します。 既定は [いいえ] です。 <br><br> 注: MAMPolicyRequired を YES に設定した状態でアプリを App Store に送信することはできません。 MAMPolicyRequired を YES に設定した場合は、AutoEnrollOnLaunch も YES に設定する必要があります。 |

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 12/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fde277e16043662420864adcc0458e3dccad308
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: 5f9a01adaa6f5ab59819c2924172c30a437ebd8c
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465661"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992922"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用した機能を許可または制限するための iOS および iPadOS デバイスの設定
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 この記事では、iOS および iPadOS デバイスで制御できるさまざまな設定の一覧を示して説明します。 モバイル デバイス管理 (MDM) ソリューションの一部として、これらの設定を使って、機能の許可または無効化、パスワード規則の設定、特定のアプリの許可または制限などを行います。
 
@@ -52,7 +50,7 @@ ms.locfileid: "74465661"
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>設定の適用先: デバイスの登録、デバイスの自動登録 (監視)
 
 - **[信頼できない TLS 証明書]** : **[ブロック]** を選択すると、信頼されていないトランスポート層セキュリティ (TLS) 証明書がデバイスで禁止されます。 **[未構成]** (既定値) では、TLS 証明書が許可されます。
-- **[無線による PKI の更新を許可する]** : **[許可]** を選択すると、ユーザーはデバイスをコンピューターに接続せずにソフトウェア更新プログラムを受信できるようになります。
+- **無線での PKI 更新をブロックする**:**ブロック**を使用すると、ユーザーは、デバイスをコンピューターに接続しなくても、ソフトウェア更新プログラムを受信できなくなります。 **未構成**(既定) では、デバイスのこの設定は更新されません。
 - **[広告トラッキングを制限する]** : **[制限]** を選択すると、デバイスの広告識別子が無効になります。 **[未構成]** (既定値) にすると、有効のままになります。
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>設定の適用対象: 自動デバイス登録 (監視)
@@ -95,7 +93,7 @@ ms.locfileid: "74465661"
 - **[構成プロファイルの変更]** : **[ブロック]** では、デバイスでの構成プロファイルの変更が禁止されます。 **[未構成]** (既定値) では、ユーザーが構成プロファイルをインストールできるようになります。
 - **[アクティベーション ロック]** : **[許可]** を選択すると、監視されている iOS デバイスでアクティベーション ロックが有効になります。 アクティベーション ロックにより、紛失したり盗難にあったデバイスの再アクティブ化が困難になります。
 - **[アプリの削除をブロックする]** : **[ブロック]** を選択すると、ユーザーがアプリを削除できなくなります。 **[未構成]** (既定値) では、ユーザーがデバイスからアプリを削除できるようになります。
-- **[Blocks USB Restricted mode]\(USB 制限モードをブロックする\)** : **[ブロック]** を選択すると、監視対象のデバイスで USB 制限モードが無効になります。 USB 制限モードでは、USB アクセサリで 1 時間を超えてロックされているデバイスとデータ交換されないようにします。 **[未構成]** (既定値) では、USB 制限モードが許可されます。
+- **デバイスのロック中に usb アクセサリを使用する**:**許可**は、usb アクセサリが1時間にわたってロックされているデバイスとデータを交換できるようにします。 **未構成**(既定) は、デバイスの USB 制限モードを更新しません。
 - **[日付と時刻自動設定を強制する]** : **[必要]** では、監視対象デバイスの日付と時刻の自動設定が強制されます。 デバイスのタイム ゾーンが更新されるのは、デバイスが携帯ネットワークに接続したとき、または Wi-Fi の位置情報サービスを有効にしているときです。
 - **[Classroom の学科をやめる学生は許可を求めることが必要]** : **[必要]** では、Classroom アプリを使用して非管理の学科に登録している学生は、その学科をやめるために教師に許可を求める必要があります。 **[未構成]** (既定値) では、学生は許可を求めるように強制されません。
 

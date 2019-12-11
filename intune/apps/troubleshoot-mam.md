@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 43fd8207a07f64fd293eb9c90bbfc2a8dadd9157
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72489934"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>モバイル アプリケーション管理に関するトラブルシューティング
@@ -115,4 +115,4 @@ Android | **ポータル サイトが必要**: このアプリで職場または
 - ログファイルを使用して Intune App Protection ポリシーのトラブルシューティングを行う方法については、「」を参照してください[https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372)
 - Intune のトラブルシューティングに関する追加情報については、「[トラブルシューティング ポータルを使用して社内のユーザーをサポートする](../fundamentals/help-desk-operators.md)」をご覧ください。 
 - Microsoft Intune の既知の問題について学習します。 詳細については、「[Microsoft Intune の既知の問題](../known-issues.md)」を参照してください。
-- さらに支援が必要ですか。 「[Microsoft Intune のサポートを受ける方法](../fundamentals/get-support.md)」を参照してください。
+- さらに支援が必要ですか? 「[Microsoft Intune のサポートを受ける方法](../fundamentals/get-support.md)」を参照してください。

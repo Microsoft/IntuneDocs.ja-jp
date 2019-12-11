@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c8c5be1d7a02c2c8329afe05dcdce22f48c49d05
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503495"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android 用 Microsoft Intune アプリ SDK 開発者ガイド
@@ -673,7 +673,7 @@ public interface MAMNotificationReceiver {
 
 アプリに次の通知が送信されます。その一部によって、アプリによる処理が要求される場合があります。
 
-* **WIPE_USER_DATA**: この通知は、`MAMUserNotification` クラスで送信されます。 この通知を受信すると、アプリは (`MAMUserNotification.getUserIdentity()` から) 管理対象 id に関連付けられているすべてのデータを削除*する必要があり*ます。 通知はさまざまな理由で発生する可能性があります。たとえば、アプリが `unregisterAccountForMAM` を呼び出したとき、IT 管理者がワイプを開始したとき、または管理者が必要とする条件付きアクセスポリシーが満たされていない場合などです。 アプリがこの通知に登録していない場合は、既定のワイプ動作が実行されます。 既定の動作では、単一 id アプリのすべてのファイル、または複数 id アプリのマネージ id でタグ付けされたすべてのファイルが削除されます。 この通知は、UI スレッドでは送信されません。
+* **WIPE_USER_DATA**: この通知は、`MAMUserNotification` クラスで送信されます。 この通知を受信すると、アプリは (`MAMUserNotification.getUserIdentity()`から) 管理対象 id に関連付けられているすべてのデータを削除*する必要があり*ます。 通知はさまざまな理由で発生する可能性があります。たとえば、アプリが `unregisterAccountForMAM` を呼び出したとき、IT 管理者がワイプを開始したとき、または管理者が必要とする条件付きアクセスポリシーが満たされていない場合などです。 アプリがこの通知に登録していない場合は、既定のワイプ動作が実行されます。 既定の動作では、単一 id アプリのすべてのファイル、または複数 id アプリのマネージ id でタグ付けされたすべてのファイルが削除されます。 この通知は、UI スレッドでは送信されません。
 
 * **WIPE_USER_AUXILIARY_DATA**: Intune アプリ SDK に対して既定の選択的ワイプの実行を求めるが、ワイプが発生したときにいくつかの補助的なデータを削除する必要があるアプリは、この通知に登録できます。 この通知は単一 ID アプリには利用できません。複数 ID アプリにのみ送信されます。 この通知は、UI スレッドでは送信されません。
 
@@ -1111,7 +1111,7 @@ notificationRegistry.registerReceiver(receiver, MAMNotificationType.COMPLIANCE_S
 ### <a name="implementation-notes"></a>実装に関するメモ
 > [!NOTE]
 > **重要な変更**  <br>
-> 新しい `forceRefresh` フラグを `acquireTokenSilentSync()` するには、アプリの `MAMServiceAuthenticationCallback.acquireToken()` メソッドで*false*を渡す必要があります。
+> 新しい `forceRefresh` フラグを `acquireTokenSilentSync()`するには、アプリの `MAMServiceAuthenticationCallback.acquireToken()` メソッドで*false*を渡す必要があります。
 > 以前は、ブローカーからのトークンの更新に関する問題に対処するために*true*を渡すことをお勧めしましたが、このフラグが*true*の場合、一部のシナリオでトークンを取得できない可能性がある ADAL の問題が検出されました。
 ```java
 AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ false);

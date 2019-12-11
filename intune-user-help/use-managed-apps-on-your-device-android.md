@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d4193b3e43b7c406a1fb6c9c8d987caa6cbeea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 28ba1d2d50f366e5e34fae06ae188293dd0fb8b5
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72501883"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74781211"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Android デバイスで管理対象アプリを使用する
 マネージド アプリは、組織のセキュリティ要件を満たすように構成されて、職場や学校のデータを保護します。 これらのアプリは、お使いのデバイスに自動的にインストールして使用できます。 
@@ -39,9 +39,7 @@ ms.locfileid: "72501883"
 組織はユーザーに対し、作業ファイルを開いたり Web リンクにアクセスするといったことを、マネージド アプリを使用して行うよう要求することができます。 ユーザーは、アプリを持っていない場合、タスクを続行できない可能性があります。 マネージド アプリの中にはインストールできますが必要のないものもあります。
 
 ## <a name="how-do-i-know-im-using-a-managed-app"></a>マネージド アプリを使用していることを確認する方法
-マネージド アプリで職場または学校のデータに初めてアクセスすると、次のスクリーンショットの例のようなメッセージを受け取ります。 このメッセージは、続けるにはアプリを再起動するよう求めるものです。
-
-![ユーザーがデバイスでマネージド アプリを開くと表示されるメッセージのスクリーンショット。 メッセージの内容は、"このアプリに存在する組織のデータは、現在、組織により保護されていません。 続行するには、アプリを再起動する必要があります。" というもので、その後に [OK] ボタンがあります。](./media/managed-apps-message.png)
+管理対象アプリで職場または学校のデータにアクセスしようとすると、アプリが組織によって保護されていることを示す画面メッセージが表示されます。 
 
 ## <a name="commonly-managed-apps"></a>一般的なマネージド アプリ  
 学校および職場で一般に必要とされる、または使用できるマネージド アプリの例は次のとおりです。

@@ -5,7 +5,7 @@ description: Microsoft Defender Advanced Threat Protection を管理するため
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 12/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7363682960cff6688e9727d2b6869b6bf357084
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 85d0b28de6c133ece5116dd78b1646f497ff2f6b
+ms.sourcegitcommit: 0a85af9d584709ecc29062f91645a4c47a61ebb9
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060065"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882334"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 向けの Microsoft Defender Advanced Threat Protection ベースライン設定
 
@@ -593,8 +593,18 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 - **Windows Hello for Business を構成する** - *TenantId/Policies/UsePassportForWork*    
   Windows Hello for Business は、パスワード、スマート カード、および仮想スマート カードを置き換えることで Windows にサインインする代替方法です。  
 
-  - *[はい]* に設定すると、このポリシーが有効になり、デバイスは Windows Hello for Business をプロビジョニングします。  
-  - [*未構成*] に設定した場合、ベースラインはデバイスのポリシー設定に影響しません。 これは、Windows Hello for Business がデバイスで無効になっていると、無効のままになることを意味します。 有効になっている場合は、有効のままになります。 
+
+  > [!IMPORTANT]
+  > この設定のオプションは、暗黙的な意味とは逆になります。 逆に、値が*Yes*の場合は、Windows Hello を有効にせずに、構成されて*いない*として扱われます。 この設定を [*未構成*] に設定すると、このベースラインを受信するデバイスで Windows Hello が有効になります。
+  >
+  > この動作を反映するために、次の説明が変更されています。 設定の反転は、このセキュリティベースラインの今後の更新で修正される予定です。
+
+  - [*未構成*] に設定すると、windows hello が有効になり、デバイスは windows Hello for Business をプロビジョニングします。
+  - *[はい]* に設定した場合、ベースラインはデバイスのポリシー設定に影響しません。 これは、Windows Hello for Business がデバイスで無効になっていると、無効のままになることを意味します。 有効になっている場合は、有効のままになります。
+  <!-- expected behavior 
+  - When set to *Yes*, you  enable this policy and the device provisions Windows Hello for Business.  
+  - When set to *Not configured*, the baseline does not affect the policy setting of the device. This means that if Windows Hello for Business is disabled on a device, it remains disabled. If its enabled, it remains enabled. 
+  -->
 
   この基準を使用して Windows Hello for Business を無効にすることはできません。 Windows Hello for Business を無効にするには、 [windows の登録](windows-hello.md)を構成するか、 [identity protection](identity-protection-configure.md)のデバイス構成プロファイルの一部としてを使用します。  
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42ccb1d1654ba45b63672eebf00acd10fdc56a67
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 80da0e6952c5aaab6fa8146b2d91d32259966d5d
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059343"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74691724"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune で Windows 10 以降のデバイスをキオスクとして実行するための設定
 
@@ -83,16 +83,17 @@ Intune での Windows キオスク機能の詳細については、[キオスク
 
     - **[Refresh browser after idle time]\(アイドル時間後にブラウザーを最新の情報に更新する\)** : キオスク ブラウザーを初期状態で再起動するまでのアイドル時間 (1 から 1,440 分) で入力します。 アイドル時間は、ユーザーが最後に操作してからの分数です。 既定では、値は空または空白となります。これは、アイドル タイムアウトがないことを意味します。
 
-    - **[Allowed websites]\(許可されている Web サイト\)** : 特定の Web サイトを開けるようにするには、この設定を使用します。 つまり、デバイス上で Web サイトを制限またはブロックするには、この機能を使用します。 たとえば、`http://contoso.com*` のすべての Web サイトが開くようにすることができます。 既定では、すべての Web サイトが許可されます。
+    - **[Allowed websites]\(許可されている Web サイト\)** : 特定の Web サイトを開けるようにするには、この設定を使用します。 つまり、デバイス上で Web サイトを制限またはブロックするには、この機能を使用します。 たとえば、`http://contoso.com` のすべての Web サイトが開くようにすることができます。 既定では、すべての Web サイトが許可されます。
 
-      特定の web サイトを許可するには、許可される Web サイトが 1 行に 1 つずつ列記されているファイルをアップロードします。 ファイルを追加しない場合、すべての Web サイトが許可されます。 Intune では、`*` (アスタリスク) がワイルド カードとしてサポートされます。
+      特定の web サイトを許可するには、許可される Web サイトが 1 行に 1 つずつ列記されているファイルをアップロードします。 ファイルを追加しない場合、すべての Web サイトが許可されます。 既定では、Intune はワイルドカードをサポートしています。 そのため、`sharepoint.com`などのドメインを入力すると、`contoso.sharepoint.com`、`my.sharepoint.com`などのサブドメインが自動的に許可されます。
 
       ファイルの例を次に示します。
 
       `http://bing.com`  
       `https://bing.com`  
-      `http://contoso.com/*`  
-      `https://contoso.com/*`
+      `http://contoso.com`  
+      `https://contoso.com`  
+      `office.com`
 
     > [!NOTE]
     > Microsoft キオスクブラウザーを使用して自動ログオンが有効になっている Windows 10 キオスクでは、Microsoft Store for Business のオフラインライセンスを使用する必要があります。 この要件は、自動ログオンでは、Azure Active Directory (AD) 資格情報のないローカルユーザーアカウントを使用するためです。 そのため、オンラインライセンスを評価することはできません。 詳しくは、「[オフライン アプリの配布](https://docs.microsoft.com/microsoft-store/distribute-offline-apps)」をご覧ください。

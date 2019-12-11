@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5ab1be3d34d52e824d1ff06124e28206fb7b07a1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72510189"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure コンソールと従来の Intune PC クライアントでの Intune
@@ -63,7 +63,7 @@ PC クライアントと MDM 機能の詳細な比較については、[Windows 
 Intune PC クライアントでの Windows 10 デバイス管理から MDM での管理に切り替えるには、次の手順に従います。
 
 1. Silverlight コンソールで、**選択的ワイプ**を実行して PC クライアントからデバイスを登録解除します。
-  [デバイスを選択的にワイプする] ラジオボタンを選択して ![Warning ポップアップ ](./media/intune-legacy-pc-client/image02.png)
+  [デバイスを選択的にワイプする] オプションボタンがオンになっている ![警告ポップアップ](./media/intune-legacy-pc-client/image02.png)
 2. [MDM (および/または Azure AD Join)](../enrollment/windows-enroll.md) を使用してデバイスを再登録します。
 
 ## <a name="next-steps"></a>次の手順

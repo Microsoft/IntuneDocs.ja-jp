@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b30a7e843850d6918abc2e76f84397a1f197516f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508864"
 ---
 # <a name="resolve-common-errors-for-the-intune-exchange-connector"></a>Intune Exchange Connector の一般的なエラーを解決する
@@ -123,10 +123,10 @@ IOS デバイスを Intune に登録できず、次のエラーメッセージ�
    Domain and account: .\WIEC_USER
    This service account does not have the required user right "Log on as a service."  
 ```
-この問題は、 **WIEC_User**アカウントのローカルポリシーに "**サービスとしてログオン**" ユーザー権利がない場合に発生する可能性があります。
+この問題は、 **WIEC_User**アカウントがローカルポリシーに "**サービスとしてログオン**" ユーザー権利を持っていない場合に発生する可能性があります。
 
 **解決方法**:  
-Intune Exchange Connector を実行するコンピューターで、 **WIEC_User** service アカウントに "**サービスとしてログオン**" ユーザー権利を割り当てます。 コンピューターがクラスター内のノードである場合は、クラスター内のすべてのノードのクラスターサービスアカウントに、"*サービスとしてログオン*" ユーザー権利を割り当ててください。  
+Intune Exchange Connector を実行するコンピューターで、 **[サービスとしてログオン**] ユーザー権利を**WIEC_User**サービスアカウントに割り当てます。 コンピューターがクラスター内のノードである場合は、クラスター内のすべてのノードのクラスターサービスアカウントに、"*サービスとしてログオン*" ユーザー権利を割り当ててください。  
 
 コンピューターの**WIEC_User**サービスアカウントに**サービスとしてログオン**するユーザー権利を割り当てるには、次の手順を実行します。
 
@@ -136,7 +136,7 @@ Intune Exchange Connector を実行するコンピューターで、 **WIEC_User
 4. 右のウィンドウで、 **[サービスとしてログオン]** をダブルクリックします。
 5. **[ユーザーまたはグループの追加]** を選択し、ポリシーに**WIEC_USER**を追加して、[ **OK]** を2回選択します。
 
-**[サービスとしてログオン**] ユーザー権限が**WIEC_User**に割り当てられているが、後で削除された場合は、ドメイン管理者に連絡して、グループポリシー設定によって上書きされているかどうかを確認します。  
+**サービスとしてのログオン**のユーザー権利が**WIEC_User**に割り当てられていて、後で削除された場合は、ドメイン管理者に問い合わせて、グループポリシー設定で上書きされているかどうかを確認します。  
 
 ## <a name="next-steps"></a>次の手順  
 

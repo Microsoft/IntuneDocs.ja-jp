@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9acad2e8539da7210c349ffb254af62f370af5f6
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 6ed04c1bf135793da9cece9debc2c7cdd481601a
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74391499"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74691690"
 ---
 # <a name="add-a-property-list-file-to-macos-devices-using-microsoft-intune"></a>Microsoft Intune を使用して macOS デバイスにプロパティリストファイルを追加する
 
@@ -48,7 +48,7 @@ Microsoft Intune を使用すると、macOS デバイスのプロパティリス
 - 一部のアプリのみが管理対象の設定で動作し、すべての設定を管理することはできません。
 - ユーザーチャネル設定ではなく、デバイスチャネル設定をターゲットにするプロパティリストファイルを必ずアップロードしてください。 プロパティリストファイルは、デバイス全体を対象とします。
 
-## <a name="preference-file"></a>基本設定ファイル
+## <a name="preference-file"></a>設定ファイル
 
 - **基本設定ドメイン名**: プロパティリストファイルは、通常、web ブラウザー (microsoft Edge)、 [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac)、およびカスタムアプリに使用されます。 基本設定ドメインを作成すると、バンドル ID も作成されます。 バンドル ID (`com.company.application`など) を入力します。 たとえば、「`com.Contoso.applicationName`」、「`com.Microsoft.Edge`」、または「`com.microsoft.wdav`」と入力します。
 - **プロパティリストファイル**: アプリに関連付けられているプロパティリストファイルを選択します。 `.plist` または `.xml` ファイルであることを確認してください。 たとえば、`YourApp-Manifest.plist` ファイルまたは `YourApp-Manifest.xml` ファイルをアップロードします。
@@ -59,3 +59,5 @@ Microsoft Intune を使用すると、macOS デバイスのプロパティリス
 ## <a name="next-steps"></a>次の手順
 
 プロファイルは作成されましたが、まだ何も行われていません。 次に、[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
+
+Microsoft Edge の基本設定ファイルの詳細については、「 [macOS で Microsoft edge ポリシー設定を構成する](https://docs.microsoft.com/deployedge/configure-microsoft-edge-on-mac)」を参照してください。

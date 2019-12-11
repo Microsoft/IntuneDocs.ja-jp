@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 428da4581e9946b62bd6ee7c5f7d17d69f93ad9b
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 9742305905c5ba49930e13646bf13d8c248426b6
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592018"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899401"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK の概要
 
@@ -164,7 +164,7 @@ iOS または Android アプリを Intune アプリ SDK と統合するために
 
   * エンド ユーザー アカウントを使用してモバイル デバイスでアプリをテストしている場合は、管理者アカウントを使用してログインした後、Microsoft 365 管理センター Web サイトによってそのアカウントに Intune ライセンスが付与されていることを確認します。[Microsoft Intune ライセンスの割り当て](../fundamentals/licenses-assign.md)に関するページを参照してください。
 
-* **Intune のアプリ保護ポリシー**: Intune のすべてのアプリ保護ポリシーに対して、ご使用のアプリをテストするには、ポリシー設定ごとに想定される動作を把握する必要があります。 [iOS アプリ保護ポリシー](../apps/app-protection-policy-settings-ios.md)と [Android アプリ保護ポリシー](../apps/app-protection-policy-settings-android.md)の説明を参照してください。 アプリで Intune SDK を統合していても、対象アプリとしてまだ Azure portal に表示されない場合は、[+ その他のアプリ] オプションを選択し、テキスト ボックスにバンドル ID (iOS) またはパッケージ名 (Android) を指定することでポリシーの対象にすることができます。
+* **Intune のアプリ保護ポリシー**: Intune のすべてのアプリ保護ポリシーに対して、ご使用のアプリをテストするには、ポリシー設定ごとに想定される動作を把握する必要があります。 [iOS アプリ保護ポリシー](../apps/app-protection-policy-settings-ios.md)と [Android アプリ保護ポリシー](../apps/app-protection-policy-settings-android.md)の説明を参照してください。 アプリが Intune SDK を統合していても、不要アプリの一覧に表示されていない場合は、[カスタムアプリ] を選択するときに、テキストボックスにアプリのバンドル ID (iOS) またはパッケージ名 (Android) を指定できます。 
 
 * **トラブルシューティング**: アプリのインストール ユーザー エクスペリエンスを手動でテストしているときに問題が発生した場合は、「[アプリのインストールに関する問題のトラブルシューティング](../apps/troubleshoot-app-install.md)」をご覧ください。 
 

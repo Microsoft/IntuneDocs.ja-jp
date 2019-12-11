@@ -6,7 +6,7 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 12/03/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d00ae284ff4ea911cecb571cfe765eafe32fac02
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 18815fb671e853bc0463fed750d40b80ccb285fb
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490479"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74784274"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Power BI で OData フィードから Intune レポートを作成する
 
@@ -111,7 +111,7 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 3. `ownerTypes` テーブルを展開し、[`ownerTypeName` データ] フィールドを選択します。
 4. [`onwerTypeName` データ] フィールドを `ownerTypes` テーブルから **[フィルター]** ペインにドラッグし、 **[データフィールドの追加]** というラベルの付いた **[このページのフィルター]** セクションの下にドロップします。  
 
-   `OwnerTypes` テーブルの下には、デバイスが会社所有または個人のどちらであるかを示すデータを含む `OwnerTypeKey`that というデータフィールドがあります。 このフィルターにはフレンドリ名を表示したいので、`ownerTypes` テーブルを探し、**ownerTypeName** をスライサーにドラッグします。 この例では、データ モデルがテーブル間のリレーションシップをサポートする方法を示します。
+   `OwnerTypes` テーブルの下には、デバイスが会社所有または個人のどちらであるかを示すデータを含む `OwnerTypeKey`というデータフィールドがあります。 このフィルターにはフレンドリ名を表示したいので、`ownerTypes` テーブルを探し、**ownerTypeName** をスライサーにドラッグします。 この例では、データ モデルがテーブル間のリレーションシップをサポートする方法を示します。
 
 ![ツリーマップとフィルター - テーブル間のリレーションシップのサポート](./media/reports-proc-create-with-odata/reports-create-08_ownertype.png)
 

@@ -17,10 +17,10 @@ ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 81d0ff389acd2c7014b830bb7c24e336088c4f96
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506891"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Intune 用の配信最適化の設定
@@ -41,7 +41,7 @@ Intune を構成してこれらの設定を使用するには、[更新プログ
 
 ## <a name="delivery-optimization"></a>配信の最適化  
 
-|Setting  |Windows Version  |説明  |
+|設定  |Windows Version  |説明  |
 |---------|-----------------|---------|
 | [ダウンロード モード](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#download-mode)     | 1511         | コンテンツをダウンロードするには、配信最適化で使用されるダウンロード方法を指定します。<br><ul><li>**[未構成]** : エンド ユーザーはそれぞれ独自の方法を使って各デバイスを更新します。 *[Windows の更新プログラム]* や、オペレーティング システムで使用できる [配信の最適化] 設定が使われる場合があります。 </li> <li> **[HTTP のみ、ピアリングなし (0)]** : 更新プログラムをインターネットからのみ取得します。 ネットワーク上の他のコンピューターからは更新プログラムを取得しません (ピア ツー ピア)。 </li> <li> **[HTTP と同じ NAT でのピアリングの組み合わせ (1)]** : インターネットおよびネットワーク上の他のコンピューターから更新プログラムを取得します。 </li> <li> **[HTTP とプライベート グループでのピアリングの組み合わせ (2)]** : ピアリングは、同じ Active Directory サイト (存在する場合) または同じドメイン内にあるデバイス上で発生します。 このオプションを選択した場合、ピアリングはネットワーク アドレス変換 (NAT) の IP アドレスを越えます。 </li> <li> **[HTTP とインターネット ピアリングの組み合わせ (3)]** : インターネットおよびネットワーク上の他のコンピューターから更新プログラムを取得します。 </li> <li> **[ピアリングなしの簡易ダウンロード モード (99)]** : インターネットを介して、Microsoft などの更新プログラムの所有者から更新プログラムを直接取得します。 これは配信の最適化クラウド サービスに接続しません。 </li> <li> **[バイパス モード (100)]** : バックグラウンド インテリジェント転送サービス (BITS) を使って更新プログラムを取得します。 配信の最適化を使いません。 </li></ul> **既定値**: 未構成  <br><br> ポリシー CSP: [DODownloadMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode)  <br><br>  |
 | [ピアの選択の制限](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#select-a-method-to-restrict-peer-selection)          | 1803        | **[ダウンロード モード]** を *[HTTP と同じ NAT でのピアリングの組み合わせ (1)]* または *[HTTP とプライベート グループでのピアリングの組み合わせ (2)]* に設定することを要求します。<br/><br/>ピアの選択を特定のデバイス グループに制限します。<br/><br/>**既定値**: 未構成 <br/><br/>ポリシー CSP: [DORestrictPeerSelectionBy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dorestrictpeerselectionby)<br><br>      |
@@ -49,7 +49,7 @@ Intune を構成してこれらの設定を使用するには、[更新プログ
 
 ## <a name="bandwidth"></a>帯域幅  
 
-|Setting  |Windows Version  |説明  |
+|設定  |Windows Version  |説明  |
 |---------|---------|---------|
 |帯域幅の最適化の種類     | *詳細を参照*        | すべての同時ダウンロード アクティビティでの配信最適化で使用できる最大帯域幅を Intune で決定する方法を選択します。<br><br>次のオプションがあります。<br><ul><li>**未構成**</li><br><li>**[絶対]** – すべての同時配信最適化のダウンロード アクティビティで使用できる [[最大ダウンロード帯域幅 (KB/秒)]](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#maximum-download-bandwidth) と [[最大アップロード帯域幅 (KB/秒)]](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-upload-bandwidth) を指定します。<br><br>Windows 1607 が必要です<br><br>ポリシー CSP: [DOMaxDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxdownloadbandwidth) および [DOMaxUploadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxuploadbandwidth)</li><br><li>**[割合]** – すべての同時配信最適化のダウンロード アクティビティで使用できる [[フォアグラウンド ダウンロードの最大帯域幅 (%)]](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#maximum-foreground-download-bandwidth) と [[最大バックグラウンド ダウンロード帯域幅 (%)]](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#maximum-foreground-download-bandwidth) を指定します。<br><br>Windows 1803 が必要です<br><br>ポリシー CSP: [DOPercentageMaxForegroundBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxforegroundbandwidth) および [DOPercentageMaxBackgroundBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxbackgroundbandwidth)    <br><br><li>**[Percent with business hours]\(営業時間での割合\)** – 最大[フォアグラウンド](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#set-business-hours-to-limit-foreground-download-bandwidth) ダウンロード帯域幅および最大[バックグラウンド](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#set-business-hours-to-limit-background-download-bandwidth) ダウンロード帯域幅では、営業時間の開始時刻と終了時刻を構成した後、営業時間内と営業時間外に使用する帯域幅の割合を構成します。 <br><br>Windows 1803 が必要です <br><br>ポリシー CSP: [DOSetHoursToLimitBackgroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth) および [DOSetHoursToLimitForegroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)<br><br>   |
 |[HTTP のバックグラウンド ダウンロードの遅延 (秒)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-background-download-from-http-in-secs) | 1803        | HTTP 経由でのコンテンツのバックグラウンド ダウンロードの遅延に対して最大時間を構成するには、この設定を使用します。 これは、ピア ツー ピア ダウンロード ソースをサポートするダウンロードに対してのみ適用されます。 この遅延の間、デバイスでは利用可能なコンテンツがあるピアの検索が行われます。 ピア ソースを待機している間、エンド ユーザーにはダウンロードがスタックしているように見えます。   <br><br>**既定値**: "*値の構成なし*"  <br><br>**推奨値**: 60 秒   <br><br>ポリシー CSP: [DODelayBackgroundDownloadFromHttp](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaybackgrounddownloadfromhttp) <br><br>    |
@@ -58,7 +58,7 @@ Intune を構成してこれらの設定を使用するには、[更新プログ
 
 ## <a name="caching"></a>キャッシュ  
 
-|Setting  |Windows Version  |説明  |
+|設定  |Windows Version  |説明  |
 |---------|---------|---------|
 |[ピア キャッシュに必要な最小 RAM (GB)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#minimum-ram-inclusive-allowed-to-use-peer-caching)      | 1703        | デバイスでピア キャッシュを使用するために必要な最小 RAM サイズを GB 単位で指定します。 <br><br>**既定値**: "*値の構成なし*"  <br><br>**推奨**: 4 GB <br><br>ポリシー CSP: [DOMinRAMAllowedToPeer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dominramallowedtopeer) <br><br>        |
 |[ピア キャッシュに必要な最小ディスク サイズ (GB)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#minimum-disk-size-allowed-to-use-peer-caching)      | 1703        | デバイスでピア キャッシュを使用するために必要な最小ディスク サイズを GB 単位で指定します。 <br><br>**既定値**: "*値の構成なし*"  <br><br>**推奨**: 32 GB   <br><br>ポリシー CSP: [DOMinDiskSizeAllowedToPeer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domindisksizeallowedtopeer) <br><br>    |
@@ -71,7 +71,7 @@ Intune を構成してこれらの設定を使用するには、[更新プログ
 
 ## <a name="local-server-caching"></a>ローカルサーバーのキャッシュ  
 
-|Setting  |Windows Version  |説明  |
+|設定  |Windows Version  |説明  |
 |---------|-----------------|---------|
 |キャッシュサーバーのホスト名 | 1809  |デバイスが配信の最適化に使用するネットワークキャッシュサーバーの IP アドレスまたは FQDN を指定し、 **[追加]** を選択してそのエントリを一覧に追加します。  <br><br>**既定値**: 未構成  <br><br>ポリシー CSP: [Docachehost](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)  |
 |[フォアグラウンドダウンロードキャッシュサーバーフォールバックの遅延 (秒)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-foreground-download-cache-server-fallback-in-secs) | 1903    |フォアグラウンドのコンテンツをダウンロードするために、キャッシュサーバーからの HTTP ソースへのフォールバックを遅延する時間を秒単位で指定します (0-2592000)。 フォアグラウンドダウンロードが http から遅れるようにポリシーを設定すると、最初に適用されます (ピアからのダウンロードを最初に許可する場合)。 (0-2592000)    <br><br>**既定値**: 0  <br><br>ポリシー CSP [Dodelaycacheserverfallbackforeground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackforeground)  |

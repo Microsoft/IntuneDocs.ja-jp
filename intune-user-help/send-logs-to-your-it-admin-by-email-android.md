@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8eef3af9a82e7a61bc5200bf45143657072d6db7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508375"
 ---
 # <a name="upload-and-email-logs"></a>アップロードとメールのログ  
@@ -38,7 +38,7 @@ ms.locfileid: "72508375"
 ## <a name="upload-and-email-logs-from-company-portal"></a>ポータルサイトからログをアップロードして電子メールを送信する  
 
 1. ポータルサイトアプリには、電子メールサポートを開始する方法が2つあります。
-    * ホーム画面から: **[メニュー**  > **ヘルプ** > **電子メールサポート**] をタップします。  
+    * ホーム画面から: **[メニュー** > **ヘルプ** > **電子メールサポート**] をタップします。  
     * エラーメッセージから: **[ヘルプ]** をタップするか、**情報を送信**します (使用可能な場合)。  
 
     > [!NOTE]
@@ -52,7 +52,7 @@ ms.locfileid: "72508375"
 ## <a name="upload-and-email-logs-from-microsoft-intune-app"></a>Microsoft Intune アプリからログをアップロードして電子メールを送信する   
 
 1. Microsoft Intune アプリには、電子メールサポートを開始する方法が2つあります。  
-    * ホーム画面から: **メニュー** **の  > **  をタップし  > **サポートを受ける** をタップします。  
+    * ホーム画面から: **メニュー** **の > **  をタップし > **サポートを受ける** をタップします。  
     * エラーメッセージから: **[ヘルプ]** をタップするか、**情報を送信**します (使用可能な場合)。  
 
     > [!NOTE]

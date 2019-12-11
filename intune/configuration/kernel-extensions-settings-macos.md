@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8632f5b8df0f483de3bb4d06a6823639ba52c604
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506704"
 ---
 # <a name="macos-device-settings-to-configure-and-use-kernel-extensions-in-intune"></a>Intune でカーネル拡張機能を構成して使用するための macOS デバイス設定
@@ -63,7 +63,7 @@ Intune のカーネル拡張機能と前提条件の詳細については、 [ma
   > [!TIP]
   > MacOS デバイスでカーネル拡張機能 (Kext) のバンドル ID を取得するには、次のようにします。
   >
-  > 1. ターミナルで `kextstat | grep -v com.apple` を実行し、出力を確認します。 必要なソフトウェアまたは Kext をインストールします。 `kextstat | grep -v com.apple` をもう一度実行し、変更を探します。
+  > 1. ターミナルで `kextstat | grep -v com.apple`を実行し、出力を確認します。 必要なソフトウェアまたは Kext をインストールします。 `kextstat | grep -v com.apple` をもう一度実行し、変更を探します。
   >
   >    ターミナルでは、`kextstat` OS のすべてのカーネル拡張機能が一覧表示されます。 
   >
