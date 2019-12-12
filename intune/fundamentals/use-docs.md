@@ -12,10 +12,10 @@ ms.author: dougeby
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 42e16be44dba539007967dd921da4c8d4f095ec4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72504809"
 ---
 # <a name="using-the-intune-docs"></a>Intune のドキュメントの使用
@@ -84,9 +84,9 @@ Docs.microsoft.com のほとんどのコンテンツと同様に、Intune のド
 
 3. マークダウン ソースで変更を加えます。 詳細については、「[How to use Markdown for writing Docs](https://docs.microsoft.com/contribute/how-to-write-use-markdown)」 (ドキュメントの記述にマークダウンを使用する方法) を参照してください。  
 
-4. ファイル変更の提案セクションで、公開コミット コメントを入力し、自分が "変更した内容" を説明します。 **[Propose file change]\(ファイル変更の提案\)** をクリックします。  
+4. ファイル変更の提案セクションで、公開コミット コメントを入力し、自分が *"変更した内容"* を説明します。 **[Propose file change]\(ファイル変更の提案\)** をクリックします。  
 
-5. 下にスクロールし、行った変更を確認します。 **[pull request の作成]** をクリックし、フォームを開きます。 この変更を行った "理由" を説明します。 **[pull request の作成]** をクリックします。
+5. 下にスクロールし、行った変更を確認します。 **[pull request の作成]** をクリックし、フォームを開きます。 この変更を行った *"理由"* を説明します。 **[pull request の作成]** をクリックします。
 
 書き込みチームはプル要求を受け取り、適切なライターに項目を割り当て、テキストをレビューしてクイック編集を行います。更新の詳細については、変更を承認またはマージするか、お問い合わせください。  
 

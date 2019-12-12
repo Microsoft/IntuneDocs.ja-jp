@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9e3867bfc2de29c059766e134bd0d2c8801e1c70
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73712895"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Intune で非準拠デバイスに対してメールを自動送信し、アクションを追加する
@@ -70,7 +70,7 @@ ms.locfileid: "73712895"
    - **件名**
    - **Message**
 
-4. また、[基本] で、通知に次のオプションを構成します。既定ではすべて *[有効]* になっています。
+4. また、 *[基本]* で、通知に次のオプションを構成します。既定ではすべて *[有効]* になっています。
 
    - **電子メール ヘッダー – 会社のロゴを含める**
    - **電子メール フッター – 会社名を含める**

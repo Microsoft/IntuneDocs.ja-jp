@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 38e8998d1720434b0fe866fc5cd41a0b733fc49b
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059837"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Microsoft Intune の電子メール プロファイルに関する一般的な問題と解決方法
@@ -32,7 +32,7 @@ ms.locfileid: "74059837"
 ## <a name="what-you-need-to-know"></a>知っておく必要がある情報
 
 - 電子メールプロファイルは、デバイスを登録したユーザーに対して展開されます。 電子メールプロファイルを構成するために、Intune では、登録時にユーザーの電子メールプロファイルで Azure Active Directory (AD) プロパティを使用します。 [デバイスへの電子メール設定の追加](email-settings-configure.md)は、適切なリソースである可能性があります。
-- Android Enterprise の場合は、管理された Google Play ストアを使用して Gmail または9の for Work をデプロイします。 [管理された[Google Play アプリの追加](../apps/apps-add-android-for-work.md)の手順を示します。
+- Android Enterprise の場合は、管理された Google Play ストアを使用して Gmail または9の for Work をデプロイします。 管理された[Google Play アプリの追加](../apps/apps-add-android-for-work.md)の手順を示します。
 - IOS および Android 用の Microsoft Outlook では、電子メールプロファイルはサポートされていません。 代わりに、アプリ構成ポリシーを展開します。 詳細については、「 [Outlook の構成設定](../apps/app-configuration-policies-outlook.md)」を参照してください。
 - デバイスグループ (ユーザーグループではない) を対象とした電子メールプロファイルがデバイスに配信されない可能性があります。 デバイスにプライマリユーザーがいる場合は、デバイスのターゲット設定が機能します。 電子メールプロファイルにユーザー証明書が含まれている場合は、必ずユーザーグループを対象にしてください。
 - ユーザーは、電子メールプロファイルのパスワードの入力を繰り返し求められる場合があります。 このシナリオでは、電子メールプロファイルで参照されているすべての証明書を確認します。 証明書のいずれかがユーザーを対象としていない場合、Intune は電子メールプロファイルの展開を再試行します。

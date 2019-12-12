@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52fb1ea5077b424a1d3cf10812d8d9b5f79e4752
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: e45d51feb91e0e188971133185ac0f0f13e5b1f4
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059815"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74781143"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune で iOS デバイス向けの VPN 設定を構成する
 
@@ -155,8 +155,8 @@ Microsoft Intune には、ご利用の iOS デバイスに展開できる VPN �
     - SHA2-256 (既定値)
     - SHA2-384
     - SHA2-512
-  - **Diffie-hellman グループ**: 目的のグループを選択します。 既定値はグループ `2` です。
-  - **有効期間**(分): キーがローテーションされるまで、セキュリティアソシエーションがアクティブなままになる期間を選択します。 `10` と `1440` の間に値全体を入力します (1440 分は24時間です)。 既定値は `1440` です。
+  - **Diffie-hellman グループ**: 目的のグループを選択します。 既定値はグループ `2`です。
+  - **有効期間**(分): キーがローテーションされるまで、セキュリティアソシエーションがアクティブなままになる期間を選択します。 `10` と `1440` の間に値全体を入力します (1440 分は24時間です)。 既定値は `1440`です。
 
 - **子セキュリティアソシエーション用に個別のパラメーターセットを構成**する: iOS では、IKE 接続とすべての子接続に対して別々のパラメーターを構成できます。 
 
@@ -174,12 +174,12 @@ Microsoft Intune には、ご利用の iOS デバイスに展開できる VPN �
     - SHA2-256 (既定値)
     - SHA2-384
     - SHA2-512
-  - **Diffie-hellman グループ**: 目的のグループを選択します。 既定値はグループ `2` です。
-  - **有効期間**(分): キーがローテーションされるまで、セキュリティアソシエーションがアクティブなままになる期間を選択します。 `10` と `1440` の間に値全体を入力します (1440 分は24時間です)。 既定値は `1440` です。
+  - **Diffie-hellman グループ**: 目的のグループを選択します。 既定値はグループ `2`です。
+  - **有効期間**(分): キーがローテーションされるまで、セキュリティアソシエーションがアクティブなままになる期間を選択します。 `10` と `1440` の間に値全体を入力します (1440 分は24時間です)。 既定値は `1440`です。
 
 ## <a name="automatic-vpn-settings"></a>自動 VPN 設定
 
-- **[アプリごとの VPN]** : アプリごとの VPN を有効にします。 特定のアプリを開いたときに VPN 接続が自動的にトリガーされるのを許可します。 また、アプリをこの VPN プロファイルに関連付けます。 詳細については、[iOS のアプリごとの VPN の設定手順](vpn-setting-configure-per-app.md)に関するページを参照してください。
+- **[アプリごとの VPN]** : アプリごとの VPN を有効にします。 特定のアプリを開いたときに VPN 接続が自動的にトリガーされるのを許可します。 また、アプリをこの VPN プロファイルに関連付けます。 アプリごとの VPN は IKEv2 ではサポートされていません。 詳細については、[iOS のアプリごとの VPN の設定手順](vpn-setting-configure-per-app.md)に関するページを参照してください。 
   - **[プロバイダーの種類]** : Pulse Secure と Custom VPN でのみ利用できます。
   - Pulse Secure または Custom VPN を含む iOS の**アプリごとの VPN** プロファイルを使用するときに、アプリ層トンネリング (アプリプロキシ) またはパケット レベル トンネリング (パケットトンネル) を選択できます。 **[ProviderType]** 値には、アプリ層トンネリングの場合は **[app-proxy]** を設定し、パケット層トンネリングの場合は **[packet-tunnel]** を設定します。 使用すべき値がわからない場合、ご利用の VPN プロバイダーのドキュメントを参照してください。
   - **[この VPN をトリガーする Safari URL]** : 1 つまたは複数の Web サイト URL を追加します。 これらの URL にデバイスの Safari ブラウザーを使用してアクセスすると、VPN 接続が自動的に確立されます。
