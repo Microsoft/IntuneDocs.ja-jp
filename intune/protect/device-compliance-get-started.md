@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune - Azure のデバイス コンプライアンス ポリシー | Microsoft Docs
-description: デバイス コンプライアンス ポリシーの使用の開始、状態と重大度レベルの概要、InGracePeriod 状態の使用、条件付きアクセスの使用、割り当てポリシーなしのデバイスの処理、Microsoft Intune の Azure portal とクラシック ポータルのコンプライアンスの違い
+description: デバイス コンプライアンス ポリシーの使用の開始、状態と重大度レベルの概要、InGracePeriod 状態の使用、条件付きアクセスの使用、割り当てポリシーなしのデバイスの処理。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 967bf9937c71ff3ca7277f43fd969291eb5af6de
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 83b8c48d2bb594ca8b9c527d78922332e582363f
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749167"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860297"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Intune を使用して組織内のリソースへのアクセスを許可するように、デバイス上でルールを設定する
 
@@ -86,21 +86,21 @@ Intune では、Azure Active Directory (AD) の[条件付きアクセス](https:
 
 Intune には、組み込みのコンプライアンス ポリシー設定のセットも含まれています。 次の組み込みのポリシーは、Intune に登録されたすべてのデバイスで評価されます。
 
-- **[Mark devices with no compliance policy assigned as]\(コンプライアンス ポリシーが割り当てられていないデバイスにマークを付ける\)** :このプロパティには次の 2 つの値があります。
+- **[Mark devices with no compliance policy assigned as]\(コンプライアンス ポリシーが割り当てられていないデバイスにマークを付ける\)**:このプロパティには次の 2 つの値があります。
 
   - **[準拠]** (*既定値*): セキュリティ機能が無効
-  - **[非準拠]** : セキュリティ機能が有効
+  - **[非準拠]**: セキュリティ機能が有効
 
   デバイスにコンプライアンス ポリシーが割り当てられていない場合、そのデバイスは既定で準拠と見なされます。 コンプライアンス ポリシーで条件付きアクセスを使用する場合は、既定の設定を **[非準拠]** に変更することをお勧めします。 ポリシーが割り当てられていないためにエンド ユーザーが準拠していない場合、[ポータル サイト アプリ](../apps/company-portal-app.md)には `No compliance policies have been assigned` と表示されます。
 
-- **[脱獄の高度な検出]** :この設定が有効な場合、iOS デバイスは Intune によって、より頻繁にチェックインされます。 このプロパティを有効にすると、デバイスの位置情報サービスが使用され、バッテリの使用量に影響します。 ユーザーの場所データは Intune では保存されません。
+- **[脱獄の高度な検出]**:この設定が有効な場合、iOS デバイスは Intune によって、より頻繁にチェックインされます。 このプロパティを有効にすると、デバイスの位置情報サービスが使用され、バッテリの使用量に影響します。 ユーザーの場所データは Intune では保存されません。
 
   この設定を有効にするには、デバイスで以下の操作が必要です。
   - OS レベルで位置情報サービスを有効にする
   - ポータル サイトで位置情報サービスを使用できるようにする
   - 72 時間ごとに 1 回以上、脱獄状態を評価して Intune にレポートする それ以外の場合、デバイスは非準拠とマークされます。 ポータル サイト アプリを開くか、デバイスを 500 メートル以上物理的に移動すると、評価がトリガーされます。 デバイスが 72 時間以内に 500 メートルを移動しない場合は、脱獄評価を強化するために、ユーザーはポータル サイト アプリを開く必要があります。
 
-- **[コンプライアンス状態の有効期間 (日)]** :デバイスが受け取ったすべてのコンプライアンス ポリシーの状態をレポートする期間を入力します。 この期間内に状態を返さないデバイスは非準拠として扱われます。 既定値は 30 日です。
+- **[コンプライアンス状態の有効期間 (日)]**:デバイスが受け取ったすべてのコンプライアンス ポリシーの状態をレポートする期間を入力します。 この期間内に状態を返さないデバイスは非準拠として扱われます。 既定値は 30 日です。
 
 これらの組み込みポリシーを使用して、これらの設定を監視できます。 Intune では、デバイス プラットフォームに応じて、さまざまな間隔で[更新プログラムの更新または確認](create-compliance-policy.md#refresh-cycle-times)も行われます。 「[Microsoft Intune でのデバイス プロファイルの一般的な問題と解決策](../configuration/device-profile-troubleshoot.md)」は、適切なリソースです。
 
@@ -130,21 +130,6 @@ Intune には、組み込みのコンプライアンス ポリシー設定のセ
 
 - ユーザーに条件付きアクセス ポリシーを適用すると、デバイスがブロックされます。
 - ポータル サイト アプリでは、コンプライアンスの問題についてユーザーに通知します。
-
-## <a name="azure-classic-portal-vs-azure-portal"></a>Azure クラシック ポータルと Azure Portal
-
-Azure ポータルでデバイス コンプライアンス ポリシーを使用する場合の主な違い:
-
-- Azure Portal では、コンプライアンス ポリシーがサポート対象のプラットフォームごとに個別に作成されます。
-- Azure クラシック ポータルでは、すべてのサポート対象プラットフォームで 1 つのデバイス コンプライアンス ポリシーが共有されます。
-
-<!--- - In the Azure portal, you have the ability to specify actions and notifications that are initiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
-
-- In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
-
-[クラシック ポータル](https://manage.microsoft.com)で作成されたデバイス コンプライアンス ポリシーは、[Azure Portal](https://portal.azure.com) には表示されません。 ただし、これらのポリシーは引き続きユーザーを対象とし、クラシック ポータルを使用して管理できます。
-
-Azure Portal でデバイス コンプライアンスに関連した機能を使用するには、Azure Portal で新しいデバイス コンプライアンス ポリシーを作成する必要があります。 クラシック ポータルのデバイス コンプライアンス ポリシーが既に割り当てられているユーザーに Azure Portal のデバイス コンプライアンス ポリシーを割り当てると、クラシック ポータルで作成されたポリシーよりも Azure Portal のデバイス コンプライアンス ポリシーが優先されます。
 
 ## <a name="next-steps"></a>次の手順
 

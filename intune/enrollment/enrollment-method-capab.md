@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6b12bb0066c37eb470065a169a3ad7866c69a17
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 11b93d41ac09f637d6c75a3f2f4b7f4213cecec7
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503271"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74819768"
 ---
 # <a name="intune-enrollment-method-capabilities-for-windows-devices"></a>Windows デバイスの Intune 登録方法別の機能
 [!INCLUDE[azure_portal](../includes/azure_portal.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "72503271"
 
 | **機能** | **[Azure AD 参加済み](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Autopilot を使用した Azure AD 参加済み (ユーザー駆動型モード)](enrollment-autopilot.md)** |**[Autopilot を使用した Azure AD 参加済み (自己展開モード)](enrollment-autopilot.md)** |**[一括](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** | **[共同管理](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|条件付きアクセス                                      |![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![○](./media/enrollment-method-capab/xmark.png)|![○](./media/enrollment-method-capab/xmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|
+|条件付きアクセス                                      |![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![○](./media/enrollment-method-capab/xmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)\*\*|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|
 |ユーザーはデバイスに関連付けられます                    |![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![○](./media/enrollment-method-capab/xmark.png)|![○](./media/enrollment-method-capab/xmark.png)|![○](./media/enrollment-method-capab/xmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|
 |Azure AD Premium が必要です                               |![○](./media/enrollment-method-capab/xmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![○](./media/enrollment-method-capab/xmark.png)|![○](./media/enrollment-method-capab/xmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|
 |デバイスで CA によって保護されたリソースを評価できます             |![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![○](./media/enrollment-method-capab/xmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|
@@ -54,6 +54,8 @@ ms.locfileid: "72503271"
 |Azure AD への参加後の自動登録がサポートされます       |![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![チェックマーク](./media/enrollment-method-capab/checkmark.png)|![○](./media/enrollment-method-capab/xmark.png)|![○](./media/enrollment-method-capab/xmark.png)|
 
 \* Configuration Manager のクライアント アプリのワークロードを Intune Pilot または Intune に移行する必要があります。
+
+\** [Windows 10 1803 以降を例外として、デバイスは条件付きアクセスに対してブロックされます。](device-enrollment-manager-enroll.md)
 
 ## <a name="next-steps"></a>次の手順
 

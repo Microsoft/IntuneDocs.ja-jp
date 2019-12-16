@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ab720ffee3f468d3700558dfbde460ee8f712ea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8ee8bc3cdee9f61a901854e08000e9e2cbbb2864
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505487"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955373"
 ---
 # <a name="categorize-devices-into-groups"></a>デバイスをグループに分類する
 
@@ -45,11 +45,10 @@ ms.locfileid: "72505487"
 ## <a name="how-to-configure-device-categories"></a>デバイス カテゴリを構成する方法
 
 ### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>手順 1.Azure portal の [Intune] ブレードでデバイス カテゴリを作成する
-1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、 **[デバイスの登録]** を選択します。
-2. **[デバイスの登録]** ブレードで、 **[デバイス カテゴリ]** を選択します。
-3. **[デバイス カテゴリ]** ページで、 **[作成]** を選択して、新しいカテゴリを追加します。
-4. **[デバイス カテゴリの作成]** ブレードで、新しいカテゴリの**名前**と省略可能な**説明**を入力します。
-5. 完了したら、 **[作成]** を選択します。 カテゴリの一覧に、この新しいカテゴリが表示されます。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインして、**[デバイス]**、**[デバイス カテゴリ]** の順に選択します。
+2. **[デバイス カテゴリ]** ページで、**[作成]** を選択して、新しいカテゴリを追加します。
+3. **[デバイス カテゴリの作成]** ブレードで、新しいカテゴリの**名前**と省略可能な**説明**を入力します。
+4. 完了したら、**[作成]** を選択します。 カテゴリの一覧に、この新しいカテゴリが表示されます。
 
 デバイス カテゴリ名は、手順 2 で Azure Active Directory (Azure AD) セキュリティ グループを作成するときに使用します。
 
@@ -64,20 +63,16 @@ ms.locfileid: "72505487"
 
 ### <a name="view-the-categories-of-devices-that-you-manage"></a>管理対象デバイスのカテゴリを表示する
 
-1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、 **[デバイス]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインして、**[デバイス]**、**[すべてのデバイス]** の順に選択します。
 
-2. **[管理]** で、 **[すべてのデバイス]** を選択します。
+2. デバイスの一覧の **[デバイス カテゴリ]** 列を確認します。
 
-3. デバイスの一覧の **[デバイス カテゴリ]** 列を確認します。
-
-**[デバイス カテゴリ]** 列が表示されていない場合は、 **[列]** を選択します。 一覧から **[デバイス カテゴリ]** を選択します。次に、 **[適用]** を選択します。
+**[デバイス カテゴリ]** 列が表示されていない場合は、**[列]**、**[カテゴリ]**、**[適用]** の順に選択します。
 
 ### <a name="change-the-category-of-a-device"></a>デバイスのカテゴリを変更する
 
-1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、 **[デバイス]** を選択します。
-2. **[デバイス]** ブレードの **[管理]** セクションで、 **[すべてのデバイス]** を選択します。
-3. デバイスの一覧で、目的のデバイスを選択します。 次に、 **[管理]** セクションの下のデバイス プロパティ ブレードで、 **[プロパティ]** を選択します。
-4. 次のブレードで、選択したデバイスの **[デバイス カテゴリ]** を、以前に構成したカテゴリ名のいずれかに変更できます。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインし、**[デバイス]**、**[すべてのデバイス]** の順に選択し、必要なデバイスを選択し、**[プロパティ]** を選択します。
+2. 次のブレードで、選択したデバイスの **[デバイス カテゴリ]** を、以前に構成したカテゴリ名のいずれかに変更できます。
 
 ## <a name="after-you-configure-device-groups"></a>デバイス グループの構成後
 
@@ -85,7 +80,7 @@ iOS デバイスと Android デバイスのユーザーがデバイスを登録�
 
 Windows ユーザーがカテゴリを選択するには、ポータル Web サイトを使用する必要があります。
 
-プラットフォームにかかわらず、ユーザーはデバイスを登録した後いつでも portal.manage.microsoft.com にアクセスできます。 ポータル Web サイトにアクセスし、 **[デバイス]** に移動します。 ページに一覧表示されている登録済みデバイスを選択し、次にカテゴリを選択します。
+プラットフォームにかかわらず、ユーザーはデバイスを登録した後いつでも portal.manage.microsoft.com にアクセスできます。 ポータル Web サイトにアクセスし、**[デバイス]** に移動します。 ページに一覧表示されている登録済みデバイスを選択し、次にカテゴリを選択します。
 
 カテゴリを選択すると、作成済みの対応するグループにデバイスが自動的に追加されます。 カテゴリを構成する前にデバイスが既に登録されている場合、ユーザーにはポータル Web サイトのデバイスに関する通知が表示されます。 これで、次回 iOS または Android でポータル サイト アプリにアクセスするときに、ユーザーにカテゴリの選択について知らせることができます。
 

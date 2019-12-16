@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5e52d1967ff6f5cf97334c099bc2b5b854ae87c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d876c0268f38a09ea3729a7e19ee00b321ae897a
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502689"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000399"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Microsoft Intune の米国政府機関のエンドポイント
 
@@ -36,7 +36,7 @@ ms.locfileid: "72502689"
 
 個々のクライアント コンピューターでプロキシ サーバーの設定を変更できます。 また、グループ ポリシーの設定を使用して、指定したプロキシ サーバーの背後にあるすべてのクライアント コンピューターの設定を変更することもできます。
 
-マネージド デバイスは、 **[すべてのユーザー]** がファイアウォール経由でサービスにアクセスできるように構成する必要があります。
+マネージド デバイスは、**[すべてのユーザー]** がファイアウォール経由でサービスにアクセスできるように構成する必要があります。
 
 次の表は、Intune クライアントがアクセスするポートとサービスの一覧です。
 
@@ -57,3 +57,25 @@ ms.locfileid: "72502689"
 - AAD Graph: https:\//directory.microsoftazure.us と https:\//graph.microsoftazure.us
 - MS Graph: https:\//graph.microsoft.us
 - ADRS: https:\//enterpriseregistration.microsoftonline.us
+
+## <a name="windows-push-notification-services"></a>Windows プッシュ通知サービス
+モバイル デバイス管理 (MDM) を使用して管理されている Intune マネージド デバイスでは、デバイス アクションとその他の即時アクティビティに Windows プッシュ通知サービス (WNS) が必要です。 詳細については、「[WNS トラフィックをサポートするためのエンタープライズ ファイアウォールとプロキシ構成](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)」を参照してください。
+
+## <a name="apple-device-network-information"></a>Apple デバイス ネットワークの情報
+
+|**使用目的**|**ホスト名 (IP アドレス/サブネット)**|**プロトコル**|**ポート**|
+|------------|-----------|------------|-----------|
+|Apple サーバーからコンテンツを取得して表示する|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br>\*.phobos.itunes-apple.com.akadns.net|HTTP|80|
+|APNS サーバーとの通信|#-courier.push.apple.com<br>'#' は、0 から 50 の乱数です。|TCP|5223 および 443|
+|各種の関数には、インターネット、iTunes Store、macOS アプリ ストア、iCloud、メッセージングなどへのアクセスが含まれます。|phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net|HTTP/HTTPS|80 または 443|
+
+詳細については、次をご覧ください。
+
+- [Apple ソフトウェア製品に使用される TCP ポートと UDP ポート](https://support.apple.com/HT202944)
+- [macOS、iOS、iTunes のサーバホスト接続と iTunes のバックグラウンドプロセスについて](https://support.apple.com/HT201999)
+- [macOS および iOS クライアントで Apple プッシュ通知が届かない場合](https://support.apple.com/HT203609)
+
+## <a name="next-steps"></a>次の手順
+[Microsoft Intune のネットワーク エンドポイント](intune-endpoints.md)
+
+[Windows 10 の自動登録とデバイス登録](../enrollment/windows-enroll.md#registration-and-enrollment-cnames)

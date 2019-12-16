@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c4c995322234a4a2486d8e6c5e9efd88f78dd63
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 71f2bc855673b6b189ed7581b979527485e86083
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390867"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860385"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune でのデバイス プロファイルの作成
 
@@ -39,7 +39,7 @@ ms.locfileid: "74390867"
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 
-2. **[デバイス]** 、 **[構成プロファイル]** の順に選択します。 次のオプションがあります。
+2. **[デバイス]**、**[構成プロファイル]** の順に選択します。 次のオプションがあります。
 
     - **概要**:プロファイルの状態を一覧表示し、ユーザーとデバイスに割り当てたプロファイルに関する追加の詳細を提供します。
     - **管理**:デバイス プロファイルを作成し、カスタムの [PowerShell スクリプト](../apps/intune-management-extension.md)をアップロードしてプロファイル内で実行し、[eSIM](esim-device-configuration.md) を使用してデバイスにデータ プランを追加します。
@@ -50,7 +50,7 @@ ms.locfileid: "74390867"
 
    - **名前**: プロファイルのわかりやすい名前を入力します。 後で簡単に識別できるよう、プロファイルに名前を付けます。 たとえば、適切なプロファイル名は、**会社全体の WP 電子メール プロファイル**などです。
    - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
-   - **[プラットフォーム]** :デバイスのプラットフォームを選択します。 次のようなオプションがあります。  
+   - **[プラットフォーム]**:デバイスのプラットフォームを選択します。 次のようなオプションがあります。  
 
        - **Android**
        - **Android エンタープライズ**
@@ -60,7 +60,7 @@ ms.locfileid: "74390867"
        - **Windows 8.1 以降**
        - **Windows 10 以降**
 
-   - **[プロファイルの種類]** :作成する設定の種類を選択します。 表示される一覧は、選択した**プラットフォーム**によって異なります。
+   - **[プロファイルの種類]**:作成する設定の種類を選択します。 表示される一覧は、選択した**プラットフォーム**によって異なります。
    - **設定**:次の記事では、ファイルの種類ごとの設定について説明します。
 
        - [管理用テンプレート](administrative-templates-windows.md)
@@ -89,11 +89,11 @@ ms.locfileid: "74390867"
 
      ![Intune で iOS プロファイルを作成する](./media/device-profile-create/create-device-profile.png)
 
-4. 完了したら、 **[OK]**  >  **[作成]** の順に選択して変更を保存します。 プロファイルが作成され、一覧に表示されます。
+4. 完了したら、**[OK]** > **[作成]** の順に選択して変更を保存します。 プロファイルが作成され、一覧に表示されます。
 
 ## <a name="scope-tags"></a>スコープのタグ
 
-設定を追加したら、プロファイルにスコープのタグを追加することもできます。 スコープのタグを使用すると、人事や US-NC の全従業員など、特定のグループにポリシーを割り当てて、フィルター処理することができます。
+設定を追加したら、プロファイルにスコープのタグを追加することもできます。 スコープ タグを使うと、`US-NC IT Team` や `JohnGlenn_ITDepartment` など、特定の IT グループにプロファイルをフィルター処理することができます。
 
 スコープのタグと可能な操作の詳細については、[分散 IT での RBAC とスコープのタグの使用](../fundamentals/scope-tags.md)に関するページを参照してください。
 
@@ -136,7 +136,7 @@ ms.locfileid: "74390867"
 
 ### <a name="add-a-rule"></a>ルールを追加する
 
-1. **[適用性ルール]** を選択します。 **[ルール]** 、 **[プロパティ]** 、および **[OS のエディション]** を選択できます。
+1. **[適用性ルール]** を選択します。 **[ルール]**、**[プロパティ]**、および **[OS のエディション]** を選択できます。
 
     ![Microsoft Intune でデバイス構成プロファイルに適用性ルールを追加する](./media/device-profile-create/applicability-rules.png)
 
@@ -180,11 +180,13 @@ Intune では、複数の更新サイクルを使用して、構成プロファ�
 
 - ユーザー ポリシーとデバイス ポリシーを分離します。
 
-  たとえば、[Intune の管理テンプレート](administrative-templates-windows.md)には、数百の ADMX 設定があります。 それらの設定からは、設定がユーザーに適用されるのか、デバイスに適用されるのかがわかります。 管理テンプレートを作成するときは、ユーザー設定をユーザー グループに割り当て、デバイス設定をデバイス グループに割り当てます。
+  たとえば、[Intune の管理テンプレート](administrative-templates-windows.md)には、数百の ADMX 設定があります。 これらのテンプレートには、設定がユーザーに適用されるのか、デバイスに適用されるのかが示されます。 管理テンプレートを作成するときは、ユーザー設定をユーザー グループに割り当て、デバイス設定をデバイス グループに割り当てます。
 
   次の画像は、ユーザーとデバイスに適用できる設定の例です。
 
   ![ユーザーとデバイスに適用される Intune 管理テンプレート](./media/device-profile-create/setting-applies-to-user-and-device.png)
+
+- 制限の厳しいポリシーを作成するたびに、この変更についてユーザーに伝えます。 たとえば、パスコードの要件を 4 文字から 6 文字に変更する場合、ポリシーを割り当てる前にユーザーに通知できます。
 
 ## <a name="next-steps"></a>次の手順
 

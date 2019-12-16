@@ -16,16 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 348d1fe2fd236a2af11f7e58dc11530a5ce397bc
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: c9572f4accb1be232d4667d99b98beff90d81379
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564205"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000416"
 ---
 # <a name="configure-smime-with-outlook-for-ios"></a>Outlook for iOS で S/MIME を構成する
 
 Secure/Multipurpose Internet Mail Extensions (S/MIME) を使うと、Exchange ActiveSync (EAS) アカウントとの間で送受信されるメールにセキュリティ レイヤーが追加されます。 [Microsoft Outlook](https://aka.ms/omsmime) で S/MIME を利用すると、送信メッセージと添付ファイルの両方を暗号化することができ、Office 365 アカウントの使用時には、意図した受信者だけがメッセージの内容を読んだりアクセスしたりできるようにすることができます。 ユーザーはメッセージにデジタル署名することもでき、受信者は送信者の ID を確認すると共に、メッセージが改ざんされていないことを確認できます。 この機能は、証明書を利用することによって可能になります。 詳しくは、「[S/MIME について](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65)?redirectedfrom=MSDN)」をご覧ください。
+
+> [!NOTE]
+> この機能は遅れていますが、間もなくリリースされる予定です。
 
 > [!NOTE]
 > このトピックでは、[Microsoft エンドポイント マネージャー](https://go.microsoft.com/fwlink/?linkid=2109431)を使って、信頼されたルート証明書を展開する方法について説明します。 Microsoft エンドポイント マネージャーは、すべてのエンドポイントを管理するための単一の統合エンドポイント管理プラットフォームです。 この Microsoft Endpoint Manager 管理センターでは、ConfigMgr と Microsoft Intune が統合されています。
@@ -69,7 +72,7 @@ Outlook for iOS で使用できる S/MIME 証明書の自動配信など、エ�
 
 次の手順のようにして、エンドポイント マネージャーで Outlook for iOS の S/MIME ポリシーを作成して構成できます。 これらの設定により、署名証明書と暗号化証明書が自動的に配信されます。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインし、 **[アプリ]**  >  **[Apps configuration policies]\(アプリの構成ポリシー\)**  >  **[追加]** を選択します。<br>
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインし、**[アプリ]** > **[Apps configuration policies]\(アプリの構成ポリシー\)** > **[追加]** を選択します。<br>
 **[構成ポリシーの追加]** ウィンドウが表示されます。
 2. 構成ポリシーの **[名前]** と **[説明]** を入力します。
 3. **[デバイス登録の種類]** として **[マネージド デバイス]** を選択します。
@@ -77,10 +80,7 @@ Outlook for iOS で使用できる S/MIME 証明書の自動配信など、エ�
 5. **[必要なアプリの選択]** をクリックし、前に追加した Microsoft Outlook for iOS アプリを探して関連付けます。 
 6. **[構成設定]** をクリックして、構成設定を追加します。 
     - **[構成設定の形式]** の隣にある **[構成デザイナーを使用する]** を選択し、既定の設定をそのまま使用します。 詳細については、「[Microsoft Outlook の構成設定](~/apps/app-configuration-policies-outlook.md)」を参照してください。
-7. **[S/MIME]** をクリックして、 **[Outlook S/MIME の設定]** を表示します。
-
-    ![Outlook for iOS の S/MIME の設定のスクリーンショット](./media/app-configuration-policies-outlook-smime/app-configuration-policies-outlook-smime-01.png)
-
+7. **[S/MIME]** をクリックして、**[Outlook S/MIME の設定]** を表示します。
 8. **[S/MIME を有効にする]** を **[はい]** に設定します。
 9. **[Intune から S/MIME 証明書を展開します]** を **[はい]** に設定します。
 10. **[証明書プロファイルの種類]** の隣の **[署名証明書]** で、次のいずれかのオプションを選択します。
@@ -90,7 +90,7 @@ Outlook for iOS で使用できる S/MIME 証明書の自動配信など、エ�
 11. **[証明書プロファイルの種類]** の隣の **[暗号化証明書]** で、次のいずれかのオプションを選択します。
     - **[PKCS のインポートされた証明書]** – 管理者によってエンドポイント マネージャーにインポートされた暗号化証明書を、ユーザーが登録したすべてのデバイスに配信します。任意のデバイスで証明書を配信します。エンドポイント マネージャーにより、暗号化をサポートするインポートされた証明書が自動的に選択されて、登録されたユーザーに対応するデバイスに配信されます。
     - **[派生資格情報]** – デバイス上に既に存在する、署名に使用できる証明書を使用します。 Intune の派生資格情報フローを使用して、デバイスで証明書を取得する必要があります。
-12. **[エンドユーザー通知]** の隣で、 **[ポータル サイト]** または **[電子メール]** を選択して、Outlook for iOS 用の S/MIME 証明書を取得するようエンド ユーザーに通知します。
+12. **[エンドユーザー通知]** の隣で、**[ポータル サイト]** または **[電子メール]** を選択して、Outlook for iOS 用の S/MIME 証明書を取得するようエンド ユーザーに通知します。
 
     iOS では、ユーザーはポータル サイトアプリを使って S/MIME 証明書を取得する必要があります。 エンドポイント マネージャーでは、ポータル サイトを起動し、ポータル サイトの [通知] セクション、プッシュ通知、または電子メールで S/MIME 証明書を取得する必要があることが、ユーザーに通知されます。 いずれかの通知をクリックすると、ユーザーはランディング ページに移動し、証明書の取得の進行状況が示されます。 証明書が取得されると、ユーザーは Microsoft Outlook for iOS 内から S/MIME を使用して、メールの署名と暗号化を行うことができます。
     

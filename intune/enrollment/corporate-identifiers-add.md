@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3d98a0e3c5bd2a5c11c9aa72d791306dfbe6578
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4e1ee8ae54d81a050f3c8983269f40e8f61b5e75
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503302"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955475"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>デバイスの企業所有としての識別
 
@@ -39,7 +39,7 @@ Intune は登録時に、次のようなデバイスに会社所有の状態を�
 - 職場または学校の資格情報を使用して Azure Active Directory に参加します。 [Azure Active Directory に登録されているデバイス](https://docs.microsoft.com/azure/active-directory/devices/overview)は個人用とマークされます。
 - [デバイスのプロパティ一覧](#change-device-ownership)で、会社として設定されている
 
-登録後、 **[個人]** と **[企業]** のどちらかで[所有権の設定を変更する](#change-device-ownership)ことができます。
+登録後、**[個人]** と **[企業]** のどちらかで[所有権の設定を変更する](#change-device-ownership)ことができます。
 
 ## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>IMEI またはシリアル番号により、会社所有デバイスとして特定される
 
@@ -85,25 +85,23 @@ Android デバイスのシリアル番号の検索方法については、[こ�
 
 ### <a name="upload-a-csv-list-of-corporate-identifiers"></a>企業 ID の .csv リストをアップロードする
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインし、 **[デバイスの登録]**  >  **[業務用デバイスの ID]**  >  **[追加]**  >  **[CSV ファイルのアップロード]** を選択します。
-
-   ![[追加] ボタンが強調表示された、[業務用デバイス ID] ワークスペース](./media/corporate-identifiers-add/add-corp-id.png)
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインし、**[デバイス]** > **[デバイスの登録]** > **[業務用デバイスの ID]** > **[追加]** > **[CSV ファイルをアップロード]** の順に選択します。
 
 2. **[ID の追加]** ブレードで、ID の種類として **[IMEI]** または **[シリアル]** を指定します。
 
-3. フォルダー アイコンをクリックし、インポートするリストのパスを指定します。 .csv ファイルに移動して、 **[追加]** を選択します。 
+3. フォルダー アイコンをクリックし、インポートするリストのパスを指定します。 .csv ファイルに移動して、**[追加]** を選択します。 
 
-4. .csv ファイルに含まれる企業 ID が既に Intune 内に存在しているが、その詳細は異なる場合、 **[重複した ID を確認する]** ポップアップが表示されます。 Intune に上書きする ID を選択し、 **[OK]** を選択して、ID を追加します。 各識別子について、最初の重複のみが比較されます。
+4. .csv ファイルに含まれる企業 ID が既に Intune 内に存在しているが、その詳細は異なる場合、**[重複した ID を確認する]** ポップアップが表示されます。 Intune に上書きする ID を選択し、**[OK]** を選択して、ID を追加します。 各識別子について、最初の重複のみが比較されます。
 
 ## <a name="manually-enter-corporate-identifiers"></a>企業 ID を手動で入力する
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインし、 **[デバイスの登録]**  >  **[業務用デバイスの ID]**  >  **[追加]**  >  **[手動で入力]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインし、**[デバイス]** > **[デバイスの登録]** > **[業務用デバイスの ID]** > **[追加]** > **[手動で入力]** の順に選択します。
 
 2. **[ID の追加]** ブレードで、ID の種類として **[IMEI]** または **[シリアル]** を指定します。
 
-3. 追加する ID ごとに、 **[ID]** と **[詳細]** を入力します。 ID の入力を完了したら、 **[追加]** を選択します。
+3. 追加する ID ごとに、**[ID]** と **[詳細]** を入力します。 ID の入力を完了したら、**[追加]** を選択します。
 
-5. 入力した企業 ID は Intune 内に既に存在しているが、その詳細が異なる場合は、 **[重複した ID を確認する]** ポップアップが表示されます。 Intune に上書きする ID を選択し、 **[OK]** を選択して、ID を追加します。 各識別子について、最初の重複のみが比較されます。
+5. 入力した企業 ID は Intune 内に既に存在しているが、その詳細が異なる場合は、**[重複した ID を確認する]** ポップアップが表示されます。 Intune に上書きする ID を選択し、**[OK]** を選択して、ID を追加します。 各識別子について、最初の重複のみが比較されます。
 
 **[更新]** をクリックすると、新しいデバイス ID が表示されます。
 
@@ -111,11 +109,11 @@ Android デバイスのシリアル番号の検索方法については、[こ�
 
 ## <a name="delete-corporate-identifiers"></a>企業 ID を削除する
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインし、 **[デバイスの登録]**  >  **[業務用デバイスの ID]** を選択します。
-2. 削除するデバイス識別子を選択し、 **[削除]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインし、**[デバイス]** > **[デバイスの登録]** > **[業務用デバイスの ID]** の順に選択します。
+2. 削除するデバイス識別子を選択し、**[削除]** を選択します。
 3. 削除を確認します。
 
-登録済みデバイスの企業識別子を削除すると、デバイスの所有権が変更されます。 デバイスの所有権を変更するには、 **[デバイス]** に進み、デバイスを選択し、 **[プロパティ]** を選択し、 **[デバイスの所有者]** を変更します。
+登録済みデバイスの企業識別子を削除すると、デバイスの所有権が変更されます。 デバイスの所有権を変更するには、**[デバイス]** に進み、デバイスを選択し、**[プロパティ]** を選択し、**[デバイスの所有者]** を変更します。
 
 ## <a name="imei-specifications"></a>IMEI の仕様
 International Mobile Equipment Identifier の詳しい仕様については、「[3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729)」を参照してください。
@@ -125,7 +123,7 @@ International Mobile Equipment Identifier の詳しい仕様については、�
 デバイスのプロパティには、Intune のデバイス レコード別の**所有権**が表示されます。 管理者はデバイスを**個人用**または**企業所有**として指定できます。 デバイスの所有権の種類が個人から会社に変更されると、Intune ではそのデバイスから以前に収集されたすべてのアプリ情報が 7 日以内に削除されます。 該当する場合、Intune ではレコード上の電話番号も削除されます。 
 
 **デバイス所有権を変更するには:**
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。 **[デバイス]** に移動し、デバイスを選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインして、**[デバイス]** > **[すべてのデバイス]** の順に選択し、デバイスを選択します。
 2. **[プロパティ]** を選択します。
 3. **[デバイスの所有権]** に **[個人]** または **[企業]** を指定します。
 

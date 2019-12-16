@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 752b4ae8440df0ebefbabbf7e5ccb48fed684827
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: f56808b6841d120e10541a978a835282041fd3c3
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540814"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946711"
 ---
 # <a name="microsoft-intune-protected-apps"></a>保護されている Microsoft Intune アプリ  
 
@@ -93,6 +93,7 @@ ms.locfileid: "74540814"
 | **SAP Fiori**<p><img alt="Partner app - SAP Fiori icon" src="./media/apps-supported-intune-apps/icon-p-sap-fiori.png" width="100"> | iPhone および iPad 用の SAP Fiori Client モバイル アプリを使うと、時間と場所を選ばずに最もよく行うビジネス タスクに取り組むことで、毎日の生産性を向上させることができます。 750 を超える SAP Fiori アプリの Web バージョンに対するこの拡張モバイル ランタイムを使って、強化された添付ファイル処理と全画面処理を備えた次のレベルのモバイル エクスペリエンスを実現します。 さらに、カスタムの SAP Fiori モバイル アプリ (SAP Fiori モバイル サービスを利用するお客様によって構築されたもの) にアクセスできます。これは Intune モバイル アプリ管理をサポートする準備が整っています。 | [iOS ストアのリンク](https://itunes.apple.com/us/app/sap-fiori-client/id824997258?mt=8) |  
 | **Speaking Email**<p><img alt="Partner app - Speaking Email icon" src="./media/apps-supported-intune-apps/icon-p-speaking-email-icon.png" width="100">   | ご自分のメールを移動中に読み上げさせることで、毎日の時間を節約できます。 運転中でも安全に使えるよう設計された音声コマンドやシンプルなジェスチャを使って、移動中にアーカイブしたり、フラグを設定したり、または返信したりできます。<p>コンテンツのスマート検出により、免責事項や返信ヘッダー、メールの署名はスキップされ、余計なものを除いた内容だけが読み上げられます。<p>従業員は Intune 経由でサインインして、Office 365 Exchange メールにアクセスできます。 | [iOS ストアのリンク](https://itunes.apple.com/app/apple-store/id991406423?ct=intune) | 
 | **Synergi Life**<p><img alt="Partner app - Synergi Life icon" src="./media/apps-supported-intune-apps/icon-p-synergi-life.png" width="100"> | Synergi Life の拡張機能である Synergi Life Mobile App を使うと、時間と場所を選ばずに所見とインシデント レポートを簡単に作成し、各自のスマートフォンを使ってスナップショットの取得と音声録音を行えます。<p>Synergi Life (旧称 Synergi) はリクスと QHSE 管理のための包括的なビジネス ソリューションです。あらゆる不適合、インシデント、リスク、リスク分析、監査、評価、および改善提案を管理できます。<p>Synergi Life Mobile App を利用するには、Synergi Life のリクスと QHSE 管理システムのライセンスを持つユーザーであり、かつ必要なバックエンドのライセンスされているソフトウェアおよびサービスを持っている必要があります。 | [Android ストアのリンク](https://play.google.com/store/apps/details?id=com.dnv.mobilesolutions.synergimobile.uibase)、[iOS ストアのリンク](https://itunes.apple.com/us/app/synergi-life/id641181737)  |  
+| **Tact for Intune**<p><img alt="Partner app - Tact for Intune icon" src="./media/apps-supported-intune-apps/icon-p-tact-icon.png" width="100"> | Tact for Intune は、Salesforce.com、電子メール、カレンダー、マップ、その他の日常的ツールからのデータを統合し、人間にとって便利な、会話式の操作性を与える初めての CRM および販売向けアシスタントです。 AI を備えた Tact では、営業担当者の管理作業が自動化され、CRM とその他のデータ ソースが統合されて 1 つの画面に表示され、情報を各販売員に与えることでパフォーマンスの高い動作がもたらされます。 企業は Tact for Intune を利用することで販売員の生産性を上げ、顧客データを充実させて CRM の導入を増やしながら、同時にアプリケーション層に企業クラスのセキュリティを確保できます。 | [Android ストアのリンク](https://play.google.com/store/apps/details?id=com.tactile.tact)、[iOS ストアのリンク](https://apps.apple.com/us/app/tact-for-intune/id1477117416?mt=8)  |  
 | **Vera for Intune**<p><img alt="Partner app - Vera for Intune icon" src="./media/apps-supported-intune-apps/icon-p-vera.png" width="100"> | Vera for Intune を使うと、ご自分のモバイル デバイスから直接、ファイルやメールの添付ファイルに対する暗号化、追跡、アクセスの取り消しを行えます。 使うアプリに関係なく、最も重要な情報を保護します。Microsoft、Box、Google、Dropbox などを使えます。 | [iOS ストアのリンク](https://itunes.apple.com/us/app/vera-for-intune/id1235182010?mt=8) |  
 | **Workspace ONE Send**<p><img alt="Partner app - Intune partner app - Workspace ONE Send icon" src="./media/apps-supported-intune-apps/icon-p-workspace-one-send-icon.png" width="100"> | Workspace ONE Send には、VMware の仕事効率化アプリを使って Office 365 アプリを管理するために Microsoft Intune を使っているお客様が、シームレスな編集と送信を行うための機能が用意されています。 | [Android ストアのリンク](https://play.google.com/store/apps/details?id=com.airwatch.vmsend)、<br>[iOS ストアのリンク](https://itunes.apple.com/us/app/vmware-workspace-one-send/id1336333505?mt=8) |
 | **Zoom for Intune**<p><img alt="Partner app - Zoom for Intune icon" src="./media/apps-supported-intune-apps/icon-p-zoom.png" width="100"> | Zoom は、会議、ウェビナー、チャット、およびクラウド フォン用の通信ハブです。 デスクトップ、モバイル、または会議室から、完璧なビデオ、鮮明なオーディオ、および瞬時の画面共有で会議を開始、または会議に参加します。 | [Android ストアのリンク](https://play.google.com/store/apps/details?id=us.zoom.videomeetings4intune)、<br>[iOS ストアのリンク](https://apps.apple.com/us/app/zoom-for-intune/id1462818858?mt=8) |  

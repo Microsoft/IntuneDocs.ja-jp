@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f12feca6d43a4194e7c60639a93747c7f389f93
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.openlocfilehash: 0b84cd52dfe2eb6332ddbc89bc00a17ec3361b79
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74558207"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000433"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows デバイスの登録をセットアップする
 
@@ -102,8 +102,8 @@ EnterpriseEnrollment-s.manage.microsoft.com は、登録用の優先 FQDN です
 CNAME の構成以外の方法を使用することは、サポートされていません。 たとえば、プロキシ サーバーを使用して enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc を enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc または manage.microsoft.com/EnrollmentServer/Discovery.svc のいずれかにリダイレクトすることは、サポートされていません。
 
 **手順 2: CNAME を確認する** (省略可能)<br>
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[Windows]**  >  **[Windows の登録]**  >  **[CNAME 検証]** を選択します。
-2. **[ドメイン]** ボックスに、企業の Web サイトを入力し、 **[テスト]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、**[デバイス]** > **[Windows]** > **[Windows の登録]** > **[CNAME 検証]** を選択します。
+2. **[ドメイン]** ボックスに、企業の Web サイトを入力し、**[テスト]** を選択します。
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>Windows デバイスの登録方法をユーザーに通知する
 ユーザーに、Windows デバイスを登録する方法とデバイスが管理されるとどうなるかを伝えます。
@@ -114,7 +114,7 @@ CNAME の構成以外の方法を使用することは、サポートされて�
 エンドユーザー用の登録手順については、「[Intune に Windows デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)」を参照してください。 また、ユーザーには、[IT 管理者がユーザーのデバイスに関して確認できる情報](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows)に関するページも案内してください。
 
 >[!IMPORTANT]
-> MDM 自動登録を有効にしていなくても、Azure AD に参加している Windows 10 デバイスを持っている場合は、登録後に Intune コンソールに 2 つのレコードが表示されます。 これを停止するには、Azure AD に参加しているデバイスを持っているユーザーが、 **[アカウント]**  >  **[職場または学校にアクセスする]** に移動し、同じアカウントを使用して**接続**するようにします。 
+> MDM 自動登録を有効にしていなくても、Azure AD に参加している Windows 10 デバイスを持っている場合は、登録後に Intune コンソールに 2 つのレコードが表示されます。 これを停止するには、Azure AD に参加しているデバイスを持っているユーザーが、**[アカウント]** > **[職場または学校にアクセスする]** に移動し、同じアカウントを使用して**接続**するようにします。 
 
 エンドユーザー タスクの詳細については、「[Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](../fundamentals/end-user-educate.md)」を参照してください。
 
@@ -126,6 +126,15 @@ Azure Active Directory には、iOS、Android、および Windows デバイス�
 | 名前 | EnterpriseRegistration。 company_domain.com | EnterpriseRegistration.windows.net | 1 時間|
 
 デバイス登録の詳細については、「[Azure portal を使用してデバイス ID を管理する](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)」をご覧ください
+
+## <a name="windows-10-auto-enrollment-and-device-registration"></a>Windows 10 の自動登録とデバイス登録
+CNAME DNS エントリの作成は省略可能ですが、CNAME レコードにより登録が簡単になります。 CNAME レコードの登録が見つからない場合、ユーザーは手動で MDM サーバー名 enrollment.manage.microsoft.us を入力するように求められます。
+
+| Type | ホスト名 | 指定先 | TTL |
+| --- | --- | --- | --- |
+| CNAME | EnterpriseEnrollment.company_domain.com | EnterpriseEnrollment-s.manage.microsoft.us | 1 時間|
+|CNAME | EnterpriseRegistration.company_domain.com | EnterpriseRegistration.windows.net | 1 時間 |
+
 
 ## <a name="next-steps"></a>次の手順
 

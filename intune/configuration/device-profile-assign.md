@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 275b3961e87f0d0eda8299337fe3fb7ac89ef03b
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: 651b02dc276ca2aa2003955e6aa7b0dfa6724a40
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261685"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860317"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune でユーザーおよびデバイス プロファイルを割り当てる
 
@@ -40,8 +40,8 @@ ms.locfileid: "74261685"
 ## <a name="assign-a-device-profile"></a>デバイス プロファイルを割り当てる
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-2. **[デバイス]** 、 **[構成プロファイル]** の順に選択します。 プロファイルがすべて一覧表示されます。
-3. 割り当てるプロファイルを選択して、 **[割り当て]** を選択します。
+2. **[デバイス]**、**[構成プロファイル]** の順に選択します。 プロファイルがすべて一覧表示されます。
+3. 割り当てるプロファイルを選択して、**[割り当て]** を選択します。
 4. グループを**含める**か**除外する**かを選んでから、自分のグループを選択します。 グループを選択するときに、Azure AD グループを選択します。 複数のグループを選択する場合は、**Ctrl** キーを押しながら自分のグループを選択します。
 
     ![プロファイル割り当てにグループを含める、またはグループを除外するオプションのスクリーンショット](./media/device-profile-assign/group-include-exclude.png)
@@ -52,8 +52,8 @@ ms.locfileid: "74261685"
 
 プロファイルを割り当てるときに、影響を受けるユーザー数を**評価**することもできます。 この機能によってユーザーが計算されます。デバイスは計算されません。
 
-1. 管理センターで、 **[デバイス]** 、 **[構成プロファイル]** の順に選択します。
-2. プロファイル > **[割り当て]**  >  **[評価]** を選択します。 このプロファイルの対象となるユーザー数を示すメッセージが表示されます。
+1. 管理センターで、**[デバイス]**、**[構成プロファイル]** の順に選択します。
+2. プロファイル > **[割り当て]** > **[評価]** を選択します。 このプロファイルの対象となるユーザー数を示すメッセージが表示されます。
 
 **[評価]** ボタンが灰色表示されている場合は、プロファイルが 1 つまたは複数のグループに割り当てられていることを確認してください。
 
@@ -61,7 +61,7 @@ ms.locfileid: "74261685"
 
 プロファイルを作成または更新するときに、スコープのタグと適用性ルールをプロファイルに追加することもできます。
 
-**スコープのタグ**は、人事や US-NC の全従業員など、特定のグループにプロファイルを割り当てて、フィルター処理するのに最適な方法です。 [分散 IT への RBAC とスコープのタグの使用](../fundamentals/scope-tags.md)に関するページには、詳細情報が含まれます。
+**スコープ タグ**は、`US-NC IT Team` や `JohnGlenn_ITDepartment` など、特定のグループにプロファイルをフィルター処理する場合に便利です。 [分散 IT への RBAC とスコープのタグの使用](../fundamentals/scope-tags.md)に関するページには、詳細情報が含まれます。
 
 Windows 10 デバイスでは、**適用性ルール**を追加して、特定の OS のバージョンまたは特定の Windows のエディションにのみプロファイルが適用されるようにすることができます。 詳細については、「[適用性ルール](device-profile-create.md#applicability-rules)」を参照してください。
 

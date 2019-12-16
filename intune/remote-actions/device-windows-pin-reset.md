@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b2390462376c88129435de30eb98020563f3878
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: b643ed41d01b70376dac32c26a66dcf9f9735ceb
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713090"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907221"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Intune を使って Windows デバイスのパスコードをリセットする
 
@@ -65,8 +65,8 @@ Windows デバイスのパスコードをリセットするには、PIN Reset Se
 ## <a name="reset-the-passcode"></a>パスコードをリセットする
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。 
-2. **[デバイス]** 、 **[すべてのデバイス]** の順に選択します。
-3. パスコードをリセットするデバイスを選択します。 デバイスのプロパティで、 **[新しいパスコード]** を選択します。
+2. **[デバイス]**、**[すべてのデバイス]** の順に選択します。
+3. パスコードをリセットするデバイスを選択します。 デバイスのプロパティで、**[パスコードのリセット]** を選択しします。
 4. **[はい]** をクリックして操作を確定します。 パスコードが生成され、以降 7 日間ポータルに表示されます。
 
 ## <a name="next-step"></a>次の手順

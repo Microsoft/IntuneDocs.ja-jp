@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eff4ccdc8b40da4d72394001b88446653ff71bd0
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 2e7c9824711ecbfb43a7c7dde71cc01b306b7fab
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564242"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899409"
 ---
 # <a name="intune-discovered-apps"></a>Intune で検出されたアプリ
 
@@ -34,7 +34,7 @@ Intune で**検出されたアプリ**は、テナント内の Intune に登録�
 Intune では、テナント内の Intune に登録されているデバイス上で検出されたアプリを集計した一覧が提供されます。
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-2. **[アプリ]**  >  **[監視]**  >  **[検出されたアプリ]** を選択します。
+2. **[アプリ]** > **[監視]** > **[検出されたアプリ]** を選択します。
 
 >[!NOTE]
 >**[検出されたアプリ]** ウィンドウの **[エクスポート]** を選択することで、検出されたアプリの一覧を .csv ファイルにエクスポートできます。
@@ -44,9 +44,9 @@ Intune では、テナント内の Intune に登録されているデバイス�
 Intune では、テナント内の個々のデバイスについて検出されたアプリの一覧も提供されます。
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-2. **[デバイス]**  >  **[すべてのデバイス]** を選択します。
+2. **[デバイス]** > **[すべてのデバイス]** を選択します。
 3. デバイスを選択します。
-4. このデバイスで検出されたアプリを表示するには、 **[監視]** セクションで **[検出されたアプリ]** を選択します。
+4. このデバイスで検出されたアプリを表示するには、**[監視]** セクションで **[検出されたアプリ]** を選択します。
 
 ## <a name="details-of-discovered-apps"></a>検出されたアプリの詳細
 
@@ -60,12 +60,13 @@ Intune では、テナント内の個々のデバイスについて検出され�
 | Windows Phone 8 | 管理対象アプリのみ | 管理対象アプリのみ | デバイス登録から 7 日おき |
 | Windows RT | 管理対象アプリのみ | 管理対象アプリのみ | デバイス登録から 7 日おき |
 | iOS | 管理対象アプリのみ | デバイスにインストールされているすべてのアプリ | デバイス登録から 7 日おき |
-| macOS | デバイスにインストールされているすべてのアプリ | デバイスにインストールされているすべてのアプリ | デバイス登録から 7 日おき |
+| macOS | 管理対象アプリのみ | デバイスにインストールされているすべてのアプリ | デバイス登録から 7 日おき |
 | Android | 管理対象アプリのみ | デバイスにインストールされているすべてのアプリ | デバイス登録から 7 日おき |
 | Android エンタープライズ | 管理対象アプリのみ | 仕事用プロファイル内にインストールされているアプリのみ | デバイス登録から 7 日おき |
 
 > [!NOTE]
-> Configuration Manager のアプリ管理ワークロードに示されているように、Windows 10 Hybrid Azure AD の参加済みデバイスでは現在、前述のスケジュールに従って Intune 管理拡張機能 (IME) 経由でアプリ インベントリは収集されません。 この問題を軽減するには、IME がデバイス上にインストールされるように、Configuration Manager 内のアプリ管理ワークロードを Intune に切り替える必要があります (Win32 インベントリと PowerShell の展開には、IME が必要です)。 この動作に対する変更や更新はすべて、[開発中](../fundamentals/in-development.md)や[新機能](../fundamentals/whats-new.md)に関する記事に発表されることに注意してください。
+> - Configuration Manager のアプリ管理ワークロードに示されているように、Windows 10 Hybrid Azure AD の参加済みデバイスでは現在、前述のスケジュールに従って Intune 管理拡張機能 (IME) 経由でアプリ インベントリは収集されません。 この問題を軽減するには、IME がデバイス上にインストールされるように、Configuration Manager 内のアプリ管理ワークロードを Intune に切り替える必要があります (Win32 インベントリと PowerShell の展開には、IME が必要です)。 この動作に対する変更や更新はすべて、[開発中](../fundamentals/in-development.md)や[新機能](../fundamentals/whats-new.md)に関する記事に発表されることに注意してください。
+> - 2019 年 11 月より前に登録された個人所有の macOS デバイスには、デバイスが再登録されるまで、デバイスにインストールされているすべてのアプリが引き続き表示されます。
 
 検出されたアプリの数が、インストール状態のアプリの数と一致しない場合があります。 一致しないケースとしては次の可能性があります。
 

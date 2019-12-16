@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a3081ece10bb25c6381f4a8f891152433bc9661
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 94c38aaf28440511720280a3c5a1ebda5b9f2ab1
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564379"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74819779"
 ---
 # <a name="see-device-details-in-intune"></a>Intune でデバイスの詳細を確認する
 
@@ -34,7 +34,7 @@ ms.locfileid: "74564379"
 ## <a name="view-the-device-details"></a>デバイスの詳細を表示する
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-3. **[デバイス]**  >  **[すべてのデバイス]** を選択します。次に、一覧表示されているデバイスのいずれかを選択して、その詳細を開きます。
+3. **[デバイス]** > **[すべてのデバイス]** を選択します。次に、一覧表示されているデバイスのいずれかを選択して、その詳細を開きます。
 
    - **[概要]** には、デバイス名が表示され、Bring-Your-Own-Device (BYOD) デバイスであるかどうかや、チェックイン時刻など、デバイスの主なプロパティがいくつか一覧表示されます。 デバイスでは、次のことを実行できます。
       - [削除](devices-wipe.md#retire)
@@ -77,7 +77,7 @@ ms.locfileid: "74564379"
 |MEID|デバイスの Mobile Equipment Identifier。|Windows、iOS、Android|
 |製造元|デバイスの製造元。|Windows、iOS、Android|
 |モデル|デバイスのモデル。|Windows、iOS、Android|
-|電話番号|このデバイスに割り当てられている電話番号。|Windows、iOS、Android|
+|電話番号|このデバイスに割り当てられている電話番号。|Windows、iOS、Android*|
 |通信事業者|デバイスの無線通信事業者。|Windows、iOS、Android|
 |通信方式|デバイスで使用される無線システム。|Windows、iOS、Android|
 |Wi-Fi MAC|デバイスの MAC アドレス。|Windows、iOS、Android|
@@ -93,7 +93,7 @@ ms.locfileid: "74564379"
 |監督下|**[はい]** の場合、管理者がデバイスの制御を強化しています。|Windows、iOS、Android|
 |暗号化|**[はい]** の場合、デバイスに格納されているデータが暗号化されます。|Windows、iOS、Android|
 
-
+\* フル マネージド デバイスや専用デバイスなど、Google ポリシー マネージャーを使用した Android では使用できません
 
 ## <a name="next-steps"></a>次の手順
 Intune で[デバイスを管理](device-management.md)するために他に行えることを確認します。

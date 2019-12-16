@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: 59ba9ab5fb0ddeb527ed852de042568920cf38e1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b6144767ee69de8c1ff14e5c189c078994a9dcf4
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509181"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74819715"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Windows デバイスの Intune 登録方法
 
@@ -42,7 +42,7 @@ Intune でデバイスを管理するには、まず、デバイスを Intune �
 管理者が自動登録 (Azure AD Premium サブスクリプションで利用可能) を構成している場合、ユーザーが資格情報を入力する必要があるのは 1 回のみとなります。 それ以外の場合、MDM の登録のみで個別に登録し、資格情報を再入力する必要があります。  
 - **MDM の登録のみ**では、ユーザーは、既存のワークグループ、Active Directory、または Azure Active Directory に参加済みの PC を Intune に登録することができます。 ユーザーは、既存の Windows PC で [設定] から登録します。 この方法は、デバイスが Azure Active Directory に登録されないため、お勧めできません。 条件付きアクセスなどの機能も使用できません。
 - [Azure Active Directory (Azure AD) に参加](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) - デバイスを Azure Active Directory に参加させ、ユーザーが Azure AD 資格情報を使用して、Windows にサインインできるようにします。 自動登録が有効になっている場合、デバイスは Intune に自動的に登録されます。 自動登録の利点は、ユーザーの単一ステップ プロセスです。 それ以外の場合、MDM の登録のみで個別に登録し、資格情報を再入力する必要があります。 ユーザーは、[設定] からまたは最初の Windows OOBE 時に、この方法で登録します。 デバイスは、Intune で会社所有デバイスとしてマークされます。
-- [Autopilot](enrollment-autopilot.md) - Azure AD 参加を自動化し、新しい企業所有デバイスを Intune に登録します。 この方法では、Out-of-Box Experience が簡略化され、カスタム オペレーティング システム イメージをデバイスに適用する必要がなくなります。 管理者は、Intune を使用して Autopilot デバイスを管理する場合、ポリシー、プロファイル、アプリなどを登録後に管理することができます。  Autopilot の展開の種類には次の 4 種類があります。[自己展開モード](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (キオスク、デジタル信号、または共有デバイスの場合)、[ユーザー駆動型モード](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (従来のユーザーの場合)、[ホワイト グローブ] (https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) (パートナーまたは IT スタッフは Windows 10 PC が完全に構成されビジネスに即応できるように、それを事前プロビジョニングすることができる)、[既存のデバイス向け Autopilot] (https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) (最新バージョンの Windows 10 をご利用の既存のデバイスに簡単に展開できる)。
+- [Autopilot](enrollment-autopilot.md) - Azure AD 参加を自動化し、新しい企業所有デバイスを Intune に登録します。 この方法では、Out-of-Box Experience が簡略化され、カスタム オペレーティング システム イメージをデバイスに適用する必要がなくなります。 管理者は、Intune を使用して Autopilot デバイスを管理する場合、ポリシー、プロファイル、アプリなどを登録後に管理することができます。  Autopilot の展開の種類には次の 4 種類があります。[自己展開モード](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (キオスク、デジタル信号、または共有デバイスの場合)、[ユーザー駆動型モード](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (従来のユーザーの場合)、[White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) (パートナーまたは IT スタッフは Windows 10 PC が完全に構成されビジネスに即応できるように、それを事前プロビジョニングすることができる)、[既存デバイス向け Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) (最新バージョンの Windows 10 をご利用の既存のデバイスに簡単に展開できる)。
 
 ## <a name="administrator-based-enrollment-in-intune"></a>Intune の管理者ベースの登録
 
