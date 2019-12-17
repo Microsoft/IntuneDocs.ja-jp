@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e71ae2d2bcee22040c256ea711edd22b1d1fc80a
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 46b46cd4a407df686e094198c588371ed4a01bb6
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199266"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832577"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune での iOS デバイスの登録に関する問題のトラブルシューティング
 
@@ -136,10 +136,10 @@ CNAME DNS エントリの作成は省略可能ですが、CNAME レコードに�
 **原因:** ユーザーは、デバイス登録制限よりも多くのデバイスを登録しようとしています。
 
 #### <a name="resolution"></a>解決策
-1. [Intune 管理ポータル](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) >  台の**デバイス** > **すべてのデバイス** を開き、ユーザーが登録したデバイスの数を確認します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、[**デバイス** > **すべてのデバイス**] を選択し、ユーザーが登録したデバイスの数を確認します。
     > [!NOTE]
     > また、影響を受けるユーザーが[Intune ユーザーポータル](https://portal.manage.microsoft.com/)にログオンし、登録されているデバイスを確認する必要があります。 Intune[ユーザーポータル](https://portal.manage.microsoft.com/)に表示されるデバイスもありますが、 [intune 管理ポータル](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)には表示されません。このようなデバイスは、デバイスの登録制限にもカウントされます。
-2. [**管理** > **モバイルデバイス管理** > の**登録ルール**] に移動して、デバイスの登録制限を確認 > ます。 既定では、制限は 15 に設定されています。 
+2. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、[デバイス > **登録の制限** **] を選択**して、デバイスの登録制限を確認 > ます。 既定では、制限は 15 に設定されています。 
 3. 登録されているデバイスの数が制限に達した場合は、不要なデバイスを削除するか、デバイスの登録制限を増やします。 登録されているすべてのデバイスで Intune ライセンスが使用されるため、まず不要なデバイスを必ず削除することをお勧めします。
 4. デバイスを再度登録します。
 
@@ -230,7 +230,7 @@ iPhone mobileassetd[83] <Notice>: 0x1a49aebc0 Client connection: XPC_TYPE_ERROR 
 #### <a name="resolution"></a>解決策
 
 1. 登録プロファイルを編集します。 プロファイルに変更を加えることができます。 目的は、プロファイルの変更時刻を更新することです。
-2. DEP で管理されているデバイスの同期: Intune ポータル >**管理** > **モバイルデバイス管理**の > **iOS** > **Device Enrollment Program** > 同期 を**開始**します。 同期要求が Apple に送信されます。
+2. DEP 管理対象デバイスを同期します。[Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Enrollment Program トークン]** を選択します。一覧からトークンを選択し、 **[同期]** を選択します。 同期要求が Apple に送信されます。
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>ユーザーログイン時の DEP 登録スタック
 登録プロファイルが割り当てられている DEP 管理対象デバイスを有効にすると、資格情報を入力した後に初期セットアップが表示されます。
@@ -244,5 +244,5 @@ MFA を無効にしてから、デバイスを再登録します。
 
 - [Intune のデバイス登録に関するトラブルシューティング](../troubleshoot-device-enrollment-in-intune.md)
 - [Intune フォーラムで質問する](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
-- [Microsoft Intune サポートチームのブログを確認する](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
-- [Microsoft Enterprise Mobility and Security のブログを確認する](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
+- [Microsoft Intune サポート チームのブログを読む](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
+- [Microsoft Enterprise Mobility and Security チームのブログを読む](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)

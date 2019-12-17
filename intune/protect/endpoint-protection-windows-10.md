@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e2909e7ad1ced9483a6cec58f1f3009f56946f5f
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74058427"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune を使用してデバイスを保護するための Windows 10 (以降) の設定
@@ -495,28 +495,28 @@ Microsoft Edge がデバイスにインストールされている必要があ�
     **既定値**: XTS-AES-AES 128 ビット  
    
     オペレーティング システム ドライブ用の暗号化の方法を選択します。 XTS-AES アルゴリズムの使用をお勧めします。  
-    - **AES-CBC 128-bit**  
-    - **AES-CBC 256-bit**  
-    - **XTS-AES-AES 128 ビット**  
-    - **XTS-AES-AES 256 ビット**  
+    - **AES-CBC 128 ビット**  
+    - **AES-CBC 256 ビット**  
+    - **XTS-AES 128 ビット**  
+    - **XTS-AES 256 ビット**  
 
   - **[固定データ ドライブの暗号化]**  
     **既定値**: AES-CBC 128-bit  
    
     固定 (組み込み) のデータ ドライブ用の暗号化の方法を選択します。 XTS-AES アルゴリズムの使用をお勧めします。  
-    - **AES-CBC 128-bit**  
-    - **AES-CBC 256-bit**  
-    - **XTS-AES-AES 128 ビット**  
-    - **XTS-AES-AES 256 ビット**  
+    - **AES-CBC 128 ビット**  
+    - **AES-CBC 256 ビット**  
+    - **XTS-AES 128 ビット**  
+    - **XTS-AES 256 ビット**  
 
   - **[リムーバブル データドライブの暗号化]**  
     **既定値**: AES-CBC 128-bit  
 
     リムーバブル データ ドライブ用の暗号化の方法を選択します。 Windows 10 を実行していないデバイスでリムーバブル ドライブを使用する場合は、AES-CBC アルゴリズムの使用をお勧めします。  
-    - **AES-CBC 128-bit**  
-    - **AES-CBC 256-bit**  
-    - **XTS-AES-AES 128 ビット**  
-    - **XTS-AES-AES 256 ビット**  
+    - **AES-CBC 128 ビット**  
+    - **AES-CBC 256 ビット**  
+    - **XTS-AES 128 ビット**  
+    - **XTS-AES 256 ビット**  
 
 ### <a name="bitlocker-os-drive-settings"></a>BitLocker OS ドライブ設定  
 
@@ -636,7 +636,7 @@ Microsoft Edge がデバイスにインストールされている必要があ�
     - **回復パスワードとキー パッケージをバックアップする**  
     - **回復パスワードのみバックアップする**  
 
-  - **クライアント主導の回復パスワードのローテーション**  
+  - **クライアント主導の回復パスワードの交換**  
     **既定**: Azure AD 参加済みデバイスでキーローテーションが有効  
     BitLocker CSP: [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)  
     
@@ -733,7 +733,7 @@ Microsoft Edge がデバイスにインストールされている必要があ�
     - **回復パスワードとキー パッケージをバックアップする**  
     - **回復パスワードのみバックアップする**  
 
-  - **クライアント主導の回復パスワードのローテーション**  
+  - **クライアント主導の回復パスワードの交換**  
     **既定**: Azure AD 参加済みデバイスでキーローテーションが有効  
     BitLocker CSP: [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)  
     

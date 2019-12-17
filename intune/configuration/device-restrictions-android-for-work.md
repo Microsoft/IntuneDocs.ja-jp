@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b38ab611ecf6a33c8cc48fa120751af8548a7f95
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 904c3d2267decdfa3929bf29376c05a995c77eb8
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390922"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946656"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように Android エンタープライズ デバイスを設定する
 
@@ -31,6 +31,8 @@ ms.locfileid: "74390922"
 [デバイス構成プロファイルを作成します](device-restrictions-configure.md)。
 
 ## <a name="device-owner-only"></a>デバイスの所有者のみ
+
+これらの設定は、android enterprise の完全管理型または専用デバイスなど、デバイス全体を Intune で制御する Android エンタープライズ登録の種類に適用されます。
 
 ### <a name="general-settings"></a>全般設定
 
@@ -229,7 +231,7 @@ ms.locfileid: "74390922"
   すべての VPN クライアントの常時接続 VPN を無効にするには、 **[未構成]** を選択します。
 
   > [!IMPORTANT]
-  > 1 つのデバイスには Always On VPN ポリシーを 1 つだけ展開してください。 1 つのデバイスに複数の常時接続 VPN ポリシーを展開することはサポートされていません。
+  > 1 つのデバイスには常時接続 VPN ポリシーを 1 つだけデプロイしてください。 1 つのデバイスに複数の常時接続 VPN ポリシーをデプロイすることはサポートされていません。
 
 - **VPN クライアント**: Always On をサポートする VPN クライアントを選択します。 次のようなオプションがあります。
   - Cisco AnyConnect
@@ -242,6 +244,7 @@ ms.locfileid: "74390922"
   > [!IMPORTANT]
   > - 選択した VPN クライアントは、デバイスにインストールされている必要があり、仕事用プロファイルでアプリごとの VPN をサポートしている必要があります。 そうでない場合、エラーが発生します。 
   > - **Managed Google Play ストア**で VPN クライアント アプリを承認し、アプリを Intune に同期して、アプリをデバイスに展開する必要があります。 これを行うと、アプリがユーザーの仕事用プロファイルにインストールされます。
+  > - Vpn[プロファイル](vpn-settings-android-enterprise.md)または[アプリ構成プロファイル](../apps/app-configuration-policies-use-android.md)を使用して vpn クライアントを構成する必要もあります。
   > - Android 3.0.4 用の F5 Access と共にアプリごとの VPN を使用する場合、既知の問題がある可能性があります。 詳細については、[Android 3.0.4 用の F5 Access に向けた F5 のリリース ノート](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android)をご覧ください。
 
 - **ロックダウン モード**: すべてのネットワーク トラフィックで VPN トンネルの使用を強制するには、 **[有効化]** を選択します。 VPN への接続が確立されていない場合、デバイスはネットワークにアクセスできません。
@@ -264,6 +267,8 @@ ms.locfileid: "74390922"
     PAC ファイルの詳細については、「[プロキシの自動構成 (pac) ファイル](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file)(Microsoft 以外のサイトを開く)」を参照してください。
 
 ## <a name="work-profile-only"></a>仕事用プロファイルのみ
+
+これらの設定は、Android エンタープライズ登録の種類に適用されます。 Intune では、個人または会社のデバイス (BYOD) での Android Enterprise Work profile 登録など、仕事用プロファイルのみを制御します。
 
 ### <a name="work-profile-settings"></a>仕事用プロファイル設定
 

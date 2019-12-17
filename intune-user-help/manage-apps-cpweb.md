@@ -20,16 +20,16 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: edc45fb3ddab43ef77a3f072c5a1a31f8f88c957
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506099"
 ---
 # <a name="manage-apps-from-the-company-portal-website"></a>ポータル Web サイトからアプリを管理する 
 組織のアプリを表示して管理するには、[ポータルサイトの web サイト](https://portal.manage.microsoft.com)を参照してください。 
 
-## <a name="view-all-apps"></a>すべてのアプリを表示する  
+## <a name="view-all-apps"></a>すべてのアプリの表示  
 メニューから **[アプリ]** を選択して、組織で利用可能なすべてのアプリを表示します。 
 
    ![ポータルサイト web サイトの [アプリ] ページのスクリーンショット。詳細オプションが表示されます。](./media/intune-view-apps-1907.png)  

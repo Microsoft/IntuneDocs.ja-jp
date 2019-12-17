@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3c6c029a5c5864eda46a68832b2f9f655553846
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889538"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946662"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune を使用してデバイスを準拠または非準拠としてマークするための Windows 10 以降の設定
 
@@ -161,6 +161,7 @@ Windows 10 以降を実行している共同マネージド デバイスにの�
 ### <a name="encryption"></a>暗号化
 
 - **[デバイス上のデータ ストレージの暗号化]** :  
+  この設定は、デバイス上のすべてのドライブに適用されます。
   - **[未構成]** ("*既定値*")
   - **[必須]** - デバイス上のデータ ストレージを暗号化するには、 *[必須]* を選択します。
 
@@ -198,7 +199,7 @@ Windows 10 以降を実行している共同マネージド デバイスにの�
 
 - **Microsoft Defender マルウェア対策**:  
   - **未構成**(*既定*)-Intune はサービスを制御したり、既存の設定を変更したりしません。
-  - **[必須]** -Microsoft Defender マルウェア対策サービスを有効にし、ユーザーが無効にできないようにします。 
+  - **[必須]** -Microsoft Defender マルウェア対策サービスを有効にし、ユーザーが無効にできないようにします。
 
 - **Microsoft Defender マルウェア対策の最小バージョン**:  
   Microsoft Defender マルウェア対策サービスの許可されている最小バージョンを入力してください。 たとえば、「`4.11.0.0`」と入力します。 空白のままにすると、Microsoft Defender マルウェア対策サービスのすべてのバージョンを使用できます。  
@@ -206,10 +207,12 @@ Windows 10 以降を実行している共同マネージド デバイスにの�
   *既定では、バージョンは構成されていません*。
 
 - **Microsoft Defender マルウェア対策セキュリティインテリジェンスは最新**の状態です。  
-  デバイス上の Windows セキュリティウイルスおよび脅威保護の更新を制御します。  
+  デバイス上の Windows セキュリティウイルスおよび脅威保護の更新を制御します。
   - **未構成**(*既定*)-Intune は要件を強制しません。
-  - **必須**-Microsoft Defender セキュリティインテリジェンスを強制的に最新の状態にする。 
+  - **必須**-Microsoft Defender セキュリティインテリジェンスを強制的に最新の状態にする。
 
+  [Defender/Health/SignatureOutOfDate CSP](https://docs.microsoft.com/windows/client-management/mdm/defender-csp)
+  
   詳細については、「 [Microsoft Defender ウイルス対策およびその他の microsoft マルウェア対策のセキュリティインテリジェンスの更新プログラム](https://www.microsoft.com/en-us/wdsi/defenderupdates)」を参照してください。
 
 - **[リアルタイム保護]** :  

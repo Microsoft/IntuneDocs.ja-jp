@@ -17,10 +17,10 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
 ms.openlocfilehash: f49ea9e1e59fadcb90a773e362ec3ef41e25ab63
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502230"
 ---
 # <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Intune で Windows Hello for Business を有効にするための Windows 10 デバイス設定
@@ -129,7 +129,7 @@ Intune の Windows Hello for Business プロファイルの詳細については
 
   **既定値**: 未構成
 
-- **サインインにセキュリティキーを使用する**  
+- **[サインインのセキュリティ キーを使用]**  
   この設定は、Windows 10 バージョン1903以降を実行しているデバイスで使用できます。 サインインに Windows Hello セキュリティキーを使用するためのサポートを管理するために使用します。  
 
   - **有効**-ユーザーは、このポリシーの対象となる pc のログオン資格情報として Windows Hello セキュリティキーを使用できます。 
