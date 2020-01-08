@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e7c9824711ecbfb43a7c7dde71cc01b306b7fab
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 1e96f46dc0e79de3fc78739c246abdc0b9e52702
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899409"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205532"
 ---
 # <a name="intune-discovered-apps"></a>Intune で検出されたアプリ
 
@@ -34,7 +34,7 @@ Intune で**検出されたアプリ**は、テナント内の Intune に登録�
 Intune では、テナント内の Intune に登録されているデバイス上で検出されたアプリを集計した一覧が提供されます。
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-2. **[アプリ]** > **[監視]** > **[検出されたアプリ]** を選択します。
+2. **[アプリ]**  >  **[監視]**  >  **[検出されたアプリ]** を選択します。
 
 >[!NOTE]
 >**[検出されたアプリ]** ウィンドウの **[エクスポート]** を選択することで、検出されたアプリの一覧を .csv ファイルにエクスポートできます。
@@ -44,9 +44,9 @@ Intune では、テナント内の Intune に登録されているデバイス�
 Intune では、テナント内の個々のデバイスについて検出されたアプリの一覧も提供されます。
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-2. **[デバイス]** > **[すべてのデバイス]** を選択します。
+2. **[デバイス]**  >  **[すべてのデバイス]** を選択します。
 3. デバイスを選択します。
-4. このデバイスで検出されたアプリを表示するには、**[監視]** セクションで **[検出されたアプリ]** を選択します。
+4. このデバイスで検出されたアプリを表示するには、 **[監視]** セクションで **[検出されたアプリ]** を選択します。
 
 ## <a name="details-of-discovered-apps"></a>検出されたアプリの詳細
 
@@ -54,7 +54,7 @@ Intune では、テナント内の個々のデバイスについて検出され�
 
 | プラットフォーム | 個人所有のデバイス | 会社所有のデバイス | 更新サイクル |
 |------------------------------------------------------------------------|----------------------------------|--------------------------------------------------|---------------------------------------|
-| Windows 10 (Win32 アプリ) メモ:デバイスに [Intune 管理拡張が必要](intune-management-extension.md) | 適用しない | [プログラムの追加と削除] の一覧にあるすべての Win32 アプリ | デバイス登録から 24 時間ごと |
+| Windows 10 (Win32 アプリ) メモ:デバイスに [Intune 管理拡張が必要](intune-management-extension.md) | 適用しない | 管理対象アプリのみ | デバイス登録から 24 時間ごと |
 | Windows 10 (モダン アプリ) | マネージド モダン アプリのみ | デバイスにインストールされているすべてのモダン アプリ | デバイス登録から 7 日おき |
 | Windows 8.1 | 管理対象アプリのみ | 管理対象アプリのみ | デバイス登録から 7 日おき |
 | Windows Phone 8 | 管理対象アプリのみ | 管理対象アプリのみ | デバイス登録から 7 日おき |
@@ -74,7 +74,7 @@ Intune では、テナント内の個々のデバイスについて検出され�
 - テナント内の同一アプリの複数インスタンスをターゲットにすると、ユーザーまたはデバイスが重複する可能性があり、結果として件数が異なることがあります。 アプリの各インスタンスが重複するユーザーをカウントし、検出されたアプリが重複したカウントを含んでいることがあります。
 - 検出されたアプリとアプリの状態が異なる間隔で収集されるため、アプリ数の不一致が引き起こされることがあります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Microsoft Intune のアプリの種類](apps-add.md#app-types-in-microsoft-intune)
 - [Microsoft Intune でアプリの情報と割り当てを監視する](apps-monitor.md)

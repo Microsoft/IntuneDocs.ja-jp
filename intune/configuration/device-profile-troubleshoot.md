@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d445b86359b2c5cde7b56a52a0cc6ee72a34c0ea
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 95186e4d1e54737ffeaa5e4c9728d188c2f867d6
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832617"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206637"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Microsoft Intune でのデバイス ポリシーとプロファイルの一般的な質問、問題と解決策
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune でデバイス プロファイルとポリシーを使用する場合の、一般的な質問に対する回答を得ます。 この記事には、チェックイン時刻の間隔のリストもあり、競合などの詳細についても提供します。
 
@@ -52,7 +52,7 @@ Intune では、Intune サービスにチェックインするようデバイス
 
 最初の通知後、デバイスがチェックインしてポリシーまたはプロファイルを取得しなかった場合、Intune ではさらに 3 回試行されます。 電源がオフになっていたり、ネットワークから切断されていたりするようなオフライン デバイスでは、通知が受信されない可能性があります。 この場合、デバイスでは次回のスケジュールされた Intune サービスへのチェックインでポリシーまたはプロファイルを取得します。 同様のことが、準拠している状態から準拠していない状態に移行するデバイスを含む、コンプライアンス違反の確認に適用されます。
 
-"**推定**" 頻度: 
+"**推定**" 頻度:
 
 | プラットフォーム | 更新サイクル|
 | --- | --- |
@@ -74,7 +74,7 @@ Intune では、Intune サービスにチェックインするようデバイス
 | Windows Phone | 15 分まで 5 分ごと、その後の 2 時間は 15 分ごと、その後は約 8 時間ごと | 
 | Windows 8.1 | 15 分まで 5 分ごと、その後の 2 時間は 15 分ごと、その後は約 8 時間ごと | 
 
-ユーザーはいつでもポータル サイト アプリを開き、**[設定]** > **[同期]** でポリシーまたはプロファイルの更新をすぐに確認できます。
+ユーザーはいつでもポータル サイト アプリを開き、 **[設定]**  >  **[同期]** でポリシーまたはプロファイルの更新をすぐに確認できます。
 
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>どのような操作を行うと Intune は通知をデバイスにすぐに送信しますか。
 
@@ -154,7 +154,7 @@ Intune は Apple 構成ファイルのペイロードまたはカスタム Open 
 
 Windows Phone デバイスから、MDM または EAS を使用して設定されたセキュリティ ポリシーのセキュリティを一度設定した後に緩くすることはできません。 たとえば、**パスワードの最小文字数** を 8 に設定してから、 4 に減らしてみます。 より制限の厳しいプロファイルが既にデバイスに適用されています。
 
-プロファイルを安全度の低い値に変更するには、セキュリティ ポリシーをリセットします。 たとえば、Windows 8.1 で、デスクトップを右からスワイプして、**[設定]** > **[コントロール パネル]** の順に選択します。 **[ユーザー アカウント]** アプレットを選択します。 左側のナビゲーション メニューの下部に、**[セキュリティ ポリシーのリセット]** リンクがあります。 これを選択し、**[ポリシーのリセット]** を選択します。
+プロファイルを安全度の低い値に変更するには、セキュリティ ポリシーをリセットします。 たとえば、Windows 8.1 で、デスクトップを右からスワイプして、 **[設定]**  >  **[コントロール パネル]** の順に選択します。 **[ユーザー アカウント]** アプレットを選択します。 左側のナビゲーション メニューの下部に、 **[セキュリティ ポリシーのリセット]** リンクがあります。 これを選択し、 **[ポリシーのリセット]** を選択します。
 
 Android、Windows Phone 8.1 以降、iOS、Windows 10 などのその他の MDM デバイスでは、制限の緩いプロファイルを適用するにはいったんデバイスを削除して、Intune に再登録しなければならない場合があります。
 
@@ -167,6 +167,6 @@ Windows 10 デバイスの一部の設定では、"適用できません" と表
 
 さまざまな設定に対するバージョンと SKU 要件の詳細については、[構成サービス プロバイダー (CSP) のリファレンス](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)に関するページを参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 さらに支援が必要ですか? 「[Microsoft Intune のサポートを受ける方法](../fundamentals/get-support.md)」を参照してください。

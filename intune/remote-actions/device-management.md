@@ -16,12 +16,13 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b957857702de10e10c581364f2c34c869026810d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+redirect_url: https://docs.microsoft.com/intune
+ms.openlocfilehash: ff82b1ed70d3021c33a166c694e3efe5d10905e0
+ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74819750"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731366"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune デバイスの管理とは
 
@@ -73,7 +74,7 @@ IT 管理者はデータをリスクから保護しながら、ユーザーが�
   - [カスタム通知の送信](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android、iOS)
   - [BitLocker キーの交換](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) (Windows のみ)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - **[すべてのデバイス]** で、デバイスを選択し、その特定のデバイスに関する詳細情報を表示します。
 - 管理しているデバイスで実行されているアクションの状態を確認するには、 **[デバイス アクション]** を選びます。

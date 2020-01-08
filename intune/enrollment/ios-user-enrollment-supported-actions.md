@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: e23e582a853f0b424296d8fb42f6c7d8fdd2984c
+ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562405"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "75324867"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Apple ユーザー登録でサポートされている Intune のアクションとオプション
 
@@ -38,7 +38,7 @@ ms.locfileid: "74562405"
 
 たとえば、 **[パスワードの有効期限]** 設定を構成し、このポリシーをユーザー登録デバイスにプッシュします。 デバイスでは、次の処理が行われます。
 - **[パスワードの有効期限]** 設定は無視されます。
-- `1111` や `1234` などの単純なパスワードは許可されません。
+- `111111` や `123456` などの単純なパスワードは許可されません。
 - 6 桁の pin が適用されます。
 
 ## <a name="administrator-remote-device-actions-and-options"></a>管理者のリモート デバイスのアクションとオプション
@@ -120,6 +120,6 @@ Apple ユーザー登録を使用して登録したデバイスの Intune では
 - 登録のターゲット設定: iPadOS がプラットフォーム セレクターに表示されません。 iPadOS はプレビューではサポートされていますが、管理コンソールでは明示的に示されません。 
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [iOS と iPadOS のユーザー登録を設定する](ios-user-enrollment.md)

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/19/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a94f3d175fe5c036c5e90635a66467263b23122
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1ff4fcd7d1b2115c4fbe0bc00759ef3d60482904
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72499120"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692101"
 ---
 # <a name="protecting-application-extensions"></a>アプリケーション拡張機能の保護
 
@@ -64,7 +64,7 @@ Intune SDK と Intune アプリ保護ポリシーには、LinkedIn アカウン�
 ユーザーがアカウント間でデータを共有することに同意した場合、Office アドインの場合と同様に、LinkedIn 統合では既存の Microsoft Graph API を使用します。 LinkedIn 統合では Office アドインで利用可能な API のサブセットのみを使用し、さまざまな除外をサポートします。
 
 
-|Microsoft Graph に対するアクセス許可  |説明  |
+|Microsoft Graph に対するアクセス許可  |[説明]  |
 |---------|---------|
 |[人](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#people-permissions)に対する読み取りアクセス許可     |アプリがサインインしたユーザーに関連する人のスコア付きリストを読み取ることを許可します。 このリストには、ローカルの連絡先、ソーシャル ネットワーキングまたは組織のディレクトリからの連絡先、最近 (メールや Skype などで) 連絡した人が含まれる場合があります。         |
 |[予定表](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#calendars-permissions)に対する読み取りアクセス許可     |アプリがユーザーの予定表内のイベントを読み取ることを許可します。 サインインしたユーザーの予定表の会議、その時間、場所、および出席者が含まれます。         |

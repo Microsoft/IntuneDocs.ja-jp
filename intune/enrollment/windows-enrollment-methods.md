@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: b6144767ee69de8c1ff14e5c189c078994a9dcf4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 060c3c00a228794d3f237a6362b048bf23e1a933
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74819715"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547711"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Windows デバイスの Intune 登録方法
 
@@ -49,11 +49,11 @@ Intune でデバイスを管理するには、まず、デバイスを Intune �
 管理者は、ユーザーの介入を必要としない、次の登録方法を設定できます。
 
 - [Hybrid Azure AD Join](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy) では、管理者は、ハイブリッド Azure AD 参加済みのデバイスを自動的に登録するように Active Directory グループ ポリシーを構成できます。 
-- [Configuration Manager の共同管理](https://docs.microsoft.com/sccm/comanage/overview)では、管理者は、既存の Configuration Manager マネージド デバイスを Intune に登録して、Intune と Configuration Manager の 2 つの利点を得ることができます。 
+- [Configuration Manager の共同管理](https://docs.microsoft.com/configmgr/comanage/overview)では、管理者は、既存の Configuration Manager マネージド デバイスを Intune に登録して、Intune と Configuration Manager の 2 つの利点を得ることができます。 
 - [デバイス登録マネージャー](device-enrollment-manager-enroll.md) (DEM) は特別なサービス アカウントです。 DEM アカウントには、許可されているユーザーが複数の会社所有デバイスを登録して管理できるようにするアクセス許可があります。 この種のデバイスは、POS アプリやユーティリティ アプリなどには適していますが、電子メールや会社のリソースにアクセスする必要があるユーザーには適していません。 この方法では、条件付きアクセスなどの機能の使用が許可されません。 
 - [一括登録](../windows-bulk-enroll.md)では、許可されているユーザーは、数多くの新しい企業所有デバイスを Azure Active Directory と Intune に参加させることができます。 Windows Configuration Designer (WCD) アプリでプロビジョニング パッケージを作成します。 その後、既存の Windows PC からまたは最初の Windows OOBE エクスペリエンス時に USB メディアを使用して、プロビジョニング パッケージをインストールし、デバイスを Intune に自動的に登録します。 この方法では、条件付きアクセスの使用が許可されません。 
 - [Windows IoT Core デバイスの登録](https://docs.microsoft.com/windows/iot-core/manage-your-device/intunedeviceenrollment)を行うには、Windows IoT Core ダッシュボードを使用してデバイスを準備してから、Windows Configuration Designer を使用してプロビジョニング パッケージを作成します。 次に、初回起動時に SD カード メディアを使用して、プロビジョニング パッケージをインストールしてデバイスを Intune に自動登録します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [Windows の登録方法の機能について学習する](enrollment-method-capab.md)

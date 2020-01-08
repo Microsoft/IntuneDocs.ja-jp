@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8823aa8467ef380223a486874c68d52926db733
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f41d5d1ec3e302a277fe5e6ff6af9d33a7e89517
+ms.sourcegitcommit: d21539e52631c589bfeaa182418390f66672736c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503747"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75564919"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Sophos Mobile Threat Defense コネクタと Intune
 モバイル デバイスからの会社のリソースへのアクセスは、Microsoft Intune に統合する Mobile Threat Defense (MTD) ソリューションである Sophos Mobile が実行するリスク評価に基づく条件付きアクセスを利用して制御できます。 リスクは、Sophos Mobile アプリを実行するデバイスが収集した製品利用統計情報に基づいて評価されます。
@@ -54,7 +54,7 @@ Intune デバイス コンプライアンス ポリシーには、Sophos Mobile 
 **修復するとアクセス権が付与される**:   
 ![修復するとアクセス権が付与される](./media/sophos-mtd-connector/sophos_network_wifi_unblocked.png)  
 
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいて SharePoint Online へのアクセスを制御する  
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>ネットワークへの脅威に基づいて SharePoint Online へのアクセスを制御する  
 中間者攻撃攻撃など、ネットワークに対する脅威を検出し、デバイスのリスクに基づいて会社内のファイルの同期を阻止します。  
 
 **ネットワークの脅威が検出されたときに SharePoint Online をブロック**:   
@@ -67,14 +67,14 @@ Intune デバイス コンプライアンス ポリシーには、Sophos Mobile 
 - Android 5.0 以降
 - iOS 11.0 以降
 
-## <a name="prerequisites"></a>必要条件  
+## <a name="prerequisites"></a>[前提条件]  
 - Azure Active Directory Premium
 - Microsoft Intune サブスクリプション 
 - Sophos Mobile Threat Defense サブスクリプション
 
-詳細については、[Sophos の Web サイト](https://www.sophos.com/products/mobile-control)を参照してください。  
+詳細については、[Sophos の Web サイト](https://www.sophos.com/en-us/products/mobile-control.aspx)を参照してください。
 
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a>次のステップ  
 - [Sophos を Intune と統合する](sophos-mtd-connector-integration.md)
 - [Sophos アプリを設定する](mtd-apps-ios-app-configuration-policy-add-assign.md)
 - [Sophos デバイス コンプライアンス ポリシーを作成する](mtd-device-compliance-policy-create.md)

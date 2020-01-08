@@ -3,10 +3,10 @@ title: Windows アプリと Windows Phone アプリのサイドロード
 titleSuffix: Microsoft Intune
 description: Intune を使用して展開できるように、基幹業務アプリに署名する方法について説明します。
 keywords: ''
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/24/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -16,12 +16,12 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7500000f8a34120e69c27ce01a6cfdb85f447abe
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a4a4c6d40dc729fb72210c455c7819baaf89de3b
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414701"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691838"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune を使用して Windows デバイスに展開できるように基幹業務アプリに署名する
 
@@ -125,7 +125,7 @@ Intune がユニバーサル アプリ用に依存関係をどのように処理
 2. 上記の説明のように、ビジネス向け Microsoft ストアから Windows 10 ポータル サイト アプリをダウンロードします。  
 3. スクリプト ヘッダーに記載された入力パラメーターを使用してスクリプトを実行し、Windows 10 ポータル サイト アプリに署名します (以下に抜粋)。 スクリプトに依存関係を渡す必要はありません。 依存関係は、アプリが Intune 管理コンソールにアップロードされる場合にのみ必要です。
 
-|       パラメーター       |                                                                    説明                                                                    |
+|       パラメーター       |                                                                    [説明]                                                                    |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | InputWin10AppxBundle  |                                             ソース appxbundle ファイルが配置されるパス。                                              |
 | OutputWin10AppxBundle |                                                  署名された appxbundle ファイルの出力パス                                                  |

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3c03c67a99b78804c999250f8d1148a4b3d1d97
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6d24d1c7dbae12fb33ec277419b1bbfd47b46b07
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504770"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548062"
 ---
 # <a name="microsoft-intune-is-an-mdm-and-mam-provider-for-your-devices"></a>Microsoft Intune はデバイスの MDM および MAM プロバイダーです
 
@@ -34,7 +34,7 @@ Microsoft Intune は、モバイル デバイス管理 (MDM) とモバイル ア
 
 Intune では次のことができます。
 
-- Intune を使用した 100% のクラウドにするか、Configuration Manager と Intune を使用した[共同管理](https://docs.microsoft.com/sccm/comanage/overview)にするかを選択する。
+- Intune を使用した 100% のクラウドにするか、Configuration Manager と Intune を使用した[共同管理](https://docs.microsoft.com/configmgr/comanage/overview)にするかを選択する。
 - 個人および組織所有のデバイスで、データとネットワークにアクセスするルールを設定し、設定を構成する。
 - オンプレミスとモバイルのデバイスにアプリを展開し、認証する。
 - ユーザーが情報にアクセスして共有する方法を制御して、会社情報を保護する。
@@ -105,7 +105,7 @@ Intune は次のように利用できます。
 
 Intune は多くの部門で使用されています。たとえば、[政府機関](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-govt-service-description)、[教育機関](https://www.microsoft.com/en-us/education/intune)、[キオスクまたは専用デバイス](../configuration/kiosk-settings.md) (製造および小売用) などです。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Intune が解決に役立つ一般的なビジネス問題](https://docs.microsoft.com/intune/common-scenarios)のいくつかを参照してください。
 - [Intune の 30 日の試用](free-trial-sign-up.md)を開始します。

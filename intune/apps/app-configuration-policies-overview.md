@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/28/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42d17c15a2a32f828c5715dfad51f34c5e531e76
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 479d88c09f48acbbfaedf1f4c69546b7f52dfbf1
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507554"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692189"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 用アプリ構成ポリシー
 
@@ -169,7 +169,7 @@ Android デバイスからログを収集するには、管理者またはエン
 ### <a name="using-logs-to-show-a-configuration-parameter"></a>ログを使用して構成パラメーターを表示する
 適用されていることが確認されていても動作しないように見える構成パラメーターがログに表示される場合は、アプリ開発者による構成の実装に問題がある可能性があります。 最初にそのアプリの開発者に連絡するか、その知識ベースを確認することで、Microsoft へのサポートの問い合わせを減らすことができます。 アプリ内での構成の処理方法に問題がある場合は、そのアプリの今後更新されるバージョンで対処する必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ### <a name="managed-devices"></a>マネージド デバイス
 

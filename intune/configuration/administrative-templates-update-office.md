@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf872387d6e6f4f91af9f074f54695b081b79119
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 63ebbc22c5452c99439d34813509b5652daef1f0
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74549110"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548091"
 ---
 # <a name="use-update-channel-and-target-version-settings-to-update-office-365-with-microsoft-intune-administrative-templates"></a>更新プログラム チャネルとターゲット バージョンの設定を使用して、Microsoft Intune 管理用テンプレートで Office 365 を更新する
 
@@ -35,7 +35,7 @@ Intune では [Windows 10 テンプレートを使用してグループ ポリ�
 - Windows 10 以降
 - Office 365
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
 Office アプリの [Office 365 ProPlus 自動更新を有効にする](https://docs.microsoft.com/deployoffice/configure-update-settings-for-office-365-proplus)ようにしてください。 これは、グループ ポリシーまたは Intune Office 2016 ADMX テンプレートを使用して行うことができます。
 
@@ -75,7 +75,7 @@ Office アプリの [Office 365 ProPlus 自動更新を有効にする](https://
     ![管理用テンプレート L_Updatebranch レジストリ キーの例](./media/administrative-templates-update-office/admx-update-branch-registry-key.png)
 
     > [!TIP]
-    > [Configuration Manager を使用した Office 365 ProPlus の管理](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager)で、値とその意味が一覧表示されます。 レジストリ値は、選択した配布チャネルに基づきます。
+    > [Configuration Manager を使用した Office 365 ProPlus の管理](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel)で、値とその意味が一覧表示されます。 レジストリ値は、選択した配布チャネルに基づきます。
     >
     >- 月次チャネル - value="Current"
     >- 月次チャネル (対象指定) - value="Current"
@@ -95,7 +95,7 @@ Office アプリの [Office 365 ProPlus 自動更新を有効にする](https://
     - `UpdateChannel`: 構成された設定に応じて変更される動的キー。
     - `CDNBaseUrl`: Office 365 をデバイスにインストールするときに設定します。
 
-3. `UpdateChannel` 値を確認します。 この値は、Office が更新される頻度を示します。 [Configuration Manager を使用した Office 365 ProPlus の管理](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager)で、値と設定内容が一覧表示されます。
+3. `UpdateChannel` 値を確認します。 この値は、Office が更新される頻度を示します。 [Configuration Manager を使用した Office 365 ProPlus の管理](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel)で、値と設定内容が一覧表示されます。
 
     次の例を見ると、`UpdateChannel` が `http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60` に設定されていることがわかります。これは、**毎月**です。
 
@@ -134,7 +134,7 @@ Office アプリの [Office 365 ProPlus 自動更新を有効にする](https://
 
 さらに多くを行う場合は、Office で最新バージョンの更新プログラムを取得するように強制できます。 次の手順は、確認として、またはデバイスがそのチャネルから最新バージョンの更新プログラムを迅速に取得する必要がある場合にのみ実行してください。 それ以外の場合は、Office でジョブを実行させ、自動的に更新します。
 
-### <a name="step-1-force-the-office-version-to-update"></a>手順 1.Office のバージョンを強制的に更新する
+### <a name="step-1-force-the-office-version-to-update"></a>手順 1:Office のバージョンを強制的に更新する
 
 1. 選択している更新プログラム チャネルが Office バージョンでサポートされていることを確認します。 [Office 365 ProPlus の更新履歴](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)では、さまざまな更新チャネルをサポートするビルド番号が一覧表示されます。
 
@@ -150,7 +150,7 @@ Office アプリの [Office 365 ProPlus 自動更新を有効にする](https://
 > - 既存のポリシーを変更すると、変更は、割り当てられているすべてのユーザーに影響します。
 > - この機能をテストしている場合は、テスト ポリシーを作成し、そのポリシーをユーザーのテスト グループに割り当てることをお勧めします。
 
-### <a name="step-2-check-the-office-version"></a>手順 2: Office のバージョンを確認する
+### <a name="step-2-check-the-office-version"></a>手順 2:Office のバージョンを確認する
 
 ポリシーをすべてのユーザーに展開する前に、次の手順を使用してポリシーをテストすることを検討してください。
 
@@ -171,9 +171,9 @@ Office アプリの [Office 365 ProPlus 自動更新を有効にする](https://
 
 4. 更新プログラムをインストールすると、Office アプリに新しいバージョンが表示されます (たとえば、 **[アカウント]** メニューで)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-[Office 365 クライアントの更新プログラム チャネル値の更新](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager)
+[Office 365 クライアントの更新プログラム チャネル値の更新](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel)
 
 [Office 365 ProPlus の Office クラウド ポリシー サービスの概要](https://docs.microsoft.com/deployoffice/overview-office-cloud-policy-service)
 

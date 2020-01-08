@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73848ee8301362f14fe2866a57329425d5e5cfbe
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: b566dd58b01a411126ffabb46d526e4480c2ba0a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563677"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205974"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune を使用して Windows 10 デバイスに Office 365 アプリを追加する
 
@@ -197,13 +197,13 @@ Intune とネットワーク インフラストラクチャの両方が想定ど
 
 ## <a name="errors-during-installation-of-the-app-suite"></a>アプリ スイートのインストール中のエラー
 
-詳細なインストール ログを表示する方法については、「[How to enable Office 365 ProPlus ULS logging (Office 365 ProPlus ULS のログ記録を有効にする方法)](https://blogs.technet.microsoft.com/odsupport/2018/06/18/how-to-enable-office-365-proplus-uls-logging)」をご覧ください。
+詳細なインストール ログを表示する方法については、「[How to enable Office 365 ProPlus ULS logging (Office 365 ProPlus ULS のログ記録を有効にする方法)](/office/troubleshoot/diagnostic-logs/how-to-enable-office-365-proplus-uls-logging)」をご覧ください。
 
 次の表は、発生する可能性がある一般的なエラー コードとその意味を一覧表示しています。
 
 ### <a name="status-for-office-csp"></a>Office CSP の状態
 
-| 状態 | フェーズ | 説明 |
+| 状態 | フェーズ | [説明] |
 |--------------------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1460 (ERROR_TIMEOUT) | ダウンロード | Office 展開ツールのダウンロードに失敗しました |
 | 13 (ERROR_INVALID_DATA) | - | ダウンロードした Office 展開ツールの署名を確認できません |
@@ -229,6 +229,6 @@ Intune とネットワーク インフラストラクチャの両方が想定ど
 | クイック実行のクライアントが開始に失敗しました (原因不明) | 17000 | - | クイック実行 |
 | クイック実行のクライアントがシナリオをキューに登録するのに失敗しました (原因不明) | 17001 | - | クイック実行 |
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - 選択したグループにアプリを割り当てるには、[グループへのアプリの割り当て](/intune-azure/manage-apps/deploy-apps)に関するページをご覧ください。
