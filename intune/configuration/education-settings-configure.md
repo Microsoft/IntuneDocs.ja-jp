@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be6cc64c3a65af72fd74bc58ed7c06a214797510
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b3485a87120cbf565a275cefb38cfe3549ee31d5
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059463"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206450"
 ---
 # <a name="use-the-take-a-test-app-on-windows-10-devices-in-microsoft-intune"></a>Windows 10 デバイス上の Microsoft Intune でテスト アプリを使用する
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune の [教育] プロファイルは、デバイス上でテストや試験を受ける学生向けに設計されています。 この機能には、**テスト** アプリと、テスト URL の追加、エンドユーザーによるテストへのサインイン方法の選択などの設定が含まれています。 この機能は次のプラットフォームをサポートしています。
 
@@ -42,7 +42,7 @@ Intune の [教育] プロファイルは、デバイス上でテストや試験
 2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 3. 次のプロパティを入力します。
 
-    - **[名前]** :新しいプロファイルのわかりやすい名前を入力します。
+    - **名前**:新しいプロファイルのわかりやすい名前を入力します。
     - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
     - **[プラットフォーム]** : **[Windows 10 以降]** を選択します。
     - **[プロファイル]** : **[教育プロファイル]** を選択します。
@@ -55,7 +55,7 @@ Intune の [教育] プロファイルは、デバイス上でテストや試験
 
 設定を入力してプロファイルを作成すると、プロファイルの一覧に自分のプロファイルが表示されます。 次に、[このプロファイルをいくつかのグループに割り当てます](device-profile-assign.md)。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [Windows 10 の教育設定](education-settings-windows.md)の一覧とその説明を参照してください。
 

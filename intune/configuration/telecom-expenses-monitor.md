@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 340659adfa3bbd40f98ccec9d8d44e952f7ec9b9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9c97a3ad329ce0e431c6dc8ef318306e4e002f36
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059942"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207113"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune で通信費管理サービスをセットアップする
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune を使用すると、組織所有のモバイル デバイスでのデータ使用から発生する通信費を管理できます。 Intune は、Saaswedo の [Datalert 通信費管理](http://datalert.biz/get-started)と統合されています。 Datalert は、通信データの使用状況を管理するリアルタイム通信費管理ソリューションです。 お使いの Intune で管理されているデバイスのコストのかかるデータや予期しないデータおよびローミングの料金を回避できます。
 
@@ -52,7 +52,7 @@ Datalert サービスを Intune で使用するには、Datalert と Intune で�
 
 - iOS 8.0 以降
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
 - Microsoft Intune のサブスクリプションと [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)へのアクセス
 - [Datalert](http://www.datalert.biz/) のサブスクリプション (Datalert の Web サイトが開きます)
@@ -65,7 +65,7 @@ Intune は、以下の通信費管理プロバイダーと統合されていま�
 
 ## <a name="deploy-the-intune-and-datalert-solution"></a>Intune と Datalert のソリューションを展開する
 
-### <a name="step-1-connect-the-datalert-service-to-intune"></a>手順 1.Datalert サービスを Intune に接続する
+### <a name="step-1-connect-the-datalert-service-to-intune"></a>手順 1:Datalert サービスを Intune に接続する
 
 1. 管理者資格情報を使用して Datalert 管理コンソールにサインインします。
 
@@ -105,7 +105,7 @@ Intune は、以下の通信費管理プロバイダーと統合されていま�
 
    ![接続が成功したことを示す Datalert ページ](./media/telecom-expenses-monitor/tem-datalert-mdm-profiles.png)
 
-### <a name="step-2-confirm-telecom-expense-management-is-active-in-intune"></a>手順 2: Intune で通信費管理サービスがアクティブになっていることを確認する
+### <a name="step-2-confirm-telecom-expense-management-is-active-in-intune"></a>手順 2:Intune で通信費管理サービスがアクティブになっていることを確認する
 
 手順 1 を完了すると、接続が自動的に有効になります。 Intune では、接続状態が **[アクティブ]** と表示されます。 状態がアクティブであることを確認するには、次の手順のようにします。
 
@@ -115,7 +115,7 @@ Intune は、以下の通信費管理プロバイダーと統合されていま�
 
    ![Datalert との接続状態がアクティブであることを示している Intune ページ](./media/telecom-expenses-monitor/tem-azure-portal-enable-service.png)
 
-### <a name="step-3-deploy-the-datalert-app-to-devices"></a>手順 3: Datalert アプリをデバイスに展開する
+### <a name="step-3-deploy-the-datalert-app-to-devices"></a>手順 3:Datalert アプリをデバイスに展開する
 
 データ使用量が組織所有の回線からのみ収集されることを確認するには、必ず次のようにします。
 
@@ -138,7 +138,7 @@ Intune でのデバイス カテゴリの作成については、[グループ�
 
 次の手順では、Datalert アプリを追加します。 例として、iOS を使用します。 これらの手順に関するさらに具体的な情報については、[アプリの追加](../apps/apps-add.md)および[スコープのタグの使用](../fundamentals/scope-tags.md)に関する記事をご覧ください。
 
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[アプリ]** 、 **[すべてのアプリ]** 、 **[追加]** の順に選択します。
 
 2. **[アプリの種類]** を選択します。 たとえば、iOS の場合は、 **[ストア アプリ - iOS]** を選択します。
 
@@ -183,7 +183,7 @@ Datalert サービスがアクティブになりました。 データ使用量�
 
 ## <a name="turn-off-the-datalert-service"></a>Datalert サービスを無効にする
 
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[テナント管理]**  >  **[コネクタとトークン]**  >  **[通信費管理]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[テナント管理]** 、 **[コネクタとトークン]** 、 **[通信費管理]** の順に選択します。
 2. **[通信費管理を有効にし、構成した使用量のクォータを超えたデバイスでの携帯データネットワークまたはローミング データをブロックします]** を **[無効]** に設定します。
 3. 変更内容を**保存**します。
 
@@ -194,6 +194,6 @@ Datalert サービスがアクティブになりました。 データ使用量�
 > - ユーザーによるデータ アクセスとローミングがブロックされなくなります。
 > - Intune では、引き続きサービスからの信号が受け入れられますが、無視されるようになります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Saaswedo の Datalert 管理コンソールでデータ使用量のレポートを利用できます。

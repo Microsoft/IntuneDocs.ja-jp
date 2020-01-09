@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3595e75a73868378c9c366de6c751c21a9151ae3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 13fca4de8e36b1bdeb9026985e2eabd21e56e924
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059511"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206943"
 ---
 # <a name="upgrade-windows-10-editions-or-switch-out-of-s-mode-on-devices-using-microsoft-intune"></a>Microsoft Intune を使用してデバイス上の Windows 10 エディションをアップグレードするか S モードから切り替える
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 モバイル デバイス管理 (MDM) ソリューションの一部として、Windows 10 デバイスをアップグレードすることができます。 たとえば、Windows 10 Professional デバイスを Windows 10 Enterprise にアップグレードすることができます。 または、デバイスを S モードから切り替えることができます。
 
@@ -47,7 +47,7 @@ S モードに関して[よく寄せられる質問](https://support.microsoft.c
 > [!NOTE]
 > 後でポリシーの割り当てを削除しても、デバイス上の Windows のバージョンは元に戻りません。 デバイスは引き続き正常に動作します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
 デバイスをアップグレードする前に、次の前提条件が満たされていることを確認します。
 
@@ -100,7 +100,7 @@ Windows 10 エディションのアップグレード プロファイルでサ�
 2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 3. 次のプロパティを入力します。
 
-    - **[名前]** :新しいプロファイルのわかりやすい名前を入力します。 たとえば、`Windows 10 edition upgrade profile` や `Windows 10 switch off S mode` などを入力します。
+    - **名前**:新しいプロファイルのわかりやすい名前を入力します。 たとえば、`Windows 10 edition upgrade profile` や `Windows 10 switch off S mode` などを入力します。
     - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
     - **[プラットフォーム]** : **[Windows 10 以降]** を選択します。
     - **[プロファイルの種類]** : **[エディションのアップグレード]** を選択します。
@@ -113,7 +113,7 @@ Windows 10 エディションのアップグレード プロファイルでサ�
 
 プロファイルが作成され、一覧に表示されます。 必ず[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 プロファイルが作成されると、割り当てることができます。 次に、[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
 

@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02d1311be0943d93f80f2f5a1c3f421d476af1e5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5a65000d46941876b95e0b110d21f2dfb900ca33
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059826"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206229"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key-in-intune"></a>Intune でカスタム デバイス プロファイルを使用し、事前共有キーを含む WiFi プロファイルを作成する
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 通常、事前共有キー (PSK) は、WiFi ネットワーク、またはワイヤレス LAN のユーザーを認証するために使用されます。 Intune では、事前共有キーを使用して WiFi プロファイルを作成できます。 プロファイルを作成するには、Intune 内で**カスタム デバイス プロファイル**機能を使用します。 この記事には、EAP ベースの Wi-Fi プロファイルを作成する方法の例も含まれています。
 
@@ -53,14 +53,14 @@ ms.locfileid: "74059826"
 2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 3. 次のプロパティを入力します。
 
-    - **名前**: ポリシーのわかりやすい名前を入力します。 後で簡単に識別できるよう、ポリシーに名前を付けます。 たとえば、「**Android デバイス向けカスタム OMA-URI Wi-F プロファイル設定**」はポリシー名として申し分ありません。
+    - **名前**:ポリシーのわかりやすい名前を入力します。 後で簡単に識別できるよう、ポリシーに名前を付けます。 たとえば、「**Android デバイス向けカスタム OMA-URI Wi-F プロファイル設定**」はポリシー名として申し分ありません。
     - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
     - **[プラットフォーム]** :お使いのプラットフォームを選択します。
     - **[プロファイルの種類]** : **[カスタム]** を選択します。
 
 4. **[設定]** で **[追加]** を選択します。 次のプロパティで新しい OMA-URI 設定を入力します。
 
-    1. **名前**: OMA-URI 設定の名前を入力します。
+    1. **名前**:OMA-URI 設定の名前を入力します。
     2. **説明**:OMA-URI 設定の説明を入力します。 この設定は省略可能ですが、推奨されます。
     3. **OMA-URI**:次のいずれかのオプションを入力します。
 
@@ -74,7 +74,7 @@ ms.locfileid: "74059826"
 
     4. **データ型**: **[文字列]** を選択します。
 
-    5. **値**: XML コードを貼り付けます。 この記事の[例](#android-or-windows-wi-fi-profile-example)を参照してください。 ご利用のネットワーク設定に一致する値にそれぞれ更新します。 コードのコメント セクションには、一部のポインターが含まれます。
+    5. **値**:XML コードを貼り付けます。 この記事の[例](#android-or-windows-wi-fi-profile-example)を参照してください。 ご利用のネットワーク設定に一致する値にそれぞれ更新します。 コードのコメント セクションには、一部のポインターが含まれます。
 
 5. 完了したら、 **[OK]**  >  **[作成]** を選択して変更を保存します。
 
@@ -251,6 +251,6 @@ XML ファイルを作成した後、XML 構文をコピーして OMA-URI 設定
 
 - 切り替えがスムーズに行われるように、エンド ユーザーのデバイスにインターネットへの代替接続があることを確認します。 たとえば、エンド ユーザーをゲスト WiFi (または他の何らかの WiFi ネットワーク) に戻したり、セルラー接続で Intune と通信したりする必要があります。 追加の接続により、ユーザーは、企業の Wi-Fi プロファイルがデバイスで更新されたときに、ポリシーの更新を受信できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 必ず[プロファイルを割り当て](device-profile-assign.md)、その状態を[監視](device-profile-monitor.md)してください。

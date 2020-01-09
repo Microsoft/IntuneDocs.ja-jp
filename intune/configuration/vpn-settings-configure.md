@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fab50e0aefd926b4dc7a2b3559576642d5d6b79
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b11cbd3427b3b8e0a43a6e6e2af5fa80da45e16a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059304"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206280"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Intune で VPN サーバーに接続するための VPN プロファイルを作成する
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 仮想プライベート ネットワーク (VPN) を使用すると、組織のユーザーが組織のネットワークにリモート アクセスする際にセキュリティで保護することができます。 デバイスでは、VPN 接続プロファイルを使用して VPN サーバーとの接続が開始されます。 Microsoft Intune の **VPN プロファイル**によって組織内のユーザーとデバイスに VPN 設定を割り当て、組織のネットワークに簡単かつ安全に接続できるようにします。
 
@@ -72,7 +72,7 @@ URI の設定を使ってカスタム VPN プロファイルを作成する方�
 2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 3. 次のプロパティを入力します。
 
-    - **名前**: プロファイルのわかりやすい名前を入力します。 後で簡単に識別できるよう、プロファイルに名前を付けます。 たとえば、「**会社全体の VPN プロファイル**」は適切なプロファイル名です。
+    - **名前**:プロファイルのわかりやすい名前を入力します。 後で簡単に識別できるよう、プロファイルに名前を付けます。 たとえば、「**会社全体の VPN プロファイル**」は適切なプロファイル名です。
     - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
     - **[プラットフォーム]** :デバイスのプラットフォームを選択します。 次のようなオプションがあります。
 
@@ -115,7 +115,7 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 
 ユーザーは、ユーザー名とパスワードを提供することにより、VPN サーバーに対して認証を行います。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 プロファイルを作成しましたが、まだ何も行っていません。 次に、[デバイスにプロファイルを割り当てます](device-profile-assign.md)。
 

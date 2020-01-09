@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85ba34cfec8ebe78d2574034967bd7ed76f3304e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 25983117864f44b8131fdc49e60b7d24048da9fe
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059544"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206654"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Microsoft Intune でデバイス プロファイルを監視する
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune には、デバイス構成プロファイルの監視と管理に役立つ機能がいくつかあります。 たとえば、プロファイルの状態を確認したり、割り当てられているデバイスを見たり、プロファイルのプロパティを更新したりできます。
 
@@ -90,14 +90,14 @@ DFCI プロファイルは、他のデバイス構成プロファイルと同様
 
 DFCI プロファイルの設定を使用すると、次の状態が表示される場合があります。
 
-- **準拠**:この状態は、プロファイルの設定値がデバイスでの設定と一致していることを示します。 この状態は、次のシナリオで発生する可能性があります。
+- **対応**: この状態は、プロファイルの設定値がデバイスでの設定と一致していることを示します。 この状態は、次のシナリオで発生する可能性があります。
 
   - DFCI プロファイルでプロファイルの設定が正常に構成されました。
   - デバイスには設定によって制御されるハードウェア機能がなく、プロファイルの設定は**無効**になっています。
   - UEFI では DFCI で機能を無効にすることが許可されておらず、プロファイルの設定は**有効**になっています。
   - デバイスには機能を無効にするハードウェアがなく、プロファイルの設定は**有効**になっています。
 
-- **[該当なし]** :この状態は、プロファイルの設定値が**有効**になっており、デバイスで一致する設定が見つからないことを示します。 この状態は、デバイスのハードウェアに機能がない場合に発生する可能性があります。
+- **該当なし**:この状態は、プロファイルの設定値が**有効**になっており、デバイスで一致する設定が見つからないことを示します。 この状態は、デバイスのハードウェアに機能がない場合に発生する可能性があります。
 
 - **非対応**: この状態は、プロファイルの設定値がデバイスでの設定と一致していないことを示します。 この状態は、次のシナリオで発生する可能性があります。
 
@@ -108,7 +108,7 @@ DFCI プロファイルの設定を使用すると、次の状態が表示され
   - デバイスは、オートパイロットの登録の外部で Intune に登録されました。
   - デバイスは、Microsoft CSP によってオートパイロットに登録されなかったか、OEM によって直接登録されませんでした。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [デバイス プロファイルの一般的な質問、問題と解決策](device-profile-troubleshoot.md)  
 [Intune でのポリシーとプロファイルのトラブルシューティング](troubleshoot-policies-in-microsoft-intune.md)

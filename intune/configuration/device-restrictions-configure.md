@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 704da2ee4f0f2e6dce222c89704c83a35368c02c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8c86252030a4baf957077cd889386bb8016554f1
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059536"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206569"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune でデバイスの制限設定を構成する
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune には、管理者が Android、iOS、macOS、および Windows の各デバイスを制御するのに役立つデバイス制限ポリシーが含まれています。 これらの制限を使用して、組織のリソースを保護するための幅広い設定と機能を制御できます。 たとえば、管理者には次の機能があります。
 
@@ -44,7 +44,7 @@ Intune には、管理者が Android、iOS、macOS、および Windows の各デ
 2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 3. 次のプロパティを入力します。
 
-    - **名前**: ポリシーのわかりやすい名前を入力します。 後で簡単に識別できるよう、ポリシーに名前を付けます。 たとえば、適切なポリシー名は **iOS:デバイスのカメラをブロックする**です。
+    - **名前**:ポリシーのわかりやすい名前を入力します。 後で簡単に識別できるよう、ポリシーに名前を付けます。 たとえば、適切なポリシー名は **iOS:デバイスのカメラをブロックする**です。
     - **説明**:ポリシーの説明を入力します。 この設定は省略可能ですが、推奨されます。
     - **[プラットフォーム]** :デバイスのプラットフォームを選択します。 次のようなオプションがあります。  
 
@@ -76,7 +76,7 @@ Intune には、管理者が Android、iOS、macOS、および Windows の各デ
 
 プロファイルが作成され、プロファイル一覧に表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 プロファイルが作成されると、割り当てることができます。 次に、[プロファイルを割り当て](../device-profile-assign.md)、[その状態を監視](../device-profile-monitor.md)します。
 

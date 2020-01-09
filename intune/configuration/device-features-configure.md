@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d887c7bc3c7e9ea8b6719993b5ba4909e9c18ea8
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 1fb628d68f50ce1862b3cce51f9fd08804d042a6
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992924"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206722"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Intune での iOS または macOS デバイスの機能設定の追加
 
@@ -129,7 +129,7 @@ Intune で構成できる設定の一覧については、[macOS でのログイ
 
 - macOS 10.7 以降
 
-## <a name="single-sign-on"></a>シングル サインオン
+## <a name="single-sign-on"></a>シングル サイン オン
 
 ほとんどの基幹業務 (LOB) アプリでは、セキュリティに対応するために、何らかのレベルのユーザー認証が必要です。 多くの場合、ユーザーは認証のために同じ資格情報を繰り返し入力する必要があります。 ユーザーの操作環境を改善するため、開発者はシングル サインオン (SSO) を使うアプリを作成できます。 シングル サインオンを使用すると、ユーザーが資格情報を入力する必要のある回数が減ります。
 
@@ -209,7 +209,7 @@ Intune で構成できる設定の一覧については、[iOS の Web コンテ
 2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 3. 次のプロパティを入力します。
 
-    - **名前**: ポリシーのわかりやすい名前を入力します。 後で簡単に識別できるよう、ポリシーに名前を付けます。 たとえば、適切なポリシー名は **macOS: ログイン画面を構成する**などです。
+    - **名前**:ポリシーのわかりやすい名前を入力します。 後で簡単に識別できるよう、ポリシーに名前を付けます。 たとえば、適切なポリシー名は **macOS: ログイン画面を構成する**などです。
     - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
     - **[プラットフォーム]** :デバイスのプラットフォームを選択します。 次のようなオプションがあります。  
         - **iOS/iPadOS**
@@ -225,7 +225,7 @@ Intune で構成できる設定の一覧については、[iOS の Web コンテ
 
 プロファイルが作成されて、プロファイル一覧に表示されます。 必ず[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 プロファイルが作成されると、割り当てることができます。 次に、[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
 
