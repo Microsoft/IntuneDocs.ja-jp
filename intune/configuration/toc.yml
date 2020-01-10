@@ -9,7 +9,11 @@
   items:
     - name: 電子メール デバイス プロファイルを作成する
       href: quickstart-email-profile.md
-- name: 操作方法ガイド
+- name: チュートリアル
+  items:
+    - name: 管理用テンプレートを作成する
+      href: tutorial-walkthrough-administrative-templates.md
+- name: 攻略ガイド
   items:
     - name: プロファイルを作成する
       href: device-profile-create.md
@@ -82,7 +86,7 @@
           href: android-zebra-mx-logs-troubleshoot.md
         - name: 一般的な質問と回答
           href: device-profile-troubleshoot.md
-- name: リファレンス
+- name: 参照先
   items:
     - name: 構成プロファイルの設定
       items:
@@ -135,7 +139,7 @@
               href: macos-device-features-settings.md
             - name: デバイスの制限
               href: device-restrictions-macos.md
-            - name: Endpoint Protection
+            - name: エンドポイント保護
               href: ../protect/endpoint-protection-macos.md?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json
             - name: の拡張
               href: kernel-extensions-settings-macos.md
@@ -145,8 +149,6 @@
               href: vpn-settings-macos.md
             - name: Wi-Fi
               href: wi-fi-settings-macos.md
-            - name: 有線ネットワーク
-              href: wired-network-settings-macos.md
             - name: カスタム
               href: custom-settings-macos.md
         - name: Windows 10 以降
@@ -161,7 +163,7 @@
               href: edition-upgrade-windows-settings.md
             - name: 電子メール
               href: email-settings-windows-10.md
-            - name: Endpoint Protection
+            - name: エンドポイント保護
               href: ../protect/endpoint-protection-windows-10.md?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json
             - name: ID 保護
               href: ../protect/identity-protection-windows-settings.md?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json
