@@ -17,13 +17,13 @@ ROBOTS: ''
 ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02293b29f8634161582af2348b1cb30039ca3c52
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 2a2c3264b2894ad81a64e7aaa7d3697f069dbfbb
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415712"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856289"
 ---
 # <a name="set-up-ios-or-ipados-device-with-company-portal-and-intercede"></a>ポータルサイトと仲裁を使用して iOS または iPadOS デバイスを設定する
 
@@ -51,7 +51,7 @@ ms.locfileid: "73415712"
 
 派生資格情報は、Special Publication (SP) 800-157 に含まれている Derived Personal Identity Verification (PIV) 資格情報に対する米国標準技術研究所 (NIST) ガイドラインの実装です。  
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
  登録を完了するには、次のものが必要です。
 
@@ -97,7 +97,7 @@ ms.locfileid: "73415712"
 11. スマートカード対応デバイスにある QR コードの画像をスキャンします。 
 12. ポータルサイトによってデバイスのセットアップが完了するまで待ちます。  
 
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a>次のステップ  
 登録が完了すると、電子メール、Wi-fi、組織によって提供されるすべてのアプリなどの職場リソースにアクセスできるようになります。 でアプリを取得、検索、インストール、およびアンインストールする方法の詳細についてはポータルサイト「」を参照してください。
 
 * [ポータル サイト Web サイトからアプリを管理する](manage-apps-cpweb.md)  

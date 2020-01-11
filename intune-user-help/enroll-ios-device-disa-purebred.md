@@ -17,13 +17,13 @@ ROBOTS: ''
 ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c484b98466c1418016f4ebc6cc805e412d7891e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 31858828cbbfaa1ca71d94f6e0f568c35bb490c1
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415790"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856581"
 ---
 # <a name="set-up-ios-or-ipados-device-with-company-portal-and-disa-purebred"></a>ポータルサイトと DISA Purebred を使用して iOS または iPadOS デバイスを設定する  
 
@@ -50,7 +50,7 @@ ms.locfileid: "73415790"
 
 派生資格情報は、Special Publication (SP) 800-157 に含まれている Derived Personal Identity Verification (PIV) 資格情報に対する米国標準技術研究所 (NIST) ガイドラインの実装です。  
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
  登録を完了するには、次のものが必要です。
 
@@ -117,7 +117,7 @@ ms.locfileid: "73415790"
     ![選択可能な証明書の一覧のスクリーンショットの例 (既に選択されているもの)。](./media/import-purebred-keychain.png) 
 21. ポータルサイトアプリに戻り、ポータルサイトがデバイスのセットアップを完了するまで待ちます。   
 
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a>次のステップ  
 登録が完了すると、電子メール、Wi-fi、組織によって提供されるすべてのアプリなどの職場リソースにアクセスできるようになります。 でアプリを取得、検索、インストール、およびアンインストールする方法の詳細についてはポータルサイト「」を参照してください。
 
 * [ポータル サイト Web サイトからアプリを管理する](manage-apps-cpweb.md)  

@@ -6,7 +6,7 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8fbae6cec25480244ede165ed7b22715d9a602a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b1f5354cecb271e6e3b141c5af12a9309d210d0b
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490360"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654177"
 ---
 # <a name="reference-for-dates-entity"></a>Dates エンティティの参照
 
@@ -34,7 +34,7 @@ ms.locfileid: "72490360"
 **date** エンティティは、複数のデータ ウェアハウス エンティティ全体で参照される日付を示します。
 
 
-|    プロパティ     |                      説明                       |       例        |
+|    プロパティ     |                      [説明]                       |       例        |
 |-----------------|--------------------------------------------------------|----------------------|
 |     dateKey     | データ ウェアハウス内のこの日付を示す一意識別子。 |       20160703       |
 |    fullDate     |    この日付を完全な日時形式で表した日付。     | 7/3/2016 12:00:00 AM |
@@ -55,6 +55,6 @@ ms.locfileid: "72490360"
 | calendarQuarter |                    カレンダーの四半期                    |          3           |
 |  calendarYear   |                     カレンダーの年                      |         2016         |
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Intune データ ウェアハウス](../reports-nav-create-intune-reports.md)について確認してください。

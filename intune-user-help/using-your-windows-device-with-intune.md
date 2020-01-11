@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5accdf3699770444b7aafeb39d431755f9d3ba9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: a7eaf8e1cf17624491824ddf3f8911757eea9080
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501821"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857573"
 ---
 # <a name="using-your-windows-device-with-intune-company-portal"></a>Windows デバイスを Intune ポータル サイトで使用する
 
@@ -35,7 +35,7 @@ ms.locfileid: "72501821"
 
 詳細な手順とスクリーンショットについては、「[ポータル サイトにサインインする](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal)」を参照してください。
 
-## <a name="supported-versions"></a>サポートされているバージョン
+## <a name="supported-versions"></a>サポートされるバージョン
 
 現在、ポータル サイトでは、次のバージョンの Windows を実行しているデバイスがサポートされています。
 

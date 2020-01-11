@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25ec84946aec9562aedce12b4199269f8de06f76
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 9ac79311881b2f245cbdedcb6c9ac9763ba7cbf3
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72500019"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857151"
 ---
 # <a name="install-missing-certificate-required-by-your-organization"></a>組織が必要としない証明書をインストールする  
 
@@ -84,6 +84,6 @@ ms.locfileid: "72500019"
 
 上のような "証明書が見つかりません" というメッセージが表示されたが、この手順を既に実行している場合、別の証明書が存在する可能性があります。会社のサポートにそのインストールを依頼する必要があります。 サポートを得る場合は、[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)で入手できる連絡先情報を使用して、会社のサポートに問い合わせてください。
 
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a>次のステップ  
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。  

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08b20ba59c0dabc680e0f5760ee4de892506b7e3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: db9ff1b6f707a6d978d8499f3e82af2d1a04f355
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501605"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857504"
 ---
 # <a name="why-enroll-your-android-device"></a>Android デバイスを登録する理由  
 
@@ -78,6 +78,6 @@ ms.locfileid: "72501605"
 
 * デバイス上のすべてのデータが暗号化されることを必要とする。 紛失または盗難にあった場合、このポリシーはデバイス上のデータを保護するために役立ちます。 また、このポリシーによってデバイス間またはアプリ間で共有されているデータも保護されます。 
 
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a>次のステップ  
 
 サポートが必要な場合は、 会社のサポートに問い合わせるか (連絡先情報については[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください)、または <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android チーム</a>にご連絡ください。

@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8632f5b8df0f483de3bb4d06a6823639ba52c604
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 89f54111258b5e628d9f83c381fde146bf996216
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506704"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206331"
 ---
 # <a name="macos-device-settings-to-configure-and-use-kernel-extensions-in-intune"></a>Intune でカーネル拡張機能を構成して使用するための macOS デバイス設定
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 この記事では、macOS デバイスで制御できるさまざまなカーネル拡張機能の設定の一覧を示して説明します。 モバイルデバイス管理 (MDM) ソリューションの一部として、これらの設定を使用して、デバイスにカーネル拡張機能を追加し、管理します。
 
@@ -72,6 +72,6 @@ Intune のカーネル拡張機能と前提条件の詳細については、 [ma
 > [!NOTE]
 > チーム識別子とカーネル拡張機能を追加する必要はありません。 どちらか一方を構成できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [プロファイルを割り当て](../device-profile-assign.md)、[その状態を監視](../device-profile-monitor.md)します。

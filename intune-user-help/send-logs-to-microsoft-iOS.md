@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13a6e9219c29b33404c2489bb6b60de513369e74
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 972b2cb1c87cfebcff61062633388145e45e86ba
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502092"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858028"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-ios-devices"></a>ログを iOS デバイス向けポータル サイトの開発者に送信する | Microsoft Docs
 

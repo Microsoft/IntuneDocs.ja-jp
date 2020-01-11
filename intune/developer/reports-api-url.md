@@ -6,7 +6,7 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 170ed2fbf300299796401b10a906d875b6f50bf5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e19cc606792c59d2f5676aeca41d862308f1ab32
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490462"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654143"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune データ ウェアハウス API エンドポイント
 
@@ -49,7 +49,7 @@ Intune の URL は、次の書式を使用しています。
 
 URL には、次の要素が含まれています。
 
-| 要素 | 例 | 説明 |
+| 要素 | 例 | [説明] |
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | location | msua06 | Azure Portal でデータ ウェアハウス API ブレードを表示すると、ベース URL を確認できます。 |
 | entity-collection | devicePropertyHistories | OData エンティティ コレクションの名前。 データ モデルのコレクションとエンティティの詳細については、「[Data Model](reports-ref-data-model.md)」(データ モデル) を参照してください。 |
@@ -78,7 +78,7 @@ URL には、次の要素が含まれています。
 > [!NOTE]
 > フィルターの例では、今日を 2019 年 2 月 21 日と想定しています。
 
-|                             フィルター                             |           パフォーマンスの最適化           |                                          説明                                          |
+|                             フィルター                             |           パフォーマンスの最適化           |                                          [説明]                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
 |    `maxhistorydays=7`                                            |    完全                                      |    `DateKey` が 20180214 から 20180221 の間のデータを返します。                                     |
 |    `$filter=DateKey eq 20180214`                                 |    完全                                      |    `DateKey` が 20180214 のデータを返します。                                                    |

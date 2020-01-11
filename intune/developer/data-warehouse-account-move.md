@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbf9944411776e5d6f47aa59116806a0a703ce4c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 197fb3306f18c6f9cf6f34c0db226460f5c6625a
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72813387"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653599"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Intune データ ウェアハウスのアカウント データを移動する 
 
@@ -80,7 +80,7 @@ Azure Portal のビュー内の一部のトレンド グラフがリセットさ
 
 顧客 X は、2018 年 1 月 6 日にアカウントの移動を開始することを要求しています。 この要求に対する応答で、顧客は、以前のデータ ウェアハウスをバックアップする場合に実行する手順を詳しく説明するドキュメントを表示するリンクを受け取ります。 2018 年 1 月 6 日に、データ ウェアハウスとサポートされるグラフがリセットされ、新しいデータ センターでのデータの格納が開始されます。 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [週ごとにまとめた Intune の新機能](../fundamentals/whats-new.md)を参照してください。 今後の変更、サービスに関する重要なお知らせ、過去のリリースに関する情報も確認できます。
 - [Microsoft Intune のブログ](https://go.microsoft.com/fwlink/?LinkID=273882)を参照してください。

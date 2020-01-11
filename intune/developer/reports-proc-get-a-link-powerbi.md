@@ -6,7 +6,7 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/07/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d7a5f67dfd8f7256559cb54d873ed48205ad751
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6d99410416da4c98bb01611051176b793c845237
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490430"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654109"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Power BI でデータ ウェアハウスに接続する
 
@@ -31,7 +31,7 @@ ms.locfileid: "72490430"
 
 Power BI コンプライアンス アプリを使用すると、Intune テナントに関する対話型で動的に生成されたレポートを読み込むことができます。 さらに、OData リンクを使用して Power BI にテナント データを読み込むことができます。 Intune にはテナントへの接続設定機能があるので、以下に関連するサンプル レポートとグラフを表示することができます。  
 
-- [デバイス]
+- デバイス
 - 登録
 - アプリ保護ポリシー
 - コンプライアンス ポリシー
@@ -91,7 +91,7 @@ Azure AD に対してクライアントが認証されていると、OData URL �
     4. **[接続]** を選択します。  
 10. **[読み込み]** を選択します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 過去 1 週間に登録されたデバイス数/日など、環境について知りたい情報が見つかります。 Azure のブレードから取得した Intune データ ウェアハウス Power BI レポートを使用して、Intune テナントとクライアント数を分析できます。 また、Intune には、データを拡張または再利用することができる機能が多数あります。 Power BI と Intune Data Warehouse API には、以下のような追加の機能があります。
 

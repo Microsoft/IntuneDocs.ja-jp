@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 901eaafb24cda185540ffc4b1a56484042af74c1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a8b5b323c4bb80cd15bf9c6c8f0f7a8be577d6bf
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74547700"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653939"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>アプリ保護ポリシーを利用するために基幹業務アプリで準備を行う
 
@@ -73,8 +73,8 @@ SDK の詳細については、「[概要](app-sdk.md)」を参照してくだ�
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**Android**|はい – [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md) を使用します。|[いいえ]|
-|**Android**| はい – [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md) を使用します。|[いいえ]|
+|**Android**|はい – [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md) を使用します。|いいえ|
+|**Android**| はい – [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md) を使用します。|いいえ|
 
 ### <a name="not-using-an-app-development-platform-listed-above"></a>上に一覧表示されているアプリ開発プラットフォームを使用していない場合は、
 
@@ -120,7 +120,7 @@ Intune SDK の開発チームは、ネイティブの Android、iOS (Obj-C、Swi
 |Saf Etynet デバイスの構成証明 (Android のみ)|○|○|
 |アプリの脅威のスキャン (Android のみ)|○|○|
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 アプリ保護ポリシーと Intune の詳細については、次のトピックをご覧ください。
 

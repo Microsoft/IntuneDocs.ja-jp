@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca1776915d50858c28b43a49faa7c737c825c67d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 2a49db70d6b29167184e50f3499985a46a48fda1
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501860"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857624"
 ---
 # <a name="what-is-device-enrollment"></a>デバイス登録とは
 デバイスから職場または学校のリソースにアクセスするには、デバイスを Intune ポータルサイトアプリまたは Microsoft Intune アプリに登録する必要があります。 
@@ -99,7 +99,7 @@ Microsoft Intune アプリでは、現在使用しているデバイスのみが
 
 IT サポート担当者に問い合わせることもできます。 ポータルサイトおよび Microsoft Intune アプリには、連絡先情報を一覧表示し、問題を報告する方法を示すヘルプとサポートページが用意されています。 連絡先情報は、お客様の組織の[ポータルサイト web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)でもご利用いただけます。  
 
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a>次のステップ  
 
 職場または学校アカウントにアクセスする準備ができたら、組織の指示に従ってデバイスを登録します。 次の記事で、詳細な登録ガイダンスを参照することもできます。
 

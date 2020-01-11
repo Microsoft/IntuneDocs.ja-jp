@@ -16,21 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 455d69328f8b70b1de73067c6290b6955df1e710
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: aab4379e30397132cead64acbd8d43039b128e02
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506751"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206416"
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Windows Phone 8.1 を実行するデバイス向けの Microsoft Intune 電子メール プロファイル設定
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 この記事では、Windows Phone 8.1 を実行しているデバイス用に構成できる電子メール プロファイル設定を示します。
 
+>[!IMPORTANT]
+>Windows Phone 8.1 電子メールプロファイルは、Windows 10 デバイスにも適用されます。
 
-- **[Apply all settings to Windows Phone 8.1 only (すべての設定を Windows Phone 8.1 のみに適用する)]** - これは、Intune クラシック ポータルで構成できる設定です。 Azure Portal では、この設定は変更できません。 これが **[構成済み]** に設定されている場合は、すべての設定が Windows Phone 8.1 デバイスのみに適用されます。 **[未構成]** に設定されている場合、これらの設定は Windows 10 Mobile デバイスにも適用されます。
 - **[電子メール サーバー]** - Exchange サーバーのホスト名。
 - **[アカウント名]** - ユーザーのデバイスに表示される電子メール アカウントの表示名。
 - **[AAD からのユーザー名の属性]** - この電子メール プロファイルのユーザー名を生成するために使用される Active Directory (AD) または Azure AD の属性です。 **プライマリ SMTP アドレス** ( **user1@contoso.com** など) または**ユーザー プリンシパル名** (**user1**、 **user1@contoso.com** など) を選択します。

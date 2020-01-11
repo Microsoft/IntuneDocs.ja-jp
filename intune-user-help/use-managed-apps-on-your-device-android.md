@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28ba1d2d50f366e5e34fae06ae188293dd0fb8b5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 2f075aed1c9cc00963c89a9e76122484d1a430b1
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74781211"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857641"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Android デバイスで管理対象アプリを使用する
 マネージド アプリは、組織のセキュリティ要件を満たすように構成されて、職場や学校のデータを保護します。 これらのアプリは、お使いのデバイスに自動的にインストールして使用できます。 

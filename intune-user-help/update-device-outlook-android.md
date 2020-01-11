@@ -19,20 +19,20 @@ ROBOTS: ''
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c3e4ecccef1ef094000136e49effac138bdfe88
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 9d44895f5a10eecac82e9984767c820bd2ad457e
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501906"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857658"
 ---
 # <a name="you-need-to-update-your-android-device-to-install-the-outlook-app"></a>Outlook アプリをインストールするには Android デバイスを更新する必要がある
 
 Outlook アプリを使うと、何百万というユーザーが、[Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook) デバイスに便利な 1 つの場所ですべての電子メール アカウント、予定表およびファイルに接続できます。
 
 >[!NOTE]
-> iOS デバイスの手順の [詳細については、ここをクリック](update-device-outlook-ios.md)してください。
+> iOS デバイスの手順の [詳細については、こちらを参照してください](update-device-outlook-ios.md)。
 
 特にデバイスが最新の状態ではない場合は、アプリのインストールが失敗することがあります。 このようなメッセージが表示される場合は、再試行する前に、Android デバイスを更新する必要があります。
 

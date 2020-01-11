@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a888e2087b98eeec82aeeb555677dddcb3eff4e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e9b44e50300c3bd034ca2bb3b0454a5ce953dc18
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74058234"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206977"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>SCEP 用のサード パーティ CA を Intune に追加するための API の使用
 
@@ -115,7 +115,7 @@ IntuneScepServiceClient(
     Properties configProperties)
 ```
 
-説明:
+説明 :
 
 `IntuneScepServiceClient` オブジェクトをインスタンス化し構成します。
 
@@ -157,7 +157,7 @@ void ValidateRequest(
     String certificateRequest)
 ```
 
-説明:
+説明 :
 
 SCEP 証明書要求を検証します。
 
@@ -194,7 +194,7 @@ void SendSuccessNotification(
     String certIssuingAuthority)
 ```
 
-説明:
+説明 :
 
 証明書が SCEP 要求の処理の一環として作成されたことを Intune に通知します。
 
@@ -202,7 +202,7 @@ void SendSuccessNotification(
 
     - transactionId           SCEP のトランザクション ID
     - certificateRequest    文字列としてエンコードされた DER によってエンコードされた PKCS #10 証明書要求 Base64
-    - certThumprint           プロビジョニングされた証明書のサムプリント
+    - プロビジョニングされた証明書の拇印の certThumprint SHA1 ハッシュ
     - certSerialNumber        プロビジョニングされた証明書のシリアル番号
     - certExpirationDate      プロビジョニングされた証明書の有効期限 日付の文字列は、Web UTC 時間 (YYYY-MM-DDThh:mm:ss.sssTZD) ISO 8601 を使用してフォーマットされる必要があります。
     - certIssuingAuthority    証明書を発行した機関の名前
@@ -233,7 +233,7 @@ void SendFailureNotification(
     String errorDescription)
 ```
 
-説明:
+説明 :
 
 SCEP 要求の処理中にエラーが発生したことを Intune に通知します。 このメソッドは、このクラスのメソッドによってスローされる例外に対して呼び出すことはできません。
 
@@ -267,7 +267,7 @@ void SetSslSocketFactory(
     SSLSocketFactory factory)
 ```
 
-説明:
+説明 :
 
 このメソッドは、Intune との通信時、(既定ではなく) 指定された SSL ソケット ファクトリを使用する必要があることをクライアントに通知するために使用します。
 

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8eef3af9a82e7a61bc5200bf45143657072d6db7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: b9292ad3ce6be9934c8925f27fbec8a7b8731cc7
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508375"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858172"
 ---
 # <a name="upload-and-email-logs"></a>アップロードとメールのログ  
 
@@ -62,6 +62,6 @@ ms.locfileid: "72508375"
 4. アップロードが完了したら、 **[電子メール]** をタップし、電子メールアプリを選択します。  
 5. 電子メール メッセージが開きます。サブジェクト フィールドにインシデント ID が既に入力されています。 メールの本文で、発生した問題について説明します。  
 
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a>次のステップ  
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

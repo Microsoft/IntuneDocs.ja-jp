@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: af1c7d1f9d8236fd95413317acefbe8887d90f47
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 442f44ac22587925c8a775d51a7e88e5e72473b3
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507672"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857169"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>デバイスは暗号化されますが、それ以外の場合は
 
@@ -60,6 +60,6 @@ ms.locfileid: "72507672"
 
 デバイスを最新バージョンの Android に更新していない場合は、デバイスの**設定**アプリにアクセスし、 **[更新]** を選択します。  
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 サポートが必要な場合は、 会社のサポートに問い合わせるか (連絡先情報については[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください)、または <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android チーム</a>にご連絡ください。  

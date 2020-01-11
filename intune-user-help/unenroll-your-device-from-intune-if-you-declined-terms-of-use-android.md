@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 169007541bccfc3e26184ac71197265931afbfdd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: f54f0d9453e93ad54a1d2a96ff25051f3d8bd3a1
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508108"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857675"
 ---
 # <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>"利用規約" を拒否した場合に管理からデバイスを削除する
 
@@ -38,7 +38,7 @@ ms.locfileid: "72508108"
 
 Intune からデバイスを削除し、ポータル サイト アプリをアンインストールするには:
 
-1. **[設定]** &gt; **[セキュリティ &amp; 画面のロック]** &gt; **[デバイス管理者]** の順に進みます。
+1. **[設定]** [**セキュリティ &amp; 画面ロック**&gt;**デバイス管理者**] の &gt; にアクセスします。
 
     この手順は、デバイスの登録を解除したらすぐに実行します。
 
