@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5bdffefb54291a6ee7b2da0d8fe6ac623f478b0e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fcb3a9f817b0e765fee79342bcd212f33509209a
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713400"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653548"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Microsoft Intune App SDK の概要
 iOS と Android の両方で使用可能な Intune App SDK によって、ご使用のアプリで Intune [アプリ保護ポリシー](../apps/app-protection-policy.md)をサポートできるようにします。 アプリにアプリ保護ポリシーを適用すると、そのアプリを Intune で管理できるようになり、マネージド アプリとして Intune で認識されるようになります。 SDK では、アプリの開発者が必要なコード変更が最小限に抑えられます。 SDK の機能の多くは、アプリの動作を変更せずに利用できます。 エンド ユーザーと IT 管理者のエクスペリエンスを向上させるために、SDK の API を利用してアプリの動作をカスタマイズし、アプリ側の処理が必要な機能をサポートします。
@@ -79,6 +79,6 @@ Citrix XenMobile MDX と Microsoft Intune を組み合わせ、デバイスと�
  
 Citrix MDX の詳細については、「[About the MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html)」 (MDX ツールキットについて)、「[Citrix MDX app wrapper for iOS](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html)」 (iOS 用の Citrix MDX アプリ ラッパー) および「[Citrix MDX app wrapper for Android](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html)」 (Android 用の Citrix MDX アプリ ラッパー) を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Microsoft Intune アプリ SDK の概要](app-sdk-get-started.md)

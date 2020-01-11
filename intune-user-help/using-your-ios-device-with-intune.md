@@ -18,18 +18,18 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec3f1996052e31a70ca44c40c277a7c5ff93819a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 774c67b67094782d98e8ca325f092f8a5760dd2f
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507998"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858932"
 ---
 # <a name="using-your-ios-device-with-intune-company-portal"></a>iOS デバイスを Intune ポータル サイトで使用する
 この記事では、iOS 用ポータル サイトに固有のタスクおよび情報を示します。 これらを使用して、iOS デバイスのトラブルシューティングや管理を行うことができます。 任意のリンクをクリックすると、詳細情報、手順、およびスクリーンショットが表示されます。
 
-## <a name="supported-versions"></a>サポートされているバージョン
+## <a name="supported-versions"></a>サポートされるバージョン
 
 現在、iOS 用ポータル サイトでは iOS 10.0 以降がサポートされています。  
 

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2326aed90037fbcc6fc693bcdb67c86b57ed34a0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: b8da85deae3113995e2836d6af924c5e8938e6ec
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508002"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858949"
 ---
 # <a name="configure-logging-settings"></a>ログ設定の構成
 
@@ -47,6 +47,6 @@ Microsoft Intune アプリでは、ログの詳細レベルを構成できます
 2. **[設定]** をタップします。  
 3. **[ログレベルの詳細]** で、記録された詳細レベルを上げる場合は [**詳細] を**選択し、ログ記録をオフにする場合は **[オフ]** を選択します。  
 
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a>次のステップ  
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。  

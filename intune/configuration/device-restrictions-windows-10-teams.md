@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20e25b2a2d1b20e577e99cf0b391945c16c67c64
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0a007683487b406c562fb50a416cb08a8ac60113
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72489886"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206518"
 ---
 # <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Microsoft Intune の Windows 10 Team デバイス制限設定
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 この記事では、Windows 10 Team を実行するデバイスに構成できる Microsoft Intune デバイス制限設定について説明します。
 
@@ -54,6 +54,6 @@ Azure Operational insights に接続するには、**ワークスペース ID** 
 - **[Miracast ワイヤレス投影チャネル]** - 接続を確立するために使用される Miracast チャネルを選択します。
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 「[Microsoft Intune でデバイスの制限設定を構成する方法](../device-restrictions-configure.md)」の情報を使って、プロファイルを保存し、ユーザーとデバイスに割り当てます。
