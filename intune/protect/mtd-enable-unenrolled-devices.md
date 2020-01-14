@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84f82cf2fde7d400e5531bac219b6cbb4877032f
-ms.sourcegitcommit: 960ffb2214c35d75ad219fa2571a999529a0abd4
+ms.openlocfilehash: 9571f7d0ae10f33007d5ae50b403580232c2e870
+ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74478934"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75545934"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune-for-unenrolled-devices"></a>未登録デバイスに対して Intune で Mobile Threat Defense コネクタを有効にする
 
 Mobile Threat Defense (MTD) のセットアップ中、Mobile Threat Defense パートナー コンソールで脅威を分類するためのポリシーを構成し、Intune でアプリ保護ポリシーを作成しました。 MTD パートナー コンソールで Intune コネクタを既に構成している場合、MTD パートナー アプリケーションに対して MTD 接続を有効にすることができます。
 
 > [!NOTE]
-> この記事は、アプリ保護ポリシーをサポートするすべての Mobile Threat Defense パートナーに適用されます。Better Mobile (Android)、Zimperium (iOS)、Lookout for Work (Android/iOS) です。
+> この記事は、アプリ保護ポリシーをサポートするすべての Mobile Threat Defense パートナーに適用されます。Better Mobile (Android)、Zimperium (Android/iOS)、Lookout for Work (Android/iOS) です。
 
 ## <a name="classic-conditional-access-policies-for-mtd-apps"></a>MTD アプリ用の従来の条件付きアクセス ポリシー
 
@@ -56,17 +56,17 @@ MTD アプリ用の従来の条件付きアクセス ポリシーは:
 
 2. **[テナント管理]**  >  **[コネクタとトークン]**  >  **[Mobile Threat Defense]** の順に選択します。
 
-3. **[Mobile Threat Defense]** ウィンドウで、 **[追加]** を選択します。
+3. **[Mobile Threat Defense]** ウィンドウで **[追加]** を選択します。
 
 4. **[セットアップする Mobile Threat Defense コネクタ]** として、ドロップダウン リストから MTD ソリューションを選択します。
 
     <!-- ![MTD setup in Intune](PLACEHOLDER, need a new screenshot of this page) -->
 
-5. 組織の要件に応じてトグルのオプションを有効にします。 表示される切り替えオプションは、MTD パートナーによって異なります。
+5. 組織の要件に合わせて切り替えオプションを有効にします。 表示される切り替えオプションは、MTD パートナーによって異なります。
 
 ## <a name="mobile-threat-defense-toggle-options"></a>Mobile Threat Defense 切り替えオプション
 
-組織の要件に従って、有効にすべき MTD トグル オプションを決定できます。 詳細を次に示します。
+組織の要件に基づき、有効にする MTD 切り替えオプションを決定できます。 詳細を次に示します。
 
 **アプリ保護ポリシー設定**
 
@@ -81,6 +81,6 @@ MTD アプリ用の従来の条件付きアクセス ポリシーは:
 > [!TIP]
 > [Mobile Threat Defense] ウィンドウで、 **[接続の状態]** や、Intune と MTD パートナー間の **[最終同期]** 時刻を確認できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Intune で Mobile Threat Defense (MTD) アプリ保護ポリシーを作成します](~/protect/mtd-app-protection-policy.md)。

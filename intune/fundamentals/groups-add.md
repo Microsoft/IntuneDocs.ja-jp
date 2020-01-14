@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e3219e32ef9bea838f0c19258d0b22a99083a12
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: fe37ac412d01d3032685a0e66827d20e13b0db64
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261573"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303070"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>ユーザーとデバイスを整理するためのグループを追加する
 
@@ -47,7 +47,7 @@ Intune では、デバイスとユーザーの管理に Azure Active Directory (
 
 3. **[グループの種類]** で、次のいずれかのオプションを選択します。
 
-    - **[セキュリティ]** :セキュリティ グループは、だれがリソースにアクセスできるかを定義するものであり、Intune 内のグループ用に推奨されます。 たとえば、**シャーロットの全従業員**や **Contoso のすべての女性**などのユーザーのグループを作成できます。 または、デバイスのグループを作成します。たとえば、**すべての iOS デバイス**や、**すべての Windows 10 Student デバイス**などです。
+    - **[セキュリティ]** :セキュリティ グループは、だれがリソースにアクセスできるかを定義するものであり、Intune 内のグループ用に推奨されます。 たとえば、**シャーロットの全従業員**や**リモート ワーカー**などのユーザーのグループを作成できます。 または、デバイスのグループを作成します。たとえば、**すべての iOS デバイス**や、**すべての Windows 10 Student デバイス**などです。
 
         > [!TIP]
         > 作成したユーザーとグループは、[Microsoft 365 管理センター](https://admin.microsoft.com)、Azure Active Directory 管理センター、[Azure portal 上の Microsoft Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にも表示されます。 組織のテナントでは、これらのすべての領域でグループを作成および管理できます。

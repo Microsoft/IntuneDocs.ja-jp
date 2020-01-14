@@ -17,12 +17,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 7ce6def40c6c0fff3a28f884c458220283979234
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: 001e68fdbab7074abb4e1bbefc697d3e34c47762
+ms.sourcegitcommit: 107fef144013b01ed768ca8973373f9cb3f0f7dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465771"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75683784"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Windows Hello for Business と Microsoft Intune の統合  
 
@@ -53,9 +53,9 @@ Intune と Hello for Business の統合には 2 通りの方法があります�
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Windows Hello for Business のポリシーの作成
 
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431 ) にサインインします。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 
-2. **[デバイス]** > 登録** > **[デバイスの登録]**  >  **[Windows の登録]**  >  **[Windows Hello for Business]** の順に移動します。 [Windows Hello for Business] ウィンドウが開きます。
+2. **[デバイス]**  >   **[登録]**  >  **[デバイスの登録]**  >  **[Windows の登録]**  >  **[Windows Hello for Business]** に移動します。 [Windows Hello for Business] ウィンドウが開きます。
 
 3. **[Windows Hello for Business の構成]** を次のオプションから選択します。
 
@@ -111,7 +111,7 @@ Intune と Hello for Business の統合には 2 通りの方法があります�
 
    - **[電話によるサインインの許可]** :
 
-     このオプションが **[はい]** に設定されている場合、ユーザーはデスクトップ コンピューターの認証にポータブル コンパニオン デバイスとして機能するリモートの Passport を使用することができます。 デスクトップ コンピューターは Azure Active Directory に参加している必要があり、コンパニオン デバイスでは Windows Hello for Business の PIN を設定する必要があります。
+     このオプションが **[はい]** に設定されている場合、ユーザーはデスクトップ コンピューターの認証にポータブル コンパニオン デバイスとして機能するリモートの Passport を使用することができます。 デスクトップ コンピューターは Azure Active Directory に参加している必要があり、コンパニオン デバイスは、Windows Hello for Business の PIN を使用して設定されている必要があります。
 
 ## <a name="windows-holographic-for-business-support"></a>Windows Holographic for Business のサポート
 
@@ -126,6 +126,6 @@ Windows Holographic for Business では、Windows Hello for Business の以下�
 - PIN の有効期間 (日)
 - PIN の履歴を保存
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Windows Hello for Business の詳細については、Windows 10 ドキュメント内の[ガイド](https://technet.microsoft.com/library/mt589441.aspx)を参照してください。

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5b469c759ac34a6d8de09163534a580346e48a1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b25b761b3857fdf91bbbe827d288d09e350a1a7a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415022"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206093"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Intune にユーザーを追加して管理アクセス許可を付与する
 
@@ -57,22 +57,20 @@ ms.locfileid: "73415022"
 
 ### <a name="add-intune-users-in-the-azure-portal"></a>Azure Portal で Intune ユーザーを追加する
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[ユーザー]**  >  **[すべてのユーザー]** の順に選択します。
-3. 管理センターで、 **[新しいユーザー]** を選びます。
-   ![新しいユーザーの追加のスクリーンショット](./media/users-add/intune-add-user.png)
-4. 次のユーザー詳細を指定します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[ユーザー]**  >  **[すべてのユーザー]** を選択します。
+2. 管理センターで、 **[新しいユーザー]** を選びます。
+3. 次のユーザー詳細を指定します。
    - **名前**
    - **ユーザー名** - Azure Active Directory ポータルの新しい名前 ![名前とユーザー名の追加のスクリーンショット](./media/users-add/intune-add-user-info.png) **[OK]** を選択して続行します。
-5. 必要に応じて、次のユーザー プロパティを指定できます。
+4. 必要に応じて、次のユーザー プロパティを指定できます。
    - **プロファイル** - **役職**や**部署**などの仕事情報
    - **グループ** - ユーザーに追加するグループを選択します
    - **ディレクトリ ロール** - Intune サービス管理者ロールを含む管理者アクセス許可をユーザーに与えます。
 
    **[作成]** を選択し、新しいユーザーを Intune に追加します。
-6. **[プロファイル]** を選択し、新しいユーザーの **[利用場所]** を選択します。 新しいユーザーに Intune ライセンスを割り当てるには利用場所が必要です。 **[保存]** を選択して続行します。
+5. **[プロファイル]** を選択し、新しいユーザーの **[利用場所]** を選択します。 新しいユーザーに Intune ライセンスを割り当てるには利用場所が必要です。 **[保存]** を選択して続行します。
     ![使用場所のスクリーンショット](./media/users-add/intune-add-user-loc.png)
-7. **[ライセンス]** を選択し、 **[割り当て]** を選択してこのユーザーの Intune ライセンスを割り当てます。 デバイスを登録したり、会社のリソースにアクセスしたりするには、Intune ライセンスが必要です。 **[製品]** を選択し、ライセンスの種類を選択し、 **[選択]** を選択し、 **[割り当て]** を選択します。
+6. **[ライセンス]** を選択し、 **[割り当て]** を選択してこのユーザーの Intune ライセンスを割り当てます。 デバイスを登録したり、会社のリソースにアクセスしたりするには、Intune ライセンスが必要です。 **[製品]** を選択し、ライセンスの種類を選択し、 **[選択]** を選択し、 **[割り当て]** を選択します。
 
 ## <a name="grant-admin-permissions"></a>管理者アクセス許可を与える
 

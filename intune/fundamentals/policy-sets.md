@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/15/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e539f44fc9c9b4e7382368c0f3ad9f79bb1c98b1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d302db46510b664aec5b0a71fd8b19985e29be37
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585658"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206127"
 ---
 # <a name="use-policy-sets-to-group-collections-of-management-objects"></a>ポリシー セットを使用して管理オブジェクトのコレクションをグループ化する
 
@@ -56,8 +56,8 @@ ms.locfileid: "72585658"
 
 ## <a name="how-to-create-a-policy-set"></a>ポリシー セットを作成する方法
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[Intune]** ブレードで、 **[ポリシー セット]**  >  **[ポリシー セット]**  >  **[作成]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]**  >  **[ポリシー セット]**  >  **[ポリシー セット]**  >  **[作成]** を選択します。
 3. **[基本]** ページで、次の値を追加します。
     - **[ポリシー セット名]** - このポリシー セットの名前を指定します。
     - **[説明]** - 必要に応じて、ポリシー セットの説明を指定します。
@@ -66,13 +66,13 @@ ms.locfileid: "72585658"
 
 4. **[次へ: アプリケーション管理]** をクリックします。<br>
    **[アプリケーション管理]** ページでは、必要に応じて、ポリシーセットに[アプリ](~/apps/apps-add.md)、[アプリ構成ポリシー](~/apps/app-configuration-policies-overview.md)、および[アプリ保護ポリシー](~/apps/app-protection-policy.md)を追加することができます。 アプリの管理については、「[Microsoft Intune アプリの管理とは](~/apps/app-management.md)」を参照してください。 
-5. **[次へ: デバイス管理]** をクリックします。<br>
+5. **次へ:デバイス管理** をクリックします。<br>
    **[デバイス管理]** ページでは、[デバイス構成プロファイル](~/configuration/device-profiles.md)や[デバイス コンプライアンス ポリシー](~/protect/device-compliance-get-started.md)などのデバイス管理オブジェクトを、ポリシー セットに追加することができます。 他のポリシー、証明書、セキュリティ ベースライン プロファイルなど、関連付けられているすべてのオブジェクトを含めるようにしてください。
-6. **[次へ: デバイスの登録]** をクリックします。<br>
+6. **次へ:デバイスの登録** をクリックします。<br>
    **[デバイスの登録]** ページでは、[デバイスの種類の制限](~/enrollment/enrollment-restrictions-set.md)、[Windows Autopilot Deployment プロファイル](~/enrollment/enrollment-autopilot.md)、[登録ステータス ページ プロファイル](~/enrollment/windows-enrollment-status.md)など、デバイス登録オブジェクトをポリシー セットに追加できます。
-7. **[次へ: 割り当て]** をクリックします。<br>
+7. **次へ:割り当て** をクリックします。<br>
    **[割り当て]** ページでは、ユーザーとデバイスにポリシー セットを割り当てることができます。 デバイスが Intune で管理されているかどうかに関係なく、デバイスにポリシー セットを割り当てることができることに注意してください。
-8. **[次へ: 確認および作成]** をクリックし、プロファイルに対して入力した値を確認します。
+8. **次へ:確認および作成** をクリックし、プロファイルに対して入力した値を確認します。
 9. 終わったら、 **[作成]** をクリックして、Intune にポリシー セットを作成します。 
 
 ## <a name="policy-sets-known-issues"></a>ポリシー セットに関する既知の問題
@@ -121,6 +121,6 @@ ms.locfileid: "72585658"
 
 - MAM では、すべてのポリシーの種類について、**すべてのユーザー**および**すべてのデバイス**仮想グループへの展開はサポートされていません。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Microsoft Intune にデバイスを登録する](~/enrollment/index.yml)

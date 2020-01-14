@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d876c0268f38a09ea3729a7e19ee00b321ae897a
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: 02c1508dd3eb9c8a8932c1504c6f4d0a53c5a0d5
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000399"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207385"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Microsoft Intune の米国政府機関のエンドポイント
 
@@ -36,7 +36,9 @@ ms.locfileid: "75000399"
 
 個々のクライアント コンピューターでプロキシ サーバーの設定を変更できます。 また、グループ ポリシーの設定を使用して、指定したプロキシ サーバーの背後にあるすべてのクライアント コンピューターの設定を変更することもできます。
 
-マネージド デバイスは、**[すべてのユーザー]** がファイアウォール経由でサービスにアクセスできるように構成する必要があります。
+マネージド デバイスは、 **[すべてのユーザー]** がファイアウォール経由でサービスにアクセスできるように構成する必要があります。
+
+米国政府機関のお客様の Windows 10 自動登録とデバイス登録の詳細については、「[Windows デバイスの登録をセットアップする](../enrollment/windows-enroll.md#windows-10-auto-enrollment-and-device-registration)」を参照してください。
 
 次の表は、Intune クライアントがアクセスするポートとサービスの一覧です。
 
@@ -75,7 +77,6 @@ ms.locfileid: "75000399"
 - [macOS、iOS、iTunes のサーバホスト接続と iTunes のバックグラウンドプロセスについて](https://support.apple.com/HT201999)
 - [macOS および iOS クライアントで Apple プッシュ通知が届かない場合](https://support.apple.com/HT203609)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 [Microsoft Intune のネットワーク エンドポイント](intune-endpoints.md)
 
-[Windows 10 の自動登録とデバイス登録](../enrollment/windows-enroll.md#registration-and-enrollment-cnames)

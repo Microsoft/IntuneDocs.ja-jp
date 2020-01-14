@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune のデバイスの機能と設定 - Azure | Microsoft Docs
-description: さまざまな Microsoft Intune デバイス プロファイルの概要。 機能、制限事項、電子メール、WiFi、VPN、教育、証明書、Windows 10 のアップグレード、BitLocker と Microsoft Defender、Windows Information Protection、管理用テンプレート、および Azure portal のカスタム デバイス構成設定に関する情報が得られます。 これらのプロファイルを使用して、社内のデータとデバイスを管理および保護します。
+description: さまざまな Microsoft Intune デバイス プロファイルの概要。 機能、制限事項、電子メール、WiFi、VPN、教育、証明書、Windows 10 のアップグレード、BitLocker と Microsoft Defender、Windows Information Protection、管理用テンプレート、および Microsoft Endpoint Manager admin center のカスタム デバイス構成設定に関する情報が得られます。 これらのプロファイルを使用して、社内のデータとデバイスを管理および保護します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b74cdf29999bccdefaa94c84673b9ea89c335537
-ms.sourcegitcommit: 7001dc5a9cffeb2e161748f9e6dba126bf1cb06f
+ms.openlocfilehash: 800bbd5199bd4389ee1ae8aa98a68e21456e7000
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74694949"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206620"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune でデバイス プロファイルを使用してデバイスに機能と設定を適用する
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Microsoft Intune には、組織内のさまざまなデバイスで有効または無効にできる設定と機能が含まれています。 これらの設定と機能は "構成プロファイル" に追加されます。 異なるデバイスおよび iOS、Android、Windows などの異なるプラットフォームに対するプロファイルを作成することができます。 次に、Intune を使用して、デバイスへのプロファイルの適用 ("割り当て") を行います。
 
@@ -143,7 +143,7 @@ Microsoft Intune には、組織内のさまざまなデバイスで有効また
 - Windows Phone 8.1
 - Windows 10 以降
 
-## <a name="endpoint-protection"></a>Endpoint Protection
+## <a name="endpoint-protection"></a>エンドポイント保護
 
 [Windows 10 用の Endpoint Protection 設定](../protect/endpoint-protection-windows-10.md)では、Windows 10 デバイス用の BitLocker および Microsoft Defender の設定が構成されます。
 
@@ -276,6 +276,6 @@ Windows デバイスの更新プログラム ポリシーについては、[配�
 
 [プロファイルの管理](device-profile-monitor.md)に関する説明では、デバイスの状態や割り当てられているプロファイルの確認方法を説明しています。 競合を起こした設定と、これらの設定を含むプロファイルを確認することによって、競合も解決できます。 [一般的な問題と解決策](device-profile-troubleshoot.md)に関する説明は、管理者がプロファイルを操作するのに役立ちます。 プロファイルを削除した場合の動作や、デバイスに通知が送信される原因などについて説明しています。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 プラットフォームを選択し、操作を開始します。

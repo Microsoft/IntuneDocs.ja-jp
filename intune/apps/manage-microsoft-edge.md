@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4761e2565402b4c3cdc993ff89cbedea8273609
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 304a6a60ea8dbfa98e62eb8e52a69e14af795746
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563891"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548002"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Edge と Microsoft Intune を使用して Web アクセスを管理する
 
@@ -159,12 +159,12 @@ Microsoft Edge と [Azure AD アプリケーション プロキシ](https://docs
 > [!NOTE]
 > 更新されたアプリケーション プロキシのリダイレクト データが、Managed Browser や Microsoft Edge で有効になるまでには、最大で 24 時間かかる場合があります。
 
-#### <a name="step-1-enable-automatic-redirection-to-microsoft-edge-from-outlook"></a>手順 1.Outlook から Microsoft Edge への自動リダイレクトを有効にする
+#### <a name="step-1-enable-automatic-redirection-to-microsoft-edge-from-outlook"></a>手順 1:Outlook から Microsoft Edge への自動リダイレクトを有効にする
 設定 **[ポリシーで管理されているブラウザーで Web コンテンツを共有する]** を有効にするアプリ保護ポリシーで、Outlook を構成します。
 
 ![[アプリ保護ポリシー] - [ポリシーで管理されているブラウザーで Web コンテンツを共有する] のスクリーンショット](./media/manage-microsoft-edge/manage-microsoft-edge-03.png)
 
-#### <a name="step-2-set-the-app-configuration-setting-to-enable-app-proxy"></a>手順 2: アプリ プロキシを有効にするためにアプリ構成を設定する
+#### <a name="step-2-set-the-app-configuration-setting-to-enable-app-proxy"></a>手順 2:アプリ プロキシを有効にするためにアプリ構成を設定する
 次のキー/値ペアで Microsoft Edge を対象とし、Microsoft Edge に対してアプリケーション プロキシを有効にします。
 
 |    キー    |    値    |
@@ -198,6 +198,14 @@ Microsoft Edge と [Azure AD アプリケーション プロキシ](https://docs
 |--------------------------------------------------------------------|------------|
 |    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo    |    True    |
 |    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandColor    |    True    |
+
+## <a name="display-relevant-industry-news-on-new-tab-pages"></a>新しいタブ ページに関連する業界ニュースを表示する
+
+Microsoft Edge モバイル内の新しい タブ ページ エクスペリエンスを構成して、組織に関連する業界のニュースを表示できます。 この機能を有効にすると、Microosft Edge モバイルでは、組織のドメイン名を使用して、組織、組織の業界、および競合他社に関するニュースが Web から集約されるので、ユーザーは Microsoft Edge の新しいタブ ページだけですべての関連する外部ニュースを検索できます。 業界ニュースは既定ではオフになっており、組織に対して選択できます。 
+
+|    キー    |    値    |
+|------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+|    'com.microsoft.intune.SohwIndustryNews'    |    **True** にすると、Microsoft Edge モバイルの新しいタブ ページに業界のニュースが表示されます。<p>**False** (既定値) にすると、新しいタブ ページの業界ニュースは非表示になります。    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Microsoft Edge 用に管理対象ブックマークを構成する
 
@@ -268,7 +276,7 @@ Microsoft Edge に対して許可またはブロックするサイトのリス�
   - `http://www.contoso.com:*`
   - `http://www.contoso.com: /*`
 
-## <a name="define-behavior-when-users-try-to-access-a-blocked-site"></a>ユーザーがブロック サイトへのアクセスを試行するときの動作を定義する
+## <a name="transition-users-to-their-personal-context-when-trying-to-access-a-blocked-site"></a>ブロックされたサイトにアクセスしようとしたユーザーを個人用コンテキストに移行させる
 
 Microsoft Edge に組み込まれているデュアル ID モデルでは、Intune Managed Browser で可能であったものより柔軟なエクスペリエンスを、エンド ユーザーに対して有効にできます。 ユーザーが Microsoft Edge でブロックされているサイトにアクセスしたら、職場コンテキストではなく、個人用コンテキストでリンクを開くよう求めることができます。 これにより、企業リソースを安全な状態に保ちながら、ユーザーを保護された状態に維持できます。 たとえば、Outlook でニュース記事へのリンクがユーザーに送信された場合、ユーザーは個人コンテキストまたは [InPrivate] タブで、リンクを開くことができます。職場のコンテキストでは、ニュースの Web サイトは許可されません。 既定では、これらの移行が許可されます。
 
@@ -276,7 +284,16 @@ Microsoft Edge に組み込まれているデュアル ID モデルでは、Intu
 
 |    キー    |    値    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock'    |    **True** にすると、制限されたリンクに対して InPrivate ブラウズが直接開くようになります。<p>**False** (既定値) にすると、InPrivate ブラウズまたは個人用 (MSA) アカウントのどちらで制限されたリンクを開くかを、ユーザーが選択できます。    |
+
+## <a name="open-restricted-links-directly-in-inprivate-tab-pages"></a>制限されたリンクを InPrivate タブ ページで直接開く
+
+制限されたリンクを InPrivate ブラウズで直接開く必要があるかどうかを構成できます。InPrivate ブラウズでは、よりシームレスな閲覧エクスペリエンスがユーザーに提供されます。 これにより、ユーザーはサイトを表示するために個人用コンテキストを経由する手間がなくなります。 InPrivate ブラウズはアンマネージドと見なされるため、InPrivate ブラウズ モードの使用中は、ユーザーはアクセスできません。 
+
+|    キー    |    値    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** の場合、Microsoft Edge で、ブロックされたサイトを開くために個人用コンテキストにユーザーを移行させることができます。<p>**Block** では、Microsoft Edge でユーザーを移行させることはできません。 ユーザーには、アクセスしようとしているサイトがブロックされていることを示すメッセージが単に表示されます。    |
+
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>iOS で Microsoft Edge を使用してマネージド アプリのログにアクセスする 
 
@@ -299,6 +316,6 @@ Microsoft Edge のセキュリティとプライバシーに関するその他�
 - 認証を許可し、Intune ドキュメントにアクセスするために、* **.microsoft.com** は許可またはブロック リスト設定の対象から除外されます。 常に許可されます。
 - ユーザーはデータ収集を無効にできます。 Microsoft は、Microsoft の製品やサービスを改善するために、Managed Browser のパフォーマンスおよび使用に関する匿名データを自動的に収集します。 ただし、ユーザーはデバイスの **[使用状況データ]** 設定を使用して、データの収集を無効にすることができます。 このデータの収集方法は制御できません。 iOS デバイスでは、証明書の有効期限が切れている Web サイトや証明書が信頼されていない Web サイトにユーザーがアクセスしても、開くことができません。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [アプリ保護ポリシーとは?](app-protection-policy.md) 

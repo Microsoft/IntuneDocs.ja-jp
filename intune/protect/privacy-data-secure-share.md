@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b17b87462b2c73e265f062c33a06a810e7c58bf8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cfa2c5366d1b38cf819cfc68840a29fad9002979
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504335"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548100"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Intune でのデータのセキュリティと共有
 
@@ -68,13 +68,13 @@ Microsoft のエージェントとして活動しているすべてのサード�
 - [Google から Intune に送られるデータ](data-google-sends-to-intune.md)
 - [Jamf Pro から Intune に送られるデータ](data-jamf-sends-to-intune.md)
 
-### <a name="system-center-configuration-manager-data-sharing"></a>System Center Configuration Manager のデータ共有
+### <a name="microsoft-endpoint-configuration-manager-data-sharing"></a>Microsoft Endpoint Configuration Manager のデータ共有
 
-Microsoft Intune では、データが System Center Configuration Manager と共有されることはありません。 System Center Configuration Manager は、お客様が直接デプロイ、管理、操作するオンプレミス製品です。 Configuration Manager で収集される診断データおよび使用状況データは、今後のリリースでインストールのエクスペリエンス、品質、セキュリティを向上させるためだけに使用されます。
+Microsoft Intune では、データが Configuration Manager と共有されることはありません。 Configuration Manager は、お客様が直接デプロイ、管理、操作するオンプレミス製品です。 Configuration Manager で収集される診断データおよび使用状況データは、今後のリリースでインストールのエクスペリエンス、品質、セキュリティを向上させるためだけに使用されます。
 
-詳細については、「[System Center Configuration Manager の診断結果と使用状況データ](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)」を参照してください。 
+詳細については、[Configuration Manager の診断結果と使用状況データ](https://docs.microsoft.com/configmgr/core/plan-design/diagnostics/diagnostics-and-usage-data)に関するページをご覧ください。 
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Intune で個人データを[表示および修正](privacy-data-view-correct.md)する方法を確認します。

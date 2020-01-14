@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c344a518890a2309a7805d61a5675e2646029bbb
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: c02ea34417073091e2f2841b363edfb9966ce558
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564042"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205906"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Intune を使用して Android デバイス用 Google Chrome を構成する 
 
 Intune アプリ構成ポリシーを使用して、Android デバイス用 Google Chrome を構成できます。 アプリの設定を自動的に適用できます。 たとえば、ブロックまたは許可するブックマークと URL を具体的に設定できます。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
 - ユーザーの Android Enterprise デバイスは、Intune に登録されている必要があります。 詳細については、「[Android Enterprise 仕事用プロファイル デバイスの登録を設定する](~/enrollment/android-work-profile-enroll.md)」を参照してください。
 - Google Chrome は managed Google Play アプリとして追加されます。 managed Google Play の詳細については、「[managed Google Play アカウントに Intune アカウントを接続する](~/enrollment/connect-intune-android-enterprise.md)」を参照してください。
@@ -48,12 +48,16 @@ managed Google Play アプリを Intune に追加する方法の詳細につい�
 
 ## <a name="add-app-configuration-for-managed-ae-devices"></a>マネージド AE デバイスのアプリ構成を追加する
 
-1. [[Intune]](https://go.microsoft.com/fwlink/?linkid=2090973) ウィンドウで、 **[アプリ構成ポリシー]**  >  **[追加]** を選択します。
-2. ポリシー名を追加し、[デバイス登録の種類] で **[マネージド デバイス]** を選択し、[プラットフォーム] で **[Android]** を選択します。
+1. [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) から、 **[アプリ]**  >  **[アプリ構成ポリシー]**  >  **[追加]**  >  **[マネージド デバイス]** を選択します。
+2. 次の詳細を設定します。
+    - **名前**: Azure portal に表示されるプロファイルの名前。
+    - **説明**: Azure portal に表示されるプロファイルの説明。
+    - **[デバイス登録の種類]** - この設定は、 **[マネージド デバイス]** に設定されています。
+    - **[プラットフォーム]** - **[Android]** を選択します。
 
     ![Google Chrome 構成ポリシーを追加する](~/apps/media/apps-configure-chrome-android/add-policy.png)
 
-3. **[関連アプリ]** をクリックして **[Google Chrome]** を選択します。
+3. **[関連アプリ]** をクリックして、 **[関連アプリ]** ウィンドウを表示します。 **Google Chrome** を検索して選択します。 この一覧には、[承認して Intune に同期したマネージド Google Play アプリ](~/apps/apps-add-android-for-work.md)が含まれます。
 
     ![[関連アプリ] で [Google Chrome] を選択する](~/apps/media/apps-configure-chrome-android/associated-app.png)
 
@@ -111,6 +115,6 @@ Google Chrome を起動すると、設定が適用されていることがわか
 - [マネージド Android Enterprise デバイス用にアプリ構成ポリシーを追加する](~/app-configuration-policies-use-android.md)
 - [Chrome Enterprise のポリシー リスト](https://cloud.google.com/docs/chrome-enterprise/policies/)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - Android Enterprise フル マネージド デバイスの詳細については、「[Android Enterprise フル マネージド デバイスの Intune 登録を設定する](~/enrollment/android-fully-managed-enroll.md)」を参照してください。

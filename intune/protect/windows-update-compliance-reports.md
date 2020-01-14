@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0de98a0820e15a09c2b3724b216359580327259e
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: f1e493e0d2d562c0f69454d1999e82b528c724a2
+ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465724"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731281"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>更新プログラムに関する Intune コンプライアンス レポート
 
@@ -51,7 +51,7 @@ Windows 10 更新プログラム ロールアウトを監視するには、Windo
 
 このソリューションを使用する場合は、更新プログラムのコンプライアンス対応を報告する任意の Intune マネージド Windows 10 デバイスに商用 ID を展開します。  
 
-Intune で、カスタム ポリシーの OMA-URI 設定を使用して、商用 ID を構成します。 「[Microsoft Intune での Windows 10 デバイス向けの Intune ポリシー設定](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)」をご覧ください。  
+Intune で、カスタム ポリシーの OMA-URI 設定を使用して、商用 ID を構成します。 「[Intune で Windows 10 デバイス用のカスタム設定を使用する](../configuration/custom-settings-windows-10.md)」を参照してください。
 
 商用 ID を構成するための OMA-URI (大文字と小文字を区別する) パスは、 *./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID* です。  
 
@@ -61,11 +61,11 @@ Intune で、カスタム ポリシーの OMA-URI 設定を使用して、商用
 - **設定の説明**:Windows Analytics ソリューションの商用 ID を構成
 - **OMA-URI** (大文字と小文字を区別): . *./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID*
 - **データ型**:文字列型
-- **値**: \<OMS ワークスペースの Windows 利用統計情報に示された GUID を使用>
+- **値**:\<OMS ワークスペースの Windows 利用統計情報に示された GUID を使用>
 
 > [!NOTE]
 > MS DM サーバーに関する詳細については、「[DMClient 構成サービス プロバイダー (CSP)]( https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [Intune でのソフトウェア更新プログラムの管理](windows-update-for-business-configure.md)

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5d65882c3811b05f7f8f137f76dc919e18f0da5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 881a97e1cf4e4690a72916a1a2325fba5f9b63dd
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505328"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547530"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune サービスの説明
 
@@ -31,7 +31,7 @@ Intune はクラウドベースのエンタープライズ モビリティ管理
 * 社員が会社の情報にアクセスし、共有する方法を制御し、会社の情報を保護します。
 * デバイスやアプリが会社のセキュリティ要件に準拠するように管理します。
 
-Intune は ID とアクセス制御のために Azure Active Directory (Azure AD) と、データ保護のために Azure Information Protection と密接に統合されます。 System Center Configuration Manager と統合して管理機能を拡張することもできます。
+Intune は ID とアクセス制御のために Azure Active Directory (Azure AD) と、データ保護のために Azure Information Protection と密接に統合されます。 Configuration Manager と統合して管理機能を拡張することもできます。
 
 Intune でデバイス、アプリ、企業データを管理し、保護する方法については、[Intune 文書](../index.yml)をご覧ください。
 
@@ -45,9 +45,9 @@ Intune は、100 ユーザー ライセンスを含む 30 日間の無料試用�
 
 - [Enrolled device management capabilities of Microsoft Intune](introduction-intune.md)
 
-- [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management)
+- [Hybrid mobile device management (MDM) with Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management)
 
-For more about System Center Configuration Manager, see [Documentation  for System Center Configuration Manager](/sccm/index).--->
+For more about Configuration Manager, see [Documentation for Microsoft Endpoint Configuration Manager](/sccm/index).--->
 ## <a name="intune-onboarding-benefit"></a>Intune のオンボーディング特典
 Microsoft では、Intune オンボーディング特典で、適格なプランの適格なサービスをオファーします。 オンボーディング特典では、Intune 環境を使用できるようにするために、Microsoft の専門家がリモートでお手伝いします。 オンボーディング特典の詳細については、「[Enterprise Mobility の FastTrack プログラム](http://go.microsoft.com/fwlink/?LinkId=619281)」を参照してください。
 
@@ -99,7 +99,7 @@ You can set up Intune in several ways to manage and help protect your company's 
 
 - **Intune stand-alone configuration.** Use the web-based admin console in Intune to manage devices in your organization. Intune can be used without any on-premises IT infrastructure. If you use Intune with Active Directory Domain Services, you can use domain user accounts that you manage with Domain Services with Intune.
 
-- **Intune with System Center Configuration Manager.** Use the Configuration Manager management console to manage computers and mobile devices in your enterprise. This configuration can help you to manage all your organization’s devices through a single console, the Configuration Manager Admin Console. Configuration Manager supports large numbers of mobile devices, servers, and computers. For more about Configuration Manager, see [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management). For more help deciding which approach is right for you, see [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).--->
+- **Intune with Microsoft Endpoint Configuration Manager.** Use the Configuration Manager management console to manage computers and mobile devices in your enterprise. This configuration can help you to manage all your organization’s devices through a single console, the Configuration Manager Admin Console. Configuration Manager supports large numbers of mobile devices, servers, and computers. For more about Configuration Manager, see [Hybrid mobile device management (MDM) with Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management). For more help deciding which approach is right for you, see [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).--->
 
 ## <a name="language-support"></a>言語サポート
 Intune は Azure portal で実行されていますが、Azure portal によりサポートされている言語は、簡体中国語、繁体中国語、チェコ語、オランダ語、英語、ドイツ語、ハンガリー語、イタリア語、日本語、ポルトガル (ブラジル) 語、ポルトガル (ポルトガル) 語、ロシア語、スペイン語、英語、フランス語、韓国語、ポーランド語、スウェーデン語、トルコ語です。

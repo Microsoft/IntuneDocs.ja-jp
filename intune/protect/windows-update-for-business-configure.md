@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: ad630eb34b296d7ab77081a1e3063db8dffc64f9
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691768"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207453"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Intune で Windows 10 ソフトウェア更新プログラムを管理する
 
@@ -40,7 +40,7 @@ Windows 10 更新リング用のポリシーと、Windows 10 機能の更新プ�
 
 詳しくは、「[Windows Update for Business を使った更新プログラムの管理](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb)」をご覧ください。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
 Intune で Windows 10 デバイス用の Windows 更新プログラムを使用するには、次の前提条件を満たす必要があります。
 
@@ -68,9 +68,6 @@ Intune で Windows 10 デバイス用の Windows 更新プログラムを使用�
   Windows 10 デバイス向けの "*診断と利用状況データ*" の設定は、手動で構成することも、Windows 10 以降向けの Intune デバイス制限プロファイルを使用することもできます。 デバイス制限プロファイルを使用する場合、[デバイス制限設定](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry)の **[使用状況データの共有]** を **[Basic]** 以上に設定します。 Windows 10 以降のデバイス制限ポリシーを構成する場合、この設定は **[レポートとテレメトリ]** 下に見つかります。
 
   デバイスのプロファイルの詳細については、「[Microsoft Intune でデバイスの制限設定を構成する方法](../configuration/device-restrictions-configure.md)」をご覧ください。
-
-- Azure クラシック ポータルを使用する場合、[設定を Azure portal に移行](#migrate-update-settings-to-the-azure-portal)します。
-
 
 ## <a name="windows-10-update-rings"></a>Windows 10 更新リング
 
@@ -109,7 +106,7 @@ Windows 10 更新プログラムのリングでは、[スコープのタグ](../
 - [延長](#extend)
 - [アンインストール](#uninstall)
 
-![行える操作](./media/windows-update-for-business-configure/overview-actions.png)
+![使用できる操作](./media/windows-update-for-business-configure/overview-actions.png)
 
 #### <a name="delete"></a>削除
 
@@ -124,7 +121,7 @@ Intune からリングを削除しても、更新プログラムのリングが�
 
 #### <a name="pause"></a>一時停止
 
-割り当て済みのデバイスが、リングを一時停止したときから最大 35 日間、機能更新プログラムまたは品質更新プログラムをデバイスで受け取らないようにするには、 **[一時停止]** を選択します。 最大日数が経過すると、一時停止機能の有効期限が自動的に切れ、デバイスによる Windows Update の該当する更新プログラムのスキャンが開始されます。 このスキャン後に、もう一度更新プログラムを一時停止することもできます。
+割り当て済みのデバイスが、リングを一時停止したときから最大 35 日間、機能更新プログラムまたは品質更新プログラムをデバイスで受け取らないようにするには、 **[一時停止]** を選択します。 最大日数が経過すると、一時停止機能の有効期限が自動的に切れ、デバイスによる Windows Update の該当する更新プログラムのスキャンが開始されます。 このスキャンが終ったら、もう一度更新を一時停止することができます。
 一時停止されている更新プログラムのリングを再開した後に、そのリングもう一度一時停止すると、一時停止の期間が 35 日間にリセットされます。
 
 ##### <a name="to-pause-a-ring"></a>リングを一時停止するには
@@ -227,7 +224,7 @@ Windows Update のポリシーの詳細については、Windows クライアン
 
 3. **[基本]** の下で、名前と説明 (省略可能) を指定し、 **[展開する機能更新プログラム]** に対して目的の機能セットを含む Windows のバージョンを選択してから、 **[次へ]** を選択します。
 
-4. **[割り当て]** の下で **[+ 含めるグループを選択]** を選択してから、1 つまたは複数のグループに更新リングを割り当てます。 **[次へ]** を選択して続行します。
+4. **[割り当て]** で **[+ 含めるグループを選択]** を選択した後、1 つまたは複数のグループに機能更新プログラムの展開を割り当てます。 **[次へ]** を選択して続行します。
 
 5. **[確認と作成]** で設定を確認し、Windows 10 機能の更新プログラムのポリシーを保存する準備ができたら **[作成]** を選択します。  
 
@@ -241,18 +238,7 @@ Windows Update のポリシーの詳細については、Windows クライアン
 - **[プロパティ]** を選択して、その展開を変更します。  *[プロパティ]* ウィンドウで **[編集]** を選択すると、" *[展開の設定] または [割り当て]* " が開きます。ここで展開を変更できます。
 - **[エンド ユーザー更新状態]** を選択して、ポリシーに関する情報を表示します。
 
-## <a name="migrate-update-settings-to-the-azure-portal"></a>更新プログラムの設定を Azure portal に移行する
-
-また、Azure クラシック ポータルでは、デバイスの構成プロファイルのその他の Windows 10 更新プログラムの数に制限があります。 Azure portal へ移行するときにこれらのいずれかの設定を構成している場合は、次のアクションを実行することを強くお勧めします。
-
-1. 必要な設定を使用して、Azure ポータルで Windows 10 更新プログラム リングを作成します。 Azure portal では **[プレリリース機能を許可する]** 設定はサポートされていません。これは、最新の Windows 10 ビルドに該当しなくなったためです。 更新リングを作成するとき、他の 3 つの設定と他の Windows 10 更新プログラムの設定を構成できます。
-
-   > [!NOTE]
-   > 従来のポータルで作成した Windows 10 更新プログラム設定は、移行後、Azure Portal に表示されません。 ただし、これらの設定は適用されます。 これらのいずれかの設定を移行し、Azure Portal から移行されたポリシーを編集した場合、これらの設定はポリシーから削除されます。
-
-2. 従来のポータルで更新プログラムの設定を削除します。 Azure ポータルに移行し、同じ設定を更新プログラム リングに追加した後、従来のポータルの設定を削除して潜在的なポリシーの競合を回避する必要があります。 たとえば、同じ設定を異なる値で構成した場合、競合があります。 クラシック ポータルで構成した設定は Azure portal に表示されないため、簡単に把握することができません。
-
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [Intune でサポートされている Windows Update の設定](../windows-update-settings.md)
 

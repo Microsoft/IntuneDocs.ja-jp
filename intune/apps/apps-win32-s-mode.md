@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e17972a3a87bd9c42db54753d4da3bb81703377
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 4b2a6019a0af33cd227d88444bb5ddda5bc22715
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563617"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204903"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>S モード デバイスで Win32 アプリを有効にする
 
@@ -57,7 +57,7 @@ S モードの Windows 10 デバイスで Win32 アプリの実行を許可す�
 
 Windows 10 S モード補足ポリシーを作成するには、次の手順のようにします。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 2. **[アプリ]**  >  **[S モードの補足ポリシー]**  >  **[ポリシーの作成]** を選択します。
 3. **ポリシー ファイル**を追加する前に、作成して署名する必要があります。 詳細については、次をご覧ください。
     - [PowerShell ツールを使用して WDAC ポリシーを作成し、バイナリ形式に変換する](https://go.microsoft.com/fwlink/?linkid=2095387)
@@ -65,11 +65,11 @@ Windows 10 S モード補足ポリシーを作成するには、次の手順の�
 
 4. **[基本]** ページで、次の値を追加します。
 
-    | 値 | 説明 |
+    | 値 | [説明] |
     |--------------|------------------------------------------------|
     | ポリシー ファイル | WDAC ポリシーが含まれるファイル。 |
     | 名前 | このポリシーの名前。 |
-    | 説明 | (省略可能) このポリシーの説明。 |
+    | [説明] | (省略可能) このポリシーの説明。 |
 
 5. **[次へ]:[スコープ タグ]** をクリックします。<br>
    **[スコープ タグ]** ページでは、必要に応じて、スコープ タグを構成することにより、Intune でアプリ ポリシーを表示できるユーザーを決定できます。 スコープのタグの詳細については、[分散 IT のためのロールベースのアクセス制御とスコープのタグの使用](~/fundamentals/scope-tags.md)に関するページをご覧ください。
@@ -91,12 +91,12 @@ Windows 10 S モード補足ポリシーを作成するには、次の手順の�
 
 S モード レポート ポリシーに対して Intune コンソールに表示されるレポート値:
 - **成功**: S モード補足ポリシーは有効になっています。
-- **不明**:S モード補足ポリシーの状態は不明です。
+- **不明**: S モード補足ポリシーの状態は不明です。
 - **TokenError**: S モード補足ポリシーは、構造的には問題ありませんが、トークンの承認に関してエラーがあります。
 - **NotAuthorizedByToken**: そのトークンでは、この S モード補足ポリシーは承認されません。
 - **PolicyNotFound**: S モード補足ポリシーは見つかりません。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - 詳しくは、[S モードでの Win32 アプリ](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/lob-win32-apps-on-s)に関するページをご覧ください。
 - Intune にアプリを追加する方法の詳細については、「[Microsoft Intune にアプリを追加する](apps-add.md)」を参照してください。

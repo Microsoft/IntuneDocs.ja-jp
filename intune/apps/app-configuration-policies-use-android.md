@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80d6068a17e1d278f9226e26c9efab24d597e52e
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: ec80922cf2539fdbacb572fd96c5a5e45549b5c3
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564260"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205039"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>マネージド Android Enterprise デバイス用にアプリ構成ポリシーを追加する
 
@@ -34,15 +34,15 @@ Microsoft Intune でのアプリ構成ポリシーによって、マネージド
 > [!NOTE]  
 > アプリ構成をサポートしていないアプリもあります。 アプリ上でアプリ構成ポリシーがサポートされているかどうかを確認するには、アプリの開発者にお問い合わせください。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) で、 **[アプリ]**  >  **[アプリ構成ポリシー]**  >   **[追加]** を選択します。
-2. 次のプロパティを入力します。
+1. [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) で、 **[アプリ]**  >  **[アプリ構成ポリシー]**  >   **[追加]**  >  **[マネージド デバイス]** を選択します。
+2. 次のプロパティを追加します。
 
-    - **名前**: ポリシーのわかりやすい名前を入力します。 後で簡単に識別できるよう、ポリシーに名前を付けます。 たとえば、適切なポリシー名は、**Android Enterprise Nine Work app policy for entire company (企業全体での Android Enterprise Nine Work アプリ ポリシー)** となります。
+    - **名前**:ポリシーのわかりやすい名前を入力します。 後で簡単に識別できるよう、ポリシーに名前を付けます。 たとえば、適切なポリシー名は、**Android Enterprise Nine Work app policy for entire company (企業全体での Android Enterprise Nine Work アプリ ポリシー)** となります。
     - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
-    - **[デバイス登録の種類]** : **[マネージド デバイス]** を選択します。
+    - **[デバイス登録の種類]** :この設定は、 **[マネージド デバイス]** に設定されています。
     - **[プラットフォーム]** : **[Android]** を選択します。
 
-3. **[関連アプリ]** を選択します。 アプリ構成ポリシーを定義するアプリを選択します。 承認して Intune に同期したマネージド Google Play アプリの一覧から選択します。
+3. **[関連アプリ]** を選択します。 このアプリ構成ポリシーを関連付ける Android アプリを選択します。 [承認して Intune に同期したマネージド Google Play アプリ](~/apps/apps-add-android-for-work.md)の一覧から選択します。
 4. **[アクセス許可]** を選択します。 以下を使用して構成を設定できます。
 
     - [構成デザイナー](#use-the-configuration-designer)
@@ -76,7 +76,7 @@ Microsoft Intune でのアプリ構成ポリシーによって、マネージド
 | メール | john@contoso.com |
 | UPN の一部 | john |
 | ユーザー ID | 3ec2c00f-b125-4519-acf0-302ac3761822 |
-| [ユーザー名] | John Doe |
+| ユーザー名 | John Doe |
 | ユーザー プリンシパル名 | john@contoso.com |
 
 
@@ -110,12 +110,12 @@ Android デバイス機能にアクセスするために、アプリのアクセ
 
 たとえば、アプリでは、デバイスのマイクを使用します。 ユーザーは、マイクを使用するためのアクセス許可をアプリに付与するように求められます。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) で、 **[アプリ]**  >  **[アプリ構成ポリシー]**  >   **[追加]** を選択します。
-2. 次のプロパティを入力します。
+1. [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) で、 **[アプリ]**  >  **[アプリ構成ポリシー]**  >   **[追加]**  >  **[マネージド デバイス]** を選択します。
+2. 次のプロパティを追加します。
 
-    - **名前**: ポリシーのわかりやすい名前を入力します。 後で簡単に識別できるよう、ポリシーに名前を付けます。 たとえば、適切なポリシー名は、**Android Enterprise prompt permissions app policy for entire company (Android Enterprise による企業全体でのアプリ ポリシーへのアクセス許可の要求)** となります。
+    - **名前**:ポリシーのわかりやすい名前を入力します。 後で簡単に識別できるよう、ポリシーに名前を付けます。 たとえば、適切なポリシー名は、**Android Enterprise prompt permissions app policy for entire company (Android Enterprise による企業全体でのアプリ ポリシーへのアクセス許可の要求)** となります。
     - **説明**。 プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
-    - **[デバイス登録の種類]** : **[マネージド デバイス]** を選択します。
+    - **[デバイス登録の種類]** :この設定は、 **[マネージド デバイス]** に設定されています。
     - **[プラットフォーム]** : **[Android]** を選択します。
 
 3. **[関連アプリ]** を選択します。 構成ポリシーを定義するアプリを選択します。 承認して Intune に同期した Android 仕事用プロファイル アプリの一覧から選択します。
@@ -132,6 +132,6 @@ Android デバイス機能にアクセスするために、アプリのアクセ
 - [マネージド Google Play アプリを Android Enterprise デバイスに割り当てる](apps-add-android-for-work.md#assigning-a-managed-google-play-app-to-android-enterprise-work-profile-devices)
 - [iOS および Android 用 Outlook のアプリ構成設定の展開](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 アプリの[割り当て](apps-deploy.md)と[監視](apps-monitor.md)に進みます。

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24f15cb179dfc2b12b642f5f196d04dce58d4377
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5c18f3e8fb14d8592789b39856ec420790fad286
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505202"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547555"
 ---
 # <a name="create-a-design"></a>設計の作成
 
@@ -84,7 +84,7 @@ Intune の設計は、[このガイドの他のセクション](../planning-guid
 
   - PC およびサーバーの環境をどのように管理しているか
 
-  - System Center Configuration Manager を使っているか サードパーティ製のシステム管理プラットフォームを使っているか
+  - Microsoft Endpoint Configuration Manager を使用しているか サードパーティ製のシステム管理プラットフォームを使っているか
 
 - **VPN ソリューション**
 
@@ -101,7 +101,7 @@ Intune の設計は、[このガイドの他のセクション](../planning-guid
 | **SharePoint** | オンプレミスの SharePoint | SharePoint Online への移行計画はなし |  
 | **現在の MDM** | Exchange ActiveSync |  |
 | **証明書ソリューション** | Microsoft Server 2012 R2、AD 証明書サービス | Web サイト サーバー用に PKI のみを使用 |
-| **システム管理** | System Center Configuration Manager CB 1606 | Intune ハイブリッド ソリューションの調査を希望 |
+| **システム管理** | Configuration Manager CB 1606 | Intune ハイブリッド ソリューションの調査を希望 |
 | **VPN ソリューション** | Cisco AnyConnect |  |
 
 
@@ -109,7 +109,7 @@ Intune の設計は、[このガイドの他のセクション](../planning-guid
 
 ## <a name="choose-an-intune-deployment-option"></a>Intune の展開オプションを選択する
 
-Intune には、スタンドアロンとハイブリッドの 2 種類の展開オプションがあります。 スタンドアロンとはクラウドで実行されている Intune サービスのことであり、ハイブリッドとは Intune と System Center Configuration Manager が統合されたものです。 このガイドは、基本的にスタンドアロン オプション用です。 [どちらのオプションがビジネス要件に合うかを判断する](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)には、こちらをご覧ください。
+Intune には、スタンドアロンとハイブリッドの 2 種類の展開オプションがあります。 スタンドアロンとはクラウドで実行されている Intune サービスのことであり、ハイブリッドとは Intune と Configuration Manager が統合されたものです。 このガイドは、基本的にスタンドアロン オプション用です。 [どちらのオプションがビジネス要件に合うかを判断する](https://docs.microsoft.com/configmgr/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)には、こちらをご覧ください。
 
 > [!Important]
 >新規のハイブリッド MDM の顧客のオンボーディングは非推奨となりました。 詳細については、「[Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150)」 (ハイブリッド MDM から Azure での Intune に移行する) のブログ記事を参照してください。
@@ -184,9 +184,9 @@ VPN、Wi-Fi、または Intune での電子メール プロファイルで証明
 
 デバイスの次の側面について詳細に検討し、デバイスを正しく管理する方法を理解してください。
 
-- サポートされるデバイス プラットフォーム
+- サポートされているデバイス プラットフォーム
 
-- [デバイス]
+- デバイス
 
 - デバイスの所有権
 
@@ -200,7 +200,7 @@ VPN、Wi-Fi、または Intune での電子メール プロファイルで証明
 
 [Intune でサポートされているデバイスの完全な一覧](supported-devices-browsers.md)については、こちらをご覧ください。
 
-### <a name="devices"></a>[デバイス]
+### <a name="devices"></a>デバイス
 
 Intune は、モバイル デバイスを管理して、企業のデータをセキュリティで保護し、エンド ユーザーがより多くの場所から作業できるようにします。 Intune は多数のデバイス プラットフォームをサポートしているので、組織の設計でサポートされるデバイスおよび OS プラットフォームとバージョンを文書化することをお勧めします。 次に例を示します。
 
@@ -376,14 +376,14 @@ Intune では、複数の方法でユーザーまたはデバイスにアプリ�
 
 アプリ保護ポリシーは、アプリケーションが企業データを管理する方法を定義することによって、データの損失を最小限に抑えます。 Intune は、モバイル アプリ管理で機能するように構築された任意のアプリケーションのアプリ保護ポリシーをサポートします。 アプリ保護ポリシーを設計するときは、特定のアプリで会社のデータに設ける制限を決める必要があります。 [アプリ保護ポリシー](../apps/app-protection-policy.md)がどのように機能するか確認することをお勧めします。 既存のアプリケーションおよび必要な保護を文書化する方法の例を以下に示します。
 
-| **アプリケーション** | **目的** | **プラットフォーム** | **ユース ケース** | **アプリ保護ポリシー** |
+| **アプリケーション**。 | **目的** | **プラットフォーム** | **ユース ケース** | **アプリ保護ポリシー** |
 |:---:|:---:|:---:|:---:|:---:|
 | Outlook Mobile  | 利用可能 | iOS | 企業 - エグゼクティブ | 脱獄不可、ファイルを暗号化 |                                                         
 | Word | 利用可能 | iOS、Android - Samsung Knox、非 Knox、Windows 10 Mobile | 企業、BYOD | 脱獄不可、ファイルを暗号化 |                                                         
 
 
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、アプリ保護ポリシーのニーズを確認することができます。
-#### <a name="compliance-policies"></a>Compliance ポリシー
+#### <a name="compliance-policies"></a>コンプライアンス ポリシー
 
 コンプライアンス ポリシーは、デバイスが特定の要件に準拠しているかどうかを決定します。 Intune では、コンプライアンス ポリシーを使って、デバイスが準拠または非準拠のどちらと見なされるかを判断します。 準拠状態は、企業リソースへのアクセスを制限または許可するために使用できます。 条件付きアクセスが必要な場合は、[デバイス コンプライアンス ポリシー](../protect/device-compliance-get-started.md)を設計することをお勧めします。
 
@@ -414,6 +414,6 @@ Intune では、複数の方法でユーザーまたはデバイスにアプリ�
 
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、条件付きアクセス ポリシーのニーズを確認することができます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 次のセクションでは、[Intune の実装プロセス](planning-guide-onboarding.md)に関するガイダンスについて説明します。

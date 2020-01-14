@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cef30238a4470395ccf58cf4d0619db78dd85b5a
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 3da8e89679f974c7d91cf19ae37365f75217d153
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563460"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548016"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Intune で Windows 10 デバイスに対して PowerShell スクリプトを使用する
 
@@ -40,7 +40,7 @@ Microsoft Intune などの MDM サービスでは、Windows 10 を実行する�
 
 Intune 管理拡張機能は、Windows 10 MDM の標準機能を補完するものです。 PowerShell スクリプトを作成し、Windows 10 デバイスで実行することができます。 たとえば、高度なデバイス構成を行う PowerShell スクリプトを作成します。 その後、スクリプトを Intune にアップロードし、Azure Active Directory (AD) グループにスクリプトを割り当てて、スクリプトを実行します。 スクリプトの実行状態を最初から完了まで監視できます。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
 Intune 管理拡張機能には次の前提条件があります。 前提条件が満たされると、PowerShell スクリプトまたは Win32 アプリがユーザーやデバイスに割り当てられたときに、Intune 管理拡張機能が自動的にインストールされます。
 
@@ -64,9 +64,9 @@ Intune 管理拡張機能には次の前提条件があります。 前提条件
 
   - Configuration Manager と Intune を使用して共同管理しているデバイス。 **[アプリ]** のワークロードが **[パイロット Intune]** または **[Intune]** に設定されていることを確認します。 ガイダンスについては、次の記事を参照してください。 
   
-    - [共同管理とは](https://docs.microsoft.com/sccm/comanage/overview) 
-    - [クライアント アプリ ワークロード](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
-    - [Configuration Manager のワークロードを Intune に切り替える](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+    - [共同管理とは](https://docs.microsoft.com/configmgr/comanage/overview) 
+    - [クライアント アプリ ワークロード](https://docs.microsoft.com/configmgr/comanage/workloads#client-apps)
+    - [Configuration Manager のワークロードを Intune に切り替える方法](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads)
   
 > [!TIP]
 > 必ずデバイスを Azure AD に[参加](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)させます。 Azure AD への[登録](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)のみが行われているデバイスは、スクリプトを受信しません。
@@ -79,7 +79,7 @@ Intune 管理拡張機能には次の前提条件があります。 前提条件
     ![Microsoft Intune で PowerShell スクリプトを追加および使用する](./media/intune-management-extension/mgmt-extension-add-script.png)
 
 3. **[基本]** で、次のプロパティを入力し、 **[次へ]** を選択します。
-    - **名前**: PowerShell スクリプトの名前を入力します。 
+    - **名前**:PowerShell スクリプトの名前を入力します。 
     - **説明**:PowerShell スクリプトの説明を入力します。 この設定は省略可能ですが、推奨されます。
 4. **[スクリプト設定]** で、次のプロパティを入力し、 **[次へ]** を選択します。
     - **スクリプトの場所**: PowerShell スクリプトを参照します。 スクリプトは 200 KB (ASCII) 未満とする必要があります。
@@ -91,7 +91,7 @@ Intune 管理拡張機能には次の前提条件があります。 前提条件
 
       | 64 ビットの PS ホストでスクリプトを実行する | クライアント アーキテクチャ | 新しい PS スクリプト | 既存のポリシー PS スクリプト |
       | --- | --- | --- | --- | 
-      | [いいえ] | 32 ビット  | 32 ビットの PS ホストがサポートされる | 32 ビットおよび 64 ビットのアーキテクチャで動作する 32 ビット PS ホストでのみ実行されます。 |
+      | いいえ | 32 ビット  | 32 ビットの PS ホストがサポートされる | 32 ビットおよび 64 ビットのアーキテクチャで動作する 32 ビット PS ホストでのみ実行されます。 |
       | はい | 64 ビット | 64 ビット アーキテクチャ用の 64 ビットの PS ホストでスクリプトが実行されます。 32 ビット上で実行した場合、スクリプトは 32 ビットの PS ホストで実行されます。 | 32 ビットの PS ホストでスクリプトが実行されます。 この設定が 64 ビットに変更されると、スクリプトは 64 ビットの PS ホストで開き (実行されない)、スクリプトから結果がレポートされます。 32 ビット上で実行した場合、スクリプトは 32 ビットの PS ホストで実行されます。 |
 
 5. **[スコープ タグ]** を選択します。 スコープ タグは省略可能です。 「[Use role-based access control (RBAC) and scope tags for distributed IT](../fundamentals/scope-tags.md)」 (分散 IT にロールベースのアクセス制御 (RBAC) とスコープ タグを使用する) に詳細情報が含まれています。
@@ -134,7 +134,7 @@ Azure Portal でユーザーとデバイスの PowerShell スクリプトの実�
 
 ## <a name="intune-management-extension-logs"></a>Intune 管理拡張機能のログ
 
-クライアント コンピューター上のエージェント ログは、一般的に `\ProgramData\Microsoft\IntuneManagementExtension\Logs` にあります。 [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) を使用してこれらのログ ファイルを表示できます。 
+クライアント コンピューター上のエージェント ログは、一般的に `\ProgramData\Microsoft\IntuneManagementExtension\Logs` にあります。 [CMTrace.exe](https://docs.microsoft.com/configmgr/core/support/cmtrace) を使用してこれらのログ ファイルを表示できます。
 
 ![Microsoft Intune での cmtrace エージェント ログのスクリーンショットまたはサンプル](./media/apps-win32-app-management/apps-win32-app-10.png)  
 
@@ -221,6 +221,6 @@ Azure Portal でユーザーとデバイスの PowerShell スクリプトの実�
     &$AgentExec -powershell  $scriptPath $outputPath $errorPath $timeoutPath $timeoutVal $PSFolder 0 0
     ```
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 プロファイルを[監視](../device-profile-monitor.md)して[トラブルシューティング](../device-profile-troubleshoot.md)します。

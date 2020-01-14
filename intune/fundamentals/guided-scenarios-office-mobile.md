@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd02e2b7f9582308109d1e6986d7e6a8014e5af7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3399cf006543c0a3554c4c6ec812554462d74231
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585710"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691820"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>ガイド付きシナリオ - Microsoft Office モバイル アプリをセキュリティで保護する 
 
@@ -46,7 +46,7 @@ Office モバイル アプリおよびモバイル用 Microsoft Edge では、�
 [Intune アプリ保護ポリシー](~/apps/app-protection-policy.md)は、Intune に登録されたデバイス上の作業ファイルを保護するのに役立ちます。 Intune での管理対象に登録されていない従業員所有のデバイスでも、アプリ保護ポリシーを使用できます。 この場合、会社ではデバイスが管理されていなくても、作業ファイルとリソースが保護されるようにする必要があります。
 
 アプリ保護ポリシーを使用すると、ユーザーが保護されていない場所に作業ファイルを保存できないようにすることができます。 また、アプリ保護ポリシーで保護されていない他のアプリへのデータ移動を制限できます。 アプリ保護ポリシー設定には以下のようなものがあります。
-- 名前を付けて保存の禁止や、切り取り、コピー、貼り付けの制限などの、データ再配置ポリシー。
+- **組織データのコピーを保存**や**切り取り、コピー、貼り付けの制限**などの、データ再配置ポリシー。
 - アクセスにシンプルな PIN を要求し、脱獄またはルート化されたデバイスでのマネージド アプリの実行を禁止する、アクセス ポリシーの設定。
 
 アプリ ベースの条件付きアクセスとクライアント アプリ管理は、Intune アプリ保護ポリシーをサポートするクライアント アプリのみが Exchange Online やその他の Office 365 サービスにアクセスできるようにすることで、セキュリティ層を追加します。
@@ -57,7 +57,7 @@ Microsoft Outlook アプリのみが Exchange Online にアクセスできるよ
 
 ![Outlook アプリの条件付きアクセス プロセスのフロー](./media/guided-scenarios-office-mobile/guided-scenarios-office-mobile-02.png)
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
 以下の Intune 管理者アクセス許可が必要です。
 
@@ -105,7 +105,7 @@ Microsoft Outlook アプリのみが Exchange Online にアクセスできるよ
 
 このステップでは、これらのアプリでの会社のファイルやメールのアクセスや共有に対する要件を構成する必要があります。 既定では、ユーザーは組織の OneDrive および SharePoint アカウントにデータを保存できます。
 
-| 設定 | 説明 | 既定値 |
+| 設定 | [説明] | 既定値 |
 |---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
 | PIN の種類 | 数値の PIN は、すべての数字で構成されます。 パスコードは、英数字と特殊文字で構成されます。  iOS/iPadOS で "パスコード" の種類を構成するには、アプリに Intune SDK バージョン 7.1.12 以降が必要です。 数値型には、Intune SDK バージョンの制限はありません。 | Numeric |
 | PIN の最小長を選択 | PIN シーケンスの最小桁数を指定します。 | 6 |
@@ -126,7 +126,7 @@ Microsoft Outlook アプリのみが Exchange Online にアクセスできるよ
 
 > [!IMPORTANT]
 > ガイド付きシナリオが完了すると、概要が表示されます。 概要の一覧で示されているリソースを後で変更できますが、これらのリソースが表示されているテーブルは保存されません。
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - ユーザーにアプリ ベースの条件付きアクセス ポリシーを割り当て、クラウド サービスから保護されていないアプリに作業ファイルが送信されないようにすることで、作業ファイルのセキュリティを強化します。 詳細については、「[Intune を使用してアプリベースの条件付きアクセス ポリシーを設定する](~/protect/app-based-conditional-access-intune-create.md)」を参照してください。
 

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,30 +16,31 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dcdc2b69de52ea3bf23f4e3c5d11399b62bc8daa
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9a62cc6ef2f1b3bd6f305fe6fa23a24f95d3dd37
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414086"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207360"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Intune にデバイスを登録できるようにライセンスをユーザーに割り当てる
 
 ユーザーを手動で追加する場合も、オンプレミスの Active Directory から同期する場合も、まず各ユーザーに Intune のライセンスを割り当ててから、Intune にデバイスを登録する必要があります。 ライセンスのリストについては、「[Licenses that include Intune](../licenses.md)」 (Intune が含まれているライセンス) を参照してください。
 
-## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで、Intune のライセンスを割り当てる
+> [!NOTE]
+> Intune アプリ保護ポリシーを割り当てられていて、Microsoft Intune にデバイスを登録していないユーザーも、ポリシーを受け取るには Intune ライセンスが必要です。 
 
-[Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?LinkId=698854)を使用して、手動でクラウドベースのユーザーを追加し、クラウドベースのユーザー アカウントと、オンプレミスの Active Directory から Azure AD に同期されているアカウントの両方にライセンスを割り当てることができます。
+## <a name="assign-an-intune-license-microsoft-endpoint-manager-admin-center"></a>Microsoft Endpoint Manager Admin Center で Intune のライセンスを割り当てる
 
-1. テナント管理者の資格情報を使用して [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?LinkId=698854)にサインインした後、 **[ユーザー]**  >  **[アクティブ ユーザー]** の順に選択します。
+[Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) を使用して、手動でクラウドベースのユーザーを追加し、クラウドベースのユーザー アカウントと、オンプレミスの Active Directory から Azure AD に同期されているアカウントの両方にライセンスを割り当てることができます。
 
-2. Intune ユーザー ライセンスを割り当てるユーザー アカウントを選択し、 **[製品ライセンス]**  >  **[編集]** の順に選択します。
+1. [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) で、 **[ユーザー]**  >  **[すべてのユーザー]** を選択し、ユーザーを選択して、 **[ライセンス]**  >  **[割り当て]** を選択します。
 
-3. **Intune** または **Enterprise Mobility + Security** を **[オン]** に切り替えて、 **[保存]** を選択します。
+2. **[Intune]**  >  **[保存]** を選択します。
 
-   ![Microsoft 365 管理センターの [製品ライセンス] セクションのスクリーンショット](./media/licenses-assign/office-assign-license.png)
+   ![Microsoft 365 管理センターの [製品ライセンス] セクションのスクリーンショット](./media/licenses-assign/mem-assign-license.png)
 
-4. ユーザー アカウントが、サービスを使用してデバイスを管理に登録するために必要なアクセス許可を持つようになります。
+3. ユーザー アカウントが、サービスを使用してデバイスを管理に登録するために必要なアクセス許可を持つようになります。
 
 > [!NOTE]
 > ユーザーは、Intune PC クライアントを使用してデバイスを登録した後にのみ、クラシック Intune ポータルに表示されます。 また、編集するユーザーのグループを一度に選択して、選択したすべてのユーザーに対してライセンスを追加したり交換することができます。

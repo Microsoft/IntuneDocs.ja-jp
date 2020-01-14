@@ -16,15 +16,15 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d7b8d96ae1582b5cb434c80d44ef55a31c4781b
-ms.sourcegitcommit: 0a85af9d584709ecc29062f91645a4c47a61ebb9
+ms.openlocfilehash: 23708968ac229c2721635d9fc31527558e9bd3d2
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882294"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547485"
 ---
 # <a name="microsoft-intune-licensing"></a>Microsoft Intune のライセンス
-Microsoft Intune は、学校や中小企業のための使いやすい管理機能から大企業が必要とする高度な機能まで、さまざまな顧客のニーズと組織の規模に合わせて利用できます。 Microsoft Intune が含まれるライセンスのほとんどでは、サブスクリプションが有効である限り、System Center Configuration Manager を使用する権限も与えられます。 
+Microsoft Intune は、学校や中小企業のための使いやすい管理機能から大企業が必要とする高度な機能まで、さまざまな顧客のニーズと組織の規模に合わせて利用できます。 Microsoft Intune が含まれるライセンスのほとんどでは、サブスクリプションが有効である限り、Microsoft Endpoint Configuration Manager を使用する権限も与えられます。 
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 Intune は次のライセンスに含まれています。

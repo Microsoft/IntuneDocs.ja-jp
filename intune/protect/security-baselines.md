@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d3a2ce9e5a31e989452141a094b70b5e75cf464
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 04436c38fc6c4100a8232ea1ad23585f350d6aae
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74409998"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548150"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune でのセキュリティ ベースラインを使用した Windows 10 デバイスの構成
 
@@ -95,7 +95,7 @@ Intune では、次のセキュリティ ベースラインのインスタンス
 - [ベースラインの割り当てを削除](#remove-a-security-baseline-assignment) - セキュリティ ベースラインで設定の管理を停止した場合の動作について説明します。
 
 
-### <a name="prerequisites"></a>必要条件
+### <a name="prerequisites"></a>[前提条件]
 
 - Intune でベースラインを管理するには、アカウントに [[Policy and Profile Manager]\(ポリシーとプロファイル マネージャー\)](../fundamentals/role-based-access-control.md#built-in-roles) 組み込みロールが必要です。
 
@@ -113,7 +113,7 @@ Intune では、次のセキュリティ ベースラインのインスタンス
 
 4. **[基本]** タブ上で、次のプロパティを指定します。
 
-   - **名前**: セキュリティのベースライン プロファイルの名前を入力します。 たとえば、「*Standard profile for Defender ATP*」(Defender ATP 用の標準プロファイル) と入力します。
+   - **名前**:セキュリティのベースライン プロファイルの名前を入力します。 たとえば、「*Standard profile for Defender ATP*」(Defender ATP 用の標準プロファイル) と入力します。
 
    - **説明**:このベースラインの実行内容を説明するテキストを入力します。 この説明には、任意のテキストを入力できます。 省略可能ですが、入力することをお勧めします。
 
@@ -192,9 +192,9 @@ Intune では、次のセキュリティ ベースラインのインスタンス
 
 ## <a name="co-managed-devices"></a>共同管理デバイス
 
-Intune マネージド デバイスに関するセキュリティのベースラインは、Configuration Manager との共同マネージド デバイスと似ています。 共同マネージド デバイスでは、System Center Configuration Manager と Microsoft Intune を使用して Windows 10 デバイスを同時に管理します。 これにより、既存の Configuration Manager への投資を Intune のメリットへとクラウドで結び付けることができます。 Configuration Manager を使用していて、クラウドのメリットも必要な場合、[共同管理の概要](https://docs.microsoft.com/sccm/comanage/overview)に関するページは優れたリソースです。
+Intune マネージド デバイスに関するセキュリティのベースラインは、Configuration Manager との共同マネージド デバイスと似ています。 共同マネージド デバイスでは、Configuration Manager と Microsoft Intune を使用して Windows 10 デバイスが同時に管理されます。 これにより、既存の Configuration Manager への投資を Intune のメリットへとクラウドで結び付けることができます。 Configuration Manager を使用していて、クラウドのメリットも必要な場合、[共同管理の概要](https://docs.microsoft.com/configmgr/comanage/overview)に関するページは優れたリソースです。
 
-共同マネージド デバイスを使用する場合は、 **[デバイス構成]** ワークロード (その設定) を Intune に切り替える必要があります。 詳細については、[デバイス構成ワークロード](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration)に関するセクションを参照してください。
+共同マネージド デバイスを使用する場合は、 **[デバイス構成]** ワークロード (その設定) を Intune に切り替える必要があります。 詳細については、[デバイス構成ワークロード](https://docs.microsoft.com/configmgr/comanage/workloads#device-configuration)に関するセクションを参照してください。
 
 ## <a name="q--a"></a>Q & A
 
@@ -218,7 +218,7 @@ Microsoft セキュリティ チームは、これらの推奨事項を作成す
 
 - Microsoft Intune と共に Azure Active Directory (AD) を使用して、オンプレミスの Active Directory グループ ポリシーから純粋なクラウド ソリューションに移行することは、1 つの旅です。 サポートのために、[Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) にはグループ ポリシー テンプレートが含まれています。これは、ハイブリッド AD と Azure AD 参加済みデバイスの管理に役立ちます。 このようなデバイスは、必要に応じてクラウド (Intune) から MDM 設定を取得し、オンプレミス ドメイン コントローラーからグループ ポリシー設定を取得できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - 利用可能なベースラインの最新バージョンの設定を確認します。
   - [MDM セキュリティ ベースライン](security-baseline-settings-mdm-all.md)

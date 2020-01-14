@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b2083a493fd723c649bdfe2b709dbaa4c0ec663
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: baeece091358a7cd05f0d1f8db7c0032870fc262
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810267"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207096"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>ネットワーク アクセス制御 (NAC) と Intune の統合
 
 Intune はネットワーク アクセス制御パートナーと統合して、デバイスがオンプレミスのリソースにアクセスするときに、会社のデータが保護されるようにします。
+
+>[!IMPORTANT]
+> 現在、NAC は、Android Enterprise フル マネージド デバイスまたは Android Enterprise 専用デバイスではサポートされていません。
 
 ## <a name="how-do-intune-and-nac-solutions-help-protect-your-organization-resources"></a>Intune と NAC ソリューションが組織のリソースを保護する方法
 
@@ -92,7 +95,7 @@ NAC は条件付きアクセスと連携して、アクセス制御の決定を�
 
 これらの新しいクライアント用の NAC ソリューションをリリースするために、パートナーと協力して作業しています。 この記事は、ソリューションの準備が整ったら、情報を追加して更新されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Cisco ISE と Intune を統合する](https://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 - [Citrix NetScaler と Intune を統合する](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)

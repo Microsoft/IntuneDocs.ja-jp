@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43e411b5619c2a2232231ef113b550fc2f20a2a0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ea33ae26983b33a1642d364281ed146a8a10184d
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74199162"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692233"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Microsoft Outlook の構成設定 
 
@@ -39,6 +39,6 @@ Intune で構成ポリシーを追加するときに、iOS および Android 用
 
 iOS および Android 用 Outlook でサポートされるアプリ構成設定に関する特定の手順と詳細なドキュメントについては、「[Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)」 (iOS および Android 用 Outlook のアプリ構成設定の展開) を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - 詳細については、「[Microsoft Intune 用アプリ構成ポリシー](app-configuration-policies-overview.md)」を参照してください。

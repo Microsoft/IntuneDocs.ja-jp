@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19d02694ab5e53dc43e0861c6a427a044bf50648
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a01b6643de2dd75c41aec0806b97df6154d99a7a
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502640"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547773"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>モバイル デバイス管理機関の設定
 
@@ -34,7 +34,7 @@ ms.locfileid: "72502640"
 
 - **Intune スタンドアロン** - Azure Portal を利用して構成する、クラウドのみの管理。 Intune で提供される機能がすべて含まれます。 [Intune コンソールで MDM 機関を設定](#set-mdm-authority-to-intune)します。
 
-- **Intune 共同管理** - Intune クラウド ソリューションと Windows 10 用 System Center Configuration Manager デバイスの統合。 Configuration Manager コンソールを使用して Intune を構成します。 [Intune へのデバイスの自動登録を構成します](https://docs.microsoft.com/sccm/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune)。 
+- **Intune 共同管理** - Intune クラウド ソリューションと Windows 10 用 Configuration Manager デバイスの統合。 Configuration Manager コンソールを使用して Intune を構成します。 [Intune へのデバイスの自動登録を構成します](https://docs.microsoft.com/configmgr/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune)。 
 
     > [!Important]
     >新規のハイブリッド MDM の顧客のオンボーディングは非推奨となりました。 詳細については、「[Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150)」 (ハイブリッド MDM から Azure での Intune に移行する) のブログ記事を参照してください。
@@ -45,9 +45,9 @@ ms.locfileid: "72502640"
 
 ## <a name="set-mdm-authority-to-intune"></a>MDM 機関を Intune に設定する
 
-MDM 機関をまだ設定していない場合は、次の手順に従います。 SCCM から変更するには、「[ハイブリッド MDM のユーザーとデバイスを Intune スタンドアロンに移行する](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)」を参照してください。
+MDM 機関をまだ設定していない場合は、次の手順に従います。 SCCM から変更するには、「[ハイブリッド MDM のユーザーとデバイスを Intune スタンドアロンに移行する](https://docs.microsoft.com/configmgr/mdm/deploy-use/migrate-hybridmdm-to-intunesa)」を参照してください。
 
-1. [Azure portal 内の Intune ](https://aka.ms/intuneportal) で、オレンジのバナーを選択して **[モバイル デバイス管理機関]** 設定を開きます。 オレンジのバナーは、MDM 機関をまだ設定していない場合にのみ表示されます。
+1. [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) で、オレンジのバナーを選択して **[モバイル デバイス管理機関]** の設定を開きます。 オレンジのバナーは、MDM 機関をまだ設定していない場合にのみ表示されます。
 2. **[モバイル デバイス管理機関]** で、次の選択肢から MDM 機関を選択します。
    - **Intune MDM 機関**
    - **なし**
@@ -101,7 +101,7 @@ MDM 機関を [不明] に戻すことはできません。 MDM 機関は、登�
 
 - ユーザーが新しい MDM 機関にすぐに変更するには、デバイスからサービスへのチェックインを手動で開始します。 ポータル サイト アプリを使用して、デバイス コンプライアンス チェックを開始することで、ユーザーはこの変更を簡単に実行できます。
 - MDM 機関の変更後に、デバイスがサービスにチェックインして同期した後に、正常に動作していることを確認するには、Configuration Manager コンソールでそのデバイスを探します。 Intune で管理されていたデバイスが、Configuration Manager でマネージド デバイスとして表示されるようになります。    
-- MDM 機関の変更中にデバイスがオフラインだったときから、デバイスがサービスにチェックインするまでは中間期間があります。 この中間期間にも確実にデバイスを保護し、利用できるように、最大 7 日間 (またはデバイスが新しい MDM 機関に接続し、新しい設定を受信して既存の設定が上書きされるまで)、次のプロファイルがデバイスに残ります。
+- MDM 機関の変更中にデバイスがオフラインだったときから、デバイスがサービスにチェックインするまでは中間期間があります。 この中間期間にも確実にデバイスが保護され利用できるように、次のプロファイルが最大 7 日間 (またはデバイスが新しい MDM 機関に接続し、新しい設定を受信して既存の設定が上書きされるまで)、デバイスに残ります。
   - 電子メール プロファイル
   - VPN プロファイル
   - 証明書プロファイル
@@ -119,6 +119,6 @@ MDM 機関を [不明] に戻すことはできません。 MDM 機関は、登�
   - 管理コンソールからデバイスに対して、リモート ロックなどのアクションを実行します。 成功した場合、そのデバイスは新しい MDM 機関で管理されていることを示します。
 - 特定のデバイスで問題がある場合、できるだけ早くデバイスを新しい機関に接続し、管理対象にするには、そのデバイスの登録を解除してから再登録します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 MDM 機関が設定されると、[デバイスの登録](../enrollment/device-enrollment.md)を開始することができます。

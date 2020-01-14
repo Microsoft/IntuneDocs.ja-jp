@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8dd7127594a0e23c85b9f8141ce6d398d9a447a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e1cf0a3d8b30955be8413b376acd223a924be843
+ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72794460"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75545932"
 ---
 # <a name="add-mobile-threat-defense-apps-to-unenrolled-devices"></a>Mobile Threat Defense アプリを未登録のデバイスに追加する
 
@@ -34,7 +34,7 @@ ms.locfileid: "72794460"
 必要に応じて、Intune を使用し、Microsoft Authenticator アプリと Mobile Threat Defense (MTD) アプリを追加して展開できます。
 
 > [!NOTE] 
-> この記事は、アプリ保護ポリシーをサポートするすべての Mobile Threat Defense パートナーに適用されます。Better Mobile (Android)、Zimperium (iOS)、Lookout for Work (Android/iOS) です。
+> この記事は、アプリ保護ポリシーをサポートするすべての Mobile Threat Defense パートナーに適用されます。Better Mobile (Android)、Zimperium (Android、iOS)、Lookout for Work (Android、iOS) です。
 > 
 > 未登録のデバイスについては、Intune で使用する Mobile Threat Defense for iOS アプリを設定する **iOS アプリ構成ポリシーは必要ありません**。 Intune 登録デバイスと比較したとき、これが大きな違いです。 
 
@@ -76,8 +76,8 @@ Mobile Threat Defense で Intune アプリ保護ポリシーを使用すると�
   - See the instructions for [adding iOS store apps to Microsoft Intune](../apps/store-apps-ios.md). Use this [Check Point SandBlast Mobile - App Store URL](https://apps.apple.com/us/app/sandblast-mobile-protect/id1006390797) when completing the **Configure app information** section. -->
 
 ### <a name="making-zimperium-available-to-end-users"></a>Zimperium をエンド ユーザーが入手できるようにする
-<!-- - **Android**
-  - See the instructions for [adding Android store apps to Microsoft Intune](../apps/store-apps-android.md). Use this [Zimperium - Play Store URL](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en) when completing the **Configure app information** section. -->
+- **Android**
+  - Android ストア アプリを Microsoft Intune に追加する方法については、[こちら](../apps/store-apps-android.md)をご覧ください。 「**アプリ情報を構成する**」セクションで情報を入力するときは、この [Zimperium - Play ストア URL](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en) を使用します。
 - **Android**
   - iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](../apps/store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションで情報を入力するときは、この [Zimperium - アプリ ストア URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8) を使用します。
  
@@ -108,7 +108,7 @@ Mobile Threat Defense で Intune アプリ保護ポリシーを使用すると�
 - **iOS**
   - See the instructions for [adding iOS store apps to Microsoft Intune](../apps/store-apps-ios.md). Use this [Wandera Mobile - - App Store URL](https://itunes.apple.com/app/wandera/id605469330) when completing the **Configure app information** section. -->
 
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a>次のステップ  
 
 - [未登録デバイスに対して Intune で Mobile Threat Defense コネクタを有効にする](~/protect/mtd-enable-unenrolled-devices.md)
 

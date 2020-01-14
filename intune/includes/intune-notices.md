@@ -1,20 +1,36 @@
 ---
 title: ファイルを含める
-description: ファイルを含める
+description: インクルード ファイル
 author: ErikjeMS
 ms.service: microsoft-intune
 ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 7373ca24c1ae1f439096d9bedcb8e81979c95586
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0c64f9a6afc054a3d22518c4305bda62a36d67c7
+ms.sourcegitcommit: 8ab98c2773f112f5cf2d817c170633b15de3dec2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74828878"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75323054"
 ---
 以下の通知では、今後の Intune の変更と機能に備えるために役立つ重要な情報が提供されます。
+
+### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>更新された機能: Intune に追加される新しい RBAC ロール<!--4253397-->
+Intune の 1 月のサービス更新プログラムでは、Intune での新しいセキュリティ ロールをリリースする予定です。 このロールは、Intune では "Endpoint Security Manager" (エンドポイント セキュリティ マネージャー) と表示され、Azure AD の "セキュリティ管理者" ロールを拡張したものです。
+ 
+#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
+現在、セキュリティ担当者に対して Azure AD で利用できるロールは 3 つあります。
+- Azure AD のセキュリティ閲覧者ロール。Intune への読み取り専用アクセスを提供します。
+- Azure AD のセキュリティ オペレーター ロール。Intune への読み取り専用アクセスを提供します。
+- Azure AD のセキュリティ管理者。 Intune の 1 月の更新プログラムで Intune に対する読み取り専用アクセス許可が配布されると、エンドポイント セキュリティ マネージャー ロールによって提供される新しいアクセス許可は次のようになります。
+    - デバイス コンプライアンス ポリシーの読み取り、作成、更新、削除、割り当て
+    - マネージド デバイスの読み取り、削除、更新
+    - セキュリティ ベースラインの読み取り、作成、更新、削除、割り当て
+    - セキュリティ タスクの読み取りと更新
+ 
+### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
+今すぐ Intune の RBAC ロールを確認してください。 現在、ロールとしてグローバル管理者のみを使用している場合、変更は必要ありません。 ロールを使用し、エンドポイント セキュリティ マネージャーで提供される粒度が必要な場合は、使用可能であればそのロールを割り当てます。 Intune の最新のリリース情報については、Intune の[新機能](../fundamentals/whats-new.md)に関するページをご覧ください。 
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>'Adobe Acrobat Reader for Intune' モバイル アプリのサポート ステートメントが更新されました<!--5746776-->
 8 月の終わりに、MC188653 で、Adobe Acrobat Reader for Intune モバイル アプリが 2019 年 12 月 1 日に有効期限終了になり、Adobe が同社のメインの Acrobat Reader アプリ内で Intune のアプリ保護ポリシーのサポートを計画していることをお知らせしました。 その後、お客様から、IT 管理者が引き続きターゲットを指定して、エンド ユーザーが Adobe Acrobat Reader for Intune の使用を開始できるようにするために、もっと時間を提供してもらう必要があるというフィードバックを受け取りました。 エンド ユーザーのデバイスで Adobe Acrobat Reader for Intune の使用率が高く、エンタープライズ シナリオでのその重要性を考慮すると、あらゆるエクスペリエンスが、組織のアプリ保護のニーズを満たすようにする必要があります。 
@@ -39,25 +55,6 @@ Windows Phone 8.1 に対する Microsoft のメインストリーム サポー�
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
 Intune レポートをチェックして、影響を受ける可能性のあるデバイスまたはユーザーを確認できます。 [デバイス]、[すべてのデバイス]、の順に移動し、[OS] で絞り込みます。 さらに列を追加して、Windows Phone 8.1 を稼働しているデバイスを持つ組織内のユーザーの特定に役立てることができます。 エンド ユーザーに対して、各自のデバイスをサポートされている OS バージョンにアップグレードするようにリクエストしてください。
-
-### <a name="update-your-intune-outlook-app-protection-policies-app--2576686--"></a>Intune Outlook アプリ保護ポリシー (APP) の更新<!--2576686-->
-お使いのメッセージ センターで MC195618 を受け取っている場合は、アクションの実行が必要になる場合があります。 Microsoft 365 ロードマップの機能 ID:56325 および 56326 でお知らせしたとおり、iOS および Android 用 Intune および Outlook では、メール通知および予定表のリマインダーにおける機密データの制限のサポートがロールアウトされます。 これらの機能強化に伴い、iOS および Android 用 Outlook から、お客様が現在通知を管理するために利用しているいくつかのデータ保護アプリの構成キーのサポートが削除されます。
-
-#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
-この新機能はまだ配布されていませんが、配布されると、次のアプリの構成キーが iOS および Android 用 Outlook で機能しなくなります。
-- com.microsoft.outlook.Mail.NotificationsEnabled
-- com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed
-- com.microsoft.outlook.Calendar.NotificationsEnabled
-- com.microsoft.outlook.Calendar.NotificationsEnabled.UserChangeAllowed
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
-この新機能のための準備として、Intune App Protection ポリシーのデータ保護設定 "組織のデータ通知" を、"組織データをブロックする" という値を使って構成することをお勧めします。 2019 年 12 月 16 日から、iOS および Android 用 Outlook では、"組織のデータ通知" データ保護設定が利用可能になり、前述のキーがサポートされなくなります。 この新しい設定を構成することで、上記の構成キーがサポートされなくなったときに、機密データが確実に漏洩しないようにすることができます。 さらに、Outlook でデータ保護設定 "組織のデータ通知" を、追加のアプリ構成設定 "予定表の通知" を使って "組織データをブロックする" に設定した場合、追加の細分性が提供されます。 アプリ保護ポリシー設定とこのアプリ構成設定の組み合わせを使うと、メール通知の機密情報は制限されますが、予定表の通知の機密情報は公開されます。このため、ユーザーは通知や通知センターをすばやく確認して、各自の会議に参加できるようになります。
-
-#### <a name="additional-information"></a>追加情報
-APP の設定と Outlook の設定の詳細については、以下を参照してください。
-- [アプリ保護ポリシー設定 (Android)](../apps/app-protection-policy-settings-android.md)
-- [アプリ保護ポリシー設定 (iOS)](../apps/app-protection-policy-settings-ios.md)
-- [iOS および Android 用 Outlook のアプリ構成設定の展開](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 
 ### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune の変更の計画: Windows 10 バージョン 1703 ポータル サイトのサポートが終了<!--5026679-->
