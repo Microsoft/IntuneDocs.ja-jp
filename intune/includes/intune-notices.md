@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0c64f9a6afc054a3d22518c4305bda62a36d67c7
-ms.sourcegitcommit: 8ab98c2773f112f5cf2d817c170633b15de3dec2
+ms.openlocfilehash: e745290991da4d80c7e3839250edbfdd64ef1b7a
+ms.sourcegitcommit: 01c57ac880dcb5f474908977c89810f5bedaf326
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75323054"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760970"
 ---
 以下の通知では、今後の Intune の変更と機能に備えるために役立つ重要な情報が提供されます。
 
@@ -55,19 +55,6 @@ Windows Phone 8.1 に対する Microsoft のメインストリーム サポー�
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
 Intune レポートをチェックして、影響を受ける可能性のあるデバイスまたはユーザーを確認できます。 [デバイス]、[すべてのデバイス]、の順に移動し、[OS] で絞り込みます。 さらに列を追加して、Windows Phone 8.1 を稼働しているデバイスを持つ組織内のユーザーの特定に役立てることができます。 エンド ユーザーに対して、各自のデバイスをサポートされている OS バージョンにアップグレードするようにリクエストしてください。
-
-
-### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune の変更の計画: Windows 10 バージョン 1703 ポータル サイトのサポートが終了<!--5026679-->
-Windows 10 バージョン 1703 (Windows 10、RS2 とも呼ばれます) は、2019 年 10 月 8 日に Enterprise エディションと EDU エディションのサービスを終了しました。 Intune では、2019 年 12 月 26 日より、RS2/RS1 に対応するポータル サイト アプリのサポートが終了します。
-
-#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
-今後、特定のバージョンのポータル サイト アプリの新機能は表示されなくなりますが、2019 年 12 月 26 日までは、このバージョンのポータル サイト アプリは引き続きサポートされ、必要に応じてポータル サイト アプリに対するセキュリティ更新プログラムも提供されます。 ただし、Windows 10 バージョン 1703 では、サービスの終了後、セキュリティ更新プログラムを受信しなくなります。新機能と追加機能を引き続き受信できるように、お使いの Windows デバイスを新しいバージョンの Windows に更新して、最新のポータル サイト アプリを使用することを強くお勧めします。
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
-実行するステップは、環境の構成によって異なります。 ただし、一般的には、古いバージョンの OS またはポータル サイトが搭載されているデバイスを特定して更新する必要があります。 Windows 10 更新リングを設定するには、Intune にログインし、ソフトウェア更新プログラムで Windows 10 更新リングを選択します。 ポータル サイトの最新バージョンは、10.3.5601.0 です。 今後のリリースでも最新の状態を維持するため、ユーザーには Microsoft Store から取得するように指示してください。 Intune を使用して、[ビジネス向け Microsoft Store](https://docs.microsoft.com/intune/windows-store-for-business) から Windows デバイスに最新のものをインストールすることもできます。
-
-#### <a name="additional-information"></a>追加情報
-[Microsoft Intune を使用して Windows 10 ポータル サイト アプリを手動で追加する](https://docs.microsoft.com/intune/store-apps-company-portal-app)
 
 
 ### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>アクションの実行: 保護されている Intune ブラウザーエクスペリエンスに Microsoft Edge を使用する<!--5728447-->
