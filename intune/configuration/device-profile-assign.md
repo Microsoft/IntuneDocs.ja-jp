@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune - Azure でのデバイス プロファイルの割り当て | Microsoft Docs
-description: Azure Portal を使用して、デバイスのプロファイルとポリシーをユーザーとデバイスに割り当てます。 Microsoft Intune でプロファイル割り当てからグループを除外する方法について学習します。
+description: Microsoft Endpoint Manager admin center を使用して、デバイスのプロファイルとポリシーをユーザーとデバイスに割り当てます。 Microsoft Intune でプロファイル割り当てからグループを除外する方法について学習します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 651b02dc276ca2aa2003955e6aa7b0dfa6724a40
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: 252af3c7447b59ee6aaeb4cb05bed0579ae8af4c
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860317"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206705"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune でユーザーおよびデバイス プロファイルを割り当てる
 
@@ -40,8 +40,8 @@ ms.locfileid: "74860317"
 ## <a name="assign-a-device-profile"></a>デバイス プロファイルを割り当てる
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-2. **[デバイス]**、**[構成プロファイル]** の順に選択します。 プロファイルがすべて一覧表示されます。
-3. 割り当てるプロファイルを選択して、**[割り当て]** を選択します。
+2. **[デバイス]** 、 **[構成プロファイル]** の順に選択します。 プロファイルがすべて一覧表示されます。
+3. 割り当てるプロファイルを選択して、 **[割り当て]** を選択します。
 4. グループを**含める**か**除外する**かを選んでから、自分のグループを選択します。 グループを選択するときに、Azure AD グループを選択します。 複数のグループを選択する場合は、**Ctrl** キーを押しながら自分のグループを選択します。
 
     ![プロファイル割り当てにグループを含める、またはグループを除外するオプションのスクリーンショット](./media/device-profile-assign/group-include-exclude.png)
@@ -52,8 +52,8 @@ ms.locfileid: "74860317"
 
 プロファイルを割り当てるときに、影響を受けるユーザー数を**評価**することもできます。 この機能によってユーザーが計算されます。デバイスは計算されません。
 
-1. 管理センターで、**[デバイス]**、**[構成プロファイル]** の順に選択します。
-2. プロファイル > **[割り当て]** > **[評価]** を選択します。 このプロファイルの対象となるユーザー数を示すメッセージが表示されます。
+1. 管理センターで、 **[デバイス]** 、 **[構成プロファイル]** の順に選択します。
+2. プロファイル > **[割り当て]**  >  **[評価]** を選択します。 このプロファイルの対象となるユーザー数を示すメッセージが表示されます。
 
 **[評価]** ボタンが灰色表示されている場合は、プロファイルが 1 つまたは複数のグループに割り当てられていることを確認してください。
 
@@ -122,6 +122,6 @@ Intune のデバイス構成プロファイルを使うと、プロファイル�
 
   そのため、混合グループにプロファイルを割り当てることはお勧めしません。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ポリシーを監視するガイダンス、およびプロファイルを実行するデバイスについては、[デバイス プロファイルの監視](device-profile-monitor.md)に関するページを参照してください。

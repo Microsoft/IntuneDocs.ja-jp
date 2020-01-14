@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bb146fdee7a1d7d770575334eeed84f73cda8894
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73984196"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207487"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Intune に iOS ソフトウェア更新プログラム ポリシーを追加する
 
@@ -30,10 +30,10 @@ ms.locfileid: "73984196"
 
 デバイスは約 8 時間ごとに Intune でチェックインされます。 更新プログラムが利用可能な場合は、制限された時間を除き、デバイスによってそれがダウンロードおよびインストールされます。 更新プロセスでは通常、ユーザーは何も操作しませんが、デバイスにパスコードが与えられている場合、ソフトウェア更新を開始する目的でコードの入力がユーザーに求められます。 これは、iOS 10.3 以降のバージョンに該当します。 ポリシーにより、ユーザーが手動で OS を更新できなくなることはありません。
 
-## <a name="configure-the-policy"></a>ポリシーの構成
+## <a name="configure-the-policy"></a>ポリシーを構成する
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[ソフトウェア更新プログラム]**  >  **[iOS のポリシーを更新する]**  >  **[作成]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]**  >  **[iOS のポリシーを更新する]**  >  **[作成]** を選択します。
 3. **[基本]** タブで、このポリシーの名前を指定し、説明 (省略可能) を指定して、 **[次へ]** を選択します。
 
    ![[基本] タブ](./media/software-updates-ios/basics-tab.png) 
@@ -77,10 +77,10 @@ Intune サポート チームからのガイダンスについては、「[Delay
 ## <a name="edit-a-policy"></a>ポリシーの編集
 制限された時間を変更するなど、既存のポリシーを編集することができます。
 
-1. **[ソフトウェア更新プログラム]** で **[iOS のポリシーを更新する]** を選択してから、編集するポリシーを選択します。
+1. **[デバイス]**  >  **[iOS のポリシーを更新する]** を選択します。 編集するポリシーを選択します。
 
 2. ポリシーの **[プロパティ]** を表示しながら、変更するポリシー ページの **[編集]** を選択します。  
-   ![ポリシーの編集](./media/software-updates-ios/edit-policy.png)   
+   ![ポリシーを編集する](./media/software-updates-ios/edit-policy.png)   
 
 3. 変更を加えた後、 **[レビューと保存]**  >  **[保存]** の順に選択してご自分の編集内容を保存し、ポリシーの *[プロパティ]* に戻ります。  
  
@@ -92,6 +92,6 @@ Intune サポート チームからのガイダンスについては、「[Delay
 <!-- 1352223 -->
 **[ソフトウェア更新プログラム]** の **[Installation failures for iOS devices]\(iOS デバイスのインストール エラー\)** では、更新ポリシーの対象、更新が試みられた監視対象の iOS デバイス、更新できなかった iOS デバイスの一覧が表示されます。 デバイスごとに、デバイスが自動的に更新されない理由のステータスを確認できます。 リストには、正常な最新デバイスは表示されません。 "最新" のデバイスには、デバイス自体でサポートできる最新の更新プログラムが含まれています。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [状態を確認する](../configuration/device-profile-monitor.md)。

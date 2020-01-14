@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 321595a2ce8849b3d150b68f9dcc38dfda6ad940
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 88b7411095aee1b1d3a892ce4845812ceb1a9ac9
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390301"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547079"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Intune で SCEP 証明書プロファイルを作成して割り当てる
 
@@ -77,7 +77,7 @@ Simple Certificate Enrollment Protocol (SCEP) 証明書をサポートするよ�
      > SCEP を使用した証明書の取得について、生成される証明書署名要求 (CSR) 内のサブジェクト名に次の文字のいずれかがエスケープ文字 (前にバックスラッシュ \\ が付く) として含まれていた場合に関する[既知の問題](#avoid-certificate-signing-requests-with-escaped-special-characters)があります。
      > - \+
      > - ;
-     > - 、
+     > - ,
      > - =
 
      - **ユーザー証明書の種類**
@@ -231,7 +231,7 @@ SCEP と PKCS 証明書要求に、以下の特殊文字をエスケープ文字
 
 その特殊文字は次のとおりです。
 - \+
-- 、
+- ,
 - ;
 - =
 
@@ -275,13 +275,13 @@ Exception:    at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation
 
 - デバイス登録後すぐに証明書をデバイスに公開するには、証明書プロファイルをデバイス グループではなくユーザー グループに割り当てます。 デバイス グループに割り当てた場合は、デバイスがポリシーを受け取る前に、デバイスの登録を完全に行う必要があります。
 
-- Intune と Configuration Manager に共同管理を使用する場合は、Configuration Manager でリソース アクセス ポリシーの[ワークロード スライダー](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)を **[Intune]** または **[パイロット Intune]** に設定します。 この設定により、Windows 10 クライアントは証明書を要求するプロセスを開始できます。
+- Intune と Configuration Manager に共同管理を使用する場合は、Configuration Manager でリソース アクセス ポリシーの[ワークロード スライダー](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads)を **[Intune]** または **[パイロット Intune]** に設定します。 この設定により、Windows 10 クライアントは証明書を要求するプロセスを開始できます。
 
 - 信頼された証明書プロファイルと SCEP 証明書プロファイルを別々に作成して割り当てる場合でも、両方とも割り当てることが必要です。 両方ともデバイス上にインストールされていなければ、SCEP 証明書ポリシーは失敗します。 信頼されたルート証明書プロファイルも確実に SCEP プロファイルと同じグループに展開されるようにします。
 
 > [!NOTE]
 > iOS デバイスの場合、SCEP 証明書プロファイルが Wi-fi プロファイルや VPN プロファイルなどの追加のプロファイルに関連付けられている場合、デバイスは、該当する追加のプロファイルの各々に対する証明書を受け取ります。 これにより、SCEP 証明書の要求によって提供される複数の証明書を持つ iOS デバイスが存在するようになります。  単一の証明書が求められている場合は、SCEP 証明書ではなく、PKCS 証明書を使用する必要があります。  SCEP 証明書と PKCS 証明書では、デバイスへの配信方法に違いがあるためです。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [プロファイルの割り当て](../configuration/device-profile-assign.md)

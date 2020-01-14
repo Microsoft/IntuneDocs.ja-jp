@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca087ec67542102a0cd3111d27a860500b23d3c4
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 442432e7638c69083dcad5abc571c00e4051553d
+ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547982"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731526"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10 テンプレートを使用し、Microsoft Intune でグループ ポリシー設定を構成する
 
@@ -47,21 +47,15 @@ Windows の設定は、Active Directory (AD) のグループ ポリシー (GPO) 
 2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 3. 次のプロパティを入力します。
 
-    - **名前**: プロファイルの名前を入力します。
+    - **名前**:プロファイルの名前を入力します。
     - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
     - **[プラットフォーム]** : **[Windows 10 以降]** を選択します。
     - **[プロファイルの種類]** : **[管理用テンプレート]** を選択します。
 
-4. **[作成]** を選択します。 新しいウィンドウで、 **[設定]** を選択します。 すべての設定が一覧表示されます。戻る矢印と次へ矢印を使用して、さらに設定を表示できます。
+4. **[作成]** を選択します。 新しいウィンドウでドロップダウン リストを選択し、 **[すべての製品]** を選択します。 リストから設定をフィルター処理し、**Windows** の設定のみを表示したり、**Office** の設定のみを表示したり、**Edge バージョン 77 以降**の設定のみを表示したりすることもできます。
 
-    ![設定のサンプル一覧を表示し、戻るボタンと次へボタンを使用する](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
-
-    > [!TIP]
-    > Intune の Windows の設定は、ローカル グループ ポリシー エディター (`gpedit`) に表示されるオンプレミスのグループ ポリシー パスに関連付けられます。
-
-5. ドロップダウン リストで **[すべての製品]** を選択します。 リストから設定をフィルター処理し、**Windows** の設定のみを表示したり、**Office** の設定のみを表示したり、**Edge バージョン 77 以降**の設定のみを表示したりすることもできます。
-
-    ![Intune の管理用テンプレートで、リストをフィルター処理して Windows または Office の設定をすべて表示する](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
+    > [!div class="mx-imgBorder"]
+    > ![Intune の管理用テンプレートで、リストをフィルター処理して Windows または Office の設定をすべて表示する](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 
     > [!NOTE]
     > Microsoft Edge の設定の適用対象:
@@ -70,6 +64,14 @@ Windows の設定は、Active Directory (AD) のグループ ポリシー (GPO) 
     > - Windows 10 RS4 以降 ([KB 4512509](https://support.microsoft.com/kb/4512509) インストール済み)
     > - Windows 10 RS5 以降 ([KB 4512534](https://support.microsoft.com/kb/4512534) インストール済み)
     > - Windows 10 19H1 以降 ([KB 4512941](https://support.microsoft.com/kb/4512941) インストール済み)
+
+5. すべての設定が一覧表示されます。戻る矢印と次へ矢印を使用して、さらに設定を表示できます。
+
+    > [!div class="mx-imgBorder"]
+    > ![設定のサンプル一覧を表示し、戻るボタンと次へボタンを使用する](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
+
+    > [!TIP]
+    > Intune の Windows の設定は、ローカル グループ ポリシー エディター (`gpedit`) に表示されるオンプレミスのグループ ポリシー パスに関連付けられます。
 
 6. 任意の設定を選択します。 たとえば、 **[Office]** でフィルター処理して、 **[参照の制限を有効にする]** を選択します。 設定の詳細説明が表示されます。 **[有効]** 、 **[無効]** を選択するか、または設定を **[未構成]** (既定値) のままにします。 詳細な説明では、 **[有効]** 、 **[無効]** 、または **[未構成]** を選択したときの動作についても説明されています。
 7. **[OK]** を選択して変更を保存します。
@@ -88,18 +90,22 @@ Windows の設定は、Active Directory (AD) のグループ ポリシー (GPO) 
 
 これらのテンプレートで使用できる設定は数百に及びます。 特定の設定を見つけやすくするには、組み込みの機能を使用します。
 
-- 使用するテンプレートで **[設定]** 、 **[状態]** 、 **[設定の種類]** 、または **[パス]** 列を選択し、一覧を並べ替えます。 たとえば、 **[パス]** 列を選択して、`Microsoft Excel` パス内のすべての設定を表示します。
+- 使用するテンプレートで **[設定]** 、 **[状態]** 、 **[設定の種類]** 、または **[パス]** 列を選択し、一覧を並べ替えます。 たとえば、 **[パス]** 列を選択し、隣の矢印を使用して、`Microsoft Excel` パス内の設定を表示します。
 
-  ![Intune の管理用テンプレートで、[パス] をクリックしてグループ ポリシーまたは ADMX パスでグループ化されたすべての設定を表示する](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
+  > [!div class="mx-imgBorder"]
+  > ![Intune の管理用テンプレートで、[パス] をクリックしてグループ ポリシーまたは ADMX パスでグループ化されたすべての設定を表示する](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
 
-- テンプレートで**検索**ボックスを使用して、特定の設定を見つけます。 設定のタイトル、またはパスで検索できます。 たとえば、「 `copy`」というメッセージを探してみてください。 「`copy`」を含むすべての設定が表示されます。
+- テンプレートで**検索**ボックスを使用して、特定の設定を見つけます。 設定またはパスで検索できます。 たとえば、「 `copy`」というメッセージを探してみてください。 「`copy`」を含むすべての設定が表示されます。
 
-  ![Intune の管理用テンプレートで、「copy」で検索して Windows または Office の設定をすべて表示する](./media/administrative-templates-windows/search-copy-settings.png) 
+  > [!div class="mx-imgBorder"]
+  > ![Intune の管理用テンプレートで、「copy」で検索して Windows または Office の設定をすべて表示する](./media/administrative-templates-windows/search-copy-settings.png) 
 
   もう 1 つの例として、「`microsoft word`」を検索します。 Microsoft Word プログラムに対して設定できるすべての設定が表示されます。 「`explorer`」を検索して、テンプレートに追加できる Internet Explorer のすべての設定を確認します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 テンプレートは作成されましたが、まだ何も行われていません。 次に、[テンプレート (プロファイルとも呼ばれる) を割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
 
 [管理用テンプレートを使用して Office 365 を更新します](administrative-templates-update-office.md)。
+
+[チュートリアル:クラウドを使用して、ADMX テンプレートと Microsoft Intune で Windows 10 デバイスにグループ ポリシーを構成する](tutorial-walkthrough-administrative-templates.md)

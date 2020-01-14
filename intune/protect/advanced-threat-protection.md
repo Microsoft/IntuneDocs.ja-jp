@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8c756ad2df00a97df7289491daf830e584c0045
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 2fa80697f24167e2a9634bd506e9548ca654129f
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410208"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547095"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Intune で条件付きアクセスによる Microsoft Defender ATP のコンプライアンスを強制する
 
@@ -53,7 +53,7 @@ Microsoft Defender ATP は、このシナリオのようなセキュリティ �
 
 リスク レベルが "*中*" または "*高*" であるデバイスを非準拠として分類する Intune デバイス コンプライアンス ポリシーを使用しているため、侵害されたデバイスは非準拠として分類されます。 この分類により、条件付きアクセス ポリシーが適用されて、そのデバイスから企業リソースへのアクセスがブロックされます。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
 Intune で Microsoft Defender ATP を使用する場合は、以下が構成済みであり、使用できる状態であることを確認してください。
 
@@ -108,9 +108,7 @@ Defender ATP を有効にする必要があるのは、テナントごとに 1 �
 
 Intune と Microsoft Defender ATP の間にサービス間接続を確立したら、Intune の管理対象デバイスを ATP にオンボードして、そのリスク レベルに関するデータを収集して使用できるようにします。 デバイスをオンボードするには、Microsoft Defender ATP のデバイス構成プロファイルを使用します。
 
-Microsoft Defender ATP への接続を確立したときに、Intune は Microsoft Defender ATP から Microsoft Defender ATP のオンボード構成パッケージを受け取りました。 このパッケージは、デバイス構成プロファイルを使用してデバイスに展開されます。 この構成パッケージによってデバイスが構成され、[Microsoft Defender ATP サービス](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)と通信し、ファイルのスキャン、脅威の検出、Microsoft Defender ATP へのリスクの報告が行われるようになります。
-
-構成パッケージを使用してデバイスをオンボードした後は、再度これを行う必要はありません。 [グループ ポリシーまたは System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) を使用して、デバイスをオンボードすることもできます。
+Microsoft Defender ATP への接続を確立したときに、Intune は Microsoft Defender ATP から Microsoft Defender ATP のオンボード構成パッケージを受け取りました。 このパッケージは、デバイス構成プロファイルを使用してデバイスに展開されます。 この構成パッケージによってデバイスが構成され、[Microsoft Defender ATP サービス](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)と通信し、ファイルのスキャン、脅威の検出、Microsoft Defender ATP へのリスクの報告が行われるようになります。 構成パッケージを使用してデバイスをオンボードした後は、再度これを行う必要はありません。 [グループ ポリシーまたは Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) を使用して、デバイスをオンボードすることもできます。
 
 ### <a name="create-the-device-configuration-profile"></a>デバイス構成プロファイルの作成
 
@@ -129,7 +127,7 @@ Microsoft Defender ATP への接続を確立したときに、Intune は Microso
    - **[すべてのファイルのサンプル共有]** : **[有効にする]** では、サンプルを収集し、Microsoft Defender ATP と共有できるようになります。 たとえば、疑わしいファイルがある場合、それを Microsoft Defender ATP に送信して詳しく分析できます。 **[未構成]** では、いかなるサンプルも Microsoft Defender ATP と共有されません。
    - **[テレメトリの報告頻度を早める]** :高リスクのデバイスがある場合は、この設定を **[有効にする]** を選択し、Microsoft Defender ATP サービスに対してより頻繁にテレメトリを報告させることができます。
 
-     これらの Microsoft Defender ATP の設定について詳しくは、「[System Center Configuration Manager を使用する Windows 10 コンピューターのオンボード](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm)」をご覧ください。
+     これらの Microsoft Defender ATP の設定について詳しくは、[Microsoft Endpoint Configuration Manager を使用する Windows 10 コンピューターのオンボード](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm)に関する記事をご覧ください。
 
 7. **[OK]** 、 **[作成]** の順に選択して変更を保存します。これで、プロファイルが作成されます。
 8. Microsoft Defender ATP を使用して評価するデバイスに[デバイス構成プロファイルを割り当てます](../configuration/device-profile-assign.md)。
@@ -150,9 +148,9 @@ Microsoft Defender ATP への接続を確立したときに、Intune は Microso
    脅威レベルの分類は、[Microsoft Defender ATP によって決定されます](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue)。
 
    - **[クリア]** :このレベルはセキュリティ上最も安全です。 デバイスには既存のいかなる脅威も存在できず、引き続き会社のリソースにアクセスできます。 いずれかの脅威が見つかった場合、デバイスは非準拠と評価されます。 (Microsoft Defender ATP ユーザーの値は *[セキュア]* です。)
-   - **[低]** :低レベルの脅威が存在する場合にのみ、デバイスは準拠しています。 脅威レベルが中または高のデバイスは非準拠になります。
-   - **[中]** :デバイスに存在する脅威が低または中の場合、デバイスは準拠しています。 高レベルの脅威が検出された場合は、デバイスは非準拠と判定されます。
-   - **[高]** :最も安全性の低いレベルであり、すべての脅威レベルが許容されます。 したがって、脅威レベルが高、中または低のデバイスは準拠していると見なされます。
+   - **低**:低レベルの脅威が存在する場合にのみ、デバイスは準拠しています。 脅威レベルが中または高のデバイスは非準拠になります。
+   - **中**: デバイスに存在する脅威が低または中の場合、デバイスは準拠しています。 高レベルの脅威が検出された場合は、デバイスは非準拠と判定されます。
+   - **高**: 最も安全性の低いレベルであり、すべての脅威レベルが許容されます。 したがって、脅威レベルが高、中または低のデバイスは準拠していると見なされます。
 
 7. **[OK]** 、 **[作成]** の順に選択して、変更を保存 (およびポリシーを作成) します。
 8. 該当するグループに[デバイス コンプライアンス ポリシーを割り当てます](create-compliance-policy.md#assign-the-policy)。
@@ -204,7 +202,7 @@ Microsoft Defender ATP への接続を確立したときに、Intune は Microso
 
 Intune で管理されているすべての Windows 10 デバイスのオンボードの状態を確認するには、 **[デバイスのポリシー準拠]**  >  **[Microsoft Defender ATP]** に移動します。 このページから、さらに多くのデバイスを Microsoft Defender ATP にオンボードするためのデバイス構成プロファイルの作成を開始することもできます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [Microsoft Defender ATP の条件付きアクセス](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/conditional-access)
 

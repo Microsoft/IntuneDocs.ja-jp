@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbe2377bfd353dc00ddfdf53a6d091c486644194
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d0ef42e301efe2c323ea98265272ba71596a8083
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059374"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206399"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune で eSIM 携帯電話プロファイルを構成する - パブリック プレビュー
 
@@ -66,7 +66,7 @@ Intune を使ってご利用のデバイスに eSIM を展開するには、次�
 - HP Spectre Folio 13
 - Lenovo Yoga C630
 
-## <a name="step-1-add-cellular-activation-codes"></a>手順 1.携帯電話のアクティブ化コードを追加する
+## <a name="step-1-add-cellular-activation-codes"></a>手順 1:携帯電話のアクティブ化コードを追加する
 
 携帯電話のアクティブ化コードは、コンマ区切りファイル (csv) として、携帯電話会社によって提供されます。 このファイルがある場合は、次の手順を使用して Intune に追加します。
 
@@ -91,15 +91,15 @@ Intune を使ってご利用のデバイスに eSIM を展開するには、次�
 2. 2 番目の行とそれ以降のすべての行は、次の 2 つの値を含む、一意の 1 回限りのアクティブ化コードです。
 
     1. 最初の列は一意の ICCID (SIM チップの識別子) です。
-    2. 2 番目の列は、1 つのコンマのみで区切られている (末尾にコンマがない) 照合 ID です。 次の例を参照してください。
+    2. 2 番目の列は、1 つのコンマのみで区切られている (末尾にコンマがない) 照合 ID です。 次の例を参照してください:
 
         ![携帯電話会社のアクティブ化コード サンプルの csv ファイル](./media/esim-device-configuration/url-activation-code-examples.png)
 
-3. csv ファイル名は、Azure Portal の携帯電話サブスクリプション プール名となります。 上記のイメージでは、ファイル名が `UnlimitedDataSkynet.csv` となっています。 したがって、次のように、Intune ではサブスクリプション プールに `UnlimitedDataSkynet.csv` という名前が付けられます。
+3. csv ファイル名は、Endpoint Manager admin center の携帯電話サブスクリプション プール名となります。 上記のイメージでは、ファイル名が `UnlimitedDataSkynet.csv` となっています。 したがって、次のように、Intune ではサブスクリプション プールに `UnlimitedDataSkynet.csv` という名前が付けられます。
 
     ![携帯電話サブスクリプション プールに、アクティブ化コード サンプルの csv ファイルの名前が付けられている](./media/esim-device-configuration/subscription-pool-name-csv-file.png)
 
-## <a name="step-2-create-an-azure-ad-device-group"></a>手順 2: Azure AD デバイス グループを作成する
+## <a name="step-2-create-an-azure-ad-device-group"></a>手順 2:Azure AD デバイス グループを作成する
 
 eSIM 対応デバイスを含むデバイス グループを作成します。 手順については、「[グループの追加](../fundamentals/groups-add.md)」を参照してください。
 
@@ -107,7 +107,7 @@ eSIM 対応デバイスを含むデバイス グループを作成します。 �
 > - デバイスのみがターゲットとなり、ユーザーはターゲットになりません。
 > - ご利用の eSIM デバイスを含む静的な Azure AD デバイス グループを作成することをお勧めします。 グループを使用すれば、確実に eSIM デバイスのみがターゲットとなります。
 
-## <a name="step-3-assign-esim-activation-codes-to-devices"></a>手順 3: eSIM アクティブ化コードをデバイスに割り当てる
+## <a name="step-3-assign-esim-activation-codes-to-devices"></a>手順 3:eSIM アクティブ化コードをデバイスに割り当てる
 
 ご利用の eSIM デバイスを含む Azure AD グループにプロファイルを割り当てます。
 
@@ -192,5 +192,5 @@ Azure AD グループからデバイスを削除すると、eSIM プロファイ
   - **ファイル形式が正しくありません**: 「**手順 1: 携帯電話のアクティブ化コードを追加する**」 (この記事内) で、ファイルを正しく書式設定する方法について参照してください。
   - **携帯電話アクティブ化エラー、携帯電話会社に問い合わせる**: このアクティブ化コードは、ネットワーク内でアクティブ化されていない可能性があります。 または、プロファイルのダウンロードと携帯電話のアクティブ化に失敗しています。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 [デバイス プロファイルを構成する](../device-profiles.md)

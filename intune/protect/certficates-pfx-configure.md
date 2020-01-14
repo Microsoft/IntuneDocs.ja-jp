@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune で秘密キーと公開キーの証明書を使用する - Azure | Microsoft Docs
-description: Microsoft Intune で公開キー暗号化標準 (PKCS) 証明書を使用する これには、ルート証明書と証明書テンプレートの使用、Intune Certificate Connector (NDES) のインストール、PKCS 証明書のデバイス構成プロファイルの使用が含まれます。
+description: Microsoft Intune で Public Key Cryptography Standards (PKCS) 証明書を使用し、ルート証明書と証明書テンプレートを処理し、Intune Certificate Connector (NDES) をインストールし、PKCS 証明書用のデバイス構成プロファイルを使用します。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3db085e6e88f8f57eb0276afa77290df8574568f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9142ea3f7728fd24883a311bbf967a7a59dbf457
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801700"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207249"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune で PKCS 証明書を構成して使用する
 
@@ -78,7 +78,7 @@ Intune で PKCS 証明書を使用するには、次のインフラストラク�
 
   Intune とコネクタでアクセスするネットワーク エンドポイントについて詳しくは、「[Microsoft Intune のネットワーク エンドポイント](../fundamentals/intune-endpoints.md)」をご覧ください。
 
-- **Windows Server**:  
+- **Windows サーバー**:  
   Windows Server をホストに使用します。
 
   - 認証および S/MIME メールの署名のシナリオ用の Microsoft Intune Certificate Connector
@@ -161,9 +161,7 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
 7. **[適用]**  >  **[閉じる]** を選択します
 8. Intune ポータルに戻ります ( **[Intune]**  >  **[デバイス構成]**  >  **[証明書のコネクタ]** )。 しばらくすると、緑のチェックマークが表示され、 **[接続の状態]** が **[アクティブ]** になります。 これでコネクタ サーバーは Intune と通信できます。
 9. ご利用のネットワーク環境に Web プロキシがある場合、コネクタが動作するように追加の構成が必要になる可能性があります。 詳細については、Azure Active Directory ドキュメントの「[既存のオンプレミス プロキシ サーバーと連携する](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers)」を参照してください。
-
-> [!NOTE]  
-> Microsoft Intune Certificate Connector では、TLS 1.2 がサポートされています。 TLS 1.2 がコネクタをホストするサーバーにインストールされている場合、コネクタは TLS 1.2 を使用します。 それ以外の場合は、TLS 1.1 が使用されます。 現在、デバイスとサーバー間の認証には、TLS 1.1 が使用されています。
+<ul><li>Android Enterprise (*仕事用プロファイル*)</li><li>iOS</li><li>macOS</li><li>Windows 10 以降 > Microsoft Intune Certificate Connector では、TLS 1.2 がサポートされています。 TLS 1.2 がコネクタをホストするサーバーにインストールされている場合、コネクタは TLS 1.2 を使用します。 それ以外の場合は、TLS 1.1 が使用されます。 現在、デバイスとサーバー間の認証には、TLS 1.1 が使用されています。
 
 ## <a name="create-a-trusted-certificate-profile"></a>信頼済み証明書プロファイルを作成する
 
@@ -206,19 +204,19 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
 
 4. **[設定]** を選択し、選択したプラットフォームに適用されるプロパティを構成します。
    
-   |設定     | プラットフォーム     | 説明   |
+   |設定     | プラットフォーム     | 詳細   |
    |------------|------------|------------|
-   |**[更新しきい値 (%)]**        |すべて         |推奨値は 20% です  | 
-   |**[証明書の有効期間]**  |すべて         |証明書テンプレートを変更していない場合、このオプションはおそらく 1 年に設定されています。 |
-   |**キー記憶域プロバイダー (KSP)**   |Windows 10  | Windows では、デバイス上のキーを格納する場所を選択します。 |
-   |**証明機関**      |すべて         |エンタープライズ CA の内部完全修飾ドメイン名 (FQDN) が表示されます。  |
-   |**証明機関名** |すべて         |"Contoso Certification Authority" など、エンタープライズ CA の名前が一覧表示されます。 |
-   |**証明書の種類**             |macOS       |種類の選択: <br> **-** **ユーザー**証明書では、証明書のサブジェクトと SAN 内にユーザー属性とデバイス属性の両方を含めることができます。 <br><br>**-** **[デバイス]** 証明書では、証明書のサブジェクトと SAN にデバイスの属性を含めることができます。 キオスクやその他の共有デバイスなど、ユーザーのいないデバイスなどのシナリオには、[デバイス] を使用します。  <br><br> この選択は、サブジェクト名の形式に影響します。 |
-   |**[サブジェクト名の形式]**          |すべて         |ほとんどのプラットフォームでは、特に指定がない限り、このオプションは**共通名**に設定します。<br><br>macOS の場合、サブジェクト名の形式は証明書の種類によって決まります。 この記事の後半に登場するセクション「[macOS のサブジェクト名の形式](#subject-name-format-for-macos)」を参照してください。 |
-   |**[サブジェクトの別名]**     |すべて         |特に指定がない限り、このオプションは**ユーザー プリンシパル名 (UPN)** に設定します。 |
-   |**[拡張キー使用法]**           |**-** Android デバイス管理者 <br>**-** Android エンタープライズ (*デバイス所有者*、*仕事用プロファイル*) <br> **-** Windows 10 |ユーザーまたはデバイスがサーバーに対して認証できるように、証明書には通常、 *[クライアント認証]* が必要です。 |
-   |**[すべてのアプリが秘密キーにアクセスできるようにする]** |macOS  |**[有効にする]** に設定すると、PKCS 証明書の秘密キーへのアクセスが関連 mac デバイスに構成されているアプリに与えられます。 <br><br> この設定の詳細については、Apple 開発者ドキュメントにある「[Configuration Profile Reference](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)」の「Certificate Payload」セクションに記載されている *AllowAllAppsAccess* を参照してください。 |
-   |**ルート証明書**             |**-** Android デバイス管理者 <br> **-** Android エンタープライズ (*デバイス所有者*、*仕事用プロファイル*) |前に割り当てられたルート CA 証明書プロファイルを選択します。 |
+   |**[更新しきい値 (%)]**        |<ul><li>すべて         |推奨値は 20% です  | 
+   |**[証明書の有効期間]**  |<ul><li>すべて         |証明書テンプレートを変更していない場合、このオプションはおそらく 1 年に設定されています。 |
+   |**キー記憶域プロバイダー (KSP)**   |<ul><li>Windows 10  | Windows では、デバイス上のキーを格納する場所を選択します。 |
+   |**証明機関**      |<ul><li>すべて         |エンタープライズ CA の内部完全修飾ドメイン名 (FQDN) が表示されます。  |
+   |**証明機関名** |<ul><li>すべて         |"Contoso Certification Authority" など、エンタープライズ CA の名前が一覧表示されます。 |
+   |**証明書の種類**             |<ul><li>Android Enterprise (*仕事用プロファイル*)</li><li>iOS</li><li>macOS</li><li>Windows 10 以降|種類の選択: <ul><li> "**ユーザー**" 証明書では、証明書のサブジェクトと SAN 内にユーザー属性とデバイス属性の両方を含めることができます。 </il><li>**[デバイス]** 証明書では、証明書のサブジェクトと SAN にデバイスの属性を含めることができます。 キオスクやその他の共有デバイスなど、ユーザーのいないデバイスなどのシナリオには、[デバイス] を使用します。  <br><br> この選択は、サブジェクト名の形式に影響します。 |
+   |**[サブジェクト名の形式]**          |<ul><li>すべて         |ほとんどのプラットフォームでは、特に指定がない限り、このオプションは**共通名**に設定します。<br><br>次のプラットフォームの場合、サブジェクト名の形式は証明書の種類によって決まります。 <ul><li>Android Enterprise (*仕事用プロファイル*)</li><li>iOS</li><li>macOS</li><li>Windows 10 以降</li></ul>  <p> 後の「[サブジェクト名の形式](#subject-name-format)」を参照してください。 |
+   |**[サブジェクトの別名]**     |<ul><li>すべて         |特に指定がない限り、このオプションは**ユーザー プリンシパル名 (UPN)** に設定します。 |
+   |**[拡張キー使用法]**           |<ul><li> Android デバイス管理者 </li><li>Android Enterprise (*デバイス所有者*、*仕事用プロファイル*) </li><li>Windows 10 |ユーザーまたはデバイスがサーバーに対して認証できるように、証明書には通常、 *[クライアント認証]* が必要です。 |
+   |**[すべてのアプリが秘密キーにアクセスできるようにする]** |<ul><li>macOS  |**[有効にする]** に設定すると、PKCS 証明書の秘密キーへのアクセスが関連 mac デバイスに構成されているアプリに与えられます。 <br><br> この設定の詳細については、Apple 開発者ドキュメントにある「[Configuration Profile Reference](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)」の「Certificate Payload」セクションに記載されている *AllowAllAppsAccess* を参照してください。 |
+   |**ルート証明書**             |<ul><li>Android デバイス管理者 </li><li>Android Enterprise (*デバイス所有者*、*仕事用プロファイル*) |前に割り当てられたルート CA 証明書プロファイルを選択します。 |
 
 5. **[OK]**  >  **[作成]** を選択してプロファイルを保存します。
 
@@ -227,15 +225,22 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
    > [!NOTE]
    > Android エンタープライズ プロファイルを使用しているデバイスでは、PKCS 証明書プロファイルを使用してインストールされた証明書は、デバイス上に表示されません。 証明書の展開に成功したことを確認するには、Intune コンソール上でプロファイルの状態を確認します。
 
-### <a name="subject-name-format-for-macos"></a>macOS のサブジェクト名の形式
+### <a name="subject-name-format"></a>サブジェクト名の形式
 
-macOS PKCS 証明書プロファイルを作成するとき、サブジェクト名の形式のオプションは、選択した証明書の種類 ( **[ユーザー]** または **[デバイス]** ) によって異なります。  
+次のプラットフォーム用の PKCS 証明書プロファイルを作成するとき、サブジェクト名の形式のオプションは、選択した証明書の種類 ( **[ユーザー]** または **[デバイス]** ) によって異なります。  
 
-> [!NOTE]  
+プラットフォーム:
+
+- Android Enterprise (*仕事用プロファイル*)
+- iOS
+- macOS
+- Windows 10 以降
+
+> [!NOTE]
 > PKCS を使用した証明書の取得について、生成される証明書署名要求 (CSR) 内のサブジェクト名に次の文字のいずれかがエスケープ文字 (前にバックスラッシュ \\ が付く) として含まれていた場合に関する既知の問題があります。[SCEP でも同じ問題が確認されています](certificates-profile-scep.md#avoid-certificate-signing-requests-with-escaped-special-characters)。
 > - \+
 > - ;
-> - 、
+> - ,
 > - =
 
 - **ユーザー証明書の種類**  
@@ -285,7 +290,7 @@ macOS PKCS 証明書プロファイルを作成するとき、サブジェクト
 
 2 つの証明書コネクタの更新プログラムは、定期的にリリースされます。 コネクタが更新された場合、その変更についてここから確認することができます。
 
-*PFX Certificates Connector for Microsoft Intune* が[自動更新をサポート](#requirements)しているのに対し、*Intune Certificate Connector* は手動で更新されます。
+*PFX Certificates Connector for Microsoft Intune* では[自動更新がサポートされている](#requirements)のに対し、*Intune Certificate Connector* は手動で更新されます。
 
 ### <a name="may-17-2019"></a>2019 年 5 月 17 日
 
@@ -315,7 +320,7 @@ macOS PKCS 証明書プロファイルを作成するとき、サブジェクト
   - グローバル管理者アカウントを使用してコネクタにサインインした後に、コネクタが Intune への登録に失敗することがある問題を修正しました。  
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 プロファイルは作成されましたが、まだ何も行われていません。 次に、[プロファイルを割り当て](../configuration/device-profile-assign.md)、[その状態を監視](../configuration/device-profile-monitor.md)します。
 

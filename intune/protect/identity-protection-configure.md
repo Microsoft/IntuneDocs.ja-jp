@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fce03913042675588ea12e5399e6f5a1be04946
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a4f5d3a232cab25c60189132732a0ea3f347c74a
+ms.sourcegitcommit: 107fef144013b01ed768ca8973373f9cb3f0f7dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188247"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75683801"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune がインストールされた Windows 10 デバイス上で Windows Hello for Business を使用する
 
@@ -48,7 +48,7 @@ Intune では、"構成プロファイル" を使用して、お客様の組織�
 
 3. 次のプロパティを入力します。
 
-   - **[名前]** :新しいプロファイルのわかりやすい名前を入力します。
+   - **名前**:新しいプロファイルのわかりやすい名前を入力します。
    - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
    - **[プラットフォーム]** : **[Windows 10 以降]** を選択します。 Windows Hello for Business は、Windows 10 以降を実行しているデバイスのみでサポートされます。
    - **[プロファイルの種類]** : **[Identity Protection]** を選択します。
@@ -59,7 +59,7 @@ Intune では、"構成プロファイル" を使用して、お客様の組織�
 
      - **[未構成]** (既定値):デバイス上に [Windows Hello for Business をプロビジョニング](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning)します。 Identity Protection プロファイルをユーザーのみに割り当てた場合は、デバイス コンテキストは既定で **[未構成]** になります。
 
-     - **[無効]** : Windows Hello for Business を使用しない場合は、このオプションを選択します。 このオプションを選択すると、すべてのユーザーの Windows Hello for Business が無効になります。
+     - **Disabled**:Windows Hello for Business を使用しない場合は、このオプションを選択します。 このオプションを選択すると、すべてのユーザーの Windows Hello for Business が無効になります。
 
      - **有効**: Intune で Windows Hello for Business 設定を[プロビジョニング](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning)し、構成するには、このオプションを選択します。 構成が必要な設定を入力します。 すべての設定の一覧とその動作については、[Windows Hello for Business を有効にするための Windows 10 デバイス設定](identity-protection-windows-settings.md)に関するページを参照してください。
 
@@ -72,6 +72,9 @@ Intune では、"構成プロファイル" を使用して、お客様の組織�
 
 プロファイルが作成され、プロファイル一覧に表示されます。 次に、ご自分のニーズに合わせてこのプロファイルをユーザーとデバイス グループに[割り当てます](../configuration/device-profile-assign.md)。
 
+> [!IMPORTANT]
+> 複数のユーザーをデバイスにプロビジョニングできるようにするには、Windows Hello for Business ポリシーがデバイスに適用されるように指定します。 ポリシーをユーザーにのみ適用した場合は、1 人のユーザーしかデバイスにプロビジョニングできません。
+
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 
 ## Example of device restriction settings
@@ -82,7 +85,7 @@ In this high-level example, you'll create a device restriction policy that block
 
 -->
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - すべての[設定の一覧とその実行内容](identity-protection-windows-settings.md)を参照してください。
 - [プロファイルを割り当て](../configuration/device-profile-assign.md)、[その状態を監視](../configuration/device-profile-monitor.md)します。

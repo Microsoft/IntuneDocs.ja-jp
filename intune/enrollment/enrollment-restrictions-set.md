@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78f79a734d0a7b4901b2248b20abd9d304926dd2
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 4246dab0cf22053d76fdd50f99de53e827332a23
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955509"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547820"
 ---
 # <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
@@ -144,7 +144,7 @@ BYOD の登録中にユーザーがデバイス登録の上限に達すると、
 - デバイスは、Windows Autopilot に登録されますが、Windows 設定からの MDM 登録のみオプションではありません。
 - デバイスの IMEI 番号が **[デバイスの登録]**  >  **[[業務用デバイスの ID]](corporate-identifiers-add.md)** に記載されています。 (Windows Phone 8.1 ではサポートされていません。)
 - デバイスが[一括プロビジョニング パッケージ](windows-bulk-enroll.md)経由で登録されます。
-- デバイスが GPO または[共同管理用の SCCM からの自動登録](https://docs.microsoft.com/sccm/comanage/quickstart-paths#bkmk_path1)経由で登録されます。
+- デバイスが GPO または[共同管理用の Configuration Manager からの自動登録](https://docs.microsoft.com/configmgr/comanage/quickstart-paths#bkmk_path1)経由で登録されます。
  
 次の登録は Intune で会社として見なされます。 しかし、Intune 管理者のデバイスごとのコントロールがないため、ブロックされます。
 - [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows セットアップ中の Azure Active Directory 参加](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*。

@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 79e1ba2441baa6773632c27f204bef01b015b990
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 48ad9ffe32dc7493195ec161e070734776381427
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832722"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547799"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune でのデバイス登録に関するトラブルシューティング
 
@@ -56,7 +56,7 @@ ms.locfileid: "74832722"
 これらの問題は、すべてのデバイス プラットフォームで発生する可能性があります。
 
 ### <a name="device-cap-reached"></a>デバイス キャップに達しました
-**問題:** 登録中にエラー (**"ポータル サイトは一時的に使用できません"** など) がユーザーに表示され、Configuration Manager の DMPdownloader.log にエラー **DeviceCapReached** が含まれます。
+**問題:** 登録中にエラー ( **"ポータル サイトは一時的に使用できません"** など) がユーザーに表示され、Configuration Manager の DMPdownloader.log にエラー **DeviceCapReached** が含まれます。
 
 **解決方法:**
 
@@ -64,9 +64,9 @@ ms.locfileid: "74832722"
 
 次の手順に従って、割り当てられているユーザーの数が最大デバイス数を超えていないことを確認します。
 
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、**[デバイス]** > **[登録制限]** > **[デバイスの上限数の制限]** の順に選択します。 **[デバイス制限]** 列の値に注目してください。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[登録制限]**  >  **[デバイスの上限数の制限]** の順に選択します。 **[デバイス制限]** 列の値に注目してください。
 
-2. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、**[ユーザー]**、**[すべてのユーザー]** の順に選択し、ユーザーを選択し、**[デバイス]** を選択します。 デバイス数に注目してください。
+2. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[ユーザー]** 、 **[すべてのユーザー]** の順に選択し、ユーザーを選択し、 **[デバイス]** を選択します。 デバイス数に注目してください。
 
 3. ユーザーの登録済みデバイス数が既にデバイス数の上限に達している場合、以下の操作が行われるまでユーザーはそれ以上の登録を実行することができません。
     - [既存のデバイスが削除される](../remote-actions/devices-wipe.md)、または
@@ -113,7 +113,7 @@ ms.locfileid: "74832722"
 
     4. 再び DirSync を有効にして、ユーザーが適切に同期していることを確認します。
 
-3. System Center Configuration Manager と Intune を使用しているシナリオでは、ユーザーが有効なクラウド ユーザー ID を持っていることを確認します。
+3. Configuration Manager と Intune を使用しているシナリオでは、ユーザーが有効なクラウド ユーザー ID を持っていることを確認します。
 
     1. SQL Management Studio を開きます。
 
@@ -127,13 +127,13 @@ ms.locfileid: "74832722"
 
         - 特定のユーザーを表示するには、次のクエリを使います。%testuser1% は、検索対象ユーザーの username@domain.com に対するプレースホルダーです: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
-        クエリを入力したら、**[! 実行]** を選択します。
+        クエリを入力したら、 **[! 実行]** を選択します。
         結果が返されたら、クラウド ユーザー ID を検索します。  ID が見つからない場合、そのユーザーには Intune を使用するライセンスが付与されていません。
 
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>会社名に特殊文字が含まれている場合にポリシーの作成またはデバイスの登録ができない
 **問題:** ポリシーを作成することやデバイスを登録することができません。
 
-**解決方法:**[Microsoft 365 管理センター](https://admin.microsoft.com/)で、会社名から特殊文字を削除した後、会社情報を保存します。
+**解決方法:** [Microsoft 365 管理センター](https://admin.microsoft.com/)で、会社名から特殊文字を削除した後、会社情報を保存します。
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>確認済みドメインが複数ある場合にデバイスへのサインインまたはデバイスの登録ができない
 **問題:** この問題は、ADFS に 2 番目の確認済みドメインを追加すると発生する可能性があります。 2 番目のドメインのユーザー プリンシパル名 (UPN) サフィックスを持つユーザーがポータルにログインできなくなる場合や、デバイスを登録できなくなる場合があります。
@@ -177,7 +177,7 @@ ms.locfileid: "74832722"
 
 **解決方法 2:**
 
-Android 6.0 へのアップグレードを試みるようユーザーに通知します。 Android 6.0 デバイスでは、非アクティブ化の問題は発生しません。 更新プログラムが利用可能かどうかを確認するには、**[設定]** > **[デバイスのバージョン情報]** > **[Download updates manually]\(更新プログラムを手動でダウンロードする\)** の順に移動し、指示に従います。
+Android 6.0 へのアップグレードを試みるようユーザーに通知します。 Android 6.0 デバイスでは、非アクティブ化の問題は発生しません。 更新プログラムが利用可能かどうかを確認するには、 **[設定]**  >  **[デバイスのバージョン情報]**  >  **[Download updates manually]\(更新プログラムを手動でダウンロードする\)** の順に移動し、指示に従います。
 
 **解決方法 3:**
 
@@ -191,7 +191,7 @@ Android 6.0 へのアップグレードを試みるようユーザーに通知�
 
    ![[バッテリ] タイルを選択する](./media/troubleshoot-device-enrollment-in-intune/smart-manager-battery-tile.png)
 
-3. **[App power saving]** (アプリの省電力) または **[App optimization]** (アプリの最適化) で、**[詳細]** を選択します。
+3. **[App power saving]** (アプリの省電力) または **[App optimization]** (アプリの最適化) で、 **[詳細]** を選択します。
 
    ![[App power saving] (アプリの省電力) または [App optimization] (アプリの最適化) で [詳細] を選択する](./media/troubleshoot-device-enrollment-in-intune/smart-manager-app-power-saving-detail.png)
 
@@ -237,26 +237,26 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 
 この問題を解決するには、AD FS サーバーまたはプロキシでコンピューターの個人証明書に証明書を次のようにインポートします。
 
-1. ADFS およびプロキシ サーバー上で、**[開始]** を右クリックし、**[実行]** > **[certlm.msc]** の順にクリックして、ローカル コンピューターの証明書管理コンソールを起動します。
-2. **[個人用]** を展開し、**[証明書]** を選択します。
+1. ADFS およびプロキシ サーバー上で、 **[開始]** を右クリックし、 **[実行]**  >  **[certlm.msc]** の順にクリックして、ローカル コンピューターの証明書管理コンソールを起動します。
+2. **[個人用]** を展開し、 **[証明書]** を選択します。
 3. AD FS サービス通信の証明書を見つけ (公的に署名された証明書)、ダブルクリックしてそのプロパティを表示します。
 4. **[証明のパス]** タブを選択し、証明書の親証明書を選択します。
-5. 親証明書ごとに、**[証明書の表示]** を選択します。
-6. **[詳細]** > **[ファイルへコピー]** の順に選択します。
+5. 親証明書ごとに、 **[証明書の表示]** を選択します。
+6. **[詳細]**  >  **[ファイルへコピー]** の順に選択します。
 7. ウィザードの指示に従い、親証明書の公開鍵を任意のファイル保存先にエクスポート (保存) します。
-8. 右クリックして **[証明書]** > **[すべてのタスク]** > **[インポート]** の順に選択します。
+8. 右クリックして **[証明書]**  >  **[すべてのタスク]**  >  **[インポート]** の順に選択します。
 9. ウィザードの指示に従い、親証明書を **Local Computer\Personal\Certificates** にインポートします。
 10. AD FS サーバーを再起動します。
 11. すべての AD FS サーバーとプロキシ サーバーで上記の手順を繰り返します。
 
-証明書が適切にインストールされたことを確認するには、[https://www.digicert.com/help/](https://www.digicert.com/help/) で診断ツールを使用できます。 **[Server Address]\(サーバー アドレス\)** ボックスに、AD FS サーバーの FQDN (例: sts.contso.com) を入力し、**[Check Server]\(サーバーの確認\)** をクリックします。
+証明書が適切にインストールされたことを確認するには、[https://www.digicert.com/help/](https://www.digicert.com/help/) で診断ツールを使用できます。 **[Server Address]\(サーバー アドレス\)** ボックスに、AD FS サーバーの FQDN (例: sts.contso.com) を入力し、 **[Check Server]\(サーバーの確認\)** をクリックします。
 
 **証明書が正しくインストールされていることを確認するには**:
 
 証明書が正しくインストールされていることを確認する方法とツールはたくさんあります。下記で紹介する手順はその 1 つです。
 
 1. [[無料の Digicert ツール]](ttps://www.digicert.com/help/) に進みます。
-2. AD FS サーバーの完全修飾ドメイン名 (例: sts.contoso.com) を入力し、**[CHECK SERVER]** を選択します。
+2. AD FS サーバーの完全修飾ドメイン名 (例: sts.contoso.com) を入力し、 **[CHECK SERVER]** を選択します。
 
 サーバー証明書が正しくインストールされている場合、結果にすべてのチェック マークが表示されます。 上記の問題が存在する場合、レポートの "Certificate Name Matches" (証明書名の一致) セクションと "SSL Certificate is correctly Installed" (SSL 証明書が正しくインストールされている) セクションに赤い X 印が付きます。
 
@@ -285,19 +285,19 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 
 **解決方法:** 次の解決方法をエンド ユーザーに伝え、企業リソースへのアクセスの回復を支援します。
 
-ユーザーが iOS 用のポータル サイト アプリを起動すると、デバイスと Intune の通信状態が通知されることがあります。 通信していないことが検出された場合、Intune との同期 (再接続) が自動的に試行されます (**[同期しています]** メッセージが 表示されます)。
+ユーザーが iOS 用のポータル サイト アプリを起動すると、デバイスと Intune の通信状態が通知されることがあります。 通信していないことが検出された場合、Intune との同期 (再接続) が自動的に試行されます ( **[同期しています]** メッセージが 表示されます)。
 
   ![[同期しています...] 通知](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_trying_to_sync_notification.png)
 
-同期できた場合、**[同期に成功しました]** インライン通知が iOS ポータル サイト アプリに表示されます。デバイスが正常な状態にあることを意味します。
+同期できた場合、 **[同期に成功しました]** インライン通知が iOS ポータル サイト アプリに表示されます。デバイスが正常な状態にあることを意味します。
 
   ![[同期に成功しました] 通知](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_sync_successful_notification.png)
 
-同期できなかった場合、**[同期できません]** インライン通知が iOS ポータル サイト アプリに表示されます。
+同期できなかった場合、 **[同期できません]** インライン通知が iOS ポータル サイト アプリに表示されます。
 
   ![[同期できません] 通知](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_unable_to_sync_notification.png)
 
-この問題を修正するには、**[セットアップ]** ボタンを選択する必要があります。このボタンは、**[同期できません]** 通知の右にあります。 [セットアップ] ボタンを押すと、[会社アクセスのセットアップ] フロー画面が表示されます。この画面の指示に従い、デバイスを登録します。
+この問題を修正するには、 **[セットアップ]** ボタンを選択する必要があります。このボタンは、 **[同期できません]** 通知の右にあります。 [セットアップ] ボタンを押すと、[会社アクセスのセットアップ] フロー画面が表示されます。この画面の指示に従い、デバイスを登録します。
 
   ![[会社アクセスのセットアップ] 画面](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_company_access_setup.png)
 
@@ -332,7 +332,7 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 
 5. iOS 用の Safari が既定のブラウザーであり、Cookie が有効であることを確認します。
 
-### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Intune と System Center Configuration Manager を使用するときに、登録済みの iOS デバイスがコンソールに表示されない
+### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-configuration-manager-with-intune"></a>Intune と Configuration Manager を使用するときに、登録済みの iOS デバイスがコンソールに表示されない
 **問題:** ユーザーが iOS デバイスを登録しても、そのデバイスが Configuration Manager 管理コンソールに表示されません。 そのデバイスでは、登録済みであることが示されません。 次の原因が考えられます。
 
 - Configuration Manager サイトの Microsoft Intune Connector と Intune サービスとの通信が行われてない。
@@ -374,7 +374,7 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 4. 登録プロセスを再起動するようユーザーに通知します。
 
 #### <a name="determine-if-theres-something-wrong-with-the-vpp-token"></a>VPP トークンに問題があるかどうかを判断する
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、**[デバイス]** > **[iOS]** > **[iOS 登録]** > **[Enrollment Program トークン]** > トークン名 > **[プロファイル]** > プロファイル名 > **[管理]** > **[プロパティ]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS 登録]**  >  **[Enrollment Program トークン]** > トークン名 > **[プロファイル]** > プロファイル名 > **[管理]**  >  **[プロパティ]** の順に選択します。
 2. プロパティを参照して、次のようなエラーが表示されているかどうかを確認します。
     - このトークンは期限切れになっています。
     - このトークンは、ポータル サイトのライセンスが不足しています。
@@ -384,14 +384,14 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 3. トークンの問題を修正します。
 
 #### <a name="identify-which-devices-are-blocked-by-the-vpp-token"></a>VPP トークンを使用して、ブロックされているデバイスを特定する
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、**[デバイス]** > **[iOS]** > **[iOS 登録]** > **[Enrollment Program トークン]** > トークン名 > **[デバイス]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]** > **[iOS 登録]**  >  **[Enrollment Program トークン]** > トークン名 > **[デバイス]** の順に選択します。
 2. **[プロファイルの状態]** 列を **[ブロック]** でフィルターします。
 3. **ブロック**されているすべてのデバイスのシリアル番号をメモしておきます。
 
 #### <a name="remotely-wipe-the-blocked-devices"></a>ブロックされているデバイスをリモートでワイプする
 VPP トークンを使用して問題を修正した後は、ブロックされているデバイスをワイプする必要があります。
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインして、**[デバイス]** > **[すべてのデバイス]** > **[列]** > **[シリアル番号]** > **[適用]** の順に選択します。 
-2. ブロックされているデバイスごとに、**[すべてのデバイス]** の一覧で選択し、**[ワイプ]** > **[はい]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインして、 **[デバイス]**  >  **[すべてのデバイス]**  >  **[列]**  >  **[シリアル番号]**  >  **[適用]** の順に選択します。 
+2. ブロックされているデバイスごとに、 **[すべてのデバイス]** の一覧で選択し、 **[ワイプ]**  >  **[はい]** を選択します。
 
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>登録プロセスを再起動するようユーザーに通知する
 ブロックされているデバイスをワイプしたら、登録プロセスを再起動するようユーザーに通知できます。
@@ -415,11 +415,11 @@ VPP トークンを使用して問題を修正した後は、ブロックされ�
 - デバイスが Intune でまだ別のユーザーに割り当てられている場合は、前の所有者が Intune ポータル サイト アプリを使用してデバイスを削除またはリセットしませんでした。 Intune から古いデバイス レコードをクリーンアップするには:  
 
     1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、自分の管理者資格情報でサインインします。
-    2. **[デバイス]** > **[すべてのデバイス]** を選択します。  
+    2. **[デバイス]**  >  **[すべてのデバイス]** を選択します。  
     3. 登録に問題があるデバイスを探します。 デバイス名または MAC/HW アドレスで検索して結果を絞り込みます。
-    4. デバイスを選択し、**[削除]** を選択します。 デバイスに関連付けられている他のすべてのエントリを削除します。  
+    4. デバイスを選択し、 **[削除]** を選択します。 デバイスに関連付けられている他のすべてのエントリを削除します。  
 
-## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>System Center Configuration Manager と Intune を使用しているときの問題
+## <a name="issues-when-using-configuration-manager-with-intune"></a>Configuration Manager と Intune を使用しているときの問題
 
 ### <a name="mobile-devices-disappear"></a>モバイル デバイスが表示されない
 
@@ -433,9 +433,9 @@ Configuration Manager コンソールで、デバイスを削除したプロセ�
 
 #### <a name="check-how-device-was-removed"></a>デバイスの削除方法を確認する
 
-1. Configuration Manager 管理コンソールで、**[監視]** &gt; **[システム ステータス]** &gt; **[ステータス メッセージ クエリ]** の順に選択します。
+1. Configuration Manager 管理コンソールで、 **[監視]** &gt; **[システム ステータス]** &gt; **[ステータス メッセージ クエリ]** を選択します。
 
-2. **[手動で削除されたコレクションのメンバー リソース]** を右クリックし、**[メッセージを表示]** を選択します。
+2. **[手動で削除されたコレクションのメンバー リソース]** を右クリックし、 **[メッセージを表示]** を選択します。
 
 3. 適切な時刻/日付または過去 12 時間を選択します。
 
@@ -467,10 +467,10 @@ iOS 登録エラーの一覧は、「[Troubleshooting iOS device enrollment prob
 
 **解決方法:**
 
-1. **[スタート]** メニューで、**[ファイル名を指定して実行]** を選択し、「**MMC**」と入力します。
-1. **[ファイル]** > **[スナップインの追加と削除]** の順に選択します。
-1. **[証明書]** をダブルクリックし、**[コンピューター アカウント]** > **[次へ]**、**[ローカル コンピューター]** の順に選択します。
-1. **[証明書 (ローカル コンピューター)]** をダブルクリックして、**[個人証明書]** を選択します。
+1. **[スタート]** メニューで、 **[ファイル名を指定して実行]** を選択し、「**MMC**」と入力します。
+1. **[ファイル]**  >  **[スナップインの追加と削除]** の順に選択します。
+1. **[証明書]** をダブルクリックし、 **[コンピューター アカウント]**  >  **[次へ]** 、 **[ローカル コンピューター]** の順に選択します。
+1. **[証明書 (ローカル コンピューター)]** をダブルクリックして、 **[個人証明書]** を選択します。
 1. Sc_Online_Issuing によって発行された Intune 証明書を探し、もし見つかった場合は削除します。
 1. レジストリ キー**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** が存在する場合は削除し、サブ キーもすべて削除します。
 1. 再登録を試行します。
@@ -502,6 +502,6 @@ iOS 登録エラーの一覧は、「[Troubleshooting iOS device enrollment prob
 |0xAB2|Windows インストーラーが、カスタム動作に必要な VBScript ランタイムにアクセスできませんでした。|このエラーは、ダイナミック リンク ライブラリ (DLL) に基づくカスタム動作が原因で発生します。 DLL のトラブルシューティング時に、場合によっては「[Microsoft サポート技術情報 198038:パッケージと展開の問題のための便利なツールの情報](https://support.microsoft.com/kb/198038)」に記載されているツールを使用する必要があります。|
 |0x80cf0440|サービス エンドポイントとの接続が切断されました。|試用アカウントまたは有料アカウントが中断されています。 新しい試用アカウントまたは有料アカウントを作成し、再登録してください。|
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](../fundamentals/get-support.md)」の説明に従って Microsoft サポートにお問い合わせください。

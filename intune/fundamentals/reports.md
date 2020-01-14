@@ -6,7 +6,7 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 05258c5363b43398dee1815bb91c50878803e426
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 3ae06ae3f9f76d86a792721d45f8319bfe6491fd
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74391943"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654228"
 ---
 # <a name="intune-reports"></a>Intune レポート
 Microsoft Intune レポートを使用すると、組織全体のエンドポイントの正常性とアクティビティをより効果的かつ積極的に監視できるだけでなく、Intune 全体で他のレポート データを提供することもできます。 たとえば、デバイスのポリシー準拠、デバイスの正常性、デバイスの傾向に関するレポートを表示できます。 さらに、カスタム レポートを作成し、より具体的なデータを取得できます。 
@@ -53,16 +53,19 @@ Microsoft Intune レポートを使用すると、組織全体のエンドポイ
 
 **非準拠デバイス**のレポートは次の手順で表示できます。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[デバイスのポリシー準拠]** 、 **[非準拠デバイス]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]**  >  **[モニター]**  >  **[非準拠デバイス]** を選択します。
 
     ![非準拠デバイス レポート](./media/intune-reports/intune-reports-02.png)
+
+    > [!TIP]
+    > 以前に Azure portal で Intune を使用したことがある場合は、[Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインし、 **[デバイスのポリシー準拠]**  >  **[準拠していないデバイス]** を選択することで、Azure portal に上記の詳細が表示されます。
 
 ## <a name="device-compliance-report-organizational"></a>デバイスのポリシー準拠レポート (組織)
 デバイスのポリシー準拠レポートは本質的に広範囲であり、集計されたメトリクスを識別する目的で、従来の方法に近いやり方でデータが表示されます。 このレポートは、デバイスのポリシー準拠の全体像を見るために、大きなデータセットを扱えるように設計されています。 たとえば、デバイスのポリシー準拠を確認するためのデバイスのポリシー準拠レポートには、データセットの大きさに関係なくデータを広範囲で見ることができるように、デバイスのあらゆるポリシー準拠状態が表示されます。 このレポートでは、集計されたメトリクスが表示されて便利なだけでなく、レコードが詳細に分類されます。 このレポートは、レポートにフィルターを適用し、[レポートの生成] ボタンを選択することで生成できます。 これでデータが更新され、集計データを構成する個々のレコードを表示できる最新の状態が表示されます。 新しいフレームワークのほとんどのレポートと同様に、これらのレコードは並べ替えたり、検索したりして必要な情報だけを表示できます。 
 
 生成されたデバイスの状態レポートは次の手順で表示できます。
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 2. レポートの概要を表示する **[レポート]** を選択します。
 3. **[デバイスのポリシー準拠]** を選択します。
 4. **[対応状態]** 、 **[OS]** 、 **[所有権]** フィルターを選択し、レポートの内容を絞り込みます。
@@ -79,7 +82,7 @@ Microsoft Intune レポートを使用すると、組織全体のエンドポイ
 
 デバイスのポリシー準拠レポートは、**レポート** ワークロードで概要レポートとして入手できます。 デバイスのポリシー準拠レポートは次の手順で表示します。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 2. レポートの概要を表示する **[レポート]** を選択します。
 
     ![Intune レポートの概要](./media/intune-reports/intune-reports-01.png)
@@ -91,7 +94,7 @@ Microsoft Intune レポートを使用すると、組織全体のエンドポイ
 
 **傾向**レポートは次の手順で表示できます。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 2. **[レポート]** 、 **[傾向]** の順に選択し、60 日間にわたるデバイスのポリシー準拠傾向を表示します。
 
     ![Intune 傾向レポート](./media/intune-reports/intune-reports-03.png)
@@ -106,7 +109,7 @@ Microsoft Intune レポートを使用すると、組織全体のエンドポイ
 
 カスタム レポートは次の手順で作成し、表示できます。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 2. **[レポート]** 、 **[診断設定]** の順に選択して[診断設定](reports.md#diagnostic-settings)を追加します。
 
     ![Intune レポートの概要](./media/intune-reports/intune-reports-04.png)
@@ -143,7 +146,7 @@ Log Analytics は、ログ クエリを作成し、クエリの結果を対話�
 ### <a name="workbooks"></a>ブック
 ブックでは、テキスト、分析クエリ、Azure メトリックス、パラメーターが、高機能の対話型レポートに結合されます。 ブックは、同じ Azure リソースにアクセスできる他のチーム メンバーが編集できます。 ブックの詳細については、[Azure Monitor ブック](https://docs.microsoft.com/azure/azure-monitor/app/usage-workbooks)に関するページを参照してください。 また、ブック テンプレートを使用して操作したり、投稿したりできます。 詳細については、「[Azure Monitor Workbook テンプレート](https://go.microsoft.com/fwlink/?linkid=867045)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ 
 
 次のテクノロジについて学習してください。
 - [ブログ - Microsoft Intune レポート フレームワーク](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553)

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 947472c5e589cb443c9a15d20a732c299cc48b44
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 89b4516017d7ac8bf1e27134db6a67a0a86b17cb
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992984"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206076"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune デバイスのコンプライアンス対応ポリシーの監視
 
@@ -36,9 +36,9 @@ ms.locfileid: "74992984"
 
 **Intune デバイスのポリシー準拠ダッシュボード**を開きます。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 
-2. **[デバイスのポリシー準拠]**  >  **[概要]** の順に選択します。 **[デバイスのポリシー準拠] ダッシュボード**が開きます。
+2. **[デバイス]**  >  **[概要]**  >  **[対応状態]** タブを選択します。
 
 > [!IMPORTANT]
 > デバイスのコンプライアンス ポリシーを受け取るには、Intune にデバイスを登録する必要があります。
@@ -151,7 +151,7 @@ Intune には、そのデバイスに適用されているデバイス コンプ
 
 ## <a name="view-compliance-reports"></a>コンプライアンス レポートを表示する
 
-"*対応状態*" のグラフを使用するだけでなく、管理センターの *[モニター]* ページからコンプライアンス レポートを表示することができます。
+*[対応状態]* のグラフを使用するだけでなく、 **[レポート]**  >  **[デバイスのポリシー準拠]** を使用できます。
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 
@@ -177,7 +177,7 @@ Intune には、そのデバイスに適用されているデバイス コンプ
 2. ポリシーを選択し、 **[概要]** を選択します。 このビューでは、ポリシー割り当てに次の状態が含まれています。
 
     - **成功**:ポリシーが適用されます
-    - **エラー**:ポリシーを適用できませんでした。 メッセージは通常、説明のリンクを含むエラー コードと共に表示されます。
+    - **エラー**: ポリシーを適用できませんでした。 メッセージは通常、説明のリンクを含むエラー コードと共に表示されます。
     - **[競合]** :2 つの設定が同じデバイスに適用されます。Intune では競合に対処できません。 管理者が確認する必要があります。
     - **Pending**:デバイスはまだ、ポリシーを受信するために Intune でチェックインしていません。
     - **適用なし**:デバイスがポリシーを受信できません。 たとえば、ポリシーで iOS 11.1 に特有の設定が更新されるが、デバイスが iOS 10 を使用している場合です。
@@ -191,3 +191,7 @@ Intune には、そのデバイスに適用されているデバイス コンプ
 - Intune の構成ポリシーと準拠ポリシーの設定が競合している場合は、構成ポリシーの設定よりも準拠ポリシーの設定が優先されます。 構成ポリシーの設定の方が安全性が高い場合でも同様です。
 
 - 複数の準拠ポリシーを展開した場合、Intune ではその中で最も安全なポリシーが使用されます。
+
+## <a name="next-steps"></a>次のステップ
+
+[コンプライアンス ポリシーの概要](device-compliance-get-started.md)

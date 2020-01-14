@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 13d6a2b9cdc8596c7f5cf81218377754e9412be1
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 26013ab06cabdfd64ec3cd34254e3cfa2bb2428d
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390340"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654262"
 ---
 # <a name="use-device-encryption-with-intune"></a>Intune でデバイスの暗号化を使用する
 
@@ -58,7 +58,7 @@ Intune で管理できる FileVault 設定の詳細については、macOS エ�
 3. 次のオプションを設定します。
 
    - プラットフォーム: macOS
-   - プロファイルの種類:Endpoint Protection
+   - プロファイルの種類:エンドポイント保護
 
 4. **[設定]**  >  **[FileVault]** の順に選択します。
 
@@ -87,6 +87,10 @@ Intune で FileVault を使用して macOS デバイスを暗号化すると、I
 
 Intune で FileVault を使って macOS デバイスを暗号化した後は、任意のデバイス上の Web ポータル サイトから、そのデバイスの個人用回復キーを表示できます。 Web ポータル サイトで、暗号化された macOS デバイスを選択した後、リモート デバイス アクションとして [回復キーを取得する] を選択します。
 
+### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices"></a>MEM 暗号化 macOS デバイスから個人用回復キーを取得する
+
+エンド ユーザーは、iOS ポータル サイト アプリを使用して個人用回復キー (FileVault キー) を取得できます。 個人用回復キーを持つデバイスは、Intune に登録され、Intune により FileVault を使用して暗号化されている必要があります。 エンド ユーザーは、iOS ポータル サイト アプリを使用して、FileVault 個人用回復キーを含む Web ページを開くことができます。 また、 **[デバイス]**  > "*暗号化されて登録された macOS デバイス*" >  **[回復キーの取得]** を選択することで、Intune から回復キーを取得することもできます。 
+
 ## <a name="bitlocker-encryption-for-windows-10"></a>Windows 10 の BitLocker 暗号化
 
 Intune を使用して、Windows 10 を実行するデバイスで BitLocker ドライブ暗号化を構成します。 次に、Intune の暗号化レポートを使用して、これらのデバイスの暗号化の詳細を表示します。 Azure Active Directory (Azure AD) で見られるように、お使いのデバイスから BitLocker の重要な情報にアクセスすることもできます。
@@ -106,7 +110,7 @@ Windows 10 以降のプラットフォームのエンドポイント保護用の
 3. 次のオプションを設定します。
 
    - プラットフォーム:Windows 10 以降
-   - プロファイルの種類:Endpoint Protection
+   - プロファイルの種類:エンドポイント保護
 
 4. **[設定]**  >  **[Windows 暗号化]** の順に選択します。
 
@@ -122,7 +126,7 @@ Intune で BitLocker を使用して Windows 10 デバイスを暗号化する�
 
 Intune デバイス アクションを使用することで、Windows 10 バージョン 1909 以降を実行するデバイスの BitLocker 回復キーをリモートで交換できます。
 
-#### <a name="prerequisites"></a>必要条件
+#### <a name="prerequisites"></a>[前提条件]
 
 BitLocker 回復キーの交換をサポートするには、デバイスで次の前提条件を満たしている必要があります。
 
@@ -142,7 +146,7 @@ BitLocker 回復キーの交換をサポートするには、デバイスで次�
 
 3. 管理するデバイスの一覧で、デバイスを選択して、 **[詳細]** を選択し、 **[BitLocker キーの交換]** デバイス リモート アクションを選択します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [デバイス コンプライアンス](compliance-policy-create-windows.md) ポリシーを作成します。
 
