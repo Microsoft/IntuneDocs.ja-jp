@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/09/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdc849405b7404203faa6e86d3fed1ea8e35ec43
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 80ae9b3b1ab274e236ad43c52569574718d3eec4
+ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414632"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75839300"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune で iOS アプリ間のデータ転送を管理する方法
 
@@ -84,7 +84,7 @@ Intune またはサード パーティの EMM ソリューションによって�
 > Outlook for iOS では、[構成デザイナーを使用する] オプションを指定してマネージド デバイスの App Configuration のポリシーを展開し、 **[職場または学校アカウントのみ許可する]** を有効にした場合、ポリシーに対して構成キー IntuneMAMUPN が暗黙で自動的に構成されます。 詳しくは、「[iOS および Android 用 Outlook の新しい App Configuration ポリシー エクスペリエンス – 一般的なアプリの構成](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481)」の FAQ セクションをご覧ください。 
 
 
-### <a name="example-2-end-user-experience"></a>例 2:エンドユーザー エクスペリエンス
+### <a name="example-2-end-user-experience"></a>例 2:エンド ユーザー エクスペリエンス
 
 "*OS 共有を使用した*" ポリシー マネージド アプリ "*から他のアプリケーションへの共有*"
 

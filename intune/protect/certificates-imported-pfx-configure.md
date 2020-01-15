@@ -2,27 +2,27 @@
 title: Microsoft Intune 内でインポートした PFX 証明書を使用する - Azure | Microsoft Docs
 description: Microsoft Intune では、インポートした Public Key Cryptography Standards (PKCS) 証明書を使用します。これには、証明書のインポート、証明書テンプレートの構成、Intune にインポートした PFX 証明書コネクタのインストール、インポートした PKCS 証明書プロファイルの作成が含まれます。
 keywords: ''
-author: ralms
+author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 01/10/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: lacranda
+ms.reviewer: lacranda; rimarram
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d54c58523fdb44080b6c4210d639f9ad0ce476e2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2c33f4429c86160bbf180c8102e2dc7532bbd80e
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801534"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886016"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Intune でインポートした PKCS 証明書を構成して使用する
 
@@ -46,14 +46,17 @@ Intune で S/MIME を使用する方法について詳しくは、[S/MIME を使
 
   コネクタからアクセスされるすべてのネットワーク エンドポイントについて詳しくは、「[Intune のネットワーク構成の要件と帯域幅](../fundamentals/network-bandwidth-use.md)」をご覧ください。
 
-- **Windows Server**:  
+- **Windows サーバー**:
+
   Windows Server を使用して、PFX Certificate Connector for Microsoft Intune をホストします。  コネクタは、Intune にインポートされる証明書の要求を処理するために使用されます。
 
   Intune では、*PFX Certificate Connector for Microsoft Intune* と同じサーバー上に *Microsoft Intune Certificate Connector* をインストールすることができます。
 
   コネクタをサポートするには、サーバーで .NET 4.6 Framework 以降を実行する必要があります。 コネクタのインストールを開始したときに .NET 4.6 Framework がインストールされていない場合は、コネクタのインストールによって自動的にインストールされます。
 
-- **Visual Studio 2015 以上** (オプション):Visual Studio を使用して、Microsoft Intune に PFX 証明書をインポートするためのコマンドレットを含むヘルパー PowerShell モジュールを構築します。 ヘルパー PowerShell コマンドレットを入手するには、[GitHub の PFXImport PowerShell プロジェクト](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)に関するページをご覧ください。
+- **Visual Studio 2015 以上** (オプション):
+
+  Visual Studio を使用して、Microsoft Intune に PFX 証明書をインポートするためのコマンドレットを含むヘルパー PowerShell モジュールを構築します。 ヘルパー PowerShell コマンドレットを入手するには、[GitHub の PFXImport PowerShell プロジェクト](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)に関するページをご覧ください。
 
 ## <a name="how-it-works"></a>しくみ
 
@@ -143,15 +146,14 @@ PowerShell モジュールには、Windows 暗号化を使用してキーを作�
 
 次のプロセスでは、PFX 証明書をインポートする方法の例として、PowerShell コマンドレットを使用します。 ご自身の要件に応じて、さまざまなオプションを選択できます。
 
-次のオプションがあります。  
-- 使用目的 (タグに基づいて証明書をグループ化):  
+次のオプションがあります。
+
+- 使用目的 (タグに基づいて証明書をグループ化):
   - 未割り当て
   - smimeEncryption
   - smimeSigning
 
-- パディング スキーム:  
-  - pkcs1
-  - oaepSha1
+- パディング スキーム:
   - oaepSha256
   - oaepSha384
   - oaepSha512
@@ -209,6 +211,6 @@ PowerShell モジュールには、Windows 暗号化を使用してキーを作�
 
 5. **[OK]**  >  **[作成]** を選択してプロファイルを保存します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 プロファイルは作成されましたが、まだ何も行われていません。 新しいデバイス プロファイルを[割り当てます](../configuration/device-profile-assign.md)。

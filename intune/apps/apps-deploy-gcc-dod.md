@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/09/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8a6c430ab15c40166e8c3afbccd6fcc7c2c5976d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5d37bf060f11be9e295a9ef2743fa0ba33844df7
+ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507256"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75839331"
 ---
 # <a name="deploying-apps-using-intune-on-the-gcc-high-and-dod-environments"></a>Intune を使用して GCC High 環境および DoD 環境でアプリを展開する 
 
@@ -56,7 +56,7 @@ Intune をビジネス向け Microsoft ストアのアカウントに同期す�
 
 これらのサービスが適切に使用されているかを評価するときは、アプリのプライバシーとコンプライアンスのステートメントを確認し、それらを自身の組織のコンプライアンス、セキュリティ、プライバシーの要件と比較します。   
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 アプリの展開と割り当てに関する詳細については、「[Microsoft Intune を使用してアプリをグループに割り当てる](apps-deploy.md)」を参照してください。
 

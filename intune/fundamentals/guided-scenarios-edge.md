@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 01/09/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e86f3a469169e7a805cb3f56e570ba4d3a90e925
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 88beb8f4791c127b0a225878f5bc43b6dd9b4025
+ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585697"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75839374"
 ---
 # <a name="guided-scenario---deploy-microsoft-edge-for-mobile"></a>ガイド付きシナリオ - モバイル用の Microsoft Edge を展開する 
 
@@ -38,7 +38,7 @@ Intune ポリシーによって有効化された次の Microsoft Edge エンタ
 - **Azure アプリケーション プロキシの統合**- エンドユーザーが企業ネットワークから接続するか、インターネットから接続するかに関係なく、管理者は SaaS アプリおよび Web アプリへのアクセスを制御し、ブラウザー ベースのアプリをセキュリティで保護された Microsoft Edge ブラウザーでのみ実行させることができます。 
 - **管理されたお気に入りとホーム ページのショートカット** - 管理者は、企業コンテキスト内のエンドユーザーがアクセスしやすいように、[お気に入り] の下に表示される URL を設定できます。 管理者は、企業ユーザーが Microsoft Edge で新しいページまたは新しいタブを開いたときに、プライマリ ショートカットとして表示されるホームページ ショートカットを設定できます。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
 - [MDM 機関を Intune に設定する](mdm-authority-set.md#set-mdm-authority-to-intune) - モバイル デバイス管理 (MDM) 機関の設定によって、デバイスの管理方法が決まります。 IT 管理者が MDM 機関を設定してからでないと、ユーザーは管理対象のデバイスを登録できません。
 - 必要な Intune 管理者アクセス許可:
@@ -86,7 +86,7 @@ Intune ポリシーによって有効化された次の Microsoft Edge エンタ
 > [!IMPORTANT]
 > ガイド付きシナリオが完了すると、概要が表示されます。 概要の一覧で示されているリソースを後で変更できますが、これらのリソースが表示されているテーブルは保存されません。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - Intune アプリ保護ポリシーの統合を設定して、Microsoft Edge の使用のセキュリティを強化します。 詳細については、「[Microsoft Edge のアプリケーション保護ポリシー](~/apps/manage-microsoft-edge.md#application-protection-policies-for-microsoft-edge)」を参照してください。
 - 含めるイントラネット サイトがある場合は、Azure アプリケーション プロキシの統合によるアクセスの保護を確認してください。 詳細については、「[Microsoft Edge 用にアプリケーション プロキシの設定を構成する](~/apps/manage-microsoft-edge.md#configure-application-proxy-settings-for-microsoft-edge)」を参照してください。

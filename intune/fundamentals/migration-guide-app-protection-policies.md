@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/09/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8fab3ea722e94f2613a0fb1e474a16ecb5971569
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8c0571eb2a369e440b3c7732b6d55ba05ace2c34
+ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585256"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75839353"
 ---
 # <a name="configure-app-protection-policies-optional"></a>アプリ保護ポリシーを構成する (省略可能)
 
@@ -54,6 +54,6 @@ Intune では移行中の企業データの保護が提供されるため、デ�
 
 - [アプリ保護ポリシーを作成して割り当てる方法](~/apps/app-protection-policies.md)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [特殊な移行に関する考慮事項](migration-guide-considerations.md)

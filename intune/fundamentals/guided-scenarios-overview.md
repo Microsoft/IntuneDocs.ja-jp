@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 01/09/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebb17324355fff9631ef74a76388ef0ab797d437
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: b833e5265387637a35bfcdf79f4ae5f37558de61
+ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899138"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75839130"
 ---
 # <a name="intune-guided-scenarios-overview"></a>Intune のガイド付きシナリオの概要 
 
@@ -46,7 +46,7 @@ ms.locfileid: "74899138"
 
 ### <a name="launching"></a>起動  
 
-すべてのガイド付きシナリオは、**[デバイス管理ポータル](https://devicemanagement.microsoft.com)** > **[トラブルシューティングとサポート]** > **[ガイド付きシナリオ]** から使用できます。 
+すべてのガイド付きシナリオは、 **[デバイス管理ポータル](https://devicemanagement.microsoft.com)**  >  **[トラブルシューティングとサポート]**  >  **[ガイド付きシナリオ]** から使用できます。 
 
 このガイド付きシナリオは、シナリオの目的と、セットアップを完了するために必要な前提条件を説明する概要から始まります。 この時点で、管理者のアクセス許可がチェックされ、シナリオを完了するために必要なすべての特権があることが確認されます。  
 
@@ -64,7 +64,7 @@ ms.locfileid: "74899138"
 
 ガイド付きシナリオを使用して既存のリソースを編集することはできません。 作成したら、すべてのリソース、グループ、および割り当ては、既存のワークロードを使用して編集する必要があります。
 
-### <a name="monitoring"></a>モニタリング 
+### <a name="monitoring"></a>監視 
 
 ガイド付きシナリオは、最初の作成プロセスを除き、既存のリソースを監視するために使用することはできません。 作成したら、すべてのリソース、グループ、および割り当ては、既存のワークロードを使用して監視する必要があります。 
 
@@ -76,6 +76,6 @@ ms.locfileid: "74899138"
 
 テクノロジの進化に伴って、シナリオのユーザー エクスペリエンス、セキュリティ、またはその他の側面を向上させるため、Intune では時々、ガイド付きシナリオが更新される場合があります。 この更新は、ガイド付きシナリオで行われた新しい展開にのみ影響します。 Intune では、新しいベスト プラクティスまたは推奨事項に対応するために、ガイド付きシナリオによって以前に生成された既存のリソースが更新されることはありません。  
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Microsoft Intune ですぐに実行するには、Intune のガイド付きシナリオを実行します。 Intune を初めて使用する場合は、[無料試用版のクイックスタート](free-trial-sign-up.md)に従って Intune テナントを設定します。

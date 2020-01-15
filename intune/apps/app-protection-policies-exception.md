@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 01/09/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18b1b8feda00f5c669b39bc365c637dcd3968078
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0ea66458060417fc828b2b7735b384e8cd3e25a9
+ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73984073"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75839390"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>Intune App Protection Policy (APP) データ転送ポリシーの例外を作成する方法
 
@@ -68,7 +68,7 @@ Android をターゲットとするポリシーの場合、アプリ パッケ�
 
 - Android **証明書インストーラー**の例:Outlook for Android で S/MIME 証明書 (電子メール添付として配信される) を Android KeyStore にインストールできるようにネイティブの**証明書インストーラー** アプリを除外するには、文字列 <code>com.android.certinstaller</code> のデータ転送例外を追加する必要があります。 詳細については、「[iOS 向けおよび Android 向け Outlook の秘密度ラベルと保護](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [アプリ保護ポリシーを作成して展開する](app-protection-policies.md)
 - [「iOS アプリ保護ポリシー設定」の「データ転送の除外対象」](app-protection-policy-settings-ios.md#data-transfer-exemptions)

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86640c831e8836a72ad5a0a7d5023ff7d836a43a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 501bfcbef0dd46f6021fc5db16cf3b9e2f2cd0c0
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801581"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886004"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Intune を使用して SCEP をサポートするようにインフラストラクチャを構成する
 
@@ -97,7 +97,7 @@ NDES サービスと、環境内でサポートされている任意のインフ
 
 SCEP を使用する場合は、次の証明書とテンプレートが使用されます。
 
-|オブジェクト    |説明    |
+|オブジェクト    |詳細    |
 |----------|-----------|
 |**SCEP 証明書テンプレート**         |デバイスの SCEP 要求を満たすために使用される発行元 CA で構成するテンプレート。 |
 |**クライアント認証証明書** |発行元 CA またはパブリック CA から要求されます。<br /> この証明書は、NDES サービスをホストするコンピューターにインストールします。これは Intune Certificate Connector によって使用されます。<br /> この証明書を発行するために使用する CA テンプレートで、証明書に*クライアント*と*サーバーの認証*キーの使用法 (**拡張キー使用法**) が設定されている場合は、 サーバーとクライアントの認証に同じ証明書を使用できます。 |
@@ -373,8 +373,7 @@ Microsoft Intune Certificate Connector は、NDES サービスが実行されて
 
    2. インストーラーを実行します (**NDESConnectorSetup.exe**)。 インストーラーによって、NDES のポリシー モジュールと IIS 証明書登録ポイント (CRP) Web サービスもインストールされます。 CRP Web サービス *CertificateRegistrationSvc* は、IIS でアプリケーションとして実行されます。
 
-      - スタンドアロン Intune の NDES をインストールする場合、CRP サービスは証明書コネクタと共に自動的にインストールされます。
-      - 構成マネージャーで Intune を使用する場合は、証明書登録ポイントを Configuration Manager サイト システムの役割としてインストールします。
+      スタンドアロン Intune の NDES をインストールする場合、CRP サービスは証明書コネクタと共に自動的にインストールされます。
 
 5. Certificate Connector のクライアント証明書の入力を求められたら、 **[選択]** を選び、この記事で前述した「[NDES をホストするサーバーに証明書をインストールしてバインドする](#install-and-bind-certificates-on-the-server-that-hosts-ndes)」の手順 3 で NDES サーバーにインストールした**クライアント認証**証明書を選択します。
 
@@ -407,7 +406,7 @@ Microsoft Intune Certificate Connector は、NDES サービスが実行されて
 > [!NOTE]
 > Intune Certificate Connector では、TLS 1.2 がサポートされています。 このコネクタをホストするサーバーが TLS 1.2 をサポートしている場合は、TLS 1.2 が使用されます。 サーバーが TLS 1.2 をサポートしない場合、TLS 1.1 が使用されます。 現在、デバイスとサーバー間の認証には、TLS 1.1 が使用されています。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [SCEP 証明書プロファイルを作成する](certificates-profile-scep.md)  
 [Intune Certificate Connector の問題のトラブルシューティング](troubleshoot-certificate-connector-events.md)

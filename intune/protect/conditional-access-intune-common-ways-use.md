@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d30749a7eaa3d516bef2f2acff3e010d69db1c0e
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 92e6aa1a66429c6407556444e903c158aff9dfa0
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547059"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885995"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune での条件付きアクセスの一般的な使用方法
 
@@ -86,14 +86,6 @@ PC の条件付きアクセスでは、モバイル デバイスで利用でき�
 - **オンプレミス AD ドメインへの参加:** この方法は、AD のグループ ポリシーや Configuration Manager を使用して PC を管理している現在のやり方におおむね満足している組織でよく使用されます。
 
 - **Azure AD ドメインへの参加と Intune の管理:** このシナリオは、クラウドファーストにすることを望んでいる (つまり、主にクラウド サービスを使用し、オンプレミスのインフラストラクチャの使用を減らすことを目標としている) 組織や、クラウドのみを使用する (オンプレミスのインフラストラクチャがない) 組織向けです。 Azure AD への参加はハイブリッド環境で適切に機能し、クラウドとオンプレミスのアプリとリソースの両方にアクセスできるようにします。 Azure AD に参加したデバイスは Intune に登録されます。会社のリソースにアクセスするときに、これを条件付きアクセスの基準として使用できます。
-
-- **AD ドメインへの参加と Configuration Manager:** Current Branch の Configuration Manager では、ドメインに参加している PC となるのに加え、次の特定のコンプライアンス基準を評価できる条件付きアクセス機能が提供されます。
-
-  - PC が暗号化されているか。
-
-  - マルウェア対策がインストールされているか。 PC は最新の状態か。
-
-  - デバイスが脱獄またはルート化されているか。
 
 #### <a name="bring-your-own-device-byod"></a>Bring Your Own Device (BYOD)
 

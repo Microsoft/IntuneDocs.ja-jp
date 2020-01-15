@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 309860fb5ddf6fa9488ecaf395534bf869234176
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: ebeb5830136ad6dae19babbc8ecf45c1d6e5c36c
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547859"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885972"
 ---
 # <a name="android-device-administrator-enrollment"></a>Android デバイス管理者の登録
 
@@ -36,10 +36,6 @@ Android デバイス管理者 ("従来の" Android 管理とも呼ばれ、Andro
 Android デバイス管理者のサポートに関する Intune サポートについて詳しくは、[「通知」セクション](../fundamentals/whats-new.md#decreasing-support-for-android-device-administrator)をご覧ください。
 
 それでもユーザーがデバイス管理者の管理を使って各自の Android デバイスを登録するようにしたい場合は、次のセクションに進みます。  
-
-
-> [!Note]  
-> ハイブリッド モバイル デバイス管理 (ハイブリッド MDM。Intune による管理と Configuration Manager コンソールの併用) では、Android 10 以降はサポートされません。ハイブリッド MDM は 2019 年 9 月 1 日にサービスを終了するためです。 まだハイブリッド MDM を使用している場合は、できるだけ早く Intune スタンドアロンに移行する必要があります。 移行に関するヘルプが必要な場合は、サポートにお問い合わせください。 詳細については、「[Move from Hybrid Mobile Device Management to Intune on Azure](https://aka.ms/hybrid_notification)」 (ハイブリッド MDM から Azure での Intune に移行する) を参照してください。
 
 Google の Android Enterprise 機能について詳しくは、次の記事をご覧ください。
 - [デバイス管理者から Android Enterprise への移行に関する Google のガイダンス](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)

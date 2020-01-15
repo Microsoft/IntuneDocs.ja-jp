@@ -17,12 +17,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a23409b03047cac8edb0a50ad5188e006d35049a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 23b7264f2b7c9be0805ae30afca5c8cb15b83482
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505149"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956243"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Intune の展開計画に関するその他のリソース
 
@@ -35,7 +35,7 @@ ms.locfileid: "72505149"
 |展開計画  |設計と実装   |テストと検証 |
 |-----|----- |------|
 | 展開の目標 |現在の環境|機能検証テスト|
-| 展開の目的 |[デバイス]|IT 管理者シナリオの検証テスト|
+| 展開の目的 |デバイス|IT 管理者シナリオの検証テスト|
 | 展開の課題 |使用条件|エンド ユーザー シナリオの検証テスト|
 | ユース ケース シナリオ |構成ポリシー| |
 | ユース ケース シナリオの要件 |証明書プロファイル| |
@@ -46,11 +46,11 @@ ms.locfileid: "72505149"
 | | コンプライアンス ポリシー | |
 | | 条件付きアクセス ポリシー|-|
 
-## <a name="further-reading"></a>参考記事
+## <a name="further-reading"></a>参考資料
 
 以下のリソースで追加情報を確認してください。Intune の展開計画、設計、実装プロセス時に役立つ場合があります。
 
-- [Microsoft Intune のドキュメント](http://docs.microsoft.com/intune/) - Intune のドキュメントの完全なセット。
+- [Microsoft Intune のドキュメント](https://docs.microsoft.com/intune/) - Intune のドキュメントの完全なセット。
 
 - [Microsoft Trust Center](https://www.microsoft.com/TrustCenter) - すべての Microsoft クラウド製品とサービスにおける、セキュリティ、プライバシー、コンプライアンス、透明度についての Microsoft のアプローチを理解できます。
 

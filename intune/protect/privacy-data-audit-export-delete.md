@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4cfb0f69d74cc6146b2497cd53be3e123f79cc70
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fdcf88449a4f6ec0b3b352afb87ebcb5bd0b8389
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504350"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885740"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Intune での個人データの監査、エクスポート、または削除
 
@@ -75,16 +75,6 @@ Intune からエンド ユーザーの個人データを削除するには、管
 
 Intune テナントの顧客が Intune アカウントをキャンセルすると、顧客が Intune アカウントを閉鎖してから 180 日以内にすべてのテナント データが削除されます。 AAD テナントが他の Microsoft エンタープライズ サブスクリプション (Azure、Office 365) に関連付けられている場合、Intune の顧客データのみが削除されます。 AAD テナント リソースは、他のサブスクリプションで使用するために維持されます。 Intune アカウントが AAD テナントに関連付けられている唯一のサブスクリプションの場合、テナントは削除され、すべてのリソースと顧客データも削除されます。
 
-### <a name="delete-a-user-in-a-hybrid-mobile-device-management-mdm-environment"></a>ハイブリッド モバイル デバイス管理 (MDM) 環境でユーザーを削除する
-ハイブリッド MDM 環境 (Configuration Manager と統合された Intune) がある場合、ユーザーを完全に削除し、ローカルの Active Directory、Configuration Manager、および Intune から完全に削除するには、次のアクションを (順番に) 実行する必要があります。
-
-1. ローカルの Active Directory (AD) からユーザーを削除します。 この結果、ユーザーは Azure AD に同期されなくなり、Configuration Manager の検出機能からも検出されなくなります。 
-2. Configuration Manager コンソールからユーザーを削除して、Configuration Manager からユーザーと関連データを削除します。 コンソールで **[資産とコンプライアンス]**  >  **[ユーザー]** に移動し、削除するユーザーを右クリックし、 **[削除]** をクリックします。
-3. [AAD からユーザーを削除します](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user)。これにより、Azure Active Directory と Intune の両方からユーザーと関連データが同時に削除されます。 ユーザーが AAD から削除 (物理的に削除) されると、Intune は AAD から削除信号を受信し、自動的にそのユーザーのすべての個人データを Intune サービスから消去し始めます。 ユーザーの情報は、削除アクションから 30 日以内に Intune サービスから削除されます。
-
-> [!Important]
->新規のハイブリッド MDM の顧客のオンボーディングは非推奨となりました。 詳細については、「[Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150)」 (ハイブリッド MDM から Azure での Intune に移行する) のブログ記事を参照してください。
-
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Intune で個人データを[監査、エクスポート、または削除](privacy-data-audit-export-delete.md)する方法について確認します。
