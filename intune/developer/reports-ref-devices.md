@@ -6,7 +6,7 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36407bda1f74d0c4601f78cedc2af5426e944fee
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 85b6d49f435ec45a2c6a2b81387ea25a1c15299b
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503419"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654075"
 ---
 # <a name="reference-for-devices-entities"></a>デバイス エンティティの参照
 
@@ -42,7 +42,7 @@ ms.locfileid: "72503419"
 
 **deviceTypes** エンティティは、他のデータ ウェアハウス エンティティによって参照されるデバイスの種類を表します。 デバイスの種類により、一般的に、デバイスのモデル、メーカー、あるいは両方の組み合わせが説明されます。
 
-| プロパティ  | 説明 |
+| プロパティ  | [説明] |
 |---------|------------|
 | deviceTypeID |デバイスの種類を示す一意識別子 |
 | deviceTypeKey |データ ウェアハウスにおけるデバイスの種類を示す一意識別子 - 代理キー |
@@ -50,7 +50,7 @@ ms.locfileid: "72503419"
 
 ### <a name="example"></a>例
 
-| deviceTypeID  | 名前 | 説明 |
+| deviceTypeID  | 名前 | [説明] |
 |---------|------------|--------|
 | 0 |デスクトップ |Windows デスクトップ デバイス |
 | 1 |Windows RT |WindowsRT デバイス |
@@ -76,7 +76,7 @@ ms.locfileid: "72503419"
 ## <a name="enrollmentactivities"></a>enrollmentActivities 
 **enrollmentActivity** エンティティは、デバイス登録のアクティビティを示します。
 
-| プロパティ                      | 説明                                                               |
+| プロパティ                      | [説明]                                                               |
 |-------------------------------|---------------------------------------------------------------------------|
 | dateKey                       | この登録アクティビティが記録された日付のキー。               |
 | deviceEnrollmentTypeKey       | 登録の種類のキー。                                        |
@@ -90,14 +90,14 @@ ms.locfileid: "72503419"
 ## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
 **enrollmentEventStatus** エンティティは、デバイス登録の結果を示します。
 
-| プロパティ                   | 説明                                                                       |
+| プロパティ                   | [説明]                                                                       |
 |----------------------------|-----------------------------------------------------------------------------------|
 | enrollmentEventStatusKey   | データ ウェアハウスでの登録状態の一意識別子 (代理キー)  |
 | enrollmentEventStatusName  | 登録状態の名前。 以下の例を参照してください。                            |
 
 ### <a name="example"></a>例
 
-| enrollmentEventStatusName  | 説明                            |
+| enrollmentEventStatusName  | [説明]                            |
 |----------------------------|----------------------------------------|
 | 成功                    | 成功したデバイスの登録         |
 | Failed                     | 失敗したデバイスの登録             |
@@ -106,14 +106,14 @@ ms.locfileid: "72503419"
 ## <a name="enrollmentfailurecategories"></a>enrollmentFailureCategories 
 **EnrollmentFailureCategory** エンティティは、デバイスの登録が失敗した理由を示します。 
 
-| プロパティ                       | 説明                                                                                 |
+| プロパティ                       | [説明]                                                                                 |
 |--------------------------------|---------------------------------------------------------------------------------------------|
 | enrollmentFailureCategoryKey   | データ ウェアハウスでの登録の失敗カテゴリの一意識別子 (代理キー)  |
 | enrollmentFailureCategoryName  | 登録エラーのカテゴリの名前。 以下の例を参照してください。                            |
 
 ### <a name="example"></a>例
 
-| enrollmentFailureCategoryName   | 説明                                                                                                   |
+| enrollmentFailureCategoryName   | [説明]                                                                                                   |
 |---------------------------------|---------------------------------------------------------------------------------------------------------------|
 | 適用しない                  | 登録エラーのカテゴリは適用されません。                                                            |
 | 利用不可                   | 登録エラーのカテゴリは利用できません。                                                             |
@@ -133,14 +133,14 @@ ms.locfileid: "72503419"
 ## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
 **EnrollmentFailureReason** エンティティは、特定のエラー カテゴリ内のデバイス登録エラーのより詳細な理由を示します。  
 
-| プロパティ                     | 説明                                                                               |
+| プロパティ                     | [説明]                                                                               |
 |------------------------------|-------------------------------------------------------------------------------------------|
 | enrollmentFailureReasonKey   | データ ウェアハウスでの登録エラーの理由の一意識別子 (代理キー)  |
 | enrollmentFailureReasonName  | 登録エラーの理由の名前。 以下の例を参照してください。                            |
 
 ### <a name="example"></a>例
 
-| enrollmentFailureReasonName      | 説明                                                                                                                                                                                            |
+| enrollmentFailureReasonName      | [説明]                                                                                                                                                                                            |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 適用しない                   | 登録エラーの理由は適用されません。                                                                                                                                                       |
 | 利用不可                    | 登録エラーの理由は利用できません。                                                                                                                                                        |
@@ -163,7 +163,7 @@ ms.locfileid: "72503419"
 
 **enrollmentType** エンティティは、デバイスが企業のものか、個人所有か、または不明かを示します。
 
-| プロパティ  | 説明 | 例 |
+| プロパティ  | [説明] | 例 |
 |---------|------------|--------|
 | ownerTypeID |所有者の種類を示す一意識別子。 | |
 | ownerTypeKey |データ ウェアハウスにおける所有者の種類を示す一意識別子 - 代理キー。 | |
@@ -176,7 +176,7 @@ ms.locfileid: "72503419"
 
 **managementStates** エンティティでは、デバイスの状態に関する詳細情報が提供されます。 リモート アクションが適用され、デバイスが脱獄またはルート化されているとき、詳細が役立ちます。
 
-| プロパティ  | 説明 |
+| プロパティ  | [説明] |
 |---------|------------|
 | managementStateID | 管理状態を示す一意識別子 |
 | managementStateKey | データ ウェアハウスにおける管理状態を示す一意識別子 - 代理キー |
@@ -184,7 +184,7 @@ ms.locfileid: "72503419"
 
 ### <a name="example"></a>例
 
-| managementStateID  | 名前 | 説明 |
+| managementStateID  | 名前 | [説明] |
 |---------|------------|--------|
 | 0 |管理対象 | 保留なしのリモート アクションにより管理 |
 | 1 |RetirePending | インベントリから削除するコマンドがデバイスに対して保留になっています。 |
@@ -203,7 +203,7 @@ ms.locfileid: "72503419"
 
 **ManagementAgentType** エンティティは、デバイスの管理に使用されるエージェントを表します。
 
-| プロパティ  | 説明 |
+| プロパティ  | [説明] |
 |---------|------------|
 | managementAgentTypeID | 管理エージェントの種類を示す一意識別子。 |
 | managementAgentTypeKey | データ ウェアハウスにおける管理エージェントの種類を示す一意識別子 - 代理キー。 |
@@ -211,21 +211,21 @@ ms.locfileid: "72503419"
 
 ### <a name="example"></a>例
 
-| ManagementAgentTypeID  | 名前 | 説明 |
+| ManagementAgentTypeID  | 名前 | [説明] |
 |---------|------------|--------|
 | 1 |EAS | デバイスが Exchange Active Sync で管理されます |
 | 2 |MDM | デバイスが MDM エージェントで管理されます |
 | 3 |EasMdm | デバイスが Exchange Active Sync と MDM エージェントの両方で管理されます |
 | 4 |IntuneClient | デバイスが Intune PC エージェントで管理されます |
 | 5 |EasIntuneClient | デバイスが Exchange Active Sync と Intune PC エージェントの両方で管理されます |
-| 8 |ConfigManagerClient | デバイスが System Center Configuration Manager エージェントで管理されます |
+| 8 |ConfigManagerClient | デバイスは Configuration Manager エージェントで管理されています |
 | 16 |Unknown | 管理エージェントの種類が不明です |
 
 ## <a name="devices"></a>デバイス
 
 **devices** エンティティには、管理中のすべての登録済みデバイスと、それらに対応するプロパティがリストされています。
 
-|          プロパティ          |                                                                                       説明                                                                                      |
+|          プロパティ          |                                                                                       [説明]                                                                                      |
 |:--------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | deviceKey                  | データ ウェアハウスにおけるデバイスを示す一意識別子 - 代理キー。                                                                                                               |
 | deviceId                   | デバイスの一意識別子。                                                                                                                                                     |
@@ -268,7 +268,7 @@ ms.locfileid: "72503419"
 
 **devicePropertyHistory** エンティティには、デバイス テーブルと過去 90 日間の各デバイス レコードの日次スナップショットと同じプロパティが含まれています。 DateKey 列は、各行の日を示します。
 
-|          プロパティ          |                                                                                      説明                                                                                     |
+|          プロパティ          |                                                                                      [説明]                                                                                     |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | dateKey                    | 日付テーブルの参照であり、日を示します。                                                                                                                                          |
 | deviceKey                  | データ ウェアハウスにおけるデバイスを示す一意識別子 - 代理キー。 これは、Intune デバイス ID が含まれるデバイス テーブルの参照です。                               |

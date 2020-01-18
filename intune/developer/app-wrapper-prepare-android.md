@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8fa63540afa18450f731180da3c2cee729010a65
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 256fe3e193e5ab3959c6f9712df8b62246377c6d
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74465708"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653956"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために Android アプリを準備する
 
@@ -94,7 +94,7 @@ Android 用 Microsoft Intune アプリ ラッピング ツールを使用して�
 |**-KeyStorePassword**&lt;SecureString&gt;|キーストアの暗号化を解除するために使用するパスワード。 Android では、すべてのアプリケーション パッケージ (.apk) に署名する必要があります。 Java キーツールを使用して KeyStorePassword を生成できます。 詳細については、こちらの Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) を参照してください。| |
 |**-KeyAlias**&lt;String&gt;|署名に使用するキーの名前。| |
 |**-KeyPassword**&lt;SecureString&gt;|署名に使用する秘密キーの暗号化を解除するために使用するパスワード。| |
-|**-SigAlg**&lt;SecureString&gt;| (省略可能) 署名に使用する署名アルゴリズムの名前。 アルゴリズムは秘密キーと互換性を持つ必要があります。|例: SHA256withRSA、SHA1withRSA|
+|**-SigAlg**&lt;SecureString&gt;| (省略可能) 署名に使用する署名アルゴリズムの名前。 アルゴリズムは秘密キーと互換性を持つ必要があります。|例:SHA256withRSA、SHA1withRSA|
 |**-UseMinAPILevelForNativeMultiDex**| Optionalこのフラグを使用して、ソースの Android アプリの最小 API レベルを21に増やします。 このフラグによって、このアプリをインストールできるユーザーが制限されるため、確認のメッセージが表示されます。 ユーザーは、PowerShell コマンドにパラメーター "-Confirm: $false" を追加することで、確認ダイアログをスキップできます。 このフラグは、最小 API < 21 のアプリのお客様が、DEX オーバーフローエラーにより正常にラップできなかった場合にのみ使用してください。 | |
 | **&lt;CommonParameters&gt;** | (省略可能) コマンドは、verbose、debug などの一般的な PowerShell パラメーターをサポートします。 |
 

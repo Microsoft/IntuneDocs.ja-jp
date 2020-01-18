@@ -6,7 +6,7 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b94be3e1454c60f16ff40e73ce37f8c4e349126d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 7ba64bef1b15ac6382351857d017a5d699aeafa9
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72813359"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654160"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Microsoft Intune データ ウェアハウスのユーザー有効期間の表記
 
@@ -78,7 +78,7 @@ John Smith は、2017 年 7 月 25 日に自分のライセンスを破棄しま
  
 現在存在するディメンション エンティティのみを確認する場合は、**IsDeleted = FALSE** を使用するフィルターを適用します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - **現在のユーザー** エンティティの詳細については、「[現在のユーザー エンティティのリファレンス](../reports-ref-current-user.md)」をご覧ください。
 - **ユーザー** エンティティの詳細については、「[ユーザー エンティティのリファレンス](../reports-ref-user.md)」をご覧ください。

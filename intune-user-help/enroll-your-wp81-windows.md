@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01b03e986cd2540c364f2b6d8d3e20412fd5b82e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 20228277e496ca6f594859d40836e50609d05a8a
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506154"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855443"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Intune に Windows Phone 8.1 デバイスを登録する  
 
@@ -44,7 +44,7 @@ Microsoft Store からポータル サイト アプリをインストールで�
 
     ![会社のポータルの検索結果](./media/WP81-1-CP-search-store-v2.png)  
 
-4. **[ポータル サイト]** &gt; **[インストール]** を順にタップします。  
+4. **[ポータル サイト]** &gt; **[インストール]** の順にタップします。  
 
 
     ![ポータル サイトのインストール](./media/WP81-2-CP-install-v2.png)  
@@ -73,7 +73,7 @@ Microsoft Store からポータル サイト アプリをインストールで�
 
     ![[ワークプレース] 設定画面](./media/WP81-enroll-3-workplace-add-acct.png)  
 
-7. 要求された追加情報を入力し、 **[サインイン]** をタップして、登録を完了します。 **[設定]** &gt; **[ワークプレース]** ページに社内アカウントが表示されているはずです。  
+7. 要求された追加情報を入力し、 **[サインイン]** をタップして、登録を完了します。 **[設定]**  &gt; **[ワークプレース]** ページに社内アカウントが表示されているはずです。  
 
 
     ![追加されたアカウントの画面](./media/WP81-enroll-4-account-added.png)  
@@ -81,7 +81,7 @@ Microsoft Store からポータル サイト アプリをインストールで�
 ## <a name="enroll-through-settings-app"></a>[設定] アプリを使用して登録する  
 ご利用の Windows Phone デバイスから Microsoft Store にアクセスできない場合、または Microsoft アカウントを所有していない場合は、次の手順に従ってください。
 
-1. **[設定]** &gt; **[社内]** の順にタップします。  
+1. **[設定]** &gt; **[ワークプレース]** の順にタップします。  
 
 2. **[アカウントの追加]** をタップし、仕事用アカウントを使用してサインインします。  
 

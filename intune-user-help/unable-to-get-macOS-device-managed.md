@@ -18,21 +18,21 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 499eb015f38134a8b1ff1c41dd22d26cdd4f7324
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 0ceee371ea4324c31a173344dfe252a6e7f52610
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508150"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857857"
 ---
 # <a name="unable-to-get-macos-device-managed"></a>管理された macOS デバイスを取得できない
 
 管理された macOS デバイスを取得しようとすると、次のいずれかのメッセージが表示される場合は、会社のサポートにお問い合わせください。
 
-**メッセージ 1**: *We’re having trouble getting your device managed.This problem could be caused if you're using a virtual machine, have a restricted serial number, or if this device is already assigned to someone else.Learn how to resolve these problems or contact your company support.* (デバイスを管理されている状態にする際に問題が発生しました。この問題は、仮想マシンを使用している場合、シリアル番号が制限されている場合、またはこのデバイスが他のユーザーに既に割り当てられている場合に、発生することがあります。これらの問題の解決方法を確認するか、会社のサポートにお問い合わせください。)
+**メッセージ 1**:*We’re having trouble getting your device managed.This problem could be caused if you're using a virtual machine, have a restricted serial number, or if this device is already assigned to someone else.Learn how to resolve these problems or contact your company support.* (デバイスを管理されている状態にする際に問題が発生しました。この問題は、仮想マシンを使用している場合、シリアル番号が制限されている場合、またはこのデバイスが他のユーザーに既に割り当てられている場合に、発生することがあります。これらの問題の解決方法を確認するか、会社のサポートにお問い合わせください。)
 
-**メッセージ 2**: *It looks like you're using a virtual machine.Make sure you've fully configured your virtual machine, including serial number and hardware model.If this isn't a virtual machine, please contact support.* (仮想マシンを使用しているようです。シリアル番号やハードウェア モデルなど、仮想マシンを完全に構成したことを確認してください。仮想マシンではない場合は、サポートにお問い合わせください。)  
+**メッセージ 2**:*It looks like you're using a virtual machine.Make sure you've fully configured your virtual machine, including serial number and hardware model.If this isn't a virtual machine, please contact support.* (仮想マシンを使用しているようです。シリアル番号やハードウェア モデルなど、仮想マシンを完全に構成したことを確認してください。仮想マシンではない場合は、サポートにお問い合わせください。)  
 
 次のいずれかの理由で、デバイスを管理できない可能性があります。 
 

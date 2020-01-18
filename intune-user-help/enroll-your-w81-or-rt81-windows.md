@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 085ec1f329eb9b423797a110ada53eb7693edf6f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 6fb6c1295947b9f51ef861b1fcc6582c6690137f
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506143"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855426"
 ---
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Intune に Windows 8.1 または Windows RT 8.1 デバイスを登録する方法  
 
@@ -61,7 +61,7 @@ Windows 8.1 または Windows RT 8.1 デバイスを登録するには、次の�
 
 さらに、ポータル サイト アプリをインストールすることもお勧めします。これにより、自分や自分の役割に関連する会社のアプリを簡単に識別して、取得できます。 会社での Intune のセットアップ方法に応じて、ポータル サイト アプリが登録プロセスの一部としてインストールされていることもあります。 アプリがあるかどうかを確認するには、アプリ一覧で、 **[ポータル サイト]** を検索します。 アプリの一覧で、[ポータル サイト] が表示されない場合は、次の手順に従ってインストールします。
 
-1. **[スタート]** &gt; **[ストア]** をタップします。  
+1. **[スタート]** &gt; **[ストア]** の順にタップします。  
 
 2. **[検索]** をタップし、「**ポータル サイト**」と入力します。  
 

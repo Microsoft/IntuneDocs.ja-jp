@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5665ae7d8093decc8ef2ea4ab1911b27e20e25dd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: edea807b8c71f519c28f19b0343fa8ea0977712a
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505776"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855148"
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Android デバイスで画面がロックされるまでの時間を設定する方法
 
@@ -32,9 +32,9 @@ ms.locfileid: "72505776"
 
 ## <a name="native-non-samsung-knox-device"></a>ネイティブのデバイス (Samsung KNOX 以外)
 
-1. デバイスで、 **[設定]** から、 **[セキュリティ]** &gt; **[自動的にロック]** (一部のデバイスでは **[後でデバイスをロック]** として表示されます) の順にタップします。
+1. デバイスの **[設定]** で、 **[セキュリティ]** &gt; **[自動的にロック]** (一部のデバイスでは **[後でデバイスをロック]** として表示されます) の順にタップします。
 
-    **[自動的にロック]** (一部のデバイスでは **[後でデバイスをロック]** ) が表示されない場合は、 **[設定]** &gt; **[画面表示のロック]** &gt; **[パスワード]** で有効なパスワードが設定されていることを確認します。
+    **[自動的にロック]** (一部のデバイスでは **[後でデバイスをロック]** ) が表示されない場合は、 **[設定]** &gt; **[画面表示のロック]**  &gt;  **[パスワード]** で有効なパスワードが設定されていることを確認します。
 
 2. パスワードのタイムアウト値を選択します。
 
@@ -42,7 +42,7 @@ ms.locfileid: "72505776"
 
 1. デバイスの **[設定]** で、 **[ロック画面とセキュリティ]** &gt; **[自動的にロック]** の順にタップします。
 
-    **[自動的にロック]** (一部のデバイスでは **[後でデバイスをロック]** ) が表示されない場合は、 **[設定]** &gt; **[画面表示のロック]** &gt; **[パスワード]** で有効なパスワードが設定されていることを確認します。
+    **[自動的にロック]** (一部のデバイスでは **[後でデバイスをロック]** ) が表示されない場合は、 **[設定]** &gt; **[画面表示のロック]**  &gt;  **[パスワード]** で有効なパスワードが設定されていることを確認します。
 
 2. パスワードのタイムアウト値を選択します。
 

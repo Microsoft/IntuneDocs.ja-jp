@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/14/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8c5be1d7a02c2c8329afe05dcdce22f48c49d05
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2e4c96cefef9f535d68ed8da20dfcaeb0deffbe1
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503495"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653922"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android 用 Microsoft Intune アプリ SDK 開発者ガイド
 
@@ -36,15 +36,15 @@ Android 用 Microsoft Intune アプリ SDK を使用すると、ネイティブ 
 
 Intune App SDK は、次のファイルで構成されます。
 
-* **Microsoft.Intune.MAM.SDK.aar**: サポート ライブラリ JAR ファイルを除く、SDK コンポーネントです。
-* **Microsoft.Intune.MAM.SDK.Support.v4.jar**: Android v4 サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。
-* **Microsoft.Intune.MAM.SDK.Support.v7.jar**: Android v7 サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。
-* **Microsoft.Intune.MAM.SDK.Support.v17.jar**: Android v17 サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。 
-* **Microsoft.Intune.MAM.SDK.Support.Text.jar**: `android.support.text` パッケージで Android サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。
-* **Microsoft.Intune.MAM.SDK.DownlevelStubs.aar**: この AAR には、新しいデバイス上にのみ存在し、`MAMActivity` 内のメソッドによって参照される Android システム クラスのためのスタブが含まれています。 新しいデバイスでは、これらのスタブ クラスを無視します。 この AAR が必要になるのは、`MAMActivity` から派生したクラスに対してリフレクションを実行する場合のみであり、ほとんどのアプリにはこれを含める必要がありません。 AAR には、すべてのクラスを除外するための ProGuard 規則が含まれています。
-* **com.microsoft.intune.mam.build.jar**: [SDK の統合を補助する](#build-tooling) Gradle のプラグインです。
-* **CHANGELOG.txt**: 各 SDK バージョンに加えた変更の記録を提供します。
-* **THIRDPARTYNOTICES.TXT**:  アプリにコンパイルされるサード パーティや OSS のコードを確認する属性通知です。
+* **Microsoft.Intune.MAM.SDK.aar**:サポート ライブラリ JAR ファイルを除く、SDK コンポーネントです。
+* **Microsoft.Intune.MAM.SDK.Support.v4.jar**:Android v4 サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。
+* **Microsoft.Intune.MAM.SDK.Support.v7.jar**:Android v7 サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。
+* **Microsoft.Intune.MAM.SDK.Support.v17.jar**:Android v17 サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。 
+* **Microsoft.Intune.MAM.SDK.Support.Text.jar**:`android.support.text` パッケージ内の Android サポート ライブラリのクラスを使用するアプリで MAM を有効にするために必要なクラスです。
+* **Microsoft.Intune.MAM.SDK.DownlevelStubs.aar**:この AAR には、新しいデバイス上にのみ存在し、`MAMActivity` 内のメソッドによって参照される Android システム クラスのためのスタブが含まれています。 新しいデバイスでは、これらのスタブ クラスを無視します。 この AAR が必要になるのは、`MAMActivity` から派生したクラスに対してリフレクションを実行する場合のみであり、ほとんどのアプリにはこれを含める必要がありません。 AAR には、すべてのクラスを除外するための ProGuard 規則が含まれています。
+* **com.microsoft.intune.mam.build.jar**:[SDK の統合を補助する](#build-tooling) Gradle のプラグインです。
+* **CHANGELOG.txt**:各 SDK バージョンで行われた変更の記録を提供します。
+* **THIRDPARTYNOTICES.TXT**:アプリにコンパイルされるサード パーティや OSS のコードを確認する属性通知です。
 
 ## <a name="requirements"></a>要件
 
@@ -175,9 +175,9 @@ intunemam {
 | 通信の種類 | 含める必要があるか? |
 |--|--|
 | ユーザーが PDF を表示しようとしたときに、ご利用のアプリに PDF ビューアー ライブラリを含めて、ご利用のアプリケーションでビューアー `Activity` を使用します | はい |
-| Web パフォーマンスを強化するために、ご利用のアプリに HTTP ライブラリを含めます | [いいえ] |
+| Web パフォーマンスを強化するために、ご利用のアプリに HTTP ライブラリを含めます | いいえ |
 | `Activity`、`Application` および `Fragment` から派生したクラスを含む React Native などのライブラリを含めて、ご利用のアプリでそれらのクラスを使用したり、さらに派生させたりします | はい |
-| `Activity`、`Application` および `Fragment` から派生したクラスを含む React Native などのライブラリを含めますが、静的なヘルパーまたはユーティリティ クラスのみを使用します | [いいえ] |
+| `Activity`、`Application` および `Fragment` から派生したクラスを含む React Native などのライブラリを含めますが、静的なヘルパーまたはユーティリティ クラスのみを使用します | いいえ |
 | `TextView` から派生したビュー クラスを含むライブラリを含めて、ご利用のアプリでそれらのクラスを使用したり、さらに派生させたりします | はい |
 
 #### <a name="reporting"></a>レポート
@@ -225,7 +225,7 @@ Gradle のプラグインには、(上述のとおり) Gradle の依存関係の
 
 このツールには、次のパラメーターが必要です。
 
-| パラメーター | 説明 |
+| パラメーター | [説明] |
 | -- | -- |
 | `--input` | jar ファイルと変更するクラス ファイルのディレクトリのセミコロン区切りの一覧。 これは上書きしようとするすべての jars/ディレクトリを含む必要があります。 |
 | `--output` | jar ファイルと変更されたクラスを格納するディレクトリのセミコロン区切りの一覧。 入力エントリごとに 1 つの出力エントリがあり、順番に一覧される必要があります。 |
@@ -539,7 +539,7 @@ String toString();
 > [!NOTE]
 > `MAMPolicyManager.getPolicy` は、デバイスまたはアプリが Intune 管理ポリシーに従わない場合でも、常に null 以外のアプリ ポリシーを返します。
 
-### <a name="example-determine-if-pin-is-required-for-the-app"></a>例: PIN がアプリケーションに必要なかどうかを確認します。
+### <a name="example-determine-if-pin-is-required-for-the-app"></a>例:PIN がアプリケーションに必要なかどうかを確認する
 
 アプリケーションに独自の PIN ユーザー エクスペリエンスがあり、IT 管理者がアプリの PIN の入力を求めるように SDK を構成している場合は、それを無効にしたいことがあります。 IT 管理者が、現在のエンドユーザーのアプリ PIN ポリシーをこのアプリに展開したかどうかを判断するには、次のメソッドを呼び出します。
 
@@ -548,7 +548,7 @@ String toString();
 MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
 ```
 
-### <a name="example-determine-the-primary-intune-user"></a>例: プライマリ Intune ユーザーを判別します。
+### <a name="example-determine-the-primary-intune-user"></a>例:プライマリ Intune ユーザーを判別する
 
 AppPolicy で公開される API に加えて、ユーザー プリンシパル名で (**UPN**) も `MAMUserInfo`インターフェイス内で定義された `getPrimaryUser()` API によって公開されます。 UPN を取得するには、次のように呼び出します。
 
@@ -573,7 +573,7 @@ public interface MAMUserInfo {
 }
 ```
 
-### <a name="example-determine-if-saving-to-device-or-cloud-storage-is-permitted"></a>例: デバイスまたはクラウド ストレージへの保存が許可されているかどうかを判断します。
+### <a name="example-determine-if-saving-to-device-or-cloud-storage-is-permitted"></a>例:デバイスまたはクラウド ストレージへの保存が許可されているかどうかを判断する
 
 多くのアプリでは、エンドユーザーがローカルまたはクラウド ストレージ サービスにファイルを保存する機能を実装しています。 Intune アプリ SDK を使用することで、データの漏えいを防ぐために、IT 管理者が組織に合ったポリシー制限を適用できます。  IT 部門で制御できるポリシーの 1 つとして、エンドユーザーが "個人用" の管理対象外データ ストアに保存できるかどうかというものがあります。 これには、ローカルの場所、SD カード、またはサード パーティ バックアップ サービスへの保存が含まれます。
 
@@ -673,19 +673,19 @@ public interface MAMNotificationReceiver {
 
 アプリに次の通知が送信されます。その一部によって、アプリによる処理が要求される場合があります。
 
-* **WIPE_USER_DATA**: この通知は、`MAMUserNotification` クラスで送信されます。 この通知を受信すると、アプリは (`MAMUserNotification.getUserIdentity()`から) 管理対象 id に関連付けられているすべてのデータを削除*する必要があり*ます。 通知はさまざまな理由で発生する可能性があります。たとえば、アプリが `unregisterAccountForMAM` を呼び出したとき、IT 管理者がワイプを開始したとき、または管理者が必要とする条件付きアクセスポリシーが満たされていない場合などです。 アプリがこの通知に登録していない場合は、既定のワイプ動作が実行されます。 既定の動作では、単一 id アプリのすべてのファイル、または複数 id アプリのマネージ id でタグ付けされたすべてのファイルが削除されます。 この通知は、UI スレッドでは送信されません。
+* **WIPE_USER_DATA**:この通知は、`MAMUserNotification` クラスで送信されます。 この通知を受信すると、アプリは (`MAMUserNotification.getUserIdentity()`から) 管理対象 id に関連付けられているすべてのデータを削除*する必要があり*ます。 通知はさまざまな理由で発生する可能性があります。たとえば、アプリが `unregisterAccountForMAM` を呼び出したとき、IT 管理者がワイプを開始したとき、または管理者が必要とする条件付きアクセスポリシーが満たされていない場合などです。 アプリがこの通知に登録していない場合は、既定のワイプ動作が実行されます。 既定の動作では、単一 id アプリのすべてのファイル、または複数 id アプリのマネージ id でタグ付けされたすべてのファイルが削除されます。 この通知は、UI スレッドでは送信されません。
 
-* **WIPE_USER_AUXILIARY_DATA**: Intune アプリ SDK に対して既定の選択的ワイプの実行を求めるが、ワイプが発生したときにいくつかの補助的なデータを削除する必要があるアプリは、この通知に登録できます。 この通知は単一 ID アプリには利用できません。複数 ID アプリにのみ送信されます。 この通知は、UI スレッドでは送信されません。
+* **WIPE_USER_AUXILIARY_DATA**:Intune アプリ SDK に対して既定の選択的ワイプの実行を求めるが、ワイプが発生したときにいくつかの補助的なデータを削除する必要があるアプリは、この通知に登録できます。 この通知は単一 ID アプリには利用できません。複数 ID アプリにのみ送信されます。 この通知は、UI スレッドでは送信されません。
 
-* **REFRESH_POLICY**: この通知は、`MAMUserNotification` で送信されます。 この通知が受信された場合、アプリによってキャッシュされた Intune ポリシー決定をすべて無効にして更新する必要があります。 アプリでポリシーの前提条件が格納されない場合、この通知への登録は必要ありません。 この通知が送信されるスレッドについては保証されません。
+* **REFRESH_POLICY**:この通知は、`MAMUserNotification` で送信されます。 この通知が受信された場合、アプリによってキャッシュされた Intune ポリシー決定をすべて無効にして更新する必要があります。 アプリでポリシーの前提条件が格納されない場合、この通知への登録は必要ありません。 この通知が送信されるスレッドについては保証されません。
 
-* **REFRESH_APP_CONFIG**: この通知は、`MAMUserNotification` で送信されます。 この通知が受信された場合、キャッシュ済みのアプリケーション構成データをすべて無効にして更新する必要があります。 この通知が送信されるスレッドについては保証されません。
+* **REFRESH_APP_CONFIG**:この通知は、`MAMUserNotification` で送信されます。 この通知が受信された場合、キャッシュ済みのアプリケーション構成データをすべて無効にして更新する必要があります。 この通知が送信されるスレッドについては保証されません。
 
-* **MANAGEMENT_REMOVED**: この通知は、`MAMUserNotification` で送信され、管理対象外になることをアプリに直前に通知します。 管理対象外になると、暗号化されたファイルの読み取り、MAMDataProtectionManager で暗号化されたデータの読み取り、暗号化されたクリップボードとの対話、それ以外の管理対象アプリのエコシステムへの参加ができなくなります。 詳細については、以下を参照してください。 この通知は、UI スレッドでは送信されません。
+* **MANAGEMENT_REMOVED**:この通知は、`MAMUserNotification` で送信され、アンマネージドになることをアプリに直前に通知します。 管理対象外になると、暗号化されたファイルの読み取り、MAMDataProtectionManager で暗号化されたデータの読み取り、暗号化されたクリップボードとの対話、それ以外の管理対象アプリのエコシステムへの参加ができなくなります。 詳細については、以下を参照してください。 この通知は、UI スレッドでは送信されません。
 
-* **MAM_ENROLLMENT_RESULT**: この通知は、APP-WE 登録の試行が完了したことをアプリに通知する場合や、その試行の状態を提供する場合に、`MAMEnrollmentNotification` で送信されます。 この通知が送信されるスレッドについては保証されません。
+* **MAM_ENROLLMENT_RESULT**:この通知は、APP-WE 登録の試行が完了したことをアプリに通知する場合や、その試行の状態を提供する場合に、`MAMEnrollmentNotification` で送信されます。 この通知が送信されるスレッドについては保証されません。
 
-* **COMPLIANCE_STATUS**: この通知は、コンプライアンス修復の試行結果をアプリに通知するために、`MAMComplianceNotification` で送信されます。 この通知が送信されるスレッドについては保証されません。
+* **COMPLIANCE_STATUS**:この通知は、コンプライアンス修復の試行結果をアプリに通知するために、`MAMComplianceNotification` で送信されます。 この通知が送信されるスレッドについては保証されません。
 
 > [!NOTE]
 > アプリは `WIPE_USER_DATA` と `WIPE_USER_AUXILIARY_DATA` の両方の通知に登録することはできません。
@@ -1146,7 +1146,7 @@ Intune では、XML でカスタム ルールを定義する機能など、Andro
 
 4. その後で、マニフェストで `android:fullBackupContent` に配置するものはすべて、`com.microsoft.intune.mam.FullBackupContent` という名前のメタデータにコピー _**する必要があります**_ 。
 
-    **例 1**: 例外なしにアプリで完全バックアップを実行する場合、`android:fullBackupContent` 属性と `com.microsoft.intune.mam.FullBackupContent` メタデータ タグの両方を **true** に設定します。
+    **例 1**:例外なしにアプリで完全バックアップを実行する場合、`android:fullBackupContent` 属性と `com.microsoft.intune.mam.FullBackupContent` メタデータ タグの両方を **true** に設定します。
 
     ```xml
     android:fullBackupContent="true"
@@ -1154,7 +1154,7 @@ Intune では、XML でカスタム ルールを定義する機能など、Andro
     <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="true" />  
     ```
 
-    **例 2**: アプリでカスタム BackupAgent を使用して、完全な Intune ポリシー互換の自動バックアップを停止する場合は、この属性とメタデータ タグを **false** に設定する必要があります。
+    **例 2**:アプリでカスタム BackupAgent を使用して、完全な Intune ポリシー準拠の自動バックアップを停止する場合は、この属性とメタデータ タグを **false** に設定する必要があります。
 
     ```xml
     android:fullBackupContent="false"
@@ -1162,7 +1162,7 @@ Intune では、XML でカスタム ルールを定義する機能など、Andro
     <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="false" />  
     ```
 
-    **例 3**: アプリで XML ファイルで定義したカスタム ルールに従って完全バックアップを使用する場合は、この属性とメタデータ タグを同じ XML リソースに設定してください。
+    **例 3**:アプリで XML ファイルで定義したカスタム ルールに従って完全バックアップを使用する場合は、この属性とメタデータ タグを同じ XML リソースに設定してください。
 
     ```xml
     android:fullBackupContent="@xml/my_scheme"
@@ -1655,7 +1655,7 @@ public final class MAMDataProtectionManager {
 `MAMContentProvider` を明示的に継承せず、代わりにビルド ツールでその変更を行えるようにする場合は、同じメソッドの静的バージョン `MAMContentProvider.isProvideContentAllowed(provider,
 contentIdentity)` を呼び出すことができます。
 
-### <a name="selective-wipe"></a>選択的なワイプ
+### <a name="selective-wipe"></a>選択的ワイプ
 複数 ID アプリを `WIPE_USER_DATA` 通知に登録する場合、ワイプするユーザーのすべてのデータをそのアプリで削除する必要があります。データには、そのユーザーに属しているものとして ID タグが付けられたすべてのファイルが含まれます。 アプリでファイルからユーザー データを削除するが、そのファイルの他のデータはそのままにしておきたい場合は、(空の ID または個人ユーザーに対する `MAMFileProtectionManager.protect` を使用して) ファイルの ID を変更する*必要* があります。 暗号化ポリシーを使用している場合、ワイプするユーザーに属している残りのファイルの暗号化は解除されず、ワイプ後にアプリにアクセスできなくなります。
 
 `WIPE_USER_DATA` に登録しているアプリは、SDK の既定の選択的ワイプ動作の利点が得られなくなります。 複数 ID 対応アプリの場合、MAM の既定の選択的ワイプではワイプ対象の ID のファイルのみがワイプされるため、この損失がとても重要になることがあります。 複数 ID 対応アプリケーションで MAM の既定の選択的ワイプを実行し、 _**さらに**_ 独自のアクションを実行する場合、`WIPE_USER_AUXILIARY_DATA` 通知に登録する必要があります。 この通知は、MAM の既定の選択的ワイプを実行する直前に SDK によって送信されます。 アプリは `WIPE_USER_DATA` と `WIPE_USER_AUXILIARY_DATA` の両方に登録できません。
@@ -1769,7 +1769,7 @@ Long barValue = appConfig.getIntegerForKey("bar", MAMAppConfig.NumberQueryType.M
 
 ### <a name="notification"></a>通知
 アプリの構成で新しい通知の種類を追加します。
-* **REFRESH_APP_CONFIG**: この通知は、`MAMUserNotification` で送信され、アプリに新しいアプリの構成データを使用できることを通知します。
+* **REFRESH_APP_CONFIG**:この通知は、`MAMUserNotification` で送信され、アプリに新しいアプリの構成データを使用できることを通知します。
 
 ### <a name="further-reading"></a>参考記事
 Android で MAM 対象アプリ構成ポリシーを作成する方法については、「[Android for Work の Microsoft Intune アプリ構成ポリシーを使用する方法](https://docs.microsoft.com/intune/app-configuration-policies-managed-app)」の MAM 対象アプリ構成セクションを参照してください。
@@ -1842,7 +1842,7 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
 
 ### <a name="policy-enforcement-limitations"></a>ポリシーの適用の制限事項
 
-* **コンテンツ リゾルバーの使用**: "転送ポリシーまたは受信" Intune ポリシーにより、別のアプリのコンテンツ プロバイダーにアクセスするためのコンテンツ リゾルバーの使用がブロックされるか、部分的にブロックされる場合があります。 これにより、`ContentResolver` メソッドによって null が返されるか、失敗値がスローされます (例: ブロックされている場合、`openOutputStream` によって `FileNotFoundException` がスローされる)。 アプリでは、次の呼び出しを行って、コンテンツ リゾルバーを介したデータの書き込みのエラーが、ポリシーによって発生した (またはポリシーによって発生する) かどうかを確認できます。
+* **コンテンツ リゾルバーの使用**:"転送ポリシーまたは受信" Intune ポリシーにより、別のアプリのコンテンツ プロバイダーにアクセスするためのコンテンツ リゾルバーの使用がブロックされるか、部分的にブロックされる場合があります。 これにより、`ContentResolver` メソッドによって null が返されるか、失敗値がスローされます (例: ブロックされている場合、`openOutputStream` によって `FileNotFoundException` がスローされる)。 アプリでは、次の呼び出しを行って、コンテンツ リゾルバーを介したデータの書き込みのエラーが、ポリシーによって発生した (またはポリシーによって発生する) かどうかを確認できます。
 
     ```java
     MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);

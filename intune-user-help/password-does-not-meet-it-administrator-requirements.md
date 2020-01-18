@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9181510dad2640fcc8ea84ce2db2856bd02cbaf5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 9691b971f028223c76ebd37496cff1dc1b72a9f8
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502182"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858311"
 ---
 # <a name="device-password-requirements-for-enrolled-devices"></a>登録済みデバイスのデバイスパスワードの要件
 
@@ -89,7 +89,7 @@ ms.locfileid: "72502182"
 | パスワードの有効期限が切れています。 | 新しいパスワードを設定します。 組織では、一定の日数が経過した後にパスワードを変更するよう求められています。 |
 | パスワードがごく最近に使用されました。 | 前に使ったことのないパスワードを選択してください。 組織では、パスワードを再利用する前に一定の時間が経過している必要があります。 |
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 デバイスのパスワード、パスコード、または PIN を作成または変更するには、次の記事を参照してください。  
 

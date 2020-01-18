@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86aeb2b54d45f111864d71e65b8c90fce7205868
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 86c158f73d820fa2e719fe92b884c77f315fcb94
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508028"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858813"
 ---
 # <a name="windows-device-enrollment-in-intune-company-portal"></a>Intune ポータル サイトでの Windows デバイスの登録  
 
@@ -62,8 +62,8 @@ Windows 10 デバイスの登録は、ポータル サイトの Web サイト "*
 
 4. お使いのバージョンが  
 
-    * __1607 以降の場合__: [ **[設定]**  >  **[アカウント]**  >  **[職場または学校へのアクセス]** の順に選択](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)して、デバイスを登録します。   
-    * __1511 以前の場合__: [ **[設定]**  >  **[アカウント]**  >  **[Your accounts]\(自分のアカウント\)** の順に選択](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device)して、デバイスを登録します。  
+    * __1607 以降の場合__:[ **[設定]**  >  **[アカウント]**  >  **[職場または学校へのアクセス]** の順に選択](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)して、デバイスを登録します。   
+    * __1511 以前の場合__:[ **[設定]**  >  **[アカウント]**  >  **[お客様のアカウント]** の順に選択](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device)して、デバイスを登録します。  
 
 ### <a name="windows-10-mobile-devices"></a>Windows 10 Mobile デバイス
 
@@ -72,8 +72,8 @@ Windows 10 デバイスの登録は、ポータル サイトの Web サイト "*
 3. __[デバイス情報]__ で、__バージョン__を確認します。  
 4. お使いのバージョンが  
 
-    * __1607 以降の場合__: [ **[設定]**  >  **[職場または学校へのアクセス]** の順に選択](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)して、デバイスを登録します。   
-    * __1511 以前の場合__: [ **[設定]**  >  **[アカウント]** の順に選択](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device)して、デバイスを登録します。  
+    * __1607 以降の場合__:[ **[設定]**  >  **[職場または学校へのアクセス]** の順に選択](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)して、デバイスを登録します。   
+    * __1511 以前の場合__:[ **[設定]**  >  **[アカウント]** の順に選択](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device)して、デバイスを登録します。  
 
 ## <a name="enroll-non-windows-10-devices"></a>Windows 10 以外のデバイスを登録する  
 ポータル サイト Web サイトで他のサポートされている Windows デバイスを登録するには、次の記事を使用してください。   
@@ -83,7 +83,7 @@ Windows 10 デバイスの登録は、ポータル サイトの Web サイト "*
 ## <a name="it-administrator-support"></a>IT 管理者のサポート  
 デバイス登録中に問題に遭遇した IT 管理者は、「[Microsoft Intune の Windows デバイスの登録に関する問題のトラブルシューティング](https://support.microsoft.com/help/4469913)」を参照してください。 この記事では、一般的なエラー、その原因、解決する手順の一覧が示されています。  
 
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a>次のステップ  
 サポートされているデバイスと、お使いの Windows 10 のバージョン番号がわかったので、推奨される登録の記事に進んでください。  
  
 デバイスの管理、ポータル サイト、および学校と職場での両方の使用方法の詳細については、次の記事を参照してください。  

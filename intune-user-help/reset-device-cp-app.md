@@ -18,22 +18,22 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser; intune-azure
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64612aa8a1d427284778a9aa43b966b05cb0a15f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: dc36e2d53282b8f40f0250f40cb2f01ec920d936
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502105"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858214"
 ---
-# <a name="reset-device-from-the-company-portal-app"></a>ポータルサイトアプリからデバイスをリセットする  
+# <a name="reset-device-from-the-company-portal-app"></a>ポータル サイト アプリからデバイスをリセットする  
 
 デバイスが使用済みである場合、紛失した場合、または盗難にあった場合などに、ポータル サイト アプリからその出荷時の設定にリセットします。  
 
 デバイスをリセットすると、ポータルサイトに表示されなくなります。 既存のアプリとファイルは消去され、すぐに使用できる設定に復元されます。  
 
 
-1. ポータルサイトを開きます。  
+1. ポータル サイトを開きます。  
 2. **[デバイス]** で、リセットするデバイスを選択します。   
 
     ![[デバイス] セクションを強調表示しているポータルサイトアプリ (ホーム画面) のスクリーンショットの例。](./media/1802-cp-app-windows-home.png)  

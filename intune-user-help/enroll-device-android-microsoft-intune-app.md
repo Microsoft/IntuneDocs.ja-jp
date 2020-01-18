@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81c842eb27b1b9131c164ced5aeed86a78a37353
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 02aab98bf74664cbdb8c7d7dccbfadba701b59f6
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506291"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856787"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Microsoft Intune アプリで会社のデバイスを登録する
 
@@ -45,16 +45,16 @@ ms.locfileid: "72506291"
 
 1. 新しいデバイスまたは出荷時の設定に戻したデバイスの電源を入れます。  
 2. **[ようこそ]** 画面で、言語を選択します。   QR コードまたは NFC で登録するように指示されている場合は、方法に一致する以下の手順に従います。  
-     * NFC: お使いの NFC 対応デバイスをプログラマー デバイスに対してタップし、組織のネットワークに接続します。 画面の指示に従います。 Chrome のサービス利用規約の画面が表示されたら、ステップ 5 に進みます。  
+     * NFC:お使いの NFC 対応デバイスをプログラマー デバイスに対してタップし、組織のネットワークに接続します。 画面の指示に従います。 Chrome のサービス利用規約の画面が表示されたら、ステップ 5 に進みます。  
 
-     * QR コード: 「[QR コードでの登録](#qr-code-enrollment)」の手順を完了します。  
+     * QR コード:「[QR コードでの登録](#qr-code-enrollment)」の手順を完了します。  
 
      別の方法を使用するように指示されている場合は、ステップ 3 に進みます。    
 
 3. Wi-Fi に接続し、 **[次へ]** をタップします。 登録方法と一致する手順に従います。 
 
-    * トークン: Google のサインイン画面が表示されたら、「[トークンでの登録](#token-enrollment)」の手順を完了します。  
-    * Google Zero Touch: Wi-Fi に接続すると、組織によってデバイスが認識されます。 ステップ 4 に進み、画面の指示に従ってセットアップを完了します。    
+    * トークン:Google のサインイン画面が表示されたら、「[トークンでの登録](#token-enrollment)」の手順を完了します。  
+    * Google Zero Touch:Wi-Fi に接続すると、組織によってデバイスが認識されます。 ステップ 4 に進み、画面の指示に従ってセットアップを完了します。    
  
        ![Google Zero Touch を使用した場合に表示される Google 契約条件画面の例の画像。[Accept & Continue]\(同意して続行\) ボタンが強調表示されている。](./media/google-zero-touch-intune-app-01.png)   
    
@@ -127,5 +127,5 @@ ms.locfileid: "72506291"
 
 
 
-## <a name="next-steps"></a>次の手順   
+## <a name="next-steps"></a>次のステップ   
 サポートが必要な場合は、 会社のサポートに問い合わせるか (連絡先情報については[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください)、または <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android チーム</a>にご連絡ください。  

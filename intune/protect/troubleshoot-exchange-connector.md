@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 962e66a9fdf6d8abcf6855f645775026ee4db850
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d3d9473b68f0420670130203409abf477355d93f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508844"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885530"
 ---
 # <a name="troubleshoot-the-intune-exchange-connector"></a>Intune Exchange Connector に関するトラブルシューティング
 
@@ -40,7 +40,7 @@ Intune で Exchange Connector の問題のトラブルシューティングを�
   - コネクタを初めて設定していますか? 
   - コネクタが正常に動作して失敗したか。
   - 動作していた場合、Intune 環境、Exchange 環境、またはコネクタソフトウェアを実行するコンピューターでどのような変更が発生したか。
-- MDM 機関とは System Center Configuration Manager 場合は、どのバージョンの Configuration Manager を使用しますか。
+- MDM 機関とは
 - どのバージョンの Exchange を使用しますか?
 
 ### <a name="use-powershell-to-get-more-data-on-exchange-connector-issues"></a>PowerShell を使用して Exchange Connector のイシューに関するより多くのデータを取得する
@@ -65,12 +65,12 @@ Intune で Exchange Connector の問題のトラブルシューティングを�
 
 ### <a name="common-issues-for-connector-configurations"></a>コネクタ構成に関する一般的な問題
 
-- **アカウントのアクセス許可**: [Microsoft Intune Exchange Connector] ダイアログ ボックスで、[必須の Windows PowerShell Exchange コマンドレット](exchange-connector-install.md#exchange-cmdlet-requirements)を実行するための適切なアクセス許可を持つユーザー アカウントが指定されていることを確認します。
+- **アカウントのアクセス許可**:[Microsoft Intune Exchange Connector] ダイアログ ボックスで、[必須の Windows PowerShell Exchange コマンドレット](exchange-connector-install.md#exchange-cmdlet-requirements)を実行するための適切なアクセス許可を持つユーザー アカウントが指定されていることを確認します。
 - **通知電子メールメッセージ**: 通知を有効にし、通知アカウントを指定します。
 - **クライアントアクセスサーバーの同期**: exchange connector を構成するときに、exchange connector をホストしているサーバーに対して可能なネットワーク待ち時間が最も短い ca を指定します。 特に Exchange Online Dedicated を使用している場合は、CAS と Exchange Connector 間の通信の遅延によってデバイスの検出が遅くなる可能性があります。
-- **同期スケジュール**: 新しく登録されたデバイスを持つユーザーは、Exchange Connector が Exchange CAS と同期するまで、アクセスに遅延が生じる可能性があります。 完全同期は 1 日に 1 回実行され、差分 (クイック) 同期は 1 日に数回実行されます。 遅延を最小限に抑えるために、[クイック同期または完全同期を手動で適用](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync)することができます。
+- **同期スケジュール**:新しく登録されたデバイスを持つユーザーは、Exchange Connector が Exchange CAS と同期するまで、アクセスに遅延が生じる可能性があります。 完全同期は 1 日に 1 回実行され、差分 (クイック) 同期は 1 日に数回実行されます。 遅延を最小限に抑えるために、[クイック同期または完全同期を手動で適用](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync)することができます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 次の記事は、一般的な問題と特定のエラーを解決するのに役立ちます。
 
 - [Intune Exchange Connector の一般的な問題を解決](troubleshoot-exchange-connector-common-problems.md)します。

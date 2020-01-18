@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/02/2019
+ms.date: 01/09/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ed04c1bf135793da9cece9debc2c7cdd481601a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d226a5b8ee448b7b168a03fe6b8a1c63bc1be432
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74691690"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827787"
 ---
 # <a name="add-a-property-list-file-to-macos-devices-using-microsoft-intune"></a>Microsoft Intune を使用して macOS デバイスにプロパティリストファイルを追加する
 
@@ -54,9 +54,19 @@ Microsoft Intune を使用すると、macOS デバイスのプロパティリス
 - **プロパティリストファイル**: アプリに関連付けられているプロパティリストファイルを選択します。 `.plist` または `.xml` ファイルであることを確認してください。 たとえば、`YourApp-Manifest.plist` ファイルまたは `YourApp-Manifest.xml` ファイルをアップロードします。
 - **ファイルの内容**: プロパティリストファイル内のキー情報が表示されます。 キー情報を変更する必要がある場合は、別のエディターでリストファイルを開き、Intune でファイルを再度アップロードします。
 
+ファイルの形式が正しく設定されていることを確認してください。 このファイルにはキーと値のペアのみを指定し、`<dict>`、`<plist>`、または `<xml>` タグでラップしないでください。 たとえば、プロパティリストファイルは次のファイルのようになります。
+
+```xml
+<key>SomeKey</key>
+<string>someString</string>
+<key>AnotherKey</key>
+<false/>
+...
+```
+
 **[OK]**  >  **[作成]** を選択して変更を保存します。 プロファイルが作成されて、プロファイル一覧に表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 プロファイルは作成されましたが、まだ何も行われていません。 次に、[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
 

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a1d025620e37009ce283510fc8f71b6fb90993f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 12b8fcc5c8514dbcc4c649d1c1113dca0ea51d64
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72500198"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858364"
 ---
 # <a name="your-computer-is-already-enrolled"></a>お使いのコンピューターは既に登録されています
 
@@ -38,6 +38,6 @@ ms.locfileid: "72500198"
 
 3. 表示される指示に従って、コンピューターをユーザー アカウントに関連付けます。
 
-デバイスの登録を解除する場合は、使用しているデバイスの種類ごとの手順 ([Android](unenroll-your-device-from-intune-android.md)、[iOS](unenroll-your-device-from-intune-ios.md)、[Windows](unenroll-your-device-from-intune-windows.md)) を使用してください。
+デバイスの登録を解除する場合は、使用しているデバイスの種類ごとの手順を使用してください: [Android](unenroll-your-device-from-intune-android.md)、[iOS](unenroll-your-device-from-intune-ios.md)、[Windows](unenroll-your-device-from-intune-windows.md)。
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

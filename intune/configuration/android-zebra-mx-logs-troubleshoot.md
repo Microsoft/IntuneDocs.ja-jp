@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7ed93c86d3fbe7ed7a6ac5d4b1a3494fb55f2bc
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2319fb0d1198289398912793e52482bf66d87173
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506992"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206841"
 ---
 # <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>Microsoft Intune で Android ゼブラデバイスのトラブルシューティングを行い、潜在的な問題を確認する
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Microsoft Intune では、[ゼブラ Mobility Extensions (MX) を使用して、Android ゼブラデバイスを管理](android-zebra-mx-overview.md)できます。 ゼブラデバイスを使用する場合は、StageNow でプロファイルを作成して設定を管理し、Intune にアップロードします。 Intune では、StageNow アプリを使用して、デバイスに設定を適用します。 また、StageNow アプリは、トラブルシューティングに使用されるデバイス上に詳細なログファイルも作成します。
 
@@ -147,7 +147,7 @@ Google Play サービスが利用できない場合は、一部のタスクが�
 
 Intune は、ポータルサイトアプリの最低限必要なバージョンを更新する場合があります。 デバイスに Google Play がインストールされていない場合、ポータルサイトアプリは自動的に更新されません。 最低限必要なバージョンがインストールされているバージョンより新しい場合、ポータルサイトアプリは動作を停止します。 [ゼブラデバイスでサイドローディング](android-zebra-mx-overview.md#sideload-the-company-portal-app)を使用して、最新のポータルサイトアプリに更新します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [ゼブラディスカッションボード](https://developer.zebra.com/community/home/discussions)(ゼブラの web サイトを開く)
 

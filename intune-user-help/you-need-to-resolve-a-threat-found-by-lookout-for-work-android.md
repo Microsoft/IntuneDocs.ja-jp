@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0cc2f84ad73c86a823984e6caa11dad5d4aec8a8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: f056b44301c1d0f94dde2dbb6202ed7c78e90fbf
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507831"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857361"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Lookout for Work が検出した脅威を解決する  
 
@@ -52,7 +52,7 @@ Lookout for Work アプリでセキュリティ上の脅威やウイルスが検
 
 Lookout for Work で脅威として識別されたアプリをインストールする場合、以下のスクリーンショットに示すようなメッセージが表示されます。  
 
-![Lookout for Work アプリ インターフェイスに Lookout for Work のアラート メッセージが表示されているスクリーンショット例。 [閉じる]、[詳細情報]、[アンインストール] という 3 つのボタンが表示されます。](./media/lookout-virus-alert-android.png)  
+![Lookout for Work アプリ インターフェイスに Lookout for Work のアラート メッセージが表示されているスクリーンショット例。 3 つのボタンが表示されます:[閉じる]、[詳細情報]、[アンインストール]。](./media/lookout-virus-alert-android.png)  
 
 会社の電子メールやデータに対する、失ったアクセスを回復するには、問題のあるアプリをアンインストールします。 そのアプリがデバイス上にある限り、会社のリソースにはアクセスできません。    
 

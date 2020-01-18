@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 01/06/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7e2bd869f898bbe7f894cfd9e9c767c8b42e9c4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e151481b090e1e666bfdb2759015adde6f1d66a9
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74465637"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691843"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Intune で使用できる組み込み iOS アプリ用のバンドル ID
 
@@ -31,7 +31,7 @@ iOS デバイス上で機能を構成すると、iOS デバイス上に組み込
 
 | バンドル ID                   | アプリ名     | 発行者 |
 |-----------------------------|--------------|-----------|
-| com. apple. ストア             | アプリ ストア    | Apple     |
+| com.apple.AppStore          | アプリ ストア    | Apple     |
 | com.apple.calculator        | 計算機   | Apple     |
 | com.apple.mobilecal         | 予定表     | Apple     |
 | com.apple.camera            | カメラ       | Apple     |
@@ -46,7 +46,7 @@ iOS デバイス上で機能を構成すると、iOS デバイス上に組み込
 | com.apple.gamecenter        | Game Center  | Apple     |
 | com.apple.mobilegarageband  | GarageBand   | Apple     |
 | com.apple.Health            | 正常性       | Apple     |
-| com.apple.Home              | ホーム         | Apple     |
+| com.apple.Home              | のホーム         | Apple     |
 | com.apple.iBooks            | iBooks       | Apple     |
 | com.apple.iMovie            | iMovie       | Apple     |
 | com.apple.itunesconnect.mobile | iTunes Connect | Apple |
@@ -80,6 +80,6 @@ iOS デバイス上で機能を構成すると、iOS デバイス上に組み込
 | com.apple.Bridge            | 視聴する        | Apple     |
 | com.apple.weather           | 天気      | Apple     |      
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 これらのバンドル ID を使用して[デバイス機能](ios-device-features-settings.md)を構成すると共に、iOS デバイス上で[一部の設定を許可または制限](device-restrictions-ios.md)します。

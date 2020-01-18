@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2965d6a017d92bd4535a29a2257c0cac5e6deaf
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 2774a4f4c571b8a965c9ec47376a671df2dbf006
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506362"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856684"
 ---
 # <a name="encrypting-your-android-device"></a>Android デバイスの暗号化
 
@@ -48,7 +48,7 @@ ms.locfileid: "72506362"
 3. **[デバイスの電源をオンにするときに PIN を必要とする]** を選択 > **OK**。
 4. PIN を入力して、デバイスを確認し、暗号化します。
 5. ポータルサイトまたは Microsoft Intune アプリを開きます。
-    * ポータル サイトのユーザー: デバイスを選択し、 **[デバイス設定の確認]** をタップします。 
+    * ポータル サイトのユーザー:デバイスを選択し、 **[デバイス設定の確認]** をタップします。 
     * Microsoft Intune ユーザー: ページが更新されるまで待つ必要がありますが、その場合は、暗号化の状態が [対応] に変更されます。  
 
 Android 4.4 以前を実行しているデバイスには、 **Secure startup**オプションがない可能性があります。 その場合は、次の手順を実行してデバイスを暗号化します。
@@ -59,7 +59,7 @@ Android 4.4 以前を実行しているデバイスには、 **Secure startup**�
 
 2. 画面の指示に従います。 暗号化中、デバイスが何度か再起動する可能性があります。
 3. ポータルサイトまたは Microsoft Intune アプリを開きます。
-    * ポータル サイトのユーザー: デバイスを選択し、 **[デバイス設定の確認]** をタップします。  
+    * ポータル サイトのユーザー:デバイスを選択し、 **[デバイス設定の確認]** をタップします。  
     * Microsoft Intune ユーザー: ページが更新されるまで待つ必要がありますが、その場合は、暗号化の状態が [対応] に変更されます。
 
 ## <a name="troubleshoot"></a>トラブルシューティング  

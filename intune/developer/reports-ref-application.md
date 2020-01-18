@@ -6,7 +6,7 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4a8fa34673340e4adca7b64707d8c79d4808460
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2c87d9b423eeb96acbc984040ef49e44c1853a18
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74290950"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654245"
 ---
 # <a name="reference-for-application-entities"></a>アプリケーション エンティティのリファレンス
 
@@ -39,7 +39,7 @@ ms.locfileid: "74290950"
 
 **appRevision** エンティティには、アプリのすべてのバージョンがリストされています。
 
-| プロパティ  | 説明 | 例 |
+| プロパティ  | [説明] | 例 |
 |---------|------------|--------|
 | appKey |アプリを示す一意識別子。 |123 |
 | applicationId |アプリを示す一意識別子 - AppKey に似ていますが、このキーはナチュラルです。 |b66bc706-ffff-7437-0340-032819502773 |
@@ -61,7 +61,7 @@ ms.locfileid: "74290950"
 
 **appType** エンティティには、アプリのインストール ソースがリストされています。
 
-| プロパティ  | 説明 |
+| プロパティ  | [説明] |
 |---------|------------|
 | appTypeID |種類の ID |
 | appTypeKey |キーの代理キー |
@@ -69,7 +69,7 @@ ms.locfileid: "74290950"
 
 ### <a name="example"></a>例
 
-| AppTypeID  | 名前 | 説明 |
+| AppTypeID  | 名前 | [説明] |
 |---------|------------|--------|
 | 0 |Android ストア アプリ | Android ストア アプリ。 |
 | 1 |Android LOB アプリ | Android の基幹業務アプリ。 |
@@ -90,7 +90,7 @@ ms.locfileid: "74290950"
 
 **vppProgramType** エンティティには、アプリの VPP プログラムの種類がリストされています。
 
-| プロパティ  | 説明 |
+| プロパティ  | [説明] |
 |---------|------------|
 | vppProgramTypeID | 種類の ID。 |
 | vppProgramTypeKey | キーの代理キー。 |
@@ -98,7 +98,7 @@ ms.locfileid: "74290950"
 
 ### <a name="example"></a>例
 
-| VppProgramID  | 名前 | 説明 |
+| VppProgramID  | 名前 | [説明] |
 |---------|------------|--------|
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft | Microsoft の VPP プログラム。 |
 | 00000000-0000-0000-0000-000000000000 | まだ利用できません | 既定値、VPP なし。 |
@@ -110,7 +110,7 @@ ms.locfileid: "74290950"
 
 **applicationInventory** エンティティには、インベントリ回収時にデバイスで検出されたアプリケーションがリストされています。
 
-| プロパティ  | 説明 |
+| プロパティ  | [説明] |
 |---------|------------|
 | deviceKey | これは、Intune デバイス ID が含まれるデバイス テーブルの参照です。 |
 | dateKey | 日付テーブルの参照であり、インベントリの日を示します。 |
@@ -122,7 +122,7 @@ ms.locfileid: "74290950"
 
 **mobileAppInstallState** エンティティは、デバイス、ユーザー、またはその両方を含むグループに割り当てられた後のモバイル アプリケーションのインストール状態を表します。
 
-| プロパティ | 説明 |
+| プロパティ | [説明] |
 |---|---|
 | appInstallStateKey | アカウントにおけるアプリのインストール状態の一意の ID。 |
 | appInstallState | アプリのインストール状態の列挙値。 |

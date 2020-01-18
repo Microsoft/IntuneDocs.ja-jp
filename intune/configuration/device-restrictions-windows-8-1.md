@@ -1,12 +1,12 @@
 ---
-title: Windows 8.1 を実行しているデバイスの Microsoft Intune デバイス制限設定
+title: Microsoft Intune での Windows 8.1 デバイスの制限設定 - Azure | Microsoft Docs
 titleSuffix: ''
 description: Windows 8.1 を実行するデバイスでデバイスの設定と機能を制御するために使用できる Intune の設定について説明します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,19 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0df55e79dbc54926c0507889620f2667d7b8bd7b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 82eaf1bc2c0737e1cc54751ff6fb5751227d180c
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72489835"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302976"
 ---
-# <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Microsoft Intune での Windows 8.1 以降のデバイスの制限設定
+# <a name="microsoft-intune-windows-81-device-restriction-settings"></a>Microsoft Intune の Windows 8.1 デバイス制限設定
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-この記事では、Windows 8.1 以降を実行するデバイスに構成できる Microsoft Intune デバイス制限設定について説明します。
-
+この記事では、Windows 8.1 を実行するデバイスに構成できる Microsoft Intune デバイス制限設定について説明します。
 
 ## <a name="general"></a>全般
 
@@ -48,8 +45,6 @@ ms.locfileid: "72489835"
 Windows 8.1 デバイスに対してこの設定を有効にすると、デバイスのすべてのユーザーに Microsoft アカウントが必要になります。
 暗号化を機能させるには、デバイスが Microsoft [InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#IBHULcTfI4PokO8X.97) ハードウェア認定要件を満たしている必要があります。
 デバイスで暗号化を適用すると、回復キーは、ユーザーの Microsoft アカウントからしかアクセスできなくなります。また、OneDrive アカウントからアクセスする必要があります。 ユーザーの代わりにこのキーを回復することはできません。 
-
-
 
 ## <a name="browser"></a>ブラウザー
 - **[オートフィル]** - ユーザーがブラウザーのオートコンプリートの設定を変更できるようにします。
@@ -75,3 +70,7 @@ Windows 8.1 デバイスに対してこの設定を有効にすると、デバ�
 ## <a name="cloud-and-storage"></a>クラウドとストレージ
 - **[作業フォルダーの URL]** - 作業フォルダーの URL を設定して、デバイス間でドキュメントを同期できるようにします。
 - **[Microsoft アカウントを使用せずに Windows Mail アプリにアクセスする]** - Microsoft アカウントを使用せずに Windows メール アプリケーションにアクセスできるようにします。
+
+## <a name="next-steps"></a>次のステップ
+
+[Windows 10](device-restrictions-windows-10.md)以降でデバイス制限プロファイルを作成します。

@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc29a7a5026691371370b167a4445bfd70cc76bd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 37fa650fb8c742b1f1b0cfbf154fe8cf63d35c89
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72489792"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206467"
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Microsoft Intune の Windows Phone 8.1 デバイス制限設定
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 この記事では、Windows Phone 8.1 を実行するデバイスに構成できる Microsoft Intune デバイス制限設定について説明します。
 
@@ -74,7 +74,7 @@ ms.locfileid: "72489792"
 
 アプリのページを開き、URL をクリップボードにコピーします。 許可されているアプリまたはブロックされているアプリの一覧で、これを URL として使用できます。
 
-例: ストアで Skype アプリを検索します。 使用する URL は `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51` です。
+例:Skype アプリのストアを検索します。 使用する URL は `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51` です。
 
 
 

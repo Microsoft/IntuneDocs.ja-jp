@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: 0ca5d475f92cbe3298689273dcdf0da1644078b2
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946662"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547029"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune を使用してデバイスを準拠または非準拠としてマークするための Windows 10 以降の設定
 
@@ -33,18 +33,18 @@ ms.locfileid: "74946662"
 - Windows Holographic for Business
 - Surface Hub
 
-Intune 管理者は、組織のリソースの保護に役立てるためにこれらのコンプライアンス設定を使用します。 コンプライアンス ポリシーの詳細およびその機能については、[デバイス コンプライアンスの概要](device-compliance-get-started.md)に関するページを参照してください。
+Intune サービス管理者は、組織のリソースの保護に役立てるために、これらのコンプライアンス設定を使用します。 コンプライアンス ポリシーの詳細およびその機能については、[デバイス コンプライアンスの概要](device-compliance-get-started.md)に関するページを参照してください。
 
 ## <a name="before-you-begin"></a>始める前に
 
 [コンプライアンス ポリシーの作成](create-compliance-policy.md#create-the-policy)。 **[プラットフォーム]** には、 **[Windows 10 以降]** を選択します。
 
-## <a name="device-health"></a>デバイスのヘルス
+## <a name="device-health"></a>デバイスの正常性
 
 ### <a name="windows-health-attestation-service-evaluation-rules"></a>Windows 正常性構成証明サービスの評価ルール
 
 - **[BitLocker が必要]** :  
-   Windows BitLocker ドライブ暗号化により、Windows オペレーティング システム ボリューム上に格納されているすべてのデータが暗号化されます。 BitLocker は、トラステッドプラットフォームモジュール (TPM) を使用して、Windows オペレーティングシステムとユーザーデータを保護します。 また、コンピューターのそばに人がいなかった場合や、コンピューターを紛失したり、盗難されたりした場合でも、改ざんされていないことを確認するためにも役立ちます。 コンピューターに互換性のある TPM が装備されている場合、BitLocker は TPM を使用してデータを保護する暗号化キーをロックします。 その結果、TPM がコンピューターの状態を確認するまで、キーはアクセスできません。  
+   Windows BitLocker ドライブ暗号化により、Windows オペレーティング システム ボリューム上に格納されているすべてのデータが暗号化されます。 BitLocker は、トラステッドプラットフォームモジュール (TPM) を使用して、Windows オペレーティングシステムとユーザーデータを保護します。 また、コンピューターのそばに人がいなかった場合や、コンピューターを紛失したり、盗難されたりした場合でも、改ざんされていないことを確認するためにも役立ちます。 コンピューターに互換性のある TPM がインストールされている場合は、BitLocker は TPM を使用してデータを保護する暗号化キーをロックします。 その結果、TPM がコンピューターの状態を確認するまで、キーはアクセスできません。  
 
    - **[未構成]** ("*既定値*") - この設定に対して準拠であるか非準拠であるかの評価は行われません。
    - **[必須]** - システムがオフになっているとき、または休止状態のときに、デバイスがドライブに格納されているデータを不正アクセスから保護できます。  
@@ -65,7 +65,7 @@ Intune 管理者は、組織のリソースの保護に役立てるためにこ�
 その他のリソース:
 
 - 正常性構成証明書サービスの動作の詳細については、「[正常性構成証明書 CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp)」を参照してください。
-- [サポートのヒント: Intune コンプライアンス ポリシーの一部としてデバイス正常性構成証明の設定を使用する](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643)。
+- [サポートのヒント:Intune コンプライアンス ポリシーの一部としてデバイス正常性構成証明の設定を使用する](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643)。
 
 ## <a name="device-properties"></a>デバイスのプロパティ
 
@@ -102,9 +102,9 @@ Intune 管理者は、組織のリソースの保護に役立てるためにこ�
 
 Windows 10 以降を実行している共同マネージド デバイスにのみ適用されます。 Intune 専用デバイスからは、利用不可の状態が返されます。
 
-- **[System Center Configuration Manager からデバイス コンプライアンスが必要]** :  
+- **Configuration Manager からのデバイスコンプライアンスが必要**:  
   - **[未構成]** ("*規定値*") - Intune で、あらゆる Configuration Manager 設定についてコンプライアンスがチェックされません。
-  - **[必須]** - System Center Configuration Manager のすべての設定 (構成項目) が準拠している必要があります。  
+  - **[必須]** - Configuration Manager のすべての設定 (構成項目) が準拠している必要があります。  
 
     たとえば、すべてのソフトウェア更新プログラムをデバイスにインストールすることを要求します。 Configuration Manager では、この要求は "インストール済み" 状態となります。 デバイス上のいずれかのプログラムが不明な状態である場合、Intune ではデバイスが非準拠となります。
 
@@ -168,7 +168,7 @@ Windows 10 以降を実行している共同マネージド デバイスにの�
   > [!NOTE]
   > **[Encryption of data storage on a device]\(デバイス上のデータ ストレージの暗号化\)** 設定では通常、デバイス上の暗号化の存在が確認されます。 より堅牢な暗号化設定が必要であれば、 **[BitLocker が必要]** の使用を検討してください。Windows デバイス ヘルス構成証明が活用され、TPM レベルで BitLocker の状態が検証されます。
 
-### <a name="device-security"></a>［デバイス セキュリティ］  
+### <a name="device-security"></a>デバイスのセキュリティ  
 
 - **ファイアウォール**:  
   - **未構成**(*既定*)-Intune は Microsoft Defender ファイアウォールを制御せず、既存の設定を変更しません。
@@ -229,7 +229,7 @@ Windows 10 以降を実行している共同マネージド デバイスにの�
   この設定は、脅威防御サービスからのリスク評価をコンプライアンスの条件とする場合に使用します。 許容される脅威の最大レベルを選択します。
   - **[未構成]** ("*既定値*")  
   - **[クリア]** - デバイスにはいかなる脅威も存在してはならないので、これはセキュリティ上最も安全なオプションです。 デバイスで何らかのレベルの脅威が検出された場合、非準拠と評価されます。
-  - **[低]** - 存在する脅威が低レベルの場合のみ、デバイスは準拠として評価されます。 低レベルより高い脅威が存在する場合、デバイスは非準拠状態になります。
+  - **[低]** - 存在する脅威が低レベルの場合のみ、デバイスは準拠として評価されます。 中レベル以上の脅威が存在する場合、デバイスは非準拠のステータスに分類されます。
   - **[中]** - デバイスに存在する脅威が低レベルまたは中レベルの場合、デバイスは準拠として評価されます。 デバイスで高レベルの脅威が検出された場合は、非準拠と判定されます。
   - **[高]** - 最も安全性の低いオプションであり、すべての脅威レベルが許容されます。 このソリューションをレポート目的のみで使用した場合、役立つ場合があります。
   
@@ -250,8 +250,8 @@ Surface Hub では **Windows 10 以降**のプラットフォームが使用さ�
 
 ガイダンスについては、「[Windows デバイスの登録をセットアップする](../enrollment/windows-enroll.md)」をご覧ください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [非準拠デバイスに対するアクションを追加](actions-for-noncompliance.md)し、[スコープのタグを使用してポリシーをフィルター処理する](../fundamentals/scope-tags.md)
-- [コンプライアンス ポリシーを監視します](compliance-policy-monitor.md)。
+- [コンプライアンス ポリシーを監視する](compliance-policy-monitor.md)
 - [Windows 8.1 デバイス向けのコンプライアンス ポリシー設定](compliance-policy-create-windows-8-1.md)を確認します。

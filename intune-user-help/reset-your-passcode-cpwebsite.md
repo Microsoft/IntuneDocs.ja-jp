@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2056d37b00f5e2ae7b36c6e1c02f20dc244eb290
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 0cf9b886733c117df0fca38bc94a601d1e9dd8fb
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502133"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858135"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>ポータル サイト Web サイトからデバイスのパスコードをリセットする方法
 
@@ -78,8 +78,8 @@ ms.locfileid: "72502133"
 
 **iOS**: 既存のパスコードが削除されます。一時パスコードは作成されません。 Touch ID を使用してデバイスを開いたり購入したりする場合は、再度設定する必要があります。  
 
-**Windows 10 Mobile**: 既存のパスコードが削除され、文字と数字で構成された一時パスコードが作成されます。 設定されている場合、Windows Hello 顔認識は引き続きデバイスで動作します。
+**Windows 10 Mobile**:既存のパスコードが削除され、文字と数字で構成された一時パスコードが作成されます。 設定されている場合、Windows Hello 顔認識は引き続きデバイスで動作します。
 
-**Windows Phone 8.1**: 既存のパスコードが削除され、数字で構成された一時パスコードが作成されます。  
+**Windows Phone 8.1**:既存のパスコードが削除され、数字で構成された一時パスコードが作成されます。  
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。  

@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f395a9cedc72a8184cfe3e29d6fcd3117a1473d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 6b75712cf05626999c09e8d74fd28252666313c4
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72980359"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857876"
 ---
 # <a name="install-mobile-threat-defense"></a>Mobile Threat Defense をインストールする   
 
@@ -38,9 +38,9 @@ ms.locfileid: "72980359"
 組織は、個人のアプリでテキスト、電子メール、画像などのデータを表示できません。 MTD アプリは、名前やバージョンなど、アプリに関する情報を組織に報告します。 報告される実際の情報は、会社が使用している MTD ベンダーによって異なります。 組織によって次のように表示できます。   
 
 * アプリ名  
-* アプリ ID: Google Play でアプリを示す一意名。  
-* アプリのバージョンと短いバージョン番号: アプリの特定のリリース番号。  
-* アプリのバンドルと動的なサイズ: デバイスでのアプリの使用領域。 
+* アプリ ID:Google Play でアプリを示す一意名。  
+* アプリのバージョンと短いバージョン番号:アプリの特定のリリース番号。  
+* アプリのバンドルと動的なサイズ:デバイスでのアプリの使用領域。 
 
 
 ## <a name="install-app"></a>アプリのインストール    
@@ -91,7 +91,7 @@ ms.locfileid: "72980359"
 
 脅威を解決し、アクセス権を取り戻すには、デバイスで MTD アプリを開きます。 提供された情報を読み、脅威がデバイスに与える影響とその解決方法について学習します。 この手順に従って脅威を解決したら、MTD アプリに戻り、新しいスキャンを開始します。 組織へのアクセスが回復するまで数分かかる場合があります。  
 
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a>次のステップ  
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。
 

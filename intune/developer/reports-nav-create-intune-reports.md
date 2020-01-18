@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f382ce35d1d13a59f1aa5ca6a904c0c9babff8c1
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 58c4db1f4c778050bc91bde79494742e018f5329
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899337"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547908"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>Microsoft Intune データ ウェアハウスを使用する
 
@@ -43,13 +43,13 @@ Intune データ ウェアハウスを使用して、社内のモバイル環境
 - OData 標準を使用するデータ モデル
 
 > [!Note]
-> System Center Configuration Manager と Microsoft Intune で共同管理モバイル デバイス管理 (MDM) を使用している場合は、Configuration Manager からデータを取得する必要があります。 Intune データが含まれるのは Intune データ ウェアハウスのみです。 カスタム レポートには Configuration Manager Power BI ダッシュボードを使用できます。 詳細については、「[Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)」(System Center Configuration Manager 用 Power BI ソリューション テンプレートの発表) と [Dynamics 365 の Power BI コンテンツ](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)に関するページを参照してください。
+> Microsoft Endpoint Configuration Manager と Microsoft Intune で共同管理モバイル デバイス管理 (MDM) を使用している場合は、Configuration Manager からデータを取得する必要があります。 Intune データが含まれるのは Intune データ ウェアハウスのみです。 カスタム レポートには Configuration Manager Power BI ダッシュボードを使用できます。 詳細については、[Configuration Manager 用 Power BI ソリューション テンプレートの発表](https://powerbi.microsoft.com/blog/sccm-solution-template)に関する記事と、[Dynamics 365 の Power BI コンテンツ](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)に関するページを参照してください。
 
 > [!Important]  
 > クエリ パラメーター  `api-version=v1.0` を設定することにより、Intune データ ウェアハウスの v1.0 バージョンを使用できるようになりました。 Data Warehouse 内のコレクションに対する更新は本質的に追加であり、既存のシナリオが使用できなくなることはありません。<br><br>
 > データ ウェアハウスの最新機能については、ベータ バージョンを使用して試すことができます。 ベータ バージョンを使用するには、URL にクエリ パラメーター  `api-version=beta` を含める必要があります。 ベータ バージョンは、サポートされるサービスとして一般公開される前の機能を提供しています。 Intune に新しい機能が追加されると、ベータ バージョンの動作とデータ コントラクトが変わる可能性があります。 カスタム コードまたはレポート ツールがベータ バージョンに依存していると、今後の更新プログラムで使用できなくなる可能性があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - リンクを取得し、Power BI を使用して分析します。 手順については、「[Connect to the Intune Data Warehouse with Power BI](reports-proc-get-a-link-powerbi.md)」(Power BI で Intune データ ウェアハウスに接続する) を参照してください。
 - リンクを使用して Power BI でカスタム レポートを作成します。 方法は、「[Power BI で OData フィードからレポートを作成する](reports-proc-create-with-odata.md)」を参照してください。

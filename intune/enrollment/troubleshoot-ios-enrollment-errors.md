@@ -17,18 +17,18 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46b46cd4a407df686e094198c588371ed4a01bb6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9bca046302b221b934d0802c0bf637aced2cec3f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832577"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885918"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune での iOS デバイスの登録に関する問題のトラブルシューティング
 
 この記事は、intune 管理者が Intune に iOS デバイスを登録するときに発生する問題を理解し、トラブルシューティングするのに役立ちます。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
 トラブルシューティングを開始する前に、いくつかの基本的な情報を収集することが重要です。 この情報は、問題の理解を深め、解決策を見つけるための時間を短縮するのに役立ちます。
 
@@ -40,7 +40,7 @@ ms.locfileid: "74832577"
 - どのプラットフォーム (Android、iOS、Windows) に問題がありますか。
 - 影響を受けるユーザーの数を確認できます。 すべてのユーザーに影響があるのか、それともほんの一部であるか。
 - 影響を受けるデバイスの数を確認できます。 すべてのデバイスが影響を受けていますか。
-- MDM 機関とは System Center Configuration Manager ている場合は、どのバージョンの Configuration Manager を使用していますか。
+- MDM 機関とは
 - 登録はどのように実行されますか? 登録プロファイルを使用して "自分のデバイスを持ち込む" (BYOD) または Apple Device Enrollment Program (DEP) ですか。
 
 ## <a name="error-messages"></a>エラー メッセージ
@@ -72,7 +72,7 @@ ms.locfileid: "74832577"
 #### <a name="resolution"></a>解決策
 会社のドメインの CNAME DNS リソース レコードを作成します。 たとえば、会社のドメインが contoso.com の場合、EnterpriseEnrollment.contoso.com を EnterpriseEnrollment-s.manage.microsoft.com にリダイレクトする CNAME を DNS に作成します。
 
-CNAME DNS エントリの作成は省略可能ですが、CNAME レコードにより登録が簡単になります。 CNAME レコードの登録が見つからない場合、ユーザーは手動で MDM サーバー名 enrollment.manage.microsoft.com を入力するように求められます。
+CNAME DNS エントリの作成は省略可能ですが、CNAME レコードにより、ユーザーによる登録が簡単になります。 CNAME レコードの登録が見つからない場合、ユーザーは手動で MDM サーバー名 enrollment.manage.microsoft.com を入力するように求められます。
 
 検証済みドメインが複数ある場合、ドメインごとに CNAME レコードを作成します。 CNAME リソース レコードには次の情報を含める必要があります。
 
@@ -177,7 +177,7 @@ CNAME DNS エントリの作成は省略可能ですが、CNAME レコードに�
 
 #### <a name="resolution"></a>解決策
 
-1. IOS デバイスの **設定** を開き、 **全般** >  **デバイス管理**> ます。
+1. IOS デバイスの **設定** を開き、 **全般** > **デバイス管理**> ます。
 2. 既存の管理プロファイルをタップし、 **[管理の削除]** をタップします。
 3. デバイスを再度登録します。
 
@@ -186,7 +186,7 @@ CNAME DNS エントリの作成は省略可能ですが、CNAME レコードに�
 **原因:** Apple Push Notification Service (APNs) 証明書がないか、無効であるか、有効期限が切れています。
 
 #### <a name="resolution"></a>解決策
-有効な APNs 証明書が Intune に追加されていることを確認します。 詳細については、[iOS および Mac のデバイス管理の設定](https://docs.microsoft.com/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)に関するページをご覧ください。 
+有効な APNs 証明書が Intune に追加されていることを確認します。 詳細については、「 [iOS の登録の設定](ios-enroll.md)」を参照してください。
 
 ### <a name="accountnotonboarded"></a>AccountNotOnboarded
 
@@ -199,7 +199,6 @@ APNs 証明書を更新してから、デバイスを再登録します。
 > APNs 証明書を更新していることを確認します。 APNs 証明書を置き換えないでください。 証明書を置き換える場合は、すべての iOS デバイスを Intune に再登録する必要があります。 
 
 - Intune スタンドアロンで APNs 証明書を更新するには、「 [APPLE MDM プッシュ通知証明書を更新](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate)する」を参照してください。
-- Configuration Manager を使用して Intune ハイブリッドで APNs 証明書を更新する方法については、「 [System Center Configuration Manager と Microsoft Intune を使用した iOS ハイブリッドデバイス管理のセットアップ](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac)」を参照してください。
 - Office 365 で APNs 証明書を更新するには、「 [iOS デバイス用の Apns 証明書を作成](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7)する」を参照してください。
 
 ### <a name="xpc_type_error-connection-invalid"></a>XPC_TYPE_ERROR 接続が無効です
@@ -230,7 +229,7 @@ iPhone mobileassetd[83] <Notice>: 0x1a49aebc0 Client connection: XPC_TYPE_ERROR 
 #### <a name="resolution"></a>解決策
 
 1. 登録プロファイルを編集します。 プロファイルに変更を加えることができます。 目的は、プロファイルの変更時刻を更新することです。
-2. DEP 管理対象デバイスを同期します。[Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Enrollment Program トークン]** を選択します。一覧からトークンを選択し、 **[同期]** を選択します。 同期要求が Apple に送信されます。
+2. DEP マネージド デバイスを同期する:[Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Enrollment Program トークン]** の順に選択し、トークンを選択して **[今すぐ同期]** を選択します。 同期要求が Apple に送信されます。
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>ユーザーログイン時の DEP 登録スタック
 登録プロファイルが割り当てられている DEP 管理対象デバイスを有効にすると、資格情報を入力した後に初期セットアップが表示されます。
@@ -240,7 +239,7 @@ iPhone mobileassetd[83] <Notice>: 0x1a49aebc0 Client connection: XPC_TYPE_ERROR 
 #### <a name="resolution"></a>解決策
 MFA を無効にしてから、デバイスを再登録します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Intune のデバイス登録に関するトラブルシューティング](../troubleshoot-device-enrollment-in-intune.md)
 - [Intune フォーラムで質問する](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)

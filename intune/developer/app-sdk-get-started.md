@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9742305905c5ba49930e13646bf13d8c248426b6
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 3529a21483d0207dbfe55af914badf3ed895af1a
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899401"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691863"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK の概要
 
@@ -60,7 +60,7 @@ Microsoft が、アンケートに入力された電子メール アドレスを
 
 4. 最後に、アプリのディープ リンクが、次の月の Intune サービス更新に追加されます。 たとえば、7 月に登録情報を完了した場合、ディープ リンクのサポートは 8 月中旬になります。
 
-アプリのディープ リンクを今後変更する場合は、アプリを再登録する必要があります。
+ディープリンクは、アプリのパブリックアプリストアの一覧へのリンクです。 アプリのディープ リンクを今後変更する場合は、アプリを再登録する必要があります。
 
 > [!NOTE]
 > 新しいバージョンの Intune App SDK を使用してアプリを更新する場合は、Microsoft にご連絡いただく必要があります。
@@ -82,11 +82,11 @@ Microsoft が、アンケートに入力された電子メール アドレスを
 
 以下の開発者ガイドのいずれかが必要になります。これらは、Intune アプリ SDK をご使用のアプリに統合するのに役立ちます。
 
-* **[iOS 用 Intune アプリ SDK 開発者ガイド](app-sdk-ios.md)** : このドキュメントでは、Intune アプリ SDK を使用したネイティブ iOS アプリを有効にする方法について、段階的に説明しています。
+* **[iOS 用 Intune アプリ SDK 開発者ガイド](app-sdk-ios.md)** :このドキュメントでは、Intune アプリ SDK を使用したネイティブ iOS アプリを有効にする方法について、段階的に説明しています。
 
-* **[Android 用 Intune アプリ SDK 開発者ガイド](app-sdk-android.md)** : このドキュメントでは、Intune アプリ SDK を使用したネイティブ Android アプリを有効にする方法について、段階的に説明しています。
+* **[Android 用 Intune アプリ SDK 開発者ガイド](app-sdk-android.md)** :このドキュメントでは、Intune アプリ SDK を使用したネイティブ Android アプリを有効にする方法について、段階的に説明しています。
 
-* **[Intune App SDK Xamarin Bindings ガイド](app-sdk-xamarin.md)** : このドキュメントは、iOS アプリと Android アプリを Xamarin を使用してビルドし、Intune アプリ保護ポリシーを適用するのに役立ちます。
+* **[Intune App SDK Xamarin Bindings ガイド](app-sdk-xamarin.md)** :このドキュメントは、Xamarin を使って Intune アプリ保護ポリシー用に iOS および Android アプリをビルドするのに役立ちます。
 
 
 
@@ -102,11 +102,11 @@ Microsoft が、アンケートに入力された電子メール アドレスを
 
 Microsoft Intune はアプリの利用統計データを収集します。
 
-* **iOS 用 Intune アプリ SDK**: SDK により、既定では、使用状況イベントに関する SDK 製品利用統計情報がログに記録されます。 このデータは、Microsoft Intune に送信されます。
+* **iOS 用 Intune アプリ SDK**:SDK では、使用状況イベントに関する SDK 利用統計情報が既定でログに記録されます。 このデータは、Microsoft Intune に送信されます。
 
   * アプリから SDK の製品利用統計情報を Microsoft Intune に送信しない場合は、IntuneMAMSettings ディレクトリのプロパティ `MAMTelemetryDisabled` を "YES" に設定して、製品利用統計情報の送信を無効にする必要があります。
 
-* **Intune App SDK for Android**: Intune App SDK for Android は、アプリからのデータ収集を制御しません。 ポータル サイト アプリケーションでは、既定で、製品利用統計情報がログに記録されます。 このデータは、Microsoft Intune に送信されます。 Microsoft ポリシーに基づき、個人を特定できる情報 (PII) は収集しません。 
+* **Android 用 Intune App SDK**:Intune App SDK for Android は、アプリからのデータ収集を制御しません。 ポータル サイト アプリケーションでは、既定で、製品利用統計情報がログに記録されます。 このデータは、Microsoft Intune に送信されます。 Microsoft ポリシーに基づき、個人を特定できる情報 (PII) は収集しません。 
 
   * エンド ユーザーがこのデータの送信を選択しない場合、ポータル サイト アプリの [設定] で製品利用統計情報をオフにする必要があります。 詳しくは、「[Microsoft による使用状況データの収集を無効にする](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)」をご覧ください。 
 
@@ -132,7 +132,7 @@ Android と iOS はいずれもバージョンおよびビルド番号を利用�
 
 Intune で使用する基幹業務アプリを開発するときは、バージョン番号とビルド番号の両方を必ず使用してください。 Intune のアプリ管理機能では、意味のある **CFBundleVersion** (iOS の場合) と **PackageVersionCode** (Android の場合) が利用されます。 これらの番号はアプリ マニフェストに含まれます。 
 
-Intune|iOS|Android|説明|
+Intune|iOS|Android|[説明]|
 |---|---|---|---|
 バージョン番号|CFBundleShortVersionString|PackageVersionName |この番号は、エンド ユーザー向けにアプリの特定のリリースを示します。|
 ビルド番号|CFBundleVersion|PackageVersionCode |この番号は、アプリ コードのイテレーションを示すために使用されます。|
@@ -156,7 +156,7 @@ Intune|iOS|Android|説明|
 ### <a name="test-your-app"></a>アプリのテスト
 iOS または Android アプリを Intune アプリ SDK と統合するために必要な手順を完了した後、すべてのアプリ保護ポリシーが、ユーザーと IT 管理者に対して有効化され、機能していることを確認する必要があります。統合されたアプリをテストするには、次の手順を実行します。
 
-* **Microsoft Intune のテスト アカウント**: Intune アプリ保護機能に対して Intune の管理対象アプリをテストするには、Microsoft Intune のアカウントが必要です。
+* **Microsoft Intune のテスト アカウント**:Intune アプリ保護機能に対して Intune で管理されているアプリをテストするには、Microsoft Intune のアカウントが必要です。
 
   * Intune アプリ保護ポリシーに対して iOS または Android ストア アプリを有効化している ISV の場合は、登録ステップで説明した Microsoft Intune での登録が完了すると、プロモーション コードを受け取ります。 プロモーション コードを使用すると、Microsoft Intune の 1 年間の拡張使用試用版にサインアップできます。
 
@@ -164,9 +164,9 @@ iOS または Android アプリを Intune アプリ SDK と統合するために
 
   * エンド ユーザー アカウントを使用してモバイル デバイスでアプリをテストしている場合は、管理者アカウントを使用してログインした後、Microsoft 365 管理センター Web サイトによってそのアカウントに Intune ライセンスが付与されていることを確認します。[Microsoft Intune ライセンスの割り当て](../fundamentals/licenses-assign.md)に関するページを参照してください。
 
-* **Intune のアプリ保護ポリシー**: Intune のすべてのアプリ保護ポリシーに対して、ご使用のアプリをテストするには、ポリシー設定ごとに想定される動作を把握する必要があります。 [iOS アプリ保護ポリシー](../apps/app-protection-policy-settings-ios.md)と [Android アプリ保護ポリシー](../apps/app-protection-policy-settings-android.md)の説明を参照してください。 アプリが Intune SDK を統合していても、不要アプリの一覧に表示されていない場合は、[カスタムアプリ] を選択するときに、テキストボックスにアプリのバンドル ID (iOS) またはパッケージ名 (Android) を指定できます。 
+* **Intune のアプリ保護ポリシー**:Intune のすべてのアプリ保護ポリシーに対してアプリをテストするには、ポリシー設定ごとに想定される動作を把握する必要があります。 [iOS アプリ保護ポリシー](../apps/app-protection-policy-settings-ios.md)と [Android アプリ保護ポリシー](../apps/app-protection-policy-settings-android.md)の説明を参照してください。 アプリが Intune SDK を統合していても、不要アプリの一覧に表示されていない場合は、[カスタムアプリ] を選択するときに、テキストボックスにアプリのバンドル ID (iOS) またはパッケージ名 (Android) を指定できます。 
 
-* **トラブルシューティング**: アプリのインストール ユーザー エクスペリエンスを手動でテストしているときに問題が発生した場合は、「[アプリのインストールに関する問題のトラブルシューティング](../apps/troubleshoot-app-install.md)」をご覧ください。 
+* **トラブルシューティング**:アプリのインストール ユーザー エクスペリエンスを手動でテストしているときに問題が発生した場合は、「[アプリのインストールに関する問題のトラブルシューティング](../apps/troubleshoot-app-install.md)」をご覧ください。 
 
 ### <a name="give-your-app-access-to-the-intune-app-protection-service-optional"></a>Intune アプリ保護サービスへのアクセス権をアプリに付与する (省略可能)
 
@@ -183,7 +183,7 @@ iOS または Android アプリを Intune アプリ SDK と統合するために
 7. **[アクセス許可の追加]** をクリックします。
 
 > [!NOTE]
-> アプリがこのリソースにアクセスするときにエラーが発生したためにサインインが制限されている場合: https://intunemam.microsoftonline.com 、アプリのクライアント ID で msintuneappsdk@microsoft.com にメモを送信する必要があります。 これは、今日の手動承認プロセスです。
+> このリソースにアクセスするときにエラーが発生したためにアプリでサインインが制限されている場合: https\://intunemam.microsoftonline.com、アプリのクライアント ID で msintuneappsdk@microsoft.com にメモを送信する必要があります。 これは、今日の手動承認プロセスです。
 
 ### <a name="badge-your-app-optional"></a>アプリにバッジを付ける (省略可能)
 

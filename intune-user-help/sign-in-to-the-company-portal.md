@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 12/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68a44027c14e0a52d72fc032a6ab42413fa8df96
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: f82549cfbdd3c987b2f51f4d90b9c18cce8c25be
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508293"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857805"
 ---
 # <a name="sign-in-to-company-portal"></a>ポータルサイトにサインインします  
 
@@ -56,6 +56,7 @@ ms.locfileid: "72508293"
    ![認証プロセスが終了すると、ポータル サイト アプリでサインインが行われ、読み込みバーが表示されます。](/intune-user-help/media/cp_ios_aad_signin_after_1804_004.png)
 
 ## <a name="sign-in-with-certificate-based-authentication"></a>証明書ベースの認証を使ってサインインする
+このサインインオプションは、組織で証明書ベースの認証が許可されていて、使用可能な証明書がある場合にのみ表示されます。  
 
 1. デバイス上でポータル サイト アプリを開きます。  
 

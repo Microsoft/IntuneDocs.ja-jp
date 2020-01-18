@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b92dca399afeb035bf58d998efdd469318de389
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e1f81d26227bb206aa55ca495f4a4ee5e8ae9907
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504945"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548128"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>分散 IT にロールベースのアクセス制御 (RBAC) とスコープのタグを使用する
 
@@ -39,14 +39,15 @@ ms.locfileid: "72504945"
 ## <a name="default-scope-tag"></a>既定のスコープ タグ
 既定のスコープタグは、スコープタグをサポートするすべてのタグなしオブジェクトに自動的に追加されます。
 
-既定のスコープ タグの機能は、System Center Configuration Manager のセキュリティ スコープ機能に似ています。 
+既定のスコープ タグの機能は、Microsoft Endpoint Configuration Manager のセキュリティ スコープ機能に似ています。 
 
 ## <a name="to-create-a-scope-tag"></a>スコープのタグを作成するには
 
-1. Intune で、 **[ロール]** 、 >  **[スコープ (タグ)]** 、 >  **[作成]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、[**テナントの管理** > **ロール** > **スコープ (タグ)**  > **作成**] を選択します。
 
     ![スコープのタグ作成のスクリーンショット](./media/scope-tags/create-scope-tag.png)
 
+2. **名前**を入力し、必要に応じて**説明**を入力します。
 3. 特定のグループのすべてのデバイスが必要な場合は、 **[選択したグループ内のすべてのデバイスにスコープタグを割り当てる]** を選択します。
     1. **[含めるグループを選択**してください] ページで、このスコープタグを割り当てるデバイスを含むグループを選択します。
     2. **[選択]** を選択します。
@@ -54,10 +55,7 @@ ms.locfileid: "72504945"
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>スコープのタグをロールに割り当てるには
 
-1. Intune で、 **[ロール]** 、 >  **[すべてのロール]** での順に進んでロールを選択し、 **[割り当て]** 、 >  **[割り当て]** の順に選択します。
-
-    ![ロールへのスコープ割り当てのスクリーンショット](./media/scope-tags/assign-scope-to-role.png)
-
+1. [Microsoft エンドポイントマネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、[**テナント**の管理 ** > ロール** > すべての**ロール**] を選択 >、**割り当て** > ロール >**割り当て**を選択します。
 2. **[割り当て名]** と **[説明]** を指定します。
 3. **[メンバー (グループ)]** 、 >  **[追加]** の順に進んでこの割り当てに含めるグループを選択し、 **[選択]** 、 >  **[OK]** の順に選択します。 このグループのユーザーには、スコープ (グループ) 内のユーザーとデバイスを管理するためのアクセス許可が付与されます。
 
@@ -81,9 +79,7 @@ ms.locfileid: "72504945"
 
 スコープタグをサポートするオブジェクトでは、通常、 **[プロパティ]** の下にスコープタグが表示されます。 たとえば、構成プロファイルにスコープタグを割り当てるには、次の手順を実行します。
 
-1. Intune で、 **[デバイス構成]** 、 >  **[プロファイル]** の順に進んでプロファイルを選択します。
-
-    ![プロファイル選択のスクリーンショット](./media/scope-tags/choose-profile.png)
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、[**デバイス** > **構成プロファイル**] を選択し > プロファイルを選択します。
 
 2. **[プロパティ]** 、 >  **[スコープ (タグ)]** 、 >  **[追加]** の順に選択します。
 
@@ -114,7 +110,7 @@ ms.locfileid: "72504945"
 - 自分のロールの割り当てのスコープ (グループ) に記載されているグループのみをターゲットにできます。
 - スコープのタグを自分のロールに割り当てている場合、Intune オブジェクトで一部のスコープのタグを削除できません。 少なくとも 1 つのスコープのタグが必要です。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [複数のロールの割り当て](role-based-access-control.md#multiple-role-assignments)がある場合に、スコープタグがどのように動作するかについて説明します。
 ご自分の[ロール](role-based-access-control.md)と[プロファイル](../configuration/device-profile-assign.md)を管理します。
