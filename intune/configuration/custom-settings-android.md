@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 12/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17f0b30d0a8c706a7fdff1c7da722eeccdf097eb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8137a806598facd540781702b1c2c359e89d6bda
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72495790"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206790"
 ---
 # <a name="use-custom-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune で Android デバイス用のカスタム設定を使用する
 
@@ -43,21 +43,21 @@ Android のカスタム プロファイルでは、Open Mobile Alliance Uniform 
 
 ## <a name="create-the-profile"></a>プロファイルの作成
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 3. 次の設定を入力します。
 
-    - **名前**: `android custom profile` のようにプロファイルの名前を入力します。
-    - **説明**: プロファイルの説明を入力します
-    - **プラットフォーム**: **[Android]** を選びます。
+    - **名前**:プロファイルのわかりやすい名前を入力します。 後で簡単に識別できるよう、プロファイルに名前を付けます。 たとえば、適切なプロファイル名は**Android カスタムプロファイル**です。
+    - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
+    - **[プラットフォーム]** : **[Android]** を選択します。
     - **プロファイルの種類**: **[カスタム]** を選択します。
 
 4. **[OMA-URI のカスタム設定]** で、 **[追加]** を選択します。 次の設定を入力します。
 
-    - **名前**: 簡単に見つけられるように、OMA-URI 設定の一意の名前を入力します。
-    - **説明**: 設定の概要および他の重要な詳細がわかる説明を入力します。
-    - **OMA-URI**: 設定として使用する OMA-URI を入力します。
-    - **データ型**: この OMA-URI の設定に使用するデータ型を選択します。 次のようなオプションがあります。
+    - **名前**:簡単に見つけられるように、OMA-URI 設定の一意の名前を入力します。
+    - **説明**:設定の概要および他の重要な詳細がわかる説明を入力します。
+    - **OMA-URI**:設定として使用する OMA-URI を入力します。
+    - **[データ型]** :この OMA-URI の設定に使用するデータ型を選択します。 次のようなオプションがあります。
 
       - 文字列型
       - 文字列 (XML ファイル)
@@ -67,15 +67,15 @@ Android のカスタム プロファイルでは、Open Mobile Alliance Uniform 
       - ブール型
       - Base64 (ファイル)
 
-    - **値**: 入力した OMA-URI に関連付けるデータ値を入力します。 値は、選択したデータ型に依存します。 たとえば、 **[日付と時刻]** を選択した場合は、日付の選択から値を選択します。
+    - **[値]** :入力した OMA-URI に関連付けるデータ値を入力します。 値は、選択したデータ型に依存します。 たとえば、 **[日付と時刻]** を選択した場合は、日付の選択から値を選択します。
 
     設定を何か追加した後は、 **[エクスポート]** を選択できます。 **[エクスポート]** では、追加した値の一覧がコンマ区切り値 (.csv) ファイルで作成されます。
 
-5. **[OK]** を選択して変更を保存します。 必要に応じて他の設定の追加を続けます。 
-6. 終わったら、 **[OK]**  >  **[作成]** を選択して Intune プロファイルを作成します。 完了すると、プロファイルが **[デバイス構成 - プロファイル]** の一覧に表示されます。
+5. **[OK]** を選択して変更を保存します。 必要に応じて他の設定の追加を続けます。
+6. 終わったら、 **[OK]**  >  **[作成]** の順に選択して Intune プロファイルを作成します。 完了すると、プロファイルが **[デバイス - 構成プロファイル]** の一覧に表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-プロファイルは作成されましたが、まだ何も行われていません。 次に、[プロファイルを割り当てます](device-profile-assign.md)。
+プロファイルは作成されましたが、まだ何も行われていません。 次に、[プロファイルを割り当て](../device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
 
-[Android エンタープライズ デバイスでプロファイルを作成する](custom-settings-android-for-work.md)方法を確認してください。
+[Android エンタープライズデバイスでカスタムプロファイル](custom-settings-android-for-work.md)を作成します。

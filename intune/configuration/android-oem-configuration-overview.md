@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 075e7a99f72de30e83447a2869154859e33356b9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e514c10ea61bb12ef3c4626b077aa105b66866f1
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74390833"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206875"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Microsoft Intune の OEMConfig で Android エンタープライズデバイスを使用および管理する
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Microsoft Intune では、OEMConfig を使用して、Android エンタープライズデバイスの OEM 固有の設定を追加、作成、およびカスタマイズできます。 OEMConfig は通常、Intune に組み込まれていない設定を構成するために使用されます。 OEM (相手先ブランド供給) によって、設定が異なります。 使用可能な設定は、OEM が OEMConfig アプリに含める内容によって異なります。
 
@@ -60,7 +60,7 @@ OEMConfig を使用する場合は、次の情報に注意してください。
 - Oem は、いつでも、サポートされている機能とスキーマを更新し、新しいアプリを Google Play にアップロードできます。 Intune は、常に最新バージョンの OEMConfig アプリを Google Play から同期します。 Intune では、以前のバージョンのスキーマやアプリは維持されません。 バージョンの競合が発生した場合、詳細については、OEM に連絡することをお勧めします。
 - 1つの OEMConfig プロファイルをデバイスに割り当てます。 同じデバイスに複数のプロファイルが割り当てられている場合は、動作に一貫性がない可能性があります。 OEMConfig モデルでは、デバイスごとに1つのポリシーのみがサポートされます。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
 デバイスで OEMConfig を使用するには、次の要件があることを確認してください。
 
@@ -84,8 +84,8 @@ OEMConfig を使用する場合は、次の情報に注意してください。
 2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 3. 次のプロパティを入力します。
 
-    - **名前**: 新しいプロファイルのわかりやすい名前を入力します。
-    - **説明**: プロファイルの説明を入力します この設定は省略可能ですが、推奨されます。
+    - **名前**:新しいプロファイルのわかりやすい名前を入力します。
+    - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
     - **[プラットフォーム]** : **[Android エンタープライズ]** を選択します。
     - **プロファイルの種類**: **[oemconfig]** を選択します。
 
@@ -159,6 +159,6 @@ OEMConfig を使用する場合は、次の情報に注意してください。
 > [!NOTE]
 > Oemconfig アプリは、OEMConfig プロファイルを使用して構成する前に、Intune によってオンボードされている必要があります。 アプリがサポートされたら、テナントでの設定について Microsoft に連絡する必要はありません。 このページの指示に従ってください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。

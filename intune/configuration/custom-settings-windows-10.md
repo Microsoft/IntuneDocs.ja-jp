@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 12/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8f896f514223cdb5e5faae5f781421d37fffd01
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9e3d2784e0242498fbae43ab61034a5be31b0952
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72495365"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206773"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Intune で Windows 10 デバイス用のカスタム設定を使用する
 
@@ -40,21 +40,21 @@ Windows 10 では、[ポリシー構成サービス プロバイダー (ポリ�
 
 ## <a name="create-the-profile"></a>プロファイルの作成
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 3. 次の設定を入力します。
 
-    - **名前**: `windows 10 custom profile` のようにプロファイルの名前を入力します。
-    - **説明**: プロファイルの説明を入力します
+    - **名前**:プロファイルのわかりやすい名前を入力します。 後で簡単に識別できるよう、プロファイルに名前を付けます。 たとえば、適切なプロファイル名は**Windows 10 カスタムプロファイル**です。
+    - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
     - **[プラットフォーム]** : **[Windows 10 以降]** を選択します。
     - **プロファイルの種類**: **[カスタム]** を選択します。
 
 4. **[OMA-URI のカスタム設定]** で、 **[追加]** を選択します。 次の設定を入力します。
 
-    - **名前**: OMA-URI 設定の一意の名前を入力すると、設定リスト内で容易に識別できます。
-    - **説明**: 設定の概要および他の重要な詳細がわかる説明を入力します。
-    - **OMA-URI** (大文字と小文字を区別): 設定として使用する OMA-URI を入力します。
-    - **データ型**: この OMA-URI の設定に使用するデータ型を選択します。 次のようなオプションがあります。
+    - **名前**:OMA-URI 設定の一意の名前を入力すると、設定リスト内で容易に識別できます。
+    - **説明**:設定の概要および他の重要な詳細がわかる説明を入力します。
+    - **[OMA-URI]** (大文字と小文字を区別):設定として使用する OMA-URI を入力します。
+    - **[データ型]** :この OMA-URI の設定に使用するデータ型を選択します。 次のようなオプションがあります。
 
         - 文字列型
         - 文字列 (XML ファイル)
@@ -64,12 +64,12 @@ Windows 10 では、[ポリシー構成サービス プロバイダー (ポリ�
         - ブール型
         - Base64 (ファイル)
 
-    - **値**: 入力した OMA-URI に関連付けるデータ値を入力します。 値は、選択したデータ型に依存します。 たとえば、 **[日付と時刻]** を選択した場合は、日付の選択から値を選択します。
+    - **[値]** :入力した OMA-URI に関連付けるデータ値を入力します。 値は、選択したデータ型に依存します。 たとえば、 **[日付と時刻]** を選択した場合は、日付の選択から値を選択します。
 
     設定を何か追加した後は、 **[エクスポート]** を選択できます。 **[エクスポート]** では、追加した値の一覧がコンマ区切り値 (.csv) ファイルで作成されます。
 
 5. **[OK]** を選択して変更を保存します。 必要に応じて他の設定の追加を続けます。
-6. 終わったら、 **[OK]**  >  **[作成]** を選択して Intune プロファイルを作成します。 完了すると、プロファイルが **[デバイス構成 - プロファイル]** の一覧に表示されます。
+6. 終わったら、 **[OK]**  >  **[作成]** の順に選択して Intune プロファイルを作成します。 完了すると、プロファイルが **[デバイス - 構成プロファイル]** の一覧に表示されます。
 
 ## <a name="example"></a>例
 
@@ -85,6 +85,6 @@ Windows 10 のバージョンによっては、一部の設定に互換性があ
 
 また、「[Configuration service provider reference](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference)」(構成サービス プロバイダー リファレンス) に記載されているすべての設定が Intune でサポートされているわけではありません。 Intune で必要な設定がサポートされているかどうかを確認するには、その設定の記事を開きます。 各設定ページには、サポートされている操作が示されます。 Intune で利用するには、その設定で**追加**、**置換**、**取得**の操作がサポートされている必要があります。 **取得**の操作によって返された値が**追加**または**置換**の操作によって得た値と一致しない場合、Intune ではコンプライアンス エラーが報告されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-プロファイルは作成されましたが、まだ何も行われていません。 次に、[プロファイルを割り当てます](device-profile-assign.md)。
+プロファイルは作成されましたが、まだ何も行われていません。 次に、[プロファイルを割り当て](../device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。

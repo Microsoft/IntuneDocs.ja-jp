@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/18/2018
+ms.date: 12/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40569af35a812074cc62546e3f85929416202b3b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f79ccdc71ddbfa3f25daef629515fb612de01852
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506430"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207011"
 ---
 # <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>Intune で Windows デバイス用の Wi-Fi 設定をインポートする
 
@@ -40,33 +40,36 @@ Windows で、`netsh wlan` を使用して、既存の Wi-Fi プロファイル�
 
 1. エクスポートされた Wi-Fi プロファイル用のローカル フォルダー (**c:\WiFi** など) を作成します。
 2. コマンド プロンプトを管理者として開きます。
-3. `netsh wlan show profiles` コマンドを実行し、エクスポートするプロファイルの名前をメモします。 この例では、プロファイル名は **WiFiName** です。
+3. `netsh wlan show profiles` コマンドを実行します。 エクスポートするプロファイルの名前をメモしておきます。 この例では、プロファイル名は **WiFiName** です。
 4. `netsh wlan export profile name="ProfileName" folder=c:\Wifi` コマンドを実行します。 このコマンドにより、**Wi-Fi-WiFiName.xml** という名前の Wi-Fi プロファイル ファイルがターゲット フォルダーに作成されます。
 
 ## <a name="import-the-wi-fi-settings-into-intune"></a>Intune への Wi-Fi 設定のインポート
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
-3. デバイス制限プロファイルの **[名前]** と **[説明]** を入力します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
+3. 次の設定を入力します。
+
+    - **名前**:プロファイルのわかりやすい名前を入力します。 名前は、Wi-Fi プロファイルの xml の名前属性と同じにする**必要があります**。 異なると失敗します。
+    - **説明**:設定の概要および他の重要な詳細がわかる説明を入力します。
+    - **[プラットフォーム]** : **[Windows 8.1 以降]** を選択します。
+    - **[プロファイルの種類]** : **[Wi-Fi インポート]** を選択します。
 
     > [!IMPORTANT]
-    > - 名前は、Wi-Fi プロファイルの xml の名前属性と同じにする**必要があります**。 異なると失敗します。
     > - 事前共有キーが含まれている Wi-Fi プロファイルをエクスポートする場合は、`key=clear` をコマンドに追加する**必要があります**。 たとえば、「`netsh wlan export profile name="ProfileName" key=clear folder=c:\Wifi`」と入力します。
     > - Windows 10 で事前共有キーを使用すると、Intune に修復エラーが表示されます。 この場合は、Wi-Fi プロファイルがデバイスに正常に割り当てられ、プロファイルは想定どおりに動作します。
     > - 事前共有キーが含まれている Wi-Fi プロファイルをエクスポートする場合は、ファイルが保護されていることを確認します。 キーはプレーン テキスト形式であるため、ユーザーはキーを保護する必要があります。
 
-4. **[プラットフォーム]** で、 **[Windows 8.1 以降]** を選択します。
-5. **[プロファイルの種類]** で、 **[Wi-Fi インポート]** を選択します。
-6. 次の設定を構成します。
-    - **[接続名]** : Wi-Fi 接続の名前を入力します。 この名前は、使用可能な Wi-Fi ネットワークを参照しているエンド ユーザーに表示されます。
-    - **[プロファイル XML]** : 参照ボタンを選択し、インポートする Wi-Fi プロファイル設定を含む XML ファイルを選択します。
-    - **[ファイルの内容]** : 選択した構成プロファイルの XML コードが表示されます。
-7. 完了したら、 **[OK]**  >  **[作成]** を選択して変更を保存します。 プロファイルが作成され、プロファイル一覧に表示されます。
+4. 次の設定を入力します。
 
-## <a name="next-steps"></a>次の手順
+    - **[接続名]** :Wi-Fi 接続の名前を入力します。 この名前は、使用可能な Wi-fi ネットワークを参照するときにユーザーに表示されます。
+    - **[プロファイル XML]** :参照ボタンを選択し、インポートする Wi-Fi プロファイル設定を含む XML ファイルを選択します。
+    - **[ファイルの内容]** :選択した構成プロファイルの XML コードが表示されます。
 
-プロファイルは作成されますが、何も実行されません。 次に、[このプロファイルを割り当て](device-profile-assign.md)ます。
+5. **[OK]** を選択して変更を保存します。
+6. 終わったら、 **[OK]**  >  **[作成]** の順に選択して Intune プロファイルを作成します。 完了すると、プロファイルが **[デバイス - 構成プロファイル]** の一覧に表示されます。
 
-## <a name="more-resources"></a>その他のリソース
+## <a name="next-steps"></a>次のステップ
 
-使用可能な他のプラットフォームなど、[Wi-Fi 設定の概要](wi-fi-settings-configure.md)に関する記事。
+プロファイルは作成されますが、何も実行されません。 次に、[プロファイルを割り当て](../device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
+
+使用可能な他のプラットフォームなど、[Wi-Fi 設定の概要](wi-fi-settings-configure.md)に関する記事を参照してください。
