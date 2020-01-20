@@ -17,18 +17,18 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46012b11cdb458243658e858b53c2dfb1a69dc88
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 0d5c6db598a7f64f75f6f5a8e0cf25b8e4b81465
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991805"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885886"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune での Windows デバイスの登録に関する問題のトラブルシューティング
 
 この記事は、intune 管理者が Windows デバイスを Intune に登録するときに発生する問題を理解し、トラブルシューティングするのに役立ちます。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 トラブルシューティングを開始する前に、いくつかの基本的な情報を収集することが重要です。 この情報は、問題の理解を深め、解決策を見つけるための時間を短縮するのに役立ちます。
 
 問題に関する次の情報を収集します。
@@ -40,7 +40,7 @@ ms.locfileid: "74991805"
 - どのプラットフォーム (Android、iOS、Windows) に問題がありますか。
 - 影響を受けるユーザーの数を確認できます。 すべてのユーザーに影響があるのか、それともほんの一部であるか。
 - 影響を受けるデバイスの数を確認できます。 すべてのデバイスが影響を受けていますか。
-- MDM 機関とは System Center Configuration Manager ている場合は、どのバージョンの Configuration Manager を使用していますか。
+- MDM 機関とは
 - 登録はどのように実行されますか? 登録プロファイルを使用して "自分のデバイスを持ち込む" (BYOD) または Apple Device Enrollment Program (DEP) ですか。
 
 ## <a name="error-messages"></a>エラー メッセージ
@@ -48,9 +48,9 @@ ms.locfileid: "74991805"
 ### <a name="this-user-is-not-authorized-to-enroll"></a>このユーザーには登録を許可されていません。
 
 エラー 0x801c003: "このユーザーの登録は許可されていません。 この操作をもう一度試すか、エラーコード (0x801c0003) を使用してシステム管理者に連絡してください。 "
-エラー 80180003: "問題が発生しました。 このユーザーには登録を許可されていません。 この操作をもう一度試すか、エラーコード80180003を使用してシステム管理者に連絡してください。 "
+エラー 80180003:"問題が発生しました。 このユーザーには登録を許可されていません。 この操作をもう一度試すか、エラーコード80180003を使用してシステム管理者に連絡してください。 "
 
-**原因:** 次のいずれかの条件に該当します。 
+**原因:** 以下のいずれかの条件: 
 
 - ユーザーは、Intune で許可されているデバイスの最大数を既に登録しています。    
 - デバイスは、デバイスの種類の制限によってブロックされます。    
@@ -97,7 +97,7 @@ ms.locfileid: "74991805"
 
 #### <a name="resolution"></a>解決策
 1. 管理者として [Azure portal](https://portal.azure.com/) にサインインします。    
-2. **Azure Active Directory**  >  **デバイスの**  >  **デバイス設定**にアクセスします。    
+2. **Azure Active Directory** > **デバイスの** > **デバイス設定**にアクセスします。    
 3. **[ユーザーはデバイスを Azure AD に参加させることができます]** を **[すべて]** に設定します。    
 4. デバイスを再登録します。   
 
@@ -107,20 +107,16 @@ ms.locfileid: "74991805"
 
 **原因:** 次の条件のいずれかに該当している場合。
 - 別のユーザーが既にデバイスを Intune に登録しているか、デバイスを Azure AD に参加させています。 この問題が発生しているかどうかを判断するには、 **[設定]** [ > **アカウント**] **[職場のアクセス]**  > を参照してください。 次のようなメッセージを探します。 "システム上の別のユーザーが既に職場または学校に接続されています。 職場または学校の接続を削除してから、もう一度お試しください。 "    
-- Configuration Manager クライアント エージェントがコンピューターにインストールされます。    
 
 #### <a name="resolution"></a>解決策
 
-この問題を解決するには、次のいずれかの方法を使用します。
+この問題を解決するには、以下のいずれかの方法を使用します。
 
 ##### <a name="remove-the-other-work-or-school-account"></a>他の職場または学校アカウントを削除する
 1. Windows からサインアウトし、デバイスに登録または参加したもう1つのアカウントを使用してサインインします。    
 2. **[設定]** [ >  > **アカウント**] **[職場のアクセス]** の順に選択し、職場または学校のアカウントを削除します。
 3. Windows からサインアウトし、アカウントを使用してサインインします。    
 4. デバイスを Intune に登録するか、デバイスを Azure AD に参加させます。 
-
-##### <a name="remove-the-configuration-manager-client"></a>Configuration Manager クライアントの削除
-Configuration Manager クライアントを削除してから、デバイスをもう一度登録してください。
 
 
 
@@ -148,7 +144,7 @@ Configuration Manager クライアントを削除してから、デバイスを�
 [Microsoft 365 管理センター](https://portal.office.com/adminportal/home)にアクセスし、Intune または Office 365 のライセンスをユーザーに割り当てます。
 
 ##### <a name="correct-the-mdm-terms-of-use-url"></a>MDM 使用条件 URL を修正する
-  1. [Azure portal](https://portal.azure.com/) にサインインしてから、**[Azure Active Directory]** を選択します。    
+  1. [Azure portal](https://portal.azure.com/) にサインインしてから、 **[Azure Active Directory]** を選択します。    
   2. **[モビリティ (MDM および MAM)]** を選択し、 **[Microsoft Intune]** をクリックします。    
   3. **[既定の Mdm url の復元]** を選択し、 **MDM 使用条件 url**が **https://portal.manage.microsoft.com/TermsofUse.aspx** に設定されていることを確認します。    
   4. **[保存]** を選びます。    
@@ -156,22 +152,22 @@ Configuration Manager クライアントを削除してから、デバイスを�
 
 ### <a name="something-went-wrong"></a>問題が発生しました。
 
-エラー 80180026: "問題が発生しました。 正しいサインイン情報が使用されていること、および組織がこの機能を使用していることを確認します。 この操作をもう一度試すか、エラーコード80180026を使用してシステム管理者に連絡してください。 "
+エラー 80180026:"問題が発生しました。 正しいサインイン情報が使用されていること、および組織がこの機能を使用していることを確認します。 この操作をもう一度試すか、エラーコード80180026を使用してシステム管理者に連絡してください。 "
 
 **原因:** このエラーは、Windows 10 コンピューターを Azure AD に参加させようとしたときに、次の両方の条件が当てはまる場合に発生する可能性があります。 
 - MDM の自動登録は Azure で有効になっています。    
-- Windows 10 コンピューターに、Intune PC クライアント (Intune PC エージェント) または Configuration Manager クライアントエージェントがインストールされている。
+- Intune PC クライアント (Intune PC エージェント) は、Windows 10 コンピューターにインストールされます。
 
 #### <a name="resolution"></a>解決策
 この問題に対処するには、次のいずれかの方法を使用します。
 
 ##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>Azure での MDM 自動登録を無効にします。
-1. [Azure ポータル](https://portal.azure.com/)にサインインします。    
+1. [Azure portal](https://portal.azure.com/) にサインインします。    
 2. **Azure Active Directory** > **モビリティ (MDM および MAM)**  > **Microsoft Intune**に移動します。    
 3. **[MDM ユーザースコープ]** を **[なし]** に設定し、 **[保存]** をクリックします。    
      
 ##### <a name="uninstall"></a>アンインストール
-コンピューターから Intune PC クライアントまたは Configuration Manager クライアントエージェントをアンインストールします。    
+コンピューターから Intune PC クライアントエージェントをアンインストールします。    
 
 ### <a name="the-software-cannot-be-installed"></a>ソフトウェアをインストールできません。
 
@@ -187,7 +183,7 @@ Configuration Manager クライアントを削除してから、デバイスを�
 
 ### <a name="the-account-certificate-is-not-valid-and-may-be-expired"></a>アカウント証明書が無効です。期限が切れている可能性があります。[2]。
 
-エラー: "アカウント証明書が無効です。期限が切れている可能性があります。0x80cf4017。"
+エラー:"アカウント証明書が無効です。期限が切れている可能性があります。0x80cf4017。"
 
 **原因:** クライアントソフトウェアが最新ではありません。
 
@@ -206,15 +202,8 @@ Configuration Manager クライアントを削除してから、デバイスを�
 スタンドアロンの Intune 環境でこの問題を解決するには、次の手順を実行します。 
  
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、デバイスの種類の制限を選択 >**デバイス** > **登録制限**を選択します。    
-2. **[プロパティ]** を選択し、 **[プラットフォームの設定**] の横にある [ > ] をクリックして、[Windows に対して**許可** **(MDM)** ] > ます ****    
+2. **[プロパティ]** を選択し、 **[プラットフォームの設定**] の横にある [ > ] **をクリックして**、[Windows に対して**許可** **(MDM)** ] > ます    
 3. **[レビュー + 保存]** をクリックします。    
- 
-Intune と Configuration Manager のハイブリッド MDM でこの問題を解決するには、次の手順を実行します。 
-1. Configuration Manager コンソールを開きます。    
-2. **[管理]** を選択し、 **[Cloud Services]** を選択します。    
-3. **[Microsoft Intune サブスクリプション]** を右クリックし、 **[プラットフォーム > Windows の構成]** を選択します。    
-4. **[** **Windows 登録** > を有効にする **]** チェックボックスをオンにし > ます。  
-
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>一括登録中にセットアップエラーが発生しました。
 
@@ -263,7 +252,7 @@ UPN に検証されていないドメインまたはルーティング不可能�
 
 **[MDM ユーザースコープ]** が **[なし**] に設定されている場合は、次の手順を実行します。 
  
-1. [Azure portal](https://portal.azure.com/) にサインインしてから、**[Azure Active Directory]** を選択します。
+1. [Azure portal](https://portal.azure.com/) にサインインしてから、 **[Azure Active Directory]** を選択します。
 2. **[モビリティ (MDM および MAM)]** を選択し、 **[Microsoft Intune]** を選択します。    
 3. **MDM ユーザースコープ**を**All**に設定します。 または、 **[MDM ユーザースコープ]** を **[一部]** に設定し、Windows 10 デバイスを自動的に登録できるグループを選択します。    
 4. **[MAM ユーザースコープ]** を **[なし**] に設定します。
@@ -371,22 +360,22 @@ Description:
 この問題は、通常、Windows 自動操縦デバイスが作成される組織単位にアクセス許可を委任することによって発生します。 詳細については、「[組織単位でのコンピューターアカウントの制限の引き上げ](windows-autopilot-hybrid.md#increase-the-computer-account-limit-in-the-organizational-unit)」を参照してください。
 
 1. **[Active Directory ユーザーとコンピューター]** (DSA.msc) を開きます。
-2. ハイブリッド Azure AD に参加しているコンピューターを作成するために使用する組織単位を右クリックして、**[制御の委任]** を選択します。
-3. **制御の委任**ウィザードで、**[次へ]** > **[追加]** > **[オブジェクトの種類]** を選択します。
-4. **[オブジェクトの種類]** ウィンドウで、**[コンピューター]** チェック ボックスをオンにして、**[OK]** を選択します。
-5. **[ユーザー]**、**[コンピューター]**、または **[グループ]** のいずれかのウィンドウの **[選択するオブジェクト名を入力してください]** ボックスに、コネクタがインストールされている場所コンピューターの名前を入力します。
-6. **名前の確認** を選択して入力を検証 > OK > **次へ** **** をクリックします。
-7. **[委任するカスタム タスクを作成する]** > **[次へ]** を選択します。
-8. **[フォルダー内の次のオブジェクトのみ]** チェック ボックスをオンにし、**[コンピューター オブジェクト]**、**[選択されたオブジェクトをこのフォルダーに作成する]**、および **[選択されたオブジェクトをこのフォルダーから削除する]** チェック ボックスをオンにします。
+2. ハイブリッド Azure AD に参加しているコンピューターを作成するために使用する組織単位を右クリックして、 **[制御の委任]** を選択します。
+3. **制御の委任**ウィザードで、 **[次へ]**  >  **[追加]**  >  **[オブジェクトの種類]** を選択します。
+4. **[オブジェクトの種類]** ウィンドウで、 **[コンピューター]** チェック ボックスをオンにして、 **[OK]** を選択します。
+5. **[ユーザー]** 、 **[コンピューター]** 、または **[グループ]** のいずれかのウィンドウの **[選択するオブジェクト名を入力してください]** ボックスに、コネクタがインストールされている場所コンピューターの名前を入力します。
+6. **名前の確認** を選択して入力を検証 > **OK** > **次へ**をクリックします。
+7. **[委任するカスタム タスクを作成する]**  >  **[次へ]** を選択します。
+8. **[フォルダー内の次のオブジェクトのみ]** チェック ボックスをオンにし、 **[コンピューター オブジェクト]** 、 **[選択されたオブジェクトをこのフォルダーに作成する]** 、および **[選択されたオブジェクトをこのフォルダーから削除する]** チェック ボックスをオンにします。
 9. **[次へ]** を選択します。
-10. **[アクセス許可]** で、**[フル コントロール]** チェック ボックスをオンにします。 この操作で、他のすべてのオプションが選択されます。
+10. **[アクセス許可]** で、 **[フル コントロール]** チェック ボックスをオンにします。 この操作で、他のすべてのオプションが選択されます。
 11. **[次へ]**  >  **[完了]** を選択します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Intune のデバイス登録に関するトラブルシューティング](../troubleshoot-device-enrollment-in-intune.md)
 - [Intune フォーラムで質問する](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 - [Microsoft Intune サポート チームのブログを読む](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [Microsoft Enterprise Mobility and Security チームのブログを読む](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
 - [Microsoft Intune のサポートを受ける](../fundamentals/get-support.md)
-- [共同管理の登録エラーを検索する](https://docs.microsoft.com/sccm/comanage/how-to-monitor#enrollment-errors)
+- [共同管理の登録エラーを検索する](https://docs.microsoft.com/configmgr/comanage/how-to-monitor#enrollment-errors)
