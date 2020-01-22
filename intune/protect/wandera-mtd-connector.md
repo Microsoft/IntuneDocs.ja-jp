@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cc63be3c7c536cba67ef92288c12cc4032ae200
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 50973d883a3d31089e16dca5a9021643a821a3fb
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508808"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036631"
 ---
 # <a name="wandera-mobile-threat-defense-connector-with-intune"></a>Wandera Mobile Threat Defense コネクタと Intune  
 
@@ -48,9 +48,9 @@ Intune に登録したとき、Wandera では次のプラットフォームが�
 - Android 5.0 以降  
 - iOS 10.2 以降  
 
-プラットフォームとデバイスについて詳しくは、[Wandera の Web サイト](https://www.wandera.com/why-wandera/features/device-support/)をご覧ください。
+プラットフォームとデバイスについて詳しくは、[Wandera の Web サイト](https://www.wandera.com/classic-help-center/)をご覧ください。
 
-## <a name="prerequisites"></a>必要条件  
+## <a name="prerequisites"></a>[前提条件]  
 
 - Microsoft Intune サブスクリプション  
 - Azure Active Directory  
@@ -88,11 +88,11 @@ Intune で Wandera MTD を使用する場合の一般的なシナリオを次に
 
 **修復するとアクセス権が付与される**:  
 
-![修復するとアクセス権が付与される](./media/wandera-mtd-connector/wandera-network-wifi-unblocked.png)  
+![修復後に許可されるアクセス](./media/wandera-mtd-connector/wandera-network-wifi-unblocked.png)  
 
-## <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいて SharePoint Online へのアクセスを制御する
+## <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>ネットワークへの脅威に基づいて SharePoint Online へのアクセスを制御する
 
-Man-in-the-middle 攻撃など、ネットワークに対する脅威を検出し、デバイスのリスクに基づいて会社内のファイルの同期を阻止します。
+Man-in-the-middle 攻撃のようなネットワークの脅威を検出し、デバイス リスクに基づき、企業ファイルの同期を制限します。
 
 **ネットワークの脅威が検出されたときに SharePoint Online をブロック**:  
 
@@ -103,7 +103,7 @@ Man-in-the-middle 攻撃など、ネットワークに対する脅威を検出�
 
 ![SharePoint で修復時にアクセス権が付与される例](./media/wandera-mtd-connector/wandera-network-spo-unblocked.png)  
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Wandera を Intune と統合する](wandera-mtd-connector-integration.md)
 - [Wandera アプリの設定](mtd-apps-ios-app-configuration-policy-add-assign.md)
