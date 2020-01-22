@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48ad9ffe32dc7493195ec161e070734776381427
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 328a578f4d2ada41bed17839f1f85b3b9add80fa
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547799"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885962"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune でのデバイス登録に関するトラブルシューティング
 
@@ -56,7 +56,7 @@ ms.locfileid: "75547799"
 これらの問題は、すべてのデバイス プラットフォームで発生する可能性があります。
 
 ### <a name="device-cap-reached"></a>デバイス キャップに達しました
-**問題:** 登録中にエラー ( **"ポータル サイトは一時的に使用できません"** など) がユーザーに表示され、Configuration Manager の DMPdownloader.log にエラー **DeviceCapReached** が含まれます。
+**問題:** 登録中のユーザーにエラーが表示されます ( **"ポータル サイトは一時的に使用できません"** など)。
 
 **解決方法:**
 
@@ -113,23 +113,6 @@ ms.locfileid: "75547799"
 
     4. 再び DirSync を有効にして、ユーザーが適切に同期していることを確認します。
 
-3. Configuration Manager と Intune を使用しているシナリオでは、ユーザーが有効なクラウド ユーザー ID を持っていることを確認します。
-
-    1. SQL Management Studio を開きます。
-
-    2. 適切な DB に接続します。
-
-    3. データベース フォルダーを開き、**CM_DBName** を探して開きます (この DBName は顧客データベースの名前です)。
-
-    4. 上部にある **[新しいクエリ]** を選択し、次のクエリを実行します。
-
-        - すべてのユーザーを表示するには: `select * from [CM_ DBName].[dbo].[User_DISC]`
-
-        - 特定のユーザーを表示するには、次のクエリを使います。%testuser1% は、検索対象ユーザーの username@domain.com に対するプレースホルダーです: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
-
-        クエリを入力したら、 **[! 実行]** を選択します。
-        結果が返されたら、クラウド ユーザー ID を検索します。  ID が見つからない場合、そのユーザーには Intune を使用するライセンスが付与されていません。
-
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>会社名に特殊文字が含まれている場合にポリシーの作成またはデバイスの登録ができない
 **問題:** ポリシーを作成することやデバイスを登録することができません。
 
@@ -144,7 +127,7 @@ ms.locfileid: "75547799"
 - 組織内にユーザーの UPN サフィックス用のトップ レベル ドメイン (@contoso.com、@fabrikam.com など) を複数持っている。
 
 
-[AD FS 2.0 用ロールアップ](http://support.microsoft.com/kb/2607496)が <strong>SupportMultipleDomain</strong> スイッチと連携することで、AD FS 2.0 サーバーを追加しなくても、AD FS サーバーはこのような状況に対応できます。 詳細については、[このブログ](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)を参照してください。
+[AD FS 2.0 用ロールアップ](https://support.microsoft.com/kb/2607496)が <strong>SupportMultipleDomain</strong> スイッチと連携することで、AD FS 2.0 サーバーを追加しなくても、AD FS サーバーはこのような状況に対応できます。 詳細については、[このブログ](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)を参照してください。
 
 
 ## <a name="android-issues"></a>Android の問題
@@ -332,23 +315,6 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 
 5. iOS 用の Safari が既定のブラウザーであり、Cookie が有効であることを確認します。
 
-### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-configuration-manager-with-intune"></a>Intune と Configuration Manager を使用するときに、登録済みの iOS デバイスがコンソールに表示されない
-**問題:** ユーザーが iOS デバイスを登録しても、そのデバイスが Configuration Manager 管理コンソールに表示されません。 そのデバイスでは、登録済みであることが示されません。 次の原因が考えられます。
-
-- Configuration Manager サイトの Microsoft Intune Connector と Intune サービスとの通信が行われてない。
-- データ探索マネージャー (ddm) コンポーネントまたは状態マネージャー (statmgr) のどちらかで Intune サービスからのメッセージが処理されていない。
-- あるアカウントで MDM 証明書をダウンロードした後で、それを別のアカウントで使用した可能性があります。
-
-
-**解決方法:** エラーが発生していないかどうかを次のログ ファイルで確認します。
-
-- dmpdownloader.log
-- ddm.log
-- statmgr.log
-
-これらのログ ファイルで探す内容の例は近日追加される予定です。
-
-
 ### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>ユーザーの iOS デバイスが登録画面で 10 分以上スタックしている
 
 **問題**:登録中のデバイスが次の 2 つの画面のいずれかでスタックする場合があります。
@@ -418,36 +384,6 @@ VPP トークンを使用して問題を修正した後は、ブロックされ�
     2. **[デバイス]**  >  **[すべてのデバイス]** を選択します。  
     3. 登録に問題があるデバイスを探します。 デバイス名または MAC/HW アドレスで検索して結果を絞り込みます。
     4. デバイスを選択し、 **[削除]** を選択します。 デバイスに関連付けられている他のすべてのエントリを削除します。  
-
-## <a name="issues-when-using-configuration-manager-with-intune"></a>Configuration Manager と Intune を使用しているときの問題
-
-### <a name="mobile-devices-disappear"></a>モバイル デバイスが表示されない
-
-**問題:** モバイル デバイスを Configuration Manager に正常に登録した後に、モバイル デバイス コレクションに表示されません。 ただし、デバイスには管理プロファイルがあり、CSS ゲートウェイには表示されます。
-
-**解決方法:** この問題は、次の原因によって発生する可能性があります。
-
-- ドメインに参加していないデバイスを削除するカスタム プロセスがある。または
-- ユーザーがサブスクリプションからデバイスを削除した。
-Configuration Manager コンソールで、デバイスを削除したプロセスまたはユーザー アカウントを確認するには、次の手順を実行します。
-
-#### <a name="check-how-device-was-removed"></a>デバイスの削除方法を確認する
-
-1. Configuration Manager 管理コンソールで、 **[監視]** &gt; **[システム ステータス]** &gt; **[ステータス メッセージ クエリ]** を選択します。
-
-2. **[手動で削除されたコレクションのメンバー リソース]** を右クリックし、 **[メッセージを表示]** を選択します。
-
-3. 適切な時刻/日付または過去 12 時間を選択します。
-
-4. 対象のデバイスを検索し、デバイスが削除された方法を確認します。 次の例では、アカウント SCCMInstall が "不明なアプリケーション" でデバイスを削除しています。
-
-    ![デバイス削除の診断のスクリーン ショット](./media/troubleshoot-device-enrollment-in-intune/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
-
-5. ドメインに参加していない、モバイル、または関連するデバイスを自動的に削除するような、スケジュールされたタスク、スクリプト、または他のプロセスが Configuration Manager にないことを確認します。
-
-### <a name="other-ios-enrollment-errors"></a>iOS のその他の登録エラー
-
-iOS 登録エラーの一覧は、「[Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune)」 (Microsoft Intune での iOS デバイス登録に関する問題のトラブルシューティング) のドキュメントにあります。
 
 ## <a name="pc-issues"></a>PC の問題
 

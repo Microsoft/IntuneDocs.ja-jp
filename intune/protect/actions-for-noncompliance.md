@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 01/08/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e3867bfc2de29c059766e134bd0d2c8801e1c70
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 50478ecb615cf39bba0a205cb06f83e47728e366
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712895"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827838"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Intune で非準拠デバイスに対してメールを自動送信し、アクションを追加する
 
@@ -91,7 +91,7 @@ ms.locfileid: "73712895"
 
 デバイス コンプライアンス ポリシーを作成するときに、Intune によって、コンプライアンス違反に対するアクションが自動的に作成されます。 デバイスがコンプライアンス ポリシーを満たしていない場合、このアクションがデバイスをコンプライアンス違反としてマークします。 デバイスがコンプライアンス違反としてマークされるまでの期間をカスタマイズできます。 このアクションを削除することはできません。
 
-コンプライアンス ポリシーを作成するとき、または既存のポリシーを更新するときにも別のアクションを追加できます。
+デバイスを非準拠としてマークする既定のアクションに加えて、コンプライアンス ポリシーを作成するとき、または既存のポリシーを更新するときに、オプションのアクションを追加することができます。
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 
@@ -122,6 +122,6 @@ ms.locfileid: "73712895"
 
 6. 完了したら、 **[追加]**  >  **[OK]** の順に選択して変更を保存します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [ポリシーを監視します](compliance-policy-monitor.md)。

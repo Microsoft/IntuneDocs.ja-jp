@@ -19,14 +19,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc781ea72b54468b21fb70e60e334f1c8d8832ea
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 9b0bb0bd1f0df3aeb4185542d424bd3ffffe42cd
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547945"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036540"
 ---
-# <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>チュートリアル: Autopilot を使用して Intune に Windows デバイスを登録する
+# <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>チュートリアル:Autopilot を使用して Intune に Windows デバイスを登録する
 
 Windows Autopilot を使用すると、デバイスの登録が簡単になります。 Microsoft Intune と Autopilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および適用を行わなくてもデバイスをエンド ユーザーに提供することができます。
 
@@ -43,9 +43,9 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 Autopilot の利点、シナリオ、および前提条件の概要については、「[Windows Autopilot の概要](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)」をご覧ください。
 
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 - [Windows 自動登録を設定する](../quickstart-setup-auto-enrollment.md)
-- [Azure Active Directory Premium サブスクリプション](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+- [Azure Active Directory Premium サブスクリプション](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](https://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
 
 ## <a name="add-devices"></a>デバイスを追加する
@@ -106,7 +106,7 @@ Windows Autopilot の設定で最初にやることは、Intune への Windows �
 11. **[次へ]** を選択します。
 12. **[確認および作成]** ページで、 **[作成]** を選択してプロファイルを作成します。
 
-## <a name="distribute-devices-to-users"></a>デバイスをユーザーに配布する
+## <a name="distribute-devices-to-users"></a>デバイスのユーザーへの配布
 
 これで、ユーザーに Windows デバイスを配布できます。 ユーザーが初めてサインインするとき、Autopilot システムは自動的にデバイスを登録して構成します。 
 
@@ -122,7 +122,7 @@ Autopilot デバイスを使用しなくなった場合は、それらを削除�
 
 4. **[はい]** を選んで削除を確認します。 削除には数分かかることがあります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Windows Autopilot で使用できる他のオプションについての詳細を確認できます。
 

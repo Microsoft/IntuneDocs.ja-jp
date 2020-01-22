@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/09/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2bb9d921f30e343b309be60438f5318d7c66518
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 311941c3981e5883d392359dc0919bb85156c4be
+ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692255"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75920083"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 
@@ -62,6 +62,15 @@ ms.locfileid: "75692255"
 #### <a name="smime-support-for-microsoft-outlook-for-ios---2669398---"></a>Microsoft Outlook for iOS での S/MIME のサポート<!-- 2669398 -->
 Intune では、iOS デバイス上の Outlook for iOS で使用できる S/MIME 署名証明書と暗号化証明書の配信がサポートされています。 詳細については、「[iOS 向けおよび Android 向け Outlook の秘密度ラベルと保護](https://aka.ms/omsmime)」を参照してください。
 
+#### <a name="cache-win32-app-content-using-microsoft-connected-cache-server---6030314---"></a>Microsoft 接続キャッシュ サーバーを使用して Win32 アプリのコンテンツをキャッシュする<!-- 6030314 -->
+Configuration Manager の配布ポイントに Microsoft 接続キャッシュ サーバーをインストールして、Intune Win32 アプリのコンテンツをキャッシュできます。 詳細については、「Configuration Manager における Microsoft 接続済みキャッシュ」の「[Intune Win32 アプリのサポート](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#bkmk_intune)」を参照してください。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="role-based-access-control"></a>ロール ベースのアクセス制御
+
+#### <a name="windows-10-administrative-templates-admx-profiles-now-support-scope-tags---5137390-wnready--"></a>Windows 10 管理用テンプレート (ADMX) プロファイルでのスコープ タグのサポートの開始 <!--5137390 wnready-->
+スコープ タグを管理用テンプレート プロファイル (ADMX) に割り当てることができるようになりました。 これを行うには、 **[Intune]**  >  **[デバイス]**  >  **[構成プロファイル]** に移動し、一覧から管理用テンプレート プロファイルを選択して、 **[プロパティ]**  >  **[スコープ タグ]** を選択します。 スコープ タグの詳細については、「[スコープ タグを他のオブジェクトに割り当てる](../fundamentals/scope-tags.md#assign-scope-tags-to-other-objects)」をご覧ください。
+
 <!-- ########################## -->
 ## <a name="week-of-december-30-2019"></a>2019 年 12 月 30 日の週
 
@@ -71,8 +80,8 @@ Intune では、iOS デバイス上の Outlook for iOS で使用できる S/MIME
 #### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices---4851745---"></a>MEM 暗号化 macOS デバイスから個人用回復キーを取得する<!-- 4851745 -->
 エンド ユーザーは、iOS ポータル サイト アプリを使用して個人用回復キー (FileVault キー) を取得できます。 個人用回復キーを持つデバイスは、Intune に登録され、Intune により FileVault を使用して暗号化されている必要があります。 iOS ポータル サイト アプリを使うと、エンド ユーザーは、 **[回復キーを取得する]** をクリックして、暗号化された macOS デバイス上の個人用回復キーを取得できます。 また、 **[デバイス]**  > "*暗号化されて登録された macOS デバイス*" >  **[回復キーの取得]** を選択することで、Intune から回復キーを取得することもできます。 FileVault の詳細については、「[macOS 用 FileVault 暗号化](~/protect/encrypt-devices.md#filevault-encryption-for-macos)」を参照してください。
 
-#### <a name="ios-user-licensed-vpp-apps---5619268---"></a>iOS のユーザー ライセンス VPP アプリ<!-- 5619268 -->
-ユーザーが登録した iOS デバイスの場合、エンド ユーザーには、展開されたデバイス ライセンス VPP アプリケーションが利用可能として表示されなくなります。 ただし、エンド ユーザーには、Intune ポータル サイト内のすべてのユーザー ライセンス VPP アプリが引き続き表示されます。 VPP アプリの詳細については、「[Apple Volume Purchase Program で購入した iOS アプリと macOS アプリを Microsoft Intune で管理する方法](~/apps/vpp-apps-ios.md)」をご覧ください。
+#### <a name="ios-and-ipados-user-licensed-vpp-apps---5619268---"></a>iOS と iPadOS のユーザー ライセンス VPP アプリ<!-- 5619268 -->
+ユーザーが登録した iOS および iPadOS デバイスの場合、エンド ユーザーには、利用可能として展開された、新しく作成されたデバイス ライセンス VPP アプリケーションが表示されなくなります。 ただし、エンド ユーザーには、Intune ポータル サイト内のすべてのユーザー ライセンス VPP アプリが引き続き表示されます。 VPP アプリの詳細については、「[Apple Volume Purchase Program で購入した iOS アプリと macOS アプリを Microsoft Intune で管理する方法](~/apps/vpp-apps-ios.md)」をご覧ください。
 
 <!-- ########################## -->
 ## <a name="week-of-december-23-2019"></a>2019 年 12 月 23 日の週
@@ -181,6 +190,9 @@ Android Enterprise デバイス所有者デバイスでは、マネージド キ
 
 #### <a name="use-pkcs-certificate-profiles-to-provision-devices-with-certificates---2317124-2317130-2317139-2340517-2340528-2340529----"></a>PKCS 証明書プロファイルを使用し、証明書でデバイスをプロビジョニングする<!-- 2317124, 2317130, 2317139, 2340517, 2340528, 2340529  -->
 Wi-Fi や VPN のようなプロファイルに関連付けられている場合に、PKCS 証明書プロファイルを使用して、Android for Work、iOS、および Windows を実行する "*デバイス*" に証明書を発行できるようになりました。 以前は、それら 3 つのプラットフォームではユーザー ベースの証明書のみがサポートされており、デバイス ベースのサポートは macOS に限定されていました。
+
+> [!NOTE]
+> PKCS 証明書プロファイルは、Wi-Fi プロファイルではサポートされていません。 代わりに、[EAP の種類](../configuration/wi-fi-settings-windows.md#enterprise-profile)を使用する場合は SCEP 証明書プロファイルを使用します。
 
 デバイス ベースの証明書を使用するには、サポートされるプラットフォーム用の [PKCS 証明書プロファイルを作成する](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile)ときに、 **[設定]** を選択します。 **[証明書の種類]** の設定が表示されるようになり、そこでは [デバイス] または [ユーザー] のオプションがサポートされています。
 

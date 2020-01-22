@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c33f4429c86160bbf180c8102e2dc7532bbd80e
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 1bad86e561c8695d58296c8f473815a203ef210a
+ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886016"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258491"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Intune でインポートした PKCS 証明書を構成して使用する
 
@@ -134,7 +134,7 @@ PowerShell モジュールには、Windows 暗号化を使用してキーを作�
    > [!TIP]
    > PFX 証明書をインポートするときに、使用するプロバイダーをもう一度選択する必要があります。 **Microsoft ソフトウェア キー記憶域プロバイダー**を使用できますが、別のプロバイダーの使用もサポートされています。 キー名も例として提供されていますが、別のキー名を使用することもできます。
 
-   ワークステーションから証明書をインポートする計画がある場合は、次のコマンドを使用してこのキーをファイルにエクスポートできます: `Export-IntunePublicKey -ProviderName "<ProviderName>" -KeyName "<KeyName>" -FilePath "<File path to write to>"`
+   ワークステーションから証明書をインポートする計画がある場合は、次のコマンドを使用してこのキーをファイルにエクスポートできます: `Export-IntunePublicKey -ProviderName "<ProviderName>" -KeyName "<KeyName>" -FilePath "<File path\Filename.PFX>"`
 
    インポートした PFX 証明書を正常に処理できるように、PFX Certificate Connector for Microsoft Intune をホストしているサーバーに秘密キーをインポートする必要があります。
 
