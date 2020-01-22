@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f1563c092d8dd4c34e4a18caea56910267eb623
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 3c340ffaacad303c4ff395c84d92e3907e42a521
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956332"
+ms.locfileid: "76036638"
 ---
 # <a name="app-protection-policies-overview"></a>アプリ保護ポリシーの概要
 
@@ -184,7 +184,7 @@ Skype for Business を使用するためには、追加要件があります。 
 
 ## <a name="app-protection-global-policy"></a>アプリ保護グローバル ポリシー
 
-OneDrive 管理者が **admin.office.com** にアクセスし、 **[デバイス]** アクセスを選択するとき、クライアント アプリの OneDrive と SharePoint に**モバイル アプリケーション管理**コントロールを設定できます。 
+OneDrive 管理者が **admin.onedrive.com** にアクセスし、 **[デバイス アクセ]** スを選択するとき、クライアント アプリの OneDrive と SharePoint に**モバイル アプリケーション管理**コントロールを設定できます。 
 
 OneDrive 管理コンソールで利用可能になった設定により、**グローバル** ポリシーという名称の特別な Intune アプリ保護ポリシーが構成されます。 このグローバル ポリシーはテナント内のすべてのユーザーに適用され、ポリシーの対象を制御する手段はありません。 
 
