@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/09/2020
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1264f5113ded280ed9d5cb9b9d4ece8e0187fe7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 35dd017eaa2dd3cd6c17dc611aaa9d457b18aca2
+ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502870"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75839257"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>クイック スタート:Microsoft Intune を無料で試す
 
@@ -31,7 +31,7 @@ Microsoft Intune でデバイスやアプリケーションを管理すると、
 
 Intune には、モバイル デバイス管理 (MDM) 機能とモバイル アプリケーション管理 (MAM) 機能があります。これらの機能は、Microsoft Azure portal を使用して管理されているセキュリティで保護されたクラウドベースのサービスで利用できます。 Intune を使用すると、企業のコンプライアンス ポリシーや要件を満たしながら、従業員の会社リソース (データ、デバイス、アプリ) の構成、アクセス、更新を適切に行うことができるようになります。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 Microsoft Intune を設定する前に、次の要件を確認してください。
 
 - [サポートされるオペレーティング システムとブラウザー](supported-devices-browsers.md)
@@ -100,7 +100,7 @@ MDM 機関について詳しくは、「[モバイル デバイス管理機関�
 前述のように、 **.onmicrosoft.com** ではない独自のカスタム ドメインを組織で使用したい場合は、Microsoft 365 管理センターで変更することができます。 次の手順に従ってカスタム ドメイン名を追加、確認、および構成できます。  
 
 > [!IMPORTANT]
-> *初期*ドメイン名の **onmicrosoft.com** の部分は名前変更または削除できません。 ただし、企業のアイデンティティを明確にするために、Intune で使う*カスタム* ドメイン名を追加、確認、削除することはできます。 詳細については、[カスタム ドメイン名の構成](custom-domain-name-configure.md)に関するページを参照してください。
+> "*初期*" ドメイン名の **onmicrosoft.com** の部分は、名前変更または削除できません。 ただし、企業のアイデンティティを明確にするために、Intune で使う*カスタム* ドメイン名を追加、確認、削除することはできます。 詳細については、[カスタム ドメイン名の構成](custom-domain-name-configure.md)に関するページを参照してください。
 
 1. [Microsoft 365 管理センター](https://admin.microsoft.com)を開き、管理者アカウントを使用してサインインします。
 
@@ -125,7 +125,7 @@ MDM 機関について詳しくは、「[モバイル デバイス管理機関�
 - Azure ([portal.azure.com](https://portal.azure.com)) の Intune ダッシュボードでは、[Intune の各機能](what-is-intune.md)を確認できます。 通常、Intune ダッシュボードで作業します。
 - Microsoft 365 管理センター ([admin.microsoft.com](https://admin.microsoft.com)) では、ユーザーの追加と管理を行えます (このために Azure Active Directory を使用していない場合)。 また、課金やサポートなど、アカウントのその他の要素を管理することもできます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 このクイック スタートでは、Intune をテスト環境で試用する無料のサブスクリプションを作成します。 Intune のセットアップについて詳しくは、「[Intune をセットアップする](setup-steps.md)」をご覧ください。
 

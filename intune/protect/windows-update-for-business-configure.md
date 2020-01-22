@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 01/14/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad630eb34b296d7ab77081a1e3063db8dffc64f9
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: dc9dd03714e24dae4b0c7afe9206c6a8d7d36c13
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207453"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956283"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Intune で Windows 10 ソフトウェア更新プログラムを管理する
 
@@ -63,7 +63,7 @@ Intune で Windows 10 デバイス用の Windows 更新プログラムを使用�
   > - Windows 10 Mobile  
   > - Windows 10 Enterprise LTSC。 Windows Update for Business (WUfB) では現在、"*Long Term Service Channel*" リリースはサポートされていません。 WSUS や Configuration Manager など、別の修正プログラムの手法を使用することを計画してください。
 
-- Windows デバイスで、 **[フィードバックと診断]**  >  **[診断と使用状況データ]** が **[基本]** 、 **[拡張]** 、 **[完全]** のいずれかに設定されている必要があります。  
+- Windows デバイスで、 **[フィードバックと診断]**  >  **[診断と使用状況データ]** が **[基本]** 、 **[拡張]** 、 **[完全]** のいずれかに設定されている必要があります。
 
   Windows 10 デバイス向けの "*診断と利用状況データ*" の設定は、手動で構成することも、Windows 10 以降向けの Intune デバイス制限プロファイルを使用することもできます。 デバイス制限プロファイルを使用する場合、[デバイス制限設定](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry)の **[使用状況データの共有]** を **[Basic]** 以上に設定します。 Windows 10 以降のデバイス制限ポリシーを構成する場合、この設定は **[レポートとテレメトリ]** 下に見つかります。
 
@@ -215,6 +215,10 @@ Windows Update のポリシーの詳細については、Windows クライアン
 
   この制限については、今後サポートできるかどうかを確認中です。
 
+> [!IMPORTANT]
+> Intune で機能更新プログラムのポリシーを使用するには、デバイスでテレメトリが、[ *[基本]* ](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) 設定以上で有効になっている必要があります。 テレメトリは、[デバイス制限ポリシー](../configuration/device-restrictions-configure.md)の一部として *[レポートとテレメトリ]* 下で構成されます。
+>
+> 機能更新プログラムのポリシーを受信したデバイスのテレメトリが *[未構成]* (つまり、オフ) に設定されていた場合、機能更新プログラムのポリシーで定義されているよりも新しいバージョンの Windows がデバイスにインストールされる可能性があります。 この機能が一般公開に移行されるとき、テレメトリを必要とする前提条件は再検討されます。
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Windows 10 機能の更新プログラムを作成して割り当てる
 
@@ -245,4 +249,3 @@ Windows Update のポリシーの詳細については、Windows クライアン
 [更新プログラムに関する Intune コンプライアンス レポート](../windows-update-compliance-reports.md)
 
 [Windows 10 更新プログラム リングのトラブルシューティング](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)
-

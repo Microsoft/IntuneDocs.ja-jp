@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/03/2019
+ms.date: 01/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef9548a77a3a745eda24b927118d1447d5afd1f0
-ms.sourcegitcommit: 78faf608510fbaca09bc410d63df1aa5254dee45
+ms.openlocfilehash: 7170f723707ef709ef464b35bc3f6d3297341cf1
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74784240"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956201"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune にアプリを追加する 
 
@@ -189,9 +189,9 @@ Intune では、次の条件に基づいて必要なアプリを自動的に再�
 
 ## <a name="app-installation-errors"></a>アプリのインストール エラー
 
-Intune アプリのインストール エラーについて詳しくは、[アプリのインストール エラー](troubleshoot-app-install.md#app-installation-errors)に関するページをご覧ください。
+Intune アプリのインストール エラーについて詳しくは、[アプリのインストール エラー](troubleshoot-app-install.md)に関するページをご覧ください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 各プラットフォームのアプリを Intune に追加する方法については、次を参照してください。
 
@@ -211,4 +211,4 @@ Intune アプリのインストール エラーについて詳しくは、[ア�
 - [macOS 用 Microsoft Edge](apps-edge-macos.md)
 - [組み込みアプリ](apps-add-built-in.md)
 - [Android Enterprise システム アプリ](apps-ae-system.md)
-- [Win32 アプリ](app-management.md)
+- [Win32 アプリ](~/apps/apps-win32-app-management.md)

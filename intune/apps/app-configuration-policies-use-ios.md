@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c447c67e631365e831f033c2811c36d936f2e85
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: d5a3204721a0d40cfb5bf729ca17ef8e4ded1f0f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547992"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885765"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>管理対象の iOS デバイス用アプリ構成ポリシーを追加する
 
@@ -182,7 +182,7 @@ DEP (Apple の Device Enrollment Program) の登録には、アプリ ストア 
 
 1. Intune で、必要に応じて Intune ポータル サイトを追加します。そのためには、 **[Intune]**  >  **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** に移動します。
 2. **[アプリ]**  >  **[アプリ構成ポリシー]** に移動し、ポータル サイト アプリのアプリ構成ポリシーを作成します。
-3. 次の XML を使用して、アプリ構成ポリシーを作成します。 アプリ構成ポリシーを作成して XML データを入力する方法の詳細については、「[Add app configuration policies for managed iOS devices (マネージド iOS デバイスのアプリ構成ポリシーを追加する)](app-configuration-policies-use-ios.md)」を参照してください。ハイブリッド MDM の場合は、「[Configuration Manager のアプリ構成ポリシーを使用して iOS アプリに設定を適用する](https://docs.microsoft.com/configmgr/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies)」を参照してください。
+3. 次の XML を使用して、アプリ構成ポリシーを作成します。 アプリ構成ポリシーを作成して XML データを入力する方法について詳しくは、「[管理対象の iOS デバイス用アプリ構成ポリシーを追加する](app-configuration-policies-use-ios.md)」をご覧ください。
 
     ``` xml
     <dict>

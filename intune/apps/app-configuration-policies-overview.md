@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 479d88c09f48acbbfaedf1f4c69546b7f52dfbf1
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 800193921e608a0d0c29dad5cf85b8781e715441
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692189"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885805"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 用アプリ構成ポリシー
 
@@ -93,7 +93,7 @@ Intune でアプリ構成ポリシーを使用するには、次の 2 つのオ�
 
 ### <a name="ios-configuration-on-unmanaged-devices"></a>アンマネージド デバイスでの iOS の構成
 
-マネージド アプリの構成では、アンマネージド デバイス上で **Intune 診断ログ**を使用して iOS 構成を検証できます。
+マネージド アプリの構成では、アンマネージド デバイス上で **Intune 診断ログ**を使用して iOS 構成を検証できます。 以下の手順に加えて、Microsoft Edge を使用してマネージド アプリのログにアクセスできます。 詳細については、「[iOS で Microsoft Edge を使用してマネージド アプリのログにアクセスする](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs)」をご覧ください。
 
 1. デバイスにまだインストールされていない場合は、App Store から **Intune Managed Browser** をダウンロードしてインストールします。 詳細については、「[保護されている Microsoft Intune アプリ](apps-supported-intune-apps.md)」を参照してください。
 2. **Intune Managed Browser** を起動し、ナビゲーション バーから **[バージョン情報]**  >  **[intunehelp]** を選択します。
@@ -162,7 +162,7 @@ Android デバイスからログを収集するには、管理者またはエン
     
 ## <a name="graph-api-support-for-app-configuration"></a>Graph API のアプリ構成のサポート
 
-アプリ構成タスクは、Graph API で実行することができます。 詳細については、[Graph API のリファレンスの MAM を対象とした構成](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)に関するページを参照してください。
+アプリ構成タスクは、Graph API で実行することができます。 詳細については、[Graph API のリファレンスの MAM を対象とした構成](https://docs.microsoft.com/graph/api/resources/intune-shared-targetedmanagedappconfiguration?view=graph-rest-beta)に関するページを参照してください。Intune と Graph の詳細については、「[Microsoft Graph での Intune の操作](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-beta)」をご覧ください。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

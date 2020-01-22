@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8bcced82eb367bb8028f62de5cefcee0a5f85dd
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 33efbc661392354076db3a2e0eab8540f90e9645
+ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691896"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75920108"
 ---
 # <a name="ios-app-protection-policy-settings"></a>iOS アプリ保護ポリシー設定
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -60,7 +60,7 @@ ms.locfileid: "75691896"
 | **アプリとネイティブ連絡先アプリを同期** |  **[ブロック]** を選択すると、アプリでデバイス上のネイティブ連絡先アプリにデータを保存できなくなります。 **[許可]** を選択した場合は、アプリでデバイス上のネイティブ連絡先アプリにデータを保存できます。 <br><br>選択的ワイプを実行し、アプリから職場または学校のデータを削除すると、アプリからネイティブ連絡先アプリに直接同期されている連絡先が削除されます。 ネイティブ アドレス帳から別の外部ソースに同期された連絡先はワイプできません。 現在、これは Microsoft Outlook アプリにのみ適用されます。   | **許可**  |
 | **組織データを出力する** | **[ブロック]** を選択すると、アプリで職場または学校のデータを印刷できなくなります。 この設定を **[許可]** (規定値) のままにした場合、ユーザーはすべての組織データをエクスポートおよび印刷できるようになります。  | **許可**  |
 | **その他のアプリでの Web コンテンツの転送を制限する** | ポリシーで管理されているアプリケーションから Web コンテンツ (http/https リンク) をどのように開くか指定します。 次の中から選択します。 <ul><li>**任意のアプリ**:任意のアプリで Web リンクを許可します。</li><li>**Intune Managed Browser**:Intune Managed Browser でのみ Web コンテンツを開くことを許可します。 このブラウザーは、ポリシーで管理されたブラウザーです。</li><li>**Microsoft Edge**:Microsoft Edge でのみ Web コンテンツを開くことを許可します。 このブラウザーは、ポリシーで管理されたブラウザーです。</li><li>**アンマネージド ブラウザー**: **[アンマネージド ブラウザー プロトコル]** 設定で定義されたアンマネージド ブラウザーのみで Web コンテンツを開くことを許可します。 Web コンテンツは、対象のブラウザーで管理されなくなります。<br>**注**:アプリには Intune SDK バージョン 11.0.9 以降が必要です。</li></ul> デバイスの管理に Intune を使用している場合は、「[Managed Browser のポリシーを使用したインターネット アクセスを Microsoft Intune で管理する](app-configuration-managed-browser.md)」を参照してください。<br><br>ポリシーで管理されているブラウザーが必要であるにもかかわらず、インストールされていない場合、エンド ユーザーには Microsoft Edge のインストールが求められます。<p>ポリシーで管理されているブラウザーが必要な場合、iOS ユニバーサル リンクは **[アプリで他のアプリへのデータ転送を許可する]** ポリシー設定で管理されます。 <p>**Intune デバイスの登録**<br>デバイスの管理に Intune を使用している場合は、「Microsoft Intune のポリシーで保護されたブラウザーを使用してインターネット アクセスを管理する」をご参照ください。 <p>**ポリシーで管理されている Microsoft Edge**<br>モバイル デバイス (iOS と Android) 向けの Microsoft Edge ブラウザーが、Intune アプリ保護ポリシーをサポートします。 企業の Azure AD アカウントで Microsoft Edge ブラウザー アプリケーションにサインインしたユーザーは、Intune によって保護されます。 Microsoft Edge ブラウザーは Intune SDK を統合し、そのデータ保護ポリシーをすべてサポートしています。ただし、例外として次が禁止されます。<br><ul><li>**名前を付けて保存**:Microsoft Edge ブラウザーでは、クラウド ストレージ プロバイダー (OneDrive など) にアプリ内で直接接続を追加することをユーザーに許可していません。</li><li>**連絡先の同期**:Microsoft Edge ブラウザーは、ネイティブの連絡先一覧に保存しません。</li></ul><br>**注意**: *Intune SDK では、ターゲット アプリがブラウザーであるかどうかは判別できません。iOS デバイスでは、その他のマネージド ブラウザー アプリは許可されていません。*    | **未構成**  |
-|<ul><ui>**アンマネージド ブラウザー プロトコル** | "*1 つ*" のアンマネージド ブラウザーに対応するプロトコルを入力します。 ポリシーで管理されているアプリケーションからの Web コンテンツ (http/https リンク) は、このプロトコルをサポートする任意のアプリで開かれます。 Web コンテンツは、対象のブラウザーで管理されなくなります。 <br><br>この機能は、Intune アプリ保護ポリシーを使用できるようになっていない特定のブラウザーで保護されたコンテンツを共有する場合にのみ使用する必要があります。 目的のブラウザーでサポートされているプロトコルを確認するには、ブラウザーの製造元にお問い合わせください。<br><br>**注**:*プロトコルのプレフィックスのみを含めます。ブラウザーに `mybrowser://www.microsoft.com` という形式のリンクが必要な場合は、「`mybrowser`」と入力します。*<br>リンクは次のように変換されます。<br><ul><li>`http://www.microsoft.com` > `mybrowser://www.microsoft.com`</li><li>`https://www.microsoft.com` > `mybrowsers://www.microsoft.com`</li></ul> | **空白**  |
+|<ul><ui>**アンマネージド ブラウザー プロトコル** | "*1 つ*" のアンマネージド ブラウザーに対応するプロトコルを入力します。 ポリシーで管理されているアプリケーションからの Web コンテンツ (http/https リンク) は、このプロトコルをサポートする任意のアプリで開かれます。 Web コンテンツは、対象のブラウザーで管理されなくなります。 <br><br>この機能は、Intune アプリ保護ポリシーの使用が有効になっていない特定のブラウザーで保護されたコンテンツを共有する場合にのみ使用する必要があります。 目的のブラウザーでサポートされているプロトコルを確認するには、ブラウザーの製造元にお問い合わせください。<br><br>**注**:*プロトコルのプレフィックスのみを含めます。ブラウザーに `mybrowser://www.microsoft.com` という形式のリンクが必要な場合は、「`mybrowser`」と入力します。*<br>リンクは次のように変換されます。<br><ul><li>`http://www.microsoft.com` > `mybrowser://www.microsoft.com`</li><li>`https://www.microsoft.com` > `mybrowsers://www.microsoft.com`</li></ul> | **空白**  |
 
 > [!NOTE]  
 > データ保護の設定では、iOS デバイスの Apple Managed Open In 機能は制御されません。 Apple Managed Open In を使うには、「[Microsoft Intune を使用して iOS アプリ間のデータ転送を管理する](data-transfer-between-apps-manage-ios.md)」をご覧ください。

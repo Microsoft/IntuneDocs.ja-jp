@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe37ac412d01d3032685a0e66827d20e13b0db64
-ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
+ms.openlocfilehash: 237eca2f8e00f00fda5fa3cf401be87de9602743
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75303070"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956258"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>ユーザーとデバイスを整理するためのグループを追加する
 
@@ -54,7 +54,7 @@ Intune では、デバイスとユーザーの管理に Azure Active Directory (
         >
         > プライマリ ロールがデバイス管理の場合は、[Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)を使用することをお勧めします。
 
-    - **[Office 365]** : Office 365 リソースに対するアクセスと共有を制御するように設計されているグループです。 たとえば、Outlook の受信トレイまたは予定表を共有する Office 365 グループを作成できます。 詳細については、「[Office 365 グループの概要](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)」を参照してください。
+    - **[Office 365]** : メンバーに共有メールボックス、予定表、ファイル、SharePoint サイトなどへのアクセス権を付与することで、コラボレーションの機会を提供します。 このオプションを使用すると、組織外のユーザーにグループへのアクセス権を付与することもできます。 詳細については、「[Office 365 グループの概要](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)」を参照してください。
 
 4. 新しいグループの **[グループ名]** と **[グループの説明]** を入力します。 他のユーザーがそのグループの目的を理解できるように、具体的な情報にしてください。
 

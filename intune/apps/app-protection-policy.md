@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f11ccb51e08e96595dfcb9118c1f479f1b0fc3de
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 3f1563c092d8dd4c34e4a18caea56910267eb623
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692122"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956332"
 ---
 # <a name="app-protection-policies-overview"></a>アプリ保護ポリシーの概要
 
@@ -133,11 +133,11 @@ MDM ソリューションに登録されていない BYOD デバイスでは、�
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>アプリ保護ポリシーで管理できるアプリ
 
-Intune アプリ保護ポリシーでは、[Intune アプリ SDK](../developer/app-sdk.md) に統合されたアプリや [Intune アプリ ラッピング ツール](../developer/apps-prepare-mobile-application-management.md) によってラップされたアプリを管理できます。 これらのツールを使用して構築されている一般使用が可能な [Microsoft Intune による保護アプリ](apps-supported-intune-apps.md)の公式一覧を参照してください。
+[Intune SDK](../developer/app-sdk.md) と統合されているアプリや [Intune App Wrapping Tool](../developer/apps-prepare-mobile-application-management.md) によってラップされているすべてのアプリは、Intune アプリ保護ポリシーを使用して管理できます。 これらのツールを使用して構築されている一般使用が可能な [Microsoft Intune による保護アプリ](apps-supported-intune-apps.md)の公式一覧を参照してください。
 
 Intune SDK の開発チームは、ネイティブの Android、iOS (Obj-C、Swift)、Xamarin、Xamarin.Forms、および Cordova プラットフォームを使ってビルドされたアプリに対するサポートを、積極的にテストして管理しています。 一部のお客様は、Intune SDK とその他のプラットフォーム (React Native や NativeScript など) の統合に成功されていますが、Microsoft では、サポートされているプラットフォーム以外を使うアプリ開発者に向けた明示的なガイダンスやプラグインは提供されません。
 
-[Intune App SDK](../developer/app-sdk.md) では、ファースト パーティおよびサード パーティ両方のバージョンの SDK に対して、[Azure Active Directory Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) による最新の高度な認証機能がいくつか利用されています。 そのため、[Microsoft Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL) は、Intune App Protection サービスへの認証や条件付き起動などの主要なシナリオの多くで、正常に機能しません。 すべての Microsoft Office アプリに対して MSAL に切り替えることが Microsoft の ID チームからの包括的なガイダンスであり、最終的には [Intune App SDK](../developer/app-sdk.md) でサポートされる必要がありますが、今のところ計画はありません。
+[Intune SDK](../developer/app-sdk.md) では、ファースト パーティおよびサード パーティ両方のバージョンの SDK に対して、[Azure Active Directory 認証ライブラリ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) による最新の高度な認証機能がいくつか利用されています。 そのため、[Microsoft Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL) は、Intune App Protection サービスへの認証や条件付き起動などの主要なシナリオの多くで、正常に機能しません。 すべての Microsoft Office アプリについて MSAL に切り替えることが Microsoft の ID チームの全体的な指針であり、[Intune SDK](../developer/app-sdk.md) では最終的にそれがサポートされる必要がありますが、今のところその計画はありません。
 
 ## <a name="end-user-requirements-to-use-app-protection-policies"></a>アプリ保護ポリシーを使用するためのエンドユーザーの要件
 
@@ -198,7 +198,7 @@ iOS 向けと Android 向けの OneDrive アプリと SharePoint アプリを有
 
 ### <a name="multi-identity"></a>複数の ID
 
-複数 ID のサポートを利用すると、アプリでは複数の対象ユーザーをサポートできます。 これらの対象ユーザーは、"企業" ユーザーと "個人" ユーザーの両方です。 職場および学校のアカウントは "企業" の対象ユーザーによって使用されるのに対して、個人用アカウントは Microsoft Office ユーザーなどのコンシューマーの対象ユーザーに使用されます。 複数 ID をサポートするアプリは、一般向けにリリースすることができます。その際、アプリ保護ポリシーは、アプリが職場および学校 ("企業") のコンテキストで使用されている場合にのみ適用されます。 複数 ID をサポートする場合、[Intune App SDK](../developer/app-sdk.md) を利用して、アプリにサインインしている職場または学校のアカウントにのみアプリ保護ポリシーが適用されます。 個人用アカウントでアプリにサインインした場合、データは管理されません。
+複数 ID のサポートを利用すると、アプリでは複数の対象ユーザーをサポートできます。 これらの対象ユーザーは、"企業" ユーザーと "個人" ユーザーの両方です。 職場および学校のアカウントは "企業" の対象ユーザーによって使用されるのに対して、個人用アカウントは Microsoft Office ユーザーなどのコンシューマーの対象ユーザーに使用されます。 複数 ID をサポートするアプリは、一般向けにリリースすることができます。その際、アプリ保護ポリシーは、アプリが職場および学校 ("企業") のコンテキストで使用されている場合にのみ適用されます。 複数 ID をサポートする場合、[Intune SDK](../developer/app-sdk.md) を利用して、アプリにサインインしている職場または学校のアカウントにのみアプリ保護ポリシーが適用されます。 個人用アカウントでアプリにサインインした場合、データは管理されません。
 
 "個人" のコンテキストの例としては、Word で新規ドキュメントに着手するユーザーがいるとした場合、これは個人のコンテキストと見なされるため、Intune App Protection ポリシーは適用されません。 ドキュメントが "企業" の OneDrive アカウントに保存されると、以降は "企業" のコンテキストと見なされ、Intune App Protection ポリシーが適用されます。
 
@@ -213,7 +213,7 @@ Intune での複数 ID の詳細については、[MAM および複数 ID](apps-
 暗証番号 (PIN) は、アプリケーションで適切なユーザーが組織のデータにアクセスしていることを確認するために使用されるパスコードです。
 
 **PIN の入力要求**<br>
-Intune では、ユーザーが "企業" データにアクセスしようとした場合にアプリの PIN が要求されます。 Word、Excel、PowerPoint などの複数 ID アプリでは、"企業" のドキュメントやファイルを開こうとすると、ユーザーは PIN の入力を求められます。 [Intune アプリ ラッピング ツール](../developer/apps-prepare-mobile-application-management.md)を使用して管理されている基幹業務アプリなど、単一 ID のアプリでは、[Intune アプリ SDK](../developer/app-sdk.md) によってアプリでのユーザーのエクスペリエンスが常に "企業" であることが把握されるため、起動時に PIN の入力が要求されます。
+Intune では、ユーザーが "企業" データにアクセスしようとした場合にアプリの PIN が要求されます。 Word、Excel、PowerPoint などの複数 ID アプリでは、"企業" のドキュメントやファイルを開こうとすると、ユーザーは PIN の入力を求められます。 [Intune App Wrapping Tool](../developer/apps-prepare-mobile-application-management.md) を使用して管理されている基幹業務アプリなど、単一 ID のアプリでは、起動時に PIN の入力が求められます。アプリ内のユーザーのエクスペリエンスが常に "企業向け" であることが [Intune SDK](../developer/app-sdk.md) によって把握されるためです。
 
 **PIN プロンプト、または会社の資格情報プロンプト、頻度**<br>
 IT 管理者は、Intune 管理コンソール上で、 **[(分数) 後にアクセス要件を再確認する]** という Intune アプリ保護ポリシーの設定を定義できます。 この設定では、デバイスで、アクセス要件がチェックされ、アプリケーションの PIN 画面、あるいは会社の資格情報プロンプトが再度表示されるまでの時間を指定します。 ただし、PIN に関する以下の内容は重要であり、ユーザーが入力を求められる頻度に影響を与えます。
@@ -231,13 +231,22 @@ iOS デバイスの場合、発行元が異なるアプリ間で PIN を共有�
 Intune PIN は、非アクティブ状態をベースとするタイマー ( **[(分数) 後に、アクセス要件を再確認する]** の値) を基にして機能します。 そのため、Intune PIN プロンプトは、既定でアプリの起動に関連付けられていることが多い Outlook および OneDrive 用の組み込みのアプリ PIN プロンプトとは独立して表示されます。 ユーザーに両方の PIN プロンプトが同時に表示される場合、Intune PIN が優先される動作が予想されます。
 
 **Intune PIN のセキュリティ**<br>
-PIN は、アプリで適切なユーザーのみが組織のデータにアクセスできるようにするためのものです。 そのため、エンドユーザーが Intune アプリの PIN を設定またはリセットするには、職場または学校のアカウントを使用してサインインする必要があります。 この認証は Azure Active Directory によってセキュリティ トークンの交換を通じて処理され、[Intune アプリ SDK ](../developer/app-sdk.md)に対して透過的ではありません。 セキュリティの観点からは、職場または学校のデータを保護する最も効果的な方法は暗号化です。 暗号化はアプリの PIN とは関係しませんが、独自のアプリ保護ポリシーと関係があります。
+PIN は、アプリで適切なユーザーのみが組織のデータにアクセスできるようにするためのものです。 そのため、エンドユーザーが Intune アプリの PIN を設定またはリセットするには、職場または学校のアカウントを使用してサインインする必要があります。 この認証は Azure Active Directory によってセキュリティ トークンの交換を通じて処理され、[Intune SDK](../developer/app-sdk.md) に対して透過的ではありません。 セキュリティの観点からは、職場または学校のデータを保護する最も効果的な方法は暗号化です。 暗号化はアプリの PIN とは関係しませんが、独自のアプリ保護ポリシーと関係があります。
 
-**Intune PIN - ブルート フォース攻撃からの保護**<br>
-IT 管理者は、アプリの PIN ポリシーの一環として、アプリがロックされるまでにユーザーが PIN の認証を試みることのできる最大回数を設定できます。 試行回数に達すると、[Intune アプリ SDK](../developer/app-sdk.md) によってアプリ内の "企業" データをワイプできます。
-  
+**ブルート フォース攻撃からの保護と Intune PIN**<br>
+IT 管理者は、アプリの PIN ポリシーの一環として、アプリがロックされるまでにユーザーが PIN の認証を試みることのできる最大回数を設定できます。 試行回数に達すると、[Intune SDK](../developer/app-sdk.md) によってアプリ内の "企業" データをワイプできます。
+
+**Intune PIN と選択的ワイプ**<br>
+iOS では、アプリ レベルの PIN 情報が、同じ発行元のアプリ (すべての Microsoft ファースト パーティ アプリなど) 間で共有されるキーチェーンに格納されます。 この PIN 情報は、エンド ユーザー アカウントにも関連付けられます。 1 つのアプリの選択的ワイプは、別のアプリには影響しません。 
+
+たとえば、Outlook に対して、サインインしているユーザー用に設定された PIN は、共有キーチェーンに格納されます。 ユーザーが OneDrive (これも発行元は Microsoft です) にサインインすると、Outlook と同じ PIN が表示されます。同じ共有キーチェーンが使われているためです。 Outlook からサインアウトしたり、Outlook でユーザー データをワイプしたりしても、Intune SDK によってそのキーチェーンがクリアされることはありせん。OneDrive で引き続きその PIN が使用されている可能性があるためです。 このため、選択的ワイプによって PIN を含むその共有キーチェーンがクリアされることはありません。 このような動作は、発行元のアプリがデバイス上に 1 つしか存在しない場合でも変わりません。 
+
+PIN は同じ発行元のアプリ間で共有されるため、単一のアプリに対してワイプが行われた場合に、Intune SDK では同じ発行元の他のアプリがデバイス上に存在するかどうかが把握されません。 そのため、Intune SDK ではその PIN がクリアされません。他のアプリでも使用される可能性があるためです。 その発行元の最後のアプリが、何らかの OS のクリーンアップの一環として最終的に削除されたときに、そのアプリの PIN がワイプされることが予想されます。
+ 
+一部のデバイスで PIN がワイプされていることを確認した場合、おそらく次のような状況が発生します。PIN は ID に関連付けられているため、ワイプ後にユーザーが別のアカウントでサインインしていた場合は、新しい PIN を入力するように求められます。 ただし、そのユーザーが前から存在していたアカウントでサインインした場合は、既にキーチェーンに格納されている PIN を使ってサインインすることができます。
+
 **同じ発行元のアプリ上で PIN を 2 回設定するか**<br>
-MAM (iOS 上) では現在、英数字と特殊文字による ("パスコード" と呼ばれる) アプリケーションレベルの PIN が許可されていますが、[iOS 用の Intune アプリ SDK](../developer/app-sdk-ios.md) を統合するには、アプリケーション (WXP、Outlook、Managed Browser、Yammer) の参加が必要です。 これを行わないと、パスコードの設定が対象のアプリケーションに正しく適用されません。 これは iOS 用 Intune SDK の、 バージョン 7.1.12 でリリースされた機能です。
+MAM (iOS 上) では現在、英数字と特殊文字を使用したアプリケーション レベルの PIN ("パスコード" と呼ばれます) が許可されていますが、[iOS 用の Intune SDK](../developer/app-sdk-ios.md) を統合するには、アプリケーション (WXP、Outlook、Managed Browser、Yammer) の参加が必要です。 これを行わないと、パスコードの設定が対象のアプリケーションに正しく適用されません。 これは iOS 用 Intune SDK の、 バージョン 7.1.12 でリリースされた機能です。
 
 この機能をサポートし、iOS 用 Intune SDK の以前のバージョンとの下位互換性を保証するために、7.1.12 以降の PIN は (数値のものもパスコードも) すべて、以前のバージョンの SDK で使用された数値からなる PIN とは別に扱われます。 そのため公開元が同じで、7.1.12 よりも前のバージョンと後のバージョンの iOS 用 Intune SDK を使用するアプリケーションが、1 つのデバイス上に "両方とも" ある場合、PIN を 2 つ設定する必要があります。 (各アプリの) 2 つの PIN には、いかなる関連性もありません (つまり、アプリに適用されるアプリ保護ポリシーに従う必要があるということです)。 そのため、アプリ A と B に対して、(PIN に関して) 同じポリシーを適用できる場合に "*のみ*"、ユーザーは同じ PIN を 2 回設定できます。 
 
@@ -261,6 +270,8 @@ IT 管理者のアプリ保護ポリシーに従い、"企業" データとし�
 
 [Intune アプリ ラッピング ツール](../developer/apps-prepare-mobile-application-management.md)によって管理された基幹業務アプリでは、すべてのアプリ データが "企業" と見なされます。
 
+### <a name="selective-wipe"></a>選択的ワイプ
+
 **リモートでデータをワイプする**<br>
 Intune では、3 つの異なる方法でアプリ データをワイプできます。 
 - 完全なデバイスのワイプ
@@ -269,10 +280,10 @@ Intune では、3 つの異なる方法でアプリ データをワイプでき�
 
 MDM のリモート ワイプの詳細については、[ワイプまたはインベントリからの削除を使用してデバイスを削除する方法](../remote-actions/devices-wipe.md)に関するページを参照してください。 MAM を使用した選択的なワイプの詳細については、[インベントリからの削除アクション](../remote-actions/devices-wipe.md#retire)に関するページと[アプリから会社のデータのみをワイプする方法](apps-selective-wipe.md)に関するページを参照してください。
 
-[ワイプ](../remote-actions/devices-wipe.md)では、デバイスを出荷時の既定の設定に戻すことにより、すべてのユーザー データと設定が**デバイス**から削除されます。 デバイスは Intune から削除されません。
+[完全なデバイスのワイプ](../remote-actions/devices-wipe.md)では、デバイスを出荷時の既定の設定に戻すことにより、すべてのユーザー データと設定が**デバイス**から削除されます。 デバイスは Intune から削除されません。
 
   >[!NOTE]
-  > ワイプは、Intune モバイル デバイス管理 (MDM) に登録済みのデバイスでのみ行うことができます。
+  > 完全なデバイスのワイプおよび MDM の選択的なワイプは、Intune モバイル デバイス管理 (MDM) に登録済みのデバイス上でのみ行うことができます。
 
 **MDM の選択的なワイプ**<br>
 会社データの削除については、[デバイスの削除 - インベントリからの削除](../remote-actions/devices-wipe.md#retire)に関するページを参照してください。
@@ -280,24 +291,20 @@ MDM のリモート ワイプの詳細については、[ワイプまたはイ�
 **MAM の選択的なワイプ**<br>
 MAM の選択的ワイプは、単にアプリから業務用アプリのデータを削除します。 要求は、Intune Azure Portal を使用して開始されます。 ワイプ要求を開始する方法については、[アプリから企業データのみをワイプする方法](apps-selective-wipe.md)に関するページを参照してください。
 
-選択的なワイプが開始された時点でユーザーがアプリを使用している場合は、[Intune アプリ SDK](../developer/app-sdk.md) によって Intune MAM サービスからの選択的ワイプの要求が 30 分ごとにチェックされます。 ユーザーがアプリを初めて起動し職場または学校のアカウントを使ってサインインした場合も、選択的ワイプがチェックされます。
+選択的なワイプが開始された時点でユーザーがアプリを使用している場合は、[Intune SDK](../developer/app-sdk.md) によって Intune MAM サービスからの選択的ワイプの要求が 30 分ごとにチェックされます。 ユーザーがアプリを初めて起動し職場または学校のアカウントを使ってサインインした場合も、選択的ワイプがチェックされます。
 
 **オンプレミス (on-prem) サービスが Intune の保護対象アプリと連携しない場合**<br>
-Intune アプリ保護は、アプリケーションと [Intune App SDK](../developer/app-sdk.md) の間で一貫性を保つためにユーザーの ID に依存しています。 これを保証する唯一の方法は、最新の認証を使用することです。 アプリをオンプレミス構成と連携させるシナリオはありますが、一貫性がなく保証されていません。
+Intune アプリ保護は、アプリケーションと [Intune SDK](../developer/app-sdk.md) の間で一貫性を保つためにユーザーの ID に依存しています。 これを保証する唯一の方法は、最新の認証を使用することです。 アプリをオンプレミス構成と連携させるシナリオはありますが、一貫性がなく保証されていません。
 
 **マネージド アプリから Web リンクを開く安全な方法**<br>
 IT 管理者は、Microsoft Intune によって開発された、Intune で簡単に管理可能な Web ブラウザーである [Intune Managed Browser アプリ](app-configuration-managed-browser.md) のアプリ保護ポリシーを展開および設定することができます。 IT 管理者は、Intune 管理対象アプリ内のすべての Web リンクが Managed Browser アプリで開かれるように指定することができます。
-
-## <a name="examples-of-app-protection-policies"></a>アプリ保護ポリシーの例
-
-アプリ保護ポリシーの例を詳しく把握し、各アプリ保護ポリシー設定に関する詳細情報を確認するには、[Android アプリ保護ポリシーの設定](app-protection-policy-settings-android.md)と [iOS アプリ保護ポリシーの設定](app-protection-policy-settings-ios.md)に関する各記事を参照してください。
 
 ## <a name="app-protection-experience-for-ios-devices"></a>iOS デバイスでのアプリ保護のエクスペリエンス
 
 ### <a name="device-fingerprint-or-face-ids"></a>デバイスの指紋 ID または Face ID 
 Intune アプリ保護ポリシーでは、アプリへのアクセスを制御して、Intune のライセンスがあるユーザーのみを許可することができます。 アプリへのアクセスを制御する方法の 1 つは、Apple の Touch ID または Face ID のいずれかをサポートされているデバイス上で要求することです。 Intune は、デバイスの生体認証データベースに何らかの変更が加えられると、次に非アクティブ状態のタイムアウト値に達したときにユーザーに PIN の入力を求めるように実装されています。 フィンガープリントや顔の追加や削除も、生体認証データの変更に含まれます。 Intune ユーザーが PIN を設定していない場合は、Intune PIN を設定するよう求められます。
  
-このプロセスの目的は、アプリ内にある組織のデータを、アプリ レベルで安全に保護し続けることです。 この機能は iOS でのみ使用可能で、iOS 向け Intune App SDK のバージョン 9.0.1 以降を統合するアプリケーションの参加が必要です。 SDK の統合は、対象のアプリケーション上で動作を適用するために必要です。 この統合は、ローリング方式で行われ、特定のアプリケーション チームに依存します。 参加するアプリケーションには、WXP、Outlook、Managed Browser、Yammer などが含まれます。
+このプロセスの目的は、アプリ内にある組織のデータを、アプリ レベルで安全に保護し続けることです。 この機能は iOS でのみ使用可能で、iOS 向け Intune SDK のバージョン 9.0.1 以降を統合するアプリケーションの参加が必要です。 SDK の統合は、対象のアプリケーション上で動作を適用するために必要です。 この統合は、ローリング方式で行われ、特定のアプリケーション チームに依存します。 参加するアプリケーションには、WXP、Outlook、Managed Browser、Yammer などが含まれます。
   
 ### <a name="ios-share-extension"></a>iOS 共有拡張機能
 データ転送ポリシーが "**マネージド アプリのみ**" または "**アプリなし**" に設定されている場合であっても、iOS 共有拡張機能を使用すると、アンマネージド アプリ内の職場または学校のデータを開くことができます。 Intune アプリ保護ポリシーは、デバイスを管理しないで iOS 共有拡張機能を制御することはできません。 したがって、Intune は _**"企業" データがアプリの外部で共有される前に、データを暗号化します**_ 。 マネージド アプリの外部で "企業" ファイルを開いてみると、この暗号化の動作を確認できます。 ファイルは暗号化されていて、管理対象アプリの外部では開くことができないはずです。
@@ -305,7 +312,7 @@ Intune アプリ保護ポリシーでは、アプリへのアクセスを制御�
 ### <a name="multiple-intune-app-protection-access-settings-for-same-set-of-apps-and-users"></a>同じアプリとユーザーのセットに対する複数の Intune アプリ保護アクセスの設定
 エンドユーザー デバイスが会社のアカウントから対象のアプリにアクセスしようとすると、アクセスに関する Intune アプリ保護ポリシーが所定の順序で適用されます。 通常、優先順位は、ワイプ、ブロック、無視できる警告となります。 たとえば、特定のユーザー/アプリに適用可能な場合、ユーザーのアクセスをブロックする最小の iOS オペレーティング システム設定の後、iOS バージョンを更新するようユーザーに警告する最小の iOS オペレーティング システム設定が適用されます。 したがって、IT 管理者が最小の iOS オペレーティング システムを 11.0.0.0 に構成し、最小の iOS オペレーティング システム (警告のみ) を 11.1.0.0 に構成した状態で、アプリにアクセスしようとしているデバイスが iOS 10 にあった場合、エンド ユーザーは最小の iOS オペレーティング システム バージョンに対するより制限の厳しい設定に基づいてブロックされ、その結果、アクセスがブロックされます。
 
-さまざまな種類の設定を扱う場合、優先順位は、Intune App SDK のバージョン要件、アプリのバージョン要件、iOS オペレーティング システムのバージョン要件となります。 その後、同じ順序ですべての種類の設定の警告が確認されます。 ブロックが重要である場合は、Intune 製品チームのガイダンスのみに従って、Intune App SDK のバージョン要件を構成することをお勧めします。
+さまざまな種類の設定が処理される場合、優先順位は、Intune SDK のバージョン要件、アプリのバージョン要件、iOS オペレーティング システムのバージョン要件の順になります。 その後、同じ順序ですべての種類の設定の警告が確認されます。 ブロックが重要である場合は、Intune 製品チームのガイダンスのみに従って、Intune SDK のバージョン要件を構成することをお勧めします。
 
 ## <a name="app-protection-experience-for-android-devices"></a>Android デバイスでのアプリ保護のエクスペリエンス
 
@@ -344,6 +351,10 @@ Google Play プロテクトの API を活用するアプリ保護ポリシー設
 ## <a name="next-steps"></a>次のステップ
 
 [Microsoft Intune でアプリ保護ポリシーを作成および展開する方法](app-protection-policies.md)
+
+[Microsoft Intune で利用可能な Android アプリ保護ポリシー設定](app-protection-policy-settings-android.md)
+
+[Microsoft Intune で利用可能な iOS アプリ保護ポリシー設定](app-protection-policy-settings-ios.md)
 
 ## <a name="see-also"></a>関連項目
 Salesforce モバイル アプリなどのサード パーティ製アプリは特別な方法で Intune と連携して企業データを保護します。 Salesforce アプリが特に Intune と連携する方法の詳細 (MDM アプリ構成の設定を含む) については、「[Salesforce App and Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf)」 (Salesforce アプリと Microsoft Intune) を参照してください。

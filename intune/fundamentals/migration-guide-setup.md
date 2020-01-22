@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ca0983b7b637b7e85bef97cd77e6c870c4e43eb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c705e8863ef4e01906a773d528f9ae2f40461c71
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510018"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885850"
 ---
 # <a name="basic-setup"></a>基本的なセットアップ
 
@@ -74,9 +74,9 @@ Intune に移行するには、Intune サブスクリプションが必要です
 
 ### <a name="task-3-set-your-mdm-authority-to-intune"></a>タスク 3: MDM 機関を Intune に設定する
 
-Intune は、Azure Portal や Configuration Manager の Current Branch コンソールから管理できます。 Configuration Manager の現在のブランチの展開と Intune を統合する必要がある場合を除き、Intune は [Azure Portal](https://portal.azure.com) から管理することをお勧めします。
+[Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)を使用して Intune を管理することをお勧めします。
 
-MDM 機関を **Intune** に設定して、Intune Azure Portal を有効にします。 異なる MDM 機関を使用すると、Intune は代替の Microsoft 管理コンソールに MDM 管理を転送します。 このようなケースは一般的ではありません。
+MDM 機関を **Intune** に設定します。 異なる MDM 機関を使用すると、Intune は代替の Microsoft 管理コンソールに MDM 管理を転送します。 このようなケースは一般的ではありません。
 
 > [!IMPORTANT]
 > モバイル デバイス管理を Intune に初めて転送する場合は、MDM 機関を Intune に設定する必要があります。

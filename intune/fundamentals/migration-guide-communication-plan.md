@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4637a4f9f137e9db665d72118fd7a97d7a9f75a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f617e85e78ac5436567790d416c988742a2abe4c
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510136"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956238"
 ---
 # <a name="plan-communications"></a>通信手段の計画
 
@@ -56,10 +56,10 @@ Intune の登録ガイドには、PDF と Word の両方のバージョンが用
 - [macOS デバイスを登録する](https://www.youtube.com/watch?v=Pa2pfhwq_yk)
 - [Windows を登録する](https://www.youtube.com/watch?v=TKQxEckBHiE)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Intune には、ユーザーのデバイス登録を推進するために使用できるその他のリソースが用意されています。
 
 - モバイル OS プラットフォームごとの登録手順について詳しくは、「[Microsoft Intune に関してエンド ユーザーを教育する方法](end-user-educate.md)」をご覧ください。
 - [IT 管理者向けの Intune デバイスの登録](../enrollment/device-enrollment.md)に関するページには、Intune での Android、iOS、および Mac デバイスの登録方法について説明されています。
-- Android、iOS、および Windows ユーザーと[ポータル サイト アプリの URL](http://go.microsoft.com/fwlink/?LinkID=396941) を共有します。 この URL を使用すると、Android、iOS、および Windows デバイス上の適切なポータル サイト アプリ一覧にリダイレクトされます。
+- Android、iOS、および Windows ユーザーとポータル サイト アプリを共有します。

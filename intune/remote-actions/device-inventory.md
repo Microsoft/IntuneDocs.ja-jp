@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c38aaf28440511720280a3c5a1ebda5b9f2ab1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ce3f73834ffdc2648dae345f8fa2a8233d2bb8c9
+ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74819779"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75756022"
 ---
 # <a name="see-device-details-in-intune"></a>Intune でデバイスの詳細を確認する
 
@@ -34,7 +34,7 @@ ms.locfileid: "74819779"
 ## <a name="view-the-device-details"></a>デバイスの詳細を表示する
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-3. **[デバイス]** > **[すべてのデバイス]** を選択します。次に、一覧表示されているデバイスのいずれかを選択して、その詳細を開きます。
+3. **[デバイス]**  >  **[すべてのデバイス]** を選択します。次に、一覧表示されているデバイスのいずれかを選択して、その詳細を開きます。
 
    - **[概要]** には、デバイス名が表示され、Bring-Your-Own-Device (BYOD) デバイスであるかどうかや、チェックイン時刻など、デバイスの主なプロパティがいくつか一覧表示されます。 デバイスでは、次のことを実行できます。
       - [削除](devices-wipe.md#retire)
@@ -57,7 +57,7 @@ ms.locfileid: "74819779"
 > [!Note]  
 > Intune サービスでは、ハードウェアとソフトウェアのインベントリが 7 日ごとに更新されます。
 
-|項目|説明|プラットフォーム| 
+|項目|[説明]|プラットフォーム| 
 |--------------|----------------------|----|  
 |名前|デバイスの名前。|Windows、iOS|
 |管理名|コンソールでのみ使用されるデバイス名。 この名前を変更しても、デバイス上の名前は変更されません。|Windows、iOS|
@@ -67,7 +67,7 @@ ms.locfileid: "74819779"
 |共有デバイス|**[はい]** の場合、デバイスが複数のユーザーで共有されます。|Windows、iOS|
 |ユーザー承認済みの登録|**[はい]** の場合、デバイスには、管理者がデバイス上で特定のセキュリティ設定を管理できる、ユーザー承認済みの登録があります。|Windows、iOS|
 |オペレーティング システム|デバイスで使用されるオペレーティング システム。|Windows、iOS|
-|オペレーティング システムのバージョン|デバイスのオペレーティング システムのバージョンです。|Windows、iOS|
+|オペレーティング システムのバージョン|デバイス上のオペレーティング システムのバージョン。|Windows、iOS|
 |オペレーティング システムの言語|デバイス上のオペレーティング システムに設定された言語。|Windows、iOS|
 |ビルド番号|オペレーティング システムのビルド番号。|Android|
 |セキュリティ パッチ レベル|デバイス用のセキュリティ パッチ レベル。|Android|
@@ -83,7 +83,7 @@ ms.locfileid: "74819779"
 |Wi-Fi MAC|デバイスの MAC アドレス。|Windows、iOS、Android|
 |ICCID|SIM カードの一意の識別番号である IC カードの識別子。|Windows、iOS、Android|
 |登録日|デバイスが Intune に登録された日時。|Windows、iOS、Android|
-|最終接続日時|デバイスが最後に Intune に接続された日時。|Windows、iOS、Android|
+|最後接続日時|デバイスが最後に Intune に接続された日時。|Windows、iOS、Android|
 |アクティベーション ロックのバイパス コード|アクティベーション ロックのバイパスに使用できるコード。|iOS|
 |Azure AD に登録済み|**[はい]** の場合、デバイスが Azure Active Directory に登録されています。|Windows、iOS、Android|
 |Intune 登録済み|**[はい]** の場合、デバイスが Intune に登録されます|Windows、iOS、Android|
@@ -95,5 +95,8 @@ ms.locfileid: "74819779"
 
 \* フル マネージド デバイスや専用デバイスなど、Google ポリシー マネージャーを使用した Android では使用できません
 
-## <a name="next-steps"></a>次の手順
+> [!Note]  
+> Android Enterprise 専用デバイスまたはフル マネージド デバイスでは、電話番号はインベントリされません。
+
+## <a name="next-steps"></a>次のステップ
 Intune で[デバイスを管理](device-management.md)するために他に行えることを確認します。

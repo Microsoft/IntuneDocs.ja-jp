@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/08/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b2a6019a0af33cd227d88444bb5ddda5bc22715
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: a3074b30921a4daba7469e670a17ad29ee1edc00
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204903"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827804"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>S モード デバイスで Win32 アプリを有効にする
 
@@ -45,7 +45,7 @@ S モードの Windows 10 デバイスで Win32 アプリの実行を許可す�
    - Windows 10 S モード補足ポリシーを作成して、署名済み補足ポリシーを Intune にアップロードします (下記参照)。
 3. Intune で Win32 アプリ カタログを許可します。
    - カタログ ファイルを作成し (すべてのアプリに対して 1 つ)、DGSS または他の証明書インフラストラクチャを使用して署名します。
-   - [Microsoft Win32 コンテンツ準備ツール](https://go.microsoft.com/fwlink/?linkid=2065730)を使用して、署名済みのカタログを *.intunewin* ファイルにパッケージ化します。 詳しくは、「[Win32 アプリ管理 - Win32 アプリ コンテンツのアップロードを準備する](~/apps/apps-win32-app-management.md#prepare-the-win32-app-content-for-upload)」をご覧ください。
+   - [Microsoft Win32 コンテンツ準備ツール](https://go.microsoft.com/fwlink/?linkid=2065730)を使用して、署名済みのカタログを *.intunewin* ファイルにパッケージ化します。 [Microsoft Win32 コンテンツ準備ツール](https://go.microsoft.com/fwlink/?linkid=2065730)を使用してカタログ ファイルを作成する場合は、名前付けの制限事項はありません。 指定したソース フォルダーとセットアップ ファイルから *.intunewin* ファイルを生成するときに、-a コマンドライン オプションを使用して、カタログ ファイルのみを含む個別のフォルダーを指定できます。 詳しくは、「[Win32 アプリ管理 - Win32 アプリ コンテンツのアップロードを準備する](~/apps/apps-win32-app-management.md#prepare-the-win32-app-content-for-upload)」をご覧ください。
    - Intune により、署名済みアプリ カタログが適用され、[Intune 管理拡張機能](~/apps/intune-management-extension.md)を使用して S モード デバイスに Win32 アプリがインストールされます。
 
 > [!NOTE]

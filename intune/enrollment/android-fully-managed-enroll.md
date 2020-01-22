@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5cd8c1a1d17ca38c42b6ed6821d20367b147ad6
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: d8397dea1dca97122aac6716ee3d51295b913538
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562380"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885934"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>Android Enterprise フル マネージド デバイスの Intune 登録を設定する 
 
@@ -36,7 +36,7 @@ Intune を利用すると、Android Enterprise フル マネージド デバイ�
 
 ## <a name="technical-requirements"></a>技術要件
 
-Android Enterprise フル マネージド デバイスを管理するには、Intune スタンドアロン テナントを用意する必要があります。 フル マネージド デバイスは、ハイブリッド (Configuration Manager 接続) モードまたは旧 Silverlight 管理コンソールでは管理できません。
+Android Enterprise フル マネージド デバイスを管理するには、Intune スタンドアロン テナントを用意する必要があります。 フル マネージド デバイスは、従来の Silverlight 管理コンソールでは管理できません。
 
 デバイスを Android Enterprise フル マネージド デバイスとして管理するには、以下の要件を満たす必要があります。
 
@@ -67,7 +67,7 @@ Android Enterprise フル マネージド デバイスの管理を設定する�
 ## <a name="enroll-the-fully-managed-devices"></a>フル マネージド デバイスを登録する
 これで[フル マネージド デバイスを登録](android-dedicated-devices-fully-managed-enroll.md)できるようになりました。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 - [Android Enterprise フル マネージド デバイス構成ポリシーを追加する](../configuration/device-restrictions-android-for-work.md#device-owner-only)
 - [Android Enterprise フル マネージド デバイスのアプリ構成ポリシーを構成する](../apps/app-configuration-policies-use-android.md)
 

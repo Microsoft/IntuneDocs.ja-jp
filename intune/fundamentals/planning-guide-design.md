@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c18f3e8fb14d8592789b39856ec420790fad286
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 8452f840fb269505656bf6594d3e5c196b4d7a06
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547555"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885779"
 ---
 # <a name="create-a-design"></a>設計の作成
 
@@ -101,19 +101,11 @@ Intune の設計は、[このガイドの他のセクション](../planning-guid
 | **SharePoint** | オンプレミスの SharePoint | SharePoint Online への移行計画はなし |  
 | **現在の MDM** | Exchange ActiveSync |  |
 | **証明書ソリューション** | Microsoft Server 2012 R2、AD 証明書サービス | Web サイト サーバー用に PKI のみを使用 |
-| **システム管理** | Configuration Manager CB 1606 | Intune ハイブリッド ソリューションの調査を希望 |
+| **システム管理** | Configuration Manager Current Branch | 共同管理ソリューションの調査を希望 |
 | **VPN ソリューション** | Cisco AnyConnect |  |
 
 
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して Intune 設計計画を作成することができます。
-
-## <a name="choose-an-intune-deployment-option"></a>Intune の展開オプションを選択する
-
-Intune には、スタンドアロンとハイブリッドの 2 種類の展開オプションがあります。 スタンドアロンとはクラウドで実行されている Intune サービスのことであり、ハイブリッドとは Intune と Configuration Manager が統合されたものです。 このガイドは、基本的にスタンドアロン オプション用です。 [どちらのオプションがビジネス要件に合うかを判断する](https://docs.microsoft.com/configmgr/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)には、こちらをご覧ください。
-
-> [!Important]
->新規のハイブリッド MDM の顧客のオンボーディングは非推奨となりました。 詳細については、「[Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150)」 (ハイブリッド MDM から Azure での Intune に移行する) のブログ記事を参照してください。
-
 
 ## <a name="intune-tenant-location"></a>Intune テナントの場所
 
