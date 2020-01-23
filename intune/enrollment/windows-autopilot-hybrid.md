@@ -18,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc618f2502647ba33a16cff4305b9f4671e05996
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.openlocfilehash: d87a4b5d46a5f0d40cebe3dbcaff211ff508d667
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74558182"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125312"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Intune と Windows Autopilot を使用して Hybrid Azure AD 参加済みデバイスをデプロイする
 Intune と Windows Autopilot を使用して、Hybrid Azure Active Directory (Azure AD) 参加済みデバイスを設定できます。 そのためには、この記事の手順のようにします。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
 [Hybrid Azure AD 参加済みデバイス](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)を正しく構成します。 Get-MsolDevice コマンドレットを使用して、[デバイスの登録を確認](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration)します。
 
@@ -46,11 +46,11 @@ Intune と Windows Autopilot を使用して、Hybrid Azure Active Directory (Az
 
    ![Azure portal](./media/windows-autopilot-hybrid/auto-enroll-azure-main.png)
 
-1. **[モビリティ (MDM と MAM)]** を選択します。
+1. **[モビリティ (MDM および MAM)]** を選択します。
 
    ![[Azure Active Directory] ウィンドウ](./media/windows-autopilot-hybrid/auto-enroll-mdm.png)
 
-1. **Microsoft Intune** を選択します。
+1. **[Microsoft Intune]** を選択します。
 
    ![[モビリティ (MDM および MAM)] ウィンドウ](./media/windows-autopilot-hybrid/auto-enroll-intune.png)
 
@@ -209,17 +209,30 @@ Autopilot Deployment プロファイルは、Autopilot デバイスを構成す�
 ## <a name="create-and-assign-a-domain-join-profile"></a>ドメイン参加プロファイルを作成して割り当てる
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[構成プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
-1. 次のプロパティを入力します。
-   - **[名前]** :新しいプロファイルのわかりやすい名前を入力します。
+2. 次のプロパティを入力します。
+   - **名前**:新しいプロファイルのわかりやすい名前を入力します。
    - **説明**:プロファイルの説明を入力します。
    - **[プラットフォーム]** : **[Windows 10 以降]** を選択します。
    - **[プロファイルの種類]** : **[ドメイン参加 (プレビュー)]** を選択します。
-1. **[設定]** を選択し、 **[コンピューター名のプレフィックス]** 、 **[ドメイン名]** 、および [DN 形式](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name)の **[組織単位]** (省略可能) を指定します。 
+3. **[設定]** を選択し、**コンピューター名のプレフィックス**と**ドメイン名**を指定します。
+4. (省略可能) [DN 形式](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name)で**組織単位** (OU) を指定します。 次のような方法があります。
+   - Intune コネクタを実行している Windows 2016 デバイスに制御を委任した OU を指定します。
+   - オンプレミスの Active Directory でルート コンピューターに制御を委任した OU を指定します。
+   - この値を空白のままにすると、コンピューター オブジェクトが Active Directory の既定のコンテナー ([変更しないかぎり](https://support.microsoft.com/en-us/help/324949/redirecting-the-users-and-computers-containers-in-active-directory-dom) CN=Computers) に作成されます。
+   
+   有効な例を示します。
+   - OU=Level 1、OU=Level2、DC=contoso、DC=com
+   - OU=Mine、DC=contoso、DC=com
+   
+   有効ではない例を示します。
+   - CN=Computers、DC=contoso、DC=com (コンテナーを指定することはできません。ドメインの既定値を使用する場合は、代わりに値を空白のままにします)
+   - OU=Mine (DC=attributes を使用してドメインを指定する必要があります)
+     
    > [!NOTE]
    > **[組織単位]** の値の周りで引用符を使用しないでください。
-1. **[OK]**  >  **[作成]** を選択します。  
+5. **[OK]**  >  **[作成]** を選択します。  
     プロファイルが作成されて、一覧に表示されます。
-1. プロファイルを割り当てるには、「[デバイス プロファイルを割り当てる](../configuration/device-profile-assign.md#assign-a-device-profile)」の手順に従って、この「[デバイス グループを作成する](windows-autopilot-hybrid.md#create-a-device-group)」の手順で使用したのと同じグループにプロファイルを割り当てます。
+6. プロファイルを割り当てるには、「[デバイス プロファイルを割り当てる](../configuration/device-profile-assign.md#assign-a-device-profile)」の手順に従って、この「[デバイス グループを作成する](windows-autopilot-hybrid.md#create-a-device-group)」の手順で使用したのと同じグループにプロファイルを割り当てます。
    - 複数のドメイン参加プロファイルを展開する
    
      」を参照します。 特定の Autopilot Deployment プロファイルを持つすべての Autopilot デバイスを含む動的グループを作成し、(device.enrollmentProfileName -eq "Autopilot Profile Name") を入力します。 
@@ -231,6 +244,6 @@ Autopilot Deployment プロファイルは、Autopilot デバイスを構成す�
 > [!NOTE]
 > Hybrid Azure AD Join 用の Windows Autopilot の名前付け機能では、%SERIAL% などの変数はサポートされません。サポートされるのは、コンピューター名のプレフィックスのみです。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Windows Autopilot を構成した後は、これらのデバイスを管理する方法を学習します。 詳細については、「[Microsoft Intune デバイスの管理とは](../remote-actions/device-management.md)」を参照してください。

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75a875fc3ff11eb1e3befad425c16a710544f781
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fdd97e69c97df5a266e147381d94b3d4419bab34
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509887"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036567"
 ---
 # <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>クイック スタート:Intune でユーザーを作成してライセンスを割り当てる
 
@@ -50,11 +50,11 @@ Intune デバイス管理に登録するユーザーには、ユーザー アカ
 
 ## <a name="assign-a-license-to-the-user"></a>ユーザーにライセンスを割り当てる
 
-ユーザーを作成したら、[Microsoft 365 管理センター](http://go.microsoft.com/fwlink/p/?LinkId=698854)を使ってそのユーザーに Intune ライセンスを割り当てる必要があります。 ユーザーは、ライセンスを割り当てられないと、各自のデバイスを Intune に登録できません。 
+ユーザーを作成したら、[Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?LinkId=698854)を使ってそのユーザーに Intune ライセンスを割り当てる必要があります。 ユーザーは、ライセンスを割り当てられないと、各自のデバイスを Intune に登録できません。 
 
 ユーザーに Intune ライセンスを割り当てるには:
 
-1. Intune にサインインしたときに使用した同じ資格情報で [Microsoft 365 管理センター](http://go.microsoft.com/fwlink/p/?LinkId=698854)にサインインします。
+1. Intune にサインインしたときに使用した同じ資格情報で [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?LinkId=698854)にサインインします。
 2. **[ユーザー]**  >  **[アクティブなユーザー]** の順に選択し、作成したユーザーを選択します。
 3. **[製品ライセンス]** の隣の **[編集]** を選択します。
 4. **[場所]** の下で、ユーザーの場所を選択します。
@@ -68,9 +68,9 @@ Intune デバイス管理に登録するユーザーには、ユーザー アカ
 
 ## <a name="clean-up-resources"></a>リソースをクリーンアップする
 
-このユーザーをもう使用しない場合、[Microsoft 365 管理センター](http://go.microsoft.com/fwlink/p/?LinkId=698854)に移動し、 **[ユーザー]** から **[アクティブなユーザー]** に進み、一覧内のユーザーを選択し、 **[ユーザーの削除]** 、 **[ユーザーの削除]** 、 **[変更の確認]** 、 **[閉じる]** の順に選択します。
+このユーザーをもう使用しない場合、[Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?LinkId=698854)に移動し、 **[ユーザー]** から **[アクティブなユーザー]** に進み、一覧内のユーザーを選択し、 **[ユーザーの削除]** 、 **[ユーザーの削除]** 、 **[変更の確認]** 、 **[閉じる]** の順に選択します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 このクイック スタートでは、ユーザーを作成し、そのユーザーに Intune ライセンスを割り当てました。 Intune へのユーザーの追加について詳しくは、「[Intune にユーザーを追加して管理アクセス許可を付与する](users-add.md)」をご覧ください。
 
