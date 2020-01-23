@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 304a6a60ea8dbfa98e62eb8e52a69e14af795746
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: e64741a92804ec4149b654480166720ff3092e35
+ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548002"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258501"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Edge と Microsoft Intune を使用して Web アクセスを管理する
 
@@ -205,7 +205,7 @@ Microsoft Edge モバイル内の新しい タブ ページ エクスペリエ�
 
 |    キー    |    値    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-|    'com.microsoft.intune.SohwIndustryNews'    |    **True** にすると、Microsoft Edge モバイルの新しいタブ ページに業界のニュースが表示されます。<p>**False** (既定値) にすると、新しいタブ ページの業界ニュースは非表示になります。    |
+|    com.microsoft.intune.ShowIndustryNews    |    **True** にすると、Microsoft Edge モバイルの新しいタブ ページに業界のニュースが表示されます。<p>**False** (既定値) にすると、新しいタブ ページの業界ニュースは非表示になります。    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Microsoft Edge 用に管理対象ブックマークを構成する
 
@@ -217,6 +217,7 @@ Microsoft Edge モバイル内の新しい タブ ページ エクスペリエ�
 - これらのブックマークを、ユーザーが削除したり、変更したりすることはできません。
 - これらのブックマークは、リストの上部に表示されます。 ユーザーが作成したブックマークは、これらのブックマークの下に表示されます。
 - アプリケーション プロキシのリダイレクトを有効にしてある場合は、内部 URL または外部 URL を使ってアプリケーション プロキシ Web アプリを追加できます。
+- リストに入力するときは、すべての URL の先頭に必ず **http://** または **https://** を付けてください。
 
 管理対象ブックマークを構成するには、次のキー/値のペアを使用します。
 
@@ -243,7 +244,7 @@ Microsoft Edge に対して許可またはブロックするサイトのリス�
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>許可およびブロック サイト リストの URL 形式 
 さまざまな URL 形式を使用して、許可/ブロック サイト リストを作成することができます。 次の表で、これらの許可されているパターンについて詳しく説明します。 開始する前に次のいくつかの点に注意してください。 
-- リストに入力するときは、すべての URL の先頭に必ず **http** または **https** を付けてください。
+- リストに入力するときは、すべての URL の先頭に必ず **http://** または **https://** を付けてください。
 - ワイルドカード記号 (\*) は、以下の許可されているパターン リストの規則に従って使用できます。
 - ワイルドカードは、ホスト名のコンポーネント全体 (ピリオドで区切られた部分) またはパスの全体部分 (スラッシュで区切られた部分) にのみ一致します。 たとえば、`http://*contoso.com` はサポートされて**いません**。
 - アドレスにはポート番号を指定できます。 ポート番号を指定しない場合は、次の値が使用されます。

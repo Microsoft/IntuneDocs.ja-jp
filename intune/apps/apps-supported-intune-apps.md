@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67ff4f0cbe11c24c03b504968735e0a68d54f12d
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: c199964409a91aa6f5b75ae067968e37c1b1a189
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692172"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125339"
 ---
 # <a name="microsoft-intune-protected-apps"></a>保護されている Microsoft Intune アプリ  
 
@@ -45,6 +45,7 @@ ms.locfileid: "75692172"
 
 | アプリのタイトル | アプリの説明と情報 | サポート対象プラットフォーム用のアプリ ストアのリンク |
 |-------------------------------------------------|-------------------------|---------------------------------------------|
+| **Field Service Mobile**<p><img alt="Microsoft app - Field Service Mobile icon" src="./media/apps-supported-intune-apps/icon-m-field-service-mobile.png" width="100"> | Dynamics 365 for Field Service はフィールド サービス ワーカーのニーズに特化した、クロスプラットフォームでマルチデバイスの Field Service Mobile アプリケーションを提供します。 堅牢なオフライン機能により、フィールド サービス ワーカーが、インターネットに接続せずにリモートの接続先にアクセスするときに必要なデータに引き続きアクセスして操作できるようになります。 フィールド サービス ワーカーは、適切なアクションを適切に実行したり迅速に開始したりするために、サーバーに定期的にデータを同期することで、現場で実行されている作業をバックオフィスに通知することができます。 モバイル アプリケーションは完全にカスタマイズでき、拡張可能であるため、組織がアプリケーションを独自のものとしてブランド化したり、サービス ワーカーがアクセスできるデータ フィールドの種類を定義したりできます。 | [Google Play のリンク (Android)](https://play.google.com/store/apps/details?id=com.microsoft.d365.fs.mobile)、[App Store のリンク (iOS)](https://apps.apple.com/us/app/field-service-mobile/id1414669075) |
 | **Microsoft Azure Information Protection ビューアー**<p><img alt="Microsoft app - Microsoft Azure Information Protection Viewer icon" src="./media/apps-supported-intune-apps/icon-m-azure-information-protection-viewer.png" width="100"> | AIP ビューアー アプリを使って他のユーザーとの安全な共同作業を行います。 だれかが自分と共有した保護されたファイル (権利保護されたメール メッセージ、PDF ファイル、画像、テキスト ファイル) を表示します。 | [Google Play のリンク (Android)](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer)、[App Store のリンク (iOS)](https://itunes.apple.com/us/app/rms-sharing/id689516635?mt=8) |
 | **Microsoft Bookings**<p><img alt="Microsoft app - Microsoft Bookings icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-bookings.png" width="100"> | Microsoft Bookings は、ご自身の予約、スタッフ、顧客を追跡することができる、予定スケジュール アプリです。 予定を忘れることがなくなり、無断欠席者が減ります。<p>Bookings アプリでは次のことができます。<br><ul><li>カレンダーの表示と管理</li><li>外出先で予約を作成したり、既存のものに変更を加えたりする</li><li>スタッフのメンバーの都合をリアルタイムで確認する</li><li>迅速かつ簡単に顧客に対応する</li><li>次の予約の場所への道順をすばやく取得する</li><li>顧客のリストを管理する</li></ul> | [Google Play のリンク (Android)](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings)、<br>[App Store のリンク (iOS)](https://itunes.apple.com/us/app/microsoft-bookings/id1065657468?mt=8) |  
 | **Microsoft Cortana**<p><img alt="Microsoft app - Microsoft Cortana icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-cortana.png" width="100"> | パーソナル アシスタントの Cortana があれば、仕事でも生活でも速く、簡単に、楽しくこなせます。 スマートなデジタル アシスタントを電話に組み込んで、どこにいても、どのようなデバイスでも、重要な事柄に常に注目できます。 | [Google Play のリンク (Android)](https://play.google.com/store/apps/details?id=com.microsoft.cortana)、<br>[App Store のリンク (iOS)](https://apps.apple.com/us/app/cortana/id1054501703)
