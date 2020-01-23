@@ -26,7 +26,7 @@
       displayName: app-we; without; without enrollment
     - name: MAM のよく寄せられる質問
       href: mam-faq.md
-- name: 操作方法ガイド
+- name: 攻略ガイド
   items:
     - name: アプリを追加する
       items:
@@ -133,8 +133,6 @@
               href: manage-microsoft-edge.md
             - name: Outlook の構成
               href: app-configuration-policies-outlook.md
-            - name: Outlook 用に S/MIME を構成する
-              href: app-configuration-policies-outlook-smime.md
             - name: Android 用の Google Chrome の構成
               href: apps-configure-chrome-android.md
         - name: ボリューム購入アプリとブック
@@ -190,11 +188,13 @@
           href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
         - name: アプリのインストールに関する問題のトラブルシューティング
           href: troubleshoot-app-install.md
+        - name: アプリのインストール エラーのリファレンス
+          href: app-install-error-codes.md
         - name: モバイル アプリケーション管理に関するトラブルシューティング
           href: troubleshoot-mam.md
         - name: アプリの保護ログのレビュー
           href: app-protection-policy-settings-log.md
-- name: リファレンス
+- name: 参照先
   items:
     - name: Intune App SDK によるアプリの保護
       href: ../developer/app-sdk.md
