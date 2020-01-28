@@ -5,7 +5,7 @@
   items:
     - name: デバイス管理の概要
       href: device-management.md
-- name: 操作方法ガイド
+- name: 攻略ガイド
   items:
     - name: ロックとパスワード
       items:
@@ -17,7 +17,7 @@
           href: device-windows-pin-reset.md
     - name: 削除と再起動
       items:
-        - name: デバイスの削除
+        - name: デバイスを削除する
           href: devices-wipe.md
         - name: Windows の新たに開始機能の管理
           href: device-fresh-start.md
@@ -33,8 +33,8 @@
           href: device-supervised-mode.md
         - name: macOS デバイスのデータを消去する
           href: device-erase.md
-        - name: アクティベーション ロックのバイパス
-          href: device-activation-lock-bypass.md
+        - name: アクティベーション ロックを無効にする
+          href: device-activation-lock-disable.md
     - name: ユーザー アクション
       items:
         - name: 現在のユーザーをサインアウトする

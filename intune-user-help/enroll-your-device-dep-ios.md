@@ -19,12 +19,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: ''
-ms.openlocfilehash: 039ec17b1a56a7339f2159d7af6ad1bd9280bf63
-ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
+ms.openlocfilehash: 6c1b6417489d1443596113a18476b9cbc8f3832e
+ms.sourcegitcommit: 8cc3eca2bce847b0c2b40d8531698e21df848878
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75855512"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75951456"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>組織から提供された iOS デバイスを管理登録する
 
@@ -44,11 +44,7 @@ ms.locfileid: "75855512"
 
 1. iOS デバイスをオンにします。
 2. **[Language\(言語\)]** を選択した後、デバイスを Wi-Fi に接続します。
-3. **[Set up iOS device]\(iOS デバイスのセットアップ\)** 画面で、次を行うかどうかを選択します。
-   - **Set up as new device\(新しいデバイスとして設定する\)**
-   - **Restore from iCloud backup\(iCloud のバックアップから復元する\)**
-   - **Restore from iTunes backup\(iTunes のバックアップから復元する\)**
-
+3. **[Set up iOS device]\(iOS デバイスのセットアップ\)** 画面で、 **[Set up as new device]\(新しいデバイスとしてセットアップする\)** を選択します。  
 4. Wi-Fi に接続すると、 **[Configuration\(構成\)]** 画面が表示されます。 **[[Your Company] will automatically configure your device]\([会社] がデバイスを自動的に構成します\)** と表示されます。
 
    **Configuration allows [Your Company] to manage this device over the air\(構成により [会社] はデバイスを無線で管理できます。\)An administrator can help you set up email and network accounts, install and configure apps, and manage settings remotely.\(メール アカウントとネットワーク アカウントの設定、アプリのインストールと構成、設定のリモート管理については、管理者が支援します。\)An administrator may disable features, install and remove apps, monitor and restrict your Internet traffic and remotely erase this device.\(管理者は、機能の無効化、アプリのインストールと削除、インターネット トラフィックの監視と制限、このデバイスのリモート消去を行うことができます。\)**
