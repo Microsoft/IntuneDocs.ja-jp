@@ -8,7 +8,7 @@
       displayName: compliant; noncompliant; mfa
 - name: クイックスタート
   items:
-    - name: デバイス コンプライアンス ポリシーの作成
+    - name: デバイス コンプライアンス ポリシーを作成する
       href: quickstart-set-password-length-android.md
     - name: 非準拠デバイスに通知を送信する
       href: quickstart-send-notification.md
@@ -44,9 +44,9 @@
           href: privacy-data-view-correct.md
         - name: 監査、エクスポート、削除
           href: privacy-data-audit-export-delete.md
-        - name: Windows 情報保護
+        - name: Windows Information Protection
           href: windows-information-protection-configure.md
-- name: 操作方法ガイド
+- name: 攻略ガイド
   items:
     - name: リソースへのアクセスを許可するデバイスのルールを設定する
       items:
@@ -167,7 +167,7 @@
           href: security-baselines.md
         - name: ベースラインを監視する
           href: security-baselines-monitor.md
-    - name: Endpoint Protection
+    - name: エンドポイント保護
       href: endpoint-protection-configure.md
     - name: ネットワーク アクセス制御
       href: network-access-control-integrate.md
@@ -225,6 +225,20 @@
           href: troubleshoot-conditional-access.md
         - name: Certificate Connector のトラブルシューティング
           href: troubleshoot-certificate-connector-events.md
+        - name: SCEP 証明書プロファイルのトラブルシューティング
+          items:
+            - name: SCEP 証明書プロファイルのトラブルシューティング
+              href: troubleshoot-scep-certificate-profiles.md
+            - name: デバイスへのプロファイルの展開
+              href: troubleshoot-scep-certificate-profile-deployment.md
+            - name: デバイスから NDES への通信
+              href: troubleshoot-scep-certificate-device-to-ndes.md
+            - name: NDES の操作
+              href: troubleshoot-scep-certificate-ndes-policy-module.md
+            - name: デバイスへの証明書の配信
+              href: troubleshoot-scep-certificate-delivery.md
+            - name: 証明書の展開のレポート
+              href: troubleshoot-scep-certificate-reporting.md
         - name: Exchange Connector に関するトラブルシューティング
           items:
             - name: Exchange Connector に関するトラブルシューティング
@@ -237,7 +251,7 @@
           href: troubleshoot-bitlocker-policies.md
         - name: Jamf Pro の統合に関するトラブルシューティング
           href: troubleshoot-jamf.md
-- name: リファレンス
+- name: 参照先
   items:
     - name: サード パーティの証明機関を追加するための API
       href: scep-libraries-apis.md

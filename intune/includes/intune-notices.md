@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: e745290991da4d80c7e3839250edbfdd64ef1b7a
-ms.sourcegitcommit: 01c57ac880dcb5f474908977c89810f5bedaf326
+ms.openlocfilehash: 9aa82268fb02f5124e48eb303f19cf32be02c284
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760970"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912636"
 ---
 以下の通知では、今後の Intune の変更と機能に備えるために役立つ重要な情報が提供されます。
 
@@ -21,9 +21,9 @@ Intune の 1 月のサービス更新プログラムでは、Intune での新し
  
 #### <a name="how-does-this-affect-me"></a>ユーザーへの影響
 現在、セキュリティ担当者に対して Azure AD で利用できるロールは 3 つあります。
-- Azure AD のセキュリティ閲覧者ロール。Intune への読み取り専用アクセスを提供します。
-- Azure AD のセキュリティ オペレーター ロール。Intune への読み取り専用アクセスを提供します。
-- Azure AD のセキュリティ管理者。 Intune の 1 月の更新プログラムで Intune に対する読み取り専用アクセス許可が配布されると、エンドポイント セキュリティ マネージャー ロールによって提供される新しいアクセス許可は次のようになります。
+- Azure AD のセキュリティ閲覧者ロール。Intune への読み取り専用アクセスがあります。
+- Azure AD のセキュリティ オペレーター ロール。Intune への読み取り専用アクセスがあります。
+- Azure AD のセキュリティ管理者。 Intune の 1 月の更新プログラムで Intune に対する読み取り専用アクセス許可が配布されると、エンドポイント セキュリティ マネージャー ロールの新しいアクセス許可は次のようになります。
     - デバイス コンプライアンス ポリシーの読み取り、作成、更新、削除、割り当て
     - マネージド デバイスの読み取り、削除、更新
     - セキュリティ ベースラインの読み取り、作成、更新、削除、割り当て
@@ -51,7 +51,7 @@ https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
 Windows Phone 8.1 に対する Microsoft のメインストリーム サポートは 2017 年 7 月に終了し、拡張サポートは 2019 年 6 月に終了しました。 Windows Phone 8.1 用のポータル サイト アプリは、2017 年 10 月から維持モードになっています。 2020 年 2 月 20 日に、Windows Phone 8.1 に対する Microsoft Intune のサポートが終了します。
 
 #### <a name="how-does-this-affect-me"></a>ユーザーへの影響
-2020 年 2 月 20 日を過ぎると、これらのデバイスはセキュリティ更新プログラムを受信しなくなり、新しいデバイスを登録できなくなります。 既存の Windows Phone 8.1 デバイスは登録されたままになります (ポリシー、アプリ、レポート) が、既存の登録に関するトラブルシューティングは、この日付を過ぎるとサポートされなくなります。これは、サード パーティ証明書など、多くのコンポーネントがこのプラットフォームのサポートを既に終了しているためです。 Intune では、Intune と Windows Phone 8.1 を使った互換性テストが停止されます。
+2020 年 2 月 20 日を過ぎると、これらのデバイスはセキュリティ更新プログラムを受信しなくなり、新しいデバイスを登録できなくなります。 既存の Windows Phone 8.1 デバイスは登録されたままになります (ポリシー、アプリ、レポート) が、既存の登録に関するトラブルシューティングは、この日付を過ぎるとサポートされなくなります。これは、サード パーティ証明書など、多くのコンポーネントでこのプラットフォームのサポートが既に終了しているためです。 Intune では、Intune と Windows Phone 8.1 を使った互換性テストが停止されます。
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
 Intune レポートをチェックして、影響を受ける可能性のあるデバイスまたはユーザーを確認できます。 [デバイス]、[すべてのデバイス]、の順に移動し、[OS] で絞り込みます。 さらに列を追加して、Windows Phone 8.1 を稼働しているデバイスを持つ組織内のユーザーの特定に役立てることができます。 エンド ユーザーに対して、各自のデバイスをサポートされている OS バージョンにアップグレードするようにリクエストしてください。
@@ -75,22 +75,8 @@ Intune Managed Browser から Microsoft Edge へのスムーズな移行を実�
 iOS および Android での Web クリップのサポートが予定されています。 このサポートがリリースされたら、既存の Web クリップの対象を再設定して、それらが Managed Browser ではなく Microsoft Edge で開くようにする必要があります。 
 
 #### <a name="additional-information"></a>追加情報
-詳細については、[Microsoft Edge とアプリ保護ポリシーの使用](../apps/manage-microsoft-edge.md) に関するドキュメント、または[サポートのブログ記事](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269)を参照してください。
+詳細については、[Microsoft Edge とアプリ保護ポリシーの使用](../apps/manage-microsoft-edge.md)に関するドキュメント、または[サポートのブログ記事](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269)を参照してください。
 
-### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>変更の計画: Intune に Android エンタープライズ専用デバイスを登録するときのエクスペリエンスの更新<!--5198878-->
-Intune の 11 月または 1911 のリリースでは、SCEP デバイス証明書の展開のサポートが Android エンタープライズ専用デバイスに追加され、Wi-Fi プロファイルへの証明書ベースのアクセスが可能になります。 この変更には、Android エンタープライズ専用デバイスを登録するときのフローに関する若干の変更も含まれます。
-
-#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
-環境内の Android エンタープライズ専用デバイスを管理している場合は、11 月になるといくつかの変更のロールアウトを目にし始めます。
-
-- 新しい Android エンタープライズ専用デバイスを登録する場合: 登録時にデバイスでエンド ユーザーに表示される一連の手順が異なります。 登録の開始方法は現在と同じですが (QR、NFC、ゼロタッチ、またはデバイス識別子を使用)、11月のサービス リリース後は、必須アプリのインストール手順が含まれるようになります。
-- 専用デバイスとして登録されている既存の Android デバイスの場合: 11 月初め以降、Intune では、デバイスに Microsoft Intune アプリが自動的にインストールされるようになります。 ユーザーは何も行う必要はありません。 アプリは、自動的にダウンロードされて、デバイスにインストールされます。 
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
-エンド ユーザー ガイドを更新し、この変更をヘルプデスクに通知するように計画する必要があります。 詳細とスクリーンショットについては、「追加情報」をクリックしてください。 この変更のロールアウトが始まったら、"新機能" ページが更新されます。
-
-#### <a name="additional-information"></a>追加情報
-[https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
 ### <a name="end-of-support-for-legacy-pc-management"></a>従来の PC 管理のサポート終了
 
@@ -106,7 +92,7 @@ Google によるこのような変更により、Intune ユーザーは次のよ
 - Intune では、Android 10 以降を実行している、デバイス管理者が管理する Android デバイスのフル サポートは、2020 年度第 2 四半期までのみ提供できます。 この時以降、Android 10 以降を実行している、デバイス管理者が管理するデバイスは、まったく管理できなくなります。 具体的には、影響を受けるデバイスが新しいパスワード要件を受け取ることはありません。
     - Samsung Knox デバイスは、この時間枠内に影響を受けることはありません。これは、Intune と Knox プラットフォームとの統合によって延長サポートが提供されるためです。 これにより、デバイス管理者の管理の移行を計画する時間を増やすことができます。    
 - デバイス管理者が管理する Android デバイスで、Android 10 より前の Android バージョンのままであるものは影響を受けません。デバイス管理者で引き続き完全に管理できます。    
-- Google では、Android 10 以降を稼働しているすべてのデバイスに対して、ポータル サイトのようなデバイス管理者の管理エージェントを使ってデバイス識別子の情報にアクセスする機能を制限しています。 この制限により、Android 10 以降にデバイスを更新した後、次の Intune 機能が影響を受けます。  
+- Google では、Android 10 以降を稼働しているすべてのデバイスに対して、ポータル サイトのようなデバイス管理者の管理エージェントを使ってデバイス識別子の情報にアクセスする機能を制限しています。 この制限により、Android 10 以降にデバイスを更新すると、次の Intune 機能が影響を受けます。  
     - VPN のネットワーク アクセス制御が機能しなくなる。   
     - IMEI またはシリアル番号を使用した企業所有のデバイスの識別で、デバイスが企業所有として自動的にマークされなくなる。  
     - Intune で IT 管理者に IMEI とシリアル番号が表示されなくなる。 
@@ -158,6 +144,6 @@ PC 管理機能は Windows 10 オペレーティング システムに直接組�
 - FastTrack を通じて [Desktop App Assure](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1) サービスを確認する (Microsoft のアプリケーション互換性に関する約束が支援されます)。
 - 既存のレガシ Intune ソフトウェア クライアントのマネージド デバイスを Microsoft 推奨のソリューションに移行し、MDM 管理を使用して Windows 10 を管理する。 すべての新しい Windows 10 PC を、Azure portal で Intune の MDM 管理を使って登録する。
 
-さらなる情報については、[こちらのブログ投稿](https://aka.ms/Windows7_Intune)を参照してください。
+詳細については、[こちらのブログ投稿](https://aka.ms/Windows7_Intune)を参照してください。
 
 
