@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8452f840fb269505656bf6594d3e5c196b4d7a06
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 9fa02a61148a03a64b88b38dcdc1799b30bc45db
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885779"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886732"
 ---
 # <a name="create-a-design"></a>設計の作成
 
@@ -308,7 +308,10 @@ Wi-Fi プロファイルは、モバイル デバイスをワイヤレス ネッ
 
 Wi-Fi プロファイルの設計の例を次に示します。
 
-| **種類** | **プロファイル名** | **デバイス プラットフォーム** | **ユース ケース** | | Wi-Fi | アジア Wi-Fi プロファイル | Android | 法人、BYOD アジア リージョン| | Wi-Fi | 北米 Wi-Fi プロファイル | Android、iOS、Windows 10 Mobile | 法人、BYOD 北米リージョン |
+| **種類** | **プロファイル名** | **デバイスのプラットフォーム** | **ユース ケース** |
+|:---:|:---:|:---:|:---:|
+| Wi-Fi | アジア Wi-Fi プロファイル | Android | 企業、BYOD アジア地域|
+| Wi-Fi | 北米 Wi-Fi プロファイル | Android、iOS、Windows 10 Mobile | 企業、BYOD 北米地域 |
 
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、Wi-Fi プロファイルのニーズを確認することができます。
 

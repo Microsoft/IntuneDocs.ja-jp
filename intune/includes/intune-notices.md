@@ -7,30 +7,14 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 9aa82268fb02f5124e48eb303f19cf32be02c284
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 6064fb657454106a8a7213e0bbbcecdcef765857
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912636"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966362"
 ---
 以下の通知では、今後の Intune の変更と機能に備えるために役立つ重要な情報が提供されます。
-
-### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>更新された機能: Intune に追加される新しい RBAC ロール<!--4253397-->
-Intune の 1 月のサービス更新プログラムでは、Intune での新しいセキュリティ ロールをリリースする予定です。 このロールは、Intune では "Endpoint Security Manager" (エンドポイント セキュリティ マネージャー) と表示され、Azure AD の "セキュリティ管理者" ロールを拡張したものです。
- 
-#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
-現在、セキュリティ担当者に対して Azure AD で利用できるロールは 3 つあります。
-- Azure AD のセキュリティ閲覧者ロール。Intune への読み取り専用アクセスがあります。
-- Azure AD のセキュリティ オペレーター ロール。Intune への読み取り専用アクセスがあります。
-- Azure AD のセキュリティ管理者。 Intune の 1 月の更新プログラムで Intune に対する読み取り専用アクセス許可が配布されると、エンドポイント セキュリティ マネージャー ロールの新しいアクセス許可は次のようになります。
-    - デバイス コンプライアンス ポリシーの読み取り、作成、更新、削除、割り当て
-    - マネージド デバイスの読み取り、削除、更新
-    - セキュリティ ベースラインの読み取り、作成、更新、削除、割り当て
-    - セキュリティ タスクの読み取りと更新
- 
-### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
-今すぐ Intune の RBAC ロールを確認してください。 現在、ロールとしてグローバル管理者のみを使用している場合、変更は必要ありません。 ロールを使用し、エンドポイント セキュリティ マネージャーで提供される粒度が必要な場合は、使用可能であればそのロールを割り当てます。 Intune の最新のリリース情報については、Intune の[新機能](../fundamentals/whats-new.md)に関するページをご覧ください。 
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>'Adobe Acrobat Reader for Intune' モバイル アプリのサポート ステートメントが更新されました<!--5746776-->
 8 月の終わりに、MC188653 で、Adobe Acrobat Reader for Intune モバイル アプリが 2019 年 12 月 1 日に有効期限終了になり、Adobe が同社のメインの Acrobat Reader アプリ内で Intune のアプリ保護ポリシーのサポートを計画していることをお知らせしました。 その後、お客様から、IT 管理者が引き続きターゲットを指定して、エンド ユーザーが Adobe Acrobat Reader for Intune の使用を開始できるようにするために、もっと時間を提供してもらう必要があるというフィードバックを受け取りました。 エンド ユーザーのデバイスで Adobe Acrobat Reader for Intune の使用率が高く、エンタープライズ シナリオでのその重要性を考慮すると、あらゆるエクスペリエンスが、組織のアプリ保護のニーズを満たすようにする必要があります。 
