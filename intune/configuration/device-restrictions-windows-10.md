@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/28/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81da5ca8e7eaa76f9a6705cc9e3c816234c461db
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
-ms.translationtype: HT
+ms.openlocfilehash: 0dd1ecb5666b8bbb8b26a001be56372d86839f31
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517560"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812330"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように Windows 10 (以降) のデバイスを設定する
 
@@ -39,8 +39,11 @@ ms.locfileid: "76517560"
 
 これらの設定では、[ApplicationManagement ポリシー CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) が使用されます。それには、サポートされる Windows のエディションも示されています。
 
-- **[アプリ ストア** (モバイルのみ)]: **[未構成]** (既定値) に設定すると、エンド ユーザーがモバイル デバイスでアプリ ストアにアクセスすることが許可されます。 **[ブロック]** にすると、アプリ ストアは使用できなくなります。
-- **[ストア アプリの自動更新]** : **[未構成]** (既定値) に設定すると、Microsoft Store からインストールされたアプリの自動更新が許可されます。 **[ブロック]** にすると、更新プログラムは自動的にインストールされなくなります。
+- **[App store** (モバイルのみ)]: **[ブロック]** を選択すると、エンド ユーザーはモバイル デバイスでアプリ ストアにアクセスできなくなります。 **[未構成]** (既定) に設定すると、Intune では、この設定は変更または更新されません。 既定では、OS によりエンド ユーザーがアプリ ストアにアクセスできるようにされている場合があります。
+- **[ストア アプリの自動更新]** : **[ブロック]** を選択すると、更新プログラムが Microsoft Store から自動的にインストールされなくなります。 **[未構成]** (既定) に設定すると、Intune では、この設定は変更または更新されません。 既定では、Microsoft Store からインストールされたアプリの自動更新が OS で許可されている可能性があります。
+
+  [ApplicationManagement/AllowAppStoreAutoUpdate CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
+
 - **[信頼できるアプリのインストール]** :Microsoft Store 以外のアプリをインストールできる場合に選択します。これはサイドローディングとも呼ばれます。 サイドローディングでは、Microsoft Store によって認定されていないアプリのインストール後に、アプリが実行されるかテストされます。 たとえば、社内でのみ使用されるアプリです。 次のようなオプションがあります。
   - **[未構成]** (既定値):Intune では、この設定は変更または更新されません。
   - **[ブロック]** :サイドローディングを禁止します。 Microsoft Store 以外のアプリをインストールすることはできません。
@@ -51,16 +54,36 @@ ms.locfileid: "76517560"
   - **[許可]** :開発者モードとアプリのサイドローディングを許可します。
 
   この機能の詳細については、「[Enable your device for development (デバイスを開発用に有効にする)](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)」を参照してください。
+  
+  [ApplicationManagement/AllowAllTrustedApps CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps)
 
-- **[共有ユーザー アプリ データ]** :アプリケーション データを、同じデバイスの異なるユーザー間で共有する場合、およびそのアプリの他のインスタンスと共有する場合は、 **[許可]** を選択します。 **[未構成]** (既定値) にすると、他のユーザーと同じアプリの他のインスタンスとデータを共有できなくなります。
-- **[プライベート ストアのみを使用する]** : **[許可]** に設定すると、アプリはプライベート ストアからのみダウンロードでき、小売りカタログを含むパブリック ストアからはダウンロードできません。 **[未構成]** (既定値) にすると、プライベート ストアとパブリック ストアからアプリをダウンロードできます。
-- **[ストアから配信されたアプリの起動]** : **[ブロック]** に設定すると、デバイスにプレインストールされたアプリ、または Microsoft Store からダウンロードされたアプリがすべて無効になります。 **[未構成]** (既定値) にすると、これらのアプリを開くことができます。
-- **[システム ボリューム上でアプリ データをインストールします]** : **[ブロック]** に設定すると、アプリでデータをデバイスのシステム ボリュームに格納できなくなります。 **[未構成]** (既定値) にすると、アプリによるデバイスのシステム ボリュームへのデータの格納が許可されます。
-- **[システム ドライブ上でアプリをインストールします]** : **[ブロック]** に設定すると、アプリはデバイスのシステム ドライブにインストールされなくなります。 **[未構成]** (既定値) にすると、デバイスのシステム ドライブへのアプリのインストールが許可されます。
-- **[ゲーム録画** (デスクトップのみ)]: **[ブロック]** に設定すると、Windows ゲームの録画とブロードキャストが無効になります。 **[未構成]** (既定値) にすると、ゲームの録画とブロードキャストが許可されます。
+- **[共有ユーザー アプリ データ]** :アプリケーション データを、同じデバイスの異なるユーザー間で共有する場合、およびそのアプリの他のインスタンスと共有する場合は、 **[許可]** を選択します。 **[未構成]** (既定) に設定すると、Intune では、この設定は変更または更新されません。 既定では、OS は同じアプリの他のユーザーや他のインスタンスとデータを共有できない場合があります。
+
+  [ApplicationManagement/AllowSharedUserAppData CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowshareduserappdata)
+
+- **[プライベート ストアのみを使用する]** : **[許可]** に設定すると、アプリはプライベート ストアからのみダウンロードでき、小売りカタログを含むパブリック ストアからはダウンロードできません。 **[未構成]** (既定) に設定すると、Intune では、この設定は変更または更新されません。 既定では、アプリをプライベート ストアおよびパブリック ストアからダウンロードすることが OS で許可されている可能性があります。
+
+  [ApplicationManagement/RequirePrivateStoreOnly CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+
+- **[ストアから配信されたアプリの起動]** : **[ブロック]** に設定すると、デバイスにプレインストールされたアプリ、または Microsoft Store からダウンロードされたアプリがすべて無効になります。 **[未構成]** (既定) に設定すると、Intune では、この設定は変更または更新されません。 既定では、これらのアプリを開くことが OS によって許可されている可能性があります。
+
+  [ApplicationManagement/DisableStoreOriginatedApps CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-disablestoreoriginatedapps)
+
+- **[システム ボリューム上でアプリ データをインストールします]** : **[ブロック]** に設定すると、アプリでデータをデバイスのシステム ボリュームに格納できなくなります。 **[未構成]** (既定) に設定すると、Intune では、この設定は変更または更新されません。 既定では、アプリによるシステム ディスク ボリュームへのデータの格納が OS によって許可されている可能性があります。
+
+  [ApplicationManagement/RestrictAppDataToSystemVolume CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictappdatatosystemvolume)
+
+- **[システム ドライブ上でアプリをインストールします]** : **[ブロック]** に設定すると、アプリはデバイスのシステム ドライブにインストールされなくなります。 **[未構成]** (既定) に設定すると、Intune では、この設定は変更または更新されません。 既定では、アプリによるシステム ドライブへのインストールが OS によって許可されている可能性があります。
+
+  [ApplicationManagement/RestrictAppToSystemVolume CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictapptosystemvolume)
+
+- **[ゲーム録画** (デスクトップのみ)]: **[ブロック]** に設定すると、Windows ゲームの録画とブロードキャストが無効になります。 **[未構成]** (既定) に設定すると、Intune では、この設定は変更または更新されません。 既定では、ゲームの記録とブロードキャストが OS によって許可されている可能性があります。
+
+  [ApplicationManagement/AllowGameDVR CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowgamedvr)
+
 - **[ストアのアプリのみ]** :この設定により、ユーザーが Microsoft Store 以外の場所からアプリをインストールするときのユーザー エクスペリエンスが決まります。 次のようなオプションがあります。
 
-  - **[未構成]** (既定値):エンド ユーザーは、他のポリシー設定で定義されているアプリを含め、Microsoft Store 以外の場所からアプリをインストールできます。  
+  - **[未構成]** (既定値):Intune では、この設定は変更または更新されません。 既定では、他のポリシー設定で定義されているアプリを含め、エンド ユーザーが Microsoft Store 以外の場所からアプリをインストールすることが OS によって許可されている可能性があります。  
   - **[どこでも]** :アプリの推奨設定がオフになり、ユーザーは任意の場所からアプリをインストールできます。  
   - **[Microsoft Store のみ]** :エンド ユーザーに対して、Microsoft Store からのみアプリをインストールするように強制します。
   - **[推奨事項]** :ユーザーが Microsoft Store で利用可能な Web からアプリをインストールすると、ストアからダウンロードすることを推奨するメッセージが表示されます。  
@@ -68,11 +91,11 @@ ms.locfileid: "76517560"
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
-- **[インストールに対するユーザー コントロール]** : **[未構成]** (既定値) に設定した場合、Windows インストーラーによって、ユーザーは、通常システム管理者用に予約されているインストール オプション (ファイルをインストールするディレクトリの入力など) を変更できなくなります。 **[ブロック]** にすると、これらのインストール オプションのユーザーによる変更が許可され、いくつかの Windows インストーラーのセキュリティ機能がバイパスされます。
+- **[インストールに対するユーザー コントロール]** : **[ブロック]** を選択すると、通常はシステム管理者用に予約されているインストール オプションをユーザーが変更できなくなります。たとえば、ファイルをインストールするディレクトリの入力などです。 **[未構成]** (既定) に設定すると、Intune では、この設定は変更または更新されません。 既定では、Windows インストーラーによって、ユーザーがこれらのインストール オプションを変更できなくなり、一部の Windows インストーラー セキュリティ機能がバイパスされる場合があります。
 
   [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
 
-- **[昇格された特権を持つアプリをインストールします]** : **[未構成]** (既定値) に設定した場合、システム管理者が展開または提供していないプログラムのインストール時に、システムによってユーザーの現在のアクセス許可が適用されます。 **[ブロック]** にすると、システムにプログラムをインストールするときに引き上げられたアクセス許可を使用することが Windows インストーラーに指示されます。 これらの特権はすべてのプログラムに拡張されます。
+- **[昇格された特権を持つアプリをインストールします]** : **[ブロック]** を選択すると、システムにプログラムをインストールするときに、昇格したアクセス許可を使用するよう Windows インストーラーに指示できます。 これらの特権はすべてのプログラムに拡張されます。 **[未構成]** (既定) に設定すると、Intune では、この設定は変更または更新されません。 既定では、システム管理者が展開または提供していないプログラムをインストールするときに、システムが現在のユーザーのアクセス許可を適用する場合があります。 
 
   [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges)
 
@@ -232,7 +255,7 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 
 - **[ロック画面の画像の URL (デスクトップのみ)]** : Windows のロック画面の壁紙として使用する、JPG、JPEG、または PNG 形式の画像への URL を入力します。 たとえば、「`https://contoso.com/image.png`」と入力します。 この設定によって画像が固定され、後で変更することはできません。
 
-  [Personalization/LockScreenImageUrl CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/personalization-csp)
+  [Personalization/LockScreenImageUrl CSP](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp)
 
 - **[ユーザーが構成可能なスクリーン タイムアウト (モバイルのみ)]** : **[許可]** を設定すると、ユーザーはスクリーン タイムアウトを構成できます。 **[未構成]** (既定値) にすると、ユーザーにこのオプションは提供されません。
 
@@ -851,7 +874,7 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 
 - **[サンプル送信の同意]** :現在、この設定は影響を与えません。 この設定を使用しないでください。 今後のリリースで削除される可能性があります。
 
-- **[アクセス時保護]** : **[ブロック]** の場合、アクセスまたはダウンロードされたファイルのスキャンを禁止します。 ユーザーはこれをオンにすることはできません。
+- **[On Access Protection]\(アクセス保護\)** : **[ブロック]** を選択すると、アクセスまたはダウンロードされたファイルがスキャンされなくなります。 ユーザーはこれをオンにすることはできません。
 
   **[未構成]** (既定) に設定すると、Intune では、この設定は変更または更新されません。 設定をブロックした後、 **[未構成]** に戻した場合、Intune では、以前に OS で構成された状態の設定が保持されます。 既定では OS により、この機能が有効になり、ユーザーはこれを変更できます。
 

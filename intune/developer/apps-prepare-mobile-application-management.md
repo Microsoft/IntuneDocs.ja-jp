@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8b5b323c4bb80cd15bf9c6c8f0f7a8be577d6bf
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 842af9c8fffcb3755c81260739f4949768e75bac
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653939"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912677"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>アプリ保護ポリシーを利用するために基幹業務アプリで準備を行う
 
@@ -41,7 +41,6 @@ Intune に登録されていないデバイスのアプリ保護ポリシー用�
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>アプリ ラッピング ツールを使用する理由
 
 * アプリに組み込みのデータ保護機能がない。
-* アプリが単純である。
 * アプリが内部的に展開される。
 * アプリのソース コードにアクセスできない。
 * 自分で開発したアプリではない。
@@ -63,7 +62,6 @@ SDK の詳細については、「[概要](app-sdk.md)」を参照してくだ�
 ### <a name="reasons-to-use-the-sdk"></a>SDK を使用する理由
 
 * アプリに組み込みのデータ保護機能がない。
-* アプリが複雑で、多くのエクスペリエンスを含んでいる。
 * アプリが Google Play や Apple の App Store などのパブリック アプリ ストアに展開される。
 * 自分が開発したアプリであり、SDK を使用するための技術的な背景を備えている。
 * アプリに他の SDK 統合がある。
@@ -76,13 +74,13 @@ SDK の詳細については、「[概要](app-sdk.md)」を参照してくだ�
 |**Android**|はい – [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md) を使用します。|いいえ|
 |**Android**| はい – [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md) を使用します。|いいえ|
 
-### <a name="not-using-an-app-development-platform-listed-above"></a>上に一覧表示されているアプリ開発プラットフォームを使用していない場合は、
+## <a name="not-using-an-app-development-platform-listed-above"></a>上記のアプリ開発プラットフォームを使用していない場合
 
 Intune SDK の開発チームは、ネイティブの Android、iOS (Obj-C、Swift)、Xamarin、Xamarin.Forms、および Cordova プラットフォームを使ってビルドされたアプリに対するサポートを、積極的にテストして管理しています。 一部のお客様は、Intune SDK とその他のプラットフォーム (React Native や NativeScript など) の統合に成功されていますが、Microsoft では、サポートされているプラットフォーム以外を使うアプリ開発者に向けた明示的なガイダンスやプラグインは提供されません。 
 
 ## <a name="feature-comparison"></a>機能の比較
 
-アプリ SDK とアプリ ラッピング ツールに対して利用できる設定を、次の表に示します。
+次の表には、アプリで App SDK または App Wrapping Tool を使用する場合に有効になる設定が一覧表示されています。 一部の機能では、アプリ開発者が Intune SDK との基本的な統合の外側でいくつかのロジックを適用する必要があります。その結果、アプリで App Wrapping Tool を使用する場合は、これらは有効になりません。 
 
 |機能|アプリ SDK|アプリ ラッピング ツール|
 |-----------|---------------------|-----------|
@@ -97,7 +95,7 @@ Intune SDK の開発チームは、ネイティブの Android、iOS (Obj-C、Swi
 |PIN の代わりに指紋を要求する|○|○|
 |PIN の代わりに顔認識を許可する (iOS のみ)|○|○|
 |[アクセスには会社の資格情報が必要]|○|○|
-|PIN の有効期限の設定|○|○|
+|PIN の有効期限を設定する|○|○|
 |[脱獄またはルート化されたデバイスで管理対象アプリが実行されないようにブロックする]|○|○|
 |[アプリ データの暗号化]|○|○|
 |[指定した時間 (分) 後にアクセス要件を再確認する]|○|○|
@@ -107,7 +105,7 @@ Intune SDK の開発チームは、ネイティブの Android、iOS (Obj-C、Swi
 |アプリ データのフル ワイプ|○|○|
 |複数 ID のシナリオにおける職場および学校のデータの選択的ワイプ <br><br>**注:** iOS では、管理プロファイルを削除するとアプリも削除されます。|○||
 |[[名前を付けて保存] を禁止する]|○||
-|対象のアプリケーション構成 (または "MAM チャネル" を介したアプリ構成)|○||
+|対象のアプリケーション構成 (または "MAM チャネル" を介したアプリ構成)|○|○|
 |[マルチ ID アプリのサポート]|○||
 |カスタマイズ可能なスタイル |○|||
 |Citrix mVPN でのオンデマンドのアプリケーション VPN 接続|○|○| 
@@ -117,8 +115,13 @@ Intune SDK の開発チームは、ネイティブの Android、iOS (Obj-C、Swi
 |最低限のオペレーティング システムを必要とする|○|○|
 |Android の最小セキュリティ パッチ バージョン要件 (Android のみ)|○|○|
 |iOS 用 Intune SDK の最小要件 (iOS のみ)|○|○|
-|Saf Etynet デバイスの構成証明 (Android のみ)|○|○|
+|SafetyNet デバイス構成証明 (Android のみ)|○|○|
 |アプリの脅威のスキャン (Android のみ)|○|○|
+|Mobile Threat Defense ベンダー デバイスの最大リスク レベルを必要とする|○||
+|組織アカウント向けのアプリ通知の内容を構成する|○|○|
+|承認済みキーボードの使用を要求する (Android のみ)|○|○|
+|アプリの保護ポリシーが必要 (条件付きアクセス)|○||
+|承認されたクライアント アプリが必要です (条件付きアクセス)|○||
 
 ## <a name="next-steps"></a>次のステップ
 
