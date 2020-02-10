@@ -15,14 +15,14 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56b8ab9507acda8fc1145bd65c4438da838dd806
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.openlocfilehash: f5599e7ea8c9a26c4624f98133db566fb07c89af
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74558170"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971778"
 ---
-# <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>チュートリアル: Apple Business Manager (ABM) にある Apple の Corporate Device Enrollment 機能を使用して、iOS デバイスを Intune に登録する
+# <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>チュートリアル:Apple Business Manager (ABM) にある Apple の Corporate Device Enrollment 機能を使用して、iOS デバイスを Intune に登録する
 Apple Business Manager の Device Enrollment 機能では、デバイスを簡単に登録できます。 Intune では Apple の以前の Device Enrollment Program (DEP) ポータルもサポートしていますが、Apple Business Manager でやり直すことをお勧めします。 デバイスは、Microsoft Intune と Apple Corporate Device Enrollment で、ユーザーが最初にデバイスをオンにしたときに、安全に自動的に登録されます。 そのため、各デバイスを個別に設定することなく、デバイスを多くのユーザーに配送できます。 
 
 このチュートリアルでは、次の方法について説明します。
@@ -34,7 +34,7 @@ Apple Business Manager の Device Enrollment 機能では、デバイスを簡�
 
 Intune サブスクリプションがない場合は、[無料試用版アカウントにサインアップ](../fundamentals/free-trial-sign-up.md)します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 - [Apple Business Manager](https://business.apple.com) または [Apple の Device Enrollment Program](http://deploy.apple.com) で購入したデバイス
 - [[モバイル デバイス管理機関]](../fundamentals/mdm-authority-set.md) を設定する
 - [[Apple MDM プッシュ通知証明書]](apple-mdm-push-certificate-get.md) を取得する
@@ -67,7 +67,7 @@ Device Enrollment トークンの作成には、ABM または DEP ポータル�
 
 8. **[アクションの選択]** で **[Assign to Server]\(サーバーに割り当てる\)** を選択し、Microsoft Intune に指定した **ServerName** を選択して、&lt;[OK]&gt; を選択します。 指定したデバイスが管理用に Intune サーバーに割り当てられて、 **[Assignment Complete\(割り当て完了\)]** と表示されます。
 
-   Apple ポータルで、 **[Deployment Programs\(配備プログラム\)]** &gt; **[Device Enrollment Program\(Device Enrollment Program\)]** &gt; **[View Assignment History\(割り当て履歴の表示\)]** の順に移動して、デバイスとその MDM サーバーの割り当てのリストを表示します。
+   Apple ポータルで、 **[Deployment Programs]\(配備プログラム\)** &gt; **[Device Enrollment Program]\(Device Enrollment Program\)** &gt; **[View Assignment History]\(割り当て履歴の表示\)** の順に移動して、デバイスとその MDM サーバーの割り当てのリストを表示します。
 
 9. 後で参照するために、Azure portal の Intune で、このトークンを作成するために使用した Apple ID を指定します。
 
@@ -128,11 +128,11 @@ ABM、ASM、または DEP ポータルを使用して登録プログラムのト
 2. **[デバイス]** を選択し、リスト内でデバイスを選択し、 **[プロファイルの割り当て]** を選択します。
 3. **[プロファイルの割り当て]** の下でデバイス用のプロファイルを選択し、 **[割り当て]** を選択します。
 
-## <a name="distribute-devices-to-users"></a>デバイスをユーザーに配布する
+## <a name="distribute-devices-to-users"></a>デバイスのユーザーへの配布
 
 Apple と Intune の間の同期と管理を設定し、DEP デバイスを登録できるようにプロファイルを割り当てました。 ユーザーにデバイスを配布できるようになりました。 ユーザー アフィニティがあるデバイスでは、各ユーザーに Intune ライセンスを割り当てる必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 iOS デバイスの登録に使用できる他のオプションについての詳細を確認できます。
 

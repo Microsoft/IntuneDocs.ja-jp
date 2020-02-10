@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c340ffaacad303c4ff395c84d92e3907e42a521
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: e0f36e648c404858332245c5b1b457c9f6824614
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036638"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971878"
 ---
 # <a name="app-protection-policies-overview"></a>アプリ保護ポリシーの概要
 
@@ -82,7 +82,7 @@ Intune では、アプリを実行するデバイス上で必要なアプリを�
 Intune アプリの保護ポリシーのプラットフォーム サポートは、Android および iOS デバイス向けの Office モバイル アプリケーションのプラットフォーム サポートと連携しています。 詳細については、[Office システム要件](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)の「**モバイル アプリ**」セクションを参照してください。
 
 > [!IMPORTANT]
-> Android デバイスでアプリ保護ポリシーを受信するには、デバイスに Intune ポータル サイトが必要です。 詳細については、[Intune ポータル サイト アクセス アプリの要件](../fundamentals/end-user-mam-apps-android.md#access-apps)に関するページを参照してください。
+> Android でアプリ保護ポリシーを受信するには、デバイスに Intune ポータル サイトが必要です。 詳細については、[Intune ポータル サイト アクセス アプリの要件](../fundamentals/end-user-mam-apps-android.md#access-apps)に関するページを参照してください。
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>アプリ保護ポリシーでアプリのデータを保護するしくみ
 

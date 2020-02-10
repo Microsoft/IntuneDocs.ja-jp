@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/09/2020
+ms.date: 01/16/2020
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35dd017eaa2dd3cd6c17dc611aaa9d457b18aca2
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: e1baf0b4273a9074ac7172c08240a8e3c3a9d7fa
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839257"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76541117"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>クイック スタート:Microsoft Intune を無料で試す
 
 Microsoft Intune でデバイスやアプリケーションを管理すると、従業員の会社データを保護できます。 このクイック スタートでは、Intune をテスト環境で試用する無料のサブスクリプションを作成します。
 
-Intune には、モバイル デバイス管理 (MDM) 機能とモバイル アプリケーション管理 (MAM) 機能があります。これらの機能は、Microsoft Azure portal を使用して管理されているセキュリティで保護されたクラウドベースのサービスで利用できます。 Intune を使用すると、企業のコンプライアンス ポリシーや要件を満たしながら、従業員の会社リソース (データ、デバイス、アプリ) の構成、アクセス、更新を適切に行うことができるようになります。
+Intune には、モバイル デバイス管理 (MDM) 機能とモバイル アプリケーション管理 (MAM) 機能があります。これらの機能は、Microsoft Endpoint Manager admin center を使用して管理されているセキュリティで保護されたクラウドベースのサービスで利用できます。 Intune を使用すると、企業のコンプライアンス ポリシーや要件を満たしながら、従業員の会社リソース (データ、デバイス、アプリ) の構成、アクセス、更新を適切に行うことができるようになります。
 
 ## <a name="prerequisites"></a>[前提条件]
 Microsoft Intune を設定する前に、次の要件を確認してください。
@@ -60,27 +60,31 @@ Intune は 30 日間無料で試用できます。 既に職場または学校�
 
     ![アカウント情報の画像](./media/free-trial-sign-up/intune-end-of-sign-up-process.png) 
 
-## <a name="sign-in-to-the-azure-portal"></a>Azure portal にサインインする
+## <a name="sign-in-to-intune-in-the-microsoft-endpoint-manager"></a>Microsoft Endpoint Manager で Intune にサインインする
 
-1. 新しいブラウザー ウィンドウを開き、アドレスバーに「 **https://portal.azure.com** 」と入力します。 
-2. 前述の手順で付与された資格情報を使用してサインインします。
+まだポータルにサインインしていない場合は、次の手順を実行します。
 
-    ![Azure portal のサインイン ページの画像](./media/free-trial-sign-up/azure-portal-signin.png)
+1. 新しいブラウザー ウィンドウを開き、アドレスバーに「 **https://devicemanagement.microsoft.com** 」と入力します。 
+2. 前の手順で指定したユーザー ID を使用して、サインインします ( *yourID@yourdomain* .onmicrosoft.com)。
 
-3. Azure portal で Microsoft Intune を表示するには、ページの左側にあるサイドバーから **[すべてのサービス]** を選択します。
-4. フィルター ボックスで **Microsoft Intune** を検索して選択します。
-5. **星**マークを選択し、お気に入りサービス一覧の一番下に Intune を追加し、Intune ダッシュボードを開きます。
+    ![ポータルのサインイン ページの画像](./media/free-trial-sign-up/azure-portal-signin.png)
 
 試用版にサインアップすると、アカウント情報の記載された電子メール メッセージが、サインアップ プロセス中に指定した電子メール アドレスに送信されます。 このメールで、試用版がアクティブになったことが確認されます。
 
 > [!TIP]
-> Azure portal を使用するときは、プライベート モードではなく標準モードでブラウザーを使用した方が結果がよくなる場合があります。
+> Microsoft Endpoint Manager を使用する場合、プライベート モードではなく、通常モードでブラウザーを使用する方が良い結果が得られる場合があります。
 
-## <a name="set-the-mdm-authority-to-intune"></a>MDM 機関を Intune に設定する
+## <a name="confirm-the-mdm-authority-in-intune"></a>Intune で MDM 機関を確認する
 
-Azure portal にサインインして、Intune を選択した後、MDM 機関をまだ設定していないことを示すオレンジのバナーが表示されることがあります。 モバイル デバイス管理 (MDM) 機関の設定によって、デバイスの管理方法が決まります。 MDM 機関を設定してからでないと、ユーザーは管理対象のデバイスを登録できません。
+既定では、無料試用版を作成するときに MDM 機関が設定されます。 MDM 機関が設定されていることを確認するには、次の手順を実行します。
 
-MDM 機関を Intune に設定するには、次の手順を実行します。
+1. まだサインインしていない場合は、Microsoft Endpoint Manager にサインインします。
+2. **[テナント管理]** をクリックします。
+3. テナントの詳細を表示します。 **[MDM 機関]** は **[Microsoft Intune]** に設定する必要があります。
+
+Microsoft Endpoint Manager にサインインした後、まだ MDM 機関が設定されていないことを示すオレンジ色のバナーが表示される場合は、この時点で有効にすることができます。 モバイル デバイス管理 (MDM) 機関の設定によって、デバイスの管理方法が決まります。 MDM 機関を設定してからでないと、ユーザーは管理対象のデバイスを登録できません。
+
+### <a name="to-set-the-mdm-authority-to-intune-follow-these-steps"></a>MDM 機関を Intune に設定するには、次の手順を実行します。
 
 1. 新しいブラウザー ウィンドウを開き、アドレスバーに「 **https://portal.azure.com** 」と入力します。 
 2. **[すべてのサービス]**  >  **[Microsoft Intune]** を選択します。
@@ -121,9 +125,9 @@ MDM 機関について詳しくは、「[モバイル デバイス管理機関�
 
 ## <a name="admin-experiences"></a>管理者向けの操作性
 
-次の 2 つのポータルを使用できます。
-- Azure ([portal.azure.com](https://portal.azure.com)) の Intune ダッシュボードでは、[Intune の各機能](what-is-intune.md)を確認できます。 通常、Intune ダッシュボードで作業します。
-- Microsoft 365 管理センター ([admin.microsoft.com](https://admin.microsoft.com)) では、ユーザーの追加と管理を行えます (このために Azure Active Directory を使用していない場合)。 また、課金やサポートなど、アカウントのその他の要素を管理することもできます。
+最も頻繁に使用するポータルは 2 つあります。
+- Microsoft Endpoint Manager admin center ([https://devicemanagement.microsoft.com/](https://devicemanagement.microsoft.com/)) では、[Intune の機能](what-is-intune.md)を調べることができます。 管理者はここで Intune を操作します。
+- Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) では、ユーザーの追加と管理を行えます (このために Azure Active Directory を使用していない場合)。 また、課金やサポートなど、アカウントのその他の要素を管理することもできます。
 
 ## <a name="next-steps"></a>次のステップ
 

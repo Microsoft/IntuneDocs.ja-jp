@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7664123e31a959849ae967d7e99847e1395609c
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 6a92863dc504d295d77029082b57090e55d7f743
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692208"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971845"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM とアプリの保護に関してよく寄せられる質問
 
@@ -197,7 +197,7 @@ Intune は未登録のデバイスに対する既存のルート検出チェッ�
 
 技術的な詳細については、「[Google's documentation on the SafetyNet Attestation](https://developer.android.com/training/safetynet/attestation)」 (SafetyNet 構成証明に関する Google の文書) を参照してください。
 
-**Android デバイス向け Intune App Protection Policy を作成するとき、条件付き起動セクションに似たようなチェックが 2 つあります。"SafetyNet デバイスの構成証明" 設定を要求すべきですか。それとも "脱獄またはルート化されたデバイス" 設定を要求すべきですか。** <br><br>
+**Android デバイス向け Intune App Protection ポリシーを作成するとき、条件付き起動セクションに似たようなチェックが 2 つあります。"SafetyNet デバイスの構成証明" 設定を要求すべきですか。それとも "脱獄またはルート化されたデバイス" 設定を要求すべきですか。** <br><br>
 Google Play Protect の SafetyNet API チェックでは、エンド ユーザーがオンラインになっていることが要求されます。少なくとも構成証明結果を決定するための "ラウンドトリップ" の実行中はオンラインになっている必要があります。 エンド ユーザーがオフラインになっている場合でも、IT 管理者は "脱獄またはルート化されたデバイス" 設定から結果を適用できます。 しかしながら、エンド ユーザーがオフラインになっている時間が長すぎると、"オフラインの猶予期間" 値が作動し、タイマー値に到達すると、ネットワーク アクセスが利用できるようになるまで、職場または学校のデータへのアクセスがすべて遮断されます。 両方の設定をオンにすると、階層的な手法でエンド ユーザー デバイスの正常性が維持されます。これは、エンド ユーザーがモバイルで職場または学校のデータにアクセスするときに重要です。 
 
 **Google Play Protect API を活用するアプリ保護ポリシー設定を利用するには、Google Play 開発者サービスが機能する必要があります。エンド ユーザーがいる場所で Google Play 開発者サービスが許可されない場合はどうなりますか。**<br><br>

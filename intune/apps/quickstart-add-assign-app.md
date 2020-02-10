@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d09857c4e5b63947a6e3b3140f673f0887f7f920
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 40337b3c45885dacf486173814044a27b7f3f6cc
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563414"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755070"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>クイック スタート:クライアント アプリの追加および割り当て
 
@@ -31,7 +31,7 @@ ms.locfileid: "74563414"
 
 Intune サブスクリプションがない場合は、[無料試用版アカウントにサインアップ](../fundamentals/free-trial-sign-up.md)します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
 - このクイック スタートを完了するには、[ユーザーの作成](../fundamentals/quickstart-create-user.md)、[グループの作成](../fundamentals/quickstart-create-group.md)、[デバイスの登録](../quickstart-setup-auto-enrollment.md)を行う必要があります。
 
@@ -45,20 +45,18 @@ Intune でそのアプリの側面を管理できるように、アプリを追�
 
 Intune にアプリを追加するには、次の手順に従います。
 1. [Intune](https://aka.ms/intuneportal) で、 **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** を選択します。 
-2. **[アプリの種類]** ドロップダウン ボックスの **[Office 365 スイート]** セクションで **[Windows 10]** を選択します。
-3. **[アプリ スイートの構成]** を選択し、Intune ユーザーに割り当てる Office アプリを選択します。
-4. **[OK]** をクリックし、既定で選択されているアプリを受け入れます。
-5. **[アプリ スイートの情報]** を選択します。
-6. **[スイート名]** として「**Microsoft Office 365 アプリ スイート**」と入力します。
-7. **[スイートの説明]** として「**Microsoft Office 365 アプリ スイート**」と入力します。
-8. **[Display this as a featured app in the Company Portal]** \(このアプリをポータル サイトでおすすめアプリとして表示する\) の横の **[はい]** をクリックします。
-9. **[OK]** をクリックします。
-
-    ![アプリ情報の追加のスクリーン ショット](./media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
-
-10. **[アプリ スイートの設定]** を選択します。
-11. **[更新チャネル]** ドロップダウン ボックスで **[月単位]** を選択します。
-12. **[OK]**  >  **[追加]** をクリックします。
+2. **[アプリケーションの種類の選択]** ペインの **[Office 365 スイート]** セクションで **[Windows 10]** を選択します。
+3. **[選択]** をクリックします。 **[アプリの追加]** 手順が表示されます。
+4. **[アプリ スイートの情報]** ページで、既定の詳細を確認します。
+5. **[次へ]** をクリックして、 **[アプリ スイートの構成]** ページを表示します。
+6. **[更新プログラム チャネル]** の横にあるドロップダウン ボックスから **[毎月]** を選択しします。
+7. * **[アプリ スイートの構成]** ページで、その他の既定の詳細を確認します。
+8. **[次 へ]** をクリックして **[スコープ タグ]** ページを表示します。
+9. **[スコープ タグを選択]** をクリックして、必要に応じてアプリのスコープ タグを追加します。 詳細については、「[分散 IT にロールベースのアクセス制御 (RBAC) とスコープのタグを使用する](~/fundamentals/scope-tags.md)」を参照してください。
+10. **[次へ]** をクリックして、 **[割り当て]** ページを表示します。
+11. アプリのグループ割り当てを選択します。 詳細については、「[ユーザーとデバイスを整理するためのグループを追加する](~/fundamentals/groups-add.md)」を参照してください。 
+12. **[次へ]** をクリックして、 **[確認と作成]** ページを表示します。 アプリに入力した値と設定を確認します。
+13. 完了したら、 **[作成]** をクリックしてアプリを Intune に追加します。
 
 ## <a name="assign-the-app-to-a-group"></a>アプリをグループに割り当てる
 
@@ -97,7 +95,7 @@ Intune にアプリを追加するには、次の手順に従います。
 
 ただし、ビジネス上のニーズにより従業員にポータル サイト アプリを割り当てる必要がある場合は、Intune から直接 Windows 10 ポータル サイト アプリを手動で割り当てることができます。 詳細については、「[Microsoft Intune を使用して Windows 10 ポータル サイト アプリを手動で追加する](../company-portal-app.md)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 このクイック スタートでは、Intune にアプリを追加し、そのアプリをグループに割り当て、登録済みの Windows 10 デスクトップ デバイスにそのアプリをインストールしました。 Intune でのアプリの管理に関する詳細については、「[Microsoft Intune でのアプリの管理とは](app-management.md)」を参照してください。
 

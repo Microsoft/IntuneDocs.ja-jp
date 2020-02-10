@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d77a275e3a48845f56b22ecc21b75f664ea619c5
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: 0872eef38e3ea5a70ebb64d3ae3c62069045fa97
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691753"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754630"
 ---
 # <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>iOS と iPadOS のユーザー登録を設定する (プレビュー)
 
@@ -34,7 +34,7 @@ Apple のユーザー登録プロセスを使用して、iOS デバイスと iPa
 > [!NOTE]
 > Intune での Apple のユーザー登録のサポートは、現在プレビュー段階です。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 - [モバイル デバイス管理 (MDM) 機関](../fundamentals/mdm-authority-set.md)
 - [Apple MDM プッシュ証明書](apple-mdm-push-certificate-get.md)
 - [マネージド Apple ID](https://support.apple.com/guide/apple-business-manager/mdm1c9622977/web)。
@@ -54,23 +54,14 @@ Apple のユーザー登録プロセスを使用して、iOS デバイスと iPa
 
 3. **[次へ]** を選択します。
 
-4. **[設定]** ページで、使用する登録の種類をユーザーに選択させることができます。 または、管理者が既定値を設定することもできます。
+4. **[設定]** ページで、 **[登録の種類]** に対して次のいずれかのオプションを選択します。
 
     ![[設定] ページ](./media/ios-user-enrollment/settings-page.png)
 
-    - このプロファイルのすべてのユーザーがユーザー登録を使用できるようにするには、次の手順を実行します。
-        1. **[Require user to select device type]\(ユーザーがデバイスの種類を選択することを必須にする\)** について **[未構成]** を選択します。
-        2. **[Default enrollment type]\(既定の登録の種類\)** について **[ユーザー登録]** を選択します。
-    - このプロファイルのすべてのユーザーがデバイスの登録を使用できるようにするには、次の手順を実行します。
-        1. **[Require user to select device type]\(ユーザーがデバイスの種類を選択することを必須にする\)** について **[未構成]** を選択します。
-        2. **[Default enrollment type]\(既定の登録の種類\)** について **[デバイスの登録]** を選択します。
-    - このグループのすべてのユーザーに、使用する登録の種類の選択を許可する場合は、 **[Require user to select device type]\(ユーザーがデバイスの種類を選択することを必須にする\)** について **[必須]** を選択します。 ユーザーが自分のデバイスを登録すると、 **[I own this device]\(このデバイスを所有している\)** と **[(Company) owns this device]\((会社が) このデバイスを所有している\)** から選択できるようになります。 前者を選択した場合、デバイスはユーザー登録を使用して登録されます。 後者を選択した場合は、デバイスの登録を使用してデバイスが登録されます。 ユーザーが **[I own this device]\(このデバイスを所有している\)** を選択した場合は、さらにデバイス全体をセキュリティで保護するか、職場関連のアプリとデータのみをセキュリティで保護するかを選択できます。 デバイスを所有するかどうかのエンド ユーザーによる選択でのみ、デバイスに実装されている登録の種類が決まります。 このユーザーの選択は、Intune の [デバイスの所有者] 属性には反映されません。 ユーザー エクスペリエンスの詳細については、「[iOS デバイスからの会社のリソースへのアクセスを設定する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)」を参照してください。
+    - **デバイスの登録**:このプロファイル内のすべてのユーザーは、[デバイスの登録] を使用します。
+    - **ユーザー登録**:このプロファイル内のすべてのユーザーは、[ユーザー登録] を使用します。
+    - **Determine based on user choice (ユーザーの選択に基づいて決定する)** :このグループのすべてのユーザーには、使用する登録の種類の選択肢が表示されます。 ユーザーが自分のデバイスを登録すると、 **[I own this device]\(このデバイスを所有している\)** と **[(Company) owns this device]\((会社が) このデバイスを所有している\)** から選択できるようになります。 後者を選択した場合は、デバイスの登録を使用してデバイスが登録されます。 ユーザーが **[I own this device]\(このデバイスを所有している\)** を選択した場合は、さらにデバイス全体をセキュリティで保護するか、職場関連のアプリとデータのみをセキュリティで保護するかを選択できます。 デバイスを所有するかどうかのエンド ユーザーによる選択で、デバイスに実装されている登録の種類が決まります。 このユーザーの選択は、Intune の [デバイスの所有者] 属性にも反映されます。 ユーザー エクスペリエンスの詳細については、「[iOS デバイスからの会社のリソースへのアクセスを設定する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)」を参照してください。
     
-    > [!NOTE]
-    > 次の通知は不正確であり、UI から削除される予定です。
-    > "For Conditional Access to work on devices targeted with User Enrollment, you will need to push the Azure Authenticator app as a required app for this user group to enable Single Sign-On and Workplace Join" (ユーザー登録を対象とするデバイスで条件付きアクセスが機能するには、このユーザー グループに必要なアプリとして Azure Authenticator アプリをプッシュして、シングル サインオンと Workplace Join を有効にする必要があります)。
-    > 管理者の場合、ユーザーに Authenticator アプリをプッシュするアクションを実行する必要はありません。 これらのシナリオが適切に機能するように、ユーザーには、ポータル サイト内で Authenticator アプリをインストールしてユーザー登録プロセスを完了するように指示されます。
-
 5. **[次へ]** を選択します。
 
 6. **[割り当て]** ページで、このプロファイルを割り当てるユーザーを含むユーザー グループを選択します。 すべてのユーザーまたは特定のグループにプロファイルを割り当てることができます。 選択したグループ内のすべてのユーザーが、上で選択した登録の種類を使用します。 デバイス グループは、デバイスではなくユーザー ID に基づいているため、ユーザー登録シナリオではサポートされません。 すべてのユーザーまたは特定のグループにプロファイルを割り当てることができます。

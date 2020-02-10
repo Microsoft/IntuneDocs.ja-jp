@@ -34,7 +34,7 @@ ms.locfileid: "75207419"
 
 ## <a name="to-create-a-custom-role"></a>カスタム ロールを作成するには
 
-1. [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) で、 **[ロール]** ** > [すべてのロール]**  >  **[追加]** を選択します。
+1. [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) で、 **[ロール]**  >  **[すべてのロール]**  >  **[追加]** を選択します。
 
 2. **[カスタム ロールの追加]** ブレードで、新しいロールの名前と説明を入力し、 **[アクセス許可]** をクリックします。
 
@@ -51,7 +51,7 @@ ms.locfileid: "75207419"
 
 既存のロールをコピーすることもできます。
 
-1. [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) で、 **[ロール]** ** > [すべてのロール]** を選択し、一覧でロールを選択して、 **[重複]** を選択します。
+1. [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) で、 **[ロール]**  >  **[すべてのロール]** を選択し、一覧でロールを選択して、 **[重複]** を選択します。
 
 2. **[ロールの複製]** で名前を入力します。 必ず一意の名前を使用してください。
 

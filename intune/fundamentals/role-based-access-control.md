@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a03366037f9b0eced70f0375b3f4b39401e3141
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8441a93a34af68a680aec2f48b3a5375fa74558c
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509813"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754305"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Microsoft Intune でのロールベースのアクセス制御 (RBAC)
 
@@ -52,6 +52,7 @@ Intune RBAC に関するアドバイスと提案については、例とチュ�
 - **アプリケーション マネージャー**:モバイルとマネージド アプリケーションを管理し、デバイス情報を読み取り、デバイス構成プロファイルを表示することができます。
 - **Intune ロール管理者**:Intune のカスタム ロールを管理し、Intune の組み込みロールの割り当てを追加します。 アクセス許可を管理者に割り当てられるのは、Intune ロールだけです。
 - **学校管理者**:[Intune for Education](../introduction-intune-education.md) で Windows 10 デバイスを管理します。
+- **エンドポイント セキュリティ マネージャー**:セキュリティ基準、デバイス コンプライアンス、条件付きアクセス、Microsoft Defender ATP などのセキュリティとコンプライアンスの機能を管理します。
 
 ### <a name="custom-roles"></a>カスタム ロール
 カスタム アクセス許可を使用して独自のロールを作成できます。 カスタム ロールの詳細については、[カスタム ロールの作成](create-custom-role.md)に関するページをご覧ください。
@@ -62,7 +63,7 @@ Intune RBAC に関するアドバイスと提案については、例とチュ�
 | グローバル管理者 | 読み取り/書き込み | 読み取り/書き込み |
 | Intune サービス管理者 | 読み取り/書き込み | 読み取り/書き込み |
 | 条件付きアクセス管理者 | なし | なし |
-| セキュリティ管理者 | 読み取り専用 | 読み取り専用 |
+| セキュリティ管理者 | 読み取り専用 (エンドポイント セキュリティ ノードの完全な管理アクセス許可) | 読み取り専用 |
 | セキュリティ オペレーター | 読み取り専用 | 読み取り専用 |
 | セキュリティ閲覧者 | 読み取り専用 | 読み取り専用 |
 | コンプライアンス管理者 | なし | 読み取り専用 |
@@ -98,6 +99,6 @@ Intune RBAC に関するアドバイスと提案については、例とチュ�
 - その他のアクセス許可 (作成、読み取り、更新、削除など) とスコープのタグは、任意のユーザーの割り当てで、同じ種類のすべてのオブジェクト (すべてのポリシーやすべてのアプリなど) に適用されます。
 - 異なる種類のオブジェクト (ポリシーやアプリなど) に対するアクセス許可やスコープのタグが、相互に適用されることはありません。 たとえば、ポリシーの読み取りアクセス許可では、ユーザーの割り当てでアプリへの読み取りアクセス許可は提供されません。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 - [ロールをユーザーに割り当てる](assign-role.md)
 - [カスタム ロールを作成する](create-custom-role.md)

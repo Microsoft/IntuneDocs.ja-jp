@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 501bfcbef0dd46f6021fc5db16cf3b9e2f2cd0c0
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 24d0a8160d852a5a44f5df688b7e0bc230d56704
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886004"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966387"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Intune を使用して SCEP をサポートするようにインフラストラクチャを構成する
 
@@ -378,6 +378,32 @@ Microsoft Intune Certificate Connector は、NDES サービスが実行されて
 5. Certificate Connector のクライアント証明書の入力を求められたら、 **[選択]** を選び、この記事で前述した「[NDES をホストするサーバーに証明書をインストールしてバインドする](#install-and-bind-certificates-on-the-server-that-hosts-ndes)」の手順 3 で NDES サーバーにインストールした**クライアント認証**証明書を選択します。
 
    クライアント認証証明書を選択すると、 **[Microsoft Intune Certificate Connector のクライアント証明書]** 画面に戻ります。 選択した証明書は表示されませんが、 **[次へ]** を選択してその証明書のプロパティを表示します。 **[次へ]** を選択して、 **[インストール]** を選択します。
+
+> [!NOTE]
+> Intune Certificate Connector を起動する前に、GCC High テナントに対して次の変更を行う必要があります。
+> 
+> 次に示す 2 つの構成ファイルを編集します。これにより、GCC High 環境のサービス エンドポイントが更新されます。 これらの更新により、URI のサフィックスが **.com** から **.us** に変更されることに注意してください。 合計 3 つの URI の更新が行われます。NDESConnectorUI.exe.config 構成ファイルで 2 つの更新、NDESConnector.exe.config ファイルで 1 つの更新です。
+> 
+> - ファイル名: <インストール パス>\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.config
+> 
+>   例: (%programfiles%\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.config)
+>   ```
+>    <appSettings>
+>        <add key="SignInURL" value="https://portal.manage.microsoft.us/Home/ClientLogon"/>
+>        <add key="LocationServiceEndpoint" value="RestUserAuthLocationService/RestUserAuthLocationService/ServiceAddresses"/>
+>        <add key="AccountPortalURL" value="https://manage.microsoft.us"/>
+>    </appSettings>
+>   ```
+> 
+> - ファイル名: <インストール パス>\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config
+>
+>   例: (%programfiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config)
+>    ```
+>    <appSettings>
+>        <add key="BaseServiceAddress" value="https://manage.microsoft.us/" />
+>    ```
+>
+> これらの編集が完了していない場合、GCC High テナントでは次のエラーが発生します。"アクセスは拒否されました" "このページを表示する権限がありません"
 
 6. ウィザードが完了した後、ウィザードを閉じる前に、**証明書コネクタの UI を起動**します。
 

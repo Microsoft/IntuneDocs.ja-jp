@@ -18,18 +18,37 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d42651b11891f3d830c0d90e70a9ecd98ea5bfb7
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: 73b7617ad6a2d9aa756ddf9a8a4833289e5710ff
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036612"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517502"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Intune でカスタム通知を送信する  
 
 Microsoft Intune を使用して、iOS および Android のマネージド デバイスのユーザーにカスタム通知を送信します。 これらのメッセージは、デバイスに表示される他のアプリケーションからの通知と同様に、ポータル サイト アプリと Microsoft Intune アプリからの標準のプッシュ通知としてユーザーのデバイスに表示されます。 Intune カスタム通知は、macOS デバイスと Windows デバイスではサポートされていません。   
 
 カスタム通知メッセージには、短いタイトルと 500 文字以下のメッセージ本文が含まれます。 これらのメッセージは、一般的な通信目的でカスタマイズできます。
+
+### <a name="what-the-notification-looks-like-on-an-ios-device"></a>iOS デバイスの通知の外観
+
+iOS デバイスでポータル サイト アプリを開いている場合、通知は次のスクリーンショットのようになります。
+
+> [!div class="mx-imgBorder"]
+> ![ポータル サイトの iOS のテスト通知](./media/custom-notifications/105046-1.png)
+
+デバイスがロックされている場合、通知は次のスクリーンショットのようになります。
+
+> [!div class="mx-imgBorder"]
+> ![ロックされたデバイスの iOS のテスト通知](./media/custom-notifications/105046-2.png)
+
+### <a name="what-the-notification-looks-like-on-an-android-device"></a>Android デバイスの通知の外観
+
+Android デバイスでポータル サイト アプリを開いている場合、通知は次のスクリーンショットのようになります。
+
+> [!div class="mx-imgBorder"]
+> ![Android のテスト通知](./media/custom-notifications/105046-3.png)
 
 ## <a name="common-scenarios-for-sending-custom-notifications"></a>カスタム通知を送信するための一般的なシナリオ  
 

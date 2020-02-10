@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4246dab0cf22053d76fdd50f99de53e827332a23
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 0dac0607fcaa92ebe65a7ddacc3cd91c63bf246e
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547820"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971872"
 ---
 # <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
@@ -82,12 +82,13 @@ ms.locfileid: "75547820"
    > Windows 10 では登録時にリビジョン番号が提供されないため、たとえば 10.0.17134.100 と入力し、デバイスが 10.0.17134.174 の場合、登録中にブロックされます。
 
 6. **[個人所有]** で、個人所有デバイスとして許可するプラットフォームに対して **[許可]** を選択します。
-7. **[次へ]** を選択して、 **[割り当て]** ページに移動します。
-8. **[含めるグループを選択]** を選択した後、検索ボックスを使用して、この制限に含めるグループを検索します。 制限が適用されるのは、制限が割り当てられているグループのみです。 少なくとも 1 つのグループに割り当てていない限り、制限は何も影響しません。 次に **[選択]** を選択します。 
+7. **[デバイスの製造元]** の下に、ブロックする製造元のコンマ区切りの一覧を入力します。
+8. **[次へ]** を選択して、 **[割り当て]** ページに移動します。
+9. **[含めるグループを選択]** を選択した後、検索ボックスを使用して、この制限に含めるグループを検索します。 制限が適用されるのは、制限が割り当てられているグループのみです。 少なくとも 1 つのグループに割り当てていない限り、制限は何も影響しません。 次に **[選択]** を選択します。 
     ![プラットフォームの設定を選択する画面のキャプチャ](./media/enrollment-restrictions-set/select-groups.png)
-9. **[次へ]** を選択して、 **[確認と作成]** ページへ移動します。
-10. **[作成]** を選択して、制限を作成します。
-11. 既定値の制限のすぐ上の優先度を持つ新しい制限が作成されます。 [優先度は変更](#change-enrollment-restriction-priority)することができます。
+10. **[次へ]** を選択して、 **[確認と作成]** ページへ移動します。
+11. **[作成]** を選択して、制限を作成します。
+12. 既定値の制限のすぐ上の優先度を持つ新しい制限が作成されます。 [優先度は変更](#change-enrollment-restriction-priority)することができます。
 
 
 ## <a name="create-a-device-limit-restriction"></a>デバイスの上限数の制限を作成する

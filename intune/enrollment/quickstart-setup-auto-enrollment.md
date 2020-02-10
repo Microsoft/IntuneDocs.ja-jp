@@ -8,19 +8,19 @@ ms.service: microsoft-intune
 ms.subservice: enrollment
 ms.localizationpriority: high
 ms.topic: quickstart
-ms.date: 03/26/2019
+ms.date: 01/17/2020
 ms.author: erikje
 ms.reviewer: spshumwa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9649a84650a555e964cd9200ed2295fee5efb9a
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: e5cc7cf3661caa2b2640d9370d26402b7702d36b
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562308"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76541052"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>クイック スタート:Windows 10 デバイスの自動登録を設定する
 
@@ -28,12 +28,12 @@ ms.locfileid: "74562308"
 
 Intune サブスクリプションがない場合は、[無料試用版アカウントにサインアップ](../fundamentals/free-trial-sign-up.md)します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
 - Microsoft Intune サブスクリプション - [無料試用版アカウントにサインアップします](../fundamentals/free-trial-sign-up.md)。
 - このクイック スタートを完了するには、まず[ユーザーを作成](../fundamentals/quickstart-create-user.md)し、[グループを作成](../fundamentals/quickstart-create-group.md)する必要があります。
 
-## <a name="sign-in-to-intune"></a>Intune にサインインする
+## <a name="sign-in-to-intune-in-the-microsoft-endpoint-manager"></a>Microsoft Endpoint Manager で Intune にサインインする
 
 全体管理者または Intune サービス管理者として、[Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。 Intune の試用版サブスクリプションを作成した場合、サブスクリプションを作成したアカウントがグローバル管理者になります。
 
@@ -41,16 +41,20 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 この例では、会社のデバイスと個人所有デバイスの両方を自動登録できるように MDM 登録を使用します。 無料の Azure Active Directory Premium サブスクリプションにサインアップします。
 
-1. [Azure portal](https://portal.azure.com) で、 **[Azure Active Directory]**  >  **[モビリティ (MDM および MAM)]** を選択します。
+1. [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) で、 **[すべてのサービス]**  >  **[M365 Azure Active Directory]**  >  **[Azure Active Directory]**  >  **[モビリティ (MDM および MAM)]** を選択します。
 2. **[無料の Premium 評価版を入手してこの機能を使用する]** を選択します。 このオプションを選択すると、Azure Active Directory の無料 Premium 試用版を使用して自動登録できます。 
 
     ![Azure Active Directory 無料 Premium 評価版を選択する](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)
 
-    **[Enterprise Mobility + Security E5]** 無料評価版オプションを選択します。 さらに、無料試用版の **[アクティブ化]** を選択する必要があります。
+3. **[Enterprise Mobility + Security E5]** 無料評価版オプションを選択します。 
+4. 無料試用版について、 **[無料試用版]**  >  **[有効化]** をクリックします。
 
     ![[Enterprise Mobility + Security E5] 無料評価版を選択する](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-02.png)
 
-3. **Microsoft Intune** を選択します。 
+    > [!NOTE]
+    > 有効化には 1 分かかる場合があります。 
+
+3. **[Microsoft Intune]** を選択して Intune を構成します。 
 
     ![一覧から [Microsoft Intune] を選択する](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-03.png)
 
@@ -58,11 +62,14 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
     ![構成の一覧から [一部] を選択する](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-04.png)
 
-5. 割り当てられたグループとして **[グループの選択]**  >  **[Contoso Testers]**  >  **[選択]** の順に選択します。
+5. 割り当てられたグループとして **[グループの選択]**  >  **[Contoso Testers]**  >  **[選択]** の順にクリックします。
 
     ![登録するグループを選択する](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-05.png)
 
 6. **[MAM ユーザー スコープ]** から **[一部]** を選択して、従業員のデバイス上のデータを管理します。
+
+    ![登録するグループを選択する](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-06.png)
+
 7. 割り当てられたグループとして **[グループの選択]**  >  **[Contoso Testers]**  >  **[選択]** の順に選択します。 
 8. 残りの構成値には既定値を使用します。
 9. **[保存]** を選びます。
@@ -71,7 +78,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 Intune の自動登録を再構成するには、「[Windows デバイスの登録をセットアップする](windows-enroll.md)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 このクイック スタートでは、Windows 10 デバイスの自動登録方法について学習しました。 デバイスの登録について詳しくは、「[デバイス登録とは](device-enrollment.md)」をご覧ください
 

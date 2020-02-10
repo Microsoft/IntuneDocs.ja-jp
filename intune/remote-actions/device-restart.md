@@ -16,19 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7b77c4f0127c9ee16b255d0e0e28622b85c323b
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: 82ebf35d0eb435f2df4e6cf55274808e6fa690f4
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907255"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517543"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Intune でデバイスをリモートで再起動する
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-**[再起動]** デバイス アクションでは、選択したデバイスが再起動されます。 デバイスの所有者に再起動の自動通知が行われないため、作業内容が失われる可能性があります。
+**[再起動]** デバイス アクションでは、選択したデバイスが (5 分以内に) 再起動されます。 デバイスの所有者に再起動の自動通知が行われないため、作業内容が失われる可能性があります。
 
 ## <a name="supported-platforms"></a>サポートされているプラットフォーム
 
@@ -45,9 +45,9 @@ ms.locfileid: "74907255"
 ## <a name="restart-a-device"></a>デバイスを再起動する
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-3. **[デバイス]** > **[すべてのデバイス]** の順に選択します。
-4. 管理するデバイスのリストで、デバイスを選び、**[再起動]** > **[はい]** の順に選択します。
+3. **[デバイス]**  >  **[すべてのデバイス]** の順に選択します。
+4. 管理するデバイスのリストで、デバイスを選び、 **[再起動]**  >  **[はい]** の順に選択します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-- **[再起動]** デバイス アクションの状態を表示するには、**[デバイス]** > **[デバイス アクション]** の順に選択します。
+- **[再起動]** デバイス アクションの状態を表示するには、 **[デバイス]**  >  **[デバイス アクション]** の順に選択します。

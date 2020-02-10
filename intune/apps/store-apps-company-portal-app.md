@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93570bc9dab20801ea6681f6a142de62990a1c57
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 061644a1c83b02902a6bbdaf3cfbd04815d32ea3
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712952"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755036"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Microsoft Intune を使用して Windows 10 ポータル サイト アプリを手動で追加する
 
@@ -56,7 +56,7 @@ ms.locfileid: "73712952"
     x86、x64、および ARM アーキテクチャでこのアクションを完了する必要があります。<br> 
     *最小 OS バージョンとして 1507 を選択した場合は 9 個の必須フレームワーク パッケージ、1511 を選択した場合は 12 個のパッケージ、1607 を選択した場合は 15 個のパッケージがあります。*
 
-8. Azure Portal の Microsoft Intune で、新しいアプリとしてポータル サイト アプリをアップロードします。 **[アプリの追加]** ウィンドウで **[アプリの種類]** として [基幹業務アプリ] を選択してアプリケーションを追加します。 次に、アプリ パッケージ ファイル (拡張子 .AppxBundle) を選択します。
+8. Azure Portal の Microsoft Intune で、新しいアプリとしてポータル サイト アプリをアップロードします。 **[アプリケーションの種類の選択]** ペインで **[アプリの種類]** として [基幹業務アプリ] を選択してアプリケーションを追加します。 次に、アプリ パッケージ ファイル (拡張子 .AppxBundle) を選択します。
 
 9. **[Select dependency app files]\(依存関係アプリ ファイルの選択\)** で、Shift キーを押しながらクリックして手順 7 でダウンロードしたすべての依存関係を選択し、必要なアーキテクチャの **[追加済み]** 列に **[はい]** が表示されることを確認します。
 
@@ -95,7 +95,7 @@ Intune がユニバーサル アプリ用に依存関係をどのように処理
 3. Windows 10 ポータル サイト アプリに署名するには、次の表のように、スクリプト ヘッダーに記載された入力パラメーターを使用してスクリプトを実行します。  
     スクリプトに依存関係を渡す必要はありません。 依存関係は、アプリが Intune 管理コンソールにアップロードされる場合にのみ必要です。
 
-| パラメーター |  説明  |
+| パラメーター |  [説明]  |
 |---|---|
 | InputWin10AppxBundle  |  ソース appxbundle ファイルへのパス |
 | OutputWin10AppxBundle | 署名された appxbundle ファイルの出力パス 
@@ -107,7 +107,7 @@ Intune がユニバーサル アプリ用に依存関係をどのように処理
 
 スクリプトの実行が終了したら、スクリプトにより Windows 10 ポータル サイト アプリの署名されたバージョンが出力されます。 その後、アプリの署名されたバージョンを Intune 経由で基幹業務 (LOB) アプリとして割り当てることができます。これにより、現在割り当てられているバージョンがこの新しいアプリにアップグレードされます。  
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [アプリをグループに割り当てる](apps-deploy.md)
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce3f73834ffdc2648dae345f8fa2a8233d2bb8c9
-ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
+ms.openlocfilehash: 11e3465c583197582a545cdd6f4b71bc8d24e115
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75756022"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754203"
 ---
 # <a name="see-device-details-in-intune"></a>Intune でデバイスの詳細を確認する
 
@@ -84,7 +84,7 @@ ms.locfileid: "75756022"
 |ICCID|SIM カードの一意の識別番号である IC カードの識別子。|Windows、iOS、Android|
 |登録日|デバイスが Intune に登録された日時。|Windows、iOS、Android|
 |最後接続日時|デバイスが最後に Intune に接続された日時。|Windows、iOS、Android|
-|アクティベーション ロックのバイパス コード|アクティベーション ロックのバイパスに使用できるコード。|iOS|
+|アクティベーション ロックのバイパス コード|アクティベーション ロックを無効にするために使用できるコード。|iOS|
 |Azure AD に登録済み|**[はい]** の場合、デバイスが Azure Active Directory に登録されています。|Windows、iOS、Android|
 |Intune 登録済み|**[はい]** の場合、デバイスが Intune に登録されます|Windows、iOS、Android|
 |コンプライアンス|デバイスのコンプライアンスの状態。|Windows、iOS、Android|
@@ -92,8 +92,6 @@ ms.locfileid: "75756022"
 |EAS アクティブ化 ID|デバイスの Exchange ActiveSync の識別子。|Windows、iOS、Android|
 |監督下|**[はい]** の場合、管理者がデバイスの制御を強化しています。|Windows、iOS、Android|
 |暗号化|**[はい]** の場合、デバイスに格納されているデータが暗号化されます。|Windows、iOS、Android|
-
-\* フル マネージド デバイスや専用デバイスなど、Google ポリシー マネージャーを使用した Android では使用できません
 
 > [!Note]  
 > Android Enterprise 専用デバイスまたはフル マネージド デバイスでは、電話番号はインベントリされません。
