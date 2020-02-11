@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5a3204721a0d40cfb5bf729ca17ef8e4ded1f0f
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 0d4bbd0a5b57391edad726c7e936d0072a791673
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885765"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755767"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>管理対象の iOS デバイス用アプリ構成ポリシーを追加する
 
@@ -51,34 +51,39 @@ Microsoft Intune 管理者は、マネージド デバイス上の Microsoft Off
 ## <a name="create-an-app-configuration-policy"></a>アプリ構成ポリシーを作成する
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-2. **[アプリ]**  >  **[アプリ構成ポリシー]**  >  **[追加]**  >  **[マネージド デバイス]** を選択します。
-3. 次の詳細を設定します。
+2. **[アプリ]**  >  **[アプリ構成ポリシー]**  >  **[追加]**  >  **[マネージド デバイス]** を選択します。 **[マネージド デバイス]** と **[マネージド アプリ]** のどちらかを選択できます。 詳細については、「[アプリ構成をサポートするアプリ](~/apps/app-configuration-policies-overview.md#apps-that-support-app-configuration)」を参照してください。
+3. **[基本]** ページで、次の詳細を設定します。
     - **名前**: Azure portal に表示されるプロファイルの名前。
     - **説明**: Azure portal に表示されるプロファイルの説明。
     - **[デバイス登録の種類]** - この設定は、 **[マネージド デバイス]** に設定されています。
-4. **[プラットフォーム]** で **[iOS]** を選択します。
-5. **[関連アプリ]** を選択します。 次に、 **[関連アプリ]** ウィンドウで、構成を適用する管理対象アプリを選択して **[OK]** を選択します。
-6. **[構成設定]** を選択して、 **[構成設定]** ウィンドウを表示します。
-7. **[構成設定の形式]** を選択します。 次のいずれかの方法を選択して、構成情報を追加します。
+4. **[プラットフォーム]** として **[iOS/iPadOS]** を選択します。
+5. **[対象アプリ]** の横にある **[アプリの選択]** をクリックします。 **[関連アプリ]** ペインが表示されます。 
+6. **[対象アプリ]** ペインで、構成ポリシーに関連付けるマネージド アプリを選択し、 **[OK]** をクリックします。
+7. **[次へ]** をクリックして、 **[設定]** ページを表示します。
+8. ドロップダウン ボックスで、 **[構成設定の形式]** を選択します。 次のいずれかの方法を選択して、構成情報を追加します。
     - **構成デザイナーを使用する**
     - **XML データを入力する**<br><br>
     構成デザイナーの使用の詳細については、「[構成デザイナーの使用](#use-configuration-designer)」を参照してください。 XML データの入力の詳細については、「[XML データを入力する](#enter-xml-data)」を参照してください。 
-8. 構成情報を追加したら、 **[OK]** を選び、 **[追加]** を選んで構成ポリシーを追加します。 構成ポリシーの概要ウィンドウが表示されます。
-9. **[割り当て]** を選んで、含めるオプションと除外するオプションを表示します。 
+9. **[次へ]** をクリックして、 **[割り当て]** ページを表示します。
+10. **[割り当て先]** の横のドロップダウン ボックスで、アプリ構成ポリシーの割り当て先として **[選択したグループ]** 、 **[すべてのユーザー]** 、 **[すべてのデバイス]** 、または **[All users and all devies]\(すべてのユーザーとすべてのデバイス\)** を選択します。
 
     ![ポリシーの割り当ての [含める] タブのスクリーンショット](./media/app-configuration-policies-use-ios/app-config-policy01.png)
-10. **[必要]** タブの **[すべてのユーザー]** を選びます。
+
+11. ドロップダウン ボックスで **[すべてのユーザー]** を選択します。
 
     ![ポリシーの割り当ての [すべてのユーザー] ドロップダウン オプションのスクリーンショット](./media/app-configuration-policies-use-ios/app-config-policy02.png)
-11. **[必要なし]** タブを選びます。 
+
 12. **[含めないグループを選択]** をクリックして、関連するウィンドウを表示します。
 
     ![ポリシーの割り当てのスクリーンショット - [含めないグループを選択] ウィンドウ](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+
 13. 除外するグループを選んで、 **[選択]** をクリックします。
 
     >[!NOTE]
     >グループを追加するときに、他のグループが特定の割り当て種類に既に含まれる場合は、あらかじめ選択されており、他の含める割り当て種類には変更できません。 そのため、使われているそのグループは、含まれないグループとして使えません。
-14. **[Save]** (保存) をクリックします。
+
+14. **[次へ]** をクリックして、 **[確認と作成]** ページを表示します。
+15. **[作成]** をクリックして、アプリ構成ポリシーを Intune に追加します。
 
 ## <a name="use-configuration-designer"></a>構成デザイナーの使用
 

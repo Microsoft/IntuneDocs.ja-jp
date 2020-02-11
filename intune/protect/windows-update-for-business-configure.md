@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/14/2020
+ms.date: 01/29/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc9dd03714e24dae4b0c7afe9206c6a8d7d36c13
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956283"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886803"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Intune で Windows 10 ソフトウェア更新プログラムを管理する
 
@@ -205,20 +205,22 @@ Windows Update のポリシーの詳細については、Windows クライアン
 
 - 更新リングで "*一時停止*" を使用する場合 (35 日後に期限切れになります) とは異なり、Windows 10 機能の更新ポリシーは有効なままです。 ユーザーが Windows 10 機能の更新ポリシーを変更または削除するまで、デバイスに新しい Windows バージョンはインストールされません。 ポリシーを編集して新しいバージョンを指定すると、デバイスにその Windows バージョンの機能をインストールできるようになります。
 
+### <a name="prerequisites-for-windows-10-feature-updates"></a>Windows 10 の機能更新プログラムの前提条件
+
+Intune で Windows 10 の機能更新プログラムを使用するには、次の前提条件を満たしている必要があります。
+
+- デバイスを Intune MDM に登録する、Azure AD に参加させる、または Azure AD に登録する必要があります。
+- Intune で機能更新プログラムのポリシーを使用するには、デバイスでテレメトリが、[ *[基本]* ](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) 設定以上で有効になっている必要があります。 テレメトリは、[デバイス制限ポリシー](../configuration/device-restrictions-configure.md)の一部として *[レポートとテレメトリ]* 下で構成されます。
+  
+  機能更新プログラムのポリシーを受信したデバイスのテレメトリが *[未構成]* (つまり、オフ) に設定されていた場合、機能更新プログラムのポリシーで定義されているよりも新しいバージョンの Windows がデバイスにインストールされる可能性があります。 この機能が一般公開に移行されるとき、テレメトリを必要とする前提条件は再検討されます。
+
 ### <a name="limitations-for-windows-10-feature-updates"></a>Windows 10 機能の更新プログラムに関する制限事項
 
 - "*Windows 10 機能の更新プログラム*" ポリシーを展開するデバイスで "*Windows 10 更新リング*" ポリシーも受け取る場合は、更新リングの次の構成について確認してください。
   - **[機能更新プログラムの延期期間 (日数)]** を **0** に設定する必要があります。
   - 更新リングの機能の更新プログラムは "*実行中*" である必要があります。 それらを一時停止しないでください。
 
-- Windows 10 の機能更新ポリシーは、Out-of-Box Experience (OOBE) 中には適用できず、デバイスのプロビジョニングの完了後 (通常は 1 日)、最初の Windows Update のスキャン時にのみ適用されます。 また、AutoPilot によってプロビジョニングされたデバイスはポリシーを受け取りません。
-
-  この制限については、今後サポートできるかどうかを確認中です。
-
-> [!IMPORTANT]
-> Intune で機能更新プログラムのポリシーを使用するには、デバイスでテレメトリが、[ *[基本]* ](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) 設定以上で有効になっている必要があります。 テレメトリは、[デバイス制限ポリシー](../configuration/device-restrictions-configure.md)の一部として *[レポートとテレメトリ]* 下で構成されます。
->
-> 機能更新プログラムのポリシーを受信したデバイスのテレメトリが *[未構成]* (つまり、オフ) に設定されていた場合、機能更新プログラムのポリシーで定義されているよりも新しいバージョンの Windows がデバイスにインストールされる可能性があります。 この機能が一般公開に移行されるとき、テレメトリを必要とする前提条件は再検討されます。
+- Windows 10 の機能更新プログラム ポリシーは、Autopilot の Out-of-Box Experience (OOBE) 中には適用できず、デバイスのプロビジョニングの完了後 (通常は 1 日)、最初の Windows Update のスキャン時にのみ適用されます。
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Windows 10 機能の更新プログラムを作成して割り当てる
 
@@ -232,7 +234,7 @@ Windows Update のポリシーの詳細については、Windows クライアン
 
 5. **[確認と作成]** で設定を確認し、Windows 10 機能の更新プログラムのポリシーを保存する準備ができたら **[作成]** を選択します。  
 
-### <a name="manage-windows-10-feature-updates"></a>Windows 10 機能の更新プログラムを管理する
+### <a name="manage-windows-10-feature-updates"></a>Windows 10 の機能更新プログラムを管理する
 
 管理センターで **[デバイス]**  >  **[Windows]**  >  **[Windows 10 機能の更新プログラム]** の順に移動し、管理するポリシーを選択します。 ポリシーがその **[概要]** ウィンドウに表示されます。
 
@@ -242,10 +244,12 @@ Windows Update のポリシーの詳細については、Windows クライアン
 - **[プロパティ]** を選択して、その展開を変更します。  *[プロパティ]* ウィンドウで **[編集]** を選択すると、" *[展開の設定] または [割り当て]* " が開きます。ここで展開を変更できます。
 - **[エンド ユーザー更新状態]** を選択して、ポリシーに関する情報を表示します。
 
+## <a name="validation-and-reporting-for-windows-10-updates"></a>Windows 10 の更新プログラムの検証とレポート
+
+Windows 10 の更新プログラム リングと Windows 10 の機能更新プログラムの両方について、[更新プログラムに関する Intune コンプライアンス レポート](../windows-update-compliance-reports.md)を使用してデバイスの更新状態を監視します。 このソリューションには、[更新プログラムのコンプライアンス](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor)と Azure サブスクリプションを使用します。
+
 ## <a name="next-steps"></a>次のステップ
 
 [Intune でサポートされている Windows Update の設定](../windows-update-settings.md)
-
-[更新プログラムに関する Intune コンプライアンス レポート](../windows-update-compliance-reports.md)
 
 [Windows 10 更新プログラム リングのトラブルシューティング](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)

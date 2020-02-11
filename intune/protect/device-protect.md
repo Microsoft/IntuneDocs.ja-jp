@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 471eb35cb7b96166aaacfbe1ce0ee36cfa06e9c0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c18b6bcc8ec6e8d78862c0368c920fd3d79ce2b5
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502372"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755580"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Microsoft Intune でデバイスを保護する
 
 Microsoft Intune を使用すると、管理するデバイスと、そのデバイスに格納されたデータを保護することができます。
 
-## <a name="device-configuration"></a>デバイス構成
+## <a name="device-configuration"></a>デバイスの構成
 Intune の[構成ポリシー](../configuration/device-profiles.md)は、さまざまな設定や機能を制御してデバイスを保護したり構成したりするのに役立ちます。 次に例を示します。
 
 - カメラや Bluetooth などのデバイス上のハードウェア機能の使用を制限できます。
@@ -59,9 +59,9 @@ Intune では、アプリとそのデータを保護するのに役立つ機能�
 ## <a name="control-windows-hello-for-business-settings-on-windows-devices"></a>Windows デバイスで Windows Hello for Business の設定を制御する
 Intune は [Windows Hello for Business](windows-hello.md) と統合することができます。これは、パスワード、スマート カード、仮想スマート カードの代わりに Active Directory または Azure Active Directory アカウントを使用する、Windows 10 以降に向けた代替サインイン方法です。
 
-## <a name="bypass-activation-lock-on-ios-devices"></a>iOS デバイスのアクティブ化ロックをバイパスする
-アクティベーション ロックはユーザーのデバイスの保護に役立つ機能です。 この機能を使用すると、ユーザーはデバイスを消去したり再アクティブ化したりする前に、各自の Apple ID とパスワードを入力する必要があります。 ただし、この機能が問題を引き起こす場合もあります。ユーザーがロックを解除しないまま会社を退職した場合などです。 [iOS のアクティベーション ロックのバイパス](../remote-actions/device-activation-lock-bypass.md)は、監視下 iOS デバイスのロックを解除して、デバイスを再割り当てしたり、消去したりできるようにする機能です。
+## <a name="disable-activation-lock-on-ios-devices"></a>iOS デバイスのアクティブ化ロックを無効にする
+アクティベーション ロックはユーザーのデバイスの保護に役立つ機能です。 この機能を使用すると、ユーザーはデバイスを消去したり再アクティブ化したりする前に、各自の Apple ID とパスワードを入力する必要があります。 ただし、この機能が問題を引き起こす場合もあります。ユーザーがロックを解除しないまま会社を退職した場合などです。 [iOS のアクティベーション ロックの無効化](../remote-actions/device-activation-lock-disable.md)は、監視下 iOS デバイスのロックを解除して、デバイスを再割り当てしたり、消去したりできるようにする機能です。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [Mobile Threat Defense](mobile-threat-defense.md) について学習します

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 01/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 644297777e8a103d6ffdc5f025ebf8f29591fda8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d04897d38c1b46f27fe86e72ecfa6856aa9eece2
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188467"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755667"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange On-Premises と従来の Exchange Online Dedicated の条件付きアクセス ポリシーを作成する
 
@@ -37,7 +37,7 @@ Exchange Online Dedicated 環境を使用していて、それが新しい構成
 
 - Exchange のバージョンが **Exchange 2010 SP1 以降**であること。 Exchange Server クライアント アクセス サーバー (CAS) アレイがサポートされています。
 
-- [Exchange Active Sync On-Premises Exchange Connector](exchange-connector-install.md) をインストールして使用していること。これにより、Intune が Exchange On-Premises に接続されます。
+- [Exchange ActiveSync On-Premises Exchange Connector](exchange-connector-install.md) をインストールして使用していること。これにより、Intune が Exchange On-Premises に接続されます。
 
     >[!IMPORTANT]  
     >Intune は、サブスクリプションあたり複数のオンプレミス Exchange コネクタに対応できます。  ただし、それぞれのオンプレミスの Exchange コネクタは、単一の Intune テナントに固有であり、他のテナントでは使用できません。  オンプレミス Exchange 組織が複数ある場合、Exchange 組織別にコネクタを設定できます。
@@ -84,40 +84,57 @@ Windows 8.1 以降用のネイティブ **メール** アプリケーション (
 
 3. **[Exchange On-Premises のアクセス]** ウィンドウで **[はい]** を選択し、*Exchange On-Premises のアクセス制御を有効にします*。
 
+   > [!div class="mx-imgBorder"]
+   > ![Exchange On-Premises のアクセス画面のスクリーンショットの例](./media/conditional-access-exchange-create/exchange-on-premises-access.png)
+
 4. **[割り当て]** で **[含めるグループを選択]** を選択し、アクセスを構成する 1 つまたは複数のグループを選択します。
 
    選択したグループのメンバーに、Exchange On-Premises アクセスの条件付きアクセス ポリシーが適用されます。 このポリシーを受け取ったユーザーは、Exchange On-Premises にアクセスする前に、Intune にデバイスを登録し、コンプライアンス プロファイルに準拠しておく必要があります。
 
-5. グループを除外するには、 **[含めないグループを選択]** を選択し、Exchange On-Premises にアクセスする前にデバイスを登録してコンプライアンス プロファイルに準拠しておくという要件から除外する 1 つまたは複数のグループを選択します。 
+   > [!div class="mx-imgBorder"]
+   > ![含めるグループを選択](./media/conditional-access-exchange-create/select-groups.png)
 
-6. 次に、Intune On-Premises Exchange コネクタの設定を構成します。  *[Exchange On-Premises のアクセス]* ウィンドウの **[設定]** で、 **[Exchange ActiveSync のオンプレミス コネクタ]** を選択した後、構成する Exchange 組織用のコネクタを選択します。
+5. グループを除外するには、 **[含めないグループを選択]** を選択し、Exchange On-Premises にアクセスする前にデバイスを登録してコンプライアンス プロファイルに準拠しておくという要件から除外する 1 つまたは複数のグループを選択します。
 
-7. **[設定]** で **[ユーザーへの通知]** を選択し、準拠していないデバイスで Exchange On-Premises にアクセスしようとしているユーザーに送信される既定の電子メール メッセージを変更します。 メッセージ テンプレートでは、マークアップ言語が使用されます。  また、入力しながら、メッセージがどのように表示されるかをプレビュー表示できます。
+   **[保存]** を選択して構成を保存し、 **[Exchange へのアクセス]** ペインに戻ります。
+
+6. 次に、Intune On-Premises Exchange コネクタの設定を構成します。 コンソールで **[テナント管理]**  >  **[Exchange へのアクセス]** >  **[Exchange ActiveSync のオンプレミス コネクタ]** を選択し、構成する Exchange 組織のコネクタを選択します。
+
+7. **[ユーザー通知]** の **[編集]** を選択し、 **[Edit Organization]\(組織の編集\)** ワークフローを開きます。ここで *[ユーザーへの通知]* メッセージを変更できます。
+
+   > [!div class="mx-imgBorder"]
+   > ![通知の [組織の編集] ワークフローのスクリーンショットの例](./media/conditional-access-exchange-create/edit-organization-user-notification.png)
+
+   デバイスが準拠しておらず、Exchange On-Premises にアクセスした場合に、ユーザーに送信される既定のメール メッセージを変更します。 メッセージ テンプレートでは、マークアップ言語が使用されます。 また、入力しながら、メッセージがどのように表示されるかをプレビュー表示できます。
+
+   **[レビューと保存]** 、 **[保存]** の順に選択して編集内容を保存し、Exchange On-Premises へのアクセスの構成を完了します。
+
    > [!TIP]
    > マークアップ言語の詳細については、Wikipedia の[こちらの記事](https://en.wikipedia.org/wiki/Markup_language)を参照してください。
- 
-   **[OK]** を選択して編集を保存し、Exchange On-Premises アクセスの構成を完了します。
 
-8. 次に、 **[Exchange Active Sync アクセスの詳細設定]** を選択して *[Exchange ActiveSync アクセスの詳細設定]* ウィンドウを開き、デバイス アクセス ルールを構成します。  
+8. 次に、 **[Exchange Active Sync アクセスの詳細設定]** を選択して *[Exchange ActiveSync アクセスの詳細設定]* ワークフローを開き、デバイス アクセス ルールを構成します。
+
+   > [!div class="mx-imgBorder"]
+   > ![詳細設定の [組織の編集] ワークフローのスクリーンショットの例](./media/conditional-access-exchange-create/edit-organization-advanced-settings.png)
 
    - **[アンマネージド デバイス アクセス]** では、条件付きアクセスやその他のルールの影響を受けないデバイスからのアクセスに対するグローバルな既定のルールを設定します。
 
      - **[アクセスを許可]** - すべてのデバイスから Exchange On-Premises にすぐにアクセスできます。 前の手順で含まれるように構成したグループのユーザーのデバイスについては、そのデバイスが後でコンプライアンス ポリシーに非準拠と評価されたり、Intune に登録されていなかったりするとブロックされます。
 
-     - **[アクセスのブロック]** および **[検査]** - 最初はすべてのデバイスが Exchange On-Premises へのアクセスをすぐにブロックされます。 前の手順で含まれるように構成されたグループのユーザーのデバイスについては、デバイスが Intune に登録され、準拠として評価された後でアクセスできるようになります。 
+     - **[アクセスのブロック]** および **[検査]** - 最初はすべてのデバイスが Exchange On-Premises へのアクセスをすぐにブロックされます。 前の手順で含まれるように構成されたグループのユーザーのデバイスについては、デバイスが Intune に登録され、準拠として評価された後でアクセスできるようになります。
 
        Samsung KNOX Standard が実行されて "*いない*" Android デバイスは、この設定がサポートされていないため、常にブロックされます。
 
-   -  **[デバイス プラットフォームの例外]** では、 **[追加]** を選択し、環境の必要に応じてプラットフォームの詳細を指定します。 
-   
-      **[アンマネージド デバイス アクセス]** 設定が **[ブロック済み]** に設定されている場合は、それらをブロックするプラットフォーム例外があっても、登録済みの準拠デバイスは許可されます。  
-   
-   **[OK]** を選択して編集を保存します。
+   - **[デバイス プラットフォームの例外]** では、 **[追加]** を選択し、環境の必要に応じて詳細を指定します。
 
-9. **[保存]** を選択して、Exchange の条件付きアクセス ポリシーを保存します。
+      **[アンマネージド デバイス アクセス]** 設定が **[ブロック済み]** に設定されている場合は、それらをブロックするプラットフォーム例外があっても、登録済みの準拠デバイスは許可されます。  
+
+9. **[OK]** を選択して編集を保存します。
+
+10. **[レビューと保存]** 、 **[保存]** の順に選択し、Exchange の条件付きアクセス ポリシーを保存します。
+
+## <a name="next-steps"></a>次のステップ
 
 次に、コンプライアンス ポリシーを作成し、それを Intune のユーザーに割り当てて、ユーザーのモバイル デバイスを評価します。[デバイス コンプライアンスの概要](device-compliance-get-started.md)に関する記事を参照してください。
-
-## <a name="next-steps"></a>次の手順
 
 [Microsoft Intune での Intune オンプレミス Exchange コネクタのトラブルシューティング](https://support.microsoft.com/help/4471887)

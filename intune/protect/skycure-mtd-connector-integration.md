@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6c28b222307ee20e3198033ef6aa4af3d756e7e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 19c1bb959212ebeaea40f7089cba5533b6efeb71
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72681318"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912609"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Symantec Endpoint Protection Mobile と Intune の統合を設定する
 
@@ -40,7 +40,7 @@ Symantec Endpoint Protection Mobile (SEP Mobile) ソリューションと Intune
 - Azure AD アカウントは、統合を実行する全体管理者アカウントである必要があります。
 ### <a name="network-setup"></a>ネットワークのセットアップ
 
-SEP Mobile セットアップとの統合用にネットワークが正しく構成されていることを確認するには、Symantec の記事「[Setting up your network configuration](https://portal.skycure.com/articles/Documentation/Setting-up-your-network-configuration-26-8-2016)」(ネットワーク構成の設定) をご覧ください。
+SEP Mobile のセットアップと統合できるようにネットワークが適切に構成されていることを確認するには、Symantec の[インストール後の SEP Manager の構成](https://support.symantec.com/us/en/article.HOWTO80819.html)に関する記事を参照してください。
 
 ### <a name="full-integration-vs-read-only"></a>比較: 完全統合と読み取り専用
 
@@ -101,7 +101,7 @@ SEP Mobile は、Mobile Threat Defense サービスを実行しているデバ�
 
 ### <a name="retrieve-the-directory-id-in-azure-ad"></a>Azure AD でディレクトリ ID を取得する
 
-1. [Azure ポータル](https://portal.azure.com)にサインインします。
+1. [Azure portal](https://portal.azure.com) にサインインします。
 
 2. 検索ボックスに「Active Directory」と入力し、**Azure Active Directory** を選びます。
 
@@ -153,6 +153,6 @@ SEP Mobile は、Mobile Threat Defense サービスを実行しているデバ�
 11. 選択したグループのデバイスが SEP Mobile によって同期され、Intune への情報の報告が始まります。 このデータは、[Full Integration]\(完全統合\) セクションで見ることができます。 **[Settings]\(設定\)**  >  **[Integrations]\(統合\)**  >  **[Intune]**  >  **[Full Integration]\(完全統合\)** セクションの順に移動します。
 
      ![SEP Mobile の完全統合の完了を示す画像](./media/skycure-mtd-connector-integration/symantec-portal-basic-status.PNG)
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [SEP Mobile アプリを設定する](mtd-apps-ios-app-configuration-policy-add-assign.md)

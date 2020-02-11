@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -16,16 +16,16 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4a4c6d40dc729fb72210c455c7819baaf89de3b
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 03b8f050dc6232b87d1149aff0a93cd7b06839cd
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691838"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755410"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune を使用して Windows デバイスに展開できるように基幹業務アプリに署名する
 
-Intune 管理者は、ポータル サイト アプリを含め、基幹業務 (LOB) ユニバーサル アプリを Windows 8.1 Desktop デバイスまたは Windows 10 Desktop および Mobile デバイスに展開することができます。 .appx アプリを Windows 8.1 Desktop デバイスまたは Windows 10 Desktop および Mobile デバイスに展開するには、Windows デバイスによって既に信頼されている公開証明機関からのコード署名証明書を使用するか、独自の証明機関を使用することができます。
+Intune 管理者は、ポータル サイト アプリを含め、基幹業務 (LOB) ユニバーサル アプリを Windows 8.1 Desktop デバイスまたは Windows 10 Desktop および Mobile デバイスに展開することができます。 *.appx* アプリを Windows 8.1 Desktop デバイスまたは Windows 10 Desktop および Mobile デバイスに展開するには、Windows デバイスによって既に信頼されている公開証明機関からのコード署名証明書を使用するか、独自の証明機関を使用することができます。
 
  > [!NOTE]
  > Windows 8.1 Desktop では、サイドローディングを有効にするエンタープライズ ポリシー、または (ドメイン参加済みデバイスに対して自動的に有効にされる) サイドローディング キーの使用が必要です。 詳しくは、[Windows 8 のサイドローディング](https://blogs.technet.microsoft.com/scd-odtsp/2012/09/27/windows-8-sideloading-requirements-from-technet/)に関するページをご覧ください。
@@ -52,10 +52,11 @@ Windows 10 でのサイドローディングは、以前のバージョンの Wi
 
 Windows 10 デバイスで証明機関がまだ信頼されていない場合は、appx パッケージに署名して Intune サービスにアップロードした後、コード署名証明書を Intune ポータルにアップロードする必要があります。
 
-1. [クライアント アプリ] をクリックします
-2. [Windows Enterprise 証明書] をクリックします
-3. コード署名証明書の下の [ファイルの選択] を選択します
-4. .cer ファイルを選択して [アップロード] をクリックします
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[テナント管理]**  >  **[Connectors and tokens]\(コネクタとトークン\)**  >  **[Windows enterprise certifcates]\(Windows エンタープライズ証明書\)** をクリックします。
+3. **[Code-signing certificate file]\(コード署名証明書ファイル\)** の下のファイルを選択します。
+4. *.cer* ファイルを選択して **[開く]** をクリックします。
+5. **[アップロード]** をクリックして証明書ファイルを Intune に追加します。
 
 Intune サービスによって appx が展開された Windows 10 Desktop および Mobile デバイスでは、対応するエンタープライズ証明書が自動的にダウンロードされ、インストール後にアプリケーションは起動できるようになります。
 
@@ -94,7 +95,7 @@ Microsoft Store へのアクセスを提供したくない場合は、Intune を
       ![APPXBUN ファイルと共に保存された依存関係フォルダーのイメージ](./media/app-sideload-windows/Win10CP-Dependencies-save.png)
    2. 依存関係フォルダーに 9 つの依存関係パッケージを配置します。  
       依存関係がこの形式で配置されていないと、Intune はパッケージのアップロード時にこれらを認識、アップロードすることができます、次のエラーでアップロードが失敗します。  
-      ![エラー メッセージ - Windows アプリの依存関係を指定する必要があります。](./media/app-sideload-windows/Win10CP-error-message.png)
+      <img alt="Error message - The Windows app dependency must be provided." src="./media/app-sideload-windows/Win10CP-error-message.png" width="200">
 6. Intune に戻り、ポータル サイト アプリを新しいアプリとしてアップロードします。 これを必要なアプリとして対象の一連のターゲット ユーザーに展開します。  
 
 Intune がユニバーサル アプリ用に依存関係をどのように処理するかについて詳しくは、「[Deploying an appxbundle with dependencies via Microsoft Intune MDM (Microsoft Intune MDM 経由で依存関係を使用して appxbundle を展開する)](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)」ご覧ください。  

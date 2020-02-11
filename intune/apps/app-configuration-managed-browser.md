@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52f907b8762322684ec9e21910745a197c3dbe4e
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: babe556d6810ad027a1b0b3cae6364c99bc9a07c
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564318"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812516"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune のポリシーで保護されたブラウザーを使用して Web アクセスを管理する
 
@@ -33,9 +33,12 @@ Intune ポリシーで保護されているブラウザー (Microsoft Edge ま�
 
 - アプリケーション保護ポリシー
 - 条件付きアクセス
-- シングル サインオン
+- シングル サイン オン
 - アプリケーション構成設定
 - Azure アプリケーション プロキシの統合
+
+> [!IMPORTANT]
+> Intune Managed Browser は廃止予定です。 保護された Intune ブラウザー エクスペリエンスには Microsoft Edge を使用してください。 
 
 ## <a name="microsoft-edge-support"></a>Microsoft Edge のサポート
 
@@ -200,10 +203,10 @@ Microsoft Edge および Intune Managed Browser と [Azure AD アプリケーシ
     > 更新されたアプリケーション プロキシのリダイレクト データが、Managed Browser や Microsoft Edge で有効になるまでには、最大で 24 時間かかる場合があります。
 
 
-#### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>手順 1.Outlook から保護ブラウザーへの自動リダイレクトを有効にする
+#### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>手順 1:Outlook から保護ブラウザーへの自動リダイレクトを有効にする
 Outlook は、アプリ保護ポリシーの **[Managed Browser に表示する Web コンテンツを制限する]** 設定を有効にして構成される必要があります。
 
-#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>手順 2: 保護されているブラウザーに割り当てられたアプリ構成ポリシーを割り当てる
+#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>手順 2:保護されているブラウザーに割り当てられたアプリ構成ポリシーを割り当てる
 この手順では、アプリ プロキシのリダイレクトを使用するように、Managed Browser または Microsoft Edge アプリを構成します。 
 
 ポリシーの構成設定にある **[Edge]** タブを開き、アプリケーション プロキシ リダイレクトの値に **[有効]** を選択します。 この設定を有効にすると、ユーザーは、Azure アプリケーション プロキシを通じて発行された企業リンクおよびオンプレミス Web アプリにアクセスできるようになります。
@@ -344,6 +347,6 @@ Microsoft は、Microsoft の製品やサービスを改善するために、Man
 
 - iOS デバイスでは、証明書の有効期限が切れている Web サイトや証明書が信頼されていない Web サイトにユーザーがアクセスしても、開くことができません。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [アプリ保護ポリシーとは?](app-protection-policy.md) 

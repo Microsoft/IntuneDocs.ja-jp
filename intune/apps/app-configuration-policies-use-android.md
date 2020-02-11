@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec80922cf2539fdbacb572fd96c5a5e45549b5c3
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: b30da567d1a25028c51cf8268eab9613a7c3b8af
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205039"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755492"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>マネージド Android Enterprise デバイス用にアプリ構成ポリシーを追加する
 
@@ -34,21 +34,43 @@ Microsoft Intune でのアプリ構成ポリシーによって、マネージド
 > [!NOTE]  
 > アプリ構成をサポートしていないアプリもあります。 アプリ上でアプリ構成ポリシーがサポートされているかどうかを確認するには、アプリの開発者にお問い合わせください。
 
-1. [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) で、 **[アプリ]**  >  **[アプリ構成ポリシー]**  >   **[追加]**  >  **[マネージド デバイス]** を選択します。
-2. 次のプロパティを追加します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[アプリ]**  >  **[アプリ構成ポリシー]**  >  **[追加]**  >  **[マネージド デバイス]** を選択します。 **[マネージド デバイス]** と **[マネージド アプリ]** のどちらかを選択できます。 詳細については、「[アプリ構成をサポートするアプリ](~/apps/app-configuration-policies-overview.md#apps-that-support-app-configuration)」を参照してください。
+3. **[基本]** ページで、次の詳細を設定します。
+    - **名前**: Azure portal に表示されるプロファイルの名前。
+    - **説明**: Azure portal に表示されるプロファイルの説明。
+    - **[デバイス登録の種類]** - この設定は、 **[マネージド デバイス]** に設定されています。
+4. **[プラットフォーム]** として **[Android Enterprise]** を選択します。
+5. **[対象アプリ]** の横にある **[アプリの選択]** をクリックします。 **[関連アプリ]** ペインが表示されます。 
+6. **[関連アプリ]** ペインで、構成ポリシーに関連付けるマネージド アプリを選択し、 **[OK]** をクリックします。
+7. **[次へ]** をクリックして、 **[設定]** ページを表示します。
+8. **[追加]** をクリックして **[アクセス許可の追加]** ペインを表示しします。
+9. 上書きするアクセス許可をクリックします。 付与するアクセス許可により、選択したアプリの [既定のアプリのアクセス許可] ポリシーがオーバーライドされます。
+10. 各アクセス許可に対して **[アクセス許可の状態]** を設定します。 **[プロンプト]** 、 **[自動許可]** 、または **[自動拒否]** から選択できます。 アクセス許可の詳細については、「[Intune を使用してデバイスを準拠または非準拠としてマークするための Android エンタープライズ設定](~/protect/compliance-policy-create-android-for-work.md)」を参照してください。
+11. ドロップダウン ボックスで、 **[構成設定の形式]** を選択します。 次のいずれかの方法を選択して、構成情報を追加します。
+    - **構成デザイナーを使用する**
+    - **JSON データの入力**<br><br>
+    構成デザイナーの使用の詳細については、「[構成デザイナーの使用](#use-the-configuration-designer)」を参照してください。 XML データの入力の詳細については、「[JSON データの入力](#enter-json-data)」を参照してください。 
+12. **[次へ]** をクリックして、 **[割り当て]** ページを表示します。
+13. **[割り当て先]** の横のドロップダウン ボックスで、アプリ構成ポリシーの割り当て先として **[選択したグループ]** 、 **[すべてのユーザー]** 、 **[すべてのデバイス]** 、または **[All users and all devies]\(すべてのユーザーとすべてのデバイス\)** を選択します。
 
-    - **名前**:ポリシーのわかりやすい名前を入力します。 後で簡単に識別できるよう、ポリシーに名前を付けます。 たとえば、適切なポリシー名は、**Android Enterprise Nine Work app policy for entire company (企業全体での Android Enterprise Nine Work アプリ ポリシー)** となります。
-    - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
-    - **[デバイス登録の種類]** :この設定は、 **[マネージド デバイス]** に設定されています。
-    - **[プラットフォーム]** : **[Android]** を選択します。
+    ![ポリシーの割り当ての [含める] タブのスクリーンショット](./media/app-configuration-policies-use-ios/app-config-policy01.png)
 
-3. **[関連アプリ]** を選択します。 このアプリ構成ポリシーを関連付ける Android アプリを選択します。 [承認して Intune に同期したマネージド Google Play アプリ](~/apps/apps-add-android-for-work.md)の一覧から選択します。
-4. **[アクセス許可]** を選択します。 以下を使用して構成を設定できます。
+14. ドロップダウン ボックスで **[すべてのユーザー]** を選択します。
 
-    - [構成デザイナー](#use-the-configuration-designer)
-    - [JSON エディター](#enter-the-json-editor)
+    ![ポリシーの割り当ての [すべてのユーザー] ドロップダウン オプションのスクリーンショット](./media/app-configuration-policies-use-ios/app-config-policy02.png)
 
-5. **[OK]**  >  **[追加]** の順に選択します。
+15. **[含めないグループを選択]** をクリックして、関連するウィンドウを表示します。
+
+    ![ポリシーの割り当てのスクリーンショット - [含めないグループを選択] ウィンドウ](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+
+16. 除外するグループを選んで、 **[選択]** をクリックします。
+
+    >[!NOTE]
+    >グループを追加するときに、他のグループが特定の割り当て種類に既に含まれる場合は、あらかじめ選択されており、他の含める割り当て種類には変更できません。 そのため、使われているそのグループは、含まれないグループとして使えません。
+
+17. **[次へ]** をクリックして、 **[確認と作成]** ページを表示します。
+18. **[作成]** をクリックして、アプリ構成ポリシーを Intune に追加します。
 
 ## <a name="use-the-configuration-designer"></a>構成デザイナーを使用する
 
@@ -92,7 +114,7 @@ Android デバイスでは、次のキー/値ペアを使用します。
    > 複数の ID を使用して構成された組織アカウントのみを許可する場合は、Outlook for Android 2.2.222 以降、Word、Excel、PowerPoint for Android 16.0.9327.1000 以降、または OneDrive for Android 5.28 以降を使用する必要があります。<p></p>
    > Microsoft Intune 管理者として、マネージド デバイス上の Microsoft Office アプリケーションにどのユーザー アカウントを追加するかを制御できます。 許可されている組織ユーザー アカウントのみにアクセスを制限したり、登録済みデバイス上の個人アカウントをブロックしたりできます。 サポートされているアプリケーションがアプリの構成を処理し、未承認のアカウントを削除してブロックします。<p></p>
 
-## <a name="enter-the-json-editor"></a>JSON エディターの入力
+## <a name="enter-json-data"></a>JSON データの入力
 
 構成デザイナーでは構成できないアプリの構成設定もあります (バンドル タイプを利用するアプリなど)。 それらの値には、JSON エディターを使用します。 設定は、アプリのインストール時に自動で行われます。
 

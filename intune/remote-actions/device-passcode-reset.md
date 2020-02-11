@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be6a254360d8e8e9ef1396515d261b6ff9077b87
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d2a5629e6a318836e23c6a2f7fceb59363a0ed72
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713122"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812489"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune でデバイスのパスコードをリセットまたは削除する
 
@@ -34,13 +34,13 @@ ms.locfileid: "73713122"
 | プラットフォーム | サポート対象 |
 | ---- | ---- |
 | Android デバイス、バージョン 6.x 以前 | はい |
-| キオスク モードの Android enterprise デバイス | はい |
+| デバイスの所有者として登録されている Android エンタープライズ デバイス | はい |
 | iOS デバイス | はい |
-| ユーザー登録に登録されている iOS デバイス | [いいえ] |
-| 仕事用プロファイルに登録されている Android デバイス | [いいえ] |
-| Android デバイス、バージョン 7.0 以降 | [いいえ] |
-| macOS | [いいえ] |
-| Windows | [いいえ] |
+| ユーザー登録に登録されている iOS デバイス | いいえ |
+| 仕事用プロファイルに登録されている Android デバイス | いいえ |
+| Android デバイス、バージョン 7.0 以降 | いいえ |
+| macOS | いいえ |
+| Windows | いいえ |
 
 Android デバイスの場合、これは、デバイス レベルのパスコードのリセットは、6.x 以前を実行しているデバイス上、またはキオスク モードで実行している Android Enterprise デバイス上でのみサポートされることを意味します。 これは、Google がデバイス管理者が許可したアプリ内から Android 7 デバイスのパスコード/パスワードのリセットのサポートを削除し、すべての MDM ベンダーに適用しているためです。
 
@@ -49,8 +49,8 @@ Android デバイスの場合、これは、デバイス レベルのパスコ�
 | プラットフォーム | サポート対象 |
 | ---- | ---- |
 | 仕事用プロファイルと共に登録され、バージョン 8.0 以降を実行している Android enterprise デバイス | はい |
-| 仕事用プロファイルと共に登録され、バージョン 7.x 以前を実行している Android enterprise デバイス | [いいえ] |
-| バージョン 7.x 以前を実行している Android デバイス | [いいえ] |
+| 仕事用プロファイルと共に登録され、バージョン 7.x 以前を実行している Android enterprise デバイス | いいえ |
+| バージョン 7.x 以前を実行している Android デバイス | いいえ |
 
 新しい仕事用プロファイルのパスコードを作成するには、パスコードのリセット アクションを使用します。 このアクションでは、パスコードのリセットが求められ、仕事用プロファイル専用に新しい一時パスワードが作成されます。 
 
@@ -72,6 +72,6 @@ Android デバイスの場合、これは、デバイス レベルのパスコ�
 
 リセットする代わりに、パスコードが iOS デバイスから削除されます。 パスコード コンプライアンス ポリシーが設定されている場合、ユーザーは [設定] で新しいパスコードを設定するようにデバイスから要求されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 実行したアクションの状態を確認するには、 **[デバイス]** で **[デバイス アクション]** を選択します。
