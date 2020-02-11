@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 252af3c7447b59ee6aaeb4cb05bed0579ae8af4c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 5b61c333f41054194b44c7517e508fe1ef6d28d4
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206705"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812379"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune でユーザーおよびデバイス プロファイルを割り当てる
 
@@ -31,7 +31,11 @@ ms.locfileid: "75206705"
 この記事では、プロファイルを割り当てる方法を示し、プロファイルでのスコープのタグの使用についての情報が含まれます。
 
 > [!NOTE]  
-> プロファイルが削除された場合、またはデバイスに割り当てられなくなった場合、設定が既存値のままになることがあります。 この設定は既定値に戻りません。 設定を別の値に変更するには、新しいプロファイルを作成して割り当てます。
+> プロファイルが削除されるか、デバイスに割り当てられなくなった場合の影響は、プロファイルの設定によって異なります。 設定は CSP に基づいており、CSP によってプロファイルの削除の処理方法は異なります。 たとえば、設定に既存の値が保持され、既定値には戻らない場合があります。 動作は、オペレーティング システムの各 CSP によって制御されます。 Windows CSP の一覧については、[構成サービス プロバイダー (CSP) のリファレンス](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)を参照してください。
+>
+> 設定を別の値に変更するには、新しいプロファイルを作成し、その設定を **[未構成]** に構成して、プロファイルを割り当てます。 デバイスに適用されたら、ユーザーが設定を適切な値に変更する必要があります。
+>
+> これらの設定を構成するときは、パイロット グループに展開することをお勧めします。 Intune のロールアウトの詳細なアドバイスについては、[ロールアウト計画の作成](../fundamentals/planning-guide-rollout-plan.md)に関する記事を参照してください。
 
 ## <a name="before-you-begin"></a>始める前に
 
