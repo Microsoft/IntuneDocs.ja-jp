@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae7ffe5a8c20aa7edd67853ff86ef9e28cf2d175
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 38bc86b1b9ba85eb7885a0e00673e551821063c1
+ms.sourcegitcommit: 459b0ee01eb6e69cc0ce66d4c4b81d73f510f96d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76915825"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77034245"
 ---
 # <a name="overview-for-troubleshooting-scep-certificate-profiles-with-microsoft-intune"></a>Microsoft Intune での SCEP 証明書プロファイルのトラブルシューティングの概要
 
@@ -115,11 +115,11 @@ Intune の SCEP 通信プロセスの基本的な概要を次の図に示しま�
 
 ### <a name="logs-for-android-devices"></a>Android デバイスのログ
 
-Android を実行するデバイスの場合は、**Android ポータル サイト** アプリ ログ ファイル **OMADM.log** を使用します。 ログを収集して確認する前に、[[詳細なログ記録]](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md) が有効であることを確認してから、問題を再現します。
+Android を実行するデバイスの場合は、**Android ポータル サイト** アプリ ログ ファイル **OMADM.log** を使用します。 ログを収集して確認する前に、[[詳細なログ記録]](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android) が有効であることを確認してから、問題を再現します。
 
-デバイスから OMADM.logs を収集する方法については、「[USB ケーブルを使用してログをアップロードして電子メールを送信する](/intune-user-help/send-logs-to-your-it-admin-using-cable-android.md)」を参照してください。
+デバイスから OMADM.logs を収集する方法については、「[USB ケーブルを使用してログをアップロードして電子メールを送信する](/intune-user-help/send-logs-to-your-it-admin-using-cable-android)」を参照してください。
 
-サポートする[ログをアップロードして電子メールで送信する](/intune-user-help/send-logs-to-your-it-admin-by-email-android.md#upload-and-email-logs-from-microsoft-intune-app)こともできます。
+サポートする[ログをアップロードして電子メールで送信する](/intune-user-help/send-logs-to-your-it-admin-by-email-android#upload-and-email-logs-from-microsoft-intune-app)こともできます。
 
 ### <a name="logs-for-ios-and-ipados-devices"></a>iOS および iPadOS デバイスのログ
 

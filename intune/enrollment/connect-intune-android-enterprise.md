@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2c6463ddce7d04168e1929414faf441ae415837
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 581d88e49391bc874625e9c84318c039706b0c1b
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563842"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124828"
 ---
 # <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>managed Google Play アカウントに Intune アカウントを接続する
 
@@ -48,14 +48,14 @@ Android Enterprise 管理をより簡単に構成して使用できるように�
 
 3. **[同意する]** を選択して、Microsoft が[ユーザーとデバイスの情報を Google に送信](../protect/data-intune-sends-to-google.md)できるようにします。 
    
-4. **[Launch Google to connect now]\(Google を起動して今すぐ接続する\)** を選択して、managed Google Play の Web サイトを開きます。 ブラウザーの新しいタブで Web サイトが開きます。
+4. **[Launch Google to connect now]\(Google を起動して今すぐ接続する\)** を選択して、managed Google Play の Web サイトを開きます。 お使いのブラウザーで、Web サイトが新しいタブで開きます。
   
 5. Google のサインイン ページで、このテナントのすべての Android Enterprise 管理タスクに関連付ける Google アカウントを入力します。 これは、会社の IT 管理者が Google Play コンソールでアプリを管理および公開するときに共有する Google アカウントです。 既存の Google アカウントを使用するか、新しい Google アカウントを作成できます。 選択したアカウントを G-Suite ドメインと関連付けることはできません。
     
     > [!Note]
     > Microsoft Edge ブラウザーを使用している場合は、右上隅の **[サインイン]** をクリックして、Google アカウントにサインインします。
 
-6. **[組織名]** に会社名を入力します。 **エンタープライズ モビリティ管理 (EMM) プロバイダー**の場合、**Microsoft Intune** と表示されます。
+6. **[組織名]** には会社の名前を入力します。 **エンタープライズ モビリティ管理 (EMM) プロバイダー**の場合、**Microsoft Intune** と表示されます。
 
 7. Android の使用条件に同意し、 **[確認]** を選択します。 要求が処理されます。
 
@@ -67,6 +67,6 @@ Android Enterprise の登録と管理を無効にすることができます。 
 2. **[デバイス]**  >  **[Android]**  >  **[Android の登録]**  >  **[マネージド Google Play]**  >  **[切断]** の順に選択します。
 3. **[はい]** を選択して、Intune からすべての Android エンタープライズ デバイスを切断し、登録を解除します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-マネージド Google Play アカウントに接続したら、[Android Enterprise 仕事用プロファイル デバイスの設定](android-work-profile-enroll.md)、[Android Enterprise 専用デバイスの設定](android-kiosk-enroll.md)、および [Android Enterprise フル マネージド デバイスの設定](android-kiosk-enroll.md)を実行できます。
+マネージド Google Play アカウントに接続したら、[Android Enterprise 仕事用プロファイル デバイスの設定](android-work-profile-enroll.md)、[Android Enterprise 専用デバイスの設定](android-kiosk-enroll.md)、および [Android Enterprise フル マネージド デバイスの設定](android-fully-managed-enroll.md)を実行できます。
