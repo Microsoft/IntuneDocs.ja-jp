@@ -44,7 +44,7 @@ Microsoft Intune は、Windows 10 デバイス上のさまざまな種類のア�
 
 ユーザーが実行している Windows 10 のバージョンに基づいて、特定の種類のアプリがサポートされます。 アプリの種類と Windows 10 のサポート状況を次の表に示します。
 
-| アプリの種類 | のホーム | Pro | Business | Enterprise | 教育 | S-Mode | Hololense | SurfaceHub | WCOS | モバイル |
+| アプリの種類 | Home | Pro | Business | Enterprise | Education | S-Mode | Hololense | SurfaceHub | WCOS | Mobile |
 |----------------|------|-----|----------|------------|-----------|--------|-----------|------------|------|--------|
 |  .MSI | いいえ | はい | はい | はい | はい | いいえ | いいえ | いいえ | いいえ | いいえ |
 | .IntuneWin | いいえ | はい | はい | はい | はい | 19H2+ | いいえ | いいえ | いいえ | いいえ |
@@ -72,8 +72,8 @@ Windows 10 LOB アプリに署名して、Intune 管理コンソールにアッ�
 ビジネス向け Microsoft Store アプリを分類するには: 
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-2. **[アプリ]**  >  **[すべてのアプリ]** を選択します。 
-3. ビジネス向け Microsoft Store アプリを選択します。 次に、 **[プロパティ]**  >  **[アプリ情報]**  >  **[カテゴリ]** を選択します。 
+2. **[アプリ]** > **[すべてのアプリ]** を選択します。 
+3. ビジネス向け Microsoft Store アプリを選択します。 次に、**[プロパティ]** > **[アプリ情報]** > **[カテゴリ]** を選択します。 
 4. カテゴリを選択します。
 
 ## <a name="install-apps-on-windows-10-devices"></a>Windows 10 デバイスにアプリをインストールする
