@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e64741a92804ec4149b654480166720ff3092e35
-ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
+ms.openlocfilehash: 3ae5a7508f27dbf15a58ba3386e744bb63bf102b
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76258501"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125015"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Edge と Microsoft Intune を使用して Web アクセスを管理する
 
@@ -285,16 +285,27 @@ Microsoft Edge に組み込まれているデュアル ID モデルでは、Intu
 
 |    キー    |    値    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock'    |    **True** にすると、制限されたリンクに対して InPrivate ブラウズが直接開くようになります。<p>**False** (既定値) にすると、InPrivate ブラウズまたは個人用 (MSA) アカウントのどちらで制限されたリンクを開くかを、ユーザーが選択できます。    |
+|    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** (既定) の場合、Microsoft Edge で、ブロックされたサイトを開くために個人用コンテキストにユーザーを移行させることができます。<p>**False** では、Microsoft Edge でユーザーを移行させることはできません。 ユーザーには、アクセスしようとしているサイトがブロックされていることを示すメッセージが単に表示されます。    |
 
 ## <a name="open-restricted-links-directly-in-inprivate-tab-pages"></a>制限されたリンクを InPrivate タブ ページで直接開く
 
-制限されたリンクを InPrivate ブラウズで直接開く必要があるかどうかを構成できます。InPrivate ブラウズでは、よりシームレスな閲覧エクスペリエンスがユーザーに提供されます。 これにより、ユーザーはサイトを表示するために個人用コンテキストを経由する手間がなくなります。 InPrivate ブラウズはアンマネージドと見なされるため、InPrivate ブラウズ モードの使用中は、ユーザーはアクセスできません。 
+制限されたリンクを InPrivate ブラウズで直接開く必要があるかどうかを構成できます。InPrivate ブラウズでは、よりシームレスな閲覧エクスペリエンスがユーザーに提供されます。 これにより、ユーザーはサイトを表示するために個人用コンテキストを経由する手間がなくなります。 InPrivate ブラウズはアンマネージドと見なされるため、InPrivate ブラウズ モードの使用中は、ユーザーはアクセスできません。
 
 |    キー    |    値    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** の場合、Microsoft Edge で、ブロックされたサイトを開くために個人用コンテキストにユーザーを移行させることができます。<p>**Block** では、Microsoft Edge でユーザーを移行させることはできません。 ユーザーには、アクセスしようとしているサイトがブロックされていることを示すメッセージが単に表示されます。    |
 
+## <a name="disable-microsoft-edge-prompt-to-save-passwords"></a>Microsoft Edge プロンプトを無効にしてパスワードを保存する
+
+|    キー    |    値    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock`    |    **True** にすると、制限されたリンクに対して InPrivate ブラウズが直接開くようになります。<p>**False** (既定値) にすると、InPrivate ブラウズまたは個人用 (MSA) アカウントのどちらで制限されたリンクを開くかを、ユーザーが選択できます。    |
+
+iOS の Microsoft Edge の既定では、ユーザーのパスワードがキーチェーンに保存されます。 組織に対してこのプロンプトを無効にする場合は、次の設定を構成します。
+
+|    キー    |    値    |
+|-----------|-------------|
+|     'com.microsoft.intune.mam.managedbrowser.disableFeatures'    |    **password** により、パスワードの保存のプロンプトが無効になります。    |
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>iOS で Microsoft Edge を使用してマネージド アプリのログにアクセスする 
 

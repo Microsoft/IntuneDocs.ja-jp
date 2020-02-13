@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c120fab1da43230888866cba9d818d7b433b711e
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: dbefd797fead7113045ee7e7655b715a0b4961fd
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755291"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075826"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune スタンドアロン - Win32 アプリ管理
 
@@ -108,11 +108,11 @@ Win32 アプリの管理を使用する場合は、必ず、次の基準を満�
 
 4. **[選択]** をクリックします。 **[アプリの追加]** 手順が表示されます。
 
-## <a name="step-1---app-information"></a>手順 1 - アプリ情報
+## <a name="step-1---app-information"></a>ステップ 1 - アプリ情報
 
 ### <a name="select-the-app-package-file"></a>アプリ パッケージ ファイルを選択する
 
-1. **[アプリの追加]** ペインで、 **[アプリ パッケージ ファイルの選択]** をクリックします。 
+1. **[アプリの追加]** ウィンドウで、 **[アプリ パッケージ ファイルの選択]** をクリックします。 
 2. **[アプリのパッケージ ファイル]** ウィンドウで、参照ボタンを選択します。 次に、拡張子が *.intunewin* の Windows インストール ファイルを選択します。
    アプリの詳細が表示されます。
 3. 操作を完了したら、 **[アプリ パッケージ ファイル]** ペインの **[OK]** を選択します。
@@ -204,7 +204,7 @@ Win32 アプリの管理を使用する場合は、必ず、次の基準を満�
         2. 要件規則の設定が完了したら、 **[OK]** を選択します。
 2. **[次へ]** をクリックして、 **[検出規則]** ページを表示します。   
 
-### <a name="step-4-detection-rules"></a>手順 4:検出規則
+## <a name="step-4-detection-rules"></a>手順 4:検出規則
 
 1. **[検出規則]** ページで、アプリの存在を検出するための規則を構成します。
     
@@ -268,7 +268,7 @@ Win32 アプリの管理を使用する場合は、必ず、次の基準を満�
 
 2. 規則を追加したら、 **[次へ]** を選択して **[依存関係]** ページを表示します。
 
-### <a name="step-5-dependencies"></a>手順 5:の依存関係
+## <a name="step-5-dependencies"></a>手順 5:の依存関係
 
 アプリ間の依存関係は、Win32 アプリをインストールする前にインストールする必要があるアプリケーションです。 依存関係として他のアプリがインストールされるように要求できます。 つまり、デバイスで Win32 アプリをインストールする前に、依存するアプリをインストールする必要があります。 最大 100 個の依存関係があり、これらには、アプリ自体だけでなく、含まれるすべての依存関係の依存関係が含まれます。 Win32 アプリ間の依存関係は、Win32 アプリが追加され、Intune にアップロードされた後にのみ追加できます。 Win32 アプリが追加されたら、Win32 アプリ用のウィンドウに **[依存関係]** オプションが表示されます。 
 

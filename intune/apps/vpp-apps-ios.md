@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bc511669ec8a88523581b3afbcca161d5208934
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: d965ac35719d809ab922d28f76dec1754e9a4c6b
+ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956191"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051628"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Apple Volume Purchase Program で購入した iOS アプリと macOS アプリを Microsoft Intune で管理する方法
 
@@ -130,6 +130,11 @@ Apple Business Manager を使用して、パブリック アプリおよびプ�
 
 >[!NOTE]
 >デバイス グループ用の "利用可能" デプロイ インテントはサポートされていません。サポートされているのはユーザー グループのみです。 表示されるアプリの一覧はトークンに関連付けられます。 アプリが複数の VPP に関連付けられている場合、複数回表示されます。同じアプリがトークンごとに 1 回です。
+
+> [!NOTE]  
+> Intune (またはこれに関連する他のすべての MDM) で実際に VPP アプリがインストールされることはありません。 代わりに、Intune は VPP アカウントに接続し、どのアプリ ライセンスをどのデバイスに割り当てるかを Apple に指示します。 そこから、すべての実際のインストールが Apple とデバイスの間で処理されます。
+> 
+> [Apple MDM プロトコル リファレンス、135 ページ](https://developer.apple.com/business/documentation/MDM-Protocol-Reference.pdf)
 
 ## <a name="end-user-prompts-for-vpp"></a>VPP のエンド ユーザー プロンプト
 

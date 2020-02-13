@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2019
+ms.date: 02/07/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3b391bb4ab064c080083e2c31dc28483f6d419a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 7e38e4f8552b6ef217d264cfa74597bda5c665ab
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098209"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125049"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
 
@@ -36,9 +36,14 @@ Microsoft Intune アプリに対する最新の更新プログラムについて
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/whats-new-app-ui/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-february-3-2020"></a>2020 年 2 月 3 日の週
+
+### <a name="screen-removed-from-company-portal-android-work-profile-enrollment---6103987---"></a>ポータル サイトの Android 仕事用プロファイルの登録から削除される画面 <!--6103987 -->
+ユーザー エクスペリエンスを効率化するために、ポータル サイトの Android 仕事用プロファイルの登録フローから **[次の手順]** 画面が削除されました。 更新後の Android 仕事用プロファイルの登録フローを確認するには、[Android 仕事用プロファイルへの登録](/intune-user-help/enroll-device-android-work-profile)に関する記事を参照してください。  
+
 ## <a name="week-of-november-11-2019"></a>2019 年 11 月 11 日の週  
 
-#### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>Windows ポータル サイト アプリから起動する Web アプリ<!-- 5030972 -->
+### <a name="web-apps-launched-from-the-windows-company-portal-app----5030972---"></a>Windows ポータル サイト アプリから起動する Web アプリ <!-- 5030972 -->
 エンドユーザーは、Windows ポータル サイト アプリから直接 Web アプリを起動できるようになりました。 エンドユーザーは、Web アプリを選択してから、 **[ブラウザーで開く]** オプションを選択できます。 発行された Web URL は、Web ブラウザー内で直接開かれます。 この機能は、次の週にわたってロールアウトされます。 Web アプリの詳細については、「[Web アプリを Microsoft Intune に追加する](~/apps/web-app.md)」をご覧ください。
 
 ![Windows ポータル サイト アプリから起動する Web アプリの例の画像](./media/whats-new-app-ui/webapp-open-in-browser.png)  
@@ -58,13 +63,13 @@ Android 用 Intune ポータル サイト アプリのセットアップ チェ�
 
 次の画面では、Android 仕事用プロファイルの登録に関する更新されたチェックリストを示します。
 
-|更新済み|前へ|  
+|更新後|前へ|  
 |---|---|  
 |![簡素化されたチェックリストと新しいアイコンが示されている、Intune ポータル サイトでの仕事用プロファイルのセットアップの画像の例。](./media/whats-new-app-ui/work-profile-checklist-1911.png)|![繁雑なチェックリストが示されている、Intune ポータル サイトでの以前の仕事用プロファイルのセットアップの画像の例。](./media/whats-new-app-ui/work-profile-checklist-1904.png)|   
 
 次の画面では、Android デバイス管理者の登録に関する更新されたチェックリストを示します。  
 
-|更新済み|前へ|  
+|更新後|前へ|  
 |---|---|  
 |![簡素化されたチェックリストと新しいアイコンが示されている、Intune ポータル サイトでの Android デバイス管理者のセットアップの画像の例。](./media/whats-new-app-ui/android-checklist-1911.png)|![繁雑なチェックリストが示されている、Intune ポータル サイトでの以前の Android デバイス管理者のセットアップの画像の例。](./media/whats-new-app-ui/android-checklist-1904.png)|  
 
@@ -167,15 +172,15 @@ Microsoft Intune 管理者は、iOS ポータル サイト アプリ内のユー
 
 更新プログラムでは、次のような内容を確認できます。  
 
-- すべてのデバイス プラットフォームでの簡素化されたワークフロー
-- 強化されたデバイスの識別と登録のフロー
-- 役に立つエラー メッセージ
+- すべてのデバイス プラットフォームにわたる合理化されたワークフロー
+- 改善されたデバイスの識別と登録のフロー
+- より役立つエラー メッセージ
 - 技術的な専門用語を減らした、わかりやすい言語
 - アプリへの直接リンクを共有する機能
 - 大規模なアプリケーション カタログのパフォーマンスの向上
-- すべてのユーザーに対するアクセシビリティの向上  
+- すべてのユーザーのアクセシビリティの向上  
 
-|更新済み|前へ|
+|更新後|前へ|
 |---|---|
 |![更新済みのデバイス ページでは、デバイスが完全なリストの上にポップアップ表示されるのではなく、デバイス情報の上にきれいに配置されて表示されます。](./media/whats-new-app-ui/iwp-device-after-1803.png)|![以前のバージョンのデバイス ページ。](./media/whats-new-app-ui/iwp-device-before-1803.png)|
 |![更新されたアプリのインストール ページには、説明とさまざまなインストール情報 (発行日、バージョン、およびアプリの種類など) の上に、そのアプリがわかりやすく表示されます。](./media/whats-new-app-ui/iwp-app-install-after-1803.png)|![以前のバージョンのアプリのインストール ページ。](./media/whats-new-app-ui/iwp-app-install-before-1803.png)|  
@@ -183,15 +188,15 @@ Microsoft Intune 管理者は、iOS ポータル サイト アプリ内のユー
 ## <a name="week-of-july-16-2018"></a>2018 年 7 月 16 日の週  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Windows 用ポータル サイト アプリ内での同期の機会の増加   
-Windows 用ポータル サイト アプリでは、Windows タスク バーと [スタート] メニューから直接同期を開始できるようになりました。 この機能は、唯一のタスクがデバイスを同期して、企業リソースへのアクセスを取得することで場合に特に便利です。 この新しい機能にアクセスするには、ご利用のタスク バーまたは **[スタート]** メニューに固定されているポータル サイト アイコンを右クリックします。 メニュー オプション (ジャンプ リストとも呼ばれる) で、 **[Sync this device]\(このデバイスを同期\)** を選択します。 ポータル サイトが開いて、 **[設定]** ページが表示され、同期が開始されます。  
+Windows 用ポータル サイト アプリでは、Windows タスク バーと [スタート] メニューから直接同期を開始できるようになりました。 この機能は、ユーザーの作業が会社のリソースへのデバイスの同期とアクセスだけの場合に特に便利です。 この新しい機能にアクセスするには、ご利用のタスク バーまたは **[スタート]** メニューに固定されているポータル サイト アイコンを右クリックします。 メニュー オプション (ジャンプ リストとも呼ばれる) で、 **[Sync this device]\(このデバイスを同期\)** を選択します。 ポータル サイトが開いて、 **[設定]** ページが表示され、同期が開始されます。  
 
 ![デバイスのデスクトップ上の Windows タスク バーのスクリーンショット。 ポータル サイトのアプリ プログラム アイコンをクリックすると、メニューにオプションの [タスク バーにピン留め]、[ウィンドウを閉じる]、[Sync this device]\(このデバイスを同期\) アクションが表示されます。](./media/whats-new-app-ui/sync-device-from-start-menu-1807.png)  
 
-### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Windows 用ポータル サイト アプリでの新しい参照エクスペリエンス  
+### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Windows 用ポータル サイト アプリでの新しい閲覧エクスペリエンス  
 
 Windows 用ポータル サイト アプリでアプリを参照または検索するときに、既存の **[タイル]** ビューと新しい **[詳細]** ビューを切り替えることができるようになりました。 この新しいビューには、名前、発行元、発行日、インストール状態などのアプリケーションの詳細がリストされます。  
 
-**[アプリ]** ページの **[インストール済み]** ビューでは、完了済みと進行中のアプリのインストールに関する詳細を確認できます。  
+**[アプリ]** ページの **[インストール済み]** ビューでは、完了したアプリのインストールと進行中のアプリのインストールに関する詳細を見ることができます。  
 
 タイル ビューが表示されるスクリーンショット例:  
  
@@ -203,7 +208,7 @@ Windows 用ポータル サイト アプリでアプリを参照または検索�
 
 ## <a name="week-of-april-23-2018"></a>2018 年 4 月 23 日の週
 ### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>Windows 10 用ポータル サイト アプリでのナビゲーション ビューの更新 <!-- 1195010 -->
-Windows 10 の Intune ポータル サイト アプリが [Fluent Design System のナビゲーション ビュー](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics)に合わせて更新されました。 アプリの側面だけでなく、すべてのトップ レベルのページに静的な縦方向リストが表示されます。 リンクをクリックすると、ページをすばやく表示したり、ページを切り替えたりできます。 これは現在作成中の更新の一部であり、今後さらにアダプティブで馴染みがあり、使いやすい Intune の機能を提供していきます。 
+Windows 10 の Intune ポータル サイト アプリは、[Fluent Design System のナビゲーション ビュー](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics)で更新済みです。 アプリの側面だけでなく、すべてのトップ レベルのページに静的な縦方向リストが表示されます。 リンクをクリックすると、ページをすばやく表示したり、ページを切り替えたりできます。 これは現在作成中の更新の一部であり、今後さらにアダプティブで馴染みがあり、使いやすい Intune の機能を提供していきます。 
 
 ![Fluent デザイン ナビゲーション ビューが示されている Intune ポータル サイト アプリのダッシュボードのスクリーンショット](./media/whats-new-app-ui/1804_WindowsCP_Fluent_01.png)
 
@@ -211,13 +216,13 @@ Windows 10 の Intune ポータル サイト アプリが [Fluent Design System 
 ## <a name="week-of-april-2-2018"></a>2018 年 4 月 2 日の週
 
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>iOS 用ポータル サイト アプリに関するユーザー エクスペリエンスの更新プログラム <!-- 1412866 -->
-iOS 用のポータル サイト アプリに対して、主要なユーザー エクスペリエンスの更新プログラムをリリースしました。 この更新プログラムでは、最新のルック アンド フィールを含む完全なビジュアル再設計が行われています。 アプリの機能を維持した上で、操作性とアクセシビリティが向上しています。  
+iOS 用のポータル サイト アプリに対して、主要なユーザー エクスペリエンスの更新プログラムをリリースしました。 この更新プログラムでは、ビジュアル面の完全な再設計により、最新の外観に一新されています。 アプリの機能が更新されていますが、その使いやすさとアクセシビリティも向上しています。  
 
-また、次のような更新が行われています。
+次の点も改善されています。
 - iPhone X のサポート。
-- アプリの起動および読み込み応答を速くして、ユーザー時間を節約。
-- 最新の状態情報をユーザーに提供するための進行状況バーを追加。
-- ログのアップロード方法を改善。これにより、問題が生じた場合に、その内容を簡単にレポートできる。  
+- アプリの起動時間と応答の読み込み時間の短縮。
+- 最新の状態情報をユーザーに提供する追加の進行状況バー。
+- 物事が正しく進まなかった場合、それを報告しやすくするためのログのアップロード方法の向上。  
 
 |以前|これらの手順の完了後、|
 |---|---|
@@ -310,7 +315,7 @@ iOS ユーザーもこの変更の影響を受けます。ポータル Web サ�
 ## <a name="week-of-october-2-2017"></a>2017 年 10 月 2 日の週
 
 ### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>ポータル サイトでのデバイスのセットアップ ワークフローの機能強化 <!-- 1490692 -->
-Android 用のポータル サイト アプリでデバイスのセットアップ ワークフローを改良しました。 言語がよりわかりやすく、会社固有のものとなり、可能な範囲で画面をまとめるようにしました。 
+Android 用ポータル サイト アプリにおけるデバイスのセットアップ ワークフローを改善しました。 言語がよりわかりやすく、会社固有のものとなり、可能な範囲で画面をまとめるようにしました。 
 
 |以前|これらの手順の完了後、|
 |---|---|
@@ -340,7 +345,7 @@ Android 仕事用プロファイル デバイスで追加のステップが強�
 
 ### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Android 用ポータル サイト アプリの文言をわかりやすいように変更 <!-- 1396349 -->  
 
-Android 用ポータル サイト アプリについて、エンドユーザーが登録しやすくなるよう、テキストを変更して登録プロセスを簡易化しました。 カスタム登録ドキュメントがある場合は、新しい画面が反映されるように更新できます。 以下でサンプル画像を確認できます。
+Android 用ポータル サイト アプリについて、エンドユーザーが登録しやすくなるよう、テキストを変更して登録プロセスを簡易化しました。 カスタム登録ドキュメントをお持ちの場合は、ドキュメントを更新して新しい画面を反映したいと思われるかもしれません。 以下でサンプル画像を確認できます。
 
 |以前|これらの手順の完了後、|
 |---|---|
@@ -465,7 +470,7 @@ __[別のデバイスからサインインする]__ リンクをタップしま�
 
 ### <a name="improvements-to-app-syncing-with-windows-10-creators-update---676505--"></a>Windows 10 Creators Update とアプリを同期する機能の強化 <!--676505-->
 
-Windows 10 用ポータル サイト アプリでは、Windows 10 Creators Update (バージョン 1703) がインストールされているデバイスのアプリ インストール要求の同期が自動的に開始されるようになりました。 "同期保留中" 状態中、アプリ インストールが止まる問題を減らします。 また、ユーザーはアプリ内から同期を手動で開始できます。
+Windows 10 用ポータル サイト アプリでは、Windows 10 Creators Update (バージョン 1703) がインストールされているデバイスのアプリ インストール要求の同期が自動的に開始されるようになりました。 "同期保留中" 状態中、アプリ インストールが止まる問題を減らします。 また、ユーザーは、アプリ内からの同期を手動で開始することができます。
 
 ![Windows 10 ポータル サイト アプリの画像。ポータル サイト アプリ ストアからの Microsoft Word のダウンロードが保留になっています。](./media/whats-new-app-ui/w10_download_pending_after_1706.png)
 
@@ -513,7 +518,7 @@ iOS デバイスで、職場または学校アカウントを使用して別の 
 
 ### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Managed Browser とポータル サイトの新しいアイコン <!--918433, 918431-->
 
-Managed Browser の Android バージョンと iOS バージョンのアイコンが更新されます。 新しいアイコンには、Enterprise Mobility + Security (EM+S) での他のアプリとの一貫性が向上した新しい Intune バッジが含まれます。
+管理対象ブラウザーは、Android 版アプリと iOS 版アプリの両方で更新されたアイコンを受け取ります。 新しいアイコンには、Enterprise Mobility + Security (EM+S) での他のアプリとの一貫性が向上した新しい Intune バッジが含まれます。
 
 <html>
 <body>
@@ -530,11 +535,11 @@ Managed Browser の Android バージョンと iOS バージョンのアイコ�
 </body>
 </html>
 
-Android、iOS、Windows でのポータル サイト アプリのアイコンも更新されて、EM+S での他のアプリとの一貫性が向上します。 これらのアイコンは、4 月から 5 月末にかけて段階的にプラットフォーム全体にリリースされます。
+Android、iOS、Windows でのポータル サイト アプリのアイコンも更新されて、EM+S での他のアプリとの一貫性が向上します。 アイコンは 4 月から 5 月後半にかけてすべてのプラットフォームに徐々に提供されます。
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 用ポータル サイトでのサインイン進行状況インジケーター <!--953374-->
 
-Android 用ポータル サイト アプリが更新されて、起動または再開時にサインイン進行状況インジケーターが表示されるようになります。 ユーザーがアプリへのアクセスを許可されるまでにインジケーターに順番に表示される新しいステータスは、[接続中...]、[サインイン中...]、[Checking for security requirements... (セキュリティ要件確認中...)] です。
+Android 用ポータル サイト アプリが更新されて、起動または再開時にサインイン進行状況インジケーターが表示されるようになります。 このインジケーターには新しい状態が次々と表示されます。"接続しています..." から始まり、"サインインしています..." に進み、さらに "セキュリティ要件を確認しています..." に進み、その後、ユーザーはアプリにアクセスできます。
 
 <html>
 <body>
@@ -557,9 +562,9 @@ Android 用ポータル サイト アプリが更新されて、起動または�
 ### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Windows 10 ポータル サイト アプリのアプリ インストール状態の向上 <!--676495-->
 現在の Windows 10 ポータル サイト アプリでは、アプリ詳細ページにインストール進行状況バーが表示されます。 これは、Windows 10 Anniversary Update 以降を実行するデバイスの最新アプリについてサポートされます。
 
-__変更前__ ![変更前のバージョンの読み込み画面の画像。状態は単に 'インストール中' と表示されていました。](./media/whats-new-app-ui/cp_win10_install_status_before_1704.png)
+__変更前__![変更前のバージョンの読み込み画面の画像。状態は単に 'インストール中' と表示されていました。](./media/whats-new-app-ui/cp_win10_install_status_before_1704.png)
 
-__変更後__ ![変更後のバージョンの読み込み画面の画像。インストール進行状況バーが表示されるようになりました。](./media/whats-new-app-ui/cp_win10_install_status_after_1704.png)
+__変更後__![変更後のバージョンの読み込み画面の画像。インストール進行状況バーが表示されるようになりました。](./media/whats-new-app-ui/cp_win10_install_status_after_1704.png)
 
 ## <a name="february-2017"></a>2017 年 2 月
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 02/10/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,25 +15,22 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: 44078f61e4f1939b1f0b15b3dde5ac54938ffbc3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9fb4aab6b02c6ad6a5d2f18ca9d15beafc12d58a
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059976"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124811"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Microsoft Intune での配信の最適化設定
 
-Intune では、ご利用の Windows 10 デバイスに合わせて配信の最適化の設定を使用することで、そのデバイスでアプリケーションおよび更新プログラムをダウンロードする際に消費される帯域幅を削減することができます。 配信の最適化は、ご利用のデバイスの構成プロファイルの一部として構成されます。  
+Intune では、ご利用の Windows 10 デバイスに合わせて配信の最適化設定を使用することで、そのデバイスでアプリケーションおよび更新プログラムをダウンロードする際に消費される帯域幅が削減されます。 デバイスの構成プロファイルの一部として、配信の最適化を構成します。  
 
 この記事では、デバイスの構成プロファイルの一部として配信の最適化の設定を構成する方法について説明します。 プロファイルを作成したら、次に、そのプロファイルをご利用の Windows 10 デバイスに割り当てるか、展開します。 
 
-Intune でサポートされる配信の最適化の設定の一覧については、「[Intune の配信の最適化の設定](../delivery-optimization-settings.md)」を参照してください。  
+Intune でサポートされる配信の最適化設定の一覧については、「[Intune 用の配信最適化の設定](../delivery-optimization-settings.md)」を参照してください。  
 
 Windows 10 での配信の最適化について学習するには、Windows ドキュメントの[配信の最適化更新プログラム](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)に関するページを参照してください。  
-
-> [!NOTE]
-> **[ソフトウェア更新プログラム] – [Windows 10 更新プログラムのリング]** は、 **[配信の最適化]** 設定によって置き換えられます。 **[配信の最適化]** 設定を使用するように既存の更新リングを変更できます。 「[既存の更新リングを配信の最適化に移動する](#move-existing-update-rings-to-delivery-optimization)」(この記事)。
 
 ## <a name="create-the-profile"></a>プロファイルの作成
 
@@ -43,7 +40,7 @@ Windows 10 での配信の最適化について学習するには、Windows ド�
 
 3. 次のプロパティを入力します。
 
-    - **[名前]** :新しいプロファイルのわかりやすい名前を入力します。
+    - **名前**:新しいプロファイルのわかりやすい名前を入力します。
     - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
     - **[プラットフォーム]** : **[Windows 10 以降]** を選択します。
     - **[プロファイルの種類]** : **[配信の最適化]** を選択します。
@@ -54,16 +51,21 @@ Windows 10 での配信の最適化について学習するには、Windows ド�
 
 プロファイルが作成され、一覧に表示されます。 次に、[プロファイルを割り当て](device-profile-assign.md)てから、[その状態を監視](device-profile-monitor.md)します。
 
-## <a name="move-existing-update-rings-to-delivery-optimization"></a>既存の更新リングを配信の最適化に移動する
+<!-- ## Move existing update rings to delivery optimization
 
-**[ソフトウェア更新プログラム] – [Windows 10 更新プログラムのリング]** は、 **[配信の最適化]** 設定によって置き換えられます。 既存の更新プログラム リングは、 **[配信の最適化]** 設定を使うように簡単に変更できます。 配信の最適化のプロファイルを作成するときに同じ設定を維持するには、同じ*配信の最適化ダウンロード モード*を使用し、さらに既に使用しているものと同じ設定内容を設定します。 ただし、配信の最適化のプロファイルで管理できるあらゆる追加設定を活用できるように、配信の最適化の設定を再構成することもできます。
+**Delivery optimization** settings replace **Software updates – Windows 10 Update Rings**. Your existing update rings can be easily changed to use the **Delivery optimization** settings. To maintain the same settings when you create a delivery optimization profile, use the same *Delivery optimization download mode* and then set the same settings as you already use. However, you can choose to reconfigure delivery optimization settings to take advantage of the full range of addition settings that the Delivery Optimization profile can manage. 
+-->
 
-1. 配信の最適化の構成プロファイルを作成します。
+## <a name="remove-delivery-optimization-from-windows-10-update-rings"></a>Windows 10 更新リングから配信の最適化を削除する
 
-    1. Microsoft Endpoint Manager 管理センターで、 **[デバイス]**  >  **[構成プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
+配信の最適化は、以前はソフトウェア更新リングの一部として構成されていました。 2019 年 2 月以降、配信の最適化設定は、配信の最適化デバイス構成プロファイルの一部として構成されます。これには、デバイスへのソフトウェア更新プログラムの配信よりも影響がある追加の設定が含まれています。 まだ行っていない場合は、配信の最適化設定を *[未構成]* に設定して更新リングから削除し、配信の最適化プロファイルを使用して、使用可能なオプションのより大きな範囲を管理します。
+
+1. 配信の最適化のデバイス構成プロファイルを作成します。
+
+    1. Microsoft Endpoint Manager 管理センターで、 **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
     2. 次のプロパティを入力します。
 
-        - **[名前]** :新しいプロファイルのわかりやすい名前を入力します。
+        - **名前**:新しいプロファイルのわかりやすい名前を入力します。
         - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
         - **[プラットフォーム]** : **[Windows 10 以降]** を選択します。
         - **[プロファイルの種類]** : **[配信の最適化]** を選択します。
@@ -80,12 +82,12 @@ Windows 10 での配信の最適化について学習するには、Windows ド�
 2. 既存のソフトウェア更新プログラム リングと同じデバイスおよびユーザーに、この新しいプロファイルを割り当てます。 [プロファイルの割り当て](device-profile-assign.md)に関するページに手順が記載されています。
 
 3. 既存のソフトウェアのリングの構成を解除します。
-    1. Microsoft Endpoint Manager 管理センターで、 **[ソフトウェア更新]** > [Windows 10 更新リング] の順に進みます。
+    1. Microsoft Endpoint Manager 管理センターで、 **[ソフトウェア更新]** 、[Windows 10 更新リング] の順に進みます。
     2. 一覧から更新プログラム リングを選択します。
     3. 設定で、 **[配信の最適化ダウンロード モード]** を **[未構成]** に設定します。
     4. **[Ok]**  >  変更を **[保存]** します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。  
 Intune 用の[配信の最適化の設定](../delivery-optimization-settings.md)を表示します。

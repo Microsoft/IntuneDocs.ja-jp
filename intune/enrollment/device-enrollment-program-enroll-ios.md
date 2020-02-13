@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/07/2019
+ms.date: 02/04/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,31 +18,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39775f3acf1a1c3da7c836afe1699958560d509a
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: b3fe6d1e2a0dcdeafad56d3facccb96f5d0721e4
+ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691849"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77074667"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する
 
-Apple の [Device Enrollment Program (DEP)](https://deploy.apple.com) で購入した iOS デバイスを登録するように Intune を設定できます。 DEP によって、多数のデバイスを自動で登録できます。 iPhone や iPad などのデバイスは、ユーザーに直接配布できます。 ユーザーがデバイスの電源をオンにすると、セットアップ アシスタントが構成済み設定で実行され、デバイスが管理対象として登録されます。
+Apple の [Device Enrollment Program (DEP)](https://deploy.apple.com) で購入した iOS デバイスを登録するように Intune を設定できます。 DEP によって、多数のデバイスを自動で登録できます。 iPhone、iPad、MacBook などのデバイスは、ユーザーに直接配布できます。 ユーザーがデバイスの電源をオンにすると、Apple 製品の一般的な out-of-box-experience が含まれるセットアップ アシスタントが構成済み設定で実行され、デバイスが管理対象として登録されます。
 
-DEP 登録を有効にするには、Intune ポータルと Apple DEP ポータルの両方を使います。 管理するために Intune にデバイスを割り当てられるように、シリアル番号のリストまたは注文番号が必要になります。 登録時にデバイスに適用された設定を含む DEP 登録プロファイルを作成します。 DEP 登録は、[デバイス登録マネージャー](device-enrollment-manager-enroll.md) アカウントと同時には使用できないことに注意してください。
+DEP 登録を有効にするには、Intune と Apple Business Manager (ABM) または Apple School Manager (ASM) のポータルの両方を使用します。 ABM/ASM で管理するために Intune にデバイスを割り当てられるように、シリアル番号のリストまたは注文番号が必要になります。 登録時にデバイスに適用された設定を含む DEP 登録プロファイルを Intune で作成します。 DEP 登録は、[デバイス登録マネージャー](device-enrollment-manager-enroll.md) アカウントと同時には使用できないことに注意してください。
 
 > [!NOTE]
-> DEP では、エンド ユーザーが削除できないデバイス構成が設定されます。 そのため、[DEP に移行する](../fundamentals/migration-guide-considerations.md)前に、デバイスをワイプして出荷時 (新品) の状態に戻す必要があります。
+> DEP で設定されるデバイス構成は、エンド ユーザーが必ずしも削除できるわけではありません。 そのため、[DEP に移行する](../fundamentals/migration-guide-considerations.md)前に、デバイスをワイプして出荷時 (新品) の状態に戻す必要があります。
 
 ## <a name="dep-and-the-company-portal"></a>DEP とポータル サイト
 
-DEP 登録には、アプリ ストア バージョンのポータル サイト アプリとの互換性はありません。 DEP デバイス上のポータル サイト アプリへのアクセス権をユーザーに付与することが可能です。 アクセス権を付与するには、DEP プロファイル内で **[VPP によるポータル サイトのインストール]** (Volume Purchase Program) を使用して、アプリをデバイスにプッシュします。 詳細は、「[Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)」を参照してください。
+DEP 登録には、アプリ ストア バージョンのポータル サイト アプリとの互換性はありません。 DEP デバイス上のポータル サイト アプリへのアクセス権をユーザーに付与することが可能です。 デバイスで使用する会社のアプリをユーザーが選択できるようにする場合や、最新の認証を使用して登録プロセスを完了する場合に、このアクセス権を付与することができます。 
 
- DEP に既に登録されているデバイス上に、ポータル サイト アプリをインストールできます。 これを行うには、Intune を通じて、[アプリケーション構成ポリシー](../apps/app-configuration-policies-use-ios.md)を適用してポータル サイト アプリを展開します。
+登録中に最新の認証を有効にするには、DEP プロファイル内で **[VPP によるポータル サイトのインストール]** (Volume Purchase Program) を使用して、アプリをデバイスにプッシュします。 詳細は、「[Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)」を参照してください。
+
+ポータル サイトが自動的に更新され、DEP に登録されているデバイスでポータル サイト アプリを提供できるようにするには、Intune を使用して、そのポータル サイト アプリを[アプリケーション構成ポリシー](../apps/app-configuration-policies-use-ios.md)が適用された必要な Volume Purchase Program (VPP) アプリとして展開します。
 
 ## <a name="what-is-supervised-mode"></a>監視モードとは何か。
 
-Apple は iOS 5 で監視モードを導入しました。 監視モードの iOS デバイスは、さらに細かく制御できます。 そのため、企業所有のデバイスでは特に役立ちます。 Intune は Apple Device Enrollment Program (DEP) の一部としてデバイスの監視モードを設定できます。
+Apple は iOS 5 で監視モードを導入しました。 監視モードの iOS デバイスは、画面キャプチャのブロックや App Store からのアプリのインストールのブロックなど、より多くの制御を使用して管理できます。 そのため、企業所有のデバイスでは特に役立ちます。 Intune は Apple Device Enrollment Program (DEP) の一部としてデバイスの監視モードを設定できます。
 
 監視されていない DEP デバイスのサポートは、iOS 11 で非推奨となりました。 iOS 11 以降では、DEP 構成済みデバイスを常に監視する必要があります。 DEP の is_supervised フラグは、iOS の将来のリリースでは無視されます。
 
@@ -54,7 +56,7 @@ Apple は iOS 5 で監視モードを導入しました。 監視モードの iO
 4. [Assign DEP profile to devices](#assign-an-enrollment-profile-to-devices)
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 -->
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 - [Apple の Device Enrollment Program](http://deploy.apple.com) で購入したデバイス
 - [モバイル デバイス管理 (MDM) 機関](../fundamentals/mdm-authority-set.md)
 - [Apple MDM プッシュ証明書](apple-mdm-push-certificate-get.md)
@@ -63,7 +65,7 @@ Apple は iOS 5 で監視モードを導入しました。 監視モードの iO
 
 DEP に iOS デバイスを登録するには、Apple の DEP トークン (.p7m) ファイルが必要です。 このトークンにより、Intune は企業所有の DEP デバイスに関する情報を同期できるようになります。 また、Intune は Apple に登録プロファイルをアップロードして、デバイスをそれらのプロファイルに割り当てられるようになります。
 
-DEP トークンを作成する場合は、Apple DEP ポータルを使用します。 また、管理のためにデバイスを Intune に割り当てる場合にも DEP ポータルを使用します。
+Apple Business Manager または Apple School Manager のポータルを使用して、トークンを作成します。 また、管理のためにデバイスを Intune に割り当てる場合にも ABM/ASM のポータルを使用します。
 
 > [!NOTE]
 > Azure に移行する前に Intune クラシック ポータルからトークンを削除すると、削除された Apple DEP トークンが Intune で復元される場合があります。 Azure Portal から DEP トークンを再び削除できます。
@@ -91,7 +93,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 
 5. **[Add &lt;ServerName&gt;\(<サーバー名> の追加\)]** ダイアログ ボックスが開き、 **[Upload Your Public Key\(公開キーをアップロードする\)]** と表示されます。 **[ファイルの選択…]** を選択して .pem ファイルをアップロードし、 **[Next]** (次へ) を選択します。
 
-6. **[Deployment Programs] (展開プログラム)** &gt; **[Device Enrollment Program]** &gt; **[Manage Devices] (デバイスの管理)** の順に移動します。
+6. **[Deployment Programs]** &gt; **[Device Enrollment Program]** &gt; **[デバイスの管理]** の順に移動します。
 7. **[Choose Devices By\(デバイスの選択方法\)]** で、デバイスを識別する方法を指定します。
     - **Serial Number\(シリアル番号\)**
     - **Order Number\(注文番号\)**
@@ -101,7 +103,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 
 8. **[アクションの選択]** で **[Assign to Server]\(サーバーに割り当てる\)** を選択し、Microsoft Intune に指定した **ServerName** を選択して、&lt;[OK]&gt; を選択します。 指定したデバイスが管理用に Intune サーバーに割り当てられて、 **[Assignment Complete\(割り当て完了\)]** と表示されます。
 
-   Apple ポータルで、 **[Deployment Programs\(配備プログラム\)]** &gt; **[Device Enrollment Program\(Device Enrollment Program\)]** &gt; **[View Assignment History\(割り当て履歴の表示\)]** の順に移動して、デバイスとその MDM サーバーの割り当てのリストを表示します。
+   Apple ポータルで、 **[Deployment Programs]\(配備プログラム\)** &gt; **[Device Enrollment Program]\(Device Enrollment Program\)** &gt; **[View Assignment History]\(割り当て履歴の表示\)** の順に移動して、デバイスとその MDM サーバーの割り当てのリストを表示します。
 
 ### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>手順 3. このトークンの作成に使用した Apple ID を保存する
 
@@ -197,7 +199,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 15. **[セットアップ アシスタントのカスタマイズ]** ページで、次のプロファイル設定を構成します。![セットアップ アシスタントのカスタマイズ。](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
-    | 部門の設定 | 説明 |
+    | 部門の設定 | [説明] |
     |---|---|
     | <strong>部門名</strong> | アクティブ化中にユーザーが <strong>[構成について]</strong> をタップすると表示されます。 |
     |    <strong>部署の電話番号</strong>     | アクティブ化中にユーザーが <strong>[ヘルプが必要ですか]</strong> ボタンをクリックすると表示されます。 |
@@ -241,7 +243,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 ## <a name="sync-managed-devices"></a>マネージド デバイスを同期する
 デバイスを管理するアクセス許可を Intune に割り当てたので、Intune と Apple を同期して、マネージド デバイスを Azure ポータルの Intune に表示できます。
 
-1. [Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]** > **[iOS]** > **[iOS の登録]** > **[Enrollment Program トークン]** の順に選択し、一覧からトークンを選択し、 **[デバイス]** > **[同期]** の順に選択します。![Enrollment Program デバイス ノードと同期リンクのスクリーンショット。](./media/device-enrollment-program-enroll-ios/image06.png)
+1. [Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]** > **[iOS]** > **[iOS の登録]** > **[Enrollment Program トークン]** を選択します。一覧からトークンを選択し、 **[デバイス]** > **[同期]** を選択します。![Enrollment Program デバイス ノードと同期リンクのスクリーンショット。](./media/device-enrollment-program-enroll-ios/image06.png)
 
    許容される Enrollment Program トラフィックについての Apple の規約に準拠するために、Intune では次の制限が課せられています。
    - 完全な同期は 7 日に 1 回だけ実行できます。 完全な同期中に、Intune に接続された Apple MDM サーバーに割り当てられているシリアル番号の完全な最新の一覧を Intune がフェッチします。 DEP デバイスが Intune ポータルから削除された場合、DEP ポータルでは Apple MDM サーバーからの割り当てを解除する必要があります。 割り当てが解除されていない場合、完全な同期が実行されるまでは Intune に再インポートされません。   

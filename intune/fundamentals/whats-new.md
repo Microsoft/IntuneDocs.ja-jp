@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/03/2020
+ms.date: 02/07/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f46b8c7f0f57ab7831d6487495946aa9326b2d5
-ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
+ms.openlocfilehash: dc2e77db1aa322eb70c64d82ddca238f49b39fb2
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76977786"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125032"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 
@@ -60,32 +60,20 @@ ms.locfileid: "76977786"
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>アプリ管理
 
+#### <a name="microsoft-edge-version-77-and-later-on-windows-10-devices---5843584---"></a>Windows 10 デバイスの Microsoft Edge バージョン 77 以降<!-- 5843584 -->
+Intune で、Windows 10 デバイスでの Microsoft Edge バージョン 77 以降のアンインストールがサポートされるようになりました。 詳細については、「[Microsoft Edge for Windows 10 を Microsoft Intune に追加する](~/apps/apps-windows-edge.md)」を参照してください。
+
 #### <a name="company-portal-app-improved-performance---6178652---"></a>ポータル サイト アプリのパフォーマンスの向上<!-- 6178652 -->
 ポータル サイト アプリが更新され、Surface Pro X などの ARM64 プロセッサを使用したデバイス向けのパフォーマンスの向上がサポートされました。これまでは、ポータル サイトはエミュレートされた ARM32 モードで動作していました。 現在、ポータル サイト アプリは ARM64 用にネイティブ コンパイルされています。 ポータル サイト アプリの詳細については、「[Microsoft Intune ポータル サイト アプリを構成する方法](~/apps/company-portal-app.md)」をご覧ください。
+
+#### <a name="screen-removed-from-company-portal-android-work-profile-enrollment--6103987---"></a>ポータル サイトの Android 仕事用プロファイルの登録から削除される画面<!--6103987 -->
+ユーザー エクスペリエンスを効率化するために、ポータル サイトの Android 仕事用プロファイルの登録フローから **[次の手順]** 画面が削除されました。 更新後の Android 仕事用プロファイルの登録フローを確認するには、[Android 仕事用プロファイルへの登録](/intune-user-help/enroll-device-android-work-profile)に関する記事を参照してください。  
 
 <!-- ########################## -->
 ## <a name="week-of-january-27-2020"></a>2020 年 1 月 27 日の週
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>アプリ管理
-
-#### <a name="new-setting-to-remove-specific-windows-built-in-apps---6184390---"></a>特定の Windows 組み込みアプリを削除するための新しい設定<!-- 6184390 -->
-新しい Windows 10 デバイス構成ポリシー設定を使用すると、次の Windows 組み込みアプリを削除できます。
-
-- Mixed Reality ビューアー
-- MSN 天気
-- アプリ インストーラー
-- Microsoft ヒント
-- My Office
-- Microsoft Solitaire Collection 
-- モバイル通信プラン
-- フィードバック Hub 
-- Xbox 
-- Groove ミュージック
-- メール
-- 予定表
-
-Microsoft Endpoint Manager 管理センターで、 **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。 次に、 **[プラットフォーム]** として **[Windows 10 以降]** を選択します。 **[プロファイルの種類]** として **[デバイスの制限]** を選択します。 **[デバイスの制限]** ペインで **[App Store]** を選択します。 ペインの下部の **[組み込みアプリの削除]** の横にある **[削除]** を選択します。 組み込みアプリの詳細については、「[組み込みアプリを Microsoft Intune に追加する](~/apps/apps-add-built-in.md)」をご覧ください。
 
 #### <a name="intune-support-for-additional-microsoft-edge-version-77-deployment-channel-for-macos---5983950----"></a>macOS 用の追加の Microsoft Edge バージョン 77 展開チャネルの Intune サポート<!-- 5983950  -->
 Microsoft Intune で、macOS 用 Microsoft Edge アプリの追加の **[安定]** 展開チャネルがサポートされるようになりました。 **[安定]** チャネルは、Microsoft Edge をエンタープライズ環境で幅広く展開する場合に推奨されるチャネルです。 これは 6 週間ごとに更新され、各リリースには **[Beta]** チャネルからの機能強化が組み込まれています。 **[安定]** および **[Beta]** チャネルに加えて、Intune では **[Dev]** チャネルもサポートされています。 パブリック プレビューでは、macOS 用の Microsoft Edge バージョン 77 以降の [安定] および [Dev] チャネルが提供されます。 ブラウザーの自動更新は、既定で有効になっています。 詳細については、[Microsoft Intune を使用した macOS デバイスへの Microsoft Edge の追加](~/apps/apps-edge-macos.md)に関する記事をご覧ください。
