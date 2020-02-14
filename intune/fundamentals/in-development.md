@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/07/2020
+ms.date: 02/03/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,14 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d71ae3c15dddedd5d9ebfaf06fcae25af89f6b82
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
-ms.translationtype: HT
+ms.openlocfilehash: cafe9d3036a727d79de88eda050399138da55675
+ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912635"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76977752"
 ---
-# <a name="in-development-for-microsoft-intune---january-2020"></a>Microsoft Intune 用に開発中 - 2020 年 1 月
+# <a name="in-development-for-microsoft-intune---february-2020"></a>Microsoft Intune 用に開発中 - 2020 年 2 月
 
 お客様の準備と計画をサポートするため、このページでは、開発中でまだリリースされていない Intune UI の更新と機能が一覧表示されます。 このページの情報に加えて: 
 
@@ -66,8 +66,22 @@ Windows デバイス上のポータル サイト アプリを更新し、アプ�
 - アプリをインストールできませんでした。 管理者によって定義された依存関係が満たされませんでした。
 
 ### <a name="retarget-web-clips-to-microsoft-edge-on-ios-devices---5455276---"></a>iOS デバイス上の Microsoft Edge に Web クリップを再ターゲットする<!-- 5455276 -->
-iOS デバイス上でピン留めされた Web アプリとして機能する Web クリップを更新する必要があります。 新しく展開された Web クリップを保護されたブラウザーで開く必要がある場合は、Intune Managed Browser ではなく Microsoft Edge で開きます。 既存の Web クリップを再ターゲットして、Managed Browser ではなく Microsoft Edge で開くようにする必要があります。 
+iOS デバイス上でピン留めされた Web アプリとして機能する Web クリップを更新する必要があります。 新しく展開された Web クリップを保護されたブラウザーで開く必要がある場合は、Intune Managed Browser ではなく Microsoft Edge で開きます。 既存の Web クリップを再ターゲットして、Managed Browser ではなく Microsoft Edge で開くようにする必要があります。
 
+### <a name="macos-company-portal-user-experience-improvements---5568987---"></a>macOS ポータル サイトのユーザー エクスペリエンスの向上<!-- 5568987 -->
+macOS デバイスの登録エクスペリエンスと Mac 用ポータル サイト アプリの機能強化を行っています。 次のことが可能になります。
+- 登録時の Microsoft **AutoUpdate** エクスペリエンスが向上し、ユーザーが最新バージョンのポータル サイトを確実に使用できるようになります。
+- 登録時のコンプライアンス チェック手順が強化されます。
+- インシデント ID のコピーがサポートされるため、ユーザーは自分のデバイスから会社のサポート チームにエラーを迅速に送信することができます。
+
+登録と Mac 用ポータルサイトアプリの詳細については、「ポータル サイト アプリを使用して macOS デバイスを登録する (https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp) 」を参照してください。 
+
+
+### <a name="screen-removed-from-company-portal-android-work-profile-enrollment--6103987---"></a>ポータル サイトの Android 仕事用プロファイルの登録から削除される画面<!--6103987 -->
+ユーザー エクスペリエンスを効率化するために、ポータル サイトの Android 仕事用プロファイルの登録フローから **[次の手順]** 画面が削除されます。 現在の Android 仕事用プロファイルの登録フローを確認するには、[Android の仕事用プロファイルを使用した登録]( https://docs.microsoft.com/intune-user-help/enroll-device-android-work-profile)の方法に関するページを参照してください。
+
+### <a name="microsoft-defender-advanced-threat-protection-atp-app-for-macos---5424518-idready---"></a>macOS 用 Microsoft Defender Advanced Threat Protection (ATP) アプリ<!-- 5424518 idready -->
+Intune を使用すると、macOS 用 Microsoft Defender Advanced Threat Protection (ATP) アプリを管理対象 Mac デバイスに簡単に展開できるようになります。 詳細については、「[Microsoft Defender Advanced Threat Protection for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac)」を参照してください。 
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>デバイスの構成
@@ -104,14 +118,32 @@ Android Enterprise デバイスで OEMConfig プロファイルを作成また�
 この機能は、以下に適用されます。
 - Android エンタープライズ 
 
+
 <!-- ***********************************************-->
 <!--## Device enrollment-->
 
 
-
 <!-- ***********************************************-->
-<!--## Device management-->
+## <a name="device-management"></a>デバイス管理
 
+### <a name="change-primary-user-for-windows-devices----3794742---"></a>Windows デバイスのプライマリ ユーザーを変更する <!-- 3794742 -->
+Windows ハイブリッド デバイスと Azure AD 参加済みデバイスのプライマリ ユーザーを変更できるようになります。 これを行うには、 **[Intune]**  >  **[デバイス]**  >  **[すべてのデバイス]** > デバイスを選択 > **[プロパティ]**  >  **[プライマリ ユーザー]** を選択します。 
+
+### <a name="serial-number-on-the-apple-mdm-push-certificate-page--5947765---"></a>[Apple MDM プッシュ通知証明書] ページのシリアル番号<!--5947765 -->
+[Apple MDM プッシュ通知証明書] ページにシリアル番号が表示されるようになります。 証明書を作成した Apple ID へのアクセスが失われた場合に、Apple MDM プッシュ通知証明書へのアクセスを回復するには、シリアル番号が必要です。 シリアル番号を表示するには、 **[デバイス]**  >  **[iOS]**  >  **[iOS enrollment]\(iOS の登録\)**  >  **[Apple MDM プッシュ通知証明書]** に移動します。
+
+### <a name="choose-which-iosipados-updates-to-push-to-enrolled-devices--5879689---"></a>登録されたデバイスにプッシュする iOS または iPadOS の更新プログラムを選択する<!--5879689 -->
+Apple Business Manager または Apple School Manager を使用すると、登録されたデバイスにプッシュする、特定の iOS または iPadOS の更新プログラムを選択できるようになります。 これらのデバイスでは、ソフトウェア更新プログラムの可視性を一定の日数だけ遅らせるようにデバイス構成ポリシーを設定する必要があります。 この機能を確認するには、MEM > **[デバイス]**  >  **[iOS]**  >  **[Update policies for iOS/iPadOS]\(iOS または iPadOS のポリシーを更新する\)**  >  **[プロファイルの作成]** に移動します。
+
+### <a name="new-update-schedule-options-for-pushing-os-updates-to-enrolled-iosipados-devices--5879689--"></a>登録された iOS デバイスまたは iPadOS デバイスに OS 更新プログラムをプッシュするための新しい更新スケジュール オプション<!--5879689-->
+iOS デバイスまたは iPadOS デバイスのオペレーティング システムの更新をスケジュールするときに、次のオプションを使用できるようになります。 これは、Apple Business Manager または Apple School Manager の登録タイプを使用したデバイスに適用されます。
+- 次回のチェックイン時に更新する
+- スケジュールされた時刻に更新する
+- スケジュールされた時刻以外に更新する
+
+後者の 2 つのオプションでは、複数の時間帯を作成できます。
+
+新しいオプションを確認するには、MEM > **[デバイス]**  >  **[iOS]**  >  **[Update policies for iOS/iPadOS]\(iOS または iPadOS のポリシーを更新する\)**  >  **[プロファイルの作成]** に移動します。
 
 
 <!-- ***********************************************-->
@@ -119,10 +151,19 @@ Android Enterprise デバイスで OEMConfig プロファイルを作成また�
  
 
 <!-- ***********************************************-->
+## <a name="monitoring-and-troubleshooting"></a>監視とトラブルシューティング
 
-<!--
-## Monitoring and troubleshooting
--->
+### <a name="improved-intune-reporting-experience---3791418-idready---"></a>Intune レポート エクスペリエンスの向上<!-- 3791418 idready -->
+Intune では、新しいレポートの種類、より優れたレポート編成、より対象を絞ったビュー、より優れたレポート機能、より一貫性のあるタイムリーなデータを含め、レポート エクスペリエンスが向上しています。 レポート エクスペリエンスは、パブリック プレビューから GA (一般公開) に移行します。 また、GA リリースでは、[Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)のタイルで、ローカライズ サポート、バグ修正、設計の改善、デバイス コンプライアンス データの集計を行うことができます。
+
+新しいレポートの種類では、次のことに重点が置かれています。
+- **運用** - 正常性への悪影響に焦点を置いた最新のレコードが表示されます。 
+- **組織** - 全体的な状態の概要が表示されます。
+- **履歴** - 一定期間におけるパターンと傾向が表示されます。
+- **スペシャリスト** - 生データを使用して独自のカスタム レポートを作成できます。
+
+新しいレポートの最初のセットでは、デバイスのコンプライアンスに重点が置かれています。 詳細については、[ブログ - Microsoft Intune レポート フレームワーク](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553)および[Intune レポート](~/fundamentals/reports.md)に関するページを参照してください。
+
 
 
 <!-- ***********************************************-->
@@ -136,7 +177,13 @@ Android Enterprise デバイスで OEMConfig プロファイルを作成また�
 ## <a name="security"></a>セキュリティ
 
 ### <a name="derived-credentials-support-on-android-cobo-devices--4839592--"></a>Android COBO デバイスでの派生資格情報のサポート<!--4839592-->
-Android Enterprise の完全に管理されたデバイスで、派生資格情報を使用できるようになります。 Entrust Datacard、Intercede、および DISA Purebred の派生資格情報を取得するためのサポートが追加されます。 アプリ認証、Wi-Fi、VPN、または S/MIME 署名や、それをサポートするアプリでの暗号化に、派生資格情報を使用できるようになります。 
+Android Enterprise の完全に管理されたデバイスで、派生資格情報を使用できるようになります。 Entrust Datacard、Intercede、および DISA Purebred の派生資格情報を取得するためのサポートが追加されます。 アプリ認証、Wi-Fi、VPN、または S/MIME 署名や、それをサポートするアプリでの暗号化に、派生資格情報を使用できるようになります。
+
+### <a name="use-antivirus-policy-to-manage-settings-for-microsoft-defender-antivirus-and-the-windows-security-experience--6131401---"></a>ウイルス対策ポリシーを使用して Microsoft Defender ウイルス対策および Windows セキュリティ エクスペリエンスの設定を管理する<!--6131401 -->
+"*エンドポイント セキュリティ*" ノードで、**ウイルス対策**の設定を構成できます。 ウイルス対策のポリシーを構成する場合は、次の 2 種類のプロファイルを使用して Windows 10 デバイスの設定を定義します。
+
+- Microsoft Defender ウイルス対策: クラウドの保護、ウイルス対策の除外、修復、スキャン オプションなどの設定を管理します。
+- Windows セキュリティ エクスペリエンス: ユーザーが自分のデバイスで Windows セキュリティ設定を体験する方法を管理します。 Microsoft Defender セキュリティ センターでエンド ユーザーが表示できる内容と、エンド ユーザーが受信する通知を構成できるようになります。 
 
 <!-- ***********************************************-->
 ## <a name="notices"></a>通知

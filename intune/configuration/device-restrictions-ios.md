@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/13/2020
+ms.date: 02/04/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f99479200e66b080e107475f0a031c5756da6051
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
-ms.translationtype: HT
+ms.openlocfilehash: dc252068d963d75bf6ade79852d6ba01bda8800b
+ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754577"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051611"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用した機能を許可または制限するための iOS および iPadOS デバイスの設定
 
@@ -420,8 +420,6 @@ iOS 9.3 以降を実行しているデバイスに適用されます。
   アプリの URL を見つけるには、iTunes App ストアを開いて、アプリを検索します。 たとえば、`Microsoft Remote Desktop` または `Microsoft Word` を検索します。 アプリを選択し、URL をコピーします。
 
   iTunes を使用してアプリを検索し、 **[リンクのコピー]** タスクを使用してアプリの URL を入手することもできます。
-  
-  バンドル ID の検索について詳しくは、[iOS アプリ用のバンドル ID を検索する方法](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app)に関するページを参照してください。
 
 - **[アプリ バンドル ID]** :追加するアプリの[バンドル ID](bundle-ids-built-in-ios-apps.md) を入力します。 組み込みのアプリや基幹業務アプリの表示と非表示を切り替えることができます。 Apple の Web サイトに、[組み込みの Apple アプリ](https://support.apple.com/HT208094)の一覧があります。
 - **[アプリ名]** :必要なアプリの名前を入力します。 組み込みのアプリや基幹業務アプリの表示と非表示を切り替えることができます。 Apple の Web サイトに、[組み込みの Apple アプリ](https://support.apple.com/HT208094)の一覧があります。
@@ -559,7 +557,9 @@ iOS 9.3 以降を実行しているデバイスに適用されます。
 
 ## <a name="autonomous-single-app-mode"></a>自律的シングル App モード
 
-これらの設定を使用して、自律的シングル App モードで特定のアプリを実行するように iOS デバイスを構成できます。 このモードを構成した場合、指定したアプリが実行されると、デバイスはロックされます。 そのアプリだけを実行できます。 たとえば、ユーザーがデバイス上でテストを行えるようにアプリを追加します。 アプリのアクションが完了した場合、または管理者がこのポリシーを削除した場合、デバイスは通常の状態に戻ります。
+これらの設定を使用して、自律的シングル App モードで特定のアプリを実行するように iOS または iPadOS デバイスを構成できます。 このモードが構成されていて、ユーザーが構成済みのアプリの 1 つを起動すると、デバイスはそのアプリに対してロックされます。 アプリとタスクの切り替えは、ユーザーが許可されたアプリを終了するまで無効になります。
+
+たとえば、学校または大学の環境で、ユーザーがデバイスでテストを実行できるようにするアプリを追加します。 または、エンド ユーザーが認証されるまで、デバイスをポータル サイト アプリにロックします。 ユーザーがアプリのアクションを完了した場合、または管理者がこのポリシーを削除した場合、デバイスは通常の状態に戻ります。
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>これらの設定は次に適用されます。デバイスの自動登録 (監視)
 
