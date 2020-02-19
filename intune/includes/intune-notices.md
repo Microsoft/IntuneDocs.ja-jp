@@ -7,14 +7,29 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 6064fb657454106a8a7213e0bbbcecdcef765857
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: 4e93cb7f2d503704251b16d1af03924358020d4e
+ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966362"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77156657"
 ---
 以下の通知では、今後の Intune の変更と機能に備えるために役立つ重要な情報が提供されます。
+
+### <a name="plan-for-change-change-in-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--6114580--"></a>変更の計画: Intune に Android エンタープライズ専用デバイスを登録するときのエクスペリエンスの変更<!--6114580-->
+11 月のリリースでは、SCEP 証明書の展開のサポートが Android エンタープライズ専用デバイスに追加され、Wi-Fi プロファイルへの証明書ベースのアクセスが可能になりました。 この変更により、Android エンタープライズ専用デバイスの登録フローの一部がマイナー変更されました。 今後の 3 月のサービス更新または 2003 では、注意が必要なさらなる変更がいくつか行われます。
+
+#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
+環境内の Android エンタープライズ専用デバイスを管理している場合は、3 月になるといくつかの変更のロールアウトを確認できるようになります。
+- 2019 年 11 月 22 日または 1911 サービス更新よりも前に登録された既存の Android 専用デバイスの場合:これらのデバイスには、Microsoft Intune アプリがインストールされます。 3 月に Intune サービスにバックエンドの変更がロールアウトされると、デバイスに展開され Wi-Fi プロファイルに関連付けられている SCEP 証明書の適用が開始されます。
+- 2019 年 11 月 22 日以降、3 月のこの変更のロールアウト以前に登録されたデバイスの場合:これらのデバイスには、Microsoft Intune アプリがインストールされます。 デバイスに展開され Wi-Fi プロファイルに関連付けられている SCEP 証明書は、引き続き適用されます。
+- 3 月に変更がロールアウトされた後に新しい Android エンタープライズ専用デバイスを登録する場合:登録時にデバイスでエンド ユーザーに表示される一連の手順が異なります。 登録の開始方法は現在と同じですが (QR、NFC、ゼロタッチ、またはデバイス識別子を使用)、必須アプリのインストール手順はなくなります。 代わりに、Microsoft Intune アプリによってデバイス上に自動的にインストールされます。 さらに、エンド ユーザーがフロー中に "Intune エージェントを有効にする" をタップする必要がなくなります。 Wi-Fi プロファイルに関連付けられている SCEP 証明書を、これらのデバイスに展開できます。
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
+エンド ユーザー ガイドを更新し、ヘルプデスクにこの変更を周知させることができます。 この変更のロールアウトが開始されたら、私たちは新機能ページを更新し、メッセージ センターを通じてユーザーに通知します。
+
+#### <a name="additional-information"></a>追加情報
+[Android エンタープライズ専用デバイスでの SCEP 証明書のサポート](https://aka.ms/Dedicated_devices_enrollment)
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>'Adobe Acrobat Reader for Intune' モバイル アプリのサポート ステートメントが更新されました<!--5746776-->
 8 月の終わりに、MC188653 で、Adobe Acrobat Reader for Intune モバイル アプリが 2019 年 12 月 1 日に有効期限終了になり、Adobe が同社のメインの Acrobat Reader アプリ内で Intune のアプリ保護ポリシーのサポートを計画していることをお知らせしました。 その後、お客様から、IT 管理者が引き続きターゲットを指定して、エンド ユーザーが Adobe Acrobat Reader for Intune の使用を開始できるようにするために、もっと時間を提供してもらう必要があるというフィードバックを受け取りました。 エンド ユーザーのデバイスで Adobe Acrobat Reader for Intune の使用率が高く、エンタープライズ シナリオでのその重要性を考慮すると、あらゆるエクスペリエンスが、組織のアプリ保護のニーズを満たすようにする必要があります。 

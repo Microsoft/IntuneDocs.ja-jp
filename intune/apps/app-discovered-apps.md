@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f368f5f15f71246a2899f2acb7a791d65df26c99
-ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
+ms.openlocfilehash: a727cf03f53ee003c27708a04ad475f0b370c487
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75857045"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414997"
 ---
 # <a name="intune-discovered-apps"></a>Intune で検出されたアプリ
 
@@ -59,7 +59,7 @@ Intune では、テナント内の個々のデバイスについて検出され�
 | Windows 8.1 | 管理対象アプリのみ | 管理対象アプリのみ | デバイス登録から 7 日おき |
 | Windows Phone 8 | 管理対象アプリのみ | 管理対象アプリのみ | デバイス登録から 7 日おき |
 | Windows RT | 管理対象アプリのみ | 管理対象アプリのみ | デバイス登録から 7 日おき |
-| iOS | 管理対象アプリのみ | デバイスにインストールされているすべてのアプリ | デバイス登録から 7 日おき |
+| iOS/iPadOS | 管理対象アプリのみ | デバイスにインストールされているすべてのアプリ | デバイス登録から 7 日おき |
 | macOS | 管理対象アプリのみ | デバイスにインストールされているすべてのアプリ | デバイス登録から 7 日おき |
 | Android | 管理対象アプリのみ | デバイスにインストールされているすべてのアプリ | デバイス登録から 7 日おき |
 | Android エンタープライズ | 管理対象アプリのみ | 仕事用プロファイル内にインストールされているアプリのみ | デバイス登録から 7 日おき |

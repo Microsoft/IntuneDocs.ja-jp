@@ -20,7 +20,7 @@
   items:
     - name: Autopilot を使用して Windows デバイスを登録する
       href: tutorial-use-autopilot-enroll-devices.md
-    - name: DEP を使って iOS デバイスを登録する
+    - name: DEP を使って iOS/iPadOS デバイスを登録する
       href: tutorial-use-device-enrollment-program-enroll-ios.md
 - name: 概念
   items:
@@ -40,7 +40,7 @@
       href: device-enrollment-manager-enroll.md
     - name: デバイスをグループにマッピングする
       href: device-group-mapping.md
-- name: 操作方法ガイド
+- name: 攻略ガイド
   items:
     - name: Windows の登録の設定
       items:
@@ -84,12 +84,12 @@
         - name: Samsung Knox Mobile Enrollment
           href: android-samsung-knox-mobile-enroll.md
           displayName: kda; kme
-    - name: iOS の登録の設定
+    - name: iOS/iPadOS の登録を設定する
       href: ios-enroll.md
       items:
         - name: デバイス登録プログラム
           href: device-enrollment-program-enroll-ios.md
-        - name: iOS と iPadOS のユーザー登録を設定する
+        - name: iOS/iPadOS と iPadOS のユーザー登録を設定する
           href: ios-user-enrollment.md
         - name: ユーザー登録でサポートされているアクションとオプション
           href: ios-user-enrollment-supported-actions.md
@@ -109,7 +109,7 @@
         - name: デバイス登録に関するトラブルシューティング
           href: troubleshoot-device-enrollment-in-intune.md
           displayName: sso
-        - name: iOS デバイス登録のトラブルシューティング
+        - name: iOS/iPadOS デバイス登録のトラブルシューティング
           href: troubleshoot-ios-enrollment-errors.md
         - name: Windows デバイス登録のトラブルシューティング
           href: troubleshoot-windows-enrollment-errors.md
