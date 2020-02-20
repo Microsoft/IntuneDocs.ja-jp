@@ -25,11 +25,11 @@
           href: device-restart.md
     - name: Apple デバイスのアクション
       items:
-        - name: 紛失した iOS デバイスを探す
+        - name: 紛失した iOS/iPadOS デバイスを探す
           href: device-locate.md
-        - name: iOS 紛失モードの有効化
+        - name: iOS/iPadOS の紛失モードを有効にする
           href: device-lost-mode.md
-        - name: iOS の監視モードを有効にする
+        - name: iOS/iPadOS の監視モードを有効にする
           href: device-supervised-mode.md
         - name: macOS デバイスのデータを消去する
           href: device-erase.md
