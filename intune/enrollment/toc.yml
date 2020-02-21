@@ -100,7 +100,7 @@
     - name: macOS の登録を設定する
       href: macos-enroll.md
       items:
-        - name: Device Enrollment Program または Apple School Manager
+        - name: デバイスの自動登録
           href: device-enrollment-program-enroll-macos.md
     - name: 不完全な登録のレポート
       href: enrollment-report-company-portal-abandon.md

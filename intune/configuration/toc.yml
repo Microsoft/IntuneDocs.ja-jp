@@ -23,7 +23,7 @@
           href: administrative-templates-windows.md
         - name: 管理用テンプレートを使用して Office を更新する
           href: administrative-templates-update-office.md
-    - name: iOS と macOS のデバイス機能
+    - name: iOS/iPadOS と macOS のデバイス機能
       href: device-features-configure.md
     - name: デバイスの設定と機能を制限する
       href: device-restrictions-configure.md
@@ -47,7 +47,7 @@
       items:
         - name: Android 用のアプリ別の VPN
           href: android-pulse-secure-per-app-vpn.md
-        - name: iOS 用のアプリ別の VPN
+        - name: iOS/iPadOS 用のアプリ別の VPN
           href: vpn-setting-configure-per-app.md
     - name: Wi-Fi ネットワーク
       href: wi-fi-settings-configure.md
@@ -117,7 +117,7 @@
               href: wi-fi-settings-android-enterprise.md
             - name: カスタム
               href: custom-settings-android-for-work.md
-        - name: iOS
+        - name: iOS/iPadOS
           items:
             - name: デバイスの機能
               href: ios-device-features-settings.md

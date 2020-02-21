@@ -63,7 +63,7 @@
       href: manage-os-versions.md
     - name: Windows Holographic の管理
       href: windows-holographic-for-business.md
-- name: 操作方法ガイド
+- name: 攻略ガイド
   items:
     - name: 展開の計画
       items:
@@ -102,7 +102,7 @@
                   href: migration-guide-configure-policies.md
                 - name: アプリの保護ポリシーの構成
                   href: migration-guide-app-protection-policies.md
-                - name: 移行に関する考慮事項
+                - name: 移行に関する注意事項
                   href: migration-guide-considerations.md
             - name: 移行のキャンペーン
               href: migration-guide-campaign.md
@@ -127,7 +127,7 @@
               href: end-user-mam-apps-ios.md
             - name: Android アプリを入手する方法
               href: end-user-apps-android.md
-            - name: iOS アプリを入手する方法
+            - name: iOS/iPadOS アプリを入手する方法
               href: end-user-apps-ios.md
             - name: Windows アプリを入手する方法
               href: end-user-apps-windows.md
@@ -171,7 +171,7 @@
           href: mdm-authority-set.md
         - name: ロールの管理
           items:
-            - name: ロールベースのアクセス制御
+            - name: ロール ベースのアクセス制御
               href: role-based-access-control.md
             - name: ロールをユーザーに割り当てる
               href: assign-role.md
@@ -201,19 +201,19 @@
           href: tenant-status.md
         - name: ユーザーによる問題のトラブルシューティングをサポートする
           href: help-desk-operators.md
-        - name: Intune のアクティビティの監査ログ
-          href: monitor-audit-logs.md
-        - name: Azure Monitor でのログのレビュー
-          href: review-logs-using-azure-monitor.md
         - name: Intune のドキュメントの使用
           href: use-docs.md
         - name: サポートを受ける
           href: get-support.md
-    - name: Reports
+    - name: レポート
       items:
         - name: Intune レポート
           href: reports.md
-- name: リファレンス
+        - name: Intune のアクティビティの監査ログ
+          href: monitor-audit-logs.md
+        - name: Azure Monitor でのログのレビュー
+          href: review-logs-using-azure-monitor.md
+- name: 参照先
   items:
     - name: エラー コードと説明
       items:
@@ -233,7 +233,7 @@
           href: ui-changes.md
         - name: Intune クラシック グループ
           href: groups-get-started.md
-        - name: iOS の教育設定
+        - name: iOS/iPadOS の教育設定
           items:
             - name: iPad
               href: education-settings-configure-ios.md

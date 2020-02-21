@@ -11,13 +11,13 @@ metadata:
   ms.collection: collection
   author: dougeby
   ms.author: dougeby
-  ms.date: 09/16/2019
-  ms.openlocfilehash: afd555e5f245ee9bc28bd21268ae64ae69afbad3
-  ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+  ms.date: 02/18/2020
+  ms.openlocfilehash: d6404a4c77507374b5e8759ba2078e541cde35d8
+  ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/16/2019
-  ms.locfileid: "72492539"
+  ms.lasthandoff: 02/20/2020
+  ms.locfileid: "77511053"
 landingContent:
 - title: デバイスに機能と設定を適用する
   linkLists:
@@ -27,7 +27,7 @@ landingContent:
       url: device-profiles.md
   - linkListType: quickstart
     links:
-    - text: iOS 用の電子メール デバイス プロファイルを作成する
+    - text: iOS/iPadOS 用の電子メール デバイス プロファイルを作成する
       url: quickstart-email-profile.md
   - linkListType: how-to-guide
     links:
@@ -69,11 +69,11 @@ landingContent:
       url: wi-fi-settings-configure.md
     - text: 共有 PC またはマルチユーザー デバイス上のアクセス、アカウント、電源機能を制御する
       url: shared-user-device-settings.md
-- title: iOS の設定
+- title: iOS/iPadOS の設定
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: iOS デバイス機能設定の追加
+    - text: iOS/iPadOS デバイス機能設定の追加
       url: device-features-configure.md
     - text: デバイス制限設定の構成
       url: device-restrictions-configure.md
@@ -81,7 +81,7 @@ landingContent:
       url: email-settings-configure.md
     - text: VPN サーバーに接続するための VPN プロファイルの作成
       url: vpn-settings-configure.md
-    - text: iOS デバイス用にアプリごとの VPN プロファイルを作成する
+    - text: iOS/iPadOS デバイス用にアプリごとの VPN プロファイルを作成する
       url: vpn-setting-configure-per-app.md
     - text: デバイスに Wi-Fi 設定を追加して使用する
       url: wi-fi-settings-configure.md
@@ -89,7 +89,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: iOS デバイス機能設定の追加
+    - text: iOS/iPadOS デバイス機能設定の追加
       url: device-features-configure.md
     - text: デバイス制限設定の構成
       url: device-restrictions-configure.md
@@ -137,7 +137,7 @@ landingContent:
       url: device-restrictions-android.md
     - text: Android エンタープライズ
       url: device-restrictions-android-for-work.md
-    - text: iOS
+    - text: iOS/iPadOS
       url: ios-device-features-settings.md
     - text: macOS
       url: macos-device-features-settings.md
