@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 328a578f4d2ada41bed17839f1f85b3b9add80fa
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 9cb323dc6f8110d77343fb11c9e0a1c40f9e3cd8
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885962"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415272"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune でのデバイス登録に関するトラブルシューティング
 
@@ -36,7 +36,7 @@ ms.locfileid: "75885962"
 トラブルシューティングを開始する前に、登録を有効にするように Intune を構成していることを確認してください。 構成要件は次で確認できます。
 
 - [Microsoft Intune にデバイスを登録する準備](../fundamentals/setup-steps.md)
-- [iOS および Mac のデバイス管理をセットアップする](../ios-enroll.md)
+- [iOS/iPadOS および Mac のデバイス管理を設定する](../ios-enroll.md)
 - [Windows デバイスの管理をセットアップする](windows-enroll.md)
 - [Android デバイスの管理をセットアップする](android-enroll.md) - 追加の手順は必要ありません
 
@@ -49,7 +49,7 @@ ms.locfileid: "75885962"
 マネージド デバイスのユーザーが登録ログと診断ログを収集しておくと、管理者が確認できます。 ユーザーがログを収集する手順については、次のページを参照してください。
 
 - [IT 管理者に Android の登録に関するエラーを送信する](https://docs.microsoft.com/intune-user-help/send-enrollment-errors-to-your-it-admin-android)
-- [IT 管理者に iOS に関するエラーを送信する](https://docs.microsoft.com/intune-user-help/send-errors-to-your-it-admin-ios)
+- [IT 管理者に iOS/iPadOS に関するエラーを送信する](https://docs.microsoft.com/intune-user-help/send-errors-to-your-it-admin-ios)
 
 
 ## <a name="general-enrollment-issues"></a>登録に関する一般的な問題
@@ -93,7 +93,7 @@ ms.locfileid: "75885962"
 
 4. それでも失敗する場合は、ユーザーの資格情報が Azure Active Directory と正常に同期していることを確認します。
 
-5. iOS デバイスでは、ユーザーがログインに成功すると、Intune ポータル サイト アプリをインストールして登録するように求められます。 Android デバイスでは、Intune ポータル サイト アプリを手動でインストールする必要があります。インストール後に、登録を再試行できます。
+5. iOS/iPadOS デバイスでは、ユーザーがログインに成功すると、Intune ポータル サイト アプリをインストールして登録するように求められます。 Android デバイスでは、Intune ポータル サイト アプリを手動でインストールする必要があります。インストール後に、登録を再試行できます。
 
 ### <a name="mdm-authority-not-defined"></a>MDM 機関が定義されていません
 **問題:** ユーザーに **"MDM 機関が定義されていません"** というエラーが表示されます。
@@ -244,23 +244,23 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 サーバー証明書が正しくインストールされている場合、結果にすべてのチェック マークが表示されます。 上記の問題が存在する場合、レポートの "Certificate Name Matches" (証明書名の一致) セクションと "SSL Certificate is correctly Installed" (SSL 証明書が正しくインストールされている) セクションに赤い X 印が付きます。
 
 
-## <a name="ios-issues"></a>iOS の問題
+## <a name="iosipados-issues"></a>iOS/iPadOS の問題
 
-### <a name="ios-enrollment-errors"></a>iOS の登録エラー
-次の表は、Intune に iOS デバイスを登録している最中にエンド ユーザーに表示される可能性があるエラーの一覧です。
+### <a name="iosipados-enrollment-errors"></a>iOS/iPadOS の登録エラー
+エンド ユーザーが Intune に iOS/iPadOS デバイスを登録している間に表示される可能性があるエラーの一覧を、次の表に示します。
 
 |エラー メッセージ|問題|解決策|
 |-------------|-----|----------|
-|NoEnrollmentPolicy|登録ポリシーが見つかりません|Apple Push Notification Services (APNs) 証明書などのすべての登録前提条件が構成済みであること、"プラットフォームとしての iOS" が有効であることを確認します。 手順については、「[iOS および Mac のデバイス管理をセットアップする](../ios-enroll.md)」を参照してください。|
-|DeviceCapReached|登録されているモバイル デバイス数が多すぎます。|別のモバイル デバイスを登録する前に、ユーザーは現在登録されているモバイル デバイスの 1 つをポータル サイトから削除する必要があります。 使用しているデバイスの種類ごとの手順([Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)、[iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios)、[Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)) を参照してください。|
-|APNSCertificateNotValid|モバイル デバイスと会社のネットワークとの通信を可能にする証明書に問題があります。<br /><br />|Apple Push Notification Service (APNs) には、登録済みの iOS デバイスに接続するチャネルが用意されています。 次場合、登録は失敗し、このメッセージが表示されます。<ul><li>APN 証明書を取得する手順が完了していない。または</li><li>APN 証明書の有効期限が切れている。</li></ul>ユーザー設定方法の詳細については、「[Active Directory を同期化して Intune にユーザーを追加する](../fundamentals/users-add.md)」と[ユーザーとデバイスの整理](../fundamentals/groups-add.md)に関するページを確認してください。|
-|AccountNotOnboarded|モバイル デバイスと会社のネットワークとの通信を可能にする証明書に問題があります。<br /><br />|Apple Push Notification Service (APNs) には、登録済みの iOS デバイスに接続するチャネルが用意されています。 次場合、登録は失敗し、このメッセージが表示されます。<ul><li>APN 証明書を取得する手順が完了していない。または</li><li>APN 証明書の有効期限が切れている。</li></ul>詳細については、「[Microsoft Intune を使用して iOS および Mac の管理をセットアップする](../ios-enroll.md)」を確認してください。|
-|DeviceTypeNotSupported|ユーザーが iOS 以外のデバイスを使用して登録を試みた可能性があります。 登録しようとしているモバイル デバイスの種類はサポートされていません。<br /><br />デバイスが iOS バージョン 8.0 以降を実行していることを確認します。<br /><br />|ユーザーのデバイスで iOS バージョン 8.0 以降が実行されていることを確認します。|
-|UserLicenseTypeInvalid|ユーザーのアカウントがまだ必要なユーザー グループのメンバーではないため、デバイスを登録できません。<br /><br />|ユーザーが自分のデバイスを登録できるようにするには、ユーザーは適切なユーザー グループのメンバーである必要があります。 このメッセージは、モバイル デバイス管理機関に必要なライセンスの種類をユーザーが持っていないことを示します。 たとえば、次の両方に該当する場合はこのエラーが表示されます。<ol><li>Intune がモバイル デバイス管理機関として設定されている。</li><li>System Center 2012 R2 Configuration Manager ライセンスを使用している。</li></ol>詳細については、以下の記事を参照してください。<br /><br />「[Microsoft Intune を使用して iOS および Mac の管理をセットアップする](../ios-enroll.md)」のほか、「[Active Directory を同期化して Intune にユーザーを追加する](../fundamentals/users-add.md)」と[ユーザーとデバイスの整理](../fundamentals/groups-add.md)に関するページでユーザー設定方法についての情報を確認してください。|
+|NoEnrollmentPolicy|登録ポリシーが見つかりません|Apple Push Notification Services (APNs) 証明書などのすべての登録前提条件が設定済みであること、および "プラットフォームとしての iOS/iPadOS" が有効であることを確認します。 手順については、[iOS/iPadOS および Mac のデバイス管理の設定](../ios-enroll.md)に関する記事を参照してください。|
+|DeviceCapReached|登録されているモバイル デバイス数が多すぎます。|別のモバイル デバイスを登録する前に、ユーザーは現在登録されているモバイル デバイスの 1 つをポータル サイトから削除する必要があります。 使用しているデバイスの種類ごとの手順([Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)、[iOS/iPadOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios)、[Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)) をご覧ください。|
+|APNSCertificateNotValid|モバイル デバイスと会社のネットワークとの通信を可能にする証明書に問題があります。<br /><br />|Apple Push Notification Service (APNs) には、登録済みの iOS/iPadOS デバイスに接続するチャネルが用意されています。 次場合、登録は失敗し、このメッセージが表示されます。<ul><li>APN 証明書を取得する手順が完了していない。または</li><li>APN 証明書の有効期限が切れている。</li></ul>ユーザー設定方法の詳細については、「[Active Directory を同期化して Intune にユーザーを追加する](../fundamentals/users-add.md)」と[ユーザーとデバイスの整理](../fundamentals/groups-add.md)に関するページを確認してください。|
+|AccountNotOnboarded|モバイル デバイスと会社のネットワークとの通信を可能にする証明書に問題があります。<br /><br />|Apple Push Notification Service (APNs) には、登録済みの iOS/iPadOS デバイスに接続するチャネルが用意されています。 次場合、登録は失敗し、このメッセージが表示されます。<ul><li>APN 証明書を取得する手順が完了していない。または</li><li>APN 証明書の有効期限が切れている。</li></ul>詳細については、[Microsoft Intune を使用して iOS/iPadOS および Mac の管理を設定する方法](../ios-enroll.md)に関する記事を確認してください。|
+|DeviceTypeNotSupported|ユーザーが iOS 以外のデバイスを使用して登録を試みた可能性があります。 登録しようとしているモバイル デバイスの種類はサポートされていません。<br /><br />デバイスが iOS/iPadOS バージョン 8.0 以降を実行していることを確認します。<br /><br />|ユーザーのデバイスで iOS/iPadOS バージョン 8.0 以降が実行されていることを確認します。|
+|UserLicenseTypeInvalid|ユーザーのアカウントがまだ必要なユーザー グループのメンバーではないため、デバイスを登録できません。<br /><br />|ユーザーが自分のデバイスを登録できるようにするには、ユーザーは適切なユーザー グループのメンバーである必要があります。 このメッセージは、モバイル デバイス管理機関に必要なライセンスの種類をユーザーが持っていないことを示します。 たとえば、次の両方に該当する場合はこのエラーが表示されます。<ol><li>Intune がモバイル デバイス管理機関として設定されている。</li><li>System Center 2012 R2 Configuration Manager ライセンスを使用している。</li></ol>詳細については、以下の記事を参照してください。<br /><br />[Microsoft Intune を使用して iOS/iPadOS および Mac の管理を設定する方法](../ios-enroll.md)に関する記事のほか、[Active Directory の同期と Intune へのユーザーの追加](../fundamentals/users-add.md)、[ユーザーとデバイスの整理](../fundamentals/groups-add.md)に関する記事に記載されているユーザーの設定方法を確認してください。|
 |MdmAuthorityNotDefined|モバイル デバイス管理機関が定義されていません。<br /><br />|Intune でモバイル デバイス管理機関が設定されていません。<br /><br />「手順 6:モバイル デバイスを登録してアプリをインストールする」セクションの項目 1 ([Microsoft Intune の 30 日間の試用版の使用](../fundamentals/free-trial-sign-up.md)に関するページ) を確認してください。|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cant-communicate-with-them"></a>デバイスが無効か、管理コンソールとデバイスが通信できない
-**問題:** iOS デバイスが Intune サービスでチェックインしていません。 保護されている企業リソースへのアクセスを維持するには、デバイスがサービスで定期的にチェックインする必要があります。 デバイスがチェックインしないと次のような状態になります。
+**問題:** iOS/iPadOS デバイスが Intune サービスでチェックインしていません。 保護されている企業リソースへのアクセスを維持するには、デバイスがサービスで定期的にチェックインする必要があります。 デバイスがチェックインしないと次のような状態になります。
 
 - デバイスは Intune サービスから、ポリシー、アプリ、およびリモート コマンドを受信できない。
 - 管理コンソールに**異常**という管理状態が表示される。
@@ -268,15 +268,15 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 
 **解決方法:** 次の解決方法をエンド ユーザーに伝え、企業リソースへのアクセスの回復を支援します。
 
-ユーザーが iOS 用のポータル サイト アプリを起動すると、デバイスと Intune の通信状態が通知されることがあります。 通信していないことが検出された場合、Intune との同期 (再接続) が自動的に試行されます ( **[同期しています]** メッセージが 表示されます)。
+ユーザーが iOS/iPadOS 用のポータル サイト アプリを起動すると、デバイスと Intune の通信状態が通知されることがあります。 通信していないことが検出された場合、Intune との同期 (再接続) が自動的に試行されます ( **[同期しています]** メッセージが 表示されます)。
 
   ![[同期しています...] 通知](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_trying_to_sync_notification.png)
 
-同期できた場合、 **[同期に成功しました]** インライン通知が iOS ポータル サイト アプリに表示されます。デバイスが正常な状態にあることを意味します。
+同期できた場合、 **[同期に成功しました]** インライン通知が iOS/iPadOS ポータル サイト アプリに表示され、デバイスが正常な状態であることが示されます。
 
   ![[同期に成功しました] 通知](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_sync_successful_notification.png)
 
-同期できなかった場合、 **[同期できません]** インライン通知が iOS ポータル サイト アプリに表示されます。
+同期できなかった場合、 **[同期できません]** インライン通知が iOS/iPadOS ポータル サイト アプリに表示されます。
 
   ![[同期できません] 通知](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_unable_to_sync_notification.png)
 
@@ -287,7 +287,7 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 登録後、デバイスは正常な状態に戻り、会社リソースへのアクセスが回復します。
 
 ### <a name="verify-ws-trust-13-is-enabled"></a>WS-Trust 1.3 が有効になっていることを確認する
-**問題** Device Enrollment Program (DEP) iOS デバイスを登録できません
+**問題** Device Enrollment Program (DEP) iOS/iPadOS デバイスを登録できません
 
 ユーザー アフィニティが設定された DEP デバイスを登録するには、ユーザー トークンを要求するよう WS-Trust 1.3 Username/Mixed エンドポイントを有効にする必要があります。 Active Directory は既定でこのエンドポイントを有効にします。 有効なエンドポイントの一覧を表示するには、Get-AdfsEndpoint PowerShell コマンドレットを使用し、trust/13/UsernameMixed エンドポイントを探します。 次に例を示します。
 
@@ -301,7 +301,7 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 
 
 ### <a name="profile-installation-failed"></a>プロファイルのインストールに失敗しました
-**問題:** iOS デバイスで **"プロファイルのインストールに失敗しました"** というエラーがユーザーに表示されます。
+**問題:** iOS/iPadOS デバイスで "**プロファイルのインストールに失敗しました**" というエラーがユーザーに表示されます。
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>プロファイルのインストールに失敗する場合のトラブルシューティング手順
 
@@ -313,9 +313,9 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 
 4. [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) に移動して、プロンプトが表示されたら、プロファイルのインストールを試みます。
 
-5. iOS 用の Safari が既定のブラウザーであり、Cookie が有効であることを確認します。
+5. iOS/iPadOS 用の Safari が既定のブラウザーであり、Cookie が有効であることを確認します。
 
-### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>ユーザーの iOS デバイスが登録画面で 10 分以上スタックしている
+### <a name="users-iosipados-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>ユーザーの iOS/iPadOS デバイスが登録画面で 10 分以上停止している
 
 **問題**:登録中のデバイスが次の 2 つの画面のいずれかでスタックする場合があります。
 - "Microsoft" から最終的な構成を待機している。
@@ -323,11 +323,11 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 
 この問題は、次の場合に発生する可能性があります。
 - Apple サービスに一時停止が発生している。または
-- 次の表に示すように、VPP トークンを使用するよう iOS 登録が設定されているが、VPP トークンに問題がある。
+- 次の表に示すように、VPP トークンを使用するよう iOS/iPadOS 登録が設定されているが、VPP トークンに問題がある。
 
 | 登録設定 | 値 |
 | ---- | ---- |
-| プラットフォーム | iOS |
+| プラットフォーム | iOS/iPadOS |
 | ユーザー アフィニティ | ユーザー アフィニティとともに登録する |
 |Apple セットアップ アシスタントの代わりにポータル サイトで認証します | はい |
 | VPP によるポータル サイトのインストール | Use token: token address\(トークンの使用: トークン アドレス\) |

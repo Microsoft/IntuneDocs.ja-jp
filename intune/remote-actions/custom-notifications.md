@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune を使用してカスタム通知をユーザーに送信する
 titleSuffix: Microsoft Intune
-description: Intune を使用してカスタム プッシュ通知を作成し、iOS および Android デバイスのユーザーに送信する
+description: Intune を使用してカスタム プッシュ通知を作成し、iOS/iPadOS および Android デバイスのユーザーに送信する
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -18,30 +18,30 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73b7617ad6a2d9aa756ddf9a8a4833289e5710ff
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 412dc631f2092d1eb7d9a7332b903a4742472202
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517502"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413884"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Intune でカスタム通知を送信する  
 
-Microsoft Intune を使用して、iOS および Android のマネージド デバイスのユーザーにカスタム通知を送信します。 これらのメッセージは、デバイスに表示される他のアプリケーションからの通知と同様に、ポータル サイト アプリと Microsoft Intune アプリからの標準のプッシュ通知としてユーザーのデバイスに表示されます。 Intune カスタム通知は、macOS デバイスと Windows デバイスではサポートされていません。   
+Microsoft Intune を使用して、iOS/iPadOS および Android のマネージド デバイスのユーザーにカスタム通知を送信します。 これらのメッセージは、デバイスに表示される他のアプリケーションからの通知と同様に、ポータル サイト アプリと Microsoft Intune アプリからの標準のプッシュ通知としてユーザーのデバイスに表示されます。 Intune カスタム通知は、macOS デバイスと Windows デバイスではサポートされていません。   
 
 カスタム通知メッセージには、短いタイトルと 500 文字以下のメッセージ本文が含まれます。 これらのメッセージは、一般的な通信目的でカスタマイズできます。
 
-### <a name="what-the-notification-looks-like-on-an-ios-device"></a>iOS デバイスの通知の外観
+### <a name="what-the-notification-looks-like-on-an-iosipados-device"></a>iOS/iPadOS デバイス上の通知の外観
 
-iOS デバイスでポータル サイト アプリを開いている場合、通知は次のスクリーンショットのようになります。
+iOS/iPadOS デバイス上でポータル サイト アプリを開いている場合、通知は次のスクリーンショットのようになります。
 
 > [!div class="mx-imgBorder"]
-> ![ポータル サイトの iOS のテスト通知](./media/custom-notifications/105046-1.png)
+> ![ポータル サイトの iOS/iPadOS のテスト通知](./media/custom-notifications/105046-1.png)
 
 デバイスがロックされている場合、通知は次のスクリーンショットのようになります。
 
 > [!div class="mx-imgBorder"]
-> ![ロックされたデバイスの iOS のテスト通知](./media/custom-notifications/105046-2.png)
+> ![ロックされたデバイスの iOS/iPadOS のテスト通知](./media/custom-notifications/105046-2.png)
 
 ### <a name="what-the-notification-looks-like-on-an-android-device"></a>Android デバイスの通知の外観
 
@@ -75,14 +75,14 @@ Android デバイスでポータル サイト アプリを開いている場合�
 - 個々のデバイスへのメッセージ送信では、同じデバイスに送信できるメッセージ数は 1 時間あたり最大 10 件だけです。 
 - グループに通知を割り当てることで、複数のユーザーまたはデバイスに通知を送信できます。 グループを使用するとき、各通知は、最大 25 個のグループを直接ターゲットにすることができます。 入れ子になったグループは、この合計にカウントされません。  
 
-  グループにはユーザーまたはデバイスを含めることができますが、メッセージはユーザーおよびユーザーが登録した各 iOS または Android デバイスにのみ送信されます。  
+  グループにはユーザーまたはデバイスを含めることができますが、メッセージはユーザーおよびユーザーが登録した各 iOS/iPadOS または Android デバイスにのみ送信されます。  
 - 1 台のデバイスに通知を送信できます。 グループを使用する代わりに、デバイスを選択してから、リモート [デバイス アクション](device-management.md#available-device-actions)を使用してカスタム通知を送信します。  
 
 **配信**:  
 - Intune によってユーザーのポータル サイト アプリまたは Microsoft Intune アプリにメッセージが送信された後、そのアプリによってプッシュ通知が作成されます。 通知をデバイスにプッシュするために、ユーザーがアプリにサインインする必要はありません。  
 - Intune では、ポータル サイト アプリおよび Microsoft Intune アプリと同じように、カスタム通知の配信は保証できません。 カスタム通知は数時間の遅延が発生しても表示されることがあるため、緊急メッセージには使用できません。  
-- Intune からのカスタム通知メッセージは、標準のプッシュ通知としてデバイスに表示されます。 通知の受信時にポータル サイト アプリが iOS デバイスで開かれている場合、その通知はプッシュ通知されずにアプリに表示されます。  
-- iOS と Android のどちらのデバイスでも、デバイスの設定によっては、ロック画面にカスタム通知を表示できます。  
+- Intune からのカスタム通知メッセージは、標準のプッシュ通知としてデバイスに表示されます。 iOS/iPadOS デバイスで通知を受信したときに、ポータル サイト アプリが開かれていた場合、その通知はプッシュ通知されずにそのアプリに表示されます。  
+- iOS/iPadOS と Android のどちらのデバイスでも、デバイスの設定によっては、ロック画面にカスタム通知を表示できます。  
 - Android デバイスでは、他のアプリがカスタム通知内のデータにアクセスできる場合があります。 機密性の高い通信には使用しないでください。  
 - 最近登録解除されたデバイスのユーザー、またはグループから削除されたユーザーは、その後もそのグループに送信されるカスタム通知を受け取ることがあります。  同様に、カスタム通知がグループに送信された後にユーザーをグループに追加すると、新しく追加されたユーザーは、以前に送信された通知メッセージを受信することができます。  
 
@@ -127,7 +127,7 @@ Intune では、送信したカスタム通知は追跡されず、デバイス�
 
 デバイスでは、ポータル サイト アプリまたは Microsoft Intune アプリからの標準のプッシュ通知として Intune によって送信されるカスタム通知メッセージがユーザーに表示されます。 これらの通知は、ユーザーがデバイス上で他のアプリから受け取るプッシュ通知に似ています。  
 
-iOS デバイスでは、通知の受信時にポータル サイト アプリが開かれている場合、その通知はプッシュ通知されずにアプリに表示されます。  
+iOS/iPadOS デバイスでは、通知の受信時にポータル サイト アプリが開かれていた場合、その通知はプッシュ通知されずにアプリに表示されます。  
 
 通知は、ユーザーがメッセージを閉じるまで残ります。  
 

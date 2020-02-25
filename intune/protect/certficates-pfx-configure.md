@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9142ea3f7728fd24883a311bbf967a7a59dbf457
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 6d35d7470508b610f850ca7f9f394e0d26bec677
+ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207249"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77258098"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune で PKCS 証明書を構成して使用する
 
@@ -76,7 +76,7 @@ Intune で PKCS 証明書を使用するには、次のインフラストラク�
   - PFX Certificate Connector for Microsoft Intune をサーバーにインストールします。  
   - 重要な更新プログラムを自動的に受け取るには、確実にファイアウォールがオープンになっていることを確認し、コネクタがポート **443** で **autoupdate.msappproxy.net** にコンタクトできるようにします。   
 
-  Intune とコネクタでアクセスするネットワーク エンドポイントについて詳しくは、「[Microsoft Intune のネットワーク エンドポイント](../fundamentals/intune-endpoints.md)」をご覧ください。
+  詳細については、「[Microsoft Intune のネットワーク エンドポイント](../fundamentals/intune-endpoints.md)」および「[Intune のネットワーク構成の要件と帯域幅](../fundamentals/network-bandwidth-use.md)」をご覧ください。
 
 - **Windows サーバー**:  
   Windows Server をホストに使用します。
@@ -290,7 +290,7 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
 
 2 つの証明書コネクタの更新プログラムは、定期的にリリースされます。 コネクタが更新された場合、その変更についてここから確認することができます。
 
-*PFX Certificates Connector for Microsoft Intune* では[自動更新がサポートされている](#requirements)のに対し、*Intune Certificate Connector* は手動で更新されます。
+*PFX Certificate Connector for Microsoft Intune* では[自動更新がサポートされている](#requirements)のに対し、*Intune Certificate Connector* は手動で更新されます。
 
 ### <a name="may-17-2019"></a>2019 年 5 月 17 日
 

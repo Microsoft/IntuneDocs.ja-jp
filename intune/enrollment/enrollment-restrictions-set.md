@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dac0607fcaa92ebe65a7ddacc3cd91c63bf246e
-ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
+ms.openlocfilehash: 1263df126b371780b3c5c14ae619f0cb7c83d475
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76971872"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415316"
 ---
 # <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
@@ -44,11 +44,11 @@ ms.locfileid: "76971872"
 - 登録できるデバイスのプラットフォーム:
   - Android デバイス管理者
   - Android Enterprise 仕事用プロファイル
-  - iOS
+  - iOS/iPadOS
   - macOS
   - Windows
   - Windows Mobile
-- iOS、Android、Android デバイス管理者、Android Enterprise 仕事用プロファイル、Windows、および Windows Mobile プラットフォームのオペレーティング システムのバージョン (使用できる Windows のバージョンは 10 のみです。 Windows 8.1 が許可される場合は、空白のままにしておきます)。
+- iOS/iPadOS、Android デバイス管理者、Android Enterprise 仕事用プロファイル、Windows、および Windows Mobile プラットフォームのオペレーティング システムのバージョン (使用できる Windows のバージョンは 10 のみです。 Windows 8.1 が許可される場合は、空白のままにしておきます)。
   - 最小バージョン。
   - 最大バージョン。
 - [個人所有デバイス](device-enrollment.md#bring-your-own-device)を制限します (iOS、Android デバイス管理者、Android Enterprise 仕事用プロファイル、macOS、Windows、および Windows Mobile のみ)。
@@ -67,7 +67,7 @@ ms.locfileid: "76971872"
 5. **[バージョン]** で、許可されるプラットフォームでサポートされる最小バージョンと最大バージョンを選択します。 バージョン制限は、ポータル サイトを使用して登録されるデバイスにのみ適用されます。
      サポートされるバージョン形式:
     - Android デバイス管理者と Android Enterprise 仕事用プロファイルでは、major.minor.rev.build がサポートされます。
-    - iOS では major.minor.rev がサポートされます。オペレーティング システムのバージョンは、Device Enrollment Program、Apple School Manager、または Apple Configurator アプリを使用して登録する Apple デバイスには適用されません。
+    - iOS/iPadOS では major.minor.rev がサポートされます。オペレーティング システムのバージョンは、Device Enrollment Program、Apple School Manager、または Apple Configurator アプリを使用して登録する Apple デバイスには適用されません。
     - Windows は、Windows 10 の場合にのみ major.minor.build.rev をサポートします。
     
     > [!IMPORTANT]
@@ -158,8 +158,8 @@ BYOD の登録中にユーザーがデバイス登録の上限に達すると、
 \* これらは、Autopilot に登録されている場合、ブロックされません。
 
 
-## <a name="blocking-personal-ios-devices"></a>個人の iOS デバイスをブロックする
-Intune の既定では、iOS デバイスは個人所有として分類されます。 企業所有に分類するには、iOS デバイスが次のいずれかの条件を満たしている必要があります。
+## <a name="blocking-personal-iosipados-devices"></a>個人の iOS/iPadOS デバイスをブロックする
+Intune の既定では、iOS/iPadOS デバイスは個人所有として分類されます。 企業所有に分類するには、iOS/iPadOS デバイスが次のいずれかの条件を満たしている必要があります。
 - シリアル番号または IMEI を使用して登録されている。
 - 自動デバイス登録 (旧称 Device Enrollment Program) を使用して登録されている
 

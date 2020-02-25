@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae3c2380aa27096be2490d2404858179ea9d222e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b7861d26650aaf74ea9c58608c33e72495244575
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503181"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414225"
 ---
 # <a name="incomplete-user-enrollments-report"></a>不完全なユーザー登録レポート
 
@@ -44,7 +44,7 @@ ms.locfileid: "72503181"
 
 ## <a name="what-does-the-report-show"></a>レポートで示されること
 
-レポートには、iOS および Android デバイス用のデータが含まれます。
+レポートには、iOS/iPadOS および Android デバイス用のデータが含まれます。
 
 このレポートには、過去 2 週間のデータが表示されますが、レポートをフィルター処理すると、過去 30 日の任意の時点を表示できます。
 
@@ -86,10 +86,10 @@ ms.locfileid: "72503181"
 
 | 操作名 | 画面またはフロー | プラットフォーム | 操作 |
 | ---- |---- |---- |---- |
-| iOSProfileLaunch | 構成プロファイルを表示するプロンプト | iOS | **無視** |
-| iOSProfileLaunch | [Installing profile]\(プロファイルのインストール\) 画面 | iOS | **キャンセル** |
-| iOSProfileLaunch | デバイスを登録するためにプロファイルのソースを信頼するプロンプト | iOS | **キャンセル** |
-| iOSProfileLaunch | プロファイルがインストールされるまで [Installing profile]\(プロファイルのインストール\) 画面 | iOS | 30 分以上かかった |
+| iOSProfileLaunch | 構成プロファイルを表示するプロンプト | iOS/iPadOS | **無視** |
+| iOSProfileLaunch | [Installing profile]\(プロファイルのインストール\) 画面 | iOS/iPadOS | **キャンセル** |
+| iOSProfileLaunch | デバイスを登録するためにプロファイルのソースを信頼するプロンプト | iOS/iPadOS | **キャンセル** |
+| iOSProfileLaunch | プロファイルがインストールされるまで [Installing profile]\(プロファイルのインストール\) 画面 | iOS/iPadOS | 30 分以上かかった |
 | AndroidPermissions | [Device administrator activation]\(デバイス管理者のアクティブ化\) 画面 | Android | **キャンセル** |
 | AndroidPermissions | デバイス管理者が **[アクティブ化]** されるまで電話をかけたり管理したりする承認のためのプロンプト | Android | 30 分以上かかった |
 | KnoxActivation | KLMS エージェントのアクティブ化 (Samsung のみ) | Android| **キャンセル** |
@@ -108,9 +108,9 @@ ms.locfileid: "72503181"
 | ---- |---- |---- |---- |
 | コンプライアンス | 登録後のアクセス設定で (管理者が構成している場合) [デバイスのポリシー準拠] が緑色でない| iOS/Android | **延期** |
 | コンプライアンス | 更新され緑色になるまで [デバイスのポリシー準拠] が緑色でない | iOS/Android | 30 分以上かかった |
-| ライセンス認証 | アクセス設定で (管理者が構成している場合) [登録のアクティブ化] が緑色でない | iOS/Android | **延期** |
+| アクティブ化 | アクセス設定で (管理者が構成している場合) [登録のアクティブ化] が緑色でない | iOS/Android | **延期** |
 | コンプライアンス | 更新され緑色になるまで [デバイスの有効化] が緑色でない | iOS/Android | 30 分以上かかった |
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 不完全登録の割合を確認したら、登録を改善させるために変更できることはないか、[登録オプション](enrollment-options.md)に関するページを確認します。

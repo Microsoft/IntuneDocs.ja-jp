@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune を使用してデバイスをインベントリから削除する/ワイプする - Azure | Microsoft Docs
-description: Microsoft Intune を使用して Android、Android の仕事用プロファイル、iOS、macOS、または Windows デバイスでデバイスをインベントリから削除するか、ワイプします。 また、Azure Active Directory からデバイスを削除します。
+description: Microsoft Intune を使用して Android、Android の仕事用プロファイル、iOS/iPadOS、macOS、または Windows デバイスでデバイスをインベントリから削除するか、ワイプします。 また、Azure Active Directory からデバイスを削除します。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cda7404d24ccb9bb1c42d6bb66d77f29ac925ac
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 62ba66469dfff004c3cd6a60284ec7466e8b9f00
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812455"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415514"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>ワイプ、インベントリからの削除、デバイス登録の手動解除を使用し、デバイスを削除する
 
@@ -43,7 +43,7 @@ ms.locfileid: "76812455"
 
 
 > [!NOTE]
-> ワイプ アクションは、User Enrollment に登録されている iOS デバイスには、利用できません。
+> ワイプ アクションは、ユーザー登録に登録されている iOS/iPadOS デバイスに対しては使用できません。
 
 **[登録状態とユーザー アカウントを保持します]** オプションは、Windows 10 バージョン 1709 以降でのみ使用できます。
 
@@ -134,7 +134,7 @@ Android の仕事用プロファイルのデバイスから会社データを削
 
 ### <a name="windows"></a>Windows
 
-|データ型|Windows 8.1 (MDM) と Windows RT 8.1|Windows RT|Windows Phone 8.1 および Windows Phone 8|Windows 10|
+|データ型|Windows 8.1 (MDM) と Windows RT 8.1|Windows RT|Windows Phone 8.1 および Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Intune でインストールされた会社のアプリと関連するデータ。|EFS で保護されているファイルのキーは失効します。 ユーザーがファイルを開くことはできません。|会社のアプリは削除されません。|元々ポータル サイトでインストールされたアプリはアンインストールされます。 会社のアプリ データは削除されます。|アプリはアンインストールされます。 サイドローディング キーは削除されます。<br>Windows 10 バージョン 1703 (Creators Update) 以降の場合、Office 365 ProPlus アプリは削除されません。 Intune 管理拡張機能がインストールされている Win32 アプリは、未登録デバイスではアンインストールされません。 管理者は、割り当ての除外を利用して、Win32 アプリを BYOD デバイスに提供しないようにすることができます。|
 |Settings|Intune ポリシーで設定された構成は強制されなくなります。 ユーザーが設定を変更できます。|Intune ポリシーで設定された構成は強制されなくなります。 ユーザーが設定を変更できます。|Intune ポリシーで設定された構成は強制されなくなります。 ユーザーが設定を変更できます。|Intune ポリシーで設定された構成は強制されなくなります。 ユーザーが設定を変更できます。|
