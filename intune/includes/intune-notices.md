@@ -7,14 +7,25 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: d360fa5efe2deba2d19cd67e6ed9f8cbb7f864d9
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: f23d81ddb07fcafb198cd725781747b61a3b73ea
+ms.sourcegitcommit: 67f926ba83f8a955e16b741a610ad84d6044f8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415070"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77529339"
 ---
 以下の通知では、今後の Intune の変更と機能に備えるために役立つ重要な情報が提供されます。
+
+### <a name="microsoft-intune-support-for-windows-10-mobile-ending--3544938--"></a>Windows 10 Mobile 終了のための Microsoft Intune のサポート<!--3544938-->
+Windows 10 Mobile の Microsoft メインストリーム サポートは、2019 年 12 月に終了しました。 このサポートの声明に記載されているように、Windows 10 Mobile のユーザーは、新しいセキュリティ更新プログラム、セキュリティ以外の修正プログラム、無償のサポート オプション、Microsoft からのオンライン技術コンテンツ更新プログラムを受け取ることができなくなります。 Microsoft Intune は、すべてのモバイル OS のサポートに基づいて、2020 年 5 月 11 日に Windows 10 Mobile アプリと Windows 10 Mobile オペレーティング システムの両方のポータル サイトのサポートを終了することになりました。
+
+#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
+Windows 10 Mobile のデバイスが組織に展開されている場合、今から 2020 年 5 月 11 日まで、新しいデバイスを登録したり、ポリシーとアプリを追加または削除したり、管理設定を更新したりできます。 5 月 11 日以降は、新しい登録が停止され、最終的に Intune UI から Windows 10 Mobile の管理が削除されます。 デバイスが Intune サービスにチェックインされなくなり、デバイスとポリシーのデータが削除されます。  
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
+Intune レポートをチェックして、影響を受ける可能性のあるデバイスまたはユーザーを確認できます。 **[デバイス]**  >  **[すべてのデバイス]** の順に移動し、OS でフィルター処理します。 さらに列を追加して、Windows 10 Mobile を稼働しているデバイスを持つ組織内のユーザーの特定に役立てることができます。 エンド ユーザーに対して、デバイスのアップグレードや、会社にアクセスするためのデバイスの使用中止を要求してください。
+
+
 
 ### <a name="plan-for-change-change-in-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--6114580--"></a>変更の計画: Intune に Android エンタープライズ専用デバイスを登録するときのエクスペリエンスの変更<!--6114580-->
 11 月のリリースでは、SCEP 証明書の展開のサポートが Android エンタープライズ専用デバイスに追加され、Wi-Fi プロファイルへの証明書ベースのアクセスが可能になりました。 この変更により、Android エンタープライズ専用デバイスの登録フローの一部がマイナー変更されました。 今後の 3 月のサービス更新または 2003 では、注意が必要なさらなる変更がいくつか行われます。
@@ -44,16 +55,6 @@ Acrobat Reader モバイル アプリはアプリ保護ポリシーをサポー�
 
 #### <a name="additional-information"></a>追加情報
 https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
-
-
-### <a name="end-support-for-windows-phone-81--3544909--"></a>Windows Phone 8.1 に対するサポートの終了<!--3544909-->
-Windows Phone 8.1 に対する Microsoft のメインストリーム サポートは 2017 年 7 月に終了し、拡張サポートは 2019 年 6 月に終了しました。 Windows Phone 8.1 用のポータル サイト アプリは、2017 年 10 月から維持モードになっています。 2020 年 2 月 20 日に、Windows Phone 8.1 に対する Microsoft Intune のサポートが終了します。
-
-#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
-2020 年 2 月 20 日を過ぎると、これらのデバイスはセキュリティ更新プログラムを受信しなくなり、新しいデバイスを登録できなくなります。 既存の Windows Phone 8.1 デバイスは登録されたままになります (ポリシー、アプリ、レポート) が、既存の登録に関するトラブルシューティングは、この日付を過ぎるとサポートされなくなります。これは、サード パーティ証明書など、多くのコンポーネントでこのプラットフォームのサポートが既に終了しているためです。 Intune では、Intune と Windows Phone 8.1 を使った互換性テストが停止されます。
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
-Intune レポートをチェックして、影響を受ける可能性のあるデバイスまたはユーザーを確認できます。 [デバイス]、[すべてのデバイス]、の順に移動し、[OS] で絞り込みます。 さらに列を追加して、Windows Phone 8.1 を稼働しているデバイスを持つ組織内のユーザーの特定に役立てることができます。 エンド ユーザーに対して、各自のデバイスをサポートされている OS バージョンにアップグレードするようにリクエストしてください。
 
 
 ### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>アクションの実行: 保護されている Intune ブラウザーエクスペリエンスに Microsoft Edge を使用する<!--5728447-->
