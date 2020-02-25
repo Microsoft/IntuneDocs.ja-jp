@@ -1,7 +1,7 @@
 ---
-title: iOS デバイスの登録 - ユーザー登録
+title: iOS/iPadOS デバイスの登録 - ユーザー登録
 titleSuffix: Microsoft Intune
-description: iOS と iPadOS のユーザー登録を設定する方法について説明します。
+description: iOS/iPadOS と iPadOS のユーザー登録を設定する方法について説明します。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0872eef38e3ea5a70ebb64d3ae3c62069045fa97
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: d22d8d4772754fddbd366610402d64acc28ffc65
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754630"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415258"
 ---
-# <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>iOS と iPadOS のユーザー登録を設定する (プレビュー)
+# <a name="set-up-iosipados-and-ipados-user-enrollment-preview"></a>iOS/iPadOS と iPadOS のユーザー登録を設定する (プレビュー)
 
-Apple のユーザー登録プロセスを使用して、iOS デバイスと iPadOS デバイスを登録するように Intune を設定できます。 ユーザー登録により、管理者は他の登録方法と比較して簡素化された一部の管理オプションを使用できるようになります。
+Apple のユーザー登録プロセスを使用して、iOS/iPadOS デバイスと iPadOS デバイスを登録するように Intune を設定できます。 ユーザー登録により、管理者は他の登録方法と比較して簡素化された一部の管理オプションを使用できるようになります。
 
 ユーザー登録で使用できるオプションの詳細については、[ユーザー登録でサポートされるアクション、パスワードなどのオプション](ios-user-enrollment-supported-actions.md)に関する記事を参照してください。
 
@@ -43,7 +43,7 @@ Apple のユーザー登録プロセスを使用して、iOS デバイスと iPa
 
 登録プロファイルで、デバイス グループに対して登録時に適用する設定を定義します。 
 
-1. [Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[登録の種類 (プレビュー)]**  >  **[プロファイルの作成]**  >  **[iOS/iPadOS]** を選択します。 このプロファイルでは、iOS および iPadOS のエンド ユーザーが、会社の Apple メソッドで登録されていないデバイスでどのような登録エクスペリエンスを利用できるかを指定します。 変更が必要な場合は、作成後にこのプロファイルを編集できます。
+1. [Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[登録の種類 (プレビュー)]**  >  **[プロファイルの作成]**  >  **[iOS/iPadOS]** を選択します。 このプロファイルでは、iOS/iPadOS および iPadOS のエンド ユーザーが、会社の Apple メソッドで登録されていないデバイスでどのような登録エクスペリエンスを利用できるかを指定します。 変更が必要な場合は、作成後にこのプロファイルを編集できます。
 
     ![Apple 登録プロファイルを作成する](./media/ios-user-enrollment/create-profile.png)
 
@@ -60,7 +60,7 @@ Apple のユーザー登録プロセスを使用して、iOS デバイスと iPa
 
     - **デバイスの登録**:このプロファイル内のすべてのユーザーは、[デバイスの登録] を使用します。
     - **ユーザー登録**:このプロファイル内のすべてのユーザーは、[ユーザー登録] を使用します。
-    - **Determine based on user choice (ユーザーの選択に基づいて決定する)** :このグループのすべてのユーザーには、使用する登録の種類の選択肢が表示されます。 ユーザーが自分のデバイスを登録すると、 **[I own this device]\(このデバイスを所有している\)** と **[(Company) owns this device]\((会社が) このデバイスを所有している\)** から選択できるようになります。 後者を選択した場合は、デバイスの登録を使用してデバイスが登録されます。 ユーザーが **[I own this device]\(このデバイスを所有している\)** を選択した場合は、さらにデバイス全体をセキュリティで保護するか、職場関連のアプリとデータのみをセキュリティで保護するかを選択できます。 デバイスを所有するかどうかのエンド ユーザーによる選択で、デバイスに実装されている登録の種類が決まります。 このユーザーの選択は、Intune の [デバイスの所有者] 属性にも反映されます。 ユーザー エクスペリエンスの詳細については、「[iOS デバイスからの会社のリソースへのアクセスを設定する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)」を参照してください。
+    - **Determine based on user choice (ユーザーの選択に基づいて決定する)** :このグループのすべてのユーザーには、使用する登録の種類の選択肢が表示されます。 ユーザーが自分のデバイスを登録すると、 **[I own this device]\(このデバイスを所有している\)** と **[(Company) owns this device]\((会社が) このデバイスを所有している\)** から選択できるようになります。 後者を選択した場合は、デバイスの登録を使用してデバイスが登録されます。 ユーザーが **[I own this device]\(このデバイスを所有している\)** を選択した場合は、さらにデバイス全体をセキュリティで保護するか、職場関連のアプリとデータのみをセキュリティで保護するかを選択できます。 デバイスを所有するかどうかのエンド ユーザーによる選択で、デバイスに実装されている登録の種類が決まります。 このユーザーの選択は、Intune の [デバイスの所有者] 属性にも反映されます。 ユーザー エクスペリエンスの詳細については、[iOS/iPadOS デバイスから会社のリソースへのアクセスを設定する方法](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)に関する記事をご覧ください。
     
 5. **[次へ]** を選択します。
 

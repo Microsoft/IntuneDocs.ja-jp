@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a5629e6a318836e23c6a2f7fceb59363a0ed72
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: cd6e58efa096c006780c17d991a9ea5da26099d4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812489"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415546"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune でデバイスのパスコードをリセットまたは削除する
 
@@ -35,8 +35,8 @@ ms.locfileid: "76812489"
 | ---- | ---- |
 | Android デバイス、バージョン 6.x 以前 | はい |
 | デバイスの所有者として登録されている Android エンタープライズ デバイス | はい |
-| iOS デバイス | はい |
-| ユーザー登録に登録されている iOS デバイス | いいえ |
+| iOS/iPadOS デバイス | はい |
+| ユーザー登録に登録されている iOS/iPadOS デバイス | いいえ |
 | 仕事用プロファイルに登録されている Android デバイス | いいえ |
 | Android デバイス、バージョン 7.0 以降 | いいえ |
 | macOS | いいえ |
@@ -68,9 +68,9 @@ Android デバイスの場合、これは、デバイス レベルのパスコ�
 バージョン 8.x 以降を実行していて、仕事用プロファイルで登録された Android enterprise デバイスの場合、エンド ユーザーは登録が完了した後に正しいリセット パスコードをアクティブ化する通知を受け取ります。 仕事用プロファイル パスワードが要求され、設定されている場合、通知が表示されます。 パスコードが入力されると、通知が閉じられます。
 
 
-## <a name="remove-ios-passcodes"></a>iOS パスコードの削除
+## <a name="remove-iosipados-passcodes"></a>iOS/iPadOS パスコードの削除
 
-リセットする代わりに、パスコードが iOS デバイスから削除されます。 パスコード コンプライアンス ポリシーが設定されている場合、ユーザーは [設定] で新しいパスコードを設定するようにデバイスから要求されます。
+リセットする代わりに、パスコードが iOS/iPadOS デバイスから削除されます。 パスコード コンプライアンス ポリシーが設定されている場合、ユーザーは [設定] で新しいパスコードを設定するようにデバイスから要求されます。
 
 ## <a name="next-steps"></a>次のステップ
 

@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e299601f69a7052ea52f9da2537306cb8556982b
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 96cd4997029c15396db91e9866bbb387c20f1044
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755376"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414446"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>組み込みアプリを Microsoft Intune に追加する
 
-*組み込み*アプリ タイプを使うと、Office 365 アプリなどの精選された管理対象アプリを iOS デバイスと Android デバイスに簡単に割り当てることです。 Excel、OneDrive、Outlook、Skype など、特定のアプリをこのアプリ タイプに割り当てることができます。 アプリを追加した後は、アプリの種類が *[組み込みの iOS アプリ]* または *[組み込み Android アプリ]* と表示されます。 組み込みのアプリの種類を使うことで、デバイス ユーザーに発行する特定のアプリを選べます。
+"*組み込み*" アプリ タイプを使うと、Office 365 アプリなどの精選された管理対象アプリを iOS/iPadOS デバイスと Android デバイスに簡単に割り当てることです。 Excel、OneDrive、Outlook、Skype など、特定のアプリをこのアプリ タイプに割り当てることができます。 アプリを追加した後は、アプリの種類が *[組み込みの iOS アプリ]* または *[組み込み Android アプリ]* と表示されます。 組み込みのアプリの種類を使うことで、デバイス ユーザーに発行する特定のアプリを選べます。
 
 以前のバージョンの Intune コンソールでは、Outlook や OneDrive など、複数の既定の管理対象 Office 365 アプリが提供されていました。 これらの管理対象アプリのアプリ タイプは、'*管理対象 iOS ストア アプリ*' または '*管理対象 Android ストア アプリ*' とタグ付けされていました。 これらのアプリの種類ではなく、組み込みアプリの種類を使用することをお勧めします。 組み込みアプリの種類では、さらに柔軟に Office 365 アプリの編集と削除を行うことができます。
 

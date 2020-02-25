@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune デバイスの登録とは
 titleSuffix: Microsoft Intune
-description: iOS、Android、Windows デバイスの登録について説明します。
+description: iOS/iPadOS、Android、Windows デバイスの登録について説明します。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: feee58d926a25e9132204798ba93d10a7c90f41e
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 7955c91a33edef37b86f5bd8f29dfb681d28030e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547841"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415340"
 ---
 # <a name="what-is-device-enrollment"></a>デバイス登録とは
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -33,7 +33,7 @@ Intune では、従業員のデバイスやアプリ、従業員が会社のデ�
 
 既定では、すべてのプラットフォーム用のデバイスを Intune に登録することができます。 ただし、[プラットフォームによってデバイスを制限する](enrollment-restrictions-set.md#create-a-device-type-restriction)ことができます。
 
-## <a name="ios-enrollment-methods"></a>iOS の登録方法
+## <a name="iosipados-enrollment-methods"></a>iOS/iPadOS の登録方法
 
 | **方法** | **リセットが必要** | [**ユーザー アフィニティ**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) | **Locked** | **詳細** |
 |:---:|:---:|:---:|:---:|:---:|
@@ -84,36 +84,36 @@ Intune では、従業員のデバイスやアプリ、従業員が会社のデ�
 BYOD (私物デバイスの業務利用) デバイスには、個人所有の電話、タブレット、および PC が含まれます。 ユーザーは、ポータル サイト アプリをインストール、および実行して、BYOD デバイスを登録します。 このプログラムによって、ユーザーは電子メールなどの会社のリソースにアクセスできます。
 
 ## <a name="corporate-owned-device"></a>企業所有のデバイス
-[企業所有のデバイス (COD) ](corporate-identifiers-add.md)には、組織が所有し、従業員に配布されている電話、タブレット、PC があります。 COD 登録では、自動登録、共有デバイス、事前承認された登録要件などのシナリオがサポートされます。 管理者やマネージャーによる COD の一般的な登録方法は、デバイス登録マネージャー (DEM) を使用することです。 iOS デバイスは、Apple から提供される Device Enrollment Program (DEP) ツールから直接登録できます。 IMEI 番号を持つデバイスも、会社所有として識別して、タグを付けることができます。
+[企業所有のデバイス (COD) ](corporate-identifiers-add.md)には、組織が所有し、従業員に配布されている電話、タブレット、PC があります。 COD 登録では、自動登録、共有デバイス、事前承認された登録要件などのシナリオがサポートされます。 管理者やマネージャーによる COD の一般的な登録方法は、デバイス登録マネージャー (DEM) を使用することです。 iOS/iPadOS デバイスは、Apple から提供される Device Enrollment Program (DEP) ツールから直接登録できます。 IMEI 番号を持つデバイスも、会社所有として識別して、タグを付けることができます。
 
 ### <a name="device-enrollment-manager"></a>デバイス登録マネージャー
 デバイス登録マネージャー (DEM) は、複数の会社所有のデバイスを登録して管理するために使用される特別なユーザー アカウントです。 作成後は、マネージャーがポータル サイトをインストールし、ユーザーがいない多数のデバイスを登録できます。 この種のデバイスは、POS アプリやユーティリティ アプリなどには適していますが、電子メールや会社のリソースにアクセスする必要があるユーザーには適していません。 [DEM の詳細はこちらをご覧ください](device-enrollment-manager-enroll.md)。
 
 ### <a name="apple-device-enrollment-program"></a>Apple Device Enrollment Program
-Apple Device Enrollment Program (DEP) 管理では、ポリシーを作成し、DEP で購入および管理されている iOS および macOS デバイスに "無線で" 展開できます。 ユーザーが初めてデバイスの電源を入れて Setup Assistant を実行した際に、デバイスが登録されます。 この方法は、iOS 監視対象モードをサポートしているため、特定の機能でデバイスを構成することができます。
+Apple Device Enrollment Program (DEP) 管理では、ポリシーを作成し、DEP で購入および管理されている iOS/iPadOS および macOS デバイスに "無線で" 展開できます。 ユーザーが初めてデバイスの電源を入れて Setup Assistant を実行した際に、デバイスが登録されます。 この方法は、iOS/iPadOS 監視対象モードをサポートしているため、特定の機能でデバイスを構成することができます。
 
-iOS DEP 登録の詳細については、以下をご覧ください。
+iOS/iPadOS DEP 登録の詳細については、以下をご覧ください。
 
-- [iOS デバイスの登録方法を選択する](ios-enroll.md)
-- [Device Enrollment Program を使用して iOS デバイスを登録する](device-enrollment-program-enroll-ios.md)
+- [iOS/iPadOS デバイスの登録方法を選択する](ios-enroll.md)
+- [Device Enrollment Program を使用して iOS/iPadOS デバイスを登録する](device-enrollment-program-enroll-ios.md)
 
 ### <a name="usb-sa"></a>USB-SA
 IT 管理者は、セットアップ アシスタントを使用した登録を行うため、USB 経由で Apple Configurator を使用して、会社が所有するデバイスを手動で準備します。 IT 管理者は登録プロファイルを作成して、Apple Configurator にエクスポートします。 ユーザーは、自分のデバイスを受け取ったときに、セットアップ アシスタントを実行してデバイスを登録するように求められます。 この方法は、**iOS 監視対象**モードをサポートしているため、以下の機能が有効になります。
 - ロック登録
 - キオスク モード、およびその他の高度な構成および制限
 
-セットアップ アシスタントを使用した iOS Apple Configurator 登録については、以下をご覧ください。
+セットアップ アシスタントを使用した iOS/iPadOS Apple Configurator 登録については、以下をご覧ください。
 
-- [iOS デバイスの登録方法を決定する](ios-enroll.md)
-- [Configurator とセットアップ アシスタントを使用して iOS デバイスを登録する](apple-configurator-enroll-ios.md)
+- [iOS/iPadOS デバイスの登録方法を決定する](ios-enroll.md)
+- [Configurator とセットアップ アシスタントを使用して iOS/iPadOS デバイスを登録する](apple-configurator-enroll-ios.md)
 
 ### <a name="usb-direct"></a>USB-Direct
 直接登録の場合、管理者は登録ポリシーを作成して Apple Configurator にエクスポートすることで、各デバイスを手動で登録する必要があります。 USB で接続された会社所有デバイスは直接登録されます。ワイプを必要としません。 デバイスはユーザーがいないデバイスとして管理されます。 これらのデバイスはロックされず、監視対象にもなりません。また、条件付きアクセス、脱獄の検出、モバイル アプリケーション管理はサポートされません。
 
-iOS 登録の詳細については、以下を参照してください。
+iOS/iPadOS 登録の詳細については、以下を参照してください。
 
-- [iOS デバイスの登録方法を決定する](ios-enroll.md)
-- [Configurator と直接登録を使用して iOS デバイスを登録する](apple-configurator-enroll-ios.md)
+- [iOS/iPadOS デバイスの登録方法を決定する](ios-enroll.md)
+- [Configurator と直接登録を使用して iOS/iPadOS デバイスを登録する](apple-configurator-enroll-ios.md)
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 証明書の有効期限が切れた後のモバイル デバイスのクリーンアップ
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b58cbd0aa07babd36c7a7e5aa3dcc5b8d32d58a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e28f8a2cc43e4ca210a391151383633da457c056
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415060"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437921"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune でサポートされるオペレーティング システムとブラウザー
 
@@ -87,16 +87,16 @@ Microsoft Intune をセットアップする前に、サポートされている
 
 ### <a name="windows-pc-software-client"></a>Windows PC ソフトウェア クライアント
 
-代替登録方法として、[Intune ソフトウェア クライアント](manage-windows-pcs-with-microsoft-intune.md)を Windows PC に展開し、インストールできます。 この機能は、Intune クラシック ポータルを使用する場合のみ利用可能です。 Intune ソフトウェア クライアントを利用し、Windows 10 Home エディションを除く、Windows 7 以降の PC を管理できます。
+代替登録方法として、[Intune ソフトウェア クライアント](manage-windows-pcs-with-microsoft-intune.md)を Windows PC に展開し、インストールできます。 この機能は、Intune クラシック ポータルを使用する場合のみ利用可能です。 Intune ソフトウェア クライアントを使用して、Windows 10 Home エディションを除く、Windows 10 以降の PC を管理できます。
 
 > [!Note]
 > Microsoft により、2020 年 1 月 14 日に Windows 7 のサポートが終了することが発表されました。 この日に、Intune でも Windows 7 を実行しているデバイスに対するサポートが廃止されます。
 >
-> 詳細については、「[Intune の変更の計画: Windows 7 のサポート終了間近](https://docs.microsoft.com/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)」をご覧ください
+> 詳細については、[Intune の変更の計画: Windows 7 のサポート終了](https://docs.microsoft.com/intune/fundamentals/whats-new#windows-7-ends-extended-support-)に関する記事をご覧ください。
 >
-> Microsoft Intune での Silverlight ベースの Intune コンソールのサポートは、2020 年 10 月 15 日に廃止されます。 この廃止には、Silverlight コンソールで構成された PC ソフトウェア クライアント (PC エージェントとも呼ばれます) のサポート終了も含まれています
+> Microsoft Intune での Silverlight ベースの Intune コンソールのサポートは、2020 年 10 月 15 日に廃止されます。 この廃止には、Silverlight コンソールで構成された PC ソフトウェア クライアント (別名: PC エージェント) のサポート終了も含まれます。
 >
-> 詳細については、[Microsoft Intune での Silverlight ベースの管理コンソールのサポート終了](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249)に関するページをご覧ください
+> 詳細については、[Microsoft Intune での Silverlight ベースの管理コンソールのサポート終了](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249)に関するページをご覧ください。
 
 <!--  ### Exchange ActiveSync management
 

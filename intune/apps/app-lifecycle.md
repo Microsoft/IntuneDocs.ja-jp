@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ce23d77d9b9d89ce51738a9c4e244dfca9a1c59
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 569906cea8467d568d302f4e44b26c3394213b62
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812402"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414978"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Microsoft Intune のアプリ ライフサイクルの概要
 
@@ -42,7 +42,7 @@ Intune にアプリを追加したら、[それを管理対象のユーザーと
 
 アプリのライフサイクルの一環として、アプリの新しいバージョンが定期的にリリースされます。 Intune には、展開した[アプリを新しいバージョンに簡単に更新](apps-add.md)できるツールがあります。 さらに、一部のアプリでは次のような追加機能を構成できます。
 
-- [iOS アプリ構成ポリシー](app-configuration-policies-use-ios.md)では、アプリの実行時に使用される互換性のある iOS アプリの設定を指定できます。 たとえば、アプリには特定のブランド設定や、接続するサーバーの名前が必要な場合があります。
+- [iOS アプリ構成ポリシー](app-configuration-policies-use-ios.md)では、アプリの実行時に使用される互換性のある iOS/iPadOS アプリの設定を指定できます。 たとえば、アプリには特定のブランド設定や、接続するサーバーの名前が必要な場合があります。
 - [Managed Browser ポリシー](app-configuration-managed-browser.md)を使って [Microsoft Edge](~/apps/apps-supported-intune-apps.md#microsoft-apps) の設定を構成することができます。これにより、既定のデバイス ブラウザーを置き換え、ユーザーがアクセスできる Web サイトを制限できます。
 
 ## <a name="protect"></a>保護

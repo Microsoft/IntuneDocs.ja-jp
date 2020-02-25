@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80ae9b3b1ab274e236ad43c52569574718d3eec4
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: ef9810f9414af4d1f57fa71189a6960b491800c0
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839300"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414880"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune で iOS アプリ間のデータ転送を管理する方法
 
@@ -45,7 +45,7 @@ ms.locfileid: "75839300"
 ## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>Microsoft Intune またはサード パーティ EMM のユーザー UPN 設定を構成する
 Intune またはサード パーティの EMM ソリューションによって管理されているデバイスで、登録されているユーザー アカウントを識別するには、ユーザー UPN 設定を構成することが**必要**です。 UPN 構成は、Intune から展開するアプリ保護ポリシーと連携します。 次に示す手順は、UPN の設定の構成方法とその結果のユーザー エクスペリエンスに関する一般的なフローです。
 
-1. [Azure Portal](https://portal.azure.com) で、iOS 用の[アプリ保護ポリシーを作成して割り当て](app-protection-policies.md)ます。 企業の要件に合わせてポリシー設定を構成し、このポリシーを使う iOS アプリを選びます。
+1. [Azure portal](https://portal.azure.com) で、iOS/iPadOS 用の[アプリ保護ポリシーの作成および割り当て](app-protection-policies.md)を行います。 企業の要件に合わせてポリシー設定を構成し、このポリシーを使う iOS アプリを選びます。
 
 2. 次の汎用化された手順を使用して、Intune またはサード パーティの MDM ソリューションで管理するアプリとメール プロファイルをデプロイします。 このエクスペリエンスは*例 1* でも取り上げています。
 

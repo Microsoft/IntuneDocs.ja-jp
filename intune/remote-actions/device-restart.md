@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune - Azure でデバイスを再起動する | Microsoft Docs
-description: 再起動リモート アクションを使用して、Azure Portal で Microsoft Intune を使用している Windows および iOS デバイスを再起動します。
+description: 再起動リモート アクションを使用して、Azure Portal で Microsoft Intune を使用して Windows および iOS/iPadOS デバイスを再起動します。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82ebf35d0eb435f2df4e6cf55274808e6fa690f4
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 54fa0f796e96a2487793197cbbbe548fd8490856
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517543"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415615"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Intune でデバイスをリモートで再起動する
 
@@ -35,10 +35,10 @@ ms.locfileid: "76517543"
 - Windows - Windows 8.1 以降でサポートされています
 - Windows Phone - Windows Phone 8.1 以降でサポートされています
 - Android キオスク デバイス - Android 7.0 以降でサポートされています
-- iOS - サポートされています
+- iOS/iPadOS - サポートされています
 
     > [!Note]  
-    > このコマンドは、監視されているデバイスと**デバイス ロック** アクセス権を要求します。 デバイスがすぐに再起動します。 パスコードがロックされている iOS デバイスは、再起動後に Wi-Fi ネットワークに再度参加しません。 再起動後に、デバイスがサーバーと通信できない場合があります。
+    > このコマンドは、監視されているデバイスと**デバイス ロック** アクセス権を要求します。 デバイスがすぐに再起動します。 パスコードがロックされている iOS/iPadOS デバイスは、再起動後に Wi-Fi ネットワークに再度参加しません。 再起動後に、デバイスがサーバーと通信できない場合があります。
 - macOS - サポートされていません
 - Android および Android 仕事用プロファイル デバイス - サポートされていません
 

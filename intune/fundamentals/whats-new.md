@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc2e77db1aa322eb70c64d82ddca238f49b39fb2
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: 7018e2ab4290219c752f44b4b391822438461e8e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125032"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415078"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 
@@ -55,7 +55,11 @@ ms.locfileid: "77125032"
 -->  
 
 <!-- ########################## -->
-## <a name="week-of-february-03-2020"></a>2020 年 2 月 3 日の週
+## <a name="week-of-february-10-2020"></a>2020 年 2 月 10 日の週
+
+### <a name="windows-7-ends-extended-support---3042987--"></a>Windows 7 の延長サポートの終了 <!--3042987-->
+Windows 7 の延長サポートは、2020 年 1 月 14 日に終了しました。 同時に、Intune では Windows 7 を稼働しているデバイスのサポートが非推奨になりました。 PC の保護に役立つ技術的なサポートや自動更新が利用できなくなりました。 Windows 10 にアップグレードする必要があります。 詳細については、[変更の計画に関するブログ記事](https://aka.ms/Windows7_Intune)を参照してください。
+
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>アプリ管理
@@ -63,11 +67,11 @@ ms.locfileid: "77125032"
 #### <a name="microsoft-edge-version-77-and-later-on-windows-10-devices---5843584---"></a>Windows 10 デバイスの Microsoft Edge バージョン 77 以降<!-- 5843584 -->
 Intune で、Windows 10 デバイスでの Microsoft Edge バージョン 77 以降のアンインストールがサポートされるようになりました。 詳細については、「[Microsoft Edge for Windows 10 を Microsoft Intune に追加する](~/apps/apps-windows-edge.md)」を参照してください。
 
-#### <a name="company-portal-app-improved-performance---6178652---"></a>ポータル サイト アプリのパフォーマンスの向上<!-- 6178652 -->
-ポータル サイト アプリが更新され、Surface Pro X などの ARM64 プロセッサを使用したデバイス向けのパフォーマンスの向上がサポートされました。これまでは、ポータル サイトはエミュレートされた ARM32 モードで動作していました。 現在、ポータル サイト アプリは ARM64 用にネイティブ コンパイルされています。 ポータル サイト アプリの詳細については、「[Microsoft Intune ポータル サイト アプリを構成する方法](~/apps/company-portal-app.md)」をご覧ください。
-
 #### <a name="screen-removed-from-company-portal-android-work-profile-enrollment--6103987---"></a>ポータル サイトの Android 仕事用プロファイルの登録から削除される画面<!--6103987 -->
 ユーザー エクスペリエンスを効率化するために、ポータル サイトの Android 仕事用プロファイルの登録フローから **[次の手順]** 画面が削除されました。 更新後の Android 仕事用プロファイルの登録フローを確認するには、[Android 仕事用プロファイルへの登録](/intune-user-help/enroll-device-android-work-profile)に関する記事を参照してください。  
+
+#### <a name="company-portal-app-improved-performance---6178652---"></a>ポータル サイト アプリのパフォーマンスの向上<!-- 6178652 -->
+ポータル サイト アプリが更新され、Surface Pro X などの ARM64 プロセッサを使用したデバイス向けのパフォーマンスの向上がサポートされました。これまでは、ポータル サイトはエミュレートされた ARM32 モードで動作していました。 現在、バージョン 10.4.7080.0 以降では、ポータル サイト アプリは ARM64 用にネイティブ コンパイルされています。 ポータル サイト アプリの詳細については、「[Microsoft Intune ポータル サイト アプリを構成する方法](~/apps/company-portal-app.md)」をご覧ください。
 
 <!-- ########################## -->
 ## <a name="week-of-january-27-2020"></a>2020 年 1 月 27 日の週

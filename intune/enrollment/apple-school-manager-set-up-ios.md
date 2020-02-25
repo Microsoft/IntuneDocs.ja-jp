@@ -1,7 +1,7 @@
 ---
-title: iOS デバイスのための Apple School Manager プログラム登録
+title: iOS/iPadOS デバイスのための Apple School Manager プログラム登録
 titleSuffix: Microsoft Intune
-description: 企業所有の iOS デバイスを Intune で登録するために、Apple School Manager プログラム登録を設定する方法について説明します。
+description: 企業所有の iOS/iPadOS デバイスを Intune で登録するために、Apple School Manager プログラム登録を設定する方法について説明します。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,33 +18,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c574714b4bd4f748c2dbe898555de35b0e03190
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: 3336ed09c414538e2879a7c50d1e3a0111f58b11
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691825"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415376"
 ---
-# <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager での iOS デバイス登録の設定
+# <a name="set-up-iosipados-device-enrollment-with-apple-school-manager"></a>Apple School Manager での iOS/iPadOS デバイス登録の設定
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-[Apple School Manager](https://school.apple.com/) プログラムで購入した iOS デバイスを登録するよう Intune を設定できます。 Apple School Manager と共に Intune を使用して、デバイスに触れることなく、大量の iOS デバイスを登録できます。 学生や教師がデバイスの電源をオンにすると、セットアップ アシスタントが構成済み設定で実行され、デバイスが管理対象として登録されます。
+[Apple School Manager](https://school.apple.com/) プログラムで購入した iOS/iPadOS デバイスを登録するよう Intune を設定できます。 Apple School Manager と共に Intune を使用して、デバイスに触れることなく、大量の iOS/iPadOS デバイスを登録できます。 学生や教師がデバイスの電源をオンにすると、セットアップ アシスタントが構成済み設定で実行され、デバイスが管理対象として登録されます。
 
 Apple School Manager 登録を有効にするには、Intune と Apple School Manager ポータルの両方を使用します。 管理するために Intune にデバイスを割り当てられるように、シリアル番号のリストまたは注文番号が必要になります。 登録時にデバイスに適用された設定を含む DEP 登録プロファイルを作成します。
 
 Apple School Manager 登録を、[Apple の Device Enrollment Program](device-enrollment-program-enroll-ios.md) や[デバイス登録マネージャー](device-enrollment-manager-enroll.md)で使用することはできません。
 
-**前提条件**
+**必要条件**
 - [Apple モバイル デバイス管理 (MDM) プッシュ証明書](apple-mdm-push-certificate-get.md)
 - [MDM 機関](../fundamentals/mdm-authority-set.md)
 - [Apple MDM プッシュ証明書](apple-mdm-push-certificate-get.md)
-- ADFS を使用している場合、ユーザー アフィニティには [WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/library/adfs2-help-endpoints)が必要です。 [詳細については、ここをクリック](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)してください。
+- ADFS を使用している場合、ユーザー アフィニティには [WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/library/adfs2-help-endpoints)が必要です。 [詳細については、こちらを参照してください](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
 - [Apple School Management](http://school.apple.com) プログラムで購入されたデバイス
 
 ## <a name="get-an-apple-token-and-assign-devices"></a>Apple トークンを取得し、デバイスを割り当てる
 
-Apple School Manager で企業所有の iOS デバイスを登録するには、Apple のトークン (.p7m) ファイルが必要です。 このトークンにより、Intune は Apple School Manager 参加デバイスに関する情報を同期できるようになります。 また、Intune は Apple への登録プロファイルのアップロードを実行して、デバイスをそれらのプロファイルに割り当てられるようになります。 Apple ポータルでは、管理するデバイスのシリアル番号も割り当てることができます。
+Apple School Manager で企業所有の iOS/iPadOS デバイスを登録するには、Apple のトークン (.p7m) ファイルが必要です。 このトークンにより、Intune は Apple School Manager 参加デバイスに関する情報を同期できるようになります。 また、Intune は Apple への登録プロファイルのアップロードを実行して、デバイスをそれらのプロファイルに割り当てられるようになります。 Apple ポータルでは、管理するデバイスのシリアル番号も割り当てることができます。
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-an-apple-token"></a>手順 1. Apple トークンを作成するために必要な Intune 公開キー証明書をダウンロードする
 
@@ -76,7 +76,7 @@ Apple School Manager で企業所有の iOS デバイスを登録するには、
 ![Enrollment Program トークンの作成に使った Apple ID の指定と、Enrollment Program トークンの参照のスクリーンショット。](./media/apple-school-manager-set-up-ios/image03.png)
 
 ### <a name="step-4-upload-your-token"></a>手順 4. トークンをアップロードする
-**[Apple トークン]** ボックスで、証明書 (.pem) ファイルを参照し、 **[開く]** を選択して、 **[作成]** を選択します。 このプッシュ証明書を使用して、Intune はモバイル デバイスを登録し、登録したモバイル デバイスにポリシーを適用して iOS デバイスを管理できます。 Intune は、Apple の Apple School Manager デバイスを自動的に同期します。
+**[Apple トークン]** ボックスで、証明書 (.pem) ファイルを参照し、 **[開く]** を選択して、 **[作成]** を選択します。 このプッシュ証明書を使用して、Intune はモバイル デバイスを登録し、登録したモバイル デバイスにポリシーを適用して iOS/iPadOS デバイスを管理できます。 Intune は、Apple の Apple School Manager デバイスを自動的に同期します。
 
 ## <a name="create-an-apple-enrollment-profile"></a>Apple 登録プロファイルの作成
 これでトークンがインストールされました。Apple School デバイスの登録プロファイルを作成することができます。 デバイス登録プロファイルで、デバイス グループに対して登録時に適用する設定を定義します。
@@ -89,7 +89,7 @@ Apple School Manager で企業所有の iOS デバイスを登録するには、
     ![プロファイル名と説明。](./media/apple-school-manager-set-up-ios/image05.png)
 
 4. **[ユーザー アフィニティ]** で、このプロファイルに対応するデバイスを割り当て済みユーザーとともに登録する必要があるかどうかを選択します。
-    - **[ユーザー アフィニティとともに登録する]** - このオプションは、ユーザーに属しているデバイスであって、かつアプリのインストールなどのサービスにポータル サイトを使用する必要があるデバイスの場合に選択します。 このオプションにより、ユーザーは会社ポータルを使用して自分のデバイスを認証することもできます。 ADFS を使用している場合、ユーザー アフィニティには [WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/library/adfs2-help-endpoints)が必要です。 [詳細については、ここをクリック](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)してください。   Apple School Manager の [共有 iPad] モードでは、ユーザーはユーザー アフィニティなしで登録する必要があります。
+    - **[ユーザー アフィニティとともに登録する]** - このオプションは、ユーザーに属しているデバイスであって、かつアプリのインストールなどのサービスにポータル サイトを使用する必要があるデバイスの場合に選択します。 このオプションにより、ユーザーは会社ポータルを使用して自分のデバイスを認証することもできます。 ADFS を使用している場合、ユーザー アフィニティには [WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/library/adfs2-help-endpoints)が必要です。 [詳細については、こちらを参照してください](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。   Apple School Manager の [共有 iPad] モードでは、ユーザーはユーザー アフィニティなしで登録する必要があります。
 
     - **[ユーザー アフィニティなしで登録する]** - このオプションは、共有デバイスなど、1 人のユーザーに関連付けられていないデバイスの場合に選択します。 このオプションは、ローカルのユーザー データにアクセスせずにタスクを実行するデバイスで使用します。 ポータル サイト アプリなどのアプリは動作しません。
 
@@ -106,7 +106,7 @@ Apple School Manager で企業所有の iOS デバイスを登録するには、
     > Apple セットアップ アシスタントによって認証している場合は、これらはサポートされません。
 
 6. **[デバイス管理の設定]** を選択し、このプロファイルを使用するデバイスを監視するかどうかを選択します。
-    **[監視下]** デバイスでは、より多くの管理オプションを使用できるようになり、既定で [アクティベーション ロック] は無効になります。 Microsoft は、多数の iOS デバイスを展開する組織に対して特に、監視モードを有効にするメカニズムとして DPE の利用を推奨しています。
+    **[監視下]** デバイスでは、より多くの管理オプションを使用できるようになり、既定で [アクティベーション ロック] は無効になります。 Microsoft は、多数の iOS/iPadOS デバイスを展開する組織に対して特に、監視モードを有効にするメカニズムとして DPE の利用を推奨しています。
 
     デバイスが監視対象であることは次の 2 つの方法でユーザーに通知されます。
 
@@ -114,9 +114,9 @@ Apple School Manager で企業所有の iOS デバイスを登録するには、
    - **[設定]**  >  **[全般]**  >  **[情報]** 画面には、次のように表示されます。"This iPhone is supervised. (この iPhone は監視されています。) Contoso はインターネット トラフィックを監視し、このデバイスの位置を特定できます。" と、
 
      > [!NOTE]
-     > 監視なしで登録されているデバイスは、Apple Configurator でのみ監視対象にリセットすることができます。 この方法でデバイスをリセットするには、USB ケーブルを使用して iOS デバイスを Mac に接続する必要があります。 詳細については、[Apple Configurator ドキュメント](http://help.apple.com/configurator/mac/2.3)を参照してください。
+     > 監視なしで登録されているデバイスは、Apple Configurator でのみ監視対象にリセットすることができます。 この方法でデバイスをリセットするには、USB ケーブルを使用して iOS/iPadOS デバイスを Mac に接続する必要があります。 詳細については、[Apple Configurator ドキュメント](http://help.apple.com/configurator/mac/2.3)を参照してください。
 
-7. このプロファイルを使用するデバイスの登録をロックするかどうかを選択します。 **[ロックされた登録]** を選択すると、 **[設定]** メニューから管理プロファイルを削除する操作を許可する iOS 設定が無効になります。 デバイスの登録後は、デバイスをワイプしないと、この設定を変更できません。 そのようなデバイスについては、 **[監視下]** 管理モードを *[はい]* に設定する必要があります。 
+7. このプロファイルを使用するデバイスの登録をロックするかどうかを選択します。 **[ロックされた登録]** を選択すると、 **[設定]** メニューから管理プロファイルを削除する操作を許可する iOS/iPadOS 設定が無効になります。 デバイスの登録後は、デバイスをワイプしないと、この設定を変更できません。 そのようなデバイスについては、 **[監視下]** 管理モードを *[はい]* に設定する必要があります。 
 
 8. 管理された Apple ID を使用して、複数のユーザーが登録済みの iPad にサインオンすることを許可できます。 これを行うには、 **[共有 iPad]** で **[はい]** を選択します (このオプションを使用するには、 **[ユーザー アフィニティなしで登録する]** と **[監視下]** モードで **[はい]** が設定されている必要があります。)管理された Apple ID は、Apple School Manager ポータルで作成されます。 [共有 iPad](../fundamentals/education-settings-configure-ios-shared.md) と [Apple の共有 iPad の要件](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)についての詳細をご覧ください。
 
@@ -131,11 +131,11 @@ Apple School Manager で企業所有の iOS デバイスを登録するには、
 13. **[セットアップ アシスタントの設定]** を選択し、次のプロファイル設定を構成します。![セットアップ アシスタントのカスタマイズ。](./media/apple-school-manager-set-up-ios/setupassistantcustom.png)
 
 
-    |                 設定                  |                                                                                               説明                                                                                               |
+    |                 設定                  |                                                                                               [説明]                                                                                               |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |     <strong>部門名</strong>     |                                                             アクティブ化中にユーザーが <strong>[構成について]</strong> をタップすると表示されます。                                                              |
     |    <strong>部署の電話番号</strong>     |                                                          アクティブ化中にユーザーが <strong>[ヘルプが必要ですか]</strong> ボタンをクリックすると表示されます。                                                          |
-    | <strong>セットアップ アシスタントのオプション</strong> |                                                     次の省略可能な設定は、後で iOS の <strong>[設定]</strong> メニューで設定できます。                                                      |
+    | <strong>セットアップ アシスタントのオプション</strong> |                                                     次の省略可能な設定は、後で iOS/iPadOS の <strong>[設定]</strong> メニューで設定できます。                                                      |
     |        <strong>パスコード</strong>         | アクティブ化時にパスコードの入力を求めます。 デバイスがセキュリティで保護されていない場合は、他の何らかの方法 (デバイスを 1 つのアプリに制限するキオスク モードなど) でアクセスが制御されていない限り、パスコードを常に必須にします。 |
     |    <strong>ロケーション サービス</strong>    |                                                                 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます。                                                                  |
     |         <strong>復元</strong>         |                                                                有効にすると、アクティブ化時に、セットアップ アシスタントによって iCloud バックアップがプロンプトされます。                                                                 |
@@ -182,6 +182,6 @@ Intune によって管理される Apple School Manager デバイスを登録す
 2. **[デバイス]** を選択し、リスト内でデバイスを選択し、 **[プロファイルの割り当て]** を選択します。
 3. **[プロファイルの割り当て]** の下でデバイス用のプロファイルを選択し、 **[割り当て]** を選択します。
 
-## <a name="distribute-devices-to-users"></a>デバイスをユーザーに配布する
+## <a name="distribute-devices-to-users"></a>デバイスのユーザーへの配布
 
-Apple と Intune の間の同期と管理を有効にし、Apple School デバイスを登録できるようにプロファイルを割り当てました。 ユーザーにデバイスを配布できるようになりました。 iOS Apple School Manager デバイスの電源をオンにすると、それが Intune の管理対象として登録されます。 現在使用中のアクティブ化されたデバイスでは、そのデバイスがワイプされるまで、プロファイルを適用することはできません。
+Apple と Intune の間の同期と管理を有効にし、Apple School デバイスを登録できるようにプロファイルを割り当てました。 ユーザーにデバイスを配布できるようになりました。 iOS/iPadOS Apple School Manager デバイスの電源をオンにすると、それが Intune の管理対象として登録されます。 現在使用中のアクティブ化されたデバイスでは、そのデバイスがワイプされるまで、プロファイルを適用することはできません。

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a5c980b3f9ababaf94aa7b279e533679ed74b0e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6941b3b79dd690c9861c8efead7f525e56e2b350
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503362"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415412"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Intune で Android 仕事用プロファイルのデバイスを管理する
 
@@ -55,7 +55,7 @@ Android Enterprise には、アプリの構成値を、そのアプリをサポ�
 
 ## <a name="email-configuration"></a>電子メールの構成
 
-Android Enterprise には、iOS で提供されているような既定の電子メール アプリまたはネイティブの電子メール プロファイル オブジェクトはありません。 その代わり、サポートする電子メール アプリにアプリ構成設定を適用することで、電子メール構成を設定できます。 Play ストアにある Gmail と Nine Work は、Android Enterprise アプリ構成による構成をサポートする 2 つの Exchange ActiveSync (EAS) クライアント アプリです。
+Android Enterprise には、iOS/iPadOS で提供されているような既定の電子メール アプリまたはネイティブの電子メール プロファイル オブジェクトはありません。 その代わり、サポートする電子メール アプリにアプリ構成設定を適用することで、電子メール構成を設定できます。 Play ストアにある Gmail と Nine Work は、Android Enterprise アプリ構成による構成をサポートする 2 つの Exchange ActiveSync (EAS) クライアント アプリです。
 
 Gmail アプリと Nine Work アプリを仕事用のアプリとして管理する場合、Intune には構成テンプレートがあります。 アプリ構成プロファイルをサポートするその他の電子メール アプリは、モバイル アプリ構成ポリシーを使用して構成することができます。
 
@@ -90,6 +90,6 @@ Android 管理で使用できるものと同じ証明書プロファイルの構
 
 デバイスが Intune のインベントリから削除され、仕事用プロファイルが削除されると、Android Enterprise が管理する Wi-Fi プロファイルが削除されます。 詳細については、「[Microsoft Intune で Wi-Fi の設定を構成する方法](../configuration/wi-fi-settings-configure.md)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 - [Android デバイスを登録する](android-enroll.md)
 - [Intune で Android Enterprise 仕事用プロファイル デバイスにアプリを割り当てる](../apps/apps-add-android-for-work.md)

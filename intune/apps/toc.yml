@@ -82,12 +82,16 @@
               href: apps-win32-s-mode.md
         - name: 特定のアプリを追加する
           items:
-            - name: ポータル サイト アプリ
+            - name: ポータルサイトアプリ - オートパイロット
+              href: store-apps-company-portal-autopilot.md
+            - name: ポータルサイトアプリ - ダウンロード
               href: store-apps-company-portal-app.md
             - name: Windows 10 用 Microsoft Edge
               href: apps-windows-edge.md
             - name: macOS 用 Microsoft Edge
               href: apps-edge-macos.md
+            - name: macOS 用 Microsoft Defender ATP
+              href: apps-advanced-threat-protection-macos.md
         - name: Powershell スクリプト
           href: intune-management-extension.md
     - name: アプリを割り当てる

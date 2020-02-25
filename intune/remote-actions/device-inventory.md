@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11e3465c583197582a545cdd6f4b71bc8d24e115
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: af4270587ab5894d52a7d12b1c2082b7b3298e51
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754203"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413741"
 ---
 # <a name="see-device-details-in-intune"></a>Intune でデバイスの詳細を確認する
 
@@ -73,25 +73,25 @@ ms.locfileid: "76754203"
 |セキュリティ パッチ レベル|デバイス用のセキュリティ パッチ レベル。|Android|
 |記憶域の合計容量|デバイスの記憶域の合計容量 (ギガバイト)。|Windows、iOS|
 |記憶域の空き容量|デバイスの記憶域で未使用の容量 (ギガバイト)。|Windows、iOS|
-|IMEI|このデバイスの International Mobile Equipment Identity。|Windows、iOS、Android|
-|MEID|デバイスの Mobile Equipment Identifier。|Windows、iOS、Android|
-|製造元|デバイスの製造元。|Windows、iOS、Android|
-|モデル|デバイスのモデル。|Windows、iOS、Android|
-|電話番号|このデバイスに割り当てられている電話番号。|Windows、iOS、Android*|
-|通信事業者|デバイスの無線通信事業者。|Windows、iOS、Android|
-|通信方式|デバイスで使用される無線システム。|Windows、iOS、Android|
-|Wi-Fi MAC|デバイスの MAC アドレス。|Windows、iOS、Android|
-|ICCID|SIM カードの一意の識別番号である IC カードの識別子。|Windows、iOS、Android|
-|登録日|デバイスが Intune に登録された日時。|Windows、iOS、Android|
-|最後接続日時|デバイスが最後に Intune に接続された日時。|Windows、iOS、Android|
+|IMEI|このデバイスの International Mobile Equipment Identity。|Windows、iOS/iPadOS、Android|
+|MEID|デバイスの Mobile Equipment Identifier。|Windows、iOS/iPadOS、Android|
+|製造元|デバイスの製造元。|Windows、iOS/iPadOS、Android|
+|モデル|デバイスのモデル。|Windows、iOS/iPadOS、Android|
+|電話番号|このデバイスに割り当てられている電話番号。|Windows、iOS/iPadOS、Android*|
+|通信事業者|デバイスの無線通信事業者。|Windows、iOS/iPadOS、Android|
+|通信方式|デバイスで使用される無線システム。|Windows、iOS/iPadOS、Android|
+|Wi-Fi MAC|デバイスの MAC アドレス。|Windows、iOS/iPadOS、Android|
+|ICCID|SIM カードの一意の識別番号である IC カードの識別子。|Windows、iOS/iPadOS、Android|
+|登録日|デバイスが Intune に登録された日時。|Windows、iOS/iPadOS、Android|
+|最後接続日時|デバイスが最後に Intune に接続された日時。|Windows、iOS/iPadOS、Android|
 |アクティベーション ロックのバイパス コード|アクティベーション ロックを無効にするために使用できるコード。|iOS|
-|Azure AD に登録済み|**[はい]** の場合、デバイスが Azure Active Directory に登録されています。|Windows、iOS、Android|
-|Intune 登録済み|**[はい]** の場合、デバイスが Intune に登録されます|Windows、iOS、Android|
-|コンプライアンス|デバイスのコンプライアンスの状態。|Windows、iOS、Android|
-|EAS アクティブ化|**[はい]** の場合、デバイスが Exchange のメールボックスと同期されています。|Windows、iOS、Android|
-|EAS アクティブ化 ID|デバイスの Exchange ActiveSync の識別子。|Windows、iOS、Android|
-|監督下|**[はい]** の場合、管理者がデバイスの制御を強化しています。|Windows、iOS、Android|
-|暗号化|**[はい]** の場合、デバイスに格納されているデータが暗号化されます。|Windows、iOS、Android|
+|Azure AD に登録済み|**[はい]** の場合、デバイスが Azure Active Directory に登録されています。|Windows、iOS/iPadOS、Android|
+|Intune 登録済み|**[はい]** の場合、デバイスが Intune に登録されます|Windows、iOS/iPadOS、Android|
+|コンプライアンス|デバイスのコンプライアンスの状態。|Windows、iOS/iPadOS、Android|
+|EAS アクティブ化|**[はい]** の場合、デバイスが Exchange のメールボックスと同期されています。|Windows、iOS/iPadOS、Android|
+|EAS アクティブ化 ID|デバイスの Exchange ActiveSync の識別子。|Windows、iOS/iPadOS、Android|
+|監督下|**[はい]** の場合、管理者がデバイスの制御を強化しています。|Windows、iOS/iPadOS、Android|
+|暗号化|**[はい]** の場合、デバイスに格納されているデータが暗号化されます。|Windows、iOS/iPadOS、Android|
 
 > [!Note]  
 > Android Enterprise 専用デバイスまたはフル マネージド デバイスでは、電話番号はインベントリされません。

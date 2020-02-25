@@ -1,7 +1,7 @@
 ---
-title: Microsoft Intune で iOS の監視モードを有効にする
+title: Microsoft Intune で iOS/iPadOS の監視モードを有効にする
 titleSuffix: ''
-description: Intune で iOS の監視モードを有効にする方法を説明します。
+description: Intune で iOS/iPadOS の監視モードを有効にする方法について説明します。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e995dbc89321bf844151accd654a2d17d35afd9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d266dbc9fa72b1579e05e7798315e2e718a9797
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713429"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413658"
 ---
-# <a name="turn-on-ios-supervised-mode"></a>iOS の監視モードを有効にする
+# <a name="turn-on-iosipados-supervised-mode"></a>iOS/iPadOS の監視モードを有効にする
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Apple iOS の監視モードでは、デバイスを管理するときに、大規模に展開されている企業が所有するデバイスを有効活用する、多くのオプションが管理者に提供されます。 たとえば、AirDrop を制限したり、ユーザーがデバイスの名前を変更できないようにすることができます。 監視モードを必要とする設定の一覧については、「[Microsoft Intune での iOS デバイスの制限設定](../configuration/device-restrictions-ios.md)」を参照してください。
+管理者が Apple デバイスを管理する際、Apple iOS/iPadOS の監視モードを使用するとより多くのオプションが得られ、大規模に展開されている企業所有のデバイスに向けて有効活用することができます。 たとえば、AirDrop を制限したり、ユーザーがデバイスの名前を変更できないようにすることができます。 監視モードを必要とする設定の一覧については、「[Microsoft Intune での iOS デバイスの制限設定](../configuration/device-restrictions-ios.md)」を参照してください。
 
 Intune は Apple [Device Enrollment Program (DEP)](../enrollment/device-enrollment-program-enroll-ios.md) の一部として監視モードをサポートしています。
 
@@ -41,7 +41,7 @@ Intune は Apple [Device Enrollment Program (DEP)](../enrollment/device-enrollme
 
 ## <a name="turn-on-supervised-mode-after-enrollment"></a>登録後に監視モードで有効にする
 
-登録後に監視モードを有効にする唯一の方法は、iOS デバイスを Mac に接続し、(デバイスをリセットする) [Apple Configurator を使用する](../enrollment/apple-configurator-enroll-ios.md)ことです。 登録後に、Intune でデバイスを監視モードに構成することはできません。
+登録後に監視モードを有効にする唯一の方法は、iOS/iPadOS デバイスを Mac に接続し、[Apple Configurator を使用する](../enrollment/apple-configurator-enroll-ios.md)ことです (これによってデバイスがリセットされます)。 登録後に、Intune でデバイスを監視モードに構成することはできません。
 
 ## <a name="identify-a-supervised-device"></a>監視対象デバイスを識別する
 
@@ -49,6 +49,6 @@ Intune は Apple [Device Enrollment Program (DEP)](../enrollment/device-enrollme
 - デバイスのロック画面には、"**この iPhone は "会社名" によって管理されています**" と表示されます。
 - デバイスの **[バージョン情報]** ページには、"**この iPhone は監視されています。"会社名" はインターネット トラフィックを監視し、このデバイスの位置を特定できます。** " と表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 その他のデバイス管理オプションについては、「[Microsoft Intune デバイスの管理とは](device-management.md)」を参照してください。

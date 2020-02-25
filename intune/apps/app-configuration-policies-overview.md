@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune 用アプリ構成ポリシー
 titleSuffix: ''
-description: Microsoft Intune の iOS または Android デバイスでアプリ構成ポリシーを使用する方法について説明します。
+description: Microsoft Intune の iOS/iPadOS または Android デバイスでアプリ構成ポリシーを使用する方法について説明します。
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c9dc1d95806bcddf423bb4d92dbdf4961c15809
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: a2cf53b26c1617ca7fc493c837e57823c23781bc
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812476"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414850"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 用アプリ構成ポリシー
 
 アプリ構成ポリシーを使用すると、エンドユーザーに割り当てられるポリシーに、アプリの実行前に構成設定を割り当てることができるため、アプリ設定の問題を排除するのに役立ちます。 エンドユーザーのデバイスでアプリを構成すると、設定が自動的に提供されるので、エンドユーザーが操作する必要はありません。 構成設定はアプリごとに一意です。 
 
-iOS アプリと Android アプリの両方に構成設定を提供するアプリ構成ポリシーを作成し、使用することができます。 これらの構成設定では、アプリの構成と管理を使用して、アプリをカスタマイズできます。 構成ポリシーの設定は、通常、アプリの初回実行時に、アプリでこれらの設定が確認されるときに使用されます。 
+iOS/iPadOS アプリと Android アプリの両方に構成設定を提供するアプリ構成ポリシーを作成し、使用することができます。 これらの構成設定では、アプリの構成と管理を使用して、アプリをカスタマイズできます。 構成ポリシーの設定は、通常、アプリの初回実行時に、アプリでこれらの設定が確認されるときに使用されます。 
 
 たとえば、アプリ構成設定では、次の詳細のいずれかを指定する必要があります。
 
@@ -71,7 +71,7 @@ Intune でアプリ構成ポリシーを使用するには、次の 2 つのオ�
 ![デバイス登録の種類](./media/app-configuration-policies-overview/device-enrollment-type.png)
 
 > [!NOTE]
-> Microsoft Outlook などの複数 ID アプリの場合は、ユーザー設定を考慮することができます。 たとえば、優先受信トレイではユーザー設定が尊重され、構成は変更されません。 その他のパラメーターを使用すると、ユーザーが設定を変更できるかどうかを制御できます。 詳細については、[iOS および Android 用 Outlook のアプリ構成設定の展開](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)に関する記事を参照してください。
+> Microsoft Outlook などの複数 ID アプリの場合は、ユーザー設定を考慮することができます。 たとえば、優先受信トレイではユーザー設定が尊重され、構成は変更されません。 その他のパラメーターを使用すると、ユーザーが設定を変更できるかどうかを制御できます。 詳細については、[iOS/iPadOS および Android 用 Outlook のアプリ構成設定の展開](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)に関する記事を参照してください。
 
 ## <a name="validate-the-applied-app-configuration-policy"></a>適用されたアプリ構成ポリシーを検証する
 
@@ -93,7 +93,7 @@ Intune でアプリ構成ポリシーを使用するには、次の 2 つのオ�
 
 ### <a name="ios-configuration-on-unmanaged-devices"></a>アンマネージド デバイスでの iOS の構成
 
-マネージド アプリの構成では、アンマネージド デバイス上で **Intune 診断ログ**を使用して iOS 構成を検証できます。 以下の手順に加えて、Microsoft Edge を使用してマネージド アプリのログにアクセスできます。 詳細については、「[iOS で Microsoft Edge を使用してマネージド アプリのログにアクセスする](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs)」をご覧ください。
+マネージド アプリの構成では、アンマネージド デバイス上で **Intune 診断ログ**を使用して iOS/iPadOS 構成を検証できます。 以下の手順に加えて、Microsoft Edge を使用してマネージド アプリのログにアクセスできます。 詳細については、[iOS/iPadOS で Microsoft Edge を使用してマネージド アプリのログにアクセスする方法](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs)に関する記事をご覧ください。
 
 1. デバイスにまだインストールされていない場合は、App Store から **Microsoft Edge** をダウンロードしてインストールします。 詳細については、「[保護されている Microsoft Intune アプリ](apps-supported-intune-apps.md)」を参照してください。
 2. **Microsoft Edge** を起動して、ナビゲーション バーから **[バージョン情報]**  >  **[Intune ヘルプ]** を選択します。
@@ -137,7 +137,7 @@ Intune でアプリ構成ポリシーを使用するには、次の 2 つのオ�
 
 ### <a name="ios-configuration-on-managed-devices"></a>マネージド デバイス上の iOS 構成
 
-マネージド アプリの構成では、マネージド デバイス上で **Intune 診断ログ**を使用して iOS 構成を検証できます。
+マネージド アプリの構成では、マネージド デバイス上で **Intune 診断ログ**を使用して iOS/iPadOS 構成を検証できます。
 
 1. デバイスにまだインストールされていない場合は、App Store から **Microsoft Edge** をダウンロードしてインストールします。 詳細については、「[保護されている Microsoft Intune アプリ](apps-supported-intune-apps.md)」を参照してください。
 2. **Microsoft Edge** を起動して、ナビゲーション バーから **[バージョン情報]**  >  **[Intune ヘルプ]** を選択します。
@@ -149,7 +149,7 @@ Intune でアプリ構成ポリシーを使用するには、次の 2 つのオ�
 
 ### <a name="android-configuration-on-managed-devices"></a>マネージド デバイス上の Android の構成
 
-マネージド アプリの構成では、マネージド デバイス上で **Intune 診断ログ**を使用して iOS 構成を検証できます。
+マネージド アプリの構成では、マネージド デバイス上で **Intune 診断ログ**を使用して iOS/iPadOS 構成を検証できます。
 
 Android デバイスからログを収集するには、管理者またはエンド ユーザーが USB 接続 (またはデバイス上の**エクスプローラー**に相当する機能) を使用して、デバイスからログをダウンロードする必要があります。 手順は次のとおりです。
 
@@ -173,7 +173,7 @@ Android デバイスからログを収集するには、管理者またはエン
 
 ### <a name="managed-devices"></a>マネージド デバイス
 
-- iOS デバイスでアプリ構成を使用する方法について学びます。  「[管理対象の iOS デバイス用アプリ構成ポリシーを追加する](app-configuration-policies-use-ios.md)」をご覧ください。
+- iOS/iPadOS デバイスでアプリ構成を使用する方法について学びます。  「[管理対象の iOS/iPadOS デバイス用アプリ構成ポリシーを追加する](app-configuration-policies-use-ios.md)」をご覧ください。
 - Android デバイスにアプリ構成を使用する方法について学びます。  「[管理対象の Android デバイス用アプリ構成ポリシーを追加する](app-configuration-policies-use-android.md)」を参照してください。
 
 ### <a name="managed-apps"></a>Managed apps

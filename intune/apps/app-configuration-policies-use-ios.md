@@ -1,7 +1,7 @@
 ---
-title: 管理対象の iOS デバイス用アプリ構成ポリシーを追加する
+title: 管理対象の iOS/iPadOS デバイス用アプリ構成ポリシーを追加する
 titleSuffix: Microsoft Intune
-description: アプリ構成ポリシーを使用して、実行時に構成データを iOS アプリに提供する方法について説明します。
+description: アプリ構成ポリシーを使用して、実行時に構成データを iOS/iPadOS アプリに提供する方法について説明します。
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d4bbd0a5b57391edad726c7e936d0072a791673
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 6044ff5f8d169e36a11f9289f1772c809723b7fc
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755767"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77438006"
 ---
-# <a name="add-app-configuration-policies-for-managed-ios-devices"></a>管理対象の iOS デバイス用アプリ構成ポリシーを追加する
+# <a name="add-app-configuration-policies-for-managed-iosipados-devices"></a>管理対象の iOS/iPadOS デバイス用アプリ構成ポリシーを追加する
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Microsoft Intune のアプリ構成ポリシーを使用して、iOS アプリのカスタム構成を設定できます。 これらの構成設定では、アプリのサプライヤーの指示に基づいてアプリをカスタマイズすることができます。 これらの構成設定 (キーと値) は、アプリのサプライヤーから取得する必要があります。 アプリを構成するには、キーと値として、またはキーと値を含む XML として設定を指定します。
+Microsoft Intune のアプリ構成ポリシーを使用して、iOS/iPadOS アプリのカスタム構成設定を指定できます。 これらの構成設定では、アプリのサプライヤーの指示に基づいてアプリをカスタマイズすることができます。 これらの構成設定 (キーと値) は、アプリのサプライヤーから取得する必要があります。 アプリを構成するには、キーと値として、またはキーと値を含む XML として設定を指定します。
 
 Microsoft Intune 管理者は、マネージド デバイス上の Microsoft Office アプリケーションにどのユーザー アカウントを追加するかを制御することができます。 許可されている組織ユーザー アカウントのみにアクセスを制限したり、登録済みデバイス上の個人アカウントをブロックしたりできます。 サポートされているアプリケーションがアプリの構成を処理し、未承認のアカウントを削除してブロックします。 構成ポリシー設定は、アプリがポリシーをチェックするとき (通常はアプリの初回実行時) に使用されます。
 
@@ -41,7 +41,7 @@ Microsoft Intune 管理者は、マネージド デバイス上の Microsoft Off
 アプリケーション構成ポリシーの含まれるグループを選ぶと、除外される特定のグループも選べます。 詳細については、「[Microsoft Intune でのアプリ割り当ての組み込みと除外](apps-inc-exl-assignments.md)」を参照してください。
 
 > [!TIP]
-> この種類のポリシーは現在、iOS 8.0 以降を実行しているデバイスでのみ有効です。 次の種類のアプリ インストールをサポートします。
+> この種類のポリシーは現在、iOS/iPadOS 8.0 以降を実行しているデバイスでのみ有効です。 次の種類のアプリ インストールをサポートします。
 >
 > - **App Store の管理対象 iOS アプリ**
 > - **iOS 用アプリ パッケージ**
@@ -106,7 +106,7 @@ Microsoft Intune には、アプリに固有の構成設定が用意されてい
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>複数 ID アプリで構成済みの組織アカウントのみを許可する 
 
-iOS デバイスでは、次のキー/値ペアを使用します。
+iOS/iPadOS デバイスでは、次のキー/値ペアを使用します。
 
 | **Key** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -177,17 +177,17 @@ Intune は、プロパティ リストの次のデータ型をサポートして
 - \{\{deviceid\}\} — たとえば、**b9841cd9-9843-405f-be28-b2265c59ef97**
 - \{\{userid\}\} — たとえば、**3ec2c00f-b125-4519-acf0-302ac3761822**
 - \{\{username\}\} — たとえば、**John Doe**
-- \{\{serialnumber\}\} — たとえば、**F4KN99ZUG5V2** (iOS デバイスの場合)
-- \{\{serialnumberlast4digits\}\} — たとえば、**G5V2** (iOS デバイスの場合)
+- \{\{serialnumber\}\} — たとえば、**F4KN99ZUG5V2** (iOS/iPadOS デバイスの場合)
+- \{\{serialnumberlast4digits\}\} — たとえば、**G5V2** (iOS/iPadOS デバイスの場合)
 - \{\{aaddeviceid\}\} — たとえば、**ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
 ## <a name="configure-the-company-portal-app-to-support-ios-dep-devices"></a>iOS DEP デバイスをサポートするようにポータル サイト アプリを構成する
 
-DEP (Apple の Device Enrollment Program) の登録には、アプリ ストア バージョンのポータル サイト アプリとの互換性はありません。 ただし、次の手順に従って、iOS DEP デバイスをサポートするようにポータル サイト アプリを構成できます。
+DEP (Apple の Device Enrollment Program) の登録には、アプリ ストア バージョンのポータル サイト アプリとの互換性はありません。 ただし、次の手順に従って、iOS/iPadOS DEP デバイスをサポートするようにポータル サイト アプリを構成できます。
 
 1. Intune で、必要に応じて Intune ポータル サイトを追加します。そのためには、 **[Intune]**  >  **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** に移動します。
 2. **[アプリ]**  >  **[アプリ構成ポリシー]** に移動し、ポータル サイト アプリのアプリ構成ポリシーを作成します。
-3. 次の XML を使用して、アプリ構成ポリシーを作成します。 アプリ構成ポリシーを作成して XML データを入力する方法について詳しくは、「[管理対象の iOS デバイス用アプリ構成ポリシーを追加する](app-configuration-policies-use-ios.md)」をご覧ください。
+3. 次の XML を使用して、アプリ構成ポリシーを作成します。 アプリ構成ポリシーを作成して XML データを入力する方法について詳しくは、「[管理対象の iOS/iPadOS デバイス用アプリ構成ポリシーを追加する](app-configuration-policies-use-ios.md)」をご覧ください。
 
     ``` xml
     <dict>
@@ -205,11 +205,11 @@ DEP (Apple の Device Enrollment Program) の登録には、アプリ ストア 
 4. ポータル サイト アプリが自動的にインストールされたらサインインするように、エンド ユーザーに指示します。
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>デバイスごとに iOS アプリ構成の状態を監視する 
-構成ポリシーが割り当てられたら、マネージド デバイスごとに iOS アプリ構成の状態を監視することができます。 Azure Portal の **[Microsoft Intune]** から、 **[デバイス]**  >  **[すべてのデバイス]** の順に選びます。 マネージド デバイスの一覧から、デバイス用のウィンドウを表示する特定のデバイスを選択します。 デバイスのウィンドウで、 **[アプリの構成]** を選択します。  
+構成ポリシーが割り当てられたら、マネージド デバイスごとに iOS/iPadOS アプリ構成の状態を監視することができます。 Azure Portal の **[Microsoft Intune]** から、 **[デバイス]**  >  **[すべてのデバイス]** の順に選びます。 マネージド デバイスの一覧から、デバイス用のウィンドウを表示する特定のデバイスを選択します。 デバイスのウィンドウで、 **[アプリの構成]** を選択します。  
 
 ## <a name="additional-information"></a>追加情報
 
-- [iOS および Android 用 Outlook のアプリ構成設定の展開](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
+- [iOS/iPadOS および Android 用 Outlook のアプリ構成設定の展開](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 ## <a name="next-steps"></a>次のステップ
 

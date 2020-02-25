@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36a84296aabd2d78cbc3cdc14ffb8f696afa5c22
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 899e2d2dc8458d0909f01e9dfcc1056874ef0fa7
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205260"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437972"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>アプリ保護ポリシーを監視する方法
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -51,8 +51,8 @@ ms.locfileid: "75205260"
 - **[フラグ付きのユーザー]** :デバイスで問題が発生しているユーザーの数。 **[フラグ付きのユーザー]** では、脱獄されたデバイス (iOS) と root 化されたデバイス (Android) が報告されます。 また、Google SafetyNet デバイス構成証明チェック (IT 管理者によってオンにされた場合) によってフラグが設定されたデバイスを持つユーザーは、ここで報告されます。 
 - **[害を及ぼす可能性のあるアプリを持つユーザー]** : Android デバイスに有害なアプリが含まれる可能性があることが Google Play Protect によって検出されたユーザーの数。 
 - **[iOS のユーザーの状態]** と **[Android のユーザーの状態]** :関連するプラットフォームについて作業コンテキストで割り当てられたポリシーがある、アプリを使用したユーザーの数。 この情報は、ポリシーによって管理されているユーザーの数と、作業コンテキストでポリシーの対象とならないアプリを使用しているユーザーの数を示します。 これらのユーザーをポリシーに追加することを検討できます。
-- **[保護されている上位の iOS アプリ]** と **[保護されている上位の Android アプリ]** : この情報では、最も使用されている iOS アプリと Android アプリに基づいて、プラットフォーム別に保護されているアプリと保護されていないアプリの数が示されます。
-- **[登録なしで構成数が上位の iOS アプリ]** と **[登録なしで構成数が上位の Android アプリ]** : この情報では、登録されていないデバイスで最も使用されている iOS アプリと Android アプリに基づいて、プラットフォーム別に構成済みのアプリの数が示されます (アプリ構成ポリシーの使用と同様)。
+- **[Top Protected iOS/iPadOS Apps]\(保護されている上位の iOS/iPadOS アプリ\)** と **[保護されている上位の Android アプリ]** :この情報では、最も使用されている iOS/iPadOS アプリと Android アプリに基づいて、プラットフォーム別に保護されているアプリと保護されていないアプリの数が示されます。
+- **[Top Configured iOS/iPadOS Apps Without Enrollment]\(登録なしで構成数が上位の iOS/iPadOS アプリ\)** と **[登録なしで構成数が上位の Android アプリ]** :この情報では、登録されていないデバイスで最も使用されている iOS/iPadOS アプリと Android アプリに基づいて、プラットフォーム別に構成済みのアプリの数が示されます (アプリ構成ポリシーの使用と同様)。
 
     > [!NOTE]
     > プラットフォームごとに複数のポリシーがある場合、少なくとも 1 つのポリシーが割り当てられていると、ユーザーはポリシーによって管理されているものと見なされます。
@@ -170,9 +170,9 @@ ms.locfileid: "75205260"
     ![レポートの保存の確認ボックスのスクリーン ショット](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
    
 > [!NOTE]
-> Intune では、アプリ登録 ID、Android の製造元、モデル、セキュリティ更新プログラムのバージョン、iOS のモデルなど、デバイス レポートのフィールドが提供されています。 Intune で、 **[アプリ]**  >  **[アプリの保護状態]**  >  **[アプリ保護レポート: iOS、Android]** を選択することで、これらのフィールドにアクセスします。 さらに、これらのパラメーターは、デバイス製造元 (Android) の**許可**リスト、デバイス モデル (Android および iOS) の**許可**リスト、および **Android セキュリティ修正プログラムの最小バージョン**の設定を構成するのに役立ちます。   
+> Intune では、アプリ登録 ID、Android の製造元、モデル、セキュリティ更新プログラムのバージョン、iOS/iPadOS のモデルなど、デバイス レポートの追加フィールドが提供されています。 Intune でこれらのフィールドにアクセスするには、 **[アプリ]**  >  **[アプリの保護状態]**  >  **[App Protection Report: iOS/iPadOS, Android]\(アプリ保護レポート: iOS/iPadOS、Android\)** の順に選択します。 さらに、これらのパラメーターは、デバイス製造元 (Android) の**許可**リスト、デバイス モデル (Android および iOS) の**許可**リスト、および **Android セキュリティ修正プログラムの最小バージョン**の設定を構成するのに役立ちます。   
  
 ## <a name="see-also"></a>関連項目
-- [iOS アプリ間のデータ転送を管理する](data-transfer-between-apps-manage-ios.md)
+- [iOS/iPadOS アプリ間のデータ転送を管理する](data-transfer-between-apps-manage-ios.md)
 - [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](../fundamentals/end-user-mam-apps-android.md)
-- [アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](../fundamentals/end-user-mam-apps-ios.md)
+- [アプリ保護ポリシーを使用して iOS/iPadOS アプリを管理するときの注意点](../fundamentals/end-user-mam-apps-ios.md)

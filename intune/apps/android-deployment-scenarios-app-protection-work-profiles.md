@@ -15,12 +15,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d0b4f8d5124924d013e7ac131dafc947a95c7b65
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 99738de7efc473c7886762534c6e377b4dba8397
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059791"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415107"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Intune での Android エンタープライズ デバイス上のアプリケーション保護ポリシーと仕事用プロファイル
 
@@ -106,7 +106,7 @@ Outlook や OneDrive などの Office アプリケーションには、"複数 I
 
 仕事用プロファイルを使用する場合、この複数 ID の動作の無効化が必要になることがあります。 これを無効にした場合、仕事用プロファイル内のアプリのバッジ付きインスタンスは、組織 ID でのみ構成できます。 Office Android アプリをサポートするには、[許可されたアカウント] アプリ構成設定を使用します。
 
-詳しくは、[iOS および Android 用 Outlook のアプリ構成設定の展開](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)に関する記事をご覧ください。
+詳しくは、[iOS/iPadOS および Android 用 Outlook のアプリ構成設定の展開](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)に関する記事をご覧ください。
 
 ## <a name="when-to-use-intune-app"></a>Intune APP の使用に適した状況
 
@@ -133,5 +133,5 @@ Intune APP の使用が最適なレコメンデーションであるエンター
 
 Intune を使用すると、APP-WE と Android エンタープライズ仕事用プロファイルの両方を Android BYOD プログラムに利用できます。 APP-WE と仕事用プロファイルのどちらを選ぶかは、ビジネスと使用の要件によって決まります。 つまり、マネージド デバイスに対する証明書の展開やアプリのプッシュなどの MDM アクティビティが必要な場合は、仕事用プロファイルを使用します。 デバイスを管理したくないか管理できず、Intune APP 対応アプリのみを使用している場合は、APP-WE を使用します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 [アプリ保護ポリシーの使用の開始](app-protection-policy.md)または [Android デバイスの登録](../enrollment/android-enroll.md)。

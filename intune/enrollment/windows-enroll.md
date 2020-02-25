@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: add92c038e33ba1b5873eb0e9588242f8f3d0f57
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 75914dc77fe351fffda21768b0136e636c567998
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207436"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415117"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows デバイスの登録をセットアップする
 
@@ -119,7 +119,7 @@ CNAME の構成以外の方法を使用することは、サポートされて�
 エンドユーザー タスクの詳細については、「[Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](../fundamentals/end-user-educate.md)」を参照してください。
 
 ## <a name="registration-and-enrollment-cnames"></a>登録の CNAME
-Azure Active Directory には、iOS、Android、および Windows デバイスのデバイス登録用に使用される、異なった CNAME があります。 Intune の条件付きアクセスを使用するためには、デバイスを登録する ("ワークプレースに参加させる" とも呼ばれます) 必要があります。 条件付きアクセスを使用する予定の場合は、使用する会社名ごとに EnterpriseRegistration CNAME を構成する必要もあります。
+Azure Active Directory には、iOS/iPadOS、Android、および Windows デバイスのデバイス登録用に使用される、異なった CNAME があります。 Intune の条件付きアクセスを使用するためには、デバイスを登録する ("ワークプレースに参加させる" とも呼ばれます) 必要があります。 条件付きアクセスを使用する予定の場合は、使用する会社名ごとに EnterpriseRegistration CNAME を構成する必要もあります。
 
 | Type | ホスト名 | 指定先 | TTL |
 | --- | --- | --- | --- |

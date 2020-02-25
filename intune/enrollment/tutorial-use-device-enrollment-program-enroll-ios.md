@@ -1,7 +1,7 @@
 ---
-title: チュートリアル - Apple Business Manager または Device Enrollment Program を使用して、iOS デバイスを Intune に登録する
+title: チュートリアル - Apple Business Manager または Device Enrollment Program を使用して、iOS/iPadOS デバイスを Intune に登録する
 titleSuffix: Microsoft Intune
-description: このチュートリアルでは、Apple の ABM の会社のデバイスを登録する機能を設定して、iOS デバイスを Intune に登録します。
+description: このチュートリアルでは、Apple の ABM の会社のデバイスを登録する機能を設定して、iOS/iPadOS デバイスを Intune に登録します。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,14 +15,14 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f5599e7ea8c9a26c4624f98133db566fb07c89af
-ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
+ms.openlocfilehash: 9aab0233c05416fc50413a7889435cb221179730
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76971778"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415133"
 ---
-# <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>チュートリアル:Apple Business Manager (ABM) にある Apple の Corporate Device Enrollment 機能を使用して、iOS デバイスを Intune に登録する
+# <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-iosipados-devices-in-intune"></a>チュートリアル:Apple Business Manager (ABM) にある Apple の Corporate Device Enrollment 機能を使用して、iOS/iPadOS デバイスを Intune に登録する
 Apple Business Manager の Device Enrollment 機能では、デバイスを簡単に登録できます。 Intune では Apple の以前の Device Enrollment Program (DEP) ポータルもサポートしていますが、Apple Business Manager でやり直すことをお勧めします。 デバイスは、Microsoft Intune と Apple Corporate Device Enrollment で、ユーザーが最初にデバイスをオンにしたときに、安全に自動的に登録されます。 そのため、各デバイスを個別に設定することなく、デバイスを多くのユーザーに配送できます。 
 
 このチュートリアルでは、次の方法について説明します。
@@ -40,7 +40,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 - [[Apple MDM プッシュ通知証明書]](apple-mdm-push-certificate-get.md) を取得する
 
 ## <a name="get-an-apple-device-enrollment-token"></a>Apple Device Enrollment トークンを取得する
-iOS デバイスを Apple の会社登録機能を使用して登録する前に、Apple Device Enrollment トークン (.pem) ファイルが必要です。 このトークンにより、ご自分の会社で所有している Apple デバイスの情報を Intune が同期できるようになります。 また、Intune は Apple に登録プロファイルをアップロードして、デバイスをそれらのプロファイルに割り当てられるようになります。
+iOS/iPadOS デバイスを Apple の会社登録機能を使用して登録する前に、Apple Device Enrollment トークン (.pem) ファイルが必要です。 このトークンにより、ご自分の会社で所有している Apple デバイスの情報を Intune が同期できるようになります。 また、Intune は Apple に登録プロファイルをアップロードして、デバイスをそれらのプロファイルに割り当てられるようになります。
 
 Device Enrollment トークンの作成には、ABM または DEP ポータルを使用します。 このポータルは、管理するデバイスを Intune に割り当てるためにも使用します。
 
@@ -78,13 +78,13 @@ Device Enrollment トークンの作成には、ABM または DEP ポータル�
 11. スコープのタグを適用してこのトークンにアクセスできる管理者を制限するには、スコープを選択します。
 
 ## <a name="create-an-apple-enrollment-profile"></a>Apple 登録プロファイルの作成
-これでトークンがインストールされたので、会社で所有している iOS デバイスの登録プロファイルを作成できます。 デバイス登録プロファイルで、デバイス グループに対して登録時に適用する設定を定義します。
+これでトークンがインストールされたので、会社で所有している iOS/iPadOS デバイスの登録プロファイルを作成できます。 デバイス登録プロファイルで、デバイス グループに対して登録時に適用する設定を定義します。
 
 1. [Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Enrollment Program トークン]** を選択します。
 
 2. インストールしたトークンを選択し、 **[プロファイル]**  >  **[プロファイルの作成]** を選びます。
 
-3. **[プロファイルの作成]** で、 **[名前]** に「*TestDEPProfile*」、 **[説明]** に「*iOS デバイス用の DEP のテスト*」と入力します。 ユーザーにはこれらの詳細は表示されません。
+3. **[プロファイルの作成]** で、 **[名前]** に「*TestDEPProfile*」、 **[説明]** に「*iOS/iPadOS デバイス用の DEP のテスト*」と入力します。 ユーザーにはこれらの詳細は表示されません。
 
 4. **[プラットフォーム]** の下から **[iOS]** を選択します。
 
@@ -96,11 +96,11 @@ Device Enrollment トークンの作成には、ABM または DEP ポータル�
 
 8. ユーザー アフィニティを使用して登録を行い、ポータル サイトで認証を行い、VPP を使用してポータル サイトをインストールすることを選択した場合、認証までポータル サイトを単一アプリケーション モードで実行するかかどうかを決定します。 この設定では、ユーザーが会社の登録を完了するまで、その他のアプリにアクセスできないことが保証されます。 登録が完了するまで、ユーザーにこのフローを限定したい場合、 **[Run Company Portal in Single App Mode until authentication]** \(認証までポータル サイトを単一アプリ モードで実行する\) の下で **[はい]** を選択します。 
 
-9. **[デバイス管理の設定]** を選択し、 **[監視下]** で **[はい]** を選択します。 監視下のデバイスが、会社の iOS デバイスには最も多くの管理オプションがあります。
+9. **[デバイス管理の設定]** を選択し、 **[監視下]** で **[はい]** を選択します。 監視下のデバイスでは、会社の iOS/iPadOS デバイスに対して最も多くの管理オプションを使用できます。
 
 10. **[ロックされた登録]** の下で **[はい]** を選択し、ユーザーがデバイスを会社の管理から削除できないようにします。 
 
-11. **[コンピューターと同期する]** でオプションを選択し、iOS デバイスをコンピューターと同期するかを決定します。
+11. **[コンピューターと同期する]** でオプションを選択し、iOS/iPadOS デバイスでコンピューターと同期できるかどうかを決定します。
 
 12. Apple でデバイスは、既定で (iPad などの) デバイスの種類が使用され命名されます。 別の名前テンプレートを使用する場合は、 **[デバイス名のテンプレートを適用する]** で **[はい]** を選択します。 デバイスに付ける名前を入力します。ここで、 *{{シリアル}}* と *{{デバイスの種類}}* の文字列は、各デバイスのシリアル番号とデバイスの種類に置き換えます。 または、 **[デバイス名のテンプレートを適用する]** の下で **[いいえ]** を選択します。
 
@@ -118,9 +118,9 @@ Device Enrollment トークンの作成には、ABM または DEP ポータル�
 
 ABM、ASM、または DEP ポータルを使用して登録プログラムのトークンを設定し、そこでデバイスを MDM サーバーに割り当てたら、それらのデバイスが Intune サービスで同期されるのを待機するか、手動で同期をプッシュします。手動で同期を行うと、デバイスが Azure portal に表示されるまで、最大 24 時間かかる場合があります。
 
-1. [Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Enrollment Program トークン]** を選択します。一覧からトークンを選択し、 **[デバイス]**  >  **[同期]** を選択します。
+1. [Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[iOS]**  >  **[iOS の登録]**  >  **[Enrollment Program トークン]** の順に選択し、一覧からトークンを選択し、 **[デバイス]**  >  **[同期]** の順に選択します。
 
-## <a name="assign-an-enrollment-profile-to-ios-devices"></a>登録プロファイルを iOS デバイスに割り当てる
+## <a name="assign-an-enrollment-profile-to-iosipados-devices"></a>登録プロファイルを iOS/iPadOS デバイスに割り当てる
 
 登録する前に、Enrollment Program プロファイルをデバイスに割り当てる必要があります。 これらのデバイスは、Apple から Intune に同期されて、ABM、ASM、または DEP ポータルの適切な MDM サーバー トークンに割り当てられる必要があります。
 
@@ -134,12 +134,12 @@ Apple と Intune の間の同期と管理を設定し、DEP デバイスを登�
 
 ## <a name="next-steps"></a>次のステップ
 
-iOS デバイスの登録に使用できる他のオプションについての詳細を確認できます。
+iOS/iPadOS デバイスの登録に使用できる他のオプションについての詳細を確認できます。
 
 > [!div class="nextstepaction"]
-> [iOS DEP の登録に関する詳細な記事](device-enrollment-program-enroll-ios.md)
+> [iOS/iPadOS DEP の登録に関する詳細な記事](device-enrollment-program-enroll-ios.md)
 
 <!--commenting out because inaccurate>
 ## Clean up resources
-<!--If you don't want to use iOS corporate enrolled devices anymore, you can delete them.>
+<!--If you don't want to use iOS/iPadOS corporate enrolled devices anymore, you can delete them.>
 <!--- If the devices are enrolled in Intune, you must first [delete them from the Azure Active Directory portal](../remote-actions/devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).>

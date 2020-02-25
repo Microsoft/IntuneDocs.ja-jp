@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ea66458060417fc828b2b7735b384e8cd3e25a9
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: 09c8a8819c288663936174e9317267c39eac63bc
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839390"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437853"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>Intune App Protection Policy (APP) データ転送ポリシーの例外を作成する方法
 
@@ -38,7 +38,7 @@ Intune アプリケーション保護ポリシーで、 **[このアプリから
 > データ転送ポリシーの例外を変更または追加しても、切り取り、コピー、貼り付けの制限など、他のアプリ保護ポリシーには影響しません。 
 
 ## <a name="ios-data-transfer-exceptions"></a>iOS データ転送の例外
-iOS をターゲットとするポリシーの場合、URL プロトコルでデータ転送の例外を構成できます。 例外を追加するには、アプリの開発者が提供するドキュメントを参照して、サポートされている URL プロトコルに関する情報を確認してください。 iOS のデータ転送の例外の詳細については、[「iOS アプリ保護ポリシー設定」の「データ転送の除外対象」](app-protection-policy-settings-ios.md#data-transfer-exemptions)を参照してください。
+iOS/iPadOS をターゲットとするポリシーの場合、URL プロトコルでデータ転送の例外を構成できます。 例外を追加するには、アプリの開発者が提供するドキュメントを参照して、サポートされている URL プロトコルに関する情報を確認してください。 iOS/iPadOS のデータ転送の例外の詳細については、[「iOS アプリ保護ポリシー設定」の「データ転送の除外対象」](app-protection-policy-settings-ios.md#data-transfer-exemptions)を参照してください。
 
 > [!NOTE]
 > Microsoft では、サード パーティ製のアプリケーションに対してアプリの例外を作成するための URL プロトコルを手動で検索する方法を用意していません。 
@@ -53,9 +53,9 @@ Android をターゲットとするポリシーの場合、アプリ パッケ�
 ### <a name="example"></a>例
 **Webex** パッケージを MAM データ転送ポリシーの例外として追加すると、管理対象の Outlook 電子メール メッセージ内の Webex リンクを Webex アプリケーションで直接開くことができるようになります。 他の管理対象ではないアプリではデータ転送が制限されます。
 
-- iOS **Webex** の例: **Webex** アプリを除外対象にして、Intune の管理対象アプリから呼び出すことができるようにするには、<code>wbx</code> という文字列についてデータ転送の例外を追加する必要があります。
+- iOS/iPadOS **Webex** の例: **Webex** アプリを除外対象にして、Intune の管理対象アプリから呼び出すことができるようにするには、<code>wbx</code> という文字列についてデータ転送の例外を追加する必要があります。
     
-- iOS **Maps** の例: ネイティブ **Maps** アプリを除外対象にして、Intune の管理対象アプリから呼び出すことができるようにするには、<code>maps</code> という文字列についてデータ転送の例外を追加する必要があります。
+- iOS/iPadOS **Maps** の例: ネイティブ **Maps** アプリを除外対象にして、Intune の管理対象アプリから呼び出すことができるようにするには、<code>maps</code> という文字列についてデータ転送の例外を追加する必要があります。
 
 - Android **Webex** の例: **Webex** アプリを除外対象にして、Intune の管理対象アプリから呼び出すことができるようにするには、<code>com.cisco.webex.meetings</code> という文字列についてデータ転送の例外を追加する必要があります。
     
@@ -66,7 +66,7 @@ Android をターゲットとするポリシーの場合、アプリ パッケ�
     
     <code>com.samsung.android.messaging</code>
 
-- Android **証明書インストーラー**の例:Outlook for Android で S/MIME 証明書 (電子メール添付として配信される) を Android KeyStore にインストールできるようにネイティブの**証明書インストーラー** アプリを除外するには、文字列 <code>com.android.certinstaller</code> のデータ転送例外を追加する必要があります。 詳細については、「[iOS 向けおよび Android 向け Outlook の秘密度ラベルと保護](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android)」を参照してください。
+- Android **証明書インストーラー**の例:Outlook for Android で S/MIME 証明書 (電子メール添付として配信される) を Android KeyStore にインストールできるようにネイティブの**証明書インストーラー** アプリを除外するには、文字列 <code>com.android.certinstaller</code> のデータ転送例外を追加する必要があります。 詳細については、[iOS/iPadOS および Android 向け Outlook の秘密度ラベルと保護](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android)に関する記事をご覧ください。
 
 ## <a name="next-steps"></a>次のステップ
 

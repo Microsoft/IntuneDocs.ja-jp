@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 02/13/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a56d8f7aface3628ba5bc8985128ebb49c9cf404
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 867873c78b34d5573084a3a6e44d7d4d67846423
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812162"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413639"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Intune を使用して組織内のリソースへのアクセスを許可するように、デバイス上でルールを設定する
 
@@ -104,7 +104,9 @@ Intune には、組み込みのコンプライアンス ポリシー設定のセ
   - ポータル サイトで位置情報サービスを使用できるようにする
   - 72 時間ごとに 1 回以上、脱獄状態を評価して Intune にレポートする それ以外の場合、デバイスは非準拠とマークされます。 ポータル サイト アプリを開くか、デバイスを 500 メートル以上物理的に移動すると、評価がトリガーされます。 デバイスが 72 時間以内に 500 メートルを移動しない場合は、脱獄評価を強化するために、ユーザーはポータル サイト アプリを開く必要があります。
 
-- **[コンプライアンス状態の有効期間 (日)]** :デバイスが受け取ったすべてのコンプライアンス ポリシーの状態をレポートする期間を入力します。 この期間内に状態を返さないデバイスは非準拠として扱われます。 既定値は 30 日です。
+- **[コンプライアンス状態の有効期間 (日)]** :デバイスが受け取ったすべてのコンプライアンス ポリシーの状態をレポートする期間を入力します。 この期間内に状態を返さないデバイスは非準拠として扱われます。 既定値は 30 日です。 最小値は 1 日です。
+
+  この設定は、 **[アクティブ]** な既定のコンプライアンス ポリシーとして表示されます ( **[デバイス]**  >  **[監視]**  >  **[コンプライアンスの設定]** )。 このポリシーのバックグラウンド タスクは 1 日に 1 回実行されます。
 
 これらの組み込みポリシーを使用して、これらの設定を監視できます。 Intune では、デバイス プラットフォームに応じて、さまざまな間隔で[更新プログラムの更新または確認](create-compliance-policy.md#refresh-cycle-times)も行われます。 「[Microsoft Intune でのデバイス プロファイルの一般的な問題と解決策](../configuration/device-profile-troubleshoot.md)」は、適切なリソースです。
 

@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dce6d71a4bc056146b581458d5c39325adad1584
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: cd0a4b0c5e0b4cbaa7ef43ec40cddb3ab30d3070
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206909"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415477"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>チュートリアル:EMM とアプリ構成に Intune を使用するように Slack を構成する
 
@@ -69,7 +69,7 @@ Intune でマネージド iOS アプリとして Slack for EMM を追加し、Sl
 10. **[Save]** (保存) をクリックします。
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Slack for EMM のアプリ構成ポリシーを追加する
-Slack for EMM iOS のアプリ構成ポリシーを追加する マネージド デバイスのアプリ構成ポリシーはプラットフォーム固有なので、Android デバイス上の Slack ユーザーには別のポリシーを追加する必要があります。
+Slack for EMM iOS/iPadOS のアプリ構成ポリシーを追加します。 マネージド デバイスのアプリ構成ポリシーはプラットフォーム固有なので、Android デバイス上の Slack ユーザーには別のポリシーを追加する必要があります。
 1. 管理センターで、 **[アプリ]**  >  **[アプリ構成ポリシー]**  >  **[追加]**  >  **[マネージド デバイス]** を選択します。
 2. [名前] に「Slack app configuration policy test」と入力します。
 3. [デバイス登録の種類] で、 **[マネージド デバイス]** に設定されていることを確認します。

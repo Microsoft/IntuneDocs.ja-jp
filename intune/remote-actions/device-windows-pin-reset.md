@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b643ed41d01b70376dac32c26a66dcf9f9735ceb
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: c4b3313d5ec7fe81944431276a63bfafb7a1b3dc
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907221"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413625"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Intune を使って Windows デバイスのパスコードをリセットする
 
@@ -60,13 +60,13 @@ Windows デバイスのパスコードをリセットするには、PIN Reset Se
 この CSP の値を **True** に設定します。
 
 > [!TIP]
-> 作成したポリシーを、グループに割り当て (または展開し) ます。 ポリシーは、ユーザー グループまたはデバイス グループに割り当てることができます。 ユーザー グループに割り当てる場合、iOS などの他のデバイスを使っているユーザーがグループに含まれることがあります。 技術的には、ポリシーは適用されませんが、状態の詳細にはこれらのデバイスも含まれます。
+> 作成したポリシーを、グループに割り当て (または展開し) ます。 ポリシーは、ユーザー グループまたはデバイス グループに割り当てることができます。 ユーザー グループに割り当てる場合、iOS/iPadOS などの他のデバイスを使っているユーザーがグループに含まれることがあります。 技術的には、ポリシーは適用されませんが、状態の詳細にはこれらのデバイスも含まれます。
 
 ## <a name="reset-the-passcode"></a>パスコードをリセットする
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。 
-2. **[デバイス]**、**[すべてのデバイス]** の順に選択します。
-3. パスコードをリセットするデバイスを選択します。 デバイスのプロパティで、**[パスコードのリセット]** を選択しします。
+2. **[デバイス]** 、 **[すべてのデバイス]** の順に選択します。
+3. パスコードをリセットするデバイスを選択します。 デバイスのプロパティで、 **[パスコードのリセット]** を選択しします。
 4. **[はい]** をクリックして操作を確定します。 パスコードが生成され、以降 7 日間ポータルに表示されます。
 
 ## <a name="next-step"></a>次の手順

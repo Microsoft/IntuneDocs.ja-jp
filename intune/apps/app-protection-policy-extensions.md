@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ff4fcd7d1b2115c4fbe0bc00759ef3d60482904
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: e568bb5520b4f8cc242cb58a1ee48e8729f4e387
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692101"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414593"
 ---
 # <a name="protecting-application-extensions"></a>アプリケーション拡張機能の保護
 
@@ -31,7 +31,7 @@ ms.locfileid: "75692101"
 
 ## <a name="add-ins-for-outlook-app"></a>Outlook アプリ用のアドイン
 
-Outlook アドインを使用すると、人気のあるアプリをメール クライアントと統合できます。 Outlook 用のアドインは、Web、Windows、Mac、および Android と iOS 用の Outlook で利用できます。 Intune APP SDK と Intune アプリ保護ポリシーには、Outlook 用のアドインを管理するためのサポートは含まれていませんが、別の方法でその使用を制限できます。 アドインは Microsoft Exchange を介して管理されるため、Exchange でユーザーに対してアドインがオフになっていない限り、ユーザーは Outlook と管理対象外のアドイン アプリケーションの間でデータとメッセージを共有できます。
+Outlook アドインを使用すると、人気のあるアプリをメール クライアントと統合できます。 Outlook 用のアドインは、Web、Windows、Mac、および Android と iOS/iPadOS 用の Outlook で利用できます。 Intune APP SDK と Intune アプリ保護ポリシーには、Outlook 用のアドインを管理するためのサポートは含まれていませんが、別の方法でその使用を制限できます。 アドインは Microsoft Exchange を介して管理されるため、Exchange でユーザーに対してアドインがオフになっていない限り、ユーザーは Outlook と管理対象外のアドイン アプリケーションの間でデータとメッセージを共有できます。
 
 エンド ユーザーによる Outlook アドインのアクセスとインストールを禁止する場合は (これは Outlook のすべてのクライアントに影響します)、Exchange 管理センターで役割に対して次の変更を行っていることを確認してください。
 

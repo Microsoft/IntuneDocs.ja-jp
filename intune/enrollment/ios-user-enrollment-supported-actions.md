@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/2/2019
+ms.date: 2/14/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e23e582a853f0b424296d8fb42f6c7d8fdd2984c
-ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
+ms.openlocfilehash: 9c6fb7da3a791d369fc3005367ee7670af8bc63e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "75324867"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414145"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Apple ユーザー登録でサポートされている Intune のアクションとオプション
 
 ユーザー登録では、デバイス管理オプションの一部をサポートしています。 既存の構成プロファイルがユーザー登録デバイスに適用されている場合、そのデバイスには、ユーザー登録でサポートされている設定のみが適用されます。
 
 > [!NOTE]
-> Intune での Apple のユーザー登録のサポートは、現在プレビュー段階です。
+> iOS および iPadOS に対する Intune での Apple のユーザー登録のサポートは、現在プレビュー段階です。
 
 ## <a name="password-settings"></a>パスワードの設定
 
@@ -107,19 +107,15 @@ Apple ユーザー登録を使用して登録したデバイスの Intune では
 - アプリケーション保護ポリシーは、引き続きこれらのアプリに適用されます。 ただし、ユーザーが自分のデバイスから削除しない限り、管理を引き継いだり、アプリのマネージド バージョンを展開したりすることはできません。
 - 監視を必要とするアクション、構成、設定、およびコマンド。 
 
-## <a name="options-not-supported-in-preview"></a>プレビューでサポートされていないオプション
-- 個人所有のデバイスを許可/ブロックする登録デバイスの種類の制限 
 
 ## <a name="known-issues-in-preview"></a>プレビューでの既知の問題
 - VPP のライセンスの失効: ライセンスが失効したことを示す通知は表示されません。 現在の動作では、失効は成功しますが、エンド ユーザーには通知されません。 
 - VPP アプリケーションのレポート: [クライアント アプリ] > [アプリ] > <アプリ名> > [デバイスのインストール状態] にあるレポートでは、アプリケーションがデバイスに正常に展開された場合でも、ユーザー登録デバイスに展開された VPP アプリケーションは "失敗" として報告されます。 
 - アプリケーションのレポート: ユーザー登録でサポートされていないアプリの種類では、レポートに関係のないエラー メッセージが表示されることがあります。 
 - Intune ポータル サイト アプリのエクスペリエンス: アプリケーションの種類がユーザー登録デバイスに対してサポートされているかどうかにかかわらず、ユーザーにはユーザーを対象とするすべてのアプリケーションが表示されます。 
-- Intune ポータル サイト アプリのエクスペリエンス: ユーザーとデバイスの登録に関して組織で表示できる、または表示できないもの示すテキストと同じものが、ユーザーに対して表示されます。
-- ユーザーが登録時に "組織がこのデバイスを所有している" ことを選択した場合でも、管理コンソールまたはグラフで他に変更されていない限り、Intune でデバイスは個人用として識別されます。 
-- 登録のターゲット設定: iPadOS がプラットフォーム セレクターに表示されません。 iPadOS はプレビューではサポートされていますが、管理コンソールでは明示的に示されません。 
+- Intune ポータル サイト アプリのエクスペリエンス: ユーザーとデバイスの登録に関して、組織が表示できないものを示すテキストを管理者がカスタマイズした場合、ユーザーには組織が表示できるものを示す同じテキストが表示されます。
 
 
 ## <a name="next-steps"></a>次のステップ
 
-[iOS と iPadOS のユーザー登録を設定する](ios-user-enrollment.md)
+[iOS/iPadOS と iPadOS のユーザー登録を設定する](ios-user-enrollment.md)

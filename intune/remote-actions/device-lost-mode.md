@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune を使った iOS 紛失モードの有効化 - Azure | Microsoft Docs
-description: 紛失したまたは盗まれた iOS デバイスのロック画面に表示されるメッセージをカスタマイズする場合は、Microsoft Intune を使用して紛失モードをオンにするか開始します。 紛失モード アクションを使用する場合は、セキュリティおよびプライバシーに関する詳細な情報を取得します。
+title: Microsoft Intune を使った iOS/iPadOS 紛失モードの有効化 - Azure | Microsoft Docs
+description: 紛失した、または盗難にあった iOS/iPadOS デバイスのロック画面に表示されるメッセージをカスタマイズする場合は、Microsoft Intune を使用して紛失モードをオンにするか開始します。 紛失モード アクションを使用する場合は、セキュリティおよびプライバシーに関する詳細な情報を取得します。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,22 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2956be9e32587c3bf86ce009a6927269c11ffced
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9a4103c819c0d4bd377b9c6ab2359cb7465cdd9c
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712239"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415592"
 ---
-# <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Intune を使って iOS デバイスの紛失モードを有効にする
+# <a name="enable-lost-mode-on-iosipados-devices-with-intune"></a>Intune を使って iOS/iPadOS デバイスの紛失モードを有効にする
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-**紛失モード**のデバイス アクションを使用すると、紛失したまたは盗まれた iOS デバイスの紛失モードを有効にできます。 このモードでは、デバイスのロック画面に表示されるメッセージと電話番号を入力できます。 紛失モードを使用するには、デバイスが監視モードにある企業所有の iOS デバイスである必要があります。
+**紛失モード**のデバイス アクションを使用すると、紛失した、または盗難にあった iOS/iPadOS デバイスの紛失モードを有効にできます。 このモードでは、デバイスのロック画面に表示されるメッセージと電話番号を入力できます。 紛失モードを使用するには、デバイスが監視モードにある企業所有の iOS/iPadOS デバイスである必要があります。
 
 ## <a name="supported-platforms"></a>サポートされているプラットフォーム
 
-- iOS 9.3 以降
+- iOS/iPadOS 9.3 以降
 
 以下については、この機能はサポートされません。 
 - Windows
@@ -43,7 +43,7 @@ ms.locfileid: "73712239"
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 3. **[デバイス]** 、 **[すべてのデバイス]** の順に選択します。
-4. 管理するデバイスの一覧から iOS デバイスを選択した後、 **[紛失モード (監視モードのみ)]** を選択します。
+4. 管理するデバイスの一覧から iOS/iPadOS デバイスを選択した後、 **[紛失モード (監視モードのみ)]** を選択します。
 5. **[紛失モード]** の下で **[有効]** を選択します。
 6. **[Message to display on lock screen]\(ロック画面に表示するメッセージ\)** に、デバイスのロック画面に表示されるメッセージを入力します。
 7. 必要に応じて、 **[表示する電話番号]** ボックスに電話番号を入力します。
@@ -58,6 +58,6 @@ ms.locfileid: "73712239"
 - 位置データは、保管中も、転送中も暗号化されます。
 - ロック画面に表示するメッセージを入力するときには、紛失したデバイスが戻るように特定の詳細情報を必ず含めてください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 紛失モードの有効化の状態を確認するには、 **[デバイス]** を開き、 **[デバイス アクション]** を選択します。

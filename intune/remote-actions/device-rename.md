@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f5ee9a0fe27c3cf9de758fd7155dbd127fb1e5e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 11b339a3e94e60db43e8237d9f3d2c729b48a57d
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712220"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413610"
 ---
 # <a name="rename-a-device-in-intune"></a>Intune 上でデバイスの名前を変更する
 
@@ -29,7 +29,7 @@ ms.locfileid: "73712220"
 
 次の種類のデバイス名を変更できます。
 - 企業所有の Windows 
-- 監視下にある iOS
+- 監視下にある iOS/iPadOS
 - 企業所有の MacOS 10
 
 この機能では、ハイブリッド Azure AD Windows デバイスの名前変更は現在サポートされていません。
@@ -53,6 +53,6 @@ Windows デバイスの名前を変更する場合、次の規則に従って新
 - 許可されていない文字: { | } ~ [ \ ] ^ ' : ; < = > ? & @ ! " # $ % ` ( ) + / , . _ *)
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 **[名前の変更]** デバイス アクションの状態を表示するには、デバイスの **[概要]** ページを確認します。

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90cdff66d32ac5edb3b1867a545f2c9627ccfe39
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: e018fb9888db19995556a6671d93a1db5fa78c2a
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754781"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415442"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Web アプリを Microsoft Intune に追加する
 
@@ -33,7 +33,7 @@ Intune では、Web アプリなど、さまざまなアプリの種類がサポ
 
 ユーザー用アプリを管理して割り当てるには、そのアプリを Intune に追加します。 
 
-Intune によって、ユーザーのデバイスに Web アプリへのショートカットが作成されます。 iOS デバイスの場合、Web アプリへのショートカットがホーム画面に追加されます。 Android デバイス管理デバイスの場合、Web アプリへのショートカットが Intune ポータル サイト ウィジェットに追加されます。ウィジェットはユーザーが手動でピン留めする必要があります。 Windows デバイスの場合、Web アプリへのショートカットが [スタート] メニューに配置されます。
+Intune によって、ユーザーのデバイスに Web アプリへのショートカットが作成されます。 iOS/iPadOS デバイスの場合、Web アプリへのショートカットがホーム画面に追加されます。 Android デバイス管理デバイスの場合、Web アプリへのショートカットが Intune ポータル サイト ウィジェットに追加されます。ウィジェットはユーザーが手動でピン留めする必要があります。 Windows デバイスの場合、Web アプリへのショートカットが [スタート] メニューに配置されます。
 
 > [!Note]
 > Web アプリを起動するには、ユーザーのデバイスにブラウザーがインストールされている必要があります。 
@@ -71,7 +71,7 @@ Web 上のアプリへのショートカットとしてアプリを Intune に�
     作成したアプリの **[概要]** ブレードが表示されます。
 
 > [!Note]
-> 現在、iOS デバイスへの Intune Web アプリの展開は管理プロファイルに関連付けられ、手動で削除することはできません。 Intune ポータルで展開の種類を**アンインストール**に変更することができ、そうすると Web アプリを自動的に削除することができます。 ただし、アプリ割り当て意図を**アンインストール**に変更する前に展開を削除すると、デバイスが Intune から登録解除されるまで、Web アプリは永続的にデバイス上に残っています。
+> 現在、iOS/iPadOS デバイスへの Intune Web アプリの展開は管理プロファイルに関連付けられ、手動で削除することはできません。 Intune ポータルで展開の種類を**アンインストール**に変更することができ、そうすると Web アプリを自動的に削除することができます。 ただし、アプリ割り当て意図を**アンインストール**に変更する前に展開を削除すると、デバイスが Intune から登録解除されるまで、Web アプリは永続的にデバイス上に残っています。
 
 エンドユーザーは、Windows ポータル サイト アプリから直接 Web アプリを起動できます。それには、Web アプリを選択してから、 **[ブラウザーで開く]** オプションを選択します。 発行された Web URL は、Web ブラウザー内で直接開かれます。 
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0440e2d6f5890b20ccf020c40bb1037bcfcae38
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 64faf797c69302e2a5cdbdde090330ab99fcc2e4
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564135"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437887"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Intune でアプリ保護ポリシーの条件付き起動アクションを使用してデータを選択的にワイプする
 
@@ -49,7 +49,7 @@ Intune のアプリ保護ポリシーを利用することで、エンド ユー
 アプリ保護ポリシーの設定テーブルには、 **[設定]** 、 **[値]** 、 **[アクション]** の列があります。
 
 ### <a name="ios-policy-settings"></a>iOS ポリシー設定
-iOS の場合、 **[設定]** ドロップダウンを利用して次の設定のアクションを構成できます。
+iOS/iPadOS の場合、 **[設定]** ドロップダウンを利用して次の設定のアクションを構成できます。
 - [PIN の最大試行回数]
 - [オフラインの猶予期間]
 - [脱獄またはルート化されたデバイス]
@@ -59,7 +59,7 @@ iOS の場合、 **[設定]** ドロップダウンを利用して次の設定�
 - [デバイス モデル]
 - 許容される最大デバイス脅威レベル
 
-**デバイス モデル**設定を使用するには、iOS のモデル識別子の一覧をセミコロンで区切って入力します。 これらの値では大文字と小文字が区別されません。 "デバイス モデル" 入力に関する Intune からの報告に加え、[HockeyApp のサポート ドキュメント](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types)やこちらの[サードパーティの GitHub リポジトリ](https://gist.github.com/adamawolf/3048717)で、[デバイスの種類] 列の下に iOS モデル識別子を見つけることができます。<br>
+**[デバイス モデル]** 設定を使用するには、iOS/iPadOS モデル識別子の一覧をセミコロンで区切って入力します。 これらの値では大文字と小文字が区別されません。 [デバイス モデル] 入力に関する Intune からの報告に加え、[HockeyApp のサポート ドキュメント](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types)やこちらの[サード パーティの GitHub リポジトリ](https://gist.github.com/adamawolf/3048717)で、[デバイスの種類] 列の下にある iOS/iPadOS モデル識別子を見つけることができます。<br>
 入力例: *iPhone5,2;iPhone5,3*
 
 エンド ユーザー デバイスの Intune クライアントは、アプリケーション保護ポリシーに対して Intune で指定されている、デバイス モデルの文字列の単純一致に基づいてアクションを実行します。 一致は、デバイスの報告に完全に依存します。 ユーザー (IT 管理者) は、動作が意図したものであるか確認することを推奨されます。それには、さまざまなデバイスの製造元とモデルをベースとし、小規模なユーザー グループを対象として、この設定をテストします。 既定値は **[未構成]** です。<br>
@@ -67,8 +67,8 @@ iOS の場合、 **[設定]** ドロップダウンを利用して次の設定�
 - 指定されたものを許可 (未指定でブロック)
 - 指定されたものを許可 (未指定でワイプ)
 
-**IT 管理者が、同じ Intune ユーザーの同じアプリを対象とするポリシー間で、異なる iOS モデル識別子の一覧を入力した場合、どうなりますか。**<br>
-構成値に対して 2 つのアプリ保護ポリシーの間に競合が発生した場合、Intune では通常、最も制限の厳しいアプローチが取られます。 したがって、対象の Intune ユーザーが開いている対象のアプリに対して送信されるポリシーの結果は、同じアプリ/ユーザーの組み合わせを対象とする、"*ポリシー A*" と "*ポリシー B*" の iOS モデル識別子のリストの積集合となります。 たとえば、"*ポリシー A*" が "iPhone5,2;iPhone5,3" を指定し、"*ポリシー B*" が "iPhone5,3" を指定している場合、"*ポリシー A*" と "*ポリシー B*" 両方の対象である Intune ユーザーのポリシーの結果は "iPhone5,3" となります。 
+**IT 管理者が、同じ Intune ユーザーの同じアプリを対象とするポリシー間で、異なる iOS/iPadOS モデル識別子の一覧を入力した場合、どうなりますか。**<br>
+構成値に対して 2 つのアプリ保護ポリシーの間に競合が発生した場合、Intune では通常、最も制限の厳しいアプローチが取られます。 したがって、対象の Intune ユーザーが開いている対象のアプリに対して送信されるポリシーの結果は、同じアプリ/ユーザーの組み合わせを対象とする、"*ポリシー A*" と "*ポリシー B*" の iOS/iPadOS モデル識別子のリストの積集合となります。 たとえば、"*ポリシー A*" が "iPhone5,2;iPhone5,3" を指定し、"*ポリシー B*" が "iPhone5,3" を指定している場合、"*ポリシー A*" と "*ポリシー B*" 両方の対象である Intune ユーザーのポリシーの結果は "iPhone5,3" となります。 
 
 ### <a name="android-policy-settings"></a>Android のポリシーの設定
 
@@ -118,7 +118,7 @@ Android の場合、 **[設定]** ドロップダウンを利用して次の設�
 
 設定がすべて構成されると、読み取り専用ビューで行が表示されますが、これはいつでも編集できます。 また、行にはドロップダウンがあり、 **[設定]** 列で選択できように見えます。 既に構成されており、複数のアクションを許可しない設定はドロップダウンで選択できません。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Intune アプリ保護ポリシーの詳細については、次を参照してください。
 - [アプリ保護ポリシーを作成して割り当てる方法](app-protection-policies.md)
