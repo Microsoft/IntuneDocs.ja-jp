@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c72cf963822284702f6b924ca506f8ec1157e91
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a03a92f715496b3c647a12bb99457d151ead54a3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505144"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514933"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>ユース ケース シナリオの要件の決定
 
@@ -35,13 +35,13 @@ ms.locfileid: "72505144"
 
 組織のユース ケースの要件の例を次に示します。ここでは、各ユース ケースとサブ ユース ケースのシナリオ、組織グループ、モバイル デバイス プラットフォームに対する異なる要件セットを示します。 次の表を使用して、組織のユース ケースの要件を入力することもできます。
 
-| **ユース ケース** | **サブ ユース ケース** | **グループ** | **デバイス プラットフォーム** | **要件** |
+| **ユース ケース** | **サブ ユース ケース** | **グループ** | **デバイス プラットフォーム** | **Requirements** |
 |:---:|:---:|:---:|:---:|:---:|
-| 企業 | インフォメーション ワーカー | 人事、財務 | iOS | 電子メールのセキュリティ保護、デバイスの設定、プロファイル、アプリ |                                                          
-| 企業 | 役員 | 人事、財務 | iOS | 電子メールのセキュリティ保護、デバイスの設定、プロファイル、アプリ |                                                         
+| 企業 | インフォメーション ワーカー | 人事、財務 | iOS/iPadOS | 電子メールのセキュリティ保護、デバイスの設定、プロファイル、アプリ |                                                          
+| 企業 | 役員 | 人事、財務 | iOS/iPadOS | 電子メールのセキュリティ保護、デバイスの設定、プロファイル、アプリ |                                                         
 | 企業 | キオスク | 小売 | Android | デバイスの設定、プロファイル、アプリ |
-| BYOD | インフォメーション ワーカー | マーケティング、営業 | iOS | 電子メールのセキュリティ保護、デバイスの設定、プロファイル、アプリ |                                                         
-| BYOD | 役員 | マーケティング、営業 | iOS | 電子メールのセキュリティ保護、デバイスの設定、プロファイル、アプリ |
+| BYOD | インフォメーション ワーカー | マーケティング、営業 | iOS/iPadOS | 電子メールのセキュリティ保護、デバイスの設定、プロファイル、アプリ |                                                         
+| BYOD | 役員 | マーケティング、営業 | iOS/iPadOS | 電子メールのセキュリティ保護、デバイスの設定、プロファイル、アプリ |
 
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、お客様の組織のユース ケースとサブ ユース ケースの要件を入力できます。
 
@@ -67,6 +67,6 @@ ms.locfileid: "72505144"
   - アプリの保護ポリシー付きの Office 365
   - アプリの保護ポリシー付きの基幹業務 (LOB)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 次のセクションでは、[Intune ロールアウト計画を作成する方法](planning-guide-rollout-plan.md)についてのガイダンスを提供します。

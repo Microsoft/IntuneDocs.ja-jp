@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: f23d81ddb07fcafb198cd725781747b61a3b73ea
-ms.sourcegitcommit: 67f926ba83f8a955e16b741a610ad84d6044f8f9
+ms.openlocfilehash: 373aeea9ab4fcbd075ac2ab18f205f3ddd191a39
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77529339"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609276"
 ---
 以下の通知では、今後の Intune の変更と機能に備えるために役立つ重要な情報が提供されます。
 
@@ -84,7 +84,7 @@ iOS および Android での Web クリップのサポートが予定されて�
 
 [詳細情報](https://go.microsoft.com/fwlink/?linkid=2107122)
 
-### <a name="decreasing-support-for-android-device-administrator"></a>Android デバイス管理者のサポートの縮小 
+### <a name="decreasing-support-for-android-device-administrator--5857738--"></a>Android デバイス管理者のサポートの縮小<!--5857738-->
 Android デバイス管理者 ("従来の" Android 管理とも呼ばれ、Android 2.2 でリリースされました) は、Android デバイスを管理する方法の 1 つです。 しかし、[Android Enterprise](../enrollment/connect-intune-android-enterprise.md) (Android 5.0 でリリース) では、強化された管理機能を使用できるようになりました。 Google では、より豊富で安全な最新のデバイス管理に移行するための努力の一環として、新しい Android リリースでのデバイス管理者のサポートを縮小させています。
 
 #### <a name="how-does-this-affect-me"></a>ユーザーへの影響
@@ -108,24 +108,5 @@ Google によるこのような変更により、Intune ユーザーは次のよ
 - [デバイス管理者から Android Enterprise への移行に関する Google のガイダンス](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
 - [デバイス管理者 API の廃止計画に関する Google のドキュメント](https://developers.google.com/android/work/device-admin-deprecation)
 
-### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-an-upcoming-release---4911065---"></a>変更の計画:今後のリリースで、Android 用の Intune App SDK およびアプリ保護ポリシーによる Android 5.0 以降のサポートを開始 <!--4911065 -->
-Intune では、今後のリリースで、Android 5.x (Lollipop) 以降のサポートが開始されます。 ラップされたすべてのアプリを最新の Intune App SDK で更新し、デバイスを更新してください。
-
-#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
-Android 用の SDK またはアプリを使用していない、または使用する予定がない場合は、この変更による影響はありません。 Intune App SDK を使用している場合は、必ず最新バージョンに更新し、またデバイスも Android 5.x 以降に更新してください。 お客様が更新を行わなかった場合、アプリで更新プログラムを受信できなくなり、時間の経過と共にそのエクスペリエンスの質が低下していきます。
-
-Intune に登録されていて、Android バージョン 4.x を稼働している一般的なデバイスの一覧を以下に示します。 これらのデバイスのいずれかを使用している場合は、適切な手順を実行して、必ずそのデバイスで Android バージョン 5.0 以降をサポートするようにするか、それを Android バージョン 5.0 以降をサポートするデバイスに置き換えるようにしてください。 この一覧は、評価が必要なすべてのデバイスを網羅しているわけではありません。
-
-- Samsung SM-T561  
-- Samsung SM-T365
-- Samsung GT-I9195
-- Samsung SM-G800F
-- Samsung SM-G357FZ
-- Motorola XT1080
-- Samsung GT-I9305
-- Samsung SM-T231
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
-最新の Intune App SDK でアプリをラップしてください。 また、[最低限の OS バージョンを必要とします (警告のみ)] という条件付き起動を設定して、個人用デバイスを使用しているエンド ユーザーにアップグレードするよう通知することもできます。
 
 

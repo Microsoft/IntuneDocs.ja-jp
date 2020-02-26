@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 946ce31c613ddb3c7dd2bf4dfde7561dd56e4ca0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a7aa439fcf60173cac71f0fc71ebac481660c785
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414054"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514695"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>アプリ保護ポリシーを使用して Android アプリを管理するときの注意点
 
@@ -80,5 +80,5 @@ Android デバイスで会社の AV、PDF、画像ファイルを表示するに
 |----|
 |pfile は、保護するファイル向けの汎用的な "ラッパー" 形式です。暗号化されたコンテンツと Azure Information Protection ライセンスをカプセル化します。 任意のファイルの種類を保護できます。|
 
-## <a name="next-steps"></a>次の手順
-[アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](end-user-mam-apps-ios.md)
+## <a name="next-steps"></a>次のステップ
+[アプリ保護ポリシーを使用して iOS/iPadOS アプリを管理するときの注意点](end-user-mam-apps-ios.md)
