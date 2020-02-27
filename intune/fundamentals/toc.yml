@@ -39,6 +39,8 @@
   items:
     - name: 教育用の Intune とは
       href: introduction-intune-education.md
+    - name: 米国政府向け Intune とは
+      href: introduction-intune-government.md
     - name: 高レベル アーキテクチャ
       href: high-level-architecture.md
     - name: デバイスのライフサイクル

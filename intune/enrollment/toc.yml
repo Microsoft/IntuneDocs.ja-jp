@@ -113,3 +113,5 @@
           href: troubleshoot-ios-enrollment-errors.md
         - name: Windows デバイス登録のトラブルシューティング
           href: troubleshoot-windows-enrollment-errors.md
+        - name: Android デバイス登録のトラブルシューティング
+          href: troubleshoot-android-enrollment.md
