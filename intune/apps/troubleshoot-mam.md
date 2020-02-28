@@ -17,16 +17,16 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 49bf59805476ebbcce3148738e40bfd11e4744eb
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
-ms.translationtype: MTE75
+ms.openlocfilehash: f5d5d62e1e05c8e29de1b5dba91647f2bfc3b186
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839325"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513335"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>モバイル アプリケーション管理に関するトラブルシューティング
 
-このトピックでは、Intune App Protection (MAM またはモバイルアプリケーション管理とも呼ばれます) の使用時に発生した一般的な問題の解決策について説明します。
+このトピックでは、Intune App Protection (MAM またはモバイル アプリケーション管理とも呼ばれます) の使用時に発生する一般的な問題の解決策について説明します。
 
 この情報で問題が解決しない場合、さらに役立つ方法を探すには、「[Microsoft Intune のサポートを受ける方法](../fundamentals/get-support.md)」を参照してください。
 
@@ -36,13 +36,13 @@ ms.locfileid: "75839325"
 
 | 問題 | [説明] | 解決策 |
 | -- | -- | -- |
-| ポリシーが Skype for Business に適用されない | Azure Portal でデバイスを登録しないで設定したアプリ保護ポリシーが、iOS デバイスと Android デバイスの Skype for Business アプリに適用されません。 | 先進認証を使うように Skype for Business を設定する必要があります。  「[Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)」 (テナントで先進認証を有効にする) の説明に従って、Skype に先進認証を設定してください。 |
+| ポリシーが Skype for Business に適用されない | Azure portal でアプリ保護ポリシーをデバイス登録なしで設定したが、iOS および iPadOS デバイスと Android デバイスで Skype for Business アプリに適用されない。 | 先進認証を使うように Skype for Business を設定する必要があります。  「[Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)」 (テナントで先進認証を有効にする) の説明に従って、Skype に先進認証を設定してください。 |
 | Office のアプリ ポリシーが適用されない | アプリ保護ポリシーが、すべてのユーザーの、どの[サポートされる Office アプリ](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)にも適用されません。 | ユーザーに Intune のライセンスが与えられていること、および Office アプリが展開されるアプリ保護ポリシーの対象であることを確認します。 新しく展開したアプリ保護ポリシーが適用されるには最大 8 時間かかります。 |
 | 管理者が Azure ポータルでアプリ保護ポリシーを構成できない | IT 管理者ユーザーが、Azure portal でアプリ保護ポリシーを構成できません。 | 次のユーザー ロールには Azure portal へのアクセス権があります。 <ul><li>グローバル管理者: [Microsoft 365 管理センター](https://admin.microsoft.com/)で設定できます。</li><li>所有者: [Azure portal](https://portal.azure.com/) で設定できます。</li><li>共同作成者: [Azure portal](https://portal.azure.com/) で設定できます。</li></ul> これらのロールの設定については、「[Microsoft Intune でのロール ベースの管理制御 (RBAC)](../fundamentals/role-based-access-control.md)」を参照してください。|
 |ユーザー アカウントがアプリ保護ポリシー レポートに表示されない | 管理コンソールのレポートに、アプリ保護ポリシーが最近展開されたユーザー アカウントが表示されません。 | 新しくアプリ保護ポリシーの対象になったユーザーは、対象ユーザーとしてレポートに表示されるまでに最大で 24 時間かかります。 |
 | ポリシーの変更が行われない | アプリ保護ポリシーの変更および更新が適用されるまで、最大 8 時間かかります。 | 該当する場合、エンド ユーザーは、いったんアプリをログアウトしてから再びログインすることで、サービスと強制的に同期できます。 |
-| DEP でアプリ保護ポリシーが動作しない | アプリ保護ポリシーが Apple DEP デバイスに適用されません。 | Apple Device Enrollment Program (DEP) でユーザー アフィニティを使用していることを確認します。 DEP でのユーザー認証を必要とするすべてのアプリにはユーザー アフィニティが必要です。 <br><br>iOS DEP 登録の詳細については、「[Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する](../enrollment/device-enrollment-program-enroll-ios.md)」を参照してください。|
-| データ転送ポリシーが iOS で動作しない | ポリシー "**このアプリから他のアプリにデータを転送できるようにする**" と "**このアプリで他のアプリからデータを受信できるようにする**" によって、iOS でのデータ転送が正しく管理されません。 | 「[Microsoft Intune で iOS アプリ間のデータ転送を管理する方法](data-transfer-between-apps-manage-ios.md)」を参照してください。 |
+| DEP でアプリ保護ポリシーが動作しない | アプリ保護ポリシーが Apple DEP デバイスに適用されません。 | Apple Device Enrollment Program (DEP) でユーザー アフィニティを使用していることを確認します。 DEP でのユーザー認証を必要とするすべてのアプリにはユーザー アフィニティが必要です。 <br><br>iOS および iPadOS DEP 登録の詳細については、「[Apple の Device Enrollment Program を使用して iOS/iPadOS デバイスを自動登録する](../enrollment/device-enrollment-program-enroll-ios.md)」を参照してください。|
+| データ転送ポリシーが iOS および iPadOS で動作しない | ポリシー "**このアプリから他のアプリにデータを転送できるようにする**" と "**このアプリで他のアプリからデータを受信できるようにする**" によって、iOS および iPadOS でのデータ転送が正しく管理されません。 | [Microsoft Intune で iOS および iPadOS アプリ間のデータ転送を管理する方法](data-transfer-between-apps-manage-ios.md)に関する記事を参照してください。 |
 
 ## <a name="common-end-user-issues"></a>エンドユーザーが遭遇する一般的な問題
 
@@ -58,15 +58,15 @@ ms.locfileid: "75839325"
 
 プラットフォーム | 通信の種類 | 説明 |
 ---| --- | --- |
-iOS | データ転送ポリシーが "**管理対象アプリのみ**" または "**アプリなし**" に設定されている場合であっても、エンドユーザーは iOS 共有拡張機能を使って、管理対象ではないアプリの職場または学校のデータを開くことができます。 これはデータのリークではないのですか。 | Intune アプリ保護ポリシーは、デバイスを管理しないで iOS 共有拡張機能を制御することはできません。 したがって、**Intune は "企業" データをアプリの外部で共有する前に、データを暗号化します**。 これは、管理対象アプリの外部で "企業" ファイルを開いてみることによって確認できます。 ファイルは暗号化されていて、管理対象アプリの外部では開くことができないはずです。
-iOS | エンドユーザーが**Microsoft Authenticator アプリをインストールするように求め**られるのはなぜですか。 | これは、アプリベースの条件付きアクセスを適用する場合に必要です。「承認された[クライアントアプリが必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access)」を参照してください。
+iOS | データ転送ポリシーが "**管理対象アプリのみ**" または "**アプリなし**" に設定されている場合であっても、エンドユーザーは iOS および iPadOS 共有拡張機能を使って、管理対象ではないアプリの職場または学校のデータを開くことができます。 これはデータのリークではないのですか。 | Intune アプリ保護ポリシーは、デバイスを管理しないで iOS および iPadOS 共有拡張機能を制御することはできません。 したがって、**Intune は "企業" データをアプリの外部で共有する前に、データを暗号化します**。 これは、管理対象アプリの外部で "企業" ファイルを開いてみることによって確認できます。 ファイルは暗号化されていて、管理対象アプリの外部では開くことができないはずです。
+iOS | エンドユーザーが **Microsoft Authenticator アプリをインストールするように求められる**のはなぜですか。 | これは、アプリベースの条件付きアクセスが適用される場合に必要です。[承認されたクライアント アプリ](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access)に関する記事を参照してください。
 Android | デバイスを登録せずに MAM アプリ保護を使っている場合でも、エンドユーザーが**ポータル サイト アプリをインストールする必要がある**のはなぜですか。  | Android では、アプリ保護機能の多くはポータル サイト アプリに組み込まれています。 **デバイスの登録が不要な場合でも、ポータル サイト アプリは常に必要です**。 登録を行わないアプリ保護では、エンドユーザーはデバイスにポータル サイト アプリをインストールすることだけが必要です。
-iOS/Android | アプリ保護ポリシーが Outlook アプリのドラフト電子メールに適用されていない | Outlook は企業と個人の両方のコンテキストをサポートしているため、下書きの電子メールに MAM を適用しません。
-iOS/Android | アプリ保護ポリシーが WXP の新しいドキュメントに適用されない (Word、Excel、PowerPoint) | WXP では会社と個人の両方のコンテキストがサポートされるため、OneDrive などの特定の企業の場所に保存されるまで、新しいドキュメントに MAM を適用しません。
-iOS/Android | ポリシーが有効になっている場合、ローカル記憶域に名前を付けて保存することが許可されていないアプリ | この設定のアプリの動作は、アプリの開発者によって制御されます。
-Android | Android には、MAM で保護されたコンテンツにアクセスできる iOS よりも多くの制限があります。 | Android はオープンプラットフォームであり、エンドユーザーは安全でない可能性のあるアプリに対して "ネイティブ" アプリの関連付けを変更できます。 特定のアプリを除外するための[データ転送ポリシーの例外](app-protection-policies-exception.md)を適用します。
-Android | Azure Information Protection (AIP) は、名前を付けて保存することが禁止されている場合に PDF として保存できます | AIP は、PDF として保存するときに [印刷を無効にする] の MAM ポリシーを使用します。
-iOS | Outlook アプリで PDF 添付ファイルを開く操作が "許可されていません" で失敗する | これは、ユーザーが Intune の Acrobat Reader に対して認証されていない場合、または組織に対して拇印を使用して認証されている場合に発生する可能性があります。 事前に Acrobat Reader を開き、UPN 資格情報を使用して認証します。
+iOS/Android | アプリ保護ポリシーが Outlook アプリの下書きの電子メールに適用されない | Outlook では企業と個人の両方のコンテキストをサポートしているため、下書きの電子メールに MAM は強制されません。
+iOS/Android | WXP の新しいドキュメント (Word、Excel、PowerPoint) にアプリ保護ポリシーが適用されない | WXP では企業と個人の両方のコンテキストをサポートしているため、OneDrive のような特定の企業の場所に保存されるまで、新しいドキュメントに MAM は適用されません。
+iOS/Android | ポリシーが有効な場合、アプリで [Save As to Local Storage]\(ローカル ストレージに名前を付けて保存\) を使用できない | この設定のアプリの動作は、アプリの開発者によって制御されます。
+Android | "ネイティブ" アプリから MAM で保護されたコンテンツにアクセスできる対象について、Android には iOS および iPadOS よりも多くの制限があります | Android はオープン プラットフォームであり、エンド ユーザーは、"ネイティブ" アプリの関連付けを安全ではない可能性があるアプリに変更できます。 特定のアプリを除外するには、[[Data transfer policy exceptions]\(データ転送のポリシーの例外\)](app-protection-policies-exception.md) を適用します。
+Android | Azure Information Protection (AIP) では、[名前を付けて保存] が禁止されている場合に [PDF として保存] を使用できます。 | [PDF として保存] を使用する場合、AIP では [印刷を無効にする] の MAM ポリシーが尊重されます。
+iOS | Outlook アプリで PDF の添付ファイルを開く操作が "アクションが許可されていません" で失敗する | これは、ユーザーが Intune の Acrobat Reader に認証されていない場合、または組織の認証に拇印を使用した場合に発生する可能性があります。 事前に Acrobat Reader を開き、UPN 資格情報を使用して認証しておいてください。
 
 
 ### <a name="normal-usage-dialogs"></a>通常使用のダイアログ
@@ -91,7 +91,7 @@ Android | **Company Portal required (必要なポータル サイト)** :この�
 **非対応デバイス**:脱獄が行われたデバイスを使用しているため、このアプリを使用できません。 サポートが必要であれば、IT 管理者にお問い合わせください。 | 脱獄が行われたデバイスをユーザーが使用していることが Intune で検出されました。 | デバイスを既定の設定にリセットしてください。 Apple サポート サイトの[こちらの手順](https://support.apple.com/HT201274)に従ってください。
 **インターネット接続が必要です**:このアプリを使用できることを確認するには、インターネットに接続する必要があります。 | このデバイスはインターネットに接続されていません。 | WiFi またはデータ ネットワークにデバイスを接続します。
 **不明なエラー**:このアプリを再起動してみてください。 問題が解決しない場合は、IT 管理者にお問い合わせください。 | 不明なエラーが発生しました。 | しばらくしてからやり直してください。 エラーが解決しない場合は、Intune に関する[サポート チケット](../fundamentals/get-support.md#create-an-online-support-ticket)を作成します。
-**組織のデータにアクセスしています**:指定した職場または学校のアカウントに、このアプリにアクセスする許可が与えられていません。 場合によっては、別のアカウントでサインインする必要があります。 サポートが必要であれば、IT 管理者にお問い合わせください。 | デバイスの MAM 登録アカウントとは異なる職場または学校の 2 つ目のアカウントでユーザーがサインインを試行したことを Intune が検出します。 デバイスごとに MAM で一度に管理できる職場または学校のアカウントは 1 つだけです。 | サインイン画面でユーザー名が事前入力されるアカウントでユーザーにサインインしてもらいます。 [Intune のユーザー UPN 設定を構成](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)することが必要になる場合があります。 <br> <br> あるいは、職場または学校の新しいアカウントでユーザーにサインインしてもらい、既存の MAM 登録アカウントを削除させます。
+**組織のデータにアクセスしています**:指定した職場または学校のアカウントに、このアプリにアクセスする許可が与えられていません。 場合によっては、別のアカウントでサインインする必要があります。 サポートが必要であれば、IT 管理者にお問い合わせください。 | デバイスの MAM 登録アカウントとは異なる職場または学校の 2 つ目のアカウントでユーザーがサインインを試行したことを Intune が検出します。 デバイスごとに MAM で一度に管理できる職場または学校のアカウントは 1 つだけです。 | サインイン画面でユーザー名が事前入力されるアカウントでユーザーにサインインしてもらいます。 必要に応じて、[Intune のユーザー UPN 設定を構成します](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)。 <br> <br> あるいは、職場または学校の新しいアカウントでユーザーにサインインしてもらい、既存の MAM 登録アカウントを削除させます。
 **接続の問題**:予期しない接続の問題が発生しました。 接続を確認し、もう一度やり直してください。  |  予期しないエラーです。 | しばらくしてからやり直してください。 エラーが解決しない場合は、Intune に関する[サポート チケット](../fundamentals/get-support.md#create-an-online-support-ticket)を作成します。
 **アラート**:このアプリは使用できなくなりました。 詳細については、IT 管理者に問い合わせてください。 | アプリの証明書の有効性を確認できませんでした。 | アプリ バージョンが最新であることを確認してください。 <br><br> アプリを再インストールします。
 **エラー**: このアプリで問題が発生しました。閉じる必要があります。 このエラーが解決しない場合、IT 管理者にお問い合わせください。 | Apple iOS キーチェーンから MAM アプリ PIN を読み込めませんでした。 | デバイスを再起動します。 アプリ バージョンが最新であることを確認してください。 <br><br> アプリを再インストールします。
@@ -112,7 +112,7 @@ Android | **Company Portal required (必要なポータル サイト)** :この�
 ## <a name="next-steps"></a>次のステップ
 
 - [モバイル アプリケーション管理のセットアップの検証](app-protection-policies-validate.md)
-- ログファイルを使用して Intune App Protection ポリシーのトラブルシューティングを行う方法については、「」を参照してください[https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372)
+- ログ ファイルを使用した Intune App Protection ポリシーのトラブルシューティング方法については、[https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372) を参照してください
 - Intune のトラブルシューティングに関する追加情報については、「[トラブルシューティング ポータルを使用して社内のユーザーをサポートする](../fundamentals/help-desk-operators.md)」をご覧ください。 
 - Microsoft Intune の既知の問題について学習します。 詳細については、「[Microsoft Intune の既知の問題](../known-issues.md)」を参照してください。
 - さらに支援が必要ですか? 「[Microsoft Intune のサポートを受ける方法](../fundamentals/get-support.md)」を参照してください。

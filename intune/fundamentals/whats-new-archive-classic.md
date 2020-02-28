@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e88741609dc1a351d1971c907cd2e442cfd4b905
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 94ff28cf36457d2d8b20e173508b7c9894a7d5bc
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72999516"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510539"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune クラシック ポータルの新機能 (過去数か月)
 
@@ -36,17 +36,17 @@ ms.locfileid: "72999516"
 
 #### <a name="myapps-available-for-managed-browser---822308-822303--"></a>Managed Browser に使用できる MyApps <!--822308, 822303-->
 
-Managed Browser での Microsoft MyApps のサポートが向上します。 管理の対象になっていない Managed Browser ユーザーは、MyApps サービスに直接送られ、そこで管理者がプロビジョニングした SaaS アプリにアクセスできます。 Intune の管理の対象になっているユーザーは、引き続き組み込みの Managed Browser ブックマークから MyApps にアクセスできます。
+Microsoft MyApps では、管理対象ブラウザー内のサポートが改善されました。 管理の対象になっていない Managed Browser ユーザーは、MyApps サービスに直接送られ、そこで管理者がプロビジョニングした SaaS アプリにアクセスできます。 Intune 管理の対象になっているユーザーは、組み込まれている管理対象ブラウザーのブックマークから MyApps に引き続きアクセスできます。
 
 #### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431-971473--"></a>Managed Browser とポータル サイトの新しいアイコン <!--918433, 918431, 971473-->
 
-Managed Browser の Android バージョンと iOS バージョンのアイコンが更新されます。 新しいアイコンには、Enterprise Mobility + Security (EM+S) での他のアプリとの一貫性が向上した新しい Intune バッジが含まれます。 Managed Browser 用の新しいアイコンは、[Intune アプリ UI の新機能に関するページ](whats-new-app-ui.md)でご覧いただけます。
+管理対象ブラウザーは、Android 版アプリと iOS 版アプリの両方で更新されたアイコンを受け取ります。 新しいアイコンには、Enterprise Mobility + Security (EM+S) での他のアプリとの一貫性が向上した新しい Intune バッジが含まれます。 管理対象ブラウザーの新しいアイコンは、[Intune アプリ UI の新機能に関するページ](whats-new-app-ui.md)で確認できます。
 
-ポータル サイトは、Android 版アプリ、iOS 版アプリ、Windows 版アプリの更新されたアイコンを受け取り、EM+S の他のアプリとの一貫性を向上させます。 これらのアイコンは、4 月から 5 月末にかけて段階的にプラットフォーム全体にリリースされます。
+ポータル サイトは、Android 版アプリ、iOS 版アプリ、Windows 版アプリの更新されたアイコンを受け取り、EM+S の他のアプリとの一貫性を向上させます。 アイコンは 4 月から 5 月後半にかけてすべてのプラットフォームに徐々に提供されます。
 
 #### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 用ポータル サイトでのサインイン進行状況インジケーター <!--953374-->
 
-Android 用ポータル サイト アプリが更新されて、起動または再開時にサインイン進行状況インジケーターが表示されるようになります。 ユーザーがアプリへのアクセスを許可されるまでにインジケーターに順番に表示される新しいステータスは、[接続中...]、[サインイン中...]、[Checking for security requirements... (セキュリティ要件確認中...)] です。 Android 用ポータル サイト アプリの新しい画面は、[Intune アプリ UI の新機能](whats-new-app-ui.md)に関するページでご覧いただけます。
+Android 用ポータル サイト アプリが更新されて、起動または再開時にサインイン進行状況インジケーターが表示されるようになります。 このインジケーターには新しい状態が次々と表示されます。"接続しています..." から始まり、"サインインしています..." に進み、さらに "セキュリティ要件を確認しています..." に進み、その後、ユーザーはアプリにアクセスできます。 Android 用ポータル サイト アプリの新しい画面は、[Intune アプリ UI の新機能](whats-new-app-ui.md)に関するページでご覧いただけます。
 
 #### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>アプリの SharePoint Online へのアクセスをブロック <!-- 679339 -->
 
@@ -115,7 +115,7 @@ Android、iOS、Windows 用の Intune ポータル サイト アプリのサイ�
 
 以前のサインイン エクスペリエンス、資格情報を使用した新たなエクスペリエンス、別のデバイスからのエクスペリエンスのスクリーンショットを[アプリ UI の新機能](whats-new-app-ui.md)に関するページで確認できます。
 
-#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>変更の計画: Intune で Intune パートナー ポータル エクスペリエンスが変更されます <!-- 1050016 -->
+#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>変更の計画:Intune で Intune パートナー ポータルのエクスペリエンスが変更されます <!-- 1050016 -->
 
 2017 年 5 月中旬のサービス更新で、Intune パートナーのページが manage.microsoft.com から削除されます。  
 
@@ -149,10 +149,10 @@ Intune のデバイス コンプライアンス ポリシーにより有効に�
 
 Android 用ポータル サイト アプリでは、ユーザー インターフェイスが最新の外観となり、ユーザー エクスペリエンスが向上しました。 主な更新内容は次のとおりです。
 
-- 色: ポータル サイトのタブ ヘッダーの色が、IT が定義するブランド色になります。
+- 色:ポータル サイトのタブ ヘッダーの色が、IT が定義するブランド色になります。
 - アプリ: **[アプリ]** タブの **[おすすめアプリ]** ボタンと **[すべてのアプリ]** ボタンが更新されました。
 - 検索: **[アプリ]** タブの **[検索]** ボタンが浮動アクション ボタンになりました。
-- ナビゲーション アプリ: **[すべてのアプリ]** ビューで **[おすすめ]** 、 **[すべて]** および **[カテゴリ]** のタブ付きビューが表示され、移動がより簡単になります。
+- アプリのナビゲーション: **[すべてのアプリ]** ビューで **[おすすめ]** 、 **[すべて]** 、 **[カテゴリ]** のタブ付きビューが表示され、移動がより簡単になりました。
 - サポート: **[デバイス]** タブと **[IT に連絡]** タブが更新されて、読みやすくなりました。
 
 これらの変更について詳しくは、「[Intune とエンド ユーザー アプリの UI の更新](whats-new-app-ui.md)」をご覧ください。
@@ -229,9 +229,9 @@ Windows および Windows Phone のユーザーがデバイスを登録しよう
 3 月以降、Android 用ポータル サイト アプリでは[材料設計ガイドライン](https://material.io/guidelines/material-design/introduction.html)に従って、最新の外観が作成されます。 この改善されたユーザー エクスペリエンスには、次のものが含まれます。
 
 * __色__: タブ ヘッダーを、カスタムの色パレットに従って色付けすることができます。
-* __インターフェイス__: [アプリ] タブの [おすすめアプリ] ボタンと [すべてのアプリ] ボタンが更新されました。[検索] ボタンは浮動アクション ボタンになりました。
-* __ナビゲーション__: [すべてのアプリ] で [おすすめ]、[すべて] および [カテゴリ] のタブ付きビューが表示され、移動がより簡単になります。
-* __サービス__: [デバイス] タブと [IT に連絡] タブが読みやすくなりました。
+* __インターフェイス__:[アプリ] タブの [おすすめアプリ] ボタンと [すべてのアプリ] ボタンが更新されました。[検索] ボタンは浮動アクション ボタンになりました。
+* __ナビゲーション__:[すべてのアプリ] ビューで [おすすめ]、[すべて]、[カテゴリ] のタブ付きビューが表示され、移動がより簡単になりました。
+* __サービス__:[デバイス] タブと [IT に連絡] タブが読みやすくなりました。
 
 [UI の更新ページ](whats-new-app-ui.md)で、更新前と後のイメージを確認できます。
 
@@ -256,7 +256,7 @@ Azure の Intune プレビューの新機能は[ここ](whats-new.md)で確認�
 登録されているデバイスと登録されていないデバイスの両方に対して、新しいアプリ保護レポートが追加されました。 詳細については、「[Microsoft Intune でのモバイル アプリ管理ポリシーの監視](../apps/app-protection-policies-monitor.md)」を参照してください。
 
 #### <a name="android-711-support---694397--"></a>Android 7.1.1 のサポート <!--694397-->
-Intune では Android 7.1.1 が完全にサポートされ、管理されるようになりました。
+Intune では、Android 7.1.1 を完全にサポートし管理できるようになりました。
 
 #### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them---unknown--"></a>デバイスが無効か、管理コンソールとデバイスが通信できない問題を解決 <!--unknown-->
 ユーザーのデバイスと Intune の接続が失われるとき、新しいトラブルシューティング手順を指示できます。会社リソースへのアクセスを回復するのに役立ちます。 「[デバイスが無効か、管理コンソールとデバイスが通信できない](../enrollment/troubleshoot-device-enrollment-in-intune.md#devices-are-inactive-or-the-admin-console-cant-communicate-with-them)」を参照してください。
@@ -323,13 +323,13 @@ __Azure Portal に移動する登録での多要素認証__ <!--VSO 750545-->
 これまで、Intune の登録に MFA を設定するには、Intune コンソールまたは構成マネージャー (2016 年 10 月のリリースより前) コンソールを使用しました。 この機能更新により、今後は Intune の資格情報で [Microsoft Azure Portal ](https://manage.windowsazure.com)にログインし、Azure AD を使用して MFA の設定を構成するようになります。 詳細については、[こちら](https://aka.ms/mfa_ad)をご覧ください。
 
 __中国で利用可能になった Android 用ポータル サイト アプリ__ <!--VSO 658093-->
-Android 用ポータル サイト アプリが中国でダウンロードできるようになりました。 中国には Google Play ストアがないので、Android デバイスは中国のアプリ マーケットプレースからアプリを入手する必要があります。 Android 用ポータル サイト アプリは、以下のストアでダウンロードできます。
+Android 用ポータル サイト アプリが中国でダウンロードできるようになりました。 中国には Google Play ストアがないため、Android デバイスでは中国のアプリ マーケットプレースからアプリを入手する必要があります。 Android 用ポータル サイト アプリは、以下のストアでダウンロードできます。
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
 * [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
 * [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
 * [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
 
-Android 用ポータル サイト アプリは、Google Play 開発者サービスを使って Microsoft Intune サービスと通信します。 中国では Google Play 開発者サービスをまだ利用できないので、次のタスクには最大 8 時間かかることがあります。
+Android 用ポータル サイト アプリは、Google Play サービスを使って Microsoft Intune サービスと通信します。 中国では Google Play 開発者サービスをまだ利用できないので、次のタスクには最大 8 時間かかることがあります。
 
 |Intune 管理コンソール| Android 用 Intune ポータル サイト アプリ |Intune ポータル サイト Web サイト|
 |---|---|---|
@@ -361,9 +361,9 @@ __Windows 10 デバイスで使用可能な新しい Microsoft Intune ポータ�
 > [!IMPORTANT]
 > __Intune と Android for Work の更新プログラム__ __[必須]__ の操作を使用して Android for Work アプリを展開できますが、Intune グループが新しい Azure AD グループ エクスペリエンスに移行された場合、 __[利用可能]__ としてのみアプリを展開できます。
 
-__Cordova プラグイン用 Intune アプリ SDK で登録なしの MAM をサポート開始__ アプリ開発者は、Cordova プラグイン用 Intune アプリ SDK を使用して、Android および iOS 用の Cordova ベースのアプリでデバイス登録を行わずに MAM 機能を有効化できるようになりました。 Cordova プラグイン用の Intune アプリ SDK は[こちら](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)にあります。
+__Cordova プラグイン用 Intune アプリ SDK で登録なしの MAM をサポート開始__ アプリ開発者は、Cordova プラグイン用 Intune アプリ SDK を使用して、Android および iOS/iPadOS 用の Cordova ベースのアプリでデバイス登録を行わずに MAM 機能を有効化できるようになりました。 Cordova プラグイン用の Intune アプリ SDK は[こちら](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)にあります。
 
-__Intune アプリ SDK Xamarin コンポーネントで登録なしの MAM のサポート開始__ アプリ開発者は、Intune アプリ SDK Xamarin コンポーネントを使用して、Android および iOS 用の Xamarin ベースのアプリでデバイス登録を行わずに MAM 機能を有効化できるようになりました。 Intune アプリ SDK Xamarin コンポーネントは[こちら](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)にあります。
+__Intune アプリ SDK Xamarin コンポーネントで登録なしの MAM のサポート開始__ アプリ開発者は、Intune アプリ SDK Xamarin コンポーネントを使用して、Android および iOS/iPadOS 用の Xamarin ベースのアプリでデバイス登録を行わずに MAM 機能を有効化できるようになりました。 Intune アプリ SDK Xamarin コンポーネントは[こちら](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)にあります。
 
 ### <a name="notices"></a>通知
 

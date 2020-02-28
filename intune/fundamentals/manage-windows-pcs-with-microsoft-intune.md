@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb67cf2cb17b78c4034c3b73e229e160723d975e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: a4fdbf7ca252af9eb8513d437e3275692a1f8d13
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414390"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415237"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune ソフトウェア クライアントを使用して Windows PC をコンピューターとして管理する
 
@@ -30,7 +30,7 @@ ms.locfileid: "73414390"
 > [!WARNING]
 > Microsoft は、[2020 年 1 月 14 日に Windows 7 のサポートが終了する](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)ことを発表しました。 この日に、Intune でも Windows 7 を実行しているデバイスに対するサポートが廃止されます。 Microsoft は、任意のサービスやサポートの中断を回避するために、Windows 10 に移行することを強くお勧めします。
 > 
-> 詳細については、「[Intune plan for change: nearing end of support for Windows 7](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7)」(Intune の変更の計画: Windows 7 のサポート終了間近) をご覧ください。
+> 詳細については、[変更の計画に関するブログ記事](https://aka.ms/Windows7_Intune)を参照してください。
 
 > [!NOTE]
 > 以下に説明するように、Microsoft Intune を使用して、[モバイル デバイス管理 (MDM) によりモバイル デバイスとして](../enrollment/windows-enroll.md)、または Intune ソフトウェア クライアントによりコンピューターとして、Windows PC を管理できます。 しかし、Microsoft では、可能な場合は常に [MDM 管理ソリューションを使用する](../enrollment/windows-enroll.md)ことをお勧めします。 詳細については、「[Windows PC のコンピューターとしての管理とモバイル デバイスとしての管理の比較](pc-management-comparison.md)」をご覧ください。 
@@ -49,7 +49,7 @@ Intune は、ソフトウェア クライアントを使って、最大 7,000 �
 **ハードウェア**:  
 Intune クライアント ソフトウェアをインストールするハードウェアの最小要件を次に示します。
 
-|要件|詳細情報|
+|要件|説明|
 |---------------|--------------------|
 |ネットワーク|クライアントでは、PC がインターネット接続できる必要があります。|
 |プロセッサとメモリ|PC のオペレーティング システムに対するプロセッサ要件と RAM 要件を参照してください。|
@@ -58,11 +58,11 @@ Intune クライアント ソフトウェアをインストールするハード
 **ソフトウェア**:  
 クライアント ソフトウェアをインストールするソフトウェアの要件を次に示します。
 
-|要件|詳細情報|
+|要件|説明|
 |---------------|--------------------|
 |オペレーティング システム | Windows 7 SP1 および Windows 8.1 以降を実行している Windows デバイスであること。 </br></br>**Home エディションのバージョンはサポートされていません。**|
 |管理者のアクセス許可|クライアント ソフトウェアをインストールするアカウントは、そのデバイスのローカル管理者のアクセス許可を持っている必要があります。|
-|Windows インストーラー 3.1|PC には Windows インストーラー 3.1 以降がインストールされている必要があります。<br /><br />PC で Windows インストーラーのバージョンを確認するには<br /><br />  PC で、 **%windir%\System32\msiexec.exe** を右クリックし、 **[プロパティ]** をクリックします。<br /><br />最新バージョンの Windows インストーラーは、Microsoft Developer Network Web サイトの「 [Windows Installer Redistributables (Windows インストーラー再頒布可能パッケージ)](https://go.microsoft.com/fwlink/?LinkID=234258) 」からダウンロードできます。|
+|Windows Installer 3.1|PC には Windows インストーラー 3.1 以降がインストールされている必要があります。<br /><br />PC で Windows インストーラーのバージョンを確認するには<br /><br />  PC で、 **%windir%\System32\msiexec.exe** を右クリックし、 **[プロパティ]** をクリックします。<br /><br />最新バージョンの Windows インストーラーは、Microsoft Developer Network Web サイトの「 [Windows Installer Redistributables (Windows インストーラー再頒布可能パッケージ)](https://go.microsoft.com/fwlink/?LinkID=234258) 」からダウンロードできます。|
 |互換性のないクライアント ソフトウェアを削除する|Intune クライアント ソフトウェアをインストールする前に、その PC から Configuration Manager、Operations Manager、および Service Manager のクライアント ソフトウェアをアンインストールします。|
 
 ## <a name="deploying-the-intune-software-client"></a>Intune ソフトウェア クライアントの展開

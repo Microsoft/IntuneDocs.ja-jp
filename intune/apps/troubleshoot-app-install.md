@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be66f99006b06dce9f9bfe21eafa9f2be302e7b9
-ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
-ms.translationtype: MTE75
+ms.openlocfilehash: 13aea23f58c69d5c7e38f77ae7dfa19bd12edd35
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76540981"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511653"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>アプリのインストールに関する問題のトラブルシューティング
 
@@ -50,7 +50,7 @@ Intune では、特定のユーザーのデバイスにインストールされ�
     > 同一のアプリを複数のグループに割り当てることは可能ですが、アプリに対して異なる意図したアクション (インテント) を使用する必要があります。 たとえば、アプリの割り当て中にアプリがユーザーのために除外される場合、アプリの解決されたインテントに **[除外されています]** と表示されます。 詳細については、「[アプリのインテントの競合を解決する方法](apps-deploy.md#how-conflicts-between-app-intents-are-resolved)」をご覧ください。<br><br>
     > 必要なアプリのインストールに失敗した場合、自分で、あるいはヘルプデスクに依頼してデバイスを同期し、アプリのインストールを再試行できます。
 
-アプリのインストールのエラーに関する詳細では、問題点が示されます。 これらの詳細を使用して、問題解決のための最適なアクションを決定することができます。 アプリのインストールに関する問題のトラブルシューティングの詳細については、「[Android アプリのインストール エラー](app-install-error-codes.md#android-app-installation-errors)」と「[iOS アプリのインストール エラー](app-install-error-codes.md#ios-app-installation-errors)」のセクションを参照してください。
+アプリのインストールのエラーに関する詳細では、問題点が示されます。 これらの詳細を使用して、問題解決のための最適なアクションを決定することができます。 アプリのインストールに関する問題のトラブルシューティングの詳細については、「[Android アプリのインストール エラー](app-install-error-codes.md#android-app-installation-errors)」と「[iOS アプリのインストール エラー](app-install-error-codes.md#ios-and-ipados-app-installation-errors)」のセクションを参照してください。
 
 > [!Note]  
 > **[トラブルシューティング]** ウィンドウには、ブラウザーで [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) に移動してアクセスすることもできます。
@@ -65,7 +65,7 @@ Intune では、特定のユーザーのデバイスにインストールされ�
   3. [Azure Active Directory のユーザー](https://portal.azure.com/#pane/Microsoft_AAD_IAM/UsersManagementMenupane/AllUsers)に移動します。
   4. 影響を受けているユーザーを選択し、 **[デバイス]** をクリックします。
   5. ユーザーが設定された制限を超えている場合は、不要になった古いレコードを削除します。
-- iOS DEP デバイスの場合は、確実にユーザーが Intune のデバイスの概要ペインに **[ユーザーによって登録済み]** と表示されているようにします。 NA と表示されている場合は、Intune ポータル サイトの構成ポリシーを展開します。 詳細については、[ポータル サイト アプリの構成](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices)に関する記事をご覧ください。
+- iOS/iPadOS DEP デバイスの場合は、Intune の [デバイスの概要] ウィンドウで、ユーザーが **[ユーザーによって登録済み]** として表示されていることを確認します。 NA と表示されている場合は、Intune ポータル サイトの構成ポリシーを展開します。 詳細については、[ポータル サイト アプリの構成](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-and-ipados-dep-devices)に関する記事をご覧ください。
 
 ## <a name="win32-app-installation-troubleshooting"></a>Win32 アプリのインストールのトラブルシューティング
 
@@ -121,5 +121,5 @@ Win32 アプリのインストール ログを収集するには、まずセク�
 ## <a name="next-steps"></a>次のステップ
 
 - Intune のトラブルシューティングに関する追加情報については、「[トラブルシューティング ポータルを使用して社内のユーザーをサポートする](../fundamentals/help-desk-operators.md)」をご覧ください。 
-- Microsoft Intune の既知の問題について学習します。 詳細については、「[Intune カスタマー サクセス](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)」を参照してください。
+- Microsoft Intune の既知の問題について学習します。 詳細については、[Intune のお客様の成功事例](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)に関するページを参照してください。
 - さらに支援が必要ですか? 「[Microsoft Intune のサポートを受ける方法](../fundamentals/get-support.md)」を参照してください。

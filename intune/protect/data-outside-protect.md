@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea4f4cd53af06bf6ec47ed14976526116d963690
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 7520e5883a89d6cd040be670aedc8436cc40fadb
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502387"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515188"
 ---
 # <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>Microsoft Intune を使用して、会社のデータへの無許可のアクセスを防止する
 
@@ -46,9 +46,9 @@ Office 365 のドキュメントと電子メールを分類し、ラベル付け
 
 [機密情報が含まれるドキュメントおよび電子メールを保護する方法とタイミング](https://docs.microsoft.com/information-protection/deploy-use/help-users)について詳細を共有できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 次の手順として、会社データの保護機能を上げる他の方法について学習できます。次のようなものがあります。 
 
-* [iOS および Android デバイスで Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq) を使用する方法を学習します。
+* [iOS/iPadOS デバイスおよび Android デバイスで Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq) を使用する方法を学習します。
 * Windows Phone および Mac コンピューターの場合は、[Microsoft Rights Management 共有アプリケーション](https://technet.microsoft.com/dn451248)について詳細を確認してください。

@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ab41026cd9b2ceeaaa478fc27c984d0d89db4c5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 3a15bf0bd8ed0a46f330b159e45d0a5d5a4c7059
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74058522"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510386"
 ---
 # <a name="device-management-overview"></a>デバイス管理の概要
 
@@ -33,7 +33,7 @@ ms.locfileid: "74058522"
 
 その答えが [Microsoft Intune](what-is-intune.md) です。 Intune ではモバイル デバイス管理 (MDM) とモバイル アプリケーション管理 (MAM) を行います。 MDM または MAM ソリューションの主要なタスクには次のようなものがあります。
 
-- 多様なモバイル環境をサポートし、iOS、Android、Windows、および macOS デバイスを安全に管理します。
+- 多様なモバイル環境をサポートし、iOS/iPadOS、Android、Windows、および macOS デバイスを安全に管理します。
 - デバイスやアプリを組織のセキュリティ要件に準拠させます。
 - 組織所有のデバイスと個人のデバイスで、組織のデータを安全な状態に保つために役立つポリシーを作成します。
 - 1 つの統合されたモバイル ソリューションを使用して、これらのポリシーを適用し、デバイス、アプリ、ユーザー、およびグループの管理に役立てます。
@@ -47,7 +47,7 @@ Microsoft などの多くの組織で、Intune を使用して、ユーザーが
 
 ユーザーがさまざまなプラットフォームを使用した複数のデバイスを所有していることはよくあることです。 たとえば、従業員は、仕事に Surface Pro を使用し、個人の生活では Android モバイル デバイスを使用していることがあります。 また、個人がこれらの複数のデバイスから Microsoft Outlook や SharePoint などの組織のリソースにアクセスすることもよくあることです。
 
-Intune により、ユーザーごと、および iOS、macOS、Android、Windows などの各デバイスで実行されるさまざまなプラットフォームごとに、複数のデバイスを管理できます。 Intune では、デバイス プラットフォームによってポリシーと設定が区別されます。 そのため、特定のプラットフォームのデバイスを簡単に管理および表示できます。
+Intune により、ユーザーごと、および iOS/iPadOS、macOS、Android、Windows などの各デバイス上で実行されるさまざまなプラットフォームごとに、複数のデバイスを管理できます。 Intune では、デバイス プラットフォームによってポリシーと設定が区別されます。 そのため、特定のプラットフォームのデバイスを簡単に管理および表示できます。
 
 **[一般的なシナリオ](common-scenarios.md)** は、モバイル デバイスを使用する際のよくある疑問を Intune によって解決する方法を確認できる優れたリソースです。 以下に関するシナリオを参照できます。  
 
@@ -55,7 +55,7 @@ Intune により、ユーザーごと、および iOS、macOS、Android、Window
 - Office 365 への安全なアクセス
 - 個人のデバイスを使用して、組織のリソースにアクセスする
 
-Intune の詳細については、「 [intune とは](what-is-intune.md)」を参照してください。
+Intune の詳細については、[Intune の概要](what-is-intune.md)に関する記事をご覧ください。
 
 ## <a name="integration-with-secure-and-protect-services"></a>セキュリティおよび保護サービスとの統合
 
@@ -63,7 +63,7 @@ Intune の詳細については、「 [intune とは](what-is-intune.md)」を�
 
 - **Microsoft 365** は一般的な IT タスクを簡略化する重要なコンポーネントです。 Microsoft 365 管理センターでは、ユーザーを作成し、グループを管理します。 また、Intune、Azure AD などの他のサービスにもアクセスできます。
 
-  たとえば、Microsoft 365 で iOS デバイス グループを作成します。 さらに、Intune を使用して、アプリ ストアへのアクセス、AirDrop の使用、iCloud へのバックアップ、Apple の Web フィルターの使用などの iOS 機能に焦点を合わせたポリシーを iOS デバイス グループにプッシュできます。
+  たとえば、Microsoft 365 で iOS/iPadOS デバイス グループを作成します。 さらに、Intune を使用して、アプリ ストアへのアクセス、AirDrop の使用、iCloud へのバックアップ、Apple の Web フィルターの使用などの iOS/iPadOS 機能に焦点を合わせたポリシーを iOS/iPadOS デバイス グループにプッシュできます。
 
 - **Windows Defender** には、Windows 10 デバイスを保護するための多くのセキュリティ機能が含まれています。 たとえば、Intune と Windows Defender を一緒に使用すると、次のことができます。
 
@@ -97,12 +97,12 @@ Intune をセットアップするときに、Azure portal でのみ作業して
 - [ロールの管理](role-based-access-control.md)  
 - ソフトウェア更新プログラムの管理
   - [Windows 10 更新の管理](../protect/windows-update-for-business-configure.md)  
-  - [iOS 更新の管理](../protect/software-updates-ios.md)  
+  - [iOS/iPadOS 更新の管理](../protect/software-updates-ios.md)  
 - [Azure Active Directory](https://docs.microsoft.com/azure/active-directory)  
 - [ユーザーの管理](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [グループとメンバーの管理](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)
 - [トラブルシューティング](help-desk-operators.md)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 MDM または MAM ソリューションの使用を開始する準備ができたら、Intune のセットアップ、デバイスの登録、およびポリシーの作成開始のためのさまざまな手順を進めます。 [Microsoft 365 のモバイル デバイス管理](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)に関する記事も推奨されるリソースです。

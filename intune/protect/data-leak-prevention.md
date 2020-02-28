@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3affffdf69445ced667d718587303a5409423bf
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 0d9e61cbe4f6d6e07c61fe182e639e715996f9ee
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502401"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514440"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Microsoft Intune を使用して、管理されていないデバイスでのデータ漏洩を防止する
 
@@ -47,7 +47,7 @@ Intune アプリの保護ポリシーは、デバイスの管理に依存しま�
 
 ## <a name="action-plan"></a>行動計画
 
-iOS および Android デバイスの場合:
+iOS/iPadOS および Android デバイスの場合:
 
 1. [アプリ保護ポリシー](../apps/app-protection-policy.md)のしくみをご確認ください。
 2. Office モバイル アプリで[アプリ保護ポリシーを作成して展開する](../apps/app-protection-policies.md)方法をご確認ください。
@@ -63,9 +63,9 @@ Windows 10 デバイスの場合:
 
 必要に応じて、追加情報を提供する次のリンクを共有してください。
 
-* [アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](../fundamentals/end-user-mam-apps-ios.md)
+* [アプリ保護ポリシーを使用して iOS/iPadOS アプリを管理するときの注意点](../fundamentals/end-user-mam-apps-ios.md)
 * [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](../fundamentals/end-user-mam-apps-android.md)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 EMS または Office 365 のさまざまなシナリオを有効にする支援をご希望ですか? Microsoft 365、Enterprise Mobility + Security、または Azure Active Directory Premium のライセンスを 150 以上お持ちでしたら、[FastTrack の特典](https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program)をご利用いただけます。

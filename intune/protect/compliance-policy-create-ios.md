@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune での iOS デバイスのコンプライアンス設定 - Azure | Microsoft Docs
-description: Microsoft Intune で iOS デバイスにコンプライアンスを設定するときに使用できるすべての設定の一覧を表示します。 電子メールの要求、脱獄されたまたはルート化されたデバイスの確認、許可される最小および最大のオペレーティング システムの設定、任意のパスワード制限の設定 (パスワードの長さと非アクティブの状態のデバイスを含む)、アプリの制限などを行います。
+title: Microsoft Intune での iOS および iPadOS デバイスのコンプライアンス設定 - Azure | Microsoft Docs
+description: Microsoft Intune で iOS および iPadOS デバイスにコンプライアンスを設定するときに使用できるすべての設定の一覧を表示します。 電子メールの要求、脱獄されたまたはルート化されたデバイスの確認、許可される最小および最大のオペレーティング システムの設定、任意のパスワード制限の設定 (パスワードの長さと非アクティブの状態のデバイスを含む)、アプリの制限などを行います。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9bcfed67eda96bb4d79317bcc69d21a5f8197bc
-ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
-ms.translationtype: MTE75
+ms.openlocfilehash: 437673878335b04b76c53b13f18acac32213720a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77074633"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514032"
 ---
-# <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune を使用してデバイスを準拠または非準拠としてマークするための iOS 設定
+# <a name="iosipados-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune を使用してデバイスを準拠または非準拠としてマークするための iOS および iPadOS 設定
 
-この記事では、Intune で iOS デバイスに構成できるさまざまなコンプライアンス設定の一覧を示して説明します。 モバイル デバイス管理 (MDM) ソリューションの一部として、これらの設定を使用して、電子メールを要求する、ルート化された (脱獄された) デバイスを非準拠としてマークする、許容される脅威レベルを設定する、パスワードの有効期限を設定するなどを行います。
+この記事では、Intune で iOS および iPadOS デバイスに構成できるさまざまなコンプライアンス設定の一覧を示して説明します。 モバイル デバイス管理 (MDM) ソリューションの一部として、これらの設定を使用して、電子メールを要求する、ルート化された (脱獄された) デバイスを非準拠としてマークする、許容される脅威レベルを設定する、パスワードの有効期限を設定するなどを行います。
 
 この機能は、以下に適用されます。
 
@@ -86,11 +86,11 @@ Intune サービス管理者は、組織のリソースの保護に役立てる�
 ### <a name="password"></a>パスワード
 
 > [!NOTE]
-> iOS デバイスにコンプライアンスまたは構成ポリシーが適用されると、ユーザーは 15 分ごとにパスコードを設定するように求められます。 パスコードを設定するまで継続してユーザーは入力を求められます。 iOS デバイスにパスコードが設定されると、暗号化プロセスが自動的に開始されます。 パスコードが無効になるまで、デバイスは暗号化されたままになります。
+> iOS および iPadOS デバイスにコンプライアンスまたは構成ポリシーが適用されると、ユーザーは 15 分ごとにパスコードを設定するように求められます。 パスコードを設定するまで継続してユーザーは入力を求められます。 iOS および iPadOS デバイスにパスコードが設定されると、暗号化プロセスが自動的に開始されます。 パスコードが無効になるまで、デバイスは暗号化されたままになります。
 
 - **[モバイル デバイスのロック解除にパスワードを必要とする]** :  
   - **[未構成]** ("*既定値*") - この設定に対して準拠であるか非準拠であるかの評価は行われません。  
-  - **[必須]** - デバイスにアクセスするユーザーにパスワードを入力するよう求めます。 パスワードを使用する iOS デバイスは暗号化されます。
+  - **[必須]** - デバイスにアクセスするユーザーにパスワードを入力するよう求めます。 パスワードを使用する iOS および iPadOS デバイスは暗号化されます。
 
 - **[単純なパスワード]** :  
   - **[未構成]** ("*既定*") - ユーザーは、**1234** や **1111** のような単純なパスワードを作成することができます。
@@ -125,7 +125,7 @@ Intune サービス管理者は、組織のリソースの保護に役立てる�
   バンドル ID をポリシーに追加することでアプリを制限できます。 デバイスにアプリがインストールされている場合、そのデバイスは非準拠としてマークされます。
 
   - **[アプリ名]** - バンドル ID の識別を容易にするわかりやすい名前を入力します。
-  - **[アプリ バンドル ID]** - アプリ プロバイダーによって割り当てられた一意のバンドル ID を入力します。 バンドル ID を検索するには、「[How to find the bundle ID for an iOS app](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app)」 (iOS アプリのバンドル ID を検索する方法) を参照してください (別の Microsoft Web サイトが開きます)。  
+  - **[アプリ バンドル ID]** - アプリ プロバイダーによって割り当てられた一意のバンドル ID を入力します。 バンドル ID を検索するには、「[iOS および iPadOS アプリのバンドル ID を検索する方法](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app)」を参照してください (別の Microsoft Web サイトが開きます)。  
 
 ## <a name="next-steps"></a>次のステップ
 

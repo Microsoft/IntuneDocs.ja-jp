@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune で macOS デバイス向けの VPN 設定を構成する - Azure | Microsoft Docs
-description: 仮想プライベートネットワーク (VPN) 構成プロファイルを追加または作成します。これには、接続の詳細、分割トンネリング、識別子を使用したカスタム VPN 設定、キーと値のペア、構成スクリプトを使用したプロキシ設定、IP または FQDN アドレス、の TCP ポートが含まれます。MacOS を実行しているデバイスで Microsoft Intune します。
+description: Microsoft Intune で、macOS を稼働しているデバイスに対して、仮想プライベート ネットワーク (VPN) 構成プロファイルを追加または作成します。これには、接続の詳細、分割トンネリング、識別子を使用したカスタム VPN 設定、キーと値のペア、構成スクリプトを使用したプロキシ設定、IP または FQDN アドレス、および TCP ポートが含まれます。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0bb2cb757e944369642807f117683dad3a9805a
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: b20a7eca6f71d46380f9fcdb1674226cc54a104f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206263"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510781"
 ---
 # <a name="add-vpn-settings-on-macos-devices-in-microsoft-intune"></a>Microsoft Intune で macOS デバイス向けの VPN 設定を追加する
 
@@ -35,7 +35,7 @@ ms.locfileid: "75206263"
 [デバイス構成プロファイルを作成します](vpn-settings-configure.md)。
 
 > [!NOTE]
-> これらの設定は、すべての登録の種類で使用できます。 登録の種類の詳細については、「 [macOS の登録](../enrollment/macos-enroll.md)」を参照してください。
+> これらの設定は、すべての登録の種類で使用できます。 登録の種類の詳細については、[macOS の登録](../enrollment/macos-enroll.md)に関する記事をご覧ください。
 
 ## <a name="base-vpn-settings"></a>基本 VPN 設定
 
@@ -53,13 +53,13 @@ ms.locfileid: "75206263"
   - **Custom VPN**
 - **[分割トンネリング]** :このオプションを **[有効]** または **[無効]** にします。これにより、トラフィックに応じて使用する接続をデバイスが判断できます。 たとえば、ホテルにいるユーザーは、業務ファイルへのアクセスに VPN 接続を使用しますが、通常の Web 閲覧にはホテルの標準ネットワークを使用します。
 
-<!--- **Per-app VPN** - Select this option if you want to associate this VPN connection with an iOS or macOS app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you assign the software. For more information, see [How to assign and monitor apps](../apps/apps-deploy.md). --->
+<!--- **Per-app VPN** - Select this option if you want to associate this VPN connection with an iOS/iPadOS or macOS app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you assign the software. For more information, see [How to assign and monitor apps](../apps/apps-deploy.md). --->
 
 ## <a name="custom-vpn-settings"></a>カスタム VPN 設定
 
 **[カスタム VPN]** を選択した場合は、以下の追加設定を構成します。
 
-- **Vpn 識別子**: 使用している vpn アプリの識別子を入力します。 この識別子は、VPN プロバイダーによって指定されます。
+- **[VPN 識別子]** : 使用している VPN アプリの識別子を入力します。 この識別子は、VPN プロバイダーによって提供されます。
 - **[カスタム VPN 属性に対してキーと値を入力します]** :VPN 接続をカスタマイズするための**キー**と**値**を追加またはインポートします。 これらの値は、通常は VPN プロバイダーから提供されます。
 
 ## <a name="proxy-settings"></a>プロキシの設定
@@ -72,4 +72,4 @@ ms.locfileid: "75206263"
 
 プロファイルは作成されましたが、まだ何も行われていません。 次に、[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
 
-[Android](vpn-settings-android.md)、 [android Enterprise](vpn-settings-android-enterprise.md)、 [iOS](vpn-settings-ios.md)、および[Windows 10](vpn-settings-windows-10.md)デバイスで VPN 設定を構成します。
+[Android](vpn-settings-android.md)、[Android エンタープライズ](vpn-settings-android-enterprise.md)、[iOS/iPadOS](vpn-settings-ios.md)、および [Windows 10](vpn-settings-windows-10.md) デバイスに対して VPN 設定を構成します。

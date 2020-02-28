@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/26/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c24c120b033a4db0162e985ef185932dd931eda
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 492c90bc1d032b32ebc3a4b8465163085674f245
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506927"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511448"
 ---
 # <a name="use-custom-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune で macOS デバイス用のカスタム設定を使用する
 
@@ -32,9 +32,9 @@ macOS デバイスを使用するとき、Intune にカスタム設定を取り�
 - [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12)
 - [Apple Profile Manager](https://support.apple.com/profile-manager)
 
-これらのツールを使用して、設定を構成プロファイルにエクスポートすることができます。 Intune では、このファイルをインポートし、macOS のユーザーとデバイスにプロファイルを割り当てます。 割り当てが完了すると、設定が配布されます。 また、組織内の macOS のベースラインまたは標準を作成します。
+これらのツールを使用して、設定を構成プロファイルにエクスポートすることができます。 Intune では、このファイルをインポートし、macOS のユーザーとデバイスにプロファイルを割り当てます。 割り当てが完了すると、設定が配布されます。 また、組織内の macOS のベースラインまたは標準も作成されます。
 
-この記事では、Apple Configurator と Apple Profile Manager の使用に関するガイダンスを提供し、構成できるプロパティについて説明します。
+この記事では、Apple Configurator と Apple Profile Manager の使用に関するいくつかのガイダンスを提供し、構成できるプロパティについて説明します。
 
 ## <a name="before-you-begin"></a>始める前に
 
@@ -56,18 +56,18 @@ macOS デバイスを使用するとき、Intune にカスタム設定を取り�
 
 ## <a name="custom-configuration-profile-settings"></a>カスタム構成プロファイルの設定
 
-- **カスタム構成プロファイル名**: ポリシーの名前を入力します。 この名前は、デバイス上と、Intune の状態に表示されます。
-- **構成プロファイル ファイル**: Apple Configurator または Apple Profile Manager を使用して作成した構成プロファイルを指定します。 インポートしたファイルは、 **[ファイルの内容]** 領域に表示されます。
+- **[カスタム構成プロファイル名]** :ポリシーの名前を入力します。 この名前は、デバイス上と、Intune の状態に表示されます。
+- **[構成プロファイル ファイル]** :Apple Configurator または Apple Profile Manager を使用して作成した構成プロファイルを参照します。 インポートしたファイルは、 **[ファイルの内容]** 領域に表示されます。
 
-  また、`.mobileconfig` ファイルにデバイストークンを追加することもできます。 デバイストークンは、デバイス固有の情報を追加するために使用されます。 たとえば、シリアル番号を表示するには、`{{serialnumber}}` と入力します。 デバイスでは、各デバイスに固有の `123456789ABC`のようなテキストが表示されます。 変数を入力するときは、必ず中かっこ `{{ }}` を使用してください。 [アプリの構成トークン](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)に関する記事には、使用できる変数の一覧が掲載されています。 `deviceid` または他のデバイス固有の値を使用することもできます。
+  また、`.mobileconfig` ファイルにデバイス トークンを追加することもできます。 デバイス トークンは、デバイス固有の情報を追加するために使用されます。 たとえば、シリアル番号を表示するには、`{{serialnumber}}` と入力します。 デバイスでは、各デバイスに固有の `123456789ABC` のようなテキストが表示されます。 変数を入力するときは、必ず中かっこ `{{ }}` を使用してください。 [アプリの構成トークン](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)に関する記事には、使用できる変数の一覧が掲載されています。 `deviceid` または他のデバイス固有の値を使用することもできます。
 
   > [!NOTE]
-  > 変数は UI で検証されず、大文字と小文字が区別されます。 その結果、不適切な入力で保存されたプロファイルが表示される場合があります。 たとえば、`{{deviceid}}` の代わりに `{{DeviceID}}` を入力した場合、リテラル文字列がデバイスの一意の ID の代わりに表示されます。 正しい情報を入力してください。
+  > 変数は UI で検証されず、大文字と小文字が区別されます。 その結果、不適切な入力で保存されたプロファイルが表示される場合があります。 たとえば、`{{deviceid}}` の代わりに `{{DeviceID}}` を入力した場合、リテラル文字列がデバイスの一意の ID の代わりに表示されます。 必ず、正しい情報を入力してください。
 
 **[OK]**  >  **[作成]** を選択して変更を保存します。 プロファイルが作成されて、プロファイル一覧に表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 プロファイルは作成されましたが、まだ何も行われていません。 次に、[プロファイルを割り当てます](device-profile-assign.md)。
 
-[iOS デバイスでプロファイルを作成する](../custom-settings-ios.md)方法を確認してください。
+[iOS/iPadOS デバイスに対するプロファイルを作成する](../custom-settings-ios.md)方法を確認してください。

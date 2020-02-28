@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61b703837598ddbe2c0c44874928b4444466c811
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
-ms.translationtype: MTE75
+ms.openlocfilehash: f3b32268d0b04dee84a737b9a1c768bc4fab7202
+ms.sourcegitcommit: 3964e6697b4d43e2c69a15e97c8d16f8c838645b
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886786"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77556501"
 ---
 # <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>Microsoft Intune での BitLocker ポリシーのトラブルシューティング
 
@@ -33,13 +33,15 @@ BitLocker ドライブ暗号化は、Microsoft Windows オペレーティング 
 
 Microsoft Intune を使用して Windows 10 デバイスの BitLocker を管理するには、次の方法があります。
 
-- **デバイス構成ポリシー** - エンドポイント保護を管理するためのデバイス構成プロファイルを作成するときに、Intune で特定の組み込みポリシー オプションを使用できます。 これらのオプションを見つけるには、[エンドポイント保護のデバイス プロファイルを作成](endpoint-protection-configure.md#create-a-device-profile-containing-endpoint-protection-settings)し、 *[プラットフォーム]* に **[Windows 10 以降]** を選択し、 *[設定]* で **[Windows 暗号化]** カテゴリを選択します。 
+- **デバイス構成ポリシー** - エンドポイント保護を管理するためのデバイス構成プロファイルを作成するときに、Intune で特定の組み込みポリシー オプションを使用できます。 これらのオプションを見つけるには、[エンドポイント保護のデバイス プロファイルを作成](endpoint-protection-configure.md#create-a-device-profile-containing-endpoint-protection-settings)し、*[プラットフォーム]* に **[Windows 10 以降]** を選択し、*[設定]* で **[Windows 暗号化]** カテゴリを選択します。 
 
    使用可能なオプションと機能については、「[Windows の暗号化](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption)」を参照してください。
 
 - **セキュリティ ベースライン** - [セキュリティ ベースライン](security-baselines.md)は、Windows デバイスをセキュリティで保護するために、関連するセキュリティ チームによって推奨される設定および既定値の既知のグループです。 *MDM のセキュリティ ベースライン*や *Microsoft Defender ATP ベースライン*のように異なるベースライン ソースで同じ設定を管理できるだけでなく、互いに異なる設定も管理できます。 また、デバイス構成ポリシーで管理するのと同じ設定を管理することもできます。 
 
-Intune に加えて、BitLocker 設定は、グループ ポリシーなどの他の方法で管理することも、デバイス ユーザーが手動で設定することもできます。
+Intune に加えて、Modern Standby と HSTI に準拠しているハードウェアでは、これらの機能のいずれかを使用すると、ユーザーがデバイスを Azure AD に参加させるたびに、BitLocker デバイス暗号化が自動的に有効になります。 Azure AD のポータルでは回復キーもバックアップされるため、ユーザーは必要に応じてセルフサービス用の回復キーを取得できます。
+
+また、BitLocker の設定は、グループ ポリシーなどの他の方法で管理することも、デバイス ユーザーが手動で設定することもできます。
 
 デバイスに設定を適用する方法に関係なく、BitLocker ポリシーは [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) を使用してデバイスで暗号化を構成します。 BitLocker CSP は Windows に組み込まれており、Intune が割り当てられたデバイスに BitLocker ポリシーを展開するときに、ポリシーの設定を有効にするために、Windows レジストリに適切な値を書き込むのが、そのデバイスの BitLocker CSP です。
 
@@ -66,15 +68,15 @@ Windows 10 デバイスで BitLocker の問題を調査するときは、まず�
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 
-2. **[デバイス]**  >  **[構成プロファイル]** の順に選択し、BitLocker 設定を含むプロファイルを選択します。
+2. **[デバイス]** > **[構成プロファイル]** の順に選択し、BitLocker 設定を含むプロファイルを選択します。
 
-3. 表示するプロファイルを選択したら、 **[デバイスの状態]** を選択します。 プロファイルに割り当てられているデバイスが一覧表示され、 *[デバイスの状態]* 列に、デバイスがプロファイルを正常に展開したかどうかが示されます。
+3. 表示するプロファイルを選択したら、**[デバイスの状態]** を選択します。 プロファイルに割り当てられているデバイスが一覧表示され、*[デバイスの状態]* 列に、デバイスがプロファイルを正常に展開したかどうかが示されます。
 
 BitLocker ポリシーを受信しているデバイスと、完全に暗号化されるドライブの間には遅延がある場合があることに注意してください。  
 
 ### <a name="use-control-panel-on-the-client"></a>クライアントでコントロール パネルを使用する  
 
-BitLocker が有効になっており、ドライブが暗号化されているデバイスでは、デバイスのコントロール パネルから BitLocker の状態を確認できます。 デバイスで、 **[コントロール パネル]**  >  **[システムとセキュリティ]**  >  **[BitLocker ドライブ暗号化]** の順に開きます。 次の図に示すように、確認が表示されます。  
+BitLocker が有効になっており、ドライブが暗号化されているデバイスでは、デバイスのコントロール パネルから BitLocker の状態を確認できます。 デバイスで、**[コントロール パネル]** > **[システムとセキュリティ]** > **[BitLocker ドライブ暗号化]** の順に開きます。 次の図に示すように、確認が表示されます。  
 
 ![コントロール パネルで BitLocker が有効になっている](./media/troubleshooting-bitlocker-policies/control-panel.png)
 
@@ -164,10 +166,19 @@ BitLocker ポリシーが Intune によって正常に展開された (BitLocker
 
   2. **BitLocker は、すべてのハードウェアでサポートされているわけではありません**。
      適切なバージョンの Windows を使用している場合でも、基になるデバイスのハードウェアが BitLocker 暗号化の要件を満たしていない可能性があります。 [BitLocker のシステム要件](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements)については、Windows のドキュメントを参照してください。ただし、主な確認事項は、デバイスに互換性のある TPM チップ (1.2 以降) と Trusted Computing Group (TCG) 準拠の BIOS または UEFI ファームウェアが搭載されていることです。
+     
+**Bitlocker 暗号化がサイレント モードで実行されない** - 設定 [他のディスクの暗号化に対する警告] をブロックに設定して Endpoint Protection ポリシーを構成しても、暗号化ウィザードがまだ表示されます。
+
+- **Windows のバージョンでサイレント暗号化がサポートされていることを確認する** バージョン 1803 以降が必要です。 ユーザーがデバイスの管理者でない場合は、バージョン 1809 以降が必要です。 さらに、1809 では、Modern Standby をサポートしていないデバイスのサポートが追加されています
+
+**Bitlocker で暗号化されたデバイスが、Intune コンプライアンス ポリシーで非準拠と表示される** - この問題は、BitLocker 暗号化が完了していない場合に発生します。 ディスク サイズ、ファイル数、BitLocker の設定などの要因によっては、BitLocker 暗号化に時間がかかることがあります。 暗号化が完了すると、デバイスは準拠していると表示されます。 WIndows 更新プログラムのインストール直後に、デバイスが一時的に非準拠になることもあります。
+
+**ポリシーで 256 ビットが指定されていても、デバイスが 128 ビット アルゴリズムを使用して暗号化される** - Windows 10 の既定では、ドライブは XTS-AES 128 ビット暗号化を使用して暗号化されます。 [Autopilot の間の BitLocker に対する 256 ビット暗号化の設定](https://techcommunity.microsoft.com/t5/intune-customer-success/setting-256-bit-encryption-for-bitlocker-during-autopilot-with/ba-p/323791#)に関するガイドを参照してください。
+
 
 **調査の例**
 
-- Windows 10 デバイスに BitLocker ポリシーを展開して、 **[デバイスの暗号化]** 設定にポータルの**エラー**状態が表示されます。
+- Windows 10 デバイスに BitLocker ポリシーを展開して、**[デバイスの暗号化]** 設定にポータルの**エラー**状態が表示されます。
 
 - 名前が示すように、この設定により、管理者は *[BitLocker] > [デバイスの暗号化]* を使用して暗号化を有効にするように要求できます。 前に説明したトラブルシューティングのヒントを使用して、まず MDM 診断レポートを確認します。 このレポートにより、デバイスに正しいポリシーが展開されたことを確認できます。
 
@@ -183,7 +194,7 @@ BitLocker ポリシーが Intune によって正常に展開された (BitLocker
 
 - BitLocker は TPM に依存しているため、Intune またはポリシーの問題が原因で BitLocker が失敗することはありませんが、デバイス自体に TPM チップが搭載されていないか、BIOS で TPM が無効になっていることが原因で失敗することはあります。
 
-  追加のヒントとして、 **[アプリケーションとサービス ログ]**  >  **[Microsoft]**  >  **[Windows]**  >  **[BitLocker API]** の下にある Windows イベント ビューアーでも同じことを確認できます。 **BitLocker API** イベント ログには、TPM を使用できないことを示すイベント ID 853 があります。
+  追加のヒントとして、**[アプリケーションとサービス ログ]** > **[Microsoft]** > **[Windows]** > **[BitLocker API]** の下にある Windows イベント ビューアーでも同じことを確認できます。 **BitLocker API** イベント ログには、TPM を使用できないことを示すイベント ID 853 があります。
 
   ![イベント ID 853](./media/troubleshooting-bitlocker-policies/event-error.png)
 

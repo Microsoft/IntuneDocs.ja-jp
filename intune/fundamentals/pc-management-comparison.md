@@ -1,7 +1,7 @@
 ---
 title: Windows PC 管理オプションの比較
 titleSuffix: Microsoft Intune
-description: Apple Device Enrollment Program (DEP) または Apple Configurator を使用した会社所有の iOS デバイスの登録
+description: Apple Device Enrollment Program (DEP) または Apple Configurator を使用した会社所有の iOS/iPadOS デバイスの登録。
 keywords: ''
 author: dougeby
 ms.author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8fd53e9d12dd38639d204e214aea03d733e584b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: cda9a549cb12ab61da67da91272e9f388d32a2ef
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059196"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514984"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Windows PC のコンピューターとしての管理とモバイル デバイスとしての管理の比較
 

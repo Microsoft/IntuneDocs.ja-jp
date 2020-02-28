@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a479bfa7b6a572ab2191fb651ce04145d8508c4b
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 8aa9fa9462b6278da566a3ff54264540144a38de
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206994"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512264"
 ---
 # <a name="add-wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune で macOS デバイス向けの Wi-Fi 設定を追加する
-
-
 
 特定の Wi-Fi 設定でプロファイルを作成し、macOS デバイスにこのプロファイルを展開することができます。 Microsoft Intune では、ネットワークに対する認証や、PK または SCEP 証明書の追加など、多くの機能が提供されています。
 
@@ -38,7 +36,7 @@ ms.locfileid: "75206994"
 [デバイス プロファイルを作成します](device-profile-create.md)。
 
 > [!NOTE]
-> これらの設定は、すべての登録の種類で使用できます。 登録の種類の詳細については、「 [macOS の登録](../enrollment/macos-enroll.md)」を参照してください。
+> これらの設定は、すべての登録の種類で使用できます。 登録の種類の詳細については、[macOS の登録](../enrollment/macos-enroll.md)に関する記事をご覧ください。
 
 ## <a name="basic-profiles"></a>Basic プロファイル
 
@@ -122,4 +120,4 @@ ms.locfileid: "75206994"
 
 プロファイルは作成されますが、何も実行されません。 次に、[このプロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
 
-[Android](wi-fi-settings-android.md)、 [android Enterprise](wi-fi-settings-android-enterprise.md)、 [iOS](wi-fi-settings-ios.md)、および[Windows 10](wi-fi-settings-windows.md)デバイスで wi-fi 設定を構成します。
+[Android](wi-fi-settings-android.md)、[Android エンタープライズ](wi-fi-settings-android-enterprise.md)、[iOS/iPadOS](wi-fi-settings-ios.md)、および [Windows 10](wi-fi-settings-windows.md) デバイスに対して Wi-Fi 設定を構成します。

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/15/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43a2b00ae824656621c8a586e41ba6425c69ed40
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 0a1bc53e0f05818b28bbd975e0de5cf5c9368afb
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506772"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512859"
 ---
 # <a name="android-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Intune で電子メール、認証、および同期を構成するための Android デバイスの設定
 
@@ -36,51 +36,51 @@ Intune での電子メール プロファイルの詳細については、[電�
 
 ## <a name="android-samsung-knox"></a>Android (Samsung Knox)
 
-- **[電子メール サーバー]** : Exchange サーバーのホスト名を入力します。 たとえば、「`outlook.office365.com`」と入力します。
-- **[アカウント名]** : 電子メール アカウントの表示名を入力します。 この名前は、ユーザーのデバイス上に表示されます。
-- **[AAD からのユーザー名の属性]** : Intune が Azure Active Directory (Azure AD) から取得する名前。 Intune はこのプロファイルで使用されるユーザー名を動的に生成します。 次のようなオプションがあります。
-  - **[ユーザー プリンシパル名]** : `user1` または `user1@contoso.com` などの名前を取得します。
-  - **[ユーザー名]** : `user1` などの名前のみを取得します。
-  - **[SAM アカウント名]** : `domain\user1` などのドメインを要求します。 SAM アカウント名は、Android デバイスにのみ使用されます。
+- **[電子メール サーバー]** :Exchange サーバーのホスト名を入力します。 たとえば、「`outlook.office365.com`」と入力します。
+- **[アカウント名]** :電子メール アカウントの表示名を入力します。 この名前は、ユーザーのデバイス上に表示されます。
+- **[AAD からのユーザー名の属性]** :Intune が Azure Active Directory (Azure AD) から取得する名前。 Intune はこのプロファイルで使用されるユーザー名を動的に生成します。 次のようなオプションがあります。
+  - **[ユーザー プリンシパル名]** :`user1` や `user1@contoso.com` などの名前を取得します。
+  - **[ユーザー名]** :`user1` などの名前のみを取得します。
+  - **[sAM アカウント名]** :`domain\user1` などのドメインを要求します。 SAM アカウント名は、Android デバイスにのみ使用されます。
 
     次の項目も入力します。  
     - **[ユーザー ドメイン名のソース]** : **[AAD]** (Azure Active Directory) または **[カスタム]** を選択します。
 
       **[AAD]** から属性を取得する場合、次を入力します。
-      - **[AAD からのユーザー ドメイン名属性]** : ユーザーの **[完全なドメイン名]** または **[NetBIOS 名]** 属性を取得する選択を行います。
+      - **[AAD からのユーザー ドメイン名属性]** :ユーザーの **[完全なドメイン名]** または **[NetBIOS 名]** 属性を取得する選択を行います。
 
       **[カスタム]** 属性を使用する選択を行っている場合、次を入力します。
-      - **[使用するカスタム ドメイン名]** : Intune がドメイン名として使用する、`contoso.com` や `contoso` などの値を入力します。
+      - **[使用するカスタム ドメイン名]** :Intune がドメイン名として使用する、`contoso.com` や `contoso` などの値を入力します。
 
-- **[AAD からのメール アドレス属性]** : この名前は、Intune が Azure AD から取得する電子メール属性です。 Intune では、このプロファイルに使用される電子メール アドレスが動的に生成されます。 次のようなオプションがあります。
-  - **[ユーザー プリンシパル名]** : 電子メール アドレスとして完全プリンシパル名 (`user1@contoso.com`、`user1` など) を使用します。
-  - **[プライマリ SMTP アドレス]** : プライマリ SMTP アドレス (`user1@contoso.com` など) を使用して Exchange にサインインします。
+- **[AAD からのメール アドレス属性]** :この名前は、Intune が Azure AD から取得する電子メール属性です。 Intune では、このプロファイルに使用される電子メール アドレスが動的に生成されます。 次のようなオプションがあります。
+  - **[ユーザー プリンシパル名]** :電子メール アドレスとして完全プリンシパル名 (`user1@contoso.com`、`user1` など) を使用します。
+  - **[プライマリ SMTP アドレス]** :プライマリ SMTP アドレス (`user1@contoso.com` など) を使用して Exchange にサインインします。
 
-- **[認証方法]** - 電子メール プロファイルで使用する認証方法として、 **[ユーザー名とパスワード]** または **[証明書]** を選択します。
+- **[認証方法]** :電子メール プロファイルで使用する認証方法として、 **[ユーザー名とパスワード]** または **[証明書]** を選択します。
   - **[証明書]** を選択した場合は、Exchange 接続の認証のために事前に作成しておいたクライアント SCEP または PKCS 証明書プロファイルを選択します。
 
 ### <a name="security-settings"></a>セキュリティ設定
 
-- **[SSL]** : 電子メールの送受信および Exchange サーバーとの通信に、SSL (Secure Sockets Layer) 通信を使用します。
-- **[S/MIME]** : S/MIME 暗号化を使用して電子メールを送信します。
+- **[SSL]** :電子メールの送受信および Exchange サーバーとの通信に、SSL (Secure Sockets Layer) 通信を使用します。
+- **[S/MIME]** :S/MIME 暗号化を使用して送信メールを送信します。
   - **[証明書]** を選択した場合は、Exchange 接続の認証のために事前に作成しておいたクライアント SCEP または PKCS 証明書プロファイルを選択します。
 
 ### <a name="synchronization-settings"></a>同期設定
 
-- **[同期するメールの量]** : 同期する電子メールの日数を選択するか、利用可能なすべての電子メールを同期する場合は **[無制限]** を選択します。
-- **[同期スケジュール]** : デバイスが Exchange サーバーからデータを同期するスケジュールを選択します。 **[メッセージの着信時]** を選択すると、電子メールの着信時にデータが同期されます。 **[手動]** を選択した場合は、デバイスのユーザーが同期を開始する必要があります。
+- **[同期する電子メールの日数]** :同期する電子メールの日数を選択します。利用可能なすべての電子メールを同期する場合は **[無制限]** を選択します。
+- **[同期スケジュール]** :デバイスが Exchange サーバーからデータを同期するスケジュールを選択します。 **[メッセージの着信時]** を選択すると、電子メールの着信時にデータが同期されます。 **[手動]** を選択した場合は、デバイスのユーザーが同期を開始する必要があります。
 
 ### <a name="content-sync-settings"></a>コンテンツ同期設定
 
-- **[同期するコンテンツの種類]** : デバイス上で同期するコンテンツの種類を選択します。 **[未構成]** の場合、この設定が無効になります。 **[未構成]** に設定すると、エンド ユーザーがデバイスで同期を有効にしても、デバイスと Intune が同期したとき、ポリシーが再適用され、再び無効になります。 
+- **[同期するコンテンツの種類]** :デバイスで同期するコンテンツの種類を選択します。 **[未構成]** の場合、この設定が無効になります。 **[未構成]** に設定すると、エンド ユーザーがデバイスで同期を有効にしても、デバイスと Intune が同期したとき、ポリシーが再適用され、再び無効になります。 
 
   次の内容を同期できます。  
-  - **[連絡先]** : エンド ユーザーが自分のデバイスに連絡先を同期できるようにするには、 **[有効]** を選択します。
-  - **[カレンダー]** : エンド ユーザーが自分のデバイスにカレンダーを同期できるようにするには、 **[有効]** を選択します。
-  - **[タスク]** : エンド ユーザーが自分のデバイスにタスクを同期できるようにするには、 **[有効]** を選択します。
+  - **[連絡先]** :エンド ユーザーが自分のデバイスに連絡先を同期できるようにするには、 **[有効]** を選択します。
+  - **[カレンダー]** :エンド ユーザーが自分のデバイスにカレンダーを同期できるようにするには、 **[有効]** を選択します。
+  - **[タスク]** :エンド ユーザーが自分のデバイスにタスクを同期できるようにするには、 **[有効]** を選択します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
 
-また、[Android エンタープライズ - 仕事用プロファイル](email-settings-android-enterprise.md)、[iOS](email-settings-ios.md)、[Windows 10 以降](email-settings-windows-10.md)、および [Windows Phone 8.1](email-settings-windows-phone-8-1.md) 用の電子メール プロファイルを作成することもできます。
+また、[Android エンタープライズ - 仕事用プロファイル](email-settings-android-enterprise.md)、[iOS および iPadOS](email-settings-ios.md)、[Windows 10 以降](email-settings-windows-10.md)、および [Windows Phone 8.1](email-settings-windows-phone-8-1.md) 用の電子メール プロファイルを作成することもできます。

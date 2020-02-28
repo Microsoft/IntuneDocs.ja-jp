@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ffcc4a7e48064e6a458126667cf6ab2c4e75777
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: ac670fd5e17462688fdfcde1b047e1071a49353a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502261"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515205"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>デバイス管理を要求せずに Office 365 Exchange Online を保護する
 
-デバイス管理システムを構築せずに、職場のメールへのアクセスを社員に与えることができます。 Intune 経由で Office 365 Exchange Online へのアクセスを与えることができます。 必要な手順を完了する前に、Microsoft 365 または Azure Active Directory (プレミアム) と Intune のライセンスがあることを確認します。 社員には、[サポートされている iOS または Android デバイス](../fundamentals/supported-devices-browsers.md)を与える必要があります。 
+デバイス管理システムを構築せずに、職場のメールへのアクセスを社員に与えることができます。 Intune 経由で Office 365 Exchange Online へのアクセスを与えることができます。 必要な手順を完了する前に、Microsoft 365 または Azure Active Directory (プレミアム) と Intune のライセンスがあることを確認します。 社員には、[サポートされている iOS/iPadOS デバイスまたは Android デバイス](../fundamentals/supported-devices-browsers.md)を与える必要があります。 
 
 デバイス管理システムを設定することもできます。 この種類のアプリ保護は、デバイス管理とは独立して動作します。 
 
@@ -41,10 +41,10 @@ ms.locfileid: "72502261"
 
 ## <a name="what-to-tell-employees-and-students"></a>社員や学生に伝えること
 
-* Microsoft Outlook または Microsoft SharePoint をダウンロードしてインストールするように社員や学生に伝えます。iOS の場合は Apple App Store を、Android の場合は Google Play Store をご利用ください。 
+* Microsoft Outlook または Microsoft SharePoint をダウンロードしてインストールするように社員や学生に伝えます。iOS/iPadOS の場合は Apple App Store を、Android の場合は Google Play ストアをご利用ください。 
 * 最新の認証方法を利用しないアプリへのアクセスを禁止する場合、社員や学生にこの制限のことを知らせます。 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 アプリベースの条件付きアクセスを利用し、会社データのセキュリティを強化しました。 次の手順として、会社データの保護機能を上げる他の方法について学習できます。次のようなものがあります。 
 

@@ -1,7 +1,7 @@
 ---
-title: iOS Classroom アプリの Intune 設定
+title: iOS/iPadOS Classroom アプリの Intune 設定
 titleSuffix: Microsoft Intune
-description: iOS デバイスの Classroom アプリの設定を制御するために使用できる Intune 設定について説明します。
+description: iOS/iPadOS デバイスの Classroom アプリの設定を制御するために使用できる Intune 設定について説明します。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6814b4d98b8512ce95119b05cc299964e486ac64
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 74b9e6818de2853ae22a1fa1bb580b32075dcf19
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74784223"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514423"
 ---
-# <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>iOS Classroom アプリの Intune 設定を構成する方法
+# <a name="how-to-configure-intune-settings-for-the-iosipados-classroom-app"></a>iOS/iPadOS Classroom アプリの Intune 設定を構成する方法
 
 > [!NOTE]
-> 現在、Intune では、クラスルームアプリの構成はサポートしていません。 この記事は、Intune に既存の iOS 教育プロファイルがあるユーザーにのみ適用されます。  
+> 現在、Intune では、Classroom アプリの構成はサポートされていません。 この記事は、Intune に既存の iOS/iPadOS 教育プロファイルがあるユーザーにのみ適用されます。  
 
 ## <a name="introduction"></a>概要
 [Classroom](https://itunes.apple.com/app/id1085319084) は、教師が教室で学習を指導し、生徒のデバイスを操作するのを支援するアプリです。 たとえば、教師はこのアプリを使用して次のことができます。
@@ -39,7 +39,7 @@ ms.locfileid: "74784223"
 - 生徒の iPad を操作し、本の中のブックマークや章に移動する
 - 生徒の iPad を画面を Apple TV に映す
 
-デバイスで Classroom を設定するには、Intune iOS 教育デバイス プロファイルを作成して設定する必要があります。
+デバイスで Classroom を設定するには、Intune iOS/iPadOS 教育デバイス プロファイルを作成して設定する必要があります。
 
 ## <a name="before-you-start"></a>開始する前に
 
@@ -47,9 +47,9 @@ ms.locfileid: "74784223"
 
 - 教師と生徒の両方の iPad を Intune に登録する必要があります。
 - 教師のデバイスに [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) アプリがインストールされていることを確認してください。 アプリは手動でインストールすることも、[Intune アプリ管理](../apps/app-management.md)を利用してインストールすることもできます。
-- 教師のデバイスと生徒のデバイスの間の接続を認証するために証明書を構成する必要があります (手順 2「Intune で iOS Education プロファイルを作成し、割り当てる」を参照してください)。
+- 教師のデバイスと学生のデバイスの間の接続を認証するために証明書を構成する必要があります (手順 2 「Intune で iOS/iPadOS Education プロファイルを作成し、割り当てる」を参照してください)。
 - 教師と生徒の iPad を同じ Wi-Fi ネットワークに置き、Bluetooth を有効にする必要があります。
-- iOS 9.3 以降が内蔵され、監視付きの iPad で Classroom アプリを実行します。
+- Classroom アプリは、iOS/iPadOS 9.3 以降が実行されている監視付きの iPad で実行されます。
 - 今回のリリースでは、Intune は 1:1 シナリオを管理できます。各生徒に専用の iPad が与えられます。
 
 
@@ -72,18 +72,18 @@ SDS は SIS の情報を同期し、それを Azure AD に保管します。 Azu
 - [Microsoft School Data Sync の詳細](https://sds.microsoft.com/)
 - [Azure Active Directory のライセンス詳細](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal)
 
-## <a name="step-2---create-and-assign-an-ios-education-profile-in-intune"></a>手順 2 - Intune で iOS Education プロファイルを作成し、割り当てる
+## <a name="step-2---create-and-assign-an-iosipados-education-profile-in-intune"></a>手順 2 - Intune で iOS/iPadOS Education プロファイルを作成し、割り当てる
 
 ### <a name="configure-general-settings"></a>全般的な設定を構成する
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-3. **[Intune]** ウィンドウで、 **[デバイス構成]** を選択します。
-2. **[デバイス構成]** ウィンドウの **[管理]** セクションで、 **[プロファイル]** を選択します。
+3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
+2. **[デバイス構成]** ウィンドウの **[管理]** セクションで、**[プロファイル]** を選択します。
 5. [プロファイル] ウィンドウで **[プロファイルの作成]** を選択します。
-6. **[プロファイルの作成]** ウィンドウで、iOS Education プロファイルの **[名前]** と **[説明]** を入力します。
-7. **[プラットフォーム]** ドロップダウン リストで、 **[iOS]** を選択します。
-8. **[プロファイルの種類]** ドロップダウン リストで、 **[教育]** を選択します。
-9. **[設定]**  >  **[構成]** の順に選択します。
+6. **[プロファイルの作成]** ウィンドウで、iOS/iPadOS Education プロファイルの **[名前]** と **[説明]** を入力します。
+7. **[プラットフォーム]** ドロップダウン リストで、**[iOS]** を選択します。
+8. **[プロファイルの種類]** ドロップダウン リストで、**[教育]** を選択します。
+9. **[設定]** > **[構成]** の順に選択します。
 
 
 次のセクションでは、教師の iPad と生徒の iPad の間の信頼関係を確立するための証明書を作成します。 証明書は、ユーザー名とパスワードを入力することなく、デバイス間の接続を速やかに認証するために利用されます。
@@ -117,12 +117,12 @@ iOS 教育プロファイルは、PFX 証明書のみをサポートします。
 - **証明書の有効期間** - 証明書が失効するまでの残り時間を指定します。
 指定した証明書テンプレートの有効期限よりも小さい値を指定できますが、大きい値は指定できません。 たとえば、証明書テンプレートで証明書の有効期限が 2 年になっている場合は、この値を 1 年することはできますが、5 年にすることはできません。 また、発行元の CA の証明書の残りの有効期限よりも小さい値を指定する必要があります。
 
-証明書の構成が完了したら、 **[OK]** を選択します。
+証明書の構成が完了したら、**[OK]** を選択します。
 
 ### <a name="configure-student-certificates"></a>生徒の証明書を構成する
 
 1. **[教育]** ウィンドウで **[学生の証明書]** を選択します。
-2. **[学生の証明書]** ウィンドウで、 **[学生用デバイス証明書の種類]** の一覧から **[1:1]** を選択します。
+2. **[学生の証明書]** ウィンドウで、**[学生用デバイス証明書の種類]** の一覧から **[1:1]** を選択します。
 
 #### <a name="configure-student-root-certificate"></a>生徒のルート証明書を構成する
 
@@ -142,18 +142,18 @@ iOS 教育プロファイルは、PFX 証明書のみをサポートします。
 - **証明書の有効期間** - 証明書が失効するまでの残り時間を指定します。
 指定した証明書テンプレートの有効期限よりも小さい値を指定できますが、大きい値は指定できません。 たとえば、証明書テンプレートで証明書の有効期限が 2 年になっている場合は、この値を 1 年することはできますが、5 年にすることはできません。 また、発行元の CA の証明書の残りの有効期限よりも小さい値を指定する必要があります。
 
-証明書の構成が完了したら、 **[OK]** を選択します。
+証明書の構成が完了したら、**[OK]** を選択します。
 
 ## <a name="finish-up"></a>完了
 
 1. **[教育]** ウィンドウで [OK] を選択します。
-2. **[プロファイルの作成]** ウィンドウで、 **[作成]** を選択します。
+2. **[プロファイルの作成]** ウィンドウで、**[作成]** を選択します。
 
 プロファイルが作成され、プロファイルの一覧ウィンドウに表示されます。
 
 学校データと Azure AD を同期したときに作成された教室グループの生徒用デバイスにプロファイルを割り当てます (「[デバイス プロファイルを割り当てる方法](../configuration/device-profile-assign.md)」参照)。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 これで、教師が Classroom アプリを使用するとき、生徒のデバイスを完全に操作できます。
 

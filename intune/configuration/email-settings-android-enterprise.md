@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/07/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.reviewer: maholdaa
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc86e82f189377d63422cc3306b8554637164b0f
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 978ddf279dc221a56fddaf99da4dbb2377a93c24
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206433"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511155"
 ---
 # <a name="android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Intune を使用して電子メール、認証、および同期を構成するための Android エンタープライズ デバイスの設定
 
@@ -35,7 +35,7 @@ Intune での電子メール プロファイルの詳細については、[電�
 
 ## <a name="before-you-begin"></a>始める前に
 
-[デバイス構成プロファイル](email-settings-configure.md#create-a-device-profile)を作成する (仕事用プロファイルを選択する) か、[アプリ構成ポリシー](../apps/app-configuration-policies-use-android.md)を作成します。
+[デバイス構成プロファイル](email-settings-configure.md#create-a-device-profile)を作成するか (仕事用プロファイルを選択します)、[アプリ構成ポリシー](../apps/app-configuration-policies-use-android.md)を作成してください。
 
 ## <a name="android-enterprise"></a>Android エンタープライズ
 
@@ -63,4 +63,4 @@ Intune での電子メール プロファイルの詳細については、[電�
 
 [プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
 
-また、[Android Samsung Knox](email-settings-android.md)、[iOS](email-settings-ios.md)、[Windows 10 以降](email-settings-windows-10.md)、および [Windows Phone 8.1](email-settings-windows-phone-8-1.md) デバイス用の電子メール プロファイルを作成することもできます。
+また、[Android Samsung Knox](email-settings-android.md)、[iOS/iPadOS](email-settings-ios.md)、[Windows 10 以降](email-settings-windows-10.md)、および [Windows Phone 8.1](email-settings-windows-phone-8-1.md) デバイス用の電子メール プロファイルを作成することもできます。

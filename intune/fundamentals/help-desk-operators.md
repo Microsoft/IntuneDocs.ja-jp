@@ -17,18 +17,18 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0094cdd12b2594cb60260d768daec8c5bed04c9c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 3812d19122cf4dd85edf00a6fa12d9f2b89529aa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510258"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514593"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>トラブルシューティング ポータルを使用して社内のユーザーをサポートする
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-トラブルシューティング ポータルでは、ヘルプ デスクのオペレーターや Intune の管理者が、ユーザーのヘルプ要求に対処するためにユーザー情報を表示することができます。 ヘルプ デスクが含まれる組織は、ユーザーのグループに**ヘルプ デスク オペレーター**を割り当てることができます。 ヘルプ デスク オペレーター ロールの場合、 **[トラブルシューティング]** ウィンドウを使用できます。
+トラブルシューティング ポータルでは、ヘルプ デスクのオペレーターや Intune の管理者が、ユーザーのヘルプ要求に対処するためにユーザー情報を表示することができます。 ヘルプ デスクが含まれる組織は、ユーザーのグループに**ヘルプ デスク オペレーター**を割り当てることができます。 ヘルプ デスク オペレーター ロールの場合、**[トラブルシューティング]** ウィンドウを使用できます。
 
 **[トラブルシューティング]** ウィンドウにもユーザー登録に関する問題が表示されます。 問題に関する詳細と推奨される修復手順は、管理者およびヘルプ デスクのオペレーターが問題をトラブルシューティングするのに役立ちます。 登録に関する特定の問題はキャプチャされず、一部のエラーには推奨される修復方法がない場合があります。
 
@@ -45,10 +45,10 @@ ms.locfileid: "72510258"
 
 ## <a name="to-review-troubleshooting-details"></a>トラブルシューティングの詳細を確認するには
 
-トラブルシューティング ウィンドウで、 **[ユーザーの選択]** を選択してユーザー情報を表示します。 ユーザー情報は、ユーザーと彼らのデバイスの現在の状態を理解するのに役立ちます。  
+トラブルシューティング ウィンドウで、**[ユーザーの選択]** を選択してユーザー情報を表示します。 ユーザー情報は、ユーザーと彼らのデバイスの現在の状態を理解するのに役立ちます。  
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-3. **[Intune]** ウィンドウで、 **[トラブルシューティング]** を選択します。
+3. **[Intune]** ウィンドウで、**[トラブルシューティング]** を選択します。
 4. **[選択]** をクリックして、トラブルシューティングを行うユーザーを選択します。
 5. 名前または電子メール アドレスを入力して、ユーザーを選択します。 **[選択]** をクリックします。 ユーザーのトラブルシューティング情報が、トラブルシューティング ウィンドウに表示されます。 情報については、次の表で説明します。
 
@@ -59,14 +59,14 @@ ms.locfileid: "72510258"
 
 **[トラブルシューティング]** ウィンドウを使用して、ユーザー情報を確認することができます。
 
-![次の表で説明する番号付き領域を持つトラブルシューティングダッシュボード](./media/help-desk-operators/troubleshooting-dash.png)
+![トラブルシューティング ダッシュボード、番号付きの領域については次の表で説明](./media/help-desk-operators/troubleshooting-dash.png)
 
-| 領域 | 名前 | 説明 |
+| 領域 | 名前 | [説明] |
 | ---  | ---  | ---         |
 | 1.   | アカウントの状態  | 現在の Intune テナントの状態が**アクティブ**または**非アクティブ**として表示されます。       |
 | 2.   | ユーザー選択  | 現在選択されているユーザーの名前。 **[ユーザーの変更]** をクリックして、新しいユーザーを選択します。       |
 | 3.   | ユーザーの状態  | ユーザーの Intune ライセンスの状態、デバイスの数、各デバイスのコンプライアンス状態、アプリの数、およびアプリのコンプライアンス状態が表示されます。       |
-| 4.   | ユーザー情報  | 一覧を使用して、ウィンドウで確認する詳細を選択します。 <br>以下を選択できます。 <ul><li>クライアント アプリ<li>Compliance ポリシー<li> 構成ポリシー<li>アプリ保護ポリシー <li>登録制限</ul>      |
+| 4.   | ユーザー情報  | 一覧を使用して、ウィンドウで確認する詳細を選択します。 <br>以下を選択できます。 <ul><li>クライアント アプリ<li>コンプライアンス ポリシー<li> 構成ポリシー<li>アプリ保護ポリシー <li>登録制限</ul>      |
 | 5.   | グループのメンバーシップ  | 選択したユーザーがメンバーになっている現在のグループが表示されます。       |
 
 <!-- this section needs to be updated
@@ -248,7 +248,7 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 
 登録エラー テーブルには、失敗した登録の試行が一覧表示されます。 次のテーブルに一覧表示されているデバイスは、その後の別の試行中に正常に登録されている可能性があります。 失敗した試行の一部は、一覧表示されない場合があります。 すべてのエラーで軽減策の情報を利用できるわけではありません。
 
-| テーブル列 | 説明 |
+| テーブル列 | [説明] |
 |-------------|----------|
 | 登録の開始 | ユーザーが最初に登録を開始した時間。 |
 | OS | デバイスのオペレーティング システム。 |
@@ -259,7 +259,7 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 
 エラー行を選択すると、さらに詳細が提供されます。
 
-| セクション | 説明 |
+| セクション | [説明] |
 |-------------|----------|
 | エラーの詳細 | エラーのより詳細な説明。 |
 | 考えられる修復 | エラーを解決するための推奨手順。 エラーの中には、修復できないものもあります。 |
@@ -267,9 +267,9 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 
 ### <a name="enrollment-errors"></a>登録エラー
 
-| エラー | 説明 |
+| エラー | 詳細 |
 |-------------|----------|
-| iOS タイムアウトまたは障害 | ユーザーが登録を完了するのに時間がかかり過ぎたことによる、デバイスと Intune 間のタイムアウト。 |
+| iOS/iPadOS タイムアウトまたは障害 | ユーザーが登録を完了するのに時間がかかり過ぎたことによる、デバイスと Intune 間のタイムアウト。 |
 | ユーザーが見つからないか、ライセンスを取得していません | ユーザーがライセンスを失っているか、サービスから削除されています。 |
 | デバイスが既に登録されています | 別のユーザーによってまだ登録されているデバイスで、ユーザーがポータル サイトを使用してデバイスを登録しようとしています。 |
 | Intune にオンボードされていません | Intune のモバイル デバイス管理 (MDM) 機関が構成されていないときに、登録が試行されました。 |
@@ -286,20 +286,20 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 | Autopilot 登録方法は予期されていませんでした | デバイスが、許可されていない方法を使用して登録しようとしました。 |
 | Autopilot デバイスが削除されました | 登録しようとしているデバイスは、このアカウントの Autopilot から削除されました。 |
 | デバイス キャップに達しました | この登録は、管理者が構成したデバイス数の制限によりブロックされました。 |
-| Apple オンボーディング | Intune 内で Apple MDM プッシュ証明書が見つからないか有効期限切れのため、この時点ですべての iOS デバイスの登録がブロックされました。 |
+| Apple オンボーディング | Intune 内で Apple MDM プッシュ証明書が見つからないか有効期限切れのため、この時点ですべての iOS/iPadOS デバイスの登録がブロックされました。 |
 | デバイスが事前登録されていません | デバイスが会社として事前登録されておらず、個人のすべての登録が管理者によってブロックされました。 |
 | 機能がサポートされていません | ユーザーが Intune の構成と互換性のない方法で登録を試行した可能性があります。 |
 
 ## <a name="collect-available-data-from-mobile-device"></a>モバイル デバイスから使用可能なデータを収集する
 
 ユーザーのデバイスの問題のトラブルシューティングを行うときに、以下のリソースを使用してデバイスのデータを収集します。
-- [IT 管理者に iOS の登録に関するエラーを送信する](/intune-user-help/send-errors-to-your-it-admin-ios)
+- [IT 管理者に iOS/iPadOS の登録に関するエラーを送信する](/intune-user-help/send-errors-to-your-it-admin-ios)
 - [詳細ログ記録を使用して会社のサポートがデバイスの問題を解決できるようにする](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
 - [USB ケーブルを使用して Android のログを会社のサポートに送信する](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 - [メールを使用して Android の診断データのログを IT 管理者に送信する](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
 - [IT 管理者に Android の登録に関するエラーを送信する](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ロール ベースの管理制御 (RBAC) の詳細を学習し、組織デバイス、モバイル アプリケーション管理、データ保護タスクにおけるロールを定義することができます。 詳細については、「[Intune でのロール ベースの管理制御 (RBAC)](/intune/role-based-access-control)」を参照してください。
 

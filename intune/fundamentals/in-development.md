@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cafe9d3036a727d79de88eda050399138da55675
-ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
-ms.translationtype: MTE75
+ms.openlocfilehash: 7113552e09a7c7fa145a452e56575bfaf5297c3e
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76977752"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514568"
 ---
 # <a name="in-development-for-microsoft-intune---february-2020"></a>Microsoft Intune 用に開発中 - 2020 年 2 月
 
@@ -65,8 +65,8 @@ Windows デバイス上のポータル サイト アプリを更新し、アプ�
 ポータル サイト アプリでは、エンド ユーザーに追加のアプリ インストール状態メッセージが表示されます。 新しい Win32 依存関係機能には、次の条件が適用されます。
 - アプリをインストールできませんでした。 管理者によって定義された依存関係が満たされませんでした。
 
-### <a name="retarget-web-clips-to-microsoft-edge-on-ios-devices---5455276---"></a>iOS デバイス上の Microsoft Edge に Web クリップを再ターゲットする<!-- 5455276 -->
-iOS デバイス上でピン留めされた Web アプリとして機能する Web クリップを更新する必要があります。 新しく展開された Web クリップを保護されたブラウザーで開く必要がある場合は、Intune Managed Browser ではなく Microsoft Edge で開きます。 既存の Web クリップを再ターゲットして、Managed Browser ではなく Microsoft Edge で開くようにする必要があります。
+### <a name="retarget-web-clips-to-microsoft-edge-on-iosipados-devices---5455276---"></a>iOS/iPadOS デバイス上の Microsoft Edge に Web クリップを再ターゲットする<!-- 5455276 -->
+iOS/iPadOS デバイス上でピン留めされた Web アプリとして機能する Web クリップを更新する必要があります。 新しく展開された Web クリップを保護されたブラウザーで開く必要がある場合は、Intune Managed Browser ではなく Microsoft Edge で開きます。 既存の Web クリップを再ターゲットして、Managed Browser ではなく Microsoft Edge で開くようにする必要があります。
 
 ### <a name="macos-company-portal-user-experience-improvements---5568987---"></a>macOS ポータル サイトのユーザー エクスペリエンスの向上<!-- 5568987 -->
 macOS デバイスの登録エクスペリエンスと Mac 用ポータル サイト アプリの機能強化を行っています。 次のことが可能になります。
@@ -74,7 +74,7 @@ macOS デバイスの登録エクスペリエンスと Mac 用ポータル サ�
 - 登録時のコンプライアンス チェック手順が強化されます。
 - インシデント ID のコピーがサポートされるため、ユーザーは自分のデバイスから会社のサポート チームにエラーを迅速に送信することができます。
 
-登録と Mac 用ポータルサイトアプリの詳細については、「ポータル サイト アプリを使用して macOS デバイスを登録する (https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp) 」を参照してください。 
+登録と Mac 用ポータルサイトアプリの詳細については、「ポータル サイト アプリを使用して macOS デバイスを登録する (https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)」を参照してください。 
 
 
 ### <a name="screen-removed-from-company-portal-android-work-profile-enrollment--6103987---"></a>ポータル サイトの Android 仕事用プロファイルの登録から削除される画面<!--6103987 -->
@@ -87,33 +87,33 @@ Intune を使用すると、macOS 用 Microsoft Defender Advanced Threat Protect
 ## <a name="device-configuration"></a>デバイスの構成
 
 ### <a name="wired-network-device-configuration-profiles-for-macos-devices---3508686----"></a>macOS デバイス用の有線ネットワーク デバイス構成プロファイル<!-- 3508686  -->
-有線ネットワークを構成する ( **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  プラットフォームの **[macOS]** > プロファイル タイプの **[ワイヤード (有線) ネットワーク]** ) 新しい macOS デバイス構成プロファイルが使用できるようになります。 この機能を使用して、有線ネットワークを管理する 802.1x プロファイルを作成し、この有線ネットワークを macOS デバイスに展開します。
+有線ネットワークを構成する (**[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** >  プラットフォームの **[macOS]** > プロファイル タイプの **[ワイヤード (有線) ネットワーク]**) 新しい macOS デバイス構成プロファイルが使用できるようになります。 この機能を使用して、有線ネットワークを管理する 802.1x プロファイルを作成し、この有線ネットワークを macOS デバイスに展開します。
 
 適用対象:
 - macOS
 
-### <a name="vpn-profiles-with-ikev2-vpn-connections-can-use-always-on-with-ios-devices----1947932-idready---"></a>IKEv2 VPN 接続を使用する VPN プロファイルでは iOS デバイスで常時接続を使用できる <!-- 1947932 idready -->
-iOS デバイスでは、IKEv2 接続を使用する VPN プロファイルを作成することができます ( **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  プラットフォームの **[iOS/iPadOS]** > プロファイル タイプの **[VPN]** )。 今後の更新では、IKEv2 を使用して常時接続を構成することができます。 構成すると、IKEv2 VPN プロファイルは自動的に接続され、VPN に接続されたままになります (またはすぐに再接続されます)。 ネットワーク間を移動したり、デバイスを再起動したりしても、接続されたままになります。
+### <a name="vpn-profiles-with-ikev2-vpn-connections-can-use-always-on-with-iosipados-devices----1947932-idready---"></a>IKEv2 VPN 接続を使用する VPN プロファイルでは iOS/iPadOS デバイスで常時接続を使用できる <!-- 1947932 idready -->
+iOS/iPadOS デバイスでは、IKEv2 接続を使用する VPN プロファイルを作成することができます (**[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** >  プラットフォームの **[iOS/iPadOS]** > プロファイル タイプの **[VPN]**)。 今後の更新では、IKEv2 を使用して常時接続を構成することができます。 構成すると、IKEv2 VPN プロファイルは自動的に接続され、VPN に接続されたままになります (またはすぐに再接続されます)。 ネットワーク間を移動したり、デバイスを再起動したりしても、接続されたままになります。
 
-iOS では、常時接続 VPN は IKEv2 プロファイルに限定されます。
+iOS/iPadOS では、常時接続 VPN は IKEv2 プロファイルに限定されます。
 
-現在構成できる IKEv2 設定については、「[Microsoft Intune で iOS デバイス向けの VPN 設定を追加する](../configuration/vpn-settings-ios.md#ikev2-settings)」を参照してください。
+現在構成できる IKEv2 設定については、「[Microsoft Intune で iOS/iPadOS デバイス向けの VPN 設定を追加する](../configuration/vpn-settings-ios.md#ikev2-settings)」を参照してください。
 
 適用対象:
 - iOS
 
-### <a name="improved-user-interface-experience-when-creating-configuration-profiles-on-ios-and-macos-devices---5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984-idready---"></a>iOS および macOS デバイスで構成プロファイルを作成するときのユーザー インターフェイス エクスペリエンスの向上<!-- 5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984 idready -->
-iOS または macOS デバイス用のプロファイルを作成すると、Endpoint Management 管理センターのエクスペリエンスが更新されます。 この変更は、次のデバイス構成プロファイルに影響します ( **[デバイス]**  >  **[構成プロファイル]**  >  **[プロファイルの作成]**  >  プラットフォームの **[iOS]** または **[macOS]** ):
+### <a name="improved-user-interface-experience-when-creating-configuration-profiles-on-iosipados-and-macos-devices---5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984-idready---"></a>iOS/iPadOS および macOS デバイスで構成プロファイルを作成するときのユーザー インターフェイス エクスペリエンスの向上<!-- 5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984 idready -->
+iOS/iPadOS または macOS デバイス用のプロファイルを作成すると、Endpoint Management 管理センターのエクスペリエンスが更新されます。 この変更は、次のデバイス構成プロファイルに影響します (**[デバイス]** > **[構成プロファイル]** > **[プロファイルの作成]** >  プラットフォームの **[iOS]** または **[macOS]**):
 
-- カスタム: iOS、macOS
-- デバイスの機能: iOS、macOS
-- デバイスの制限: iOS、macOS
+- カスタム: iOS/iPadOS、macOS
+- デバイスの機能: iOS/iPadOS、macOS
+- デバイスの制限: iOS/iPadOS、macOS
 - エンドポイント保護: macOS
 - 拡張機能: macOS
 - 設定ファイル: macOS
 
 ### <a name="improved-user-interface-experience-when-creating-oemconfig-configuration-profiles-on-android-enterprise-devices---5568645-idready----"></a>Android Enterprise デバイスで OEMConfig 構成プロファイルを作成するときのユーザー インターフェイス エクスペリエンスの向上<!-- 5568645 idready  -->
-Android Enterprise デバイスで OEMConfig プロファイルを作成または編集すると、Endpoint Management 管理センターのエクスペリエンスが更新されます。 更新されたエクスペリエンスによって、構成した設定の概要が表示されます。 この変更は、OEMConfig デバイス構成プロファイルに影響します ( **[デバイス]**  >  **[構成プロファイル]**  >  **[プロファイルの作成]**  >  プラットフォームの **[Android Enterprise]** > プロファイルの種類の **[OEMConfig]** )。
+Android Enterprise デバイスで OEMConfig プロファイルを作成または編集すると、Endpoint Management 管理センターのエクスペリエンスが更新されます。 更新されたエクスペリエンスによって、構成した設定の概要が表示されます。 この変更は、OEMConfig デバイス構成プロファイルに影響します (**[デバイス]** > **[構成プロファイル]** > **[プロファイルの作成]** >  プラットフォームの **[Android Enterprise]** > プロファイルの種類の **[OEMConfig]**)。
 
 この機能は、以下に適用されます。
 - Android エンタープライズ 
@@ -127,13 +127,13 @@ Android Enterprise デバイスで OEMConfig プロファイルを作成また�
 ## <a name="device-management"></a>デバイス管理
 
 ### <a name="change-primary-user-for-windows-devices----3794742---"></a>Windows デバイスのプライマリ ユーザーを変更する <!-- 3794742 -->
-Windows ハイブリッド デバイスと Azure AD 参加済みデバイスのプライマリ ユーザーを変更できるようになります。 これを行うには、 **[Intune]**  >  **[デバイス]**  >  **[すべてのデバイス]** > デバイスを選択 > **[プロパティ]**  >  **[プライマリ ユーザー]** を選択します。 
+Windows ハイブリッド デバイスと Azure AD 参加済みデバイスのプライマリ ユーザーを変更できるようになります。 これを行うには、**[Intune]** > **[デバイス]** > **[すべてのデバイス]** > デバイスを選択 > **[プロパティ]** > **[プライマリ ユーザー]** を選択します。 
 
 ### <a name="serial-number-on-the-apple-mdm-push-certificate-page--5947765---"></a>[Apple MDM プッシュ通知証明書] ページのシリアル番号<!--5947765 -->
-[Apple MDM プッシュ通知証明書] ページにシリアル番号が表示されるようになります。 証明書を作成した Apple ID へのアクセスが失われた場合に、Apple MDM プッシュ通知証明書へのアクセスを回復するには、シリアル番号が必要です。 シリアル番号を表示するには、 **[デバイス]**  >  **[iOS]**  >  **[iOS enrollment]\(iOS の登録\)**  >  **[Apple MDM プッシュ通知証明書]** に移動します。
+[Apple MDM プッシュ通知証明書] ページにシリアル番号が表示されるようになります。 証明書を作成した Apple ID へのアクセスが失われた場合に、Apple MDM プッシュ通知証明書へのアクセスを回復するには、シリアル番号が必要です。 シリアル番号を表示するには、**[デバイス]** > **[iOS]** > **[iOS enrollment]\(iOS の登録\)** > **[Apple MDM プッシュ通知証明書]** に移動します。
 
 ### <a name="choose-which-iosipados-updates-to-push-to-enrolled-devices--5879689---"></a>登録されたデバイスにプッシュする iOS または iPadOS の更新プログラムを選択する<!--5879689 -->
-Apple Business Manager または Apple School Manager を使用すると、登録されたデバイスにプッシュする、特定の iOS または iPadOS の更新プログラムを選択できるようになります。 これらのデバイスでは、ソフトウェア更新プログラムの可視性を一定の日数だけ遅らせるようにデバイス構成ポリシーを設定する必要があります。 この機能を確認するには、MEM > **[デバイス]**  >  **[iOS]**  >  **[Update policies for iOS/iPadOS]\(iOS または iPadOS のポリシーを更新する\)**  >  **[プロファイルの作成]** に移動します。
+Apple Business Manager または Apple School Manager を使用すると、登録されたデバイスにプッシュする、特定の iOS または iPadOS の更新プログラムを選択できるようになります。 これらのデバイスでは、ソフトウェア更新プログラムの可視性を一定の日数だけ遅らせるようにデバイス構成ポリシーを設定する必要があります。 この機能を確認するには、MEM > **[デバイス]** > **[iOS]** > **[Update policies for iOS/iPadOS]\(iOS または iPadOS のポリシーを更新する\)** > **[プロファイルの作成]** に移動します。
 
 ### <a name="new-update-schedule-options-for-pushing-os-updates-to-enrolled-iosipados-devices--5879689--"></a>登録された iOS デバイスまたは iPadOS デバイスに OS 更新プログラムをプッシュするための新しい更新スケジュール オプション<!--5879689-->
 iOS デバイスまたは iPadOS デバイスのオペレーティング システムの更新をスケジュールするときに、次のオプションを使用できるようになります。 これは、Apple Business Manager または Apple School Manager の登録タイプを使用したデバイスに適用されます。
@@ -143,7 +143,7 @@ iOS デバイスまたは iPadOS デバイスのオペレーティング シス�
 
 後者の 2 つのオプションでは、複数の時間帯を作成できます。
 
-新しいオプションを確認するには、MEM > **[デバイス]**  >  **[iOS]**  >  **[Update policies for iOS/iPadOS]\(iOS または iPadOS のポリシーを更新する\)**  >  **[プロファイルの作成]** に移動します。
+新しいオプションを確認するには、MEM > **[デバイス]** > **[iOS]** > **[Update policies for iOS/iPadOS]\(iOS または iPadOS のポリシーを更新する\)** > **[プロファイルの作成]** に移動します。
 
 
 <!-- ***********************************************-->
@@ -170,7 +170,7 @@ Intune では、新しいレポートの種類、より優れたレポート編�
 ## <a name="role-based-access-control"></a>ロール ベースのアクセス制御
 
 ### <a name="intune-roles-user-interface-changes-coming--5801612-idready--"></a>Intune ロールのユーザー インターフェイスが変更予定<!--5801612 idready-->
-[Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) >  **[テナント管理]**  >  **[ロール]** のユーザー インターフェイスが、ユーザーフレンドリで直感的な設計に変更されます。 このエクスペリエンスでは、現在使用しているのと同じ設定と詳細が提供されます。ただし、新しいエクスペリエンスでは、ウィザードに似たプロセスが採用されています。
+[Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) > **[テナント管理]** > **[ロール]** のユーザー インターフェイスが、ユーザーフレンドリで直感的な設計に変更されます。 このエクスペリエンスでは、現在使用しているのと同じ設定と詳細が提供されます。ただし、新しいエクスペリエンスでは、ウィザードに似たプロセスが採用されています。
 
 
 <!-- ***********************************************-->

@@ -1,12 +1,12 @@
 ---
-title: Microsoft Intune での組み込みアプリ用の iOS バンドル ID - Azure | Microsoft Docs
+title: Microsoft Intune での組み込みアプリ用の iOS および iPadOS バンドル ID - Azure | Microsoft Docs
 titleSuffix: ''
-description: 組み込み iOS アプリ用のバンドル ID の一覧を参照してください。 Microsoft Intune で、これらのバンドル ID を使用してデバイス構成プロファイルおよびポリシー内でアプリを許可します。
+description: 組み込み iOS および iPadOS アプリ用のバンドル ID の一覧を参照してください。 Microsoft Intune で、これらのバンドル ID を使用してデバイス構成プロファイルおよびポリシー内でアプリを許可します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e151481b090e1e666bfdb2759015adde6f1d66a9
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
-ms.translationtype: MTE75
+ms.openlocfilehash: 10c6ea8e3afd7bb1f5a583c0088c72fc155cb0f9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691843"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513301"
 ---
-# <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Intune で使用できる組み込み iOS アプリ用のバンドル ID
+# <a name="bundle-ids-for-built-in-ios-and-ipados-apps-you-can-use-in-intune"></a>Intune で使用できる組み込み iOS および iPadOS アプリ用のバンドル ID
 
-iOS デバイス上で機能を構成すると、iOS デバイス上に組み込みアプリを追加することもできます。 この記事では、一部の一般的な組み込み iOS アプリのバンドル ID を一覧します。 他のアプリのバンドル ID を調べるには、ソフトウェア ベンダーにお問い合わせください。 Apple の [iOS バンドル ID](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web) (Apple の Web サイトが開きます) の一覧を参照してください。
+iOS および iPadOS デバイス上で機能を構成すると、iOS および iPadOS デバイス上に組み込みアプリを追加することもできます。 この記事では、一部の一般的な組み込み iOS および iPadOS アプリのバンドル ID を一覧します。 他のアプリのバンドル ID を調べるには、ソフトウェア ベンダーにお問い合わせください。 Apple の [iOS および iPadOS バンドル ID](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web) (Apple の Web サイトが開きます) の一覧を参照してください。
 
 ## <a name="bundle-ids"></a>バンドル ID
 
@@ -36,7 +36,7 @@ iOS デバイス上で機能を構成すると、iOS デバイス上に組み込
 | com.apple.mobilecal         | 予定表     | Apple     |
 | com.apple.camera            | カメラ       | Apple     |
 | com.apple.mobiletimer       | 時計        | Apple     |
-| com... クリップ             | Clips        | Apple     |
+| com.apple.clips             | Clips        | Apple     |
 | com.apple.compass           | コンパス      | Apple     |
 | com.apple.MobileAddressBook | 連絡先     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
@@ -46,7 +46,7 @@ iOS デバイス上で機能を構成すると、iOS デバイス上に組み込
 | com.apple.gamecenter        | Game Center  | Apple     |
 | com.apple.mobilegarageband  | GarageBand   | Apple     |
 | com.apple.Health            | 正常性       | Apple     |
-| com.apple.Home              | のホーム         | Apple     |
+| com.apple.Home              | Home         | Apple     |
 | com.apple.iBooks            | iBooks       | Apple     |
 | com.apple.iMovie            | iMovie       | Apple     |
 | com.apple.itunesconnect.mobile | iTunes Connect | Apple |
@@ -55,7 +55,7 @@ iOS デバイス上で機能を構成すると、iOS デバイス上に組み込
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | メール         | Apple     |
 | com.apple.Maps              | マップ         | Apple     |
-| 「apple. measure」           | 基準      | Apple     |
+| com.apple.measure           | 基準      | Apple     |
 | com.apple.MobileSMS         | メッセージ     | Apple     |
 | com.apple.Music             | ミュージック        | Apple     |
 | com.apple.news              | News         | Apple     |
@@ -69,7 +69,7 @@ iOS デバイス上で機能を構成すると、iOS デバイス上に組み込
 | com.apple.reminders         | リマインダー    | Apple     |
 | com.apple.mobilesafari      | Safari       | Apple     |
 | com.apple.Preferences       | Settings     | Apple     |
-| com... ショートカット         | ショートカット    | Apple     |
+| com.apple.shortcuts         | ショートカット    | Apple     |
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | 株価       | Apple     |
 | com.apple.tips              | ヒント         | Apple     |
@@ -78,8 +78,8 @@ iOS デバイス上で機能を構成すると、iOS デバイス上に組み込
 | com.apple.VoiceMemos        | VoiceMemos   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |
 | com.apple.Bridge            | 視聴する        | Apple     |
-| com.apple.weather           | 天気      | Apple     |      
+| com.apple.weather           | 天気      | Apple     |
 
 ## <a name="next-steps"></a>次のステップ
 
-これらのバンドル ID を使用して[デバイス機能](ios-device-features-settings.md)を構成すると共に、iOS デバイス上で[一部の設定を許可または制限](device-restrictions-ios.md)します。
+これらのバンドル ID を使用して[デバイス機能](ios-device-features-settings.md)を構成すると共に、iOS および iPadOS デバイス上で[一部の設定を許可または制限](device-restrictions-ios.md)します。
