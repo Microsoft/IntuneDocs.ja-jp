@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f617e85e78ac5436567790d416c988742a2abe4c
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: c880251d59810dc02446020ed02fd6049878262c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956238"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515018"
 ---
 # <a name="plan-communications"></a>通信手段の計画
 
@@ -52,7 +52,7 @@ Intune の登録ガイドには、PDF と Word の両方のバージョンが用
 
 - [Android デバイスを登録する](https://www.youtube.com/watch?v=k0Q_sGLSx6o&t=1s)
 - [Android 仕事用プロファイル デバイスを登録する](https://www.youtube.com/watch?v=9Dl8HsGk4tI&t=3s)
-- [iOS デバイスを登録する](https://www.youtube.com/watch?v=mJyv6YcHi7c)
+- [iOS/iPadOS デバイスを登録する](https://www.youtube.com/watch?v=mJyv6YcHi7c)
 - [macOS デバイスを登録する](https://www.youtube.com/watch?v=Pa2pfhwq_yk)
 - [Windows を登録する](https://www.youtube.com/watch?v=TKQxEckBHiE)
 
@@ -61,5 +61,5 @@ Intune の登録ガイドには、PDF と Word の両方のバージョンが用
 Intune には、ユーザーのデバイス登録を推進するために使用できるその他のリソースが用意されています。
 
 - モバイル OS プラットフォームごとの登録手順について詳しくは、「[Microsoft Intune に関してエンド ユーザーを教育する方法](end-user-educate.md)」をご覧ください。
-- [IT 管理者向けの Intune デバイスの登録](../enrollment/device-enrollment.md)に関するページには、Intune での Android、iOS、および Mac デバイスの登録方法について説明されています。
-- Android、iOS、および Windows ユーザーとポータル サイト アプリを共有します。
+- [IT 管理者向けの Intune デバイスの登録](../enrollment/device-enrollment.md)に関するページには、Intune での Android、iOS/iPadOS、Mac デバイスの登録方法について説明されています。
+- Android、iOS/iPadOS、Windows ユーザーとポータル サイト アプリを共有します。

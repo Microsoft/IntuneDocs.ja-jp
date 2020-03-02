@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c86252030a4baf957077cd889386bb8016554f1
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 53985a9af523ecf60efda5c5c651161c132e326c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206569"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511223"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune でデバイスの制限設定を構成する
 
 
 
-Intune には、管理者が Android、iOS、macOS、および Windows の各デバイスを制御するのに役立つデバイス制限ポリシーが含まれています。 これらの制限を使用して、組織のリソースを保護するための幅広い設定と機能を制御できます。 たとえば、管理者には次の機能があります。
+Intune には、管理者が Android、iOS/iPadOS、macOS、および Windows の各デバイスを制御するのに役立つデバイス制限ポリシーが含まれています。 これらの制限を使用して、組織のリソースを保護するための幅広い設定と機能を制御できます。 たとえば、管理者には次の機能があります。
 
 - デバイス カメラを許可またはブロックする
 - Google Play、アプリ ストア、ドキュメントの表示、およびゲームへのアクセスを制御する
@@ -41,10 +41,10 @@ Intune には、管理者が Android、iOS、macOS、および Windows の各デ
 ## <a name="create-the-profile"></a>プロファイルの作成
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
+2. **[デバイス]**  >  **[構成プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
 3. 次のプロパティを入力します。
 
-    - **名前**:ポリシーのわかりやすい名前を入力します。 後で簡単に識別できるよう、ポリシーに名前を付けます。 たとえば、適切なポリシー名は **iOS:デバイスのカメラをブロックする**です。
+    - **名前**:ポリシーのわかりやすい名前を入力します。 後で簡単に識別できるよう、ポリシーに名前を付けます。 たとえば、適切なポリシー名は **iOS/iPadOS:デバイスのカメラをブロックする**です。
     - **説明**:ポリシーの説明を入力します。 この設定は省略可能ですが、推奨されます。
     - **[プラットフォーム]** :デバイスのプラットフォームを選択します。 次のようなオプションがあります。  
 

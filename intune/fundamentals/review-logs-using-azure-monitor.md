@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2019
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66acf4d8b88097c3262f44493ab72b3900781eed
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8a9c74281df61fbf81914461286353d49b89a4f9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504968"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510747"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Intune でストレージ、イベントハブ、または Log Analytics にログ データを送信する (プレビュー)
 
 Microsoft Intune には、お客様の環境に関する情報を提供する組み込みのログがあります。
 
-- **監査ログ**には、Intune で発生したさまざまなイベントまたはタスクの詳細が表示されます。
+- **監査ログ**には、作成、更新 (編集)、削除、割り当て、リモート アクションなど、Intune で変更を生成するアクティビティの記録が表示されます。
 - **操作ログ (プレビュー)** には、登録に成功した (または失敗した) ユーザーとデバイスの詳細、およびコンプライアンス非対応のデバイスの詳細が表示されます。
 - **デバイス コンプライアンス組織ログ (プレビュー)** には、Intune のデバイス コンプライアンスに関する組織レポート、およびコンプライアンス非準拠のデバイスの詳細が表示されます。
 
@@ -43,7 +43,7 @@ Microsoft Intune には、お客様の環境に関する情報を提供する組
 
 この記事では、 **[診断設定]** を使用してログ データをさまざまなサービスに送信する方法について説明し、例とコストの見積もりを示し、よく寄せられる質問に回答します。 この機能を有効にすると、選択した Azure Monitor サービスにログがルーティングされます。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
 この機能を使用するには、以下が必要です。
 
@@ -59,14 +59,15 @@ Microsoft Intune には、お客様の環境に関する情報を提供する組
 
 ## <a name="send-logs-to-azure-monitor"></a>ログを Azure Monitor に送信する
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[監視]** で **[診断設定]** を選択します。 初めて開いたときに有効にします。 それ以外の場合、設定を追加します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+2. **[レポート]**  >  **[診断設定]** を選択します。 初めて開いたときに有効にします。 それ以外の場合、設定を追加します。
 
-    ![Intune の [診断設定] を有効にして、Azure Monitor にログを送信する](./media/review-logs-using-azure-monitor/diagnostics-settings-turn-on.png)
+    > [!div class="mx-imgBorder"]
+    > ![Intune の [診断設定] を有効にして、Azure Monitor にログを送信する](./media/review-logs-using-azure-monitor/diagnostics-settings-turn-on.png)
 
 3. 次のプロパティを入力します。
 
-    - **名前**: 診断設定の名前を入力します。 この設定には、入力したすべてのプロパティが含まれます。 たとえば、「`Route audit logs to storage account`」と入力します。
+    - **名前**:診断設定の名前を入力します。 この設定には、入力したすべてのプロパティが含まれます。 たとえば、「`Route audit logs to storage account`」と入力します。
     - **[ストレージ アカウントへのアーカイブ]** :ログ データを Azure ストレージ アカウントに保存します。 データを保存またはアーカイブする場合は、このオプションを使用します。
 
         1. このオプションを選択し、 **[構成]** を選択します。 
@@ -104,7 +105,8 @@ Microsoft Intune には、お客様の環境に関する情報を提供する組
 
     完了すると、設定は次のようになります。 
 
-    ![Intune 監査ログが Azure ストレージ アカウントに送信されるサンプル画像](./media/review-logs-using-azure-monitor/diagnostics-settings-example.png)
+    > [!div class="mx-imgBorder"]
+    > ![Intune 監査ログが Azure ストレージ アカウントに送信されるサンプル画像](./media/review-logs-using-azure-monitor/diagnostics-settings-example.png)
 
 4. 変更内容を**保存**します。 一覧に設定が表示されます。 作成された後は、 **[設定の編集]**  >  **[保存]** を選択して設定を変更できます。
 
@@ -112,14 +114,7 @@ Microsoft Intune には、お客様の環境に関する情報を提供する組
 
 登録、コンプライアンス、構成、デバイス、クライアント アプリなど、Intune の他の部分で監査ログをエクスポートすることもできます。
 
-たとえば、デバイスのコンプライアンスを使用するときに監査ログをエクスポートするには、次の手順を実行します。
-
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[デバイス コンプライアンス]**  >  **[監視]**  >  **[監査ログ]** の順に選択します。
-
-    ![Intune データを Azure Monitor ストレージ、イベント ハブ、または分析にルーティングする監査ログを選択する](./media/review-logs-using-azure-monitor/audit-logs-under-monitor-in-compliance.png)
-
-3. **[データ設定のエクスポート]** を選択します。 有効になっていない場合は、 **[診断設定]** をオンにできます。 また、「[ログを Azure Monitor に送信する](#send-logs-to-azure-monitor)」 (この記事内) で説明されているように、ログの送信先を選択することもできます。
+詳細については、[監査ログを使用したイベントの追跡と監視](monitor-audit-logs.md)に関するページを参照してください。 「[ログを Azure Monitor に送信する](#send-logs-to-azure-monitor)」 (この記事内) で説明されているように、監査ログの送信先を選択することもできます。
 
 ## <a name="cost-considerations"></a>コストの考慮事項
 
@@ -227,7 +222,7 @@ Azure Monitor を Event Hubs と共に使用して、ログを SIEM システム
 
 Intune では、パイプラインを介して送信されたデータは保存されません。 Intune では、テナントの権限でデータが Azure Monitor パイプラインにルーティングされます。 詳細については、「[Azure Monitor の概要](https://docs.microsoft.com/azure/azure-monitor/overview)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 * [アクティビティ ログをストレージ アカウントにアーカイブする](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-azure-monitor-route-logs-to-storage-account)
 * [アクティビティ ログをイベント ハブにルーティングする](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub)

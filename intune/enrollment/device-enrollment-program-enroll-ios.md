@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6167c48dcfd6b29749dca8d0378ff31ca239b154
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: adca40b558a75d2c080fe453218f232a37b21daa
+ms.sourcegitcommit: cd90650c339795d44702e9dcd0b9679a7b438bb2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415355"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77473755"
 ---
 # <a name="automatically-enroll-iosipados-devices-with-apples-device-enrollment-program"></a>Apple の Device Enrollment Program を使用して iOS/iPadOS デバイスを自動登録する
 
@@ -77,6 +77,9 @@ Apple Business Manager または Apple School Manager のポータルを使用�
     ![Enrollment Program トークンを取得します。](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. **[同意する]** を選択して、Microsoft がユーザーとデバイスの情報を Apple に送信できるようにします。
+
+> [!NOTE]
+> 手順 2 以降に進んで Intune 公開キー証明書をダウンロードしたら、ウィザードを閉じたり、このページから移動したりしないでください。 そうすると、ダウンロードした証明書が無効になるため、このプロセスを再度繰り返す必要があります。 このような状況が発生した場合、通常は [Review + Create]\(確認および作成\) タブの [作成] ボタンがグレー表示され、プロセスを完了できなくなります。
 
    ![公開キーをダウンロードするための [Apple 証明書] ワークスペースの [Enrollment Program トークン] のスクリーンショット。](./media/device-enrollment-program-enroll-ios/add-enrollment-program-token-pane.png)
 

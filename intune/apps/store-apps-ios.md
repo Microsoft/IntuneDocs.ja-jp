@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2daa7428cf8677f9e1a2b11db2b3ce65e2df8bc4
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: f2baf60fed2c6010e5ae0784cda166ac4fabfd57
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755002"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511737"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>iOS ストア アプリを Microsoft Intune に追加する
 
@@ -32,11 +32,11 @@ ms.locfileid: "76755002"
 この記事の情報を使って、Microsoft Intune に iOS ストア アプリを追加できます。 iOS ストア アプリとは、Intune がユーザー デバイスにインストールするアプリです。 このユーザーとは、あなたの会社の従業員の一員です。 iOS ストア アプリは自動的に更新されます。
 
 >[!NOTE]
->iOS デバイスのユーザーは Stocks や Maps などの一部の iOS 組み込みアプリを削除できますが、Intune を使ってこれらのアプリを再展開することはできません。 ユーザーがこれらのアプリを削除した場合は、アプリ ストアから手動で再インストールする必要があります。
+>iOS/iPadOS デバイスのユーザーは Stocks や Maps などの一部の iOS/iPadOS 組み込みアプリを削除できますが、Intune を使ってこれらのアプリを再展開することはできません。 ユーザーがこれらのアプリを削除した場合は、アプリ ストアから手動で再インストールする必要があります。
 
 ## <a name="before-you-start"></a>開始する前に
 
-アプリ ストアで無料になっている場合にのみ、この方法でアプリを割り当てることができます。 Intune を利用し、有料のアプリを割り当てる場合、[iOS ボリューム購入プログラム](vpp-apps-ios.md)の利用を検討してください。
+アプリ ストアで無料になっている場合にのみ、この方法でアプリを割り当てることができます。 Intune を使用して有料のアプリを割り当てる場合、[iOS/iPadOS ボリューム購入プログラム](vpp-apps-ios.md)の利用を検討してください。
 
 >[!NOTE]
 >Microsoft Intune を使うときは、Microsoft Edge または Google Chrome ブラウザーを使うことをお勧めします。

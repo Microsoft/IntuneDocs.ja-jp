@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune デバイスに VPN 設定を追加する - Azure | Microsoft Docs
-description: Android、Android Enterprise、iOS、macOS、および Windows デバイスでは、組み込みの設定を使用して Microsoft Intune で仮想プライベートネットワーク (VPN) 接続を作成します。
+description: Android、Android Enterprise、iOS、iPadOS、macOS、および Windows デバイスでは、組み込みの設定を使用して Microsoft Intune で仮想プライベートネットワーク (VPN) 接続を作成します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b11cbd3427b3b8e0a43a6e6e2af5fa80da45e16a
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 134ef9a2a4dfe8a4576c753a001439c42f678adc
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206280"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510815"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Intune で VPN サーバーに接続するための VPN プロファイルを作成する
 
@@ -28,7 +28,7 @@ ms.locfileid: "75206280"
 
 仮想プライベート ネットワーク (VPN) を使用すると、組織のユーザーが組織のネットワークにリモート アクセスする際にセキュリティで保護することができます。 デバイスでは、VPN 接続プロファイルを使用して VPN サーバーとの接続が開始されます。 Microsoft Intune の **VPN プロファイル**によって組織内のユーザーとデバイスに VPN 設定を割り当て、組織のネットワークに簡単かつ安全に接続できるようにします。
 
-たとえば、組織のネットワーク上のファイル共有に接続するために必要な設定をすべての iOS デバイスに構成したいとします。 これらの設定を含む VPN プロファイルを作成します。 その後、iOS デバイスを持っているすべてのユーザーにこのプロファイルを割り当てます。 使用できるネットワークの一覧に VPN 接続が表示されるので、ユーザーは最小限の労力で接続できます。
+たとえば、組織のネットワーク上のファイル共有に接続するために必要な設定をすべての iOS/iPadOS デバイスに構成したいとします。 これらの設定を含む VPN プロファイルを作成します。 その後、iOS/iPadOS デバイスを持っているすべてのユーザーにこのプロファイルを割り当てます。 使用できるネットワークの一覧に VPN 接続が表示されるので、ユーザーは最小限の労力で接続できます。
 
 > [!NOTE]
 > [Intune のカスタム構成ポリシー](custom-settings-configure.md)を使用して、次のプラットフォーム用の VPN プロファイルを作成できます。
@@ -47,19 +47,19 @@ ms.locfileid: "75206280"
 |接続の種類|プラットフォーム|
 |-|-|
 |自動|Windows 10|
-|Check Point Capsule VPN|- Android<br/>- Android エンタープライズ仕事用プロファイル<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|Cisco AnyConnect|- Android<br/>- Android エンタープライズ仕事用プロファイル<br/>- Android エンタープライズ デバイス所有者 (フル マネージド)<br/>- iOS<br/>- macOS|
-|Cisco (IPSec)|iOS|
-|Citrix SSO|- Android<br/>- Android エンタープライズ仕事用プロファイル:[アプリ構成ポリシー](../apps/app-configuration-policies-use-android.md)を使用する<br/>- Android エンタープライズ デバイス所有者 (フル マネージド):[アプリ構成ポリシー](../apps/app-configuration-policies-use-android.md)を使用する<br/>- iOS<br/>- Windows 10|
-|カスタム VPN|- iOS<br/>- macOS|
-|F5 Access|- Android<br/>- Android エンタープライズ仕事用プロファイル<br/>- Android エンタープライズ デバイス所有者 (フル マネージド)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|IKEv2| - iOS<br/>- Windows 10|
+|Check Point Capsule VPN|- Android<br/>- Android エンタープライズ仕事用プロファイル<br/>- iOS/iPadOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|Cisco AnyConnect|- Android<br/>- Android エンタープライズ仕事用プロファイル<br/>- Android エンタープライズ デバイス所有者 (フル マネージド)<br/>- iOS/iPadOS<br/>- macOS|
+|Cisco (IPSec)|iOS/iPadOS|
+|Citrix SSO|- Android<br/>- Android エンタープライズ仕事用プロファイル:[アプリ構成ポリシー](../apps/app-configuration-policies-use-android.md)を使用する<br/>- Android エンタープライズ デバイス所有者 (フル マネージド):[アプリ構成ポリシー](../apps/app-configuration-policies-use-android.md)を使用する<br/>- iOS/iPadOS<br/>- Windows 10|
+|カスタム VPN|- iOS/iPadOS<br/>- macOS|
+|F5 Access|- Android<br/>- Android エンタープライズ仕事用プロファイル<br/>- Android エンタープライズ デバイス所有者 (フル マネージド)<br/>- iOS/iPadOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|IKEv2| - iOS/iPadOS<br/>- Windows 10|
 |L2TP|Windows 10|
-|Palo Alto Networks GlobalProtect|- Android エンタープライズ仕事用プロファイル:[アプリ構成ポリシー](../apps/app-configuration-policies-use-android.md)を使用する<br/>- iOS<br/>- Windows 10|
+|Palo Alto Networks GlobalProtect|- Android エンタープライズ仕事用プロファイル:[アプリ構成ポリシー](../apps/app-configuration-policies-use-android.md)を使用する<br/>- iOS/iPadOS<br/>- Windows 10|
 |PPTP|Windows 10|
-|Pulse Secure|- Android<br/>- Android エンタープライズ仕事用プロファイル<br/>- Android エンタープライズ デバイス所有者 (フル マネージド)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|SonicWall Mobile Connect|- Android<br/>- Android エンタープライズ仕事用プロファイル<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|Zscaler|- Android エンタープライズ仕事用プロファイル:[アプリ構成ポリシー](../apps/app-configuration-policies-use-android.md)を使用する<br/>- iOS|
+|Pulse Secure|- Android<br/>- Android エンタープライズ仕事用プロファイル<br/>- Android エンタープライズ デバイス所有者 (フル マネージド)<br/>- iOS/iPadOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|SonicWall Mobile Connect|- Android<br/>- Android エンタープライズ仕事用プロファイル<br/>- iOS/iPadOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|Zscaler|- Android エンタープライズ仕事用プロファイル:[アプリ構成ポリシー](../apps/app-configuration-policies-use-android.md)を使用する<br/>- iOS/iPadOS|
 
 > [!IMPORTANT]
 > デバイスに割り当てられた VPN プロファイルを使用する前に、プロファイル用の該当する VPN アプリをインストールする必要があります。 [Microsoft Intune でのアプリ管理の概要](../apps/app-management.md)に関する記事の情報を参考にして、Intune を使ってアプリを割り当ててください。  
@@ -69,7 +69,7 @@ URI の設定を使ってカスタム VPN プロファイルを作成する方�
 ## <a name="create-a-device-profile"></a>デバイス プロファイルの作成
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
+2. **[デバイス]**  >  **[構成プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
 3. 次のプロパティを入力します。
 
     - **名前**:プロファイルのわかりやすい名前を入力します。 後で簡単に識別できるよう、プロファイルに名前を付けます。 たとえば、「**会社全体の VPN プロファイル**」は適切なプロファイル名です。
@@ -119,4 +119,4 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 
 プロファイルを作成しましたが、まだ何も行っていません。 次に、[デバイスにプロファイルを割り当てます](device-profile-assign.md)。
 
-[Android](android-pulse-secure-per-app-vpn.md) デバイスと [iOS](vpn-setting-configure-per-app.md) デバイスでは、アプリごとの VPN を作成して使用することもできます。
+[Android](android-pulse-secure-per-app-vpn.md) デバイスと [iOS/iPadOS](vpn-setting-configure-per-app.md) デバイスでは、アプリごとの VPN を作成して使用することもできます。

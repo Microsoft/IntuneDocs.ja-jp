@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c0571eb2a369e440b3c7732b6d55ba05ace2c34
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: 183a1dc7083aa9b427df225297fb7c393939220f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839353"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515052"
 ---
 # <a name="configure-app-protection-policies-optional"></a>アプリ保護ポリシーを構成する (省略可能)
 
@@ -38,7 +38,7 @@ ms.locfileid: "75839353"
 
 ## <a name="app-protection-policies-with-lob-apps"></a>LOB アプリでのアプリ保護ポリシー
 
-iOS および Android プラットフォーム用の [Microsoft Intune App SDK](../developer/app-sdk-get-started.md) や Microsoft Intune アプリ ラッピング ツールを利用して、基幹業務 (LOB) アプリに対してモバイル アプリ保護ポリシーを拡張することもできます。 詳細については、[iOS 用アプリ ラッピング ツール](../developer/app-wrapper-prepare-ios.md)および [Android 用アプリ ラッピング ツール](./../developer/app-wrapper-prepare-android.md)に関する説明をご覧ください。 さらに、「[アプリを保護できるように LOB アプリを準備する](../developer/apps-prepare-mobile-application-management.md)」も参照してください。
+iOS/iPadOS および Android プラットフォーム用の [Microsoft Intune App SDK](../developer/app-sdk-get-started.md) や Microsoft Intune App Wrapping Tool を利用して、基幹業務 (LOB) アプリに対してモバイル アプリ保護ポリシーを拡張することもできます。 詳細については、[iOS 用アプリ ラッピング ツール](../developer/app-wrapper-prepare-ios.md)および [Android 用アプリ ラッピング ツール](./../developer/app-wrapper-prepare-android.md)に関する説明をご覧ください。 さらに、「[アプリを保護できるように LOB アプリを準備する](../developer/apps-prepare-mobile-application-management.md)」も参照してください。
 
 ## <a name="how-do-app-protection-policies-help-during-migration"></a>アプリ保護ポリシーは移行中にどのように役立つか
 

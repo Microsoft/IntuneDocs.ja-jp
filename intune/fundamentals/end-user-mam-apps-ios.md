@@ -1,6 +1,6 @@
 ---
-title: アプリ保護ポリシーのある iOS アプリ
-description: このトピックでは、アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点について説明します。
+title: アプリ保護ポリシーのある iOS/iPadOS アプリ
+description: このトピックでは、アプリ保護ポリシーを使用して iOS/iPadOS アプリを管理するときの注意点について説明します。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 165ce160339647e396b9cfc3a8374f21c77665f8
-ms.sourcegitcommit: f9dc50642efa8656054ef67f9335b9b46b655f93
+ms.openlocfilehash: c854811a9deb938613af872f3cf86244ab9121b3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "75606623"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514661"
 ---
-# <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点
+# <a name="what-to-expect-when-your-iosipados-app-is-managed-by-app-protection-policies"></a>アプリ保護ポリシーを使用して iOS/iPadOS アプリを管理するときの注意点
 
 Intune のアプリ保護ポリシーは、職場または学校用のアプリに適用されます。 つまり、従業員や学生が個人のコンテキストでアプリを使用しているときは、ユーザー エクスペリエンスの違いに気付かないことがあります。 ただし、職場または学校のコンテキストでは、アカウントに関する決定を求めるメッセージを受け取ったり、設定を更新したり、ヘルプを求めたりすることがあります。 この記事では、Intune で保護されたアプリにアクセスして使用するときのユーザー エクスペリエンスについて説明します。  
 
@@ -34,7 +34,7 @@ Intune のアプリ保護ポリシーは、職場または学校用のアプリ�
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
 
-<!---  ![Screenshot of the iOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
+<!---  ![Screenshot of the iOS/iPadOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
 
 **Intune の管理対象として登録された**デバイスの場合、ユーザーにはアプリが管理された状態にあることを示すメッセージが表示されます。
 

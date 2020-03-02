@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2020
+ms.date: 02/11/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6044ff5f8d169e36a11f9289f1772c809723b7fc
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: af3c4e05a47e015384716588a28a6074898e2f6a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77438006"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513964"
 ---
 # <a name="add-app-configuration-policies-for-managed-iosipados-devices"></a>管理対象の iOS/iPadOS デバイス用アプリ構成ポリシーを追加する
 
@@ -43,7 +43,7 @@ Microsoft Intune 管理者は、マネージド デバイス上の Microsoft Off
 > [!TIP]
 > この種類のポリシーは現在、iOS/iPadOS 8.0 以降を実行しているデバイスでのみ有効です。 次の種類のアプリ インストールをサポートします。
 >
-> - **App Store の管理対象 iOS アプリ**
+> - **アプリ ストアの管理対象 iOS アプリまたは iPadOS アプリ**
 > - **iOS 用アプリ パッケージ**
 >
 > アプリのインストールの種類の詳細については、「[How to add an app to Microsoft Intune (Microsoft Intune にアプリを追加する方法)](apps-add.md)」を参照してください。 マネージド デバイスの .ipa アプリ パッケージにアプリ構成を組み込む方法の詳細については、[iOS 開発者向けドキュメント](https://developer.apple.com/library/archive/samplecode/sc2279/Introduction/Intro.html)の「Managed App Configuration (マネージド アプリの構成)」を参照してください。
@@ -108,9 +108,10 @@ Microsoft Intune には、アプリに固有の構成設定が用意されてい
 
 iOS/iPadOS デバイスでは、次のキー/値ペアを使用します。
 
-| **Key** | IntuneMAMAllowedAccountsOnly |
-|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **値** | <ul><li>**有効**: [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) キーによって定義されたマネージド ユーザー アカウントのみが許可されます。</li><li>**[無効]** ( **[有効]** と大文字小文字を問わず一致しないすべての値): すべてのアカウントが許可されます。</li></ul> |。
+| **Key** | **値** |
+|----|----|
+| IntuneMAMAllowedAccountsOnly | <ul><li>**有効**: [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) キーによって定義されたマネージド ユーザー アカウントのみが許可されます。</li><li>**[無効]** ( **[有効]** と大文字小文字を問わず一致しないすべての値): すべてのアカウントが許可されます。</li></ul> |
+| IntuneMAMUPN | <ul><li>アプリへのサインインが許可されているアカウントの UPN。</li><li> Intune に登録されているデバイスでは、<code>{{userprincipalname}}</code> のトークンを使用して登録済みのユーザー アカウントを表すことができます。</li></ul>  |
 
    > [!NOTE]
    > 複数 ID で構成された組織アカウントのみを許可する場合は、必ず OneDrive for iOS 10.34 以降、Outlook for iOS 2.99.0 以降、または Edge for iOS 44.8.7 以降を使用すると共に、アプリが [Intune アプリ保護ポリシー](app-protection-policy.md)の対象になっている必要があります。
@@ -181,7 +182,7 @@ Intune は、プロパティ リストの次のデータ型をサポートして
 - \{\{serialnumberlast4digits\}\} — たとえば、**G5V2** (iOS/iPadOS デバイスの場合)
 - \{\{aaddeviceid\}\} — たとえば、**ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
-## <a name="configure-the-company-portal-app-to-support-ios-dep-devices"></a>iOS DEP デバイスをサポートするようにポータル サイト アプリを構成する
+## <a name="configure-the-company-portal-app-to-support-ios-and-ipados-dep-devices"></a>iOS と iPadOS の DEP デバイスをサポートするようにポータル サイト アプリを構成する
 
 DEP (Apple の Device Enrollment Program) の登録には、アプリ ストア バージョンのポータル サイト アプリとの互換性はありません。 ただし、次の手順に従って、iOS/iPadOS DEP デバイスをサポートするようにポータル サイト アプリを構成できます。
 
@@ -204,7 +205,7 @@ DEP (Apple の Device Enrollment Program) の登録には、アプリ ストア 
 3. 目的のグループを対象としたアプリ構成ポリシーを使用して、ポータル サイトをデバイスに展開します。 ポリシーは、既に DEP に登録されているデバイスのグループにのみ展開してください。
 4. ポータル サイト アプリが自動的にインストールされたらサインインするように、エンド ユーザーに指示します。
 
-## <a name="monitor-ios--app-configuration-status-per-device"></a>デバイスごとに iOS アプリ構成の状態を監視する 
+## <a name="monitor-iosipados--app-configuration-status-per-device"></a>デバイスごとに iOS/iPadOS のアプリ構成の状態を監視する 
 構成ポリシーが割り当てられたら、マネージド デバイスごとに iOS/iPadOS アプリ構成の状態を監視することができます。 Azure Portal の **[Microsoft Intune]** から、 **[デバイス]**  >  **[すべてのデバイス]** の順に選びます。 マネージド デバイスの一覧から、デバイス用のウィンドウを表示する特定のデバイスを選択します。 デバイスのウィンドウで、 **[アプリの構成]** を選択します。  
 
 ## <a name="additional-information"></a>追加情報

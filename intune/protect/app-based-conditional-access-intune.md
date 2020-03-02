@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0b5e67c433f2d3633219650f48307dccae196e9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b9fe275be3f7eccee7f60dc27e5068e5b91ca93d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713288"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514151"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Intune でのアプリベースの条件付きアクセス
 
@@ -34,9 +34,9 @@ ms.locfileid: "73713288"
 > [!NOTE]
 > 管理対象アプリは、アプリ保護ポリシーが適用されたアプリであり、Intune で管理できます。
 
-Microsoft Outlook アプリのみが Exchange Online にアクセスできるようにすると、iOS や Android 上の組み込みメール アプリをブロックできます。 また、Intune アプリ保護ポリシーを適用していないアプリが SharePoint Online にアクセスするのをブロックできます。
+Microsoft Outlook アプリのみが Exchange Online にアクセスできるようにすると、iOS/iPadOS および Android 上の組み込みメール アプリをブロックできます。 また、Intune アプリ保護ポリシーを適用していないアプリが SharePoint Online にアクセスするのをブロックできます。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
 アプリベースの条件付きアクセス ポリシーを作成するには、以下を保有している必要があります。
 
@@ -84,7 +84,7 @@ Microsoft Outlook アプリのみが Exchange Online にアクセスできるよ
 
 11. 会社の電子メールは、ユーザーのメールボックスに配信されています。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 [アプリベースの条件付きアクセス ポリシーを作成する](app-based-conditional-access-intune-create.md)
 
 [最新の認証を使用していないアプリをブロックする](app-modern-authentication-block.md)

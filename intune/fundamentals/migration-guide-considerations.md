@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86cef30c31b53c6bfd1873390fb7546cbeab2a53
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 936e4836938ddddc8e795d85de5a449ee77edaa4
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510025"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515001"
 ---
 # <a name="special-migration-considerations"></a>移行において特に考慮すべき事項
 
@@ -32,9 +32,9 @@ ms.locfileid: "72510025"
 
 Apple の Device Enrollment Program (DEP) のデバイス構成は、エンド ユーザーが削除できない設定になっています。 DEP の高度な管理機能を保持するには、デバイスをワイプして箱から取り出したときの (新品の) 状態に戻してから、Intune に登録する必要があります。
 
-DEP の使用を続行して Intune でデバイスを管理するには、[Device Enrollment Program で iOS デバイスの登録をセットアップします](../enrollment/device-enrollment-program-enroll-ios.md)。
+DEP の使用を続行して Intune でデバイスを管理するには、[Device Enrollment Program で iOS/iPadOS デバイスの登録を設定します](../enrollment/device-enrollment-program-enroll-ios.md)。
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [フェーズ 2:移行のキャンペーン](../migration-guide-campaign.md)

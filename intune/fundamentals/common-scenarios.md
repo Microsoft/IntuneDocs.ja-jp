@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0e2e2101706b9b9afa77553244a438a2299903b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 67d9b5df39311d58571f875b8d41c16088010fad
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414022"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514304"
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Microsoft Intune の一般的な使用方法
 
@@ -35,7 +35,7 @@ ms.locfileid: "73414022"
 >Microsoft IT は Intune を使用して、企業のデータを保護しながら、Microsoft の従業員が個人のモバイル デバイスで会社のリソースにアクセスすることを可能にしています。 Microsoft IT が Intune とその他のサービスをどのように使用して ID、デバイス、アプリ、およびデータを管理しているか、[こちらのテクニカル ケース スタディ](https://www.microsoft.com/itshowcase/Article/Content/588)でその方法の詳細をご確認ください。  
 
 >[!IMPORTANT]
->Microsoft では、iOS デバイスに対する最近の "Trident" マルウェア攻撃を考慮して、モバイル デバイスを最新の状態に保ちたいと考えています。 そのため、「[Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/)」(モバイル デバイスを確実に最新の状態にする) というブログの投稿を公開しました。 このブログでは、Intune でデバイスを保護し、最新の状態に保つためのさまざまな方法について説明しています。
+>Microsoft では、iOS/iPadOS デバイスに対する最近の "Trident" マルウェア攻撃を考慮して、モバイル デバイスを確実に最新の状態にしたいと考えています。 そのため、「[Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/)」(モバイル デバイスを確実に最新の状態にする) というブログの投稿を公開しました。 このブログでは、Intune でデバイスを保護し、最新の状態に保つためのさまざまな方法について説明しています。
 
 ## <a name="protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices"></a>モバイル デバイスで安全にアクセスできるようにオンプレミスの電子メールとデータを保護する
 

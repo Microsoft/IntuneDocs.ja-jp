@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 777267f10edac5bbdbe23ceb3068d4366a8df7b7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d5a51d82551795ed8ad5c740d5fb852ff292e1b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509952"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514916"
 ---
 # <a name="develop-a-rollout-plan"></a>ロールアウト計画を作成する
 
@@ -58,7 +58,7 @@ ms.locfileid: "72509952"
 
 - **地理的場所** <br/>この方法では、特定の地域内 (同じ大陸、国/地域、同じ会社の建物など) のすべてのユーザーに展開します。 この種類の段階的展開では、特定の場所のユーザーに集中することができます。 Intune を同時に展開する場所の数を軽減できるため、より多くの[ホワイト グローブ](#user-assisted-enrollment) アプローチを提供できます。 1 つの場所に複数の部門やユース ケースが存在する可能性があるため、同時に複数のユース ケースが展開される場合があります。
 
-- **プラットフォーム** <br/>この種類の展開では、複数の類似したプラットフォームを同時に展開します。 たとえば、1 か月目にすべての iOS デバイス、翌月に Android、その翌月に Windows などです。 この種類の段階的展開では、ヘルプデスクは一度に 1 つのプラットフォームだけをサポートすれば良いため、サポートしやすくなります。
+- **プラットフォーム** <br/>この種類の展開では、複数の類似したプラットフォームを同時に展開します。 たとえば、1 か月目にすべての iOS/iPadOS デバイス、翌月に Android、その翌月に Windows などです。 この種類の段階的展開では、ヘルプデスクは一度に 1 つのプラットフォームだけをサポートすれば良いため、サポートしやすくなります。
 
 対象となるグループと期間を含む Intune ロールアウト計画の例を次に示します。
 
@@ -107,6 +107,6 @@ Intune のユーザー登録のもう 1 つの選択肢は、IT 技術説明会�
 | セルフサービス |  |  |  | 人事、財務 |
 | ホワイト グローブ |  |  |  | 役員 |
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 次のセクションは、[Intune ロールアウトの情報伝達計画を立てる](../planning-guide-communication-plan.md)場合のガイダンスです。

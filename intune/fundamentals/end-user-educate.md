@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c959102383f44eb35e1a923f39325007c6624b5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 94c52257072bc713cfd3b7a44f342d5d9a4ba2f8
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502897"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514678"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Microsoft Intune に関してエンド ユーザーを教育する方法
 
@@ -68,8 +68,8 @@ __ユーザーにとって Intune が不便な点__  ユーザーによるアプ
   * [Android ユーザーがアプリを入手する方法](end-user-apps-android.md)
 
 * **Android**
-  * [iOS デバイスを Intune で使用する](https://docs.microsoft.com/intune-user-help/using-your-ios-device-with-intune)
-  * [iOS ユーザーがアプリを入手する方法](end-user-apps-ios.md)
+  * [iOS/iPadOS デバイスを Intune で使用する](https://docs.microsoft.com/intune-user-help/using-your-ios-device-with-intune)
+  * [iOS/iPadOS のユーザーがアプリを入手する方法](end-user-apps-ios.md)
 
 * **Windows**
   * [Windows デバイスを Intune で使用する](https://docs.microsoft.com/intune-user-help/using-your-windows-device-with-intune)

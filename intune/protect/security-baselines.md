@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04436c38fc6c4100a8232ea1ad23585f350d6aae
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 43e104d9f32f6b6204ffc3bd461bb06764543e3c
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548150"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569270"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune でのセキュリティ ベースラインを使用した Windows 10 デバイスの構成
 
@@ -142,7 +142,7 @@ Intune では、次のセキュリティ ベースラインのインスタンス
 
    ![ベースラインを確認する](./media/security-baselines/review.png)
 
-9. プロファイルを作成した後は、 **[デバイス セキュリティ]**  >  **[セキュリティ ベースライン]** の順に移動して編集を行い、構成したベースラインの種類を選択して、 **[プロファイル]** を選択します。 使用可能なプロファイルの一覧からプロファイルを選択し、 **[プロパティ]** を選択します。 使用できるすべての構成タブから設定を編集し、 **[レビューと保存]** を選択して加えた変更をコミットできます。
+9. プロファイルを作成した後は、 **[エンドポイント セキュリティ]**  >  **[セキュリティ ベースライン]** の順に移動して編集を行い、構成したベースラインの種類を選択して、 **[プロファイル]** を選択します。 使用可能なプロファイルの一覧からプロファイルを選択し、 **[プロパティ]** を選択します。 使用できるすべての構成タブから設定を編集し、 **[レビューと保存]** を選択して加えた変更をコミットできます。
 
 ### <a name="change-the-baseline-version-for-a-profile"></a>プロファイルのベースラインのバージョンを変更する
 
@@ -214,7 +214,7 @@ Microsoft セキュリティ チームは、これらの推奨事項を作成す
 
 - Microsoft は、グループ ポリシー (GPO) および [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) 用のセキュリティのベースラインを長年にわたって公開し続けています。 これらのベースラインは多くの組織で使用されています。 これらのベースラインの推奨事項は、Microsoft セキュリティ チームと、米国国防総省 (DoD)、National Institute of Standards and Technology (NIST) などの企業のお客様および外部機関との関わりから得られたものです。 Microsoft の推奨事項とベースラインは、これらの組織と共有しています。 また、これらの組織には、Microsoft の推奨事項を厳密に反映した独自の推奨事項もあります。 モバイル デバイス管理 (MDM) がクラウドへと成長を続けた過程で、Microsoft はこのようなグループ ポリシーのベースラインと同等の MDM の推奨事項を作成しました。 このような追加のベースラインは Microsoft Intune に組み込まれており、ベースラインに準拠している (または準拠していない) ユーザー、グループ、およびデバイスに関するコンプライアンス レポートが含まれています。
 
-- 多くのお客様は、Intune のベースラインの推奨事項を出発点として使用し、お客様の IT とセキュリティの要求を満たすようにカスタマイズしています。 Microsoft の Windows 10 RS5 **MDM のセキュリティのベースライン**が最初にリリースされました。 このベースラインは、CIS、NIST などの標準に基づいて、お客様が他のセキュリティのベースラインを最終的にインポートできるようにするための汎用のインフラストラクチャとして構築されています。 現在、これは Windows で利用できます。最終的には iOS と Android が含まれる予定です。
+- 多くのお客様は、Intune のベースラインの推奨事項を出発点として使用し、お客様の IT とセキュリティの要求を満たすようにカスタマイズしています。 Microsoft の Windows 10 RS5 **MDM のセキュリティのベースライン**が最初にリリースされました。 このベースラインは、CIS、NIST などの標準に基づいて、お客様が他のセキュリティのベースラインを最終的にインポートできるようにするための汎用のインフラストラクチャとして構築されています。 現在、これは Windows で利用できます。最終的には iOS/iPadOS および Android が含まれる予定です。
 
 - Microsoft Intune と共に Azure Active Directory (AD) を使用して、オンプレミスの Active Directory グループ ポリシーから純粋なクラウド ソリューションに移行することは、1 つの旅です。 サポートのために、[Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) にはグループ ポリシー テンプレートが含まれています。これは、ハイブリッド AD と Azure AD 参加済みデバイスの管理に役立ちます。 このようなデバイスは、必要に応じてクラウド (Intune) から MDM 設定を取得し、オンプレミス ドメイン コントローラーからグループ ポリシー設定を取得できます。
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4ff350bd8c1c16eedd30a6b7af4f3927bce3c3e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9d0fe5634e5af6ef4c6f19e067131f151733c0b5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508754"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515239"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium Mobile Threat Defense コネクタと Intune
 
@@ -33,7 +33,7 @@ Intune のデバイス コンプライアンス ポリシーにより有効に�
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>Intune と Zimperium を利用し、会社のリソースをどのように保護しますか?
 
-Android および iOS 向け Zimperium アプリは、ファイル システム、ネットワーク スタック、デバイスとアプリケーションの製品利用統計情報を可能な限り記録し、Zimperium クラウド サービスにテレメトリ データを送信し、モバイル デバイスの脅威に対するリスクを評価します。
+Android、iOS/iPadOS 向け Zimperium アプリは、ファイル システム、ネットワーク スタック、デバイス、アプリケーション テレメトリを可能な限り記録し、Zimperium クラウド サービスにテレメトリ データを送信し、モバイル デバイスの脅威に対するリスクを評価します。
 
 Intune デバイス コンプライアンス ポリシーには、Zimperium リスク評価に基づく、Zimperium Mobile Threat Defense のルールが含まれています。 このルールを有効にすると、Intune は、有効にされたポリシーに基づいてデバイスの準拠状態を評価します。 デバイスが準拠していないことが判明した場合、ユーザーは Exchange Online や SharePoint Online などの会社リソースへのアクセスをブロックされます。 また、ユーザーは、デバイスにインストールされている Zimperium アプリから、問題を解決して会社リソースへのアクセスを回復するための案内を受け取ります。
 
@@ -71,7 +71,7 @@ Intune と Zimperium を統合する場合のシナリオのいくつかを、�
 
 ![修復するとアクセス権が付与される](./media/zimperium-mobile-threat-defense-connector/network_wifi_unblocked_Zimperium.png)
 
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいて SharePoint Online へのアクセスを制御する
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>ネットワークへの脅威に基づいて SharePoint Online へのアクセスを制御する
 
 ネットワークで **Man-in-the-middle** のような脅威を検出し、デバイスのリスクに基づいて会社内のファイルの同期を阻止します。
 
@@ -89,7 +89,7 @@ Intune と Zimperium を統合する場合のシナリオのいくつかを、�
 
 - **iOS 8 以降**
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
 - Azure Active Directory Premium
 
@@ -99,7 +99,7 @@ Intune と Zimperium を統合する場合のシナリオのいくつかを、�
 
   - 詳細については、[Zimperium の Web サイト](https://www.zimperium.com/zips-mobile-ips)を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Zimperium を Intune と統合する](zimperium-mtd-connector-integration.md)
 

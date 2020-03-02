@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be8fbb0bd96891eb3af3157deddfc325ebc5f2b9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 884d7f5d4710b44c302598b3c34e704beace240a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508934"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515273"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile コネクタ
 
@@ -41,7 +41,7 @@ Intune デバイス コンプライアンス ポリシーで SEP Mobile のリ�
 
 ## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Intune と SEP Mobile が会社のリソースを保護する方法
 
-Android または iOS 向け SEP Mobile モバイル アプリは、ファイル システム、ネットワーク スタック、デバイスとアプリケーションの製品利用統計情報を可能な限り記録し、SEP Mobile クラウド サービスに送信し、モバイル デバイスの脅威に対するリスクを評価します。
+Android、iOS/iPadOS 向け SEP Mobile モバイル アプリは、ファイル システム、ネットワーク スタック、デバイス、アプリケーション テレメトリを可能な限り記録し、SEP Mobile クラウド サービスに送信し、モバイル デバイスの脅威に対するリスクを評価します。
 
 Intune デバイス コンプライアンス ポリシーには、SEP Mobile のリスク評価に基づく、SEP Mobile に関するルールが含まれています。 このルールを有効にすると、Intune は、有効にされたポリシーに基づいてデバイスの準拠状態を評価します。
 
@@ -87,7 +87,7 @@ Intune では、SEP Mobile との統合に 2 つのモードがあります。
 
 ![修復するとアクセス権が付与される](./media/skycure-mobile-threat-defense-connector/symantec-arch-4.png)
 
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいて SharePoint Online へのアクセスを制御する
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>ネットワークへの脅威に基づいて SharePoint Online へのアクセスを制御する
 
 ネットワークで **Man-in-the-middle** のような脅威を検出し、デバイスのリスクに基づいて会社内のファイルの同期を阻止します。
 
@@ -115,13 +115,13 @@ Intune では、SEP Mobile との統合に 2 つのモードがあります。
 
 詳しくは、[Symantec の Web サイト](https://www.skycure.com/skycure-microsoft-integration/)をご覧ください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Intune と SEP Mobile の統合は次の手順で行います。
 
 - [SEP Mobile と Intune の統合をセットアップする](skycure-mtd-connector-integration.md)
 
-- [SEP Mobile アプリ、Microsoft Authenticator、iOS アプリ構成ポリシーを追加して割り当てる](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [SEP Mobile アプリ、Microsoft Authenticator、iOS/iPadOS アプリ構成ポリシーを追加して割り当てる](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
 - [Intune で SEP Mobile デバイスのコンプライアンス ポリシーを作成する](mtd-device-compliance-policy-create.md)
 

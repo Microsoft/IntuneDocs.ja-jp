@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3399cf006543c0a3554c4c6ec812554462d74231
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 0232855773626693d848f77e561c51d281739215
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691820"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514610"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>ガイド付きシナリオ - Microsoft Office モバイル アプリをセキュリティで保護する 
 
-デバイス管理ポータルでこのガイド付きシナリオに従うことで、iOS および Android デバイスで基本的な Intune アプリ保護を有効にすることができます。
+デバイス管理ポータルでこのガイド付きシナリオに従うことで、iOS/iPadOS および Android のデバイスで基本的な Intune アプリ保護を有効にすることができます。
 
 アプリ保護を有効にすると、次のアクションが適用されます。 
 - 作業ファイルが暗号化されます。
@@ -51,7 +51,7 @@ Office モバイル アプリおよびモバイル用 Microsoft Edge では、�
 
 アプリ ベースの条件付きアクセスとクライアント アプリ管理は、Intune アプリ保護ポリシーをサポートするクライアント アプリのみが Exchange Online やその他の Office 365 サービスにアクセスできるようにすることで、セキュリティ層を追加します。
 
-Microsoft Outlook アプリのみが Exchange Online にアクセスできるようにすると、iOS や Android 上の組み込みメール アプリをブロックできます。 また、Intune アプリ保護ポリシーを適用していないアプリが SharePoint Online にアクセスするのをブロックできます。
+Microsoft Outlook アプリのみが Exchange Online にアクセスできるようにすると、iOS/iPadOS および Android 上の組み込みメール アプリをブロックできます。 また、Intune アプリ保護ポリシーを適用していないアプリが SharePoint Online にアクセスするのをブロックできます。
 
 この例では、管理者は Outlook アプリにアプリ保護ポリシーを適用し、その後、会社の電子メールへのアクセス時に使用できるアプリの承認済みリストに Outlook アプリを追加する条件付きアクセス ルールを適用しています。
 
@@ -69,7 +69,7 @@ Microsoft Outlook アプリのみが Exchange Online にアクセスできるよ
 
 **Intune App Protection** のガイド付きシナリオに従うことで、データが組織外と共有されたり組織外に漏洩されたりするのを防ぐことができます。 
 
-割り当てられた iOS および Android ユーザーは、Office アプリを開くたびに PIN を入力する必要があります。 PIN の入力に 5 回失敗すると、ユーザーは PIN をリセットする必要があります。 デバイスの PIN を既に要求している場合、ユーザーには影響しません。
+割り当てられた iOS/iPadOS および Android のユーザーは、Office アプリを開くたびに PIN を入力する必要があります。 PIN の入力に 5 回失敗すると、ユーザーは PIN をリセットする必要があります。 デバイスの PIN を既に要求している場合、ユーザーには影響しません。
 
 ### <a name="what-you-will-need-to-continue"></a>続けるために必要なこと
 
@@ -86,7 +86,7 @@ Microsoft Outlook アプリのみが Exchange Online にアクセスできるよ
 
 ## <a name="step-3---apps"></a>ステップ 3 - アプリ
 
-作業を始めやすいように、このガイド付きシナリオでは、iOS および Android デバイスでの保護対象として次のモバイル アプリがあらかじめ選択されています。
+作業を始めやすいように、このガイド付きシナリオでは、iOS/iPadOS および Android のデバイスでの保護対象として次のモバイル アプリがあらかじめ選択されています。
 - Microsoft Excel 
 - Microsoft Word 
 - Microsoft Teams 

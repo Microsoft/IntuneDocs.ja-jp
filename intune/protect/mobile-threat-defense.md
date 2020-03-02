@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b67e3b14fd94376fb6dacad88fa58ddc460a6bc5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f056f665ebee0d1e2315129a4fe739b2c490ca98
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73057581"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514848"
 ---
 # <a name="mobile-threat-defense-integration-with-intune"></a>Mobile Threat Defense の Intune との統合
 
@@ -50,7 +50,7 @@ Intune では、Mobile Threat Defense コネクタを使用して、Intune と�
 これは、オプトインのサービスです。既定で共有されるインベントリ情報はありません。 アプリのインベントリ情報を共有する前に、Intune 管理者は、Mobile Threat Defense コネクタの設定で **iOS デバイスのアプリの同期**を有効にする必要があります。
 
 **アプリ インベントリ**  
-iOS デバイスのアプリの同期を有効にした場合、iOS を内蔵した会社所有デバイスと個人所有デバイスの両方からのインベントリが MTD サービス プロバイダーに送信されます。 アプリ インベントリのデータ:
+iOS/iPadOS デバイスのアプリの同期を有効にした場合、会社所有と個人所有の iOS/iPadOS デバイスの両方からのインベントリが MTD サービス プロバイダーに送信されます。 アプリ インベントリのデータ:
 
 - アプリ ID
 - アプリ バージョン

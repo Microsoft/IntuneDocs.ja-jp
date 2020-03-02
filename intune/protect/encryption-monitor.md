@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune での暗号化されたデバイスの暗号化レポート
 titleSuffix: Microsoft Intune
-description: Microsoft Intune ポータル内から、iOS または Windows デバイスの暗号化状態に関するレポートを表示し、FileVault および BitLocker 回復キーにアクセスします。
+description: Microsoft Intune ポータル内から、iOS/iPadOS または Windows デバイスの暗号化状態に関するレポートを表示し、FileVault および BitLocker 回復キーにアクセスします。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5d9508c5d69b0790efa37ee633f8216bfd2bb30c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: daa302813c7ea3ad35ecfa7dd8d70436bfe5e1a4
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74164653"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510505"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Intune でデバイスの暗号化を監視する
 
@@ -34,7 +34,7 @@ Microsoft Intune の暗号化レポートは、デバイスの暗号化状態に
 
 暗号化レポートには、管理対象のサポートされているデバイス全体の共通の詳細が表示されます。 次のセクションでは、Intune によってレポートに表示される情報について詳しく説明します。
 
-### <a name="prerequisites"></a>必要条件
+### <a name="prerequisites"></a>[前提条件]
 
 暗号化レポートでは、次のオペレーティング システム バージョンを実行するデバイスのレポートがサポートされています。
 
@@ -48,7 +48,7 @@ Microsoft Intune の暗号化レポートは、デバイスの暗号化状態に
 - **デバイス名** - デバイスの名前。
 - **OS** – Windows や macOS などのデバイス プラットフォーム。
 - **OS バージョン** – デバイス上の Windows または macOS のバージョン。
-- **TPM バージョン** *(Windows 10 のみに適用)* – Windows 10 デバイス上のトラステッド プラットフォーム モジュール (TPM) チップのバージョン。
+- **TPM バージョン** " *(Windows 10 のみに適用)"* – Windows 10 デバイス上のトラステッド プラットフォーム モジュール (TPM) チップのバージョン。
 - **暗号化の準備** – BitLocker や FileVault 暗号化など、適用可能な暗号化テクノロジをサポートするためのデバイスの準備の評価。 デバイスは次のように識別されます。
   - **準備完了**:MDM ポリシーを使ってデバイスを暗号化できます。それには、デバイスで次の要件が満たされている必要があります。
 
@@ -231,6 +231,6 @@ Intune では BitLocker 用の Azure AD ブレードにアクセスできます�
 
 BitLocker の情報については、[BitLocker 構成サービス プロバイダー](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) (CSP) に関するページを参照してください。 BitLocker CSP は、Windows 10 の場合、バージョン 1703 以降で、Windows 10 Pro の場合、バージョン 1809 以降でサポートされています。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [デバイス コンプライアンス](compliance-policy-create-windows.md) ポリシーを作成する。

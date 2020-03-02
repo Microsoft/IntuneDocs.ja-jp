@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 881d0f095d2144ae42db4825336275980a19f419
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 21497716f17ced83bdcc1952cb952151f993bb7b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812354"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511329"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Microsoft Intune でのデバイス ポリシーとプロファイルの一般的な質問、問題と解決策
 
@@ -36,11 +36,11 @@ Intune でデバイス プロファイルとポリシーを使用する場合の
 
 追加の推奨事項:  
 
-- 接続先の Wi-Fi ネットワークがパスワードまたはパスフレーズを受け取る場合は、Wi-Fi ルーターに直接接続できることを確認します。 iOS デバイスでテストできます。
+- 接続先の Wi-Fi ネットワークがパスワードまたはパスフレーズを受け取る場合は、Wi-Fi ルーターに直接接続できることを確認します。 iOS/iPadOS デバイスでテストできます。
 - Wi-Fi エンドポイント (Wi-Fi ルーター) に正常に接続されたら、SSID と使用した資格情報 (この値はパスワードまたはパスフレーズです) をメモします。
 - 事前共有キー フィールドに SSID と資格情報 (パスワードまたはパスフレーズ) を入力します。 
 - ユーザー数が限られているテスト グループに展開します。IT チームに限定することをお勧めします。 
-- iOS デバイスを Intune に同期します。 登録していない場合、登録します。 
+- iOS/iPadOS デバイスを Intune に同期します。 登録していない場合、登録します。 
 - (最初の手順で説明した) 同じ Wi-Fi エンドポイントへの接続をもう一度テストします。
 - より大きなグループにロールアウトし、最後には、展開が求められる組織の全ユーザーに展開します。 
 
@@ -54,7 +54,7 @@ Intune では、Intune サービスにチェックインするようデバイス
 
 | プラットフォーム | 更新サイクル|
 | --- | --- |
-| iOS | 約 8 時間ごと |
+| iOS/iPadOS | 約 8 時間ごと |
 | macOS | 約 8 時間ごと |
 | Android | 約 8 時間ごと |
 | デバイスとして登録された Windows 10 PC | 約 8 時間ごと |
@@ -65,7 +65,7 @@ Intune では、Intune サービスにチェックインするようデバイス
 
 | プラットフォーム | 頻度 |
 | --- | --- |
-| iOS | 1 時間まで 15 分ごと、その後は約 8 時間ごと |  
+| iOS/iPadOS | 1 時間まで 15 分ごと、その後は約 8 時間ごと |  
 | macOS | 1 時間まで 15 分ごと、その後は約 8 時間ごと | 
 | Android | 15 分まで 3 分ごと、その後の 2 時間は 15 分ごと、その後は約 8 時間ごと | 
 | デバイスとして登録された Windows 10 PC | 15 分まで 3 分ごと、その後の 2 時間は 15 分ごと、その後は約 8 時間ごと | 
@@ -102,7 +102,7 @@ Intune では、Intune サービスにチェックインするようデバイス
 
 ポリシーがアプリに展開され、有効になります。 2 番目のポリシーが展開されます。 このシナリオでは、最初のポリシーが優先され、適用されたままになります。 2 つ目のポリシーは競合を示しています。 両方を同時に適用する (つまり、優先されるポリシーがない) 場合、両方が競合の状態になります。 競合する設定は、最も制限の厳しい値に設定されます。
 
-## <a name="what-happens-when-ios-custom-policies-conflict"></a>iOS カスタム ポリシーが競合するとどうなりますか。
+## <a name="what-happens-when-iosipados-custom-policies-conflict"></a>iOS/iPadOS カスタム ポリシーが競合するとどうなりますか。
 
 Intune は Apple 構成ファイルのペイロードまたはカスタム Open Mobile Alliance Uniform Resource Identifier (OMA-URI) ポリシーを評価しません。 配信メカニズムとしてのみ機能します。
 
@@ -144,7 +144,7 @@ Intune は Apple 構成ファイルのペイロードまたはカスタム Open 
     - NFC を許可する
     - Wi-Fi を許可する
 
-  - **iOS**: 以下を除き、すべての設定が削除されます。
+  - **iOS/iPadOS**:以下を除き、すべての設定が削除されます。
   
     - 音声通話ローミングを許可する
     - データ ローミングを許可する
@@ -156,7 +156,7 @@ Windows Phone デバイスから、MDM または EAS を使用して設定され
 
 プロファイルを安全度の低い値に変更するには、セキュリティ ポリシーをリセットします。 たとえば、Windows 8.1 で、デスクトップを右からスワイプして、 **[設定]**  >  **[コントロール パネル]** の順に選択します。 **[ユーザー アカウント]** アプレットを選択します。 左側のナビゲーション メニューの下部に、 **[セキュリティ ポリシーのリセット]** リンクがあります。 これを選択し、 **[ポリシーのリセット]** を選択します。
 
-Android、Windows Phone 8.1 以降、iOS、Windows 10 などのその他の MDM デバイスでは、制限の緩いプロファイルを適用するにはいったんデバイスを削除して、Intune に再登録しなければならない場合があります。
+Android、Windows Phone 8.1 以降、iOS/iPadOS、Windows 10 などのその他の MDM デバイスでは、制限の緩いプロファイルを適用するにはいったんデバイスを削除して、Intune に再登録しなければならない場合があります。
 
 ## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Windows 10 プロファイルの一部の設定で "適用できません" が返される
 

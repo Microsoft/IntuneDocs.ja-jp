@@ -1,7 +1,7 @@
 ---
-title: macOS デバイスの登録 - Device Enrollment Program または Apple School Manager
+title: macOS デバイスの登録 - Apple Business Manager または Apple School Manager
 titleSuffix: ''
-description: Device Enrollment Program を使用して企業が所有する macOS デバイスを登録する方法を説明します。
+description: 企業所有の macOS デバイスの登録方法について学習します。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,22 +18,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d55139a106599664f801a6bf73b0e0e8db24b57a
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6ef08ea65a4976bcf77154108e415634dbae8e05
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414489"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514338"
 ---
-# <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>Device Enrollment Program または Apple School Manager を使用して macOS デバイスを自動登録する
+# <a name="automatically-enroll-macos-devices-with-the-apple-business-manager-or-apple-school-manager"></a>Apple Business Manager または Apple School Manager を使用して macOS デバイスを自動登録する
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-この記事は、Apple の [Device Enrollment Program (DEP)](https://deploy.apple.com) または [Apple School Manager](https://school.apple.com/) で購入した macOS デバイス用に Intune の登録を設定できます。 これらの登録方法を使用すると、デバイスに触れることなく、多数のデバイスを登録できます。 ユーザーに直接 macOS デバイスを出荷できます。 ユーザーがデバイスの電源をオンにすると、セットアップ アシスタントが構成済み設定で実行され、デバイスが Intune の管理として登録されます。
+Apple の [Apple Business Manager](https://business.apple.com/) または [Apple School Manager](https://school.apple.com/) で購入した macOS デバイス用に Intune の登録を設定できます。 これらの登録方法を使用すると、デバイスに触れることなく、多数のデバイスを登録できます。 ユーザーに直接 macOS デバイスを出荷できます。 ユーザーがデバイスの電源をオンにすると、セットアップ アシスタントが構成済み設定で実行され、デバイスが Intune の管理として登録されます。
 
-登録を設定するには、Intune ポータルと Apple DEP ポータルの両方を使います。 登録時にデバイスに適用された設定を含む登録プロファイルを作成します。
+登録を設定するには、Intune ポータルと Apple ポータルの両方を使います。 登録時にデバイスに適用された設定を含む登録プロファイルを作成します。
 
-DEP 登録や Apple School Manager は、[デバイス登録マネージャー](device-enrollment-manager-enroll.md) では動作しません。
+Apple Business Manager 登録と Apple School Manager はどちらも、[デバイス登録マネージャー](device-enrollment-manager-enroll.md)では動作しません。
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -199,7 +199,7 @@ Apple と Intune の間の同期と管理を有効にし、デバイスを登録
     ![生成された新しいトークンのスクリーンショット。](./media/device-enrollment-program-enroll-macos/generatenewtoken.png)
 
 4. **[Your Server Token]\(サーバー トークン\)** を選択します。  
-5. [Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]** 、 **[Apple の登録]** 、 **[Enrollment Program トークン]** の順に選択し、トークンを選択します。
+5. [Microsoft Endpoint Manage 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイスの登録]**  >  **[Apple の登録]**  >  **[Enrollment Program トークン]** の順に選択し、トークンを選択します。
     ![Enrollment Program トークンのスクリーンショット。](./media/device-enrollment-program-enroll-macos/enrollmentprogramtokens.png)
 
 6. **[トークンを更新する]** を選択し、元のトークンの作成に使用した Apple ID を入力します。  

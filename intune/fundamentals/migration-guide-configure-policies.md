@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 191be009f8d9e6fc448126834ef48f0bc6e2edc4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c8e4671790b72583219f1df64a0ef3491d707ea7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505342"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515035"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Microsoft Intune への移行時にデバイス コンプライアンス ポリシーとアプリ管理ポリシーを構成する
 
@@ -44,7 +44,7 @@ Intune 移行時の主な目標は、すべてのデバイスが Intune に登�
 
 ## <a name="task-list-for-device-compliance-policies"></a>デバイス コンプライアンス ポリシーのタスク一覧
 
-### <a name="task-1-add-device-groups-optional"></a>タスク 1:デバイス グループを追加する (省略可能)
+### <a name="task-1-add-device-groups-optional"></a>タスク 1: デバイス グループを追加する (省略可能)
 
 ユーザー ID ではなくデバイス ID に基づいて管理タスクを実行する必要がある場合に、デバイス グループを作成することができます。
 
@@ -52,7 +52,7 @@ Intune 移行時の主な目標は、すべてのデバイスが Intune に登�
 
 デバイスを登録する前にデバイス グループを構成しておくと、デバイス カテゴリを使って、登録時にデバイスをグループに自動的に参加させることができます。 その後、デバイスはグループのデバイス ポリシーを自動的に受け取ります。 「[グループの概要](groups-get-started.md)」をご覧ください。
 
-### <a name="task-2-use-resource-access-profiles-wi-fi-vpn-and-email-certificates"></a>タスク 2:リソース アクセス プロファイル (Wi-Fi、VPN、および電子メールの証明書) を使用する
+### <a name="task-2-use-resource-access-profiles-wi-fi-vpn-and-email-certificates"></a>タスク 2: リソース アクセス プロファイル (Wi-Fi、VPN、および電子メールの証明書) を使用する
 
 リソース アクセス プロファイルは、登録されたデバイスに証明書とアクセス構成を提供します。 証明書ベースの認証を使っている場合は、[証明書を構成](../protect/certificates-configure.md)します。
 
@@ -60,11 +60,11 @@ Intune 移行時の主な目標は、すべてのデバイスが Intune に登�
 
 デバイス構成プロファイルを作成して、デバイス レベルの設定 (カメラの無効化、アプリ ストア、単一アプリ モードの構成、ホーム画面など) を適用する必要があります。 デバイス プロファイルについては、[こちら](../configuration/device-profiles.md)をご覧ください。
 
-#### <a name="directly-import-ios-configuration-profiles-optional"></a>iOS 構成プロファイルを直接インポートする (省略可能)
+#### <a name="directly-import-iosipados-configuration-profiles-optional"></a>iOS/iPadOS 構成プロファイルを直接インポートする (省略可能)
 
 - **Apple Configurator iOS プロファイル (iOS 7.1 以降):** 既存の MDM ソリューションで Apple Configurator プロファイル (.mobileconfig ファイル) を使用している場合、Intune ではカスタムの構成ポリシーとして、このプロファイルを直接インポートすることができます。
 
-- **iOS モバイル アプリケーション構成ポリシー:** 既存の MDM ソリューションで iOS モバイル アプリケーション構成ポリシーを使用している場合、Apple によりプロパティ一覧で指定された XML 形式を満たす限り、Intune はこのポリシーを直接インポートすることができます。
+- **iOS モバイル アプリケーション構成ポリシー:** 既存の MDM ソリューションで iOS/iPadOS モバイル アプリケーション構成ポリシーを使用している場合、Apple によりプロパティ一覧で指定された XML 形式を満たす限り、Intune ではこれらを直接インポートすることができます。
 
 - iOS のカスタム ポリシーを追加する方法は[こちら](../configuration/custom-settings-ios.md)を参照してください。
 
@@ -94,6 +94,6 @@ Intune MDM を使用する場合は、アプリの自動インストールを要
 
 デバイスを管理するには、デバイスを登録する必要があります。 企業所有およびユーザー個人のデバイスの登録を準備する方法については、[こちら](../enrollment/device-enrollment.md)を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [アプリ保護ポリシーを構成する (省略可能)](../apps/app-protection-policies.md)。

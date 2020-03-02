@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune での iOS デバイスに対するアプリごとの VPN の設定 - Azure | Microsoft Docs
-description: 前提条件を参照し、仮想プライベート ネットワーク (VPN) ユーザーのグループを作成し、SCEP 証明書プロファイルを追加し、アプリごとの VPN プロファイルを構成し、iOS デバイスの Microsoft Intune でいくつかのアプリを VPN プロファイルに割り当てます。 デバイスの VPN 接続を確認する手順も一覧表示します。
+title: Microsoft Intune での iOS/iPadOS デバイスに対するアプリごとの VPN の設定 - Azure | Microsoft Docs
+description: 前提条件を参照し、仮想プライベート ネットワーク (VPN) ユーザーのグループを作成し、SCEP 証明書プロファイルを追加し、アプリごとの VPN プロファイルを構成し、iOS/iPadOS デバイスの Microsoft Intune でいくつかのアプリを VPN プロファイルに割り当てます。 デバイスの VPN 接続を確認する手順も一覧表示します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,20 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c9f6dbfb8d6ee4b766abef04595ffca7df4c9dc
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: fd53172a1086f48dc1646e1b8a63de8bec37b934
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206382"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512604"
 ---
-# <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Intune での iOS デバイスに対するアプリごとの仮想プライベート ネットワーク (VPN) の設定
+# <a name="set-up-per-app-virtual-private-network-vpn-for-iosipados-devices-in-intune"></a>Intune での iOS/iPadOS デバイスに対するアプリごとの仮想プライベート ネットワーク (VPN) の設定
 
 Microsoft Intune では、アプリに割り当てられた仮想プライベート ネットワーク (VPN) を作成して使用することができます。 この機能は、"アプリごとの VPN" と呼ばれます。 Intune で管理されているデバイスで VPN を使用できるマネージド アプリを選択します。 アプリごとの VPN を使用すると、エンド ユーザーは VPN 経由で自動的に接続し、ドキュメントなどの組織のリソースへのアクセスを取得します。
 
 この機能は、以下に適用されます。
 
 - iOS 9 以降
+- iPadOS 13.0 以降
 
 VPN プロバイダーのドキュメントで、お使いの VPN でアプリごとの VPN がサポートされているかどうかを確認します。
 
@@ -39,7 +40,7 @@ VPN プロバイダーのドキュメントで、お使いの VPN でアプリ�
 一部の VPN では、アプリごとの VPN でユーザー名とパスワードの認証を許可しています。 つまり、ユーザーは VPN に接続するためにユーザー名とパスワードを入力する必要があります。
 
 > [!IMPORTANT]
-> iOS 用の IKEv2 VPN プロファイルでは、アプリごとの VPN はサポートされていません。
+> iOS/iPadOS 用の IKEv2 VPN プロファイルでは、アプリごとの VPN はサポートされていません。
 
 ## <a name="per-app-vpn-with-zscaler"></a>Zscaler でのアプリごとの VPN
 
@@ -67,23 +68,23 @@ Zscaler Private Access (ZPA) は、認証のために Azure Active Directory (Az
 
 ## <a name="create-a-trusted-certificate-profile"></a>信頼済み証明書プロファイルを作成する
 
-CA によって発行された VPN サーバーのルート証明書を、Intune で作成されたプロファイルにインポートします。 信頼済み証明書プロファイルから iOS デバイスに、VPN サーバーが提示する CA を自動的に信頼するように指示します。
+CA によって発行された VPN サーバーのルート証明書を、Intune で作成されたプロファイルにインポートします。 信頼済み証明書プロファイルから iOS/iPadOS デバイスに、VPN サーバーが提示する CA を自動的に信頼するように指示します。
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
+2. **[デバイス]**  >  **[構成プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
 3. 次のプロパティを入力します。
-    - **名前**:プロファイルのわかりやすい名前を入力します。 後で簡単に識別できるよう、プロファイルに名前を付けます。 たとえば、「**会社全体の iOS 信頼済み証明書 VPN プロファイル**」は適切なプロファイル名です。
+    - **名前**:プロファイルのわかりやすい名前を入力します。 後で簡単に識別できるよう、プロファイルに名前を付けます。 たとえば、**会社全体の iOS/iPadOS 信頼済み証明書 VPN プロファイル**は適切なプロファイル名です。
     - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
-    - **[プラットフォーム]** : **[iOS]** を選択します。
+    - **[プラットフォーム]** : **[iOS/iPadOS]** を選択します。
     - **[プロファイルの種類]** : **[信頼された証明書]** を選択します。
 4. フォルダー アイコンを選択し、VPN 管理コンソールからエクスポートした VPN 証明書 (.cer ファイル) を参照します。 
 5. **[OK]**  >  **[作成]** を選択します。
 
-    ![Microsoft Intune で iOS デバイスの信頼された証明書プロファイルを作成する](./media/vpn-setting-configure-per-app/vpn-per-app-create-trusted-cert.png)
+    ![Microsoft Intune で iOS/iPadOS デバイスの信頼された証明書プロファイルを作成する](./media/vpn-setting-configure-per-app/vpn-per-app-create-trusted-cert.png)
 
 ## <a name="create-a-scep-or-pkcs-certificate-profile"></a>SCEP または PKCS 証明書プロファイルを作成する
 
-信頼されたルート証明書プロファイルにより、デバイスが VPN サーバーを自動的に信頼できるようになります。 SCEP または PKCS 証明書は、iOS の VPN クライアントから VPN サーバーに資格情報を提供します。 この証明書により、ユーザー名とパスワードを求めることなくデバイスがサイレント認証をすることができるようになります。 
+信頼されたルート証明書プロファイルにより、デバイスが VPN サーバーを自動的に信頼できるようになります。 SCEP または PKCS 証明書は、iOS/iPadOS の VPN クライアントから VPN サーバーに資格情報を提供します。 この証明書により、ユーザー名とパスワードを求めることなくデバイスがサイレント認証をすることができるようになります。 
 
 クライアント認証証明書を構成して割り当てるには、次のいずれかの記事を参照してください。
 
@@ -96,28 +97,28 @@ CA によって発行された VPN サーバーのルート証明書を、Intune
 
 ## <a name="create-a-per-app-vpn-profile"></a>アプリごとの VPN プロファイルを作成する
 
-VPN プロファイルには、クライアントの資格情報を含む SCEP または PKCS 証明書、VPN への接続情報、iOS アプリケーションがアプリごとの VPN 機能を使用できるようにする、アプリごとの VPN フラグが含まれています。
+VPN プロファイルには、クライアントの資格情報を含む SCEP または PKCS 証明書、VPN への接続情報、iOS/iPadOS アプリケーションがアプリごとの VPN 機能を使用できるようにする、アプリごとの VPN フラグが含まれています。
 
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[デバイス]**  >  **[構成プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
 2. 次のプロパティを入力します。
-    - **名前**:カスタム プロファイルのわかりやすい名前を入力します。 後で簡単に識別できるよう、プロファイルに名前を付けます。 たとえば、「**会社全体の iOS アプリ別 VPN プロファイル**」は適切なプロファイル名です。
+    - **名前**:カスタム プロファイルのわかりやすい名前を入力します。 後で簡単に識別できるよう、プロファイルに名前を付けます。 たとえば、**会社全体の iOS/iPadOS アプリ別 VPN プロファイル**は適切なプロファイル名です。
     - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
-    - **[プラットフォーム]** : **[iOS]** を選択します。
+    - **[プラットフォーム]** : **[iOS/iPadOS]** を選択します。
     - **[プロファイルの種類]** : **[VPN]** を選択します。
 3. **[接続の種類]** で、VPN クライアント アプリを選択します。
-4. **[基本 VPN]** を選択します。 [iOS の VPN 設定](vpn-settings-ios.md)に関するページでは、すべての設定が一覧表示され、説明されています。 アプリごとの VPN を使用する場合は、次のプロパティが記載されているとおりに設定されていることを確認します。
+4. **[基本 VPN]** を選択します。 [iOS/iPadOS の VPN 設定](vpn-settings-ios.md)に関するページでは、すべての設定が一覧表示され、説明されています。 アプリごとの VPN を使用する場合は、次のプロパティが記載されているとおりに設定されていることを確認します。
 
     - **[認証方法]** : **[証明書]** を選択します。 
-    - **[認証証明書]** :既存の SCEP または PKCS 証明書を選択し、 **[OK]** を選択します。      
+    - **[認証証明書]** :既存の SCEP または PKCS 証明書を選択し、 **[OK]** を選択します。
     - **[分割トンネリング]** :VPN 接続がアクティブなときに、すべてのトラフィックで VPN トンネルの使用を強制するには、 **[無効]** を選択します。 
 
       ![アプリごとの VPN プロファイルで、接続、IP アドレスまたは FQDN、認証方法、Microsoft Intune での分割トンネリングを入力します。](./media/vpn-setting-configure-per-app/vpn-per-app-create-vpn-profile.png)
 
-    その他の設定については、[iOS の VPN 設定](vpn-settings-ios.md)に関するページを参照してください。
+    その他の設定については、[iOS/iPadOS の VPN 設定](vpn-settings-ios.md)に関するページを参照してください。
 
 5. **[自動 VPN]**  >  **[自動 VPN の種類]**  >  **[アプリごとの VPN]** の順に選択します。
 
-    ![Intune で、[自動 VPN] を iOS デバイスでの [アプリごとの VPN] に設定する](./media/vpn-setting-configure-per-app/vpn-per-app-automatic.png)
+    ![Intune で、iOS/iPadOS デバイスの [自動 VPN] を [アプリごとの VPN] に設定する](./media/vpn-setting-configure-per-app/vpn-per-app-automatic.png)
 
 6. **[OK]**  >  **[OK]**  >  **[作成]** の順に選択します。
 
@@ -125,7 +126,7 @@ VPN プロファイルには、クライアントの資格情報を含む SCEP �
 
 VPN プロファイルを追加した後、アプリと Azure AD グループをプロファイルに関連付けます。
 
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[アプリ]** 、 **[すべてのアプリ]** の順に選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[アプリ]**  >  **[すべてのアプリ]** の順に選択します。
 2. 一覧からアプリを選択し、 **[割り当て]**  >  **[グループの追加]** の順に選択します。
 3. **[割り当ての種類]** で、 **[必須]** または **[登録済みデバイスで使用可能]** を選択します。
 4. **[組み込まれたグループ]**  >  **[含めるグループを選択]** > (この記事で) [作成した](#create-a-group-for-your-vpn-users)グループを選択 > **[選択]** の順に選択します。
@@ -148,7 +149,7 @@ VPN プロファイルを追加した後、アプリと Azure AD グループを
 - エンド ユーザーがポータル サイトでアプリのインストールを要求したため、アプリとプロファイルがデバイスにインストールされる場合
 - アプリごとの VPN 構成をアプリ割り当てから削除または変更する場合
 
-## <a name="verify-the-connection-on-the-ios-device"></a>iOS デバイスでの接続を確認する
+## <a name="verify-the-connection-on-the-iosipados-device"></a>iOS/iPadOS デバイスでの接続を確認する
 
 アプリと関連付けられたアプリごとの VPN 設定で、デバイスからの接続を確認します。
 
@@ -167,5 +168,5 @@ VPN を選択したり、資格情報を入力したりせずに接続される�
 
 ## <a name="next-steps"></a>次のステップ
 
-- iOS 設定を確認するには、「[Microsoft Intune での iOS デバイス向けの VPN 設定](vpn-settings-ios.md)」を参照してください。
+- iOS/iPadOS の設定を確認するには、[Microsoft Intune での iOS/iPadOS デバイス向けの VPN 設定](vpn-settings-ios.md)に関するページを参照してください。
 - VPN の設定と Intune の詳細については、[Microsoft Intune での VPN の設定の構成](vpn-settings-configure.md)に関するページを参照してください。

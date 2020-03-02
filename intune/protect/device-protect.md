@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c18b6bcc8ec6e8d78862c0368c920fd3d79ce2b5
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 49c629039c08c892c7d6b19422d79c9eb1a8d760
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755580"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510471"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Microsoft Intune でデバイスを保護する
 
@@ -43,7 +43,7 @@ Intune の[構成ポリシー](../configuration/device-profiles.md)は、さま�
 
 ## <a name="require-devices-to-be-compliant"></a>準拠デバイスである必要がある
 Intune は [デバイス コンプライアンス ポリシー](device-compliance-get-started.md) の機能を備えています。これにより、指定する規則に準拠していないデバイスを評価 (場合によっては修復) することができます。 たとえば、次のことに関するレポートを取得できます。
-- 脱獄された iOS デバイス
+- 脱獄された iOS/iPadOS デバイス
 - 暗号化されたデバイス、または暗号化されていないデバイス
 - Windows 10 デバイスの正常性 (正常性構成証明サービスによって決定される)。
 
@@ -60,7 +60,7 @@ Intune では、アプリとそのデータを保護するのに役立つ機能�
 Intune は [Windows Hello for Business](windows-hello.md) と統合することができます。これは、パスワード、スマート カード、仮想スマート カードの代わりに Active Directory または Azure Active Directory アカウントを使用する、Windows 10 以降に向けた代替サインイン方法です。
 
 ## <a name="disable-activation-lock-on-ios-devices"></a>iOS デバイスのアクティブ化ロックを無効にする
-アクティベーション ロックはユーザーのデバイスの保護に役立つ機能です。 この機能を使用すると、ユーザーはデバイスを消去したり再アクティブ化したりする前に、各自の Apple ID とパスワードを入力する必要があります。 ただし、この機能が問題を引き起こす場合もあります。ユーザーがロックを解除しないまま会社を退職した場合などです。 [iOS のアクティベーション ロックの無効化](../remote-actions/device-activation-lock-disable.md)は、監視下 iOS デバイスのロックを解除して、デバイスを再割り当てしたり、消去したりできるようにする機能です。
+アクティベーション ロックはユーザーのデバイスの保護に役立つ機能です。 この機能を使用すると、ユーザーはデバイスを消去したり再アクティブ化したりする前に、各自の Apple ID とパスワードを入力する必要があります。 ただし、この機能が問題を引き起こす場合もあります。ユーザーがロックを解除しないまま会社を退職した場合などです。 [iOS/iPadOS のアクティベーション ロックの無効化](../remote-actions/device-activation-lock-disable.md)は、監視下 iOS/iPadOS デバイスのロックを解除して、デバイスを再割り当てしたり、消去したりできるようにする機能です。
 
 ## <a name="next-steps"></a>次のステップ
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,23 +17,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 800bbd5199bd4389ee1ae8aa98a68e21456e7000
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 951d3df8b842f1a0e76f875ea9fc7921c413494f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206620"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513073"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune でデバイス プロファイルを使用してデバイスに機能と設定を適用する
 
 
 
-Microsoft Intune には、組織内のさまざまなデバイスで有効または無効にできる設定と機能が含まれています。 これらの設定と機能は "構成プロファイル" に追加されます。 異なるデバイスおよび iOS、Android、Windows などの異なるプラットフォームに対するプロファイルを作成することができます。 次に、Intune を使用して、デバイスへのプロファイルの適用 ("割り当て") を行います。
+Microsoft Intune には、組織内のさまざまなデバイスで有効または無効にできる設定と機能が含まれています。 これらの設定と機能は "構成プロファイル" に追加されます。 さまざまなデバイスおよび iOS/iPadOS、Android、Windows などのさまざまなプラットフォームに対するプロファイルを作成することができます。 次に、Intune を使用して、デバイスへのプロファイルの適用 ("割り当て") を行います。
 
 モバイル デバイス管理 (MDM) ソリューションの一部として、これらの構成プロファイルを使用してさまざまなタスクを実行します。 プロファイルの例には、次のようなものがあります。
 
 - Windows 10 デバイスでは、Internet Explorer で ActiveX コントロールをブロックするプロファイル テンプレートを使用します。
-- iOS および macOS デバイスでは、ユーザーが組織内の AirPrint プリンターを使用できるようにします。
+- iOS/iPadOS および macOS デバイスでは、ユーザーが組織内の AirPrint プリンターを使用できるようにします。
 - デバイス上の Bluetooth へのアクセスを許可または禁止します。
 - さまざまなデバイスに企業ネットワークへのアクセスを提供する WiFi または VPN プロファイルを作成します。
 - インストールのタイミングを含め、ソフトウェア更新プログラムを管理します。
@@ -67,7 +67,7 @@ Microsoft Intune には、組織内のさまざまなデバイスで有効また
 
 ## <a name="custom-profile"></a>カスタム プロファイル
 
-管理者は[カスタム設定](custom-settings-configure.md)を使用して、Intune に組み込まれていないデバイス設定を割り当てることができます。 Android デバイスでは、OMA-URI 値を入力できます。 iOS デバイスの場合は、Apple Configurator で作成した構成ファイルをインポートできます。
+管理者は[カスタム設定](custom-settings-configure.md)を使用して、Intune に組み込まれていないデバイス設定を割り当てることができます。 Android デバイスでは、OMA-URI 値を入力できます。 iOS/iPadOS デバイスの場合は、Apple Configurator で作成した構成ファイルをインポートできます。
 
 この機能では以下をサポートします。
 
@@ -89,7 +89,7 @@ Microsoft Intune には、組織内のさまざまなデバイスで有効また
 
 ## <a name="device-features"></a>デバイスの機能
 
-[デバイスの機能](device-features-configure.md)では、AirPrint、通知、ロック画面メッセージなど、iOS および macOS デバイスの機能を制御します。
+[デバイスの機能](device-features-configure.md)では、AirPrint、通知、ロック画面メッセージなど、iOS/iPadOS および macOS デバイスの機能を制御します。
 
 この機能では以下をサポートします。
 
@@ -106,7 +106,7 @@ Microsoft Intune には、組織内のさまざまなデバイスで有効また
 
 ## <a name="device-restrictions"></a>デバイスの制限
 
-[デバイスの制限](device-restrictions-configure.md)は、セキュリティ、ハードウェア、データの共有など、デバイス上の設定を制御します。 たとえば、iOS デバイス ユーザーにデバイスのカメラの使用を禁じるデバイスの制限プロファイルを作成できます。 
+[デバイスの制限](device-restrictions-configure.md)は、セキュリティ、ハードウェア、データの共有など、デバイス上の設定を制御します。 たとえば、iOS/iPadOS デバイス ユーザーにデバイスのカメラの使用を禁じるデバイスの制限プロファイルを作成できます。 
 
 この機能では以下をサポートします。
 
@@ -125,11 +125,11 @@ Microsoft Intune には、組織内のさまざまなデバイスで有効また
 
 - Windows 10 以降
 
-## <a name="education"></a>教育
+## <a name="education"></a>Education
 
 [教育設定 - Windows 10](education-settings-configure.md) では、[Windows テスト アプリ](https://education.microsoft.com/gettrained/win10takeatest)のオプションを構成します。 これらのオプションを構成するとき、テストが完了するまで他のアプリをデバイスで実行できません。
 
-[教育設定 - iOS](../fundamentals/education-settings-configure-ios-shared.md) では、iOS Classroom アプリを使用し、教室で学習を指導し、生徒のデバイスを操作します。 多数の学生が 1 台のデバイスを共有できるように iPad デバイスを構成できます。
+[教育設定 - iOS/iPadOS](../fundamentals/education-settings-configure-ios-shared.md) では、iOS/iPadOS Classroom アプリを使用し、教室で学習を指導し、生徒のデバイスを操作します。 多数の学生が 1 台のデバイスを共有できるように iPad デバイスを構成できます。
 
 ## <a name="email"></a>電子メール
 
@@ -186,7 +186,7 @@ Microsoft Defender Advanced Threat Protection (WDATP) と Microsoft Intune を�
 
 - Windows 10 以降
 
-キオスク設定は、[Android](device-restrictions-android.md#kiosk)、[Android エンタープライズ](device-restrictions-android-for-work.md#dedicated-device-settings)、および [ios](device-restrictions-ios.md#kiosk) 用のデバイス制限としても使用できます。
+キオスク設定は、[Android](device-restrictions-android.md#kiosk)、[Android エンタープライズ](device-restrictions-android-for-work.md#dedicated-device-settings)、および [iOS/iPadOS](device-restrictions-ios.md#kiosk) 用のデバイス制限としても使用できます。
 
 ## <a name="oemconfig"></a>OEMConfig
 
@@ -219,7 +219,7 @@ Microsoft Defender Advanced Threat Protection (WDATP) と Microsoft Intune を�
 
 ## <a name="update-policies"></a>更新ポリシー
 
-[iOS 更新ポリシー](../protect/software-updates-ios.md)には、iOS デバイスにソフトウェア更新プログラムをインストールするための iOS ポリシーを作成し、割り当てる方法が示されます。 インストールの状態を確認することもできます。
+[iOS/iPadOS 更新ポリシー](../protect/software-updates-ios.md)には、iOS/iPadOS デバイスにソフトウェア更新プログラムをインストールするための iOS/iPadOS ポリシーを作成し、割り当てる方法が示されます。 インストールの状態を確認することもできます。
 
 Windows デバイスの更新プログラム ポリシーについては、[配信の最適化](delivery-optimization-windows.md)に関するページを参照してください。 
 

@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd0a4b0c5e0b4cbaa7ef43ec40cddb3ab30d3070
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: f5045e78eaca19e5a78468c7c4b6698e4e1a5019
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415477"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511550"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>チュートリアル:EMM とアプリ構成に Intune を使用するように Slack を構成する
 
@@ -32,8 +32,8 @@ Slack は、Microsoft Intune と共に使用できるコラボレーション �
 このチュートリアルでは次のことを行います。
 > [!div class="checklist"]
 > - Slack Enterprise Grid 上で Enterprise Mobility Management (EMM) プロバイダーとして Intune を設定します。 Grid プランのワークスペースへのアクセスを Intune マネージド デバイスに制限することができます。
-> - iOS 上の Slack for EMM アプリと Android 仕事用プロファイル デバイス用 Slack アプリを管理するためのアプリ構成ポリシーを作成します。
-> - Intune デバイス コンプライアンス ポリシーを作成して、Android および iOS デバイスが準拠済みと見なされるために満たす必要のある条件を設定します。
+> - iOS/iPadOS 上の Slack for EMM アプリと Android 仕事用プロファイル デバイス用 Slack アプリを管理するためのアプリ構成ポリシーを作成します。
+> - Intune デバイス コンプライアンス ポリシーを作成して、Android および iOS/iPadOS デバイスが準拠していると見なされるために満たす必要のある条件を設定します。
 
 Intune サブスクリプションがない場合は、[無料試用版アカウントにサインアップ](../fundamentals/free-trial-sign-up.md)します。
 
@@ -51,10 +51,10 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 全体管理者または Intune サービス管理者として、[Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。 Intune の試用版サブスクリプションを作成した場合、サブスクリプションを作成したアカウントがグローバル管理者になります。
 
 ## <a name="set-up-slack-for-emm-on-ios-devices"></a>iOS デバイス上で Slack for EMM を設定する
-iOS アプリの Slack for EMM を Intune テナントに追加し、組織の iOS ユーザーが EMM プロバイダーとして Intune を使用して Slack にアクセスできるようにするアプリ構成ポリシーを作成します。
+iOS/iPadOS アプリの Slack for EMM を Intune テナントに追加し、組織の iOS/iPadOS ユーザーが EMM プロバイダーとして Intune を使用して Slack にアクセスできるようにするアプリ構成ポリシーを作成します。
 
 ### <a name="add-slack-for-emm-to-intune"></a>Intune に Slack for EMM を追加する
-Intune でマネージド iOS アプリとして Slack for EMM を追加し、Slack ユーザーを割り当てます。 アプリはプラットフォーム固有なので、Android デバイス上の Slack ユーザーには別の Intune アプリを追加する必要があります。
+Intune でマネージド iOS/iPadOS アプリとして Slack for EMM を追加し、Slack ユーザーを割り当てます。 アプリはプラットフォーム固有なので、Android デバイス上の Slack ユーザーには別の Intune アプリを追加する必要があります。
 1. 管理センターで、 **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** を選択します。
 2. **[アプリの種類]** で、 **[iOS]** ストア アプリを選択します。
 3. **[アプリ ストアを検索します]** を選びます。 検索語句「Slack for EMM」を入力してアプリを選択します。 **[アプリ ストアを検索します]** ウィンドウで **[選択]** をクリックします。
@@ -84,7 +84,7 @@ Slack for EMM iOS/iPadOS のアプリ構成ポリシーを追加します。 マ
 12. **[Save]** (保存) をクリックします。
 
 ### <a name="optional-create-an-ios-device-compliance-policy"></a>(省略可能) iOS デバイスのコンプライアンス ポリシーを作成する
-Intune デバイス コンプライアンス ポリシーを設定して、デバイスが準拠済みと見なされるために満たす必要のある条件を設定します。 このチュートリアルでは、iOS デバイス用のデバイス コンプライアンス ポリシーを作成します。 コンプライアンス ポリシーはプラットフォーム固有なので、Android デバイス上の Slack ユーザーには別のポリシーを作成する必要があります。
+Intune デバイス コンプライアンス ポリシーを設定して、デバイスが準拠済みと見なされるために満たす必要のある条件を設定します。 このチュートリアルでは、iOS/iPadOS デバイス用のデバイス コンプライアンス ポリシーを作成します。 コンプライアンス ポリシーはプラットフォーム固有なので、Android デバイス上の Slack ユーザーには別のポリシーを作成する必要があります。
 1. 管理センターで、 **[デバイスのポリシー準拠]**  >  **[ポリシー]**  >  **[ポリシーの作成]** を選択します。
 2. [名前] に「iOS compliance policy test」と入力します。
 3. [説明] に「iOS compliance policy test」と入力します。
@@ -105,7 +105,7 @@ Intune デバイス コンプライアンス ポリシーを設定して、デ�
 Slack マネージド Google Play アプリを Intune テナントに追加し、組織の Android ユーザーが EMM プロバイダーとして Intune を使用して Slack にアクセスできるようにするアプリ構成ポリシーを作成します。
 
 ### <a name="add-slack-to-intune"></a>Slack を Intune に追加する
-Intune でマネージド Google Play アプリとして Slack を追加し、Slack ユーザーを割り当てます。 アプリはプラットフォーム固有なので、iOS デバイス上の Slack ユーザーには別の Intune アプリを追加する必要があります。
+Intune でマネージド Google Play アプリとして Slack を追加し、Slack ユーザーを割り当てます。 アプリはプラットフォーム固有なので、iOS/iPadOS デバイス上の Slack ユーザーには別の Intune アプリを追加する必要があります。
 1. Intune で、 **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** を選択します。
 2. [アプリの種類] で **[ストア アプリ - マネージド Google Play]** を選択します。
 3. **[マネージド Google Play - 承認]** を選択します。 検索語句「Slack for EMM」を入力してアプリを選択します。
@@ -120,7 +120,7 @@ Intune でマネージド Google Play アプリとして Slack を追加し、Sl
 10. **[Save]** (保存) をクリックします。
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Slack のアプリ構成ポリシーを追加する
-Slack のアプリ構成ポリシーを追加します。 マネージド デバイスのアプリ構成ポリシーはプラットフォーム固有なので、iOS デバイス上の Slack ユーザーには別のポリシーを追加する必要があります。
+Slack のアプリ構成ポリシーを追加します。 マネージド デバイスのアプリ構成ポリシーはプラットフォーム固有なので、iOS/iPadOS デバイス上の Slack ユーザーには別のポリシーを追加する必要があります。
 1. Intune で、 **[アプリ]**  >  **[アプリ構成ポリシー]**  >  **[追加]** を選択します。
 2. [名前] に「Slack app configuration policy test」と入力します。
 3. [デバイス登録の種類] で **[マネージド デバイス]** を選択します。
@@ -136,7 +136,7 @@ Slack のアプリ構成ポリシーを追加します。 マネージド デバ
 12. **[Save]** (保存) をクリックします。
 
 ### <a name="optional-create-an-android-device-compliance-policy"></a>(省略可能) Android デバイスのコンプライアンス ポリシーを作成する
-Intune デバイス コンプライアンス ポリシーを設定して、デバイスが準拠済みと見なされるために満たす必要のある条件を設定します。 このチュートリアルでは、Android デバイス用のデバイス コンプライアンス ポリシーを作成します。 コンプライアンス ポリシーはプラットフォーム固有なので、iOS デバイス上の Slack ユーザーには別のポリシーを作成する必要があります。
+Intune デバイス コンプライアンス ポリシーを設定して、デバイスが準拠済みと見なされるために満たす必要のある条件を設定します。 このチュートリアルでは、Android デバイス用のデバイス コンプライアンス ポリシーを作成します。 コンプライアンス ポリシーはプラットフォーム固有なので、iOS/iPadOS デバイス上の Slack ユーザーには別のポリシーを作成する必要があります。
 1. Intune で、 **[デバイスのポリシー準拠]**  >  **[ポリシー]**  >  **[ポリシーの作成]** の順に選択します。
 2. [名前] に「Android compliance policy test」と入力します。
 3. [説明] に「Android compliance policy test」と入力します。
@@ -155,13 +155,13 @@ Intune デバイス コンプライアンス ポリシーを設定して、デ�
 
 ## <a name="launch-slack"></a>Slack を起動する
 
-先ほど作成したポリシーでは、いずれかのワークスペースにサインインを試行した iOS または Android の仕事用プロファイル デバイスを Intune に登録する必要があります。 このシナリオをテストするには、Intune に登録された iOS デバイス上で Slack for EMM を起動するか、Intune に登録された Android 仕事用プロファイル デバイスで Slack を起動してみます。 
+先ほど作成したポリシーでは、いずれかのワークスペースにサインインを試行した iOS/iPadOS または Android の仕事用プロファイル デバイスを Intune に登録する必要があります。 このシナリオをテストするには、Intune に登録された iOS/iPadOS デバイス上で Slack for EMM を起動するか、Intune に登録された Android 仕事用プロファイル デバイスで Slack を起動してみます。 
 
 ## <a name="next-steps"></a>次のステップ
 
 このチュートリアルの内容:
 - Slack Enterprise Grid 上で Enterprise Mobility Management (EMM) プロバイダーとして Intune を設定しました。 
-- iOS 上の Slack for EMM アプリと Android 仕事用プロファイル デバイス用 Slack アプリを管理するためのアプリ構成ポリシーを作成しました。
-- Intune デバイス コンプライアンス ポリシーを作成して、Android および iOS デバイスが準拠済みと見なされるために満たす必要のある条件を設定しました。
+- iOS/iPadOS 上の Slack for EMM アプリと Android 仕事用プロファイル デバイス用 Slack アプリを管理するためのアプリ構成ポリシーを作成しました。
+- Intune デバイス コンプライアンス ポリシーを作成して、Android および iOS/iPadOS デバイスが準拠していると見なされるために満たす必要のある条件を設定しました。
 
 アプリ構成ポリシーの詳細については、「[Microsoft Intune 用アプリ構成ポリシー](app-configuration-policies-overview.md)」を参照してください。 デバイス コンプライアンス ポリシーの詳細については、「[Intune を使用して組織内のリソースへのアクセスを許可するように、デバイス上でルールを設定する](../protect/device-compliance-get-started.md)」を参照してください。

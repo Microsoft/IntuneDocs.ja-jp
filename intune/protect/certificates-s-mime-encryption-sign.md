@@ -15,24 +15,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: adea17c0e013d922c0bc3ccf06ed590828bd79dd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 15147a1d9ffd82e2f900d15c4a9d2b4d23ad23e3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801491"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515154"
 ---
 # <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>Intune で電子メールに署名し、暗号化する S/MIME の概要
 
 電子メール証明書は S/MIME 証明書とも呼ばれ、暗号化と解読を使用することにより、電子メール通信のセキュリティを強化します。 Microsoft Intune は、S/MIME 証明書を使用して、次のプラットフォームを実行しているモバイル デバイスに送信される電子メールの署名および暗号化を行うことができます。
 
 - Android
-- iOS
+- iOS/iPadOS
 - macOS
 - Windows 10 以降
 - Windows Phone
 
-iOS デバイスでは、S/MIME と証明書を使用して送受信されるメールの署名と暗号化を行う、Intune で管理されたメール プロファイルを作成できます。 他のプラットフォームでは、S/MIME はサポートされている場合とサポートされていない場合があります。 サポートされている場合は、S/MIME の署名と暗号化を使用する証明書をインストールします。 その後、エンド ユーザーは電子メール アプリケーションで S/MIME を有効にできます。
+iOS/iPadOS デバイスでは、S/MIME と証明書を使用して送受信されるメールの署名と暗号化を行う、Intune で管理されたメール プロファイルを作成できます。 他のプラットフォームでは、S/MIME はサポートされている場合とサポートされていない場合があります。 サポートされている場合は、S/MIME の署名と暗号化を使用する証明書をインストールします。 その後、エンド ユーザーは電子メール アプリケーションで S/MIME を有効にできます。
 
 Exchange を使用した S/MIME メールの署名と暗号化の詳細については、「[S/MIME によるメッセージの署名と暗号化](https://docs.microsoft.com/Exchange/policy-and-compliance/smime)」を参照してください。
 
@@ -44,13 +44,13 @@ Exchange を使用した S/MIME メールの署名と暗号化の詳細につい
 
 署名証明書を使うには、証明機関 (CA) で署名用のテンプレートを作成します。 Microsoft Active Directory 証明機関の場合は、「[Configure the server certificate template](https://docs.microsoft.com/windows-server/networking/core-network-guide/cncg/server-certs/configure-the-server-certificate-template)」(サーバー証明書テンプレートを構成する) で証明書テンプレートの作成手順が示されています。
 
-Intune での署名証明書は、PKCS 証明書を使います。 「[Intune で PKCS 証明書を構成して使用する](certficates-pfx-configure.md)」では、Intune 環境に PKCS 証明書を展開して使う方法が説明されています。 次のステップが含まれます。
+Intune での署名証明書は、PKCS 証明書を使います。 「[Intune で PKCS 証明書を構成して使用する](certficates-pfx-configure.md)」では、Intune 環境に PKCS 証明書を展開して使う方法が説明されています。 次の手順が含まれます。
 
 - PKCS 証明書の要求をサポートするための Microsoft Intune Certificate Connector をダウンロードしてインストールします。
 - お使いのデバイス用の信頼されたルート証明書プロファイルを作成します。 このステップには、お使いの証明機関に対する信頼されたルート証明書と中間証明書の使用と、デバイスへのプロファイルの展開が含まれます。
 - 作成した証明書テンプレートを使って、PKCS 証明書プロファイルを作成します。 このプロファイルは、署名証明書をデバイスに発行し、PKCS 証明書プロファイルをデバイスに展開します。
 
-特定のユーザーに対する署名証明書をインポートすることもできます。 署名証明書は、ユーザーが登録するすべてのデバイスに展開されます。 証明書を Intune にインポートするには、[GitHub にある PowerShell コマンドレット](https://github.com/Microsoft/Intune-Resource-Access)を使います。 Intune にインポートされた PKCS 証明書をメールの署名に使われるように展開するには、「[Intune で PKCS 証明書を構成して使用する](certficates-pfx-configure.md)」の手順に従います。 次のステップが含まれます。
+特定のユーザーに対する署名証明書をインポートすることもできます。 署名証明書は、ユーザーが登録するすべてのデバイスに展開されます。 証明書を Intune にインポートするには、[GitHub にある PowerShell コマンドレット](https://github.com/Microsoft/Intune-Resource-Access)を使います。 Intune にインポートされた PKCS 証明書をメールの署名に使われるように展開するには、「[Intune で PKCS 証明書を構成して使用する](certficates-pfx-configure.md)」の手順に従います。 次の手順が含まれます。
 
 - PFX Certificate Connector for Microsoft Intune をダウンロードしてインストールします。 このコネクタは、インポートされた PKCS 証明書をデバイスに提供します。
 - S/MIME メール署名証明書を Intune にインポートします。
@@ -66,7 +66,7 @@ Intune ではメール暗号化証明書を作成しないことをお勧めし�
 
 Intune を使って S/MIME 証明書を展開するには、ユーザーのすべての暗号化証明書を Intune にインポートする必要があります。 その後、Intune はユーザーが登録する各デバイスにすべての証明書を展開します。 証明書を Intune にインポートするには、[GitHub にある PowerShell コマンドレット](https://github.com/Microsoft/Intune-Resource-Access)を使います。
 
-Intune にインポートされた、メールの暗号化に使われる PKCS 証明書を展開するには、「[Intune で PKCS 証明書を構成して使用する](certficates-pfx-configure.md)」の手順に従います。 次のステップが含まれます。
+Intune にインポートされた、メールの暗号化に使われる PKCS 証明書を展開するには、「[Intune で PKCS 証明書を構成して使用する](certficates-pfx-configure.md)」の手順に従います。 次の手順が含まれます。
 
 - PFX Certificate Connector for Microsoft Intune をダウンロードしてインストールします。 このコネクタは、インポートされた PKCS 証明書をデバイスに提供します。
 - S/MIME メール暗号化証明書を Intune にインポートします。
@@ -77,9 +77,9 @@ Intune にインポートされた、メールの暗号化に使われる PKCS �
 
 ## <a name="smime-email-profiles"></a>S/MIME メール プロファイル
 
-S/MIME の署名証明書と暗号化証明書のプロファイルを作成した後は、[iOS のネイティブ メールに対して S/MIME を有効にする](../configuration/email-settings-ios.md)ことができます。
+S/MIME の署名証明書と暗号化証明書のプロファイルを作成した後は、[iOS/iPadOS のネイティブ メールに対して S/MIME を有効にする](../configuration/email-settings-ios.md)ことができます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [証明書に SCEP を使用する](certificates-scep-configure.md)
 - [PKCS 証明書を使用する](certficates-pfx-configure.md)

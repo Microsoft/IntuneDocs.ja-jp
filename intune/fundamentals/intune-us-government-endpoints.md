@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfa93bb758447c872d172ded7706fd7507a42f11
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: d7edf84ada3c84b7ad31748909ef81a877237fd5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966285"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514474"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Microsoft Intune の米国政府機関のエンドポイント
 
@@ -74,8 +74,8 @@ ms.locfileid: "76966285"
 詳細については、次をご覧ください。
 
 - [Apple ソフトウェア製品に使用される TCP ポートと UDP ポート](https://support.apple.com/HT202944)
-- [macOS、iOS、iTunes のサーバホスト接続と iTunes のバックグラウンドプロセスについて](https://support.apple.com/HT201999)
-- [macOS および iOS クライアントで Apple プッシュ通知が届かない場合](https://support.apple.com/HT203609)
+- [macOS、iOS/iPadOS、iTunes のサーバー ホスト接続と iTunes のバックグラウンド プロセスについて](https://support.apple.com/HT201999)
+- [macOS および iOS/iPadOS クライアントで Apple プッシュ通知が届かない場合](https://support.apple.com/HT203609)
 
 ## <a name="next-steps"></a>次のステップ
 [Microsoft Intune のネットワーク エンドポイント](intune-endpoints.md)

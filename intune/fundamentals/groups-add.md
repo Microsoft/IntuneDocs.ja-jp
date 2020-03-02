@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 237eca2f8e00f00fda5fa3cf401be87de9602743
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 183e8cc5924f6ce1f002225150d808841924e20c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956258"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514644"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>ユーザーとデバイスを整理するためのグループを追加する
 
@@ -34,7 +34,7 @@ Intune では、デバイスとユーザーの管理に Azure Active Directory (
 - **割り当てられたグループ**: ユーザーまたはデバイスを静的なグループに手動で追加します。 
 - **動的なグループ** (Azure AD Premium が必要) - ご自分で作成した式に基づいてユーザー グループまたはデバイス グループにユーザーまたはデバイスを自動的に追加します。
 
-  たとえば、マネージャーのタイトルを持つユーザーが追加されると、そのユーザーは **[すべてのマネージャー]** というユーザー グループに自動的に追加されます。 また、デバイスの OS の種類が iOS デバイスである場合、そのデバイスは **[すべての iOS デバイス]** というデバイス グループに自動的に追加されます。
+  たとえば、マネージャーのタイトルを持つユーザーが追加されると、そのユーザーは **[すべてのマネージャー]** というユーザー グループに自動的に追加されます。 また、デバイスの OS の種類が iOS/iPadOS デバイスである場合、そのデバイスは "**すべての iOS/iPadOS デバイス**" というデバイス グループに自動的に追加されます。
 
 ## <a name="add-a-new-group"></a>新しいグループを追加する
 
@@ -47,7 +47,7 @@ Intune では、デバイスとユーザーの管理に Azure Active Directory (
 
 3. **[グループの種類]** で、次のいずれかのオプションを選択します。
 
-    - **[セキュリティ]** :セキュリティ グループは、だれがリソースにアクセスできるかを定義するものであり、Intune 内のグループ用に推奨されます。 たとえば、**シャーロットの全従業員**や**リモート ワーカー**などのユーザーのグループを作成できます。 または、デバイスのグループを作成します。たとえば、**すべての iOS デバイス**や、**すべての Windows 10 Student デバイス**などです。
+    - **[セキュリティ]** :セキュリティ グループは、だれがリソースにアクセスできるかを定義するものであり、Intune 内のグループ用に推奨されます。 たとえば、**シャーロットの全従業員**や**リモート ワーカー**などのユーザーのグループを作成できます。 または、デバイスのグループを作成します。たとえば、"**すべての iOS/iPadOS デバイス**" や "**すべての Windows 10 Student デバイス**" などです。
 
         > [!TIP]
         > 作成したユーザーとグループは、[Microsoft 365 管理センター](https://admin.microsoft.com)、Azure Active Directory 管理センター、[Azure portal 上の Microsoft Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にも表示されます。 組織のテナントでは、これらのすべての領域でグループを作成および管理できます。

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e93e69b5cce2c54ae07410309b33870dd828f563
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bd204271b9ae3e57e15a101647444913749f4109
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509087"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514236"
 ---
 # <a name="data-collection-in-intune"></a>Intune でのデータ収集
 
@@ -64,7 +64,7 @@ Intune によって収集される識別済みデータには、次のような�
   - 作成
   - 更新 (編集)
   - 削除
-  - 割り当てる
+  - 割り当て
   - リモート タスク
 - サポート情報
   - 連絡先情報 (名前、電話番号、電子メール アドレス)
@@ -112,7 +112,7 @@ Intune によって収集される匿名化済みデータには、次のよう�
   - アカウント ID
   - EAS デバイス ID
   - プラットフォーム固有の ID
-  - iOS デバイス用の AppleID
+  - iOS/iPadOS デバイスの AppleID
   - Mac デバイスの MAC アドレス
   - Windows デバイスの Windows ID
 - マネージド アプリケーション情報
@@ -138,6 +138,6 @@ Intune によって収集される集計済みデータには、次のような�
   - notInstalledDeviceCount: アプリケーションは適用できるがインストールされていないデバイスの数。
   - pendingInstallDeviceCount: アプリケーションは適用できるがインストールが保留中のデバイスの数。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Intune が個人データを[格納と処理](privacy-data-store-process.md)および[共有](privacy-data-secure-share.md)する方法について確認します。 

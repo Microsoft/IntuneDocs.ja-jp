@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c705e8863ef4e01906a773d528f9ae2f40461c71
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 08041a57ab52f395283e57cda596d00ba168aba1
+ms.sourcegitcommit: 3964e6697b4d43e2c69a15e97c8d16f8c838645b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885850"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77556484"
 ---
 # <a name="basic-setup"></a>基本的なセットアップ
 
@@ -53,18 +53,11 @@ VPN、Wi-Fi、または Intune でのメール プロファイルで証明書ベ
 
 - [PFX 用の証明書インフラストラクチャを構成する方法](/intune/certficates-pfx-configure)についてはこちらをご覧ください。
 
-
 ## <a name="task-list-for-an-intune-setup"></a>Intune セットアップのタスク一覧
 
 ### <a name="task-1-intune-subscription"></a>タスク 1: Intune のサブスクリプション
 
-Intune に移行するには、Intune サブスクリプションが必要です。
-
-- 次の手順を説明する、[こちらのページ](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0)を参照してください。
-
-  - 新しい AAD テナントにリンクされた新しい Intune サブスクリプションを作成する。
-
-  - 既存の AAD テナントにサインインして、Intune サブスクリプションをリンクする。
+Intune に移行するには、まず [Intune サブスクリプション](account-sign-up.md)が必要です。
 
 ### <a name="task-2-assign-intune-user-licenses"></a>タスク 2: Intune ユーザー ライセンスを割り当てる
 

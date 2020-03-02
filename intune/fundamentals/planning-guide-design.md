@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fa02a61148a03a64b88b38dcdc1799b30bc45db
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: f676a0e39bb5dae32d3032d1703dbb44f6b2e54a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886732"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514967"
 ---
 # <a name="create-a-design"></a>設計の作成
 
@@ -188,7 +188,7 @@ VPN、Wi-Fi、または Intune での電子メール プロファイルで証明
 
 ### <a name="determine-supported-device-platforms"></a>サポートされるデバイス プラットフォームの決定
 
-環境内に存在するデバイスを把握し、設計を作成するときにデバイスが Intune によってサポートされるかどうかを確認する必要があります。 Intune は、IOS、Android、Windows の各プラットフォームをサポートしています。
+環境内に存在するデバイスを把握し、設計を作成するときにデバイスが Intune によってサポートされるかどうかを確認する必要があります。 Intune は、iOS/iPadOS、Android、Windows の各プラットフォームをサポートしています。
 
 [Intune でサポートされているデバイスの完全な一覧](supported-devices-browsers.md)については、こちらをご覧ください。
 
@@ -296,8 +296,8 @@ Intune は、企業所有のデバイスと個人のデバイスの両方をサ�
 
 | **種類** | **プロファイル名** | **デバイスのプラットフォーム** | **ユース ケース** |   
 |:---:|:---:|:---:|:---:|
-| ルート CA | 企業ルート CA | Android、iOS、Windows Mobile | 企業、BYOD  |                                                           
-| SCEP | ユーザー証明書 | Android、iOS、Windows Mobile | 企業、BYOD |                                                           
+| ルート CA | 企業ルート CA | Android、iOS/iPadOS、Windows モバイル | 企業、BYOD  |                                                           
+| SCEP | ユーザー証明書 | Android、iOS/iPadOS、Windows モバイル | 企業、BYOD |                                                           
 
 
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、証明書プロファイルのニーズを確認することができます。
@@ -311,7 +311,7 @@ Wi-Fi プロファイルの設計の例を次に示します。
 | **種類** | **プロファイル名** | **デバイスのプラットフォーム** | **ユース ケース** |
 |:---:|:---:|:---:|:---:|
 | Wi-Fi | アジア Wi-Fi プロファイル | Android | 企業、BYOD アジア地域|
-| Wi-Fi | 北米 Wi-Fi プロファイル | Android、iOS、Windows 10 Mobile | 企業、BYOD 北米地域 |
+| Wi-Fi | 北米 Wi-Fi プロファイル | Android、iOS/iPadOS、Windows 10 Mobile | 企業、BYOD 北米地域 |
 
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、Wi-Fi プロファイルのニーズを確認することができます。
 
@@ -323,7 +323,7 @@ VPN プロファイルの設計を文書化する例を次に示します。
 
 | **種類** | **プロファイル名** | **デバイスのプラットフォーム** | **ユース ケース** |
 |:---:|:---:|:---:|:---:|
-| VPN | VPN Cisco any connect Profile | Android、iOS、Windows 10 Mobile | 企業、BYOD 北米およびドイツ|
+| VPN | VPN Cisco any connect Profile | Android、iOS/iPadOS、Windows 10 Mobile | 企業、BYOD 北米およびドイツ|
 | VPN | Pulse Secure | Android | 企業、BYOD アジア地域 |
 
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、VPN プロファイルのニーズを確認することができます。
@@ -374,7 +374,7 @@ Intune では、複数の方法でユーザーまたはデバイスにアプリ�
 | **アプリケーション**。 | **目的** | **プラットフォーム** | **ユース ケース** | **アプリ保護ポリシー** |
 |:---:|:---:|:---:|:---:|:---:|
 | Outlook Mobile  | 利用可能 | iOS | 企業 - エグゼクティブ | 脱獄不可、ファイルを暗号化 |                                                         
-| Word | 利用可能 | iOS、Android - Samsung Knox、非 Knox、Windows 10 Mobile | 企業、BYOD | 脱獄不可、ファイルを暗号化 |                                                         
+| Word | 利用可能 | iOS/iPadOS、Android - Samsung Knox、非 Knox、Windows 10 Mobile | 企業、BYOD | 脱獄不可、ファイルを暗号化 |                                                         
 
 
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、アプリ保護ポリシーのニーズを確認することができます。
@@ -388,7 +388,7 @@ Intune では、複数の方法でユーザーまたはデバイスにアプリ�
 
 | **ポリシー名** | **デバイスのプラットフォーム** | **設定** | **対象グループ** |
 |:---:|:---:|:---:|:---:|
-| コンプライアンス ポリシー | iOS、Android - Samsung Knox、非 Knox、Windows 10 Mobile | PIN - 必要、脱獄不可 | 企業、BYOD |
+| コンプライアンス ポリシー | iOS/iPadOS、Android - Samsung Knox、非 Knox、Windows 10 Mobile | PIN - 必要、脱獄不可 | 企業、BYOD |
 
 
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、コンプライアンス ポリシーのニーズを確認することができます。
@@ -404,8 +404,8 @@ Intune では、複数の方法でユーザーまたはデバイスにアプリ�
 
 | **サービス** | **先進認証用プラットフォーム** | **基本認証** | **ユース ケース** |
 |:---:|:---:|:---:|:---:|
-| Exchange Online | iOS、Android | Intune がサポートするプラットフォームの非準拠デバイスをブロックする | 企業、BYOD |
-| SharePoint Online | iOS、Android |  | 企業、BYOD |
+| Exchange Online | iOS/iPadOS、Android | Intune がサポートするプラットフォームの非準拠デバイスをブロックする | 企業、BYOD |
+| SharePoint Online | iOS/iPadOS、Android |  | 企業、BYOD |
 
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、条件付きアクセス ポリシーのニーズを確認することができます。
 

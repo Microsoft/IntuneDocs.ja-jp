@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d302db46510b664aec5b0a71fd8b19985e29be37
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 48bfe727615f5165fc70ed2e08f98f01203dc895
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206127"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514831"
 ---
 # <a name="use-policy-sets-to-group-collections-of-management-objects"></a>ポリシー セットを使用して管理オブジェクトのコレクションをグループ化する
 
@@ -52,7 +52,7 @@ ms.locfileid: "75206127"
 ポリシー セットを作成するときは、単一の割り当て単位を作成し、異なるオブジェクト間の関連付けを管理します。 ポリシー セットは、その外部にあるオブジェクトへの参照になります。 含まれているオブジェクトでの変更は、ポリシー セットにも反映されます。 ポリシー セットを作成した後は、そのオブジェクトと割り当てを繰り返し表示および編集できます。 
 
 > [!NOTE]
-> ポリシー セットでは、Windows、Android、macOS、iOS の設定がサポートされており、クロスプラットフォームに割り当てることができます。
+> ポリシー セットでは、Windows、Android、macOS、iOS/iPadOS の設定がサポートされており、クロスプラットフォームに割り当てることができます。
 
 ## <a name="how-to-create-a-policy-set"></a>ポリシー セットを作成する方法
 
@@ -82,15 +82,15 @@ ms.locfileid: "75206127"
 - ポリシー セットを作成するとき、スコープ指定された管理者がスコープ タグを選択しないでポリシー セットを作成しようとすると、 **[確認および作成]** ページでの検証が失敗し、ステータ スバーにエラーが表示されます。 管理者は、プロセス内の別のページに切り替えてから、 **[確認および作成]** ページに戻る必要があります。 これにより、 **[作成]** オプションが有効になります。  
  
 - 現在、ポリシー セットでは次の種類のアプリがサポートされています。
-    - iOS ストア アプリ
-    - iOS の基幹業務アプリ
-    - マネージド iOS 基幹業務アプリ
+    - iOS/iPadOS ストア アプリ
+    - iOS/iPadOS 基幹業務アプリ
+    - マネージド iOS/iPadOS 基幹業務アプリ
     - Android ストア アプリ
     - Android 基幹業務アプリ
     - マネージド Android 基幹業務アプリ
     - Office 365 ProPlus Suite (Windows 10)
     - Web リンク
-    - 組み込みの iOS アプリ
+    - 組み込みの iOS/iPadOS アプリ
     - 組み込みの Android アプリ
 
 - **[すべてのユーザー]** のポリシー セットの割り当てを **[Autopilot プロファイル]** に設定することはサポートされていません。
@@ -103,18 +103,18 @@ ms.locfileid: "75206127"
 
 - ポリシー セットがサポートされている MAM ポリシーの種類には、次のものがあります。 
     - MAM WIP (Windows) MDM の対象のマネージド アプリ保護 
-    - MAM iOS の対象のマネージド アプリ保護
+    - MAM iOS/iPadOS の対象のマネージド アプリ保護
     - MAM Android の対象のマネージド アプリ保護
-    - MAM iOS の対象のマネージド アプリ構成
+    - MAM iOS/iPadOS の対象のマネージド アプリ構成
     - MAM Android の対象のマネージド アプリ構成
 
 - ポリシー セットがサポートされていない MAM ポリシーの種類には、次のものがあります。 
     - MAM WIP (Windows) の対象のマネージド アプリ保護
 
 - MAM では、ポリシー セットの割り当ては、次のポリシーの種類に対する直接割り当てとして処理されます。
-    - MAM iOS の対象のマネージド アプリ保護
+    - MAM iOS/iPadOS の対象のマネージド アプリ保護
     - MAM Android の対象のマネージド アプリ保護
-    - MAM iOS の対象のマネージド アプリ構成
+    - MAM iOS/iPadOS の対象のマネージド アプリ構成
     - MAM Android の対象のマネージド アプリ構成
 
     グループに展開されるポリシー セットにポリシーが追加される場合、そのグループは、ワークロード内では、"ポリシー セットによる割り当て" ではなく、直接割り当てとして表示されます。 その結果、MAM では、ポリシー セットからのグループ割り当ての削除は処理されません。

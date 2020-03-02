@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e565f40aac2a2b97f547a5b68a70a887d9e820ae
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: d90e3757ced90bea21e4033b6baa93bfa201b1f2
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207470"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514219"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>Wandera モバイル脅威保護を Intune と統合する  
 
@@ -91,7 +91,7 @@ Wandera を展開するには、使用するプラットフォーム (iOS およ
 Wandera からのこのプロセスに関する詳細情報については、Wandera の [RADAR](https://radar.wandera.com/login) にサインインしてください。 **[設定]**  >  **[EMM Integration]\(EMM 統合\)** に移動し、 **[App Push]\(アプリのプッシュ\)** タブを選択してから、 **[Microsoft Intune]** を選択します。 [App Push]\(アプリのプッシュ\) タブが Intune に固有の手順と共に更新されます。  
 
 ### <a name="add-the-wandera-apps"></a>Wandera アプリを追加する  
-Intune でクライアント アプリを作成して、Android および iOS デバイスに Wandera アプリを展開します。 Wandera アプリに固有の手順とカスタムの詳細については、[MTD アプリの追加](mtd-apps-ios-app-configuration-policy-add-assign.md)に関する記事をご覧ください。  
+Intune でクライアント アプリを作成して、Android、iOS/iPadOS デバイスに Wandera アプリを展開します。 Wandera アプリに固有の手順とカスタムの詳細については、[MTD アプリの追加](mtd-apps-ios-app-configuration-policy-add-assign.md)に関する記事をご覧ください。  
 
 アプリを作成したら、ここに戻り、同期グループを作成してアプリを割り当てます。
 
@@ -105,14 +105,14 @@ Intune でクライアント アプリを作成して、Android および iOS �
 
    ![同期グループの構成](./media/wandera-mtd-connector-integration/configure-sync-group.png)
 
-3. **[メンバー]** を選択して、Wandera で使用する Android および iOS デバイスを含むグループを割り当てます。
+3. **[メンバー]** を選択して、Wandera で使用する Android、iOS/iPadOS デバイスを含むグループを割り当てます。
 
 4. **[作成]** を選択してグループを保存します。
 
 詳細については、[アプリの展開](../apps/apps-deploy.md)に関する記事をご覧ください
 
 ### <a name="assign-the-wandera-apps-to-the-synchronization-group"></a>Wandera アプリを同期グループに割り当てる  
-iOS および Android 用に作成した Wandera アプリについて、次の手順を繰り返します。
+iOS/iPadOS、Android 用に作成した Wandera アプリについて、次の手順を繰り返します。
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 2. **[アプリ]**  >  **[すべてのアプリ]** を選択し、Wandera アプリを選択します。

@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune での Wi-Fi デバイス プロファイル ログのトラブルシューティングと確認 - Azure | Microsoft Docs
-description: Microsoft Intune での Android、iOS、Windows デバイス上の Wi-Fi デバイス構成プロファイルに関する問題について理解し、トラブルシューティングします。 ログを確認し、いくつかの一般的な問題と考えられる解決策を確認します。
+description: Microsoft Intune での Android、iOS/iPadOS、Windows デバイス上の Wi-Fi デバイス構成プロファイルに関する問題について理解し、トラブルシューティングします。 ログを確認し、いくつかの一般的な問題と考えられる解決策を確認します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70f471e7f4db7ddce89d8956474822375c684944
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: db663f96f1e4fe84c506395b98c52956069e5426
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547967"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512825"
 ---
 # <a name="troubleshoot-wi-fi-device-configuration-profiles-in-microsoft-intune"></a>Microsoft Intune での Wi-Fi デバイス構成プロファイルのトラブルシューティング
 
-Intune では、Wi-Fi ネットワークの接続設定を含むデバイス構成プロファイルを作成できます。 ユーザーの Android、iOS、Windows デバイスを組織のネットワークに接続するには、これらの設定を使用します。
+Intune では、Wi-Fi ネットワークの接続設定を含むデバイス構成プロファイルを作成できます。 ユーザーの Android、iOS/iPadOS、Windows デバイスを組織のネットワークに接続するには、これらの設定を使用します。
 
 この記事では、Wi-Fi プロファイルがデバイスに正常に適用された場合にどのように見えるかを示します。 ログ情報、一般的な問題なども含まれます。 この記事では、Wi-Fi プロファイルのトラブルシューティングについて説明します。
 
@@ -100,25 +100,25 @@ Android 上の **Omadmlog.log** ファイルには、デバイスにインスト
 
 ```
 
-## <a name="ios"></a>iOS
+## <a name="iosipados"></a>iOS/iPadOS
 
 Wi-Fi プロファイルがデバイスにインストールされると、 **[Management Profile]\(管理プロファイル\)** に表示されます。
 
 > [!div class="mx-imgBorder"]
-> ![iOS デバイスの [Management Profile]\(管理プロファイル\)](./media/troubleshoot-wi-fi-profiles/ios-management-profile.png)
+> ![Intune での iOS/iPadOS デバイスの管理プロファイル](./media/troubleshoot-wi-fi-profiles/ios-management-profile.png)
 
 > [!div class="mx-imgBorder"]
-> ![Wi-Fi 接続が iOS デバイス上で Wi-Fi ネットワークと表示される](./media/troubleshoot-wi-fi-profiles/ios-wifi-connection-in-management-profile.png)
+> ![Intune で、iOS/iPadOS デバイスの [Wi-Fi ネットワーク] として表示される Wi-Fi 接続](./media/troubleshoot-wi-fi-profiles/ios-wifi-connection-in-management-profile.png)
 
-### <a name="review-the-ios-console-and-device-logs"></a>iOS コンソールとデバイスのログを確認する
+### <a name="review-the-iosipados-console-and-device-logs"></a>iOS/iPadOS コンソールとデバイスのログを確認する
 
-iOS デバイスでは、ポータル サイト アプリのログに Wi-Fi プロファイルに関する情報は含まれません。 Wi-Fi プロファイルのインストールの詳細を確認するには、コンソールまたはデバイスのログを使用します。
+iOS/iPadOS デバイスでは、ポータル サイト アプリのログに Wi-Fi プロファイルに関する情報は含まれません。 Wi-Fi プロファイルのインストールの詳細を確認するには、コンソールまたはデバイスのログを使用します。
 
-1. iOS デバイスを Mac に接続します。 **[アプリケーション]**  >  **[ユーティリティ]** にアクセスし、コンソール アプリを開きます。
+1. iOS/iPadOS デバイスを Mac に接続します。 **[アプリケーション]**  >  **[ユーティリティ]** にアクセスし、コンソール アプリを開きます。
 2. **[アクション]** で、 **[Include Info Messages]\(情報メッセージを含める\)** と **[Include Debug Messages]\(デバッグ メッセージを含める\)** を選択します。
 
     > [!div class="mx-imgBorder"]
-    > ![iOS コンソール アプリの [Include Info Messages]\(情報メッセージを含める\) と [Include Debug Messages]\(デバッグ メッセージを含める\)](./media/troubleshoot-wi-fi-profiles/ios-console-app-include-info-messages-debug-messages.png)
+    > ![iOS/iPadOS コンソール アプリの [Include Info Messages]\(情報メッセージを含める\) と [Include Debug Messages]\(デバッグ メッセージを含める\)](./media/troubleshoot-wi-fi-profiles/ios-console-app-include-info-messages-debug-messages.png)
 
 3. シナリオを再現し、ログをテキスト ファイルに保存します。
 
@@ -263,7 +263,7 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
 
 - Microsoft Intune の Wi-Fi プロファイルの詳細については、次の記事を参照してください。
 
-  - [Android](wi-fi-settings-android.md)、[iOS](wi-fi-settings-ios.md)、[Windows 10 以降](wi-fi-settings-windows.md) を実行しているデバイスの Wi-Fi 設定を追加します。
+  - [Android](wi-fi-settings-android.md)、[iOS/iPadOS](wi-fi-settings-ios.md)、[Windows 10 以降](wi-fi-settings-windows.md)を実行しているデバイスの Wi-Fi 設定を追加します。
   - [サポートのヒント - Intune で SCEP 証明書の展開用に NDES を構成する方法](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-How-to-configure-NDES-for-SCEP-certificate/ba-p/455125)
   - [SCEP 証明書プロファイルの展開](https://support.microsoft.com/help/4526725/troubleshooting-scep-profile-deployment-to-android-devices-in-intune)と [NDES の構成](https://support.microsoft.com/help/4459540/troubleshoot-ndes-configuration-for-use-with-intune)をトラブルシューティングします。
 

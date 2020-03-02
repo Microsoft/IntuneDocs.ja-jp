@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38bc86b1b9ba85eb7885a0e00673e551821063c1
-ms.sourcegitcommit: 459b0ee01eb6e69cc0ce66d4c4b81d73f510f96d
+ms.openlocfilehash: 4496a5bbc6d5ee5134dc4e6a795494710ea6865d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77034245"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515222"
 ---
 # <a name="overview-for-troubleshooting-scep-certificate-profiles-with-microsoft-intune"></a>Microsoft Intune での SCEP 証明書プロファイルのトラブルシューティングの概要
 
@@ -123,9 +123,9 @@ Android を実行するデバイスの場合は、**Android ポータル サイ�
 
 ### <a name="logs-for-ios-and-ipados-devices"></a>iOS および iPadOS デバイスのログ
 
-iOS または iPadOS を実行するデバイスの場合、デバッグログと、Mac コンピューター上で実行される **Xcode** を使用します。
+iOS/iPadOS を実行するデバイスの場合、デバッグログと、Mac コンピューター上で実行される **Xcode** を使用します。
 
-1. iOS デバイスを Mac に接続し、 **[Applications]\(アプリケーション\)**  >  **[Utilities]\(ユーティリティ\)** に移動してコンソール アプリを開きます。 
+1. iOS/iPadOS デバイスを Mac に接続し、 **[アプリケーション]**  >  **[ユーティリティ]** に移動してコンソール アプリを開きます。 
 
 2. **[アクション]** で、 **[Include Info Messages]\(情報メッセージを含める\)** と **[Include Debug Messages]\(デバッグ メッセージを含める\)** を選択します。
 

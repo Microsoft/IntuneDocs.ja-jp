@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84d33e0ff6bbe407d9838f97214f37d042a2e261
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6e00a2d3c245c1297f2ea28ab0184369e7d92980
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414695"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513947"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune アプリの管理とは
 
@@ -92,20 +92,20 @@ Intune では、アプリを実行するデバイス上で必要なアプリを�
   - [アプリを監視する](apps-monitor.md)。
 - **[アプリ構成ポリシー]** :ユーザーがアプリを実行するときに必要となる場合がある設定を指定するには、このオプションを選択します。 詳細については、次をご覧ください。
   - [Intune 用アプリ構成ポリシー](app-configuration-policies-overview.md)。
-    - [iOS アプリ構成ポリシー](app-configuration-policies-use-ios.md)。
+    - [iOS/iPadOS アプリ構成ポリシー](app-configuration-policies-use-ios.md)。
     - [Android アプリ構成ポリシー](app-configuration-policies-use-android.md)。
 - **[アプリ保護ポリシー]** :このオプションを選択すると、アプリに設定を関連付けて、使用される会社のデータを保護できます。 たとえば、アプリの機能による他のアプリとの通信を制限することや、会社のアプリにアクセスしようとするユーザーに PIN の入力を求めることができます。 詳細については、次をご覧ください。
   - [アプリ保護ポリシー](app-protection-policies.md)。
 - **[アプリの選択的ワイプ]** :このオプションを選択すると、選択したユーザーのデバイスから会社のデータのみを削除することができます。 詳細については、次をご覧ください。
   - [アプリの選択的ワイプ](apps-selective-wipe.md)。
 - **[iOS アプリ プロビジョニング プロファイル]** : iOS/iPadOS アプリには、プロビジョニング プロファイルと、証明書によって署名されたコードが含まれます。 証明書の期限が切れると、アプリを実行できなくなります。 Intune には、有効期限が近づいているアプリを持つデバイスに新しいプロビジョニング プロファイルのポリシーを事前に割り当てるツールが用意されています。 詳細については、次をご覧ください。
-  - [iOS アプリ プロビジョニング プロファイル](app-provisioning-profile-ios.md)。
+  - [iOS/iPadOS アプリ プロビジョニング プロファイル](app-provisioning-profile-ios.md)。
 
 このセクションの詳細については、[アプリの管理](app-management.md)に関するページを参照してください。
 
 ### <a name="monitor"></a>モニター
 - **[アプリ ライセンス]** :アプリ ストアのボリューム購入アプリを表示、割り当て、監視します。 詳細については、次をご覧ください。
-  - [iOS ボリューム購入プログラム (VPP) アプリ](vpp-apps-ios.md)。
+  - [iOS/iPadOS Volume Purchase Program (VPP) アプリ](vpp-apps-ios.md)。
   - [ビジネス向け Microsoft ストアのボリューム購入アプリ](windows-store-for-business.md)。
 - **[検出されたアプリ]** :Intune によって割り当てられたか、デバイスにインストールされたアプリを表示します。 詳細については、「[Intune discovered apps (Intune で検出されたアプリ)](app-discovered-apps.md)」を参照してください。
 - **[アプリ インストールの状態]** :作成したアプリ割り当ての状態を表示します。 詳しくは、「[Microsoft Intune でアプリの情報と割り当てを監視する](apps-monitor.md#device-and-user-status-graphs)」をご覧ください。
@@ -116,7 +116,7 @@ Intune では、アプリを実行するデバイス上で必要なアプリを�
 
 ### <a name="set-up"></a>設定
 - **[iOS VPP トークン]** :iOS/iPadOS Volume Purchase Program (VPP) のライセンスを適用および表示します。 詳細については、次をご覧ください。
-  - [iOS 大量購入アプリ](vpp-apps-ios.md)
+  - [iOS/iPadOS のボリューム購入アプリ](vpp-apps-ios.md)
 - **[Windows Enterprise 証明書]** :基幹業務アプリを Windows マネージド デバイスに配布するために使うコード署名証明書の状態を適用または表示します。
 - **[Windows Symantec 証明書]** :XAP および WP8.x appx ファイルを Windows 10 Mobile デバイスに配布するために必要となる、Symantec コード署名証明書の状態を適用または表示します。
 - **[ビジネス向け Microsoft ストア]** :ビジネス向け Microsoft ストアとの統合を設定します。 その後、購入済みのアプリケーションを Intune に同期して割り当て、ライセンスの使用状況を追跡できるようになります。 詳細については、次をご覧ください。

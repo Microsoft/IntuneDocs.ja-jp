@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77be59d126dc7e73bee468ca938938c6bb1b2e1a
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 40075ad3c90f9ce5131d88780d15eec5c258e276
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76915877"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515256"
 ---
 # <a name="troubleshoot-the-delivery-of-certificates-provisioned-by-scep-to-devices-in-microsoft-intune"></a>Microsoft Intune で SCEP によってプロビジョニングされた証明書をデバイスに配信する際のトラブルシューティング
 
@@ -73,9 +73,9 @@ Android にインストールされている証明書を表示するには、サ
 2018-02-27T05:20:15.3520000    INFO    Event     com.microsoft.omadm.platforms.android.certmgr.state.NativeScepCertInstallStateMachine    18327       21    SCEP cert 'ModelName=AC_51…%2FLogicalName_39907…;Hash=1677525787' state changed from CERT_ACCESS_REQUESTED to CERT_ACCESS_GRANTED
 ```
 
-### <a name="ios-and-ipados"></a>iOS と iPadOS
+### <a name="iosipados"></a>iOS/iPadOS
 
-iOS または iPadOS デバイスでは、[Device Management Profile]\(デバイス管理プロファイル\) の下に証明書が表示されます。 展開すると、インストールされている証明書の詳細が表示されます。
+iOS/iPadOS デバイスでは、[デバイスの管理プロファイル] の下に証明書を表示できます。 展開すると、インストールされている証明書の詳細が表示されます。
 
 ![iOS 証明書](../protect/media/troubleshoot-scep-certificate-delivery/ios-certificate.png)
 
@@ -108,7 +108,7 @@ Windows デバイスで、証明書が配信されたことを確認します。
 
 この手順のトラブルシューティングには、OMA DM ログに記録されているエラーを確認します。
 
-### <a name="ios-and-ipados"></a>iOS と iPadOS
+### <a name="iosipados"></a>iOS/iPadOS
 
 この手順のトラブルシューティングには、デバイスのデバッグ ログに記録されているエラーを確認します。
 

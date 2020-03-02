@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b0bb0bd1f0df3aeb4185542d424bd3ffffe42cd
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: 257b15879f6df5763c407904a2c2b46319d64fb7
+ms.sourcegitcommit: cd90650c339795d44702e9dcd0b9679a7b438bb2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036540"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77473732"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>チュートリアル:Autopilot を使用して Intune に Windows デバイスを登録する
 
@@ -78,7 +78,7 @@ Windows Autopilot の設定で最初にやることは、Intune への Windows �
 
 次に、デバイス グループを作成し、読み込んだ Autopilot デバイスをそこに格納します。
 
-1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[グループ]** を選択し、 **[新しいグループ]** を選択します。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、 **[グループ]** を選択し、 >  **[新しいグループ]** を選択します。
 2. **[グループ]** ブレードで、次の手順を実行します。
     1. **[グループの種類]** で、 **[セキュリティ]** を選択します。
     2. **[グループ名]** に、「*Autopilot Group*」と入力します。 **[グループの説明]** に「*Test group for Autopilot devices*」と入力します。

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8748639f0407de7b1bb83f646b7decf8c838766
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 6dff94a9bfeb21f09b8a8c629e10ba562d7e642b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206671"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511430"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune でのデバイス プロファイルの作成
 
@@ -39,7 +39,7 @@ ms.locfileid: "75206671"
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 
-2. **[デバイス]** 、 **[構成プロファイル]** の順に選択します。 次のオプションがあります。
+2. **[デバイス]**  >  **[構成プロファイル]** の順に選択します。 次のオプションがあります。
 
     - **概要**:プロファイルの状態を一覧表示し、ユーザーとデバイスに割り当てたプロファイルに関する追加の詳細を提供します。
     - **管理**:デバイス プロファイルを作成し、カスタムの [PowerShell スクリプト](../apps/intune-management-extension.md)をアップロードしてプロファイル内で実行し、[eSIM](esim-device-configuration.md) を使用してデバイスにデータ プランを追加します。
@@ -87,7 +87,7 @@ ms.locfileid: "75206671"
 
      たとえば、プラットフォームとして **iOS/iPadOS** を選択した場合、プロファイルの種類のオプションは次のプロファイルのようになります。
 
-     ![Intune で iOS プロファイルを作成する](./media/device-profile-create/create-device-profile.png)
+     ![Intune で iOS/iPadOS プロファイルを作成する](./media/device-profile-create/create-device-profile.png)
 
 4. 完了したら、 **[OK]**  >  **[作成]** の順に選択して変更を保存します。 プロファイルが作成され、一覧に表示されます。
 
@@ -171,10 +171,10 @@ Intune では、複数の更新サイクルを使用して、構成プロファ�
   **プロファイル名**:管理者テンプレート - Windows 10 の全ユーザー用の OneDrive 構成プロファイル  
   **プロファイルの説明**:Windows 10 の全ユーザー用の最小設定と基本設定が含まれる OneDrive 管理者テンプレート プロファイル。 ユーザーが組織データを個人 OneDrive アカウントと共有することを禁止する目的で user@contoso.com により作成されます。
 
-  **プロファイル名**:iOS の全ユーザー用の VPN プロファイル  
-  **プロファイルの説明**:すべての iOS ユーザーが Contoso VPN に接続するための最小設定と基本設定が含まれる VPN プロファイル。 ユーザー名とパスワードをユーザーに求めず、ユーザーが VPN で自動的に認証されるよう、user@contoso.com によって作成されます。
+  **プロファイル名**:iOS/iPadOS の全ユーザー用の VPN プロファイル  
+  **プロファイルの説明**:すべての iOS/iPadOS ユーザーが Contoso VPN に接続するための最小設定と基本設定が含まれる VPN プロファイル。 ユーザー名とパスワードをユーザーに求めず、ユーザーが VPN で自動的に認証されるよう、user@contoso.com によって作成されます。
 
-- Microsoft Edge 設定を構成する、Microsoft Defender のウイルス対策設定を有効にする、iOS 脱獄デバイスをブロックするなど、そのタスク別にプロファイルを作成します。
+- Microsoft Edge 設定を構成する、Microsoft Defender のウイルス対策設定を有効にする、iOS/iPadOS 脱獄デバイスをブロックするなど、そのタスク別にプロファイルを作成します。
 
 - マーケティング、販売、IT 管理者などの特定のグループに適用されるプロファイルや、場所や学校のシステム別に適用されるプロファイルを作成します。
 

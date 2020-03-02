@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2fa80697f24167e2a9634bd506e9548ca654129f
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: bd1aaa545f11f7eaaa591f2057f4a6c8946fac4a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547095"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514168"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Intune で条件付きアクセスによる Microsoft Defender ATP のコンプライアンスを強制する
 
@@ -62,7 +62,7 @@ Intune で Microsoft Defender ATP を使用する場合は、以下が構成済�
 - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) および Microsoft Defender セキュリティ センター (ATP ポータル) へのアクセス
 
 > [!NOTE]
-> Microsoft Defender ATP は、iOS および Android の Intune アプリ保護ポリシーではサポートされていません。
+> Microsoft Defender ATP は、iOS/iPadOS および Android の Intune アプリ保護ポリシーではサポートされていません。
 
 ## <a name="enable-microsoft-defender-atp-in-intune"></a>Intune で Microsoft Defender ATP を有効にする
 
@@ -74,7 +74,7 @@ Defender ATP を有効にする必要があるのは、テナントごとに 1 �
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 
-2. **[エンドポイント セキュリティ]** 、 **[Microsoft Defender ATP]** の順に選択し、 **[Microsoft Defender セキュリティ センターを開く]** を選択します。
+2. **[エンドポイント セキュリティ]**  >  **[Microsoft Defender ATP]** の順に選択し、 **[Microsoft Defender セキュリティ センターを開く]** を選択します。
 
    ![選択して Microsoft Defender セキュリティ センターを開く](./media/advanced-threat-protection/atp-device-compliance-open-microsoft-defender.png)
 
@@ -113,7 +113,7 @@ Microsoft Defender ATP への接続を確立したときに、Intune は Microso
 ### <a name="create-the-device-configuration-profile"></a>デバイス構成プロファイルの作成
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
+2. **[デバイス]**  >  **[構成プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
 3. **名前**と**説明**を入力します。
 4. **[プラットフォーム]** では、 **[Windows 10 以降]** を選択します。
 5. **[プロファイルの種類]** では、 **[Microsoft Defender ATP (Windows 10 デスクトップ)]** を選択します。
@@ -139,7 +139,7 @@ Microsoft Defender ATP への接続を確立したときに、Intune は Microso
 ### <a name="create-the-compliance-policy"></a>コンプライアンス ポリシーを作成する
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-2. **[デバイス]** 、 **[コンプライアンス ポリシー]** 、 **[ポリシーの作成]** の順に選択します。
+2. **[デバイス]**  >  **[コンプライアンス ポリシー]**  >  **[ポリシーの作成]** の順に選択します。
 3. **名前**と**説明**を入力します。
 4. **[プラットフォーム]** で、 **[Windows 10 以降]** を選択します。
 5. **[設定]** で、 **[Microsoft Defender ATP]** を選択します。
@@ -164,7 +164,7 @@ Microsoft Defender ATP への接続を確立したときに、Intune は Microso
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 
-2. **[エンドポイント セキュリティ]** 、 **[条件付きアクセス]** 、 **[新しいポリシー]** の順に選択します。
+2. **[エンドポイント セキュリティ]**  >  **[条件付きアクセス]**  >  **[新しいポリシー]** の順に選択します。
 
 3. ポリシーの**名前**を入力して、 **[ユーザーとグループ]** を選択します。 含めるオプションまたは除外するオプションを使用して、ポリシーのグループを追加し、 **[完了]** を選択します。
 
@@ -188,7 +188,7 @@ Microsoft Defender ATP への接続を確立したときに、Intune は Microso
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 
-2. **[デバイス]** 、 **[モニター]** 、 **[ポリシー コンプライアンス]** の順に選択します。
+2. **[デバイス]**  >  **[モニター]**  >  **[ポリシー コンプライアンス]** の順に選択します。
 
 3. 一覧から Microsoft Defender ATP ポリシーを探し、どのデバイスが準拠または非準拠なのかを確認します。
 

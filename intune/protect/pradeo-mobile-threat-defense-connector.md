@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 563b117583f8b8c1f4da08d5d4e3399d5939bf97
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fd2f03edeb1e402401911ab2c80fa0d699e2628c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504373"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514882"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Mobile Threat Defense コネクタと Intune
 
@@ -30,7 +30,7 @@ Intune デバイス コンプライアンス ポリシーで有効にした Prad
 
 ## <a name="how-do-intune-and-pradeo-help-protect-your-company-resources"></a>Intune と Pradeo を利用し、会社のリソースをどのように保護しますか?
 
-Android および iOS 向け Pradeo アプリは、ファイル システム、ネットワーク スタック、デバイスとアプリケーションの製品利用統計情報を可能な限り記録し、Pradeo クラウド サービスにテレメトリ データを送信し、モバイル デバイスの脅威に対するリスクを評価します。
+Android、iOS/iPadOS 向け Pradeo アプリは、ファイル システム、ネットワーク スタック、デバイス、アプリケーション テレメトリを可能な限り記録し、Pradeo クラウド サービスにテレメトリ データを送信し、モバイル デバイスの脅威に対するリスクを評価します。
 
 Intune デバイス コンプライアンス ポリシーには、Pradeo リスク評価に基づく、Pradeo Mobile Threat Defense のルールが含まれています。 このルールを有効にすると、Intune は、有効にされたポリシーに基づいてデバイスの準拠状態を評価します。 デバイスが準拠していないことが判明した場合、ユーザーは Exchange Online や SharePoint Online などの会社リソースへのアクセスをブロックされます。 また、ユーザーは、デバイスにインストールされている Pradeo アプリから、問題を解決して会社リソースへのアクセスを回復するための案内を受け取ります。
 
@@ -68,7 +68,7 @@ Intune デバイス コンプライアンス ポリシーには、Pradeo リス�
 
 ![修復時に付与されたアクセス権の概念図](./media/pradeo-mobile-threat-defense-connector/pradeo_network_wifi_unblocked.png)
 
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいて SharePoint Online へのアクセスを制御する
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>ネットワークへの脅威に基づいて SharePoint Online へのアクセスを制御する
 
 **Man-in-the-middle** 攻撃など、ネットワークに対する脅威を検出し、デバイスのリスクに基づいて会社内のファイルの同期を阻止します。
 
@@ -86,7 +86,7 @@ Intune デバイス コンプライアンス ポリシーには、Pradeo リス�
 
 - **iOS 7 以降**
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
 - Azure Active Directory Premium
 
@@ -96,7 +96,7 @@ Intune デバイス コンプライアンス ポリシーには、Pradeo リス�
 
   - 詳細については、[Pradeo の Web サイト](https://www.pradeo.com/en-US/mobile-threat-protection)を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Pradeo と Intune を統合する](pradeo-mtd-connector-integration.md)
 

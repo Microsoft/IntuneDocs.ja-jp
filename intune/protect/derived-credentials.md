@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9e8bc347dc6336f665fcabfb4e716fef4818515
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 91442d262adb1d85217cb73f2f415766b89267af
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207207"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510522"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>Microsoft Intune で派生資格情報を使用する
 
@@ -37,7 +37,7 @@ ms.locfileid: "75207207"
 
 - Intune 管理者は、次のオブジェクトに対し、*認証方法*として**派生資格情報**を指定します。
 
-  - Wi-Fi、VPN、iOS ネイティブ メール アプリが含まれているメールなどの一般的なプロファイルの種類
+  - Wi-Fi、VPN、iOS/iPadOS ネイティブ メール アプリが含まれているメールなどの一般的なプロファイルの種類
 
   - アプリの認証
 
@@ -76,7 +76,7 @@ Intune では、テナントごとに 1 つの派生資格情報の発行者が�
 
 派生資格情報に登録するデバイスに Intune ポータル サイト アプリを展開する計画を立てます。 デバイス ユーザーは、ポータル サイト アプリを使用して、資格情報の登録プロセスを開始します。
 
-iOS デバイスの場合は、「[iOS ストア アプリを Microsoft Intune に追加する](../apps/store-apps-ios.md)」を参照してください。
+iOS/iPadOS デバイスの場合は、[Microsoft Intune への iOS/iPadOS ストア アプリの追加](../apps/store-apps-ios.md)に関するページを参照してください。
 
 ## <a name="plan-for-derived-credentials"></a>派生資格情報の計画
 
@@ -198,7 +198,7 @@ Intune を使用したアプリの展開に加えて、DISA Purebred アプリ�
 **次のタスクを実行します**。
   
 1. [DISA Purebred アプリケーション](https://cyber.mil/pki-pke/purebred/)をダウンロードします。
-2. DISA Purebred アプリケーションを Intune に展開します。  「[iOS の基幹業務アプリを Microsoft Intune に追加する](../apps/lob-apps-ios.md)」を参照してください。
+2. DISA Purebred アプリケーションを Intune に展開します。  [Microsoft Intune への iOS/iPadOS 基幹業務アプリの追加](../apps/lob-apps-ios.md)に関するページを参照してください。
 3. DISA Purebred アプリケーション用に[アプリごとの VPN を作成](../configuration/vpn-settings-configure.md)します。
 
 ## <a name="use-derived-credentials-for-authentication-and-smime-signing-and-encryption"></a>認証および S/MIME 署名と暗号化に対する派生資格情報の使用
@@ -221,16 +221,16 @@ Intune を使用したアプリの展開に加えて、DISA Purebred アプリ�
 Web サイトおよびアプリケーションに対する証明書ベースの認証には、派生資格情報を使用します。 アプリ認証用の派生資格情報を提供するには:
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-2. **[デバイス]** 、 **[構成プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
+2. **[デバイス]**  >  **[構成プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
 3. 次の設定を入力します。
 
-    - **名前**:プロファイルのわかりやすい名前を入力します。 後で簡単に識別できるよう、プロファイルに名前を付けます。 たとえば、**iOS デバイス プロファイル用の派生資格情報**などは適切なプロファイル名です。
+    - **名前**:プロファイルのわかりやすい名前を入力します。 後で簡単に識別できるよう、プロファイルに名前を付けます。 たとえば、**iOS/iPadOS デバイス プロファイル用の派生資格情報**などは適切なプロファイル名です。
     - **説明**:設定の概要および他の重要な詳細がわかる説明を入力します。
     - **[プラットフォーム]** : **[iOS/iPadOS]** を選択します。
     - **[プロファイルの種類]** : **[派生資格情報]** を選択します。
 
 4. **[OK]** を選択して変更を保存します。
-5. 終わったら、 **[OK]**  >  **[作成]** を選択して Intune プロファイルを作成します。 完了すると、プロファイルが **[デバイス - 構成プロファイル]** の一覧に表示されます。
+5. 終わったら、 **[OK]**  >  **[作成]** の順に選択して Intune プロファイルを作成します。 完了すると、プロファイルが **[デバイス - 構成プロファイル]** の一覧に表示されます。
 6. 新しいプロファイルを選択し、 **[割り当て]** を選択します。 ポリシーを受け取る必要があるグループを選択します。
  
 派生資格情報の発行者を設定するときに指定した設定に応じて、アプリまたはメールでユーザーに通知されます。 この通知は、派生資格情報ポリシーを処理できるように、ポータル サイトを起動することをユーザーに知らせます。

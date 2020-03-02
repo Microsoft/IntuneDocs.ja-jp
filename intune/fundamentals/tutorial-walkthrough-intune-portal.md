@@ -18,14 +18,14 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9197d4f96eae1041b00b07110ef421a12a4fe338
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 203d243df3e8ae496e7ff78f20222fd361417c3d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712987"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514049"
 ---
-# <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>チュートリアル: Azure portal での Microsoft Intune のチュートリアル
+# <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>チュートリアル:Azure portal での Microsoft Intune のチュートリアル
 
 [Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure) には、クラウド コンピューティングのさまざまなシナリオと可能性を支援する 100 を超えるサービスが含まれています。 Microsoft Intune は、Azure で利用できるサービスの 1 つです。 Intune を利用すると、会社のデバイス、アプリ、データが会社のセキュリティ要件を確実に満たすようにできます。 確認する必要がある要件や、それらの要件が満たされない場合の対応の設定を制御できます。 [Azure Portal](https://portal.azure.com) は、Microsoft Intune サービスのある場所です。 Intune で使用できる機能を理解しておくと、モバイル デバイス管理 (MDM) とモバイル アプリケーション管理 (MAM) のさまざまなタスクを実行するときに役に立ちます。
 
@@ -36,7 +36,7 @@ ms.locfileid: "73712987"
 
 Intune サブスクリプションがない場合は、[無料試用版アカウントにサインアップ](free-trial-sign-up.md)します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 Microsoft Intune を設定する前に、次の要件を確認してください。
 
 - [サポートされるオペレーティング システムとブラウザー](../supported-devices-browsers.md) 
@@ -67,7 +67,7 @@ Intune は 30 日間無料で試用できます。 既に職場または学校�
     
     Intune では、従業員のデバイスやアプリによる会社のデータへのアクセス方法などを管理できます。 このモバイル デバイス管理 (MDM) サービスを使用するには、最初にデバイスを Intune に登録する必要があります。 デバイスが登録されると、MDM 証明書が発行されます。 この証明書を使用して、Intune サービスと通信します。 
 
-    従業員のデバイスを Intune に登録する方法は複数あります。 各方法は、デバイスの所有権 (個人または会社)、デバイスの種類 (iOS、Windows、Android)、および管理要件 (リセット、アフィニティ、ロック) によって異なります。 ただし、デバイスを登録するには、その前に Intune インフラストラクチャを設定する必要があります。 特に、デバイスの登録には [MDM 機関を設定する](mdm-authority-set.md)必要があります。 Intune 環境 (テナント) の準備について詳しくは、「[Intune をセットアップする](setup-steps.md)」をご覧ください。 Intune テナントの準備が済むと、デバイスを登録できます。 デバイスの登録について詳しくは、「[デバイス登録とは](../enrollment/device-enrollment.md)」をご覧ください
+    従業員のデバイスを Intune に登録する方法は複数あります。 各方法は、デバイスの所有権 (個人または会社)、デバイスの種類 (iOS/iPadOS、Windows、Android)、管理要件 (リセット、アフィニティ、ロック) によって異なります。 ただし、デバイスを登録するには、その前に Intune インフラストラクチャを設定する必要があります。 特に、デバイスの登録には [MDM 機関を設定する](mdm-authority-set.md)必要があります。 Intune 環境 (テナント) の準備について詳しくは、「[Intune をセットアップする](setup-steps.md)」をご覧ください。 Intune テナントの準備が済むと、デバイスを登録できます。 デバイスの登録について詳しくは、「[デバイス登録とは](../enrollment/device-enrollment.md)」をご覧ください
 
 3. [Intune](https://aka.ms/intuneportal) で **[デバイスのポリシー準拠]** を選択すると、Intune によって管理されているデバイスのコンプライアンスの詳細が表示されます。 次の図のような詳細が表示されます。
 
@@ -85,7 +85,7 @@ Intune は 30 日間無料で試用できます。 既に職場または学校�
 
     ![[デバイス構成] ウィンドウのスクリーンショット](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-04.png)
     
-    Intune には、組織内のさまざまなデバイスで有効または無効にできる設定と機能が含まれています。 これらの設定と機能は "構成プロファイル" に追加されます。 異なるデバイスおよび iOS、Android、Windows などの異なるプラットフォームに対するプロファイルを作成することができます。 次に、Intune を使用して、組織内のデバイスにプロファイルを適用することができます。   
+    Intune には、組織内のさまざまなデバイスで有効または無効にできる設定と機能が含まれています。 これらの設定と機能は "構成プロファイル" に追加されます。 さまざまなデバイスおよび iOS/iPadOS、Android、Windows などのさまざまなプラットフォームに対するプロファイルを作成することができます。 次に、Intune を使用して、組織内のデバイスにプロファイルを適用することができます。   
 
     デバイスの構成について詳しくは、「[Microsoft Intune でデバイス プロファイルを使用してデバイスに機能設定を適用する](../configuration/device-profiles.md)」をご覧ください。
 
@@ -166,7 +166,7 @@ Azure Portal の左側にある**サイドバー**には、利用できるすべ
 
 この機能は、Intune にグループやユーザーなどのコンテンツを追加した後に重要になります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Microsoft Intune を短時間で実行するには、Intune のクイック スタートの手順で Intune の無料アカウントを最初に設定します。
 

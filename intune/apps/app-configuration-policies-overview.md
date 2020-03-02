@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2cf53b26c1617ca7fc493c837e57823c23781bc
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 334cadfb7e668febad95a512eb34f62a73667ec6
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414850"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513998"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 用アプリ構成ポリシー
 
@@ -91,7 +91,7 @@ Intune でアプリ構成ポリシーを使用するには、次の 2 つのオ�
 
 ## <a name="diagnostic-logs"></a>診断ログ
 
-### <a name="ios-configuration-on-unmanaged-devices"></a>アンマネージド デバイスでの iOS の構成
+### <a name="iosipados-configuration-on-unmanaged-devices"></a>アンマネージド デバイスでの iOS/iPadOS の構成
 
 マネージド アプリの構成では、アンマネージド デバイス上で **Intune 診断ログ**を使用して iOS/iPadOS 構成を検証できます。 以下の手順に加えて、Microsoft Edge を使用してマネージド アプリのログにアクセスできます。 詳細については、[iOS/iPadOS で Microsoft Edge を使用してマネージド アプリのログにアクセスする方法](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs)に関する記事をご覧ください。
 
@@ -135,7 +135,7 @@ Intune でアプリ構成ポリシーを使用するには、次の 2 つのオ�
 
 ![対象アプリの構成](./media/app-configuration-policies-overview/targeted-app-configuration-3.png)
 
-### <a name="ios-configuration-on-managed-devices"></a>マネージド デバイス上の iOS 構成
+### <a name="iosipados-configuration-on-managed-devices"></a>マネージド デバイス上の iOS/iPadOS の構成
 
 マネージド アプリの構成では、マネージド デバイス上で **Intune 診断ログ**を使用して iOS/iPadOS 構成を検証できます。
 

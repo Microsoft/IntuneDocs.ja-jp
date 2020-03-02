@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdc704d1971dfcc46ee2c3f5550e201d7a8e89fb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1cdfc7d42d3bffe1abe21deddfe146af953b150a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505187"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514950"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Microsoft Intune の計画を実装する
 
@@ -39,7 +39,7 @@ Intune スタンドアロンの主な要件は次のようになります。
 
 - Office 365 サブスクリプション (Office アプリとアプリ保護ポリシー管理アプリ用)
 
-- Apple APNs 証明書 (iOS デバイス プラットフォーム管理を有効にします)
+- Apple APNs 証明書 (iOS/iPadOS デバイス プラットフォーム管理を有効にする)
 
 - Azure AD Connect (ディレクトリ同期用)
 
@@ -88,7 +88,7 @@ Intune でデバイスの設定、構成、管理、登録を始める前に、�
 
 ### <a name="task-6-enable-device-platforms"></a>タスク 6: デバイス プラットフォームを有効にする
 
-既定では、Apple デバイス (iOS と Mac) を除く、ほとんどのデバイス プラットフォームが有効になっています。 iOS デバイスを Intune で登録し、管理するには、デバイス プラットフォームを有効にする必要があります。 そのためには、MDM プッシュ証明書を作成し、Intune に追加する必要があります。
+既定では、Apple デバイス (iOS/iPadOS、Mac) を除く、ほとんどのデバイス プラットフォームが有効になっています。 iOS/iPadOS デバイスを Intune で登録し、管理するには、デバイス プラットフォームを有効にする必要があります。 そのためには、MDM プッシュ証明書を作成し、Intune に追加する必要があります。
 
 - 詳しくは、[Apple デバイスの登録を有効にする方法](../enrollment/apple-mdm-push-certificate-get.md)に関する記事をご覧ください。
 
@@ -130,10 +130,10 @@ Intune は、Exchange Online、Exchange オンプレミス、SharePoint Online�
 
 ### <a name="task-13-enroll-devices"></a>タスク 13: デバイスの登録
 
-Intune は、iOS、Mac OS、Android、Windows デスクトップ、Windows モバイル デバイス プラットフォームに対応しています。 Intune 展開のユース ケースと要件に基づき、モバイル デバイス プラットフォームを適宜登録します。
+Intune は、iOS/iPadOS、Mac OS、Android、Windows デスクトップ、Windows モバイル デバイス プラットフォームをサポートしています。 Intune 展開のユース ケースと要件に基づき、モバイル デバイス プラットフォームを適宜登録します。
 
 - デバイスの登録方法については[ここ](../enrollment/device-enrollment.md)をご覧ください。
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 [Intune 展開のテストと検証](planning-guide-test-validation.md)に関するガイダンスをご覧ください。

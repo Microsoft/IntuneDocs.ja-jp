@@ -16,21 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88beb8f4791c127b0a225878f5bc43b6dd9b4025
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: 9afb8f431ae301fe74f420c11205a7ed2637434b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839374"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514627"
 ---
 # <a name="guided-scenario---deploy-microsoft-edge-for-mobile"></a>ガイド付きシナリオ - モバイル用の Microsoft Edge を展開する 
 
-この[ガイド付きシナリオ](~/fundamentals/guided-scenarios-overview.md)に従うことで、組織の iOS または Android デバイスのユーザーに、Microsoft Edge アプリを割り当てることができます。 このアプリを割り当てると、ユーザーは会社のデバイスを使用してコンテンツをシームレスに参照できます。 
+この[ガイド付きシナリオ](~/fundamentals/guided-scenarios-overview.md)に従うことで、組織の iOS/iPadOS、Android デバイスのユーザーに、Microsoft Edge アプリを割り当てることができます。 このアプリを割り当てると、ユーザーは会社のデバイスを使用してコンテンツをシームレスに参照できます。 
 
-Microsoft Edge を使用すると、ユーザーは、作業内容の統合、配置、管理に役立つ組み込み機能を使用して、混乱した Web に対応できます。 Microsoft Edge アプリケーションで会社の Azure AD アカウントを使用してサインインした iOS および Android デバイスのユーザーは、定義した**お気に入り**ワークプレースと Web サイト フィルターがブラウザーに事前に読み込まれていることがわかります。
+Microsoft Edge を使用すると、ユーザーは、作業内容の統合、配置、管理に役立つ組み込み機能を使用して、混乱した Web に対応できます。 Microsoft Edge アプリケーションで会社の Azure AD アカウントを使用してサインインした iOS/iPadOS および Android デバイスのユーザーは、定義した**お気に入り**ワークプレースと Web サイト フィルターがブラウザーに事前に読み込まれていることがわかります。
 
 > [!NOTE]
-> ユーザーが iOS デバイスまたは Android デバイスを登録できないようにしてある場合、このシナリオでは登録できず、ユーザーは自分で Edge をインストールする必要があります。
+> ユーザーが iOS/iPadOS、Android のデバイスを登録できないようにしてある場合、このシナリオでは登録できず、ユーザーは自分で Edge をインストールする必要があります。
 Intune ポリシーによって有効化された次の Microsoft Edge エンタープライズ機能が含まれます。 
 
 - **デュアル ID** -ユーザーは、閲覧用に、個人アカウントに加えて、職場アカウントを追加できます。 2 つの ID の間は完全に分離されており、Office 365 と Outlook のアーキテクチャとエクスペリエンスに似ています。 Intune 管理者は、職場アカウント内に保護された閲覧エクスペリエンス用の必要なポリシーを設定できます。 
@@ -49,9 +49,9 @@ Intune ポリシーによって有効化された次の Microsoft Edge エンタ
 
 ## <a name="step-1---introduction"></a>ステップ 1 - 概要
 
-「**モバイル用 Microsoft Edge の展開**」ガイド付きシナリオに従って、選択した iOS および Android のユーザー グループに対して Microsoft Edge の基本的な展開を設定します。 この展開では、**デュアル ID** と**管理対象のお気に入りとホーム ページのショートカット**を実装します。 さらに、選択したユーザーによって登録されたデバイスには、Intune によって Microsoft Edge アプリが自動的にインストールされます。 この自動インストールは、次のようなすべてのユーザー主導の登録の種類で行われます。 
-- Intune ポータル サイト アプリを使用した iOS の登録 
-- Apple Business Manager を使用した iOS ユーザー アフィニティの登録 
+**モバイル用の Microsoft Edge の展開**に関するガイド付きシナリオに従って、選択した iOS/iPadOS および Android のユーザー グループに対して Microsoft Edge の基本的な展開を設定します。 この展開では、**デュアル ID** と**管理対象のお気に入りとホーム ページのショートカット**を実装します。 さらに、選択したユーザーによって登録されたデバイスには、Intune によって Microsoft Edge アプリが自動的にインストールされます。 この自動インストールは、次のようなすべてのユーザー主導の登録の種類で行われます。 
+- Intune ポータル サイト アプリを使用した iOS/iPadOS の登録 
+- Apple Business Manager を使用した iOS/iPadOS ユーザー アフィニティの登録 
 - Intune ポータル サイト アプリを使用したレガシ Android の登録 
 
 このガイド付きシナリオでは、**MyApps** を Microsoft Edge のお気に入りに自動的に表示できるようにし、Intune ポータル サイト アプリに設定したのと同じブランドでブラウザーを構成します。 
@@ -60,13 +60,13 @@ Intune ポリシーによって有効化された次の Microsoft Edge エンタ
 ユーザーが必要とするワークプレースのお気に入りと、Web 閲覧に必要なフィルターについて質問します。 続ける前に、次のタスクを完了していることを確認してください。
 
 - Azure AD のグループにユーザーを追加します。 詳細については、「[Azure Active Directory を使用して基本グループを作成してメンバーを追加する](https://go.microsoft.com/fwlink/?linkid=2102458)」を参照してください。
-- Intune で iOS または Android デバイスを登録します。 詳細については、[デバイスの登録](https://go.microsoft.com/fwlink/?linkid=2102547)に関する記事を参照してください。
+- Intune で iOS、iPadOS または Android デバイスを登録します。 詳細については、[デバイスの登録](https://go.microsoft.com/fwlink/?linkid=2102547)に関する記事を参照してください。
 - Microsoft Edge に追加するワークプレースのお気に入りの一覧を収集します。
 - Microsoft Edge で適用する Web サイト フィルターの一覧を収集します。
 
 ## <a name="step-2---basics"></a>ステップ 2 - 基本
 
-このステップでは、新しい Microsoft Edge ポリシーの名前と説明を入力する必要があります。 これらのポリシーは、割り当てと構成を変更する必要がある場合、後で参照できます。 このガイド付きシナリオでは、iOS デバイス用の Microsoft Edge iOS アプリと、Android デバイス用の Microsoft Edge Android アプリの両方を追加して割り当てます。 また、このステップでは、これらのアプリの構成ポリシーを作成します。
+このステップでは、新しい Microsoft Edge ポリシーの名前と説明を入力する必要があります。 これらのポリシーは、割り当てと構成を変更する必要がある場合、後で参照できます。 このガイド付きシナリオでは、iOS/iPadOS デバイス用の Microsoft Edge iOS/iPadOS アプリと、Android デバイス用の Microsoft Edge Android アプリの両方を追加して割り当てます。 また、このステップでは、これらのアプリの構成ポリシーを作成します。
 
 ## <a name="step-3---configuration"></a>ステップ 3 - 構成
 
@@ -74,7 +74,7 @@ Intune ポリシーによって有効化された次の Microsoft Edge エンタ
 
 ## <a name="step-4---assignments"></a>ステップ 4 - 割り当て
 
-このステップでは、Microsoft Edge モバイルを動作させる構成に含めるユーザー グループを選択できます。 Microsoft Edge は、これらのユーザーが登録したすべての iOS および Android デバイスにもインストールされます。
+このステップでは、Microsoft Edge モバイルを動作させる構成に含めるユーザー グループを選択できます。 Microsoft Edge は、これらのユーザーが登録したすべての iOS/iPadOS および Android のデバイスにもインストールされます。
 
 ## <a name="step-5---review--create"></a>ステップ 5 - 確認と作成
 

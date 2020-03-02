@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68c2dc7df123593513c14e16e2626c7426f50b01
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: bfa2758546595d1e6237d88e128958c50759eb04
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207419"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569185"
 ---
 # <a name="create-a-custom-role-in-intune"></a>Intune でカスタム ロールを作成する
 
@@ -34,31 +34,30 @@ ms.locfileid: "75207419"
 
 ## <a name="to-create-a-custom-role"></a>カスタム ロールを作成するには
 
-1. [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) で、 **[ロール]**  >  **[すべてのロール]**  >  **[追加]** を選択します。
+1. [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) で、 **[テナント管理]**  >  **[ロール]**  >  **[すべてのロール]**  >  **[作成]** を選択します。
 
-2. **[カスタム ロールの追加]** ブレードで、新しいロールの名前と説明を入力し、 **[アクセス許可]** をクリックします。
+2. **[基本]** ページで、新しいロールに名前と説明を入力して、 **[次へ]** を選択します。
 
-3. **[アクセス許可]** ブレードで、このロールで使用するアクセス許可を選択します。
+3. **[アクセス許可]** ページで、このロールで使用するアクセス許可を選択します。
 
-4. **[スコープ (タグ)]** ブレードで、このロールのタグを選択します。 このロールでは、これらのタグも設定されているリソースにアクセスできます。
+4. **[スコープ (タグ)]** ページで、このロールのタグを選択します。 このロールでは、これらのタグも設定されているリソースにアクセスできます。 **[次へ]** を選択します。
 
-5. 終了したら、 **[OK]** を選択します。
-
-6. **[カスタム ロールの追加]** ブレードで、 **[作成]** をクリックします。 新しいロールが **[Intune の役割 - すべてのロール]** ブレード上の一覧に表示されます。
-
+5. **[確認および作成]** ページで、完了したら、 **[作成]** を選択します。 新しいロールが **[Intune の役割 - すべてのロール]** ブレード上の一覧に表示されます。
 
 ## <a name="copy-a-role"></a>ロールをコピーする
 
 既存のロールをコピーすることもできます。
 
-1. [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) で、 **[ロール]**  >  **[すべてのロール]** を選択し、一覧でロールを選択して、 **[重複]** を選択します。
+1. [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) で、 **[テナント管理]**  >  **[ロール]**  >  **[すべてのロール]** を選択し、一覧でロールのチェック ボックスをオンにして、 **[重複]** を選択します。
 
-2. **[ロールの複製]** で名前を入力します。 必ず一意の名前を使用してください。
+2. **[基本]** ページで、名前を入力します。 必ず一意の名前を使用してください。
 
 3. 元のロールからのアクセス許可とスコープ タグはすべて既に選択されています。 重複するロールの **[名前]** 、 **[説明]** 、 **[アクセス許可]** 、 **[スコープ (タグ)]** は後で変更できます。
 
-4. **[作成]** を選択します。 
+4. 必要な変更をすべて行ったら、 **[次へ]** を選択して、 **[確認および作成]** ページに移動します。 **[作成]** を選択します。 
 
 ## <a name="next-steps"></a>次のステップ
 - [ロールをユーザーに割り当てる](assign-role.md)
 - [Intune でのロール ベースの管理制御について学習する](role-based-access-control.md)
+
+

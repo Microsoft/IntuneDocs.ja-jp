@@ -1,6 +1,6 @@
 ---
-title: iOS ユーザーがアプリを入手する方法
-description: エンド ユーザーが iOS アプリを使用できるようにするための方法
+title: iOS/iPadOS のユーザーがアプリを入手する方法
+description: エンド ユーザーが iOS/iPadOS アプリを使用できるようにするための方法
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06cc977ce8b0b892e1020436f89ada4a40bac3f2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 344c2e3f3ed53852aa6b749c9ebf6d451dd313ff
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73413995"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514389"
 ---
-# <a name="how-your-ios-users-get-their-apps"></a>iOS ユーザーがアプリを入手する方法
+# <a name="how-your-iosipados-users-get-their-apps"></a>iOS/iPadOS のユーザーがアプリを入手する方法
 
 Microsoft Intune を通して配布したアプリをエンド ユーザーがどこでどのように取得するかについて説明します。
 
@@ -34,9 +34,9 @@ Microsoft Intune を通して配布したアプリをエンド ユーザーが�
 
 **管理対象のアプリ** -- ポリシーによって管理できて、Intune によって "ラップされた" アプリまたは Intune アプリ ソフトウェア開発キット (SDK) で構築されたアプリです。 これらのアプリは Intune によって管理することができます。また、これらのアプリにはアプリ保護ポリシーを適用することができます。
 
-**アンマネージド アプリ** -- Intune アプリ SDK と統合されていない iOS App Store からユーザーがダウンロードできるアプリです。 Intune では、これらのアプリの配布、管理、または選択的ワイプを制御することはできません。  
+**アンマネージド アプリ** -- Intune アプリ SDK と統合されていない iOS/iPadOS の App Store からユーザーがダウンロードできるアプリです。 Intune では、これらのアプリの配布、管理、または選択的ワイプを制御することはできません。  
 
-Apple の制限により、基幹業務アプリおよび管理対象アプリ ストアのアプリはポータル サイト アプリに表示されません。 この問題を回避するため、iOS 用ポータル サイト アプリのアプリ タイルでは、次のように、ユーザーは単一の場所 (ポータル サイト Web サイト) のさまざまなビューですべてのアプリを確認できます。
+Apple の制限により、基幹業務アプリおよび管理対象アプリ ストアのアプリはポータル サイト アプリに表示されません。 この問題を回避するため、iOS/iPadOS 用ポータル サイト アプリのタイルでは、ユーザーに単一の場所 (ポータル サイト Web サイト) ですべてのアプリに対するさまざまなビューが表示されます。
 
 登録済みユーザーは、ポータル サイト アプリのアプリ画面で、以下のタイルをタップしてアプリを取得します。
 

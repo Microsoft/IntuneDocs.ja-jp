@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96ebae46fd4935c3070319f16d35d5b53888e94c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3f432ab20170dc702d2014bbac68ced06e51082e
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505178"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514899"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>モバイル デバイス管理のユース ケース シナリオを特定する
 
@@ -79,16 +79,16 @@ ms.locfileid: "72505178"
 
 次に、各ユース ケース シナリオに関連付けられているモバイル デバイス プラットフォームを特定します。 候補が複数存在する場合があります。
 
-たとえば、会社のユース ケース シナリオでは、iOS と Android Samsung KNOX デバイスのプラットフォームをサポートする場合があります。 BYOD ポリシーに、Android (Samsung KNOX 以外) と Windows 10 Mobile のようなモバイル デバイス プラットフォームの追加に関するサポートが含まれる場合があります。 前述の例に基づき、モバイル デバイス プラットフォームと各ユース ケース シナリオを関連付けています。
+たとえば、会社のユース ケース シナリオでは、iOS/iPadOS および Android Samsung KNOX デバイスのプラットフォームをサポートする場合があります。 BYOD ポリシーに、Android (Samsung KNOX 以外) と Windows 10 Mobile のようなモバイル デバイス プラットフォームの追加に関するサポートが含まれる場合があります。 前述の例に基づき、モバイル デバイス プラットフォームと各ユース ケース シナリオを関連付けています。
 
 | **ユース ケース** | **サブ ユース ケース** | **グループ** | **デバイス プラットフォーム** |   
 |:---:|:---:|:---:|:---:|
-| 企業 | インフォメーション ワーカー | 人事、財務 | iOS |                                                           
-| 企業 | 役員 | 人事、財務 | iOS |                                                           
+| 企業 | インフォメーション ワーカー | 人事、財務 | iOS/iPadOS |                                                           
+| 企業 | 役員 | 人事、財務 | iOS/iPadOS |                                                           
 | 企業 | キオスク | 小売 | Android |
-| BYOD | インフォメーション ワーカー | マーケティング、営業 | iOS |                                                           
-| BYOD | 役員 | マーケティング、営業 | iOS |
+| BYOD | インフォメーション ワーカー | マーケティング、営業 | iOS/iPadOS |                                                           
+| BYOD | 役員 | マーケティング、営業 | iOS/iPadOS |
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 次のセクションでは、[各ユース ケース シナリオの Intune 要件を特定する方法](../planning-guide-requirements.md)についてのガイダンスを提供します。

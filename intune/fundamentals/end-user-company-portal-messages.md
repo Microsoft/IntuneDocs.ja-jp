@@ -17,12 +17,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57467d3d073666c1c22ac0a412f68a258d5b3d75
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cbc4e1cc8cf7bd578690bf3e34353a60ec67cdab
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414067"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514729"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>ポータル サイト アプリで表示されるメッセージに関してエンド ユーザーをサポートする
 
@@ -126,7 +126,7 @@ ms.locfileid: "73414067"
 
 ポータル サイトを Windows 情報保護 (WIP) のアプリ保護ポリシーの **[許可されたアプリ]** または **[適用から除外されるアプリ]** 一覧に追加します。 詳細については、「[Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する](../apps/windows-information-protection-policy-create.md)」を参照してください。
 
-## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>iOS デバイスで iOS 業務用アプリ (基幹業務アプリ) を承認する 
+## <a name="approve-a-iosipados-company-app-line-of-business-app-on-your-iosipados-device"></a>iOS/iPadOS デバイスで iOS/iPadOS 業務用アプリ (基幹業務アプリ) を承認する 
 
 ### <a name="where-it-appears"></a>表示内容
 
@@ -136,7 +136,7 @@ App Store で使用できない組織によって開発された iOS アプリ�
 
 ### <a name="what-it-means"></a>意味
 
-このメッセージは、iOS デバイスで会社によって開発されたアプリを承認し、インストールするために iOS デバイスの設定を変更する必要があることを意味します。
+このメッセージは、iOS/iPadOS デバイスで会社によって開発されたアプリを承認し、インストールするために、iOS/iPadOS デバイスの設定を変更する必要があることを意味します。
 
 Intune ポータル サイトを使用してこのようなアプリをインストールし、アプリを起動したら、以下の手順に従って、ダウンロード後にアプリを承認します。
 

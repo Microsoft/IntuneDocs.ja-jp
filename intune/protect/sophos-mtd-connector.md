@@ -15,19 +15,19 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f41d5d1ec3e302a277fe5e6ff6af9d33a7e89517
-ms.sourcegitcommit: d21539e52631c589bfeaa182418390f66672736c
+ms.openlocfilehash: 7d17749353bc3904a3d99210a5d56531d9af9c28
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75564919"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514814"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Sophos Mobile Threat Defense コネクタと Intune
 モバイル デバイスからの会社のリソースへのアクセスは、Microsoft Intune に統合する Mobile Threat Defense (MTD) ソリューションである Sophos Mobile が実行するリスク評価に基づく条件付きアクセスを利用して制御できます。 リスクは、Sophos Mobile アプリを実行するデバイスが収集した製品利用統計情報に基づいて評価されます。
 条件付きアクセス ポリシーは、Intune のデバイス コンプライアンス ポリシーを使用して有効にする Sophos Mobile でのリスクの評価に基づいて構成できます。これを使用すると、検出された脅威に基づき、準拠していないデバイスが企業リソースにアクセスするのを許可または拒否できます。
 
 ## <a name="how-do-intune-and-sophos-mobile-help-protect-your-company-resources"></a>Intune と Sophos Mobile が会社のリソースを保護する方法
-Android および iOS 用の Sophos アプリは、ファイル システム、ネットワーク スタック、デバイス、アプリケーションの製品利用統計情報を可能な限り記録し、Sophos Mobile クラウド サービスに利用統計情報を送信し、モバイル デバイスの脅威に対するリスクを評価します。
+Android、iOS/iPadOS 用の Sophos Mobile アプリは、ファイル システム、ネットワーク スタック、デバイス、アプリケーション テレメトリを可能な限り記録し、Sophos Mobile クラウド サービスにテレメトリ データを送信し、モバイル デバイスの脅威に対するリスクを評価します。
 Intune デバイス コンプライアンス ポリシーには、Sophos Mobile でのリスクの評価に基づく、Sophos Mobile Threat Defense のルールが含まれています。 このルールを有効にすると、Intune は、有効にされたポリシーに基づいてデバイスの準拠状態を評価します。 デバイスが準拠していないことが判明した場合、ユーザーは Exchange Online や SharePoint Online などの会社リソースへのアクセスをブロックされます。 また、ユーザーは、デバイスにインストールされている Sophos Mobile アプリから、問題を解決して会社のリソースへのアクセスを回復するための案内を受け取ります。  
 
 ## <a name="sample-scenarios"></a>サンプル事例

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b61c333f41054194b44c7517e508fe1ef6d28d4
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: c6678c3fbc247ac0595775c0ccc72c7bdb9c55e1
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812379"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513097"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune でユーザーおよびデバイス プロファイルを割り当てる
 
@@ -44,7 +44,7 @@ ms.locfileid: "76812379"
 ## <a name="assign-a-device-profile"></a>デバイス プロファイルを割り当てる
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-2. **[デバイス]** 、 **[構成プロファイル]** の順に選択します。 プロファイルがすべて一覧表示されます。
+2. **[デバイス]**  >  **[構成プロファイル]** の順に選択します。 プロファイルがすべて一覧表示されます。
 3. 割り当てるプロファイルを選択して、 **[割り当て]** を選択します。
 4. グループを**含める**か**除外する**かを選んでから、自分のグループを選択します。 グループを選択するときに、Azure AD グループを選択します。 複数のグループを選択する場合は、**Ctrl** キーを押しながら自分のグループを選択します。
 
@@ -56,7 +56,7 @@ ms.locfileid: "76812379"
 
 プロファイルを割り当てるときに、影響を受けるユーザー数を**評価**することもできます。 この機能によってユーザーが計算されます。デバイスは計算されません。
 
-1. 管理センターで、 **[デバイス]** 、 **[構成プロファイル]** の順に選択します。
+1. 管理センターで、 **[デバイス]**  >  **[構成プロファイル]** の順に選択します。
 2. プロファイル > **[割り当て]**  >  **[評価]** を選択します。 このプロファイルの対象となるユーザー数を示すメッセージが表示されます。
 
 **[評価]** ボタンが灰色表示されている場合は、プロファイルが 1 つまたは複数のグループに割り当てられていることを確認してください。
@@ -89,7 +89,7 @@ Windows 10 デバイスでは、**適用性ルール**を追加して、特定�
 
 ### <a name="user-groups"></a>ユーザー グループ
 
-ユーザー グループに適用されたプロファイル設定は、常にユーザーに対して有効になり、ユーザーがさまざまなデバイスにサインインしたときに使用されます。 ユーザーは、職場用の Surface Pro と個人用の iOS デバイスなど、複数のデバイスを使用することが普通です。 そして、ユーザーはそれらのデバイスから電子メールやその他の組織リソースにアクセスします。
+ユーザー グループに適用されたプロファイル設定は、常にユーザーに対して有効になり、ユーザーがさまざまなデバイスにサインインしたときに使用されます。 ユーザーは、職場用の Surface Pro と個人用の iOS/iPadOS デバイスなど、複数のデバイスを使用することが普通です。 そして、ユーザーはそれらのデバイスから電子メールやその他の組織リソースにアクセスします。
 
 次に例を示します。
 
