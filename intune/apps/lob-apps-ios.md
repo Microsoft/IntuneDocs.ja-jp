@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b7c0a7dfa4337983c12ada2d0f415c771bd0548
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 507c7ecff9715ebf9f24567c735592f3f255ccc9
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755189"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609179"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>iOS の基幹業務アプリを Microsoft Intune に追加する
 
@@ -31,10 +31,13 @@ ms.locfileid: "76755189"
 
 この記事の情報を使用して、Microsoft Intune に iOS の基幹業務 (LOB) アプリを追加できます。 基幹業務 (LOB) アプリとは、IPA アプリのインストール ファイルから Intune に追加するアプリのことです。 通常、この種類のアプリは社内で作成されます。 まず、iOS Developer Enterprise Program に参加する必要があります。 これを行う方法の詳細については、[Apple の Web サイト](https://developer.apple.com/programs/ios/enterprise/)を参照してください。
 
->[!NOTE]
->iOS デバイスのユーザーは Stocks や Maps などの一部の iOS 組み込みアプリを削除できます。 Intune を使用してこれらのアプリを再展開することはできません。 ユーザーがこれらのアプリを削除した場合は、アプリ ストアから手動で再インストールする必要があります。
+> [!NOTE]
+> iOS デバイスのユーザーは Stocks や Maps などの一部の iOS 組み込みアプリを削除できます。 Intune を使用してこれらのアプリを再展開することはできません。 ユーザーがこれらのアプリを削除した場合は、アプリ ストアから手動で再インストールする必要があります。
 >
->iOS の LOB アプリには、アプリごとに最大 4 GB のサイズ制限があります。
+> iOS の LOB アプリには、アプリごとに最大 4 GB のサイズ制限があります。
+
+> [!NOTE]
+> バンドル識別子 (*com.contoso.app* など) は、アプリを一意に識別するものでなければなりません。 たとえば、テスト目的で運用バージョンの隣に LOB アプリのベータ版をインストールするには、ベータ版に異なる一意の識別子を与える必要があります (*com.contoso.app-beta* など)。 そうしないと、ベータ版が運用版と重複し、アップグレードとして扱われます。 .ipa ファイルの名前を変更してもこの動作に影響はありません。
 
 ## <a name="select-the-app-type"></a>アプリの種類を選択する
 
@@ -47,7 +50,7 @@ ms.locfileid: "76755189"
 
 ### <a name="select-the-app-package-file"></a>アプリ パッケージ ファイルを選択する
 
-1. **[アプリの追加]** ペインで、 **[アプリ パッケージ ファイルの選択]** をクリックします。 
+1. **[アプリの追加]** ウィンドウで、 **[アプリ パッケージ ファイルの選択]** をクリックします。 
 2. **[アプリのパッケージ ファイル]** ウィンドウで、参照ボタンを選択します。 次に、拡張子が **.ipa** の iOS インストール ファイルを選択します。
    アプリの詳細が表示されます。
 3. 操作を完了したら、 **[アプリ パッケージ ファイル]** ペインの **[OK]** を選択してアプリを追加します。

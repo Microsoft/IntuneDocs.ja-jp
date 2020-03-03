@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/25/2019
+ms.date: 02/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e28f8a2cc43e4ca210a391151383633da457c056
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: ea115810d604ce7ad49bd23b40951ee3f3da67fc
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437921"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609259"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune でサポートされるオペレーティング システムとブラウザー
 
@@ -32,6 +32,9 @@ Microsoft Intune をセットアップする前に、サポートされている
 デバイスへの Intune のインストールについては、「[マネージド デバイスを使用して作業する](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions)」と [Intune のネットワーク帯域幅の使用法](network-bandwidth-use.md)に関するページを参照してください。
 
 構成サービス プロバイダー サポートの詳細については、「[Configuration service provider reference (構成サービス プロバイダー リファレンス)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)」を参照してください。
+
+> [!NOTE]
+> Intune では、アプリケーションやデバイスで Android 向けポータル サイト アプリや Android 向け Intune App SDK を経由して会社のリソースにアクセスするためには Android 5.x (Lollipop) 以上が必要になりました。 Polycom Android ベースの Teams デバイスで 4.4 を実行している場合、この要件は適用されません。 その場合、デバイスは引き続きサポートされます。 
 
 ## <a name="intune-supported-operating-systems"></a>Intune でサポートされるオペレーティング システム
 

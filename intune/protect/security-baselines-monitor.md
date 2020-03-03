@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbf82c0bef88e4a6d0e790f4b0ecdf73d2731d5d
-ms.sourcegitcommit: 9bb1bcd9f1bdd53b470073da956bbd8b0935dfbc
+ms.openlocfilehash: 3d8ee4ec6a5bcb29a51b68cff7b840823b678636
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75556404"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569287"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Microsoft Intune でセキュリティのベースラインとプロファイルを監視する
 
@@ -106,6 +106,18 @@ Microsoft Intune のセキュリティのベースライン機能の詳細につ
 
    ![セキュリティのベースライン プロファイルのさまざまなモニター オプションを確認する](./media/security-baselines-monitor/monitor-status-options.png)
 
+## <a name="view-endpoint-security-configurations-per-device"></a>デバイスごとのエンドポイントのセキュリティ構成を表示する
+
+個々のデバイスに適用されるセキュリティ構成の詳細を表示します。これは、正しく構成されていない設定を特定するのに役立ちます。
+
+1. [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) にサインインします。
+
+2. **[デバイス]**  >  **[すべてのデバイス]** の順に移動し、表示するデバイスを選択します。
+
+3. *[監視]* カテゴリで、 **[Endpoint security configuration]\(エンドポイントのセキュリティ構成\)** を選択して、そのデバイスに適用されているセキュリティ構成の一覧を表示します。
+
+4. さらに詳細に調べたい場合は、エンドポイントのセキュリティ構成を選択して、デバイスに対するそのセキュリティ構成の評価に関する追加の詳細情報を表示することができます。
+
 ## <a name="troubleshoot-using-per-setting-status"></a>設定ごとの状態を使用したトラブルシューティング
 
 セキュリティのベースラインを展開しましたが、展開状態にエラーが表示されます。 次の手順では、エラーのトラブルシューティングに関するガイダンスをいくつか紹介します。
@@ -135,6 +147,7 @@ Windows 10 デバイスには、組み込みの MDM 診断情報レポートが�
 [[Diagnose MDM failures in Windows 10]\(Windows 10 の MDM エラーを診断する\)](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) を使用すると、この組み込みレポートに関する詳細情報が表示されます。
 
 > [!TIP]
+>
 > - 一部の設定には GUID の一覧も表示されます。 任意の設定値について、ローカル レジストリ (regedit) でこの GUID を検索できます。
 > - イベント ビューアー ログには、問題のある設定に関するエラー情報もいくつか含まれている場合があります ( **[イベント ビューアー]**  >  **[アプリケーションとサービス ログ]**  >  **[Microsoft]**  >  **[Windows]**  >  **[DeviceManagement-Enterprise-Diagnostics-Provider]**  >  **[Admin]** )。
 

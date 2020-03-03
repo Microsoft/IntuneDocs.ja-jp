@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbafca746c43dada6281ffbfe1e34f01afa8ab91
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 7ff03682ab406b92e3ea7f1e416188119913cc87
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413672"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569457"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Intune デバイスのプライマリ ユーザーを確認する
 
-プライマリ ユーザーは、ユーザーとデバイスのアフィニティとも呼ばれ、各 Intune デバイスのプロパティです。 Intune デバイスには、0 人または 1 人のプライマリ ユーザーを割り当てることができます。 プライマリ ユーザーが割り当てられていない場合、そのデバイスは "共有デバイス" と呼ばれます。
+プライマリ ユーザーは、"ユーザーとデバイスのアフィニティ" とも呼ばれ、各 Intune デバイスのプロパティです。 Intune デバイスには、0 人または 1 人のプライマリ ユーザーを割り当てることができます。 プライマリ ユーザーが割り当てられていない場合、そのデバイスは "共有デバイス" と呼ばれます。
 
-## <a name="how-to-find-a-devices-primary-user"></a>デバイスのプライマリ ユーザーを確認する方法
+## <a name="find-a-devices-primary-user"></a>デバイスのプライマリ ユーザーを探す
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 2. **[デバイス]** を選択し、デバイスを選択します。
@@ -38,7 +38,7 @@ ms.locfileid: "77413672"
 プライマリ ユーザー プロパティは、ライセンスが付与された Intune ユーザーをデバイスにマップするために以下で使用されます。
 - ポータル サイト アプリ
 - エンドユーザー Web サイト
-- Azure portal のトラブルシューティング ページなどの IT プロフェッショナルのエクスペリエンス。 これらのページでは、プライマリ ユーザーを使用してユーザー アカウントをデバイスにマップします。    
+- Azure portal のトラブルシューティング ページなどの IT プロフェッショナルのエクスペリエンス。 これらのページでは、プライマリ ユーザーを使用してユーザー アカウントをデバイスにマップします。 
 
 ### <a name="company-portal-app"></a>ポータル サイト アプリ
 ポータル サイト アプリは、ポータル サイトにサインインしたユーザー アカウントがそのデバイスのプライマリ ユーザーであることを想定します。 他のユーザーがプライマリ ユーザーとして割り当てられている場合は、ポータル サイトに次の警告が表示されます。

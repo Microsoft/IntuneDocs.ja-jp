@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e38e4f8552b6ef217d264cfa74597bda5c665ab
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: aab10058fe507a956bb793902e6f7b09d8579966
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125049"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576548"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
 
@@ -59,7 +59,7 @@ macOS の登録エクスペリエンス用のポータル サイトには、よ�
 ## <a name="week-of-october-28-2019"></a>2019 年 10 月 28 日の週  
 
 ### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>Android 用 Intune ポータル サイト アプリでのチェックリストの設計の改良 <!-- 5550857 -->  
-Android 用 Intune ポータル サイト アプリのセットアップ チェックリストが、軽量のデザインと新しいアイコンによって更新されました。 この変更は、iOS 用 Intune ポータル サイト アプリに対して行われた最近の更新に合わせたものです。 更新された登録手順の詳細については、「[Android 仕事用プロファイルを使用して登録する](/intune-user-help/enroll-device-android-work-profile)」および「[Android デバイスを登録する](/intune-user-help/enroll-device-android-company-portal)」をご覧ください。  
+Android 用 Intune ポータル サイト アプリのセットアップ チェックリストが、軽量のデザインと新しいアイコンによって更新されました。 この変更は、iOS/iPadOS 用 Intune ポータル サイト アプリに対して行われた最近の更新に合わせたものです。 更新された登録手順の詳細については、「[Android 仕事用プロファイルを使用して登録する](/intune-user-help/enroll-device-android-work-profile)」および「[Android デバイスを登録する](/intune-user-help/enroll-device-android-company-portal)」をご覧ください。  
 
 次の画面では、Android 仕事用プロファイルの登録に関する更新されたチェックリストを示します。
 
@@ -216,7 +216,7 @@ Windows 10 の Intune ポータル サイト アプリは、[Fluent Design Syste
 ## <a name="week-of-april-2-2018"></a>2018 年 4 月 2 日の週
 
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>iOS 用ポータル サイト アプリに関するユーザー エクスペリエンスの更新プログラム <!-- 1412866 -->
-iOS 用のポータル サイト アプリに対して、主要なユーザー エクスペリエンスの更新プログラムをリリースしました。 この更新プログラムでは、ビジュアル面の完全な再設計により、最新の外観に一新されています。 アプリの機能が更新されていますが、その使いやすさとアクセシビリティも向上しています。  
+iOS/iPadOS 用のポータル サイト アプリに対して、主要なユーザー エクスペリエンスの更新プログラムをリリースしました。 この更新プログラムでは、ビジュアル面の完全な再設計により、最新の外観に一新されています。 アプリの機能が更新されていますが、その使いやすさとアクセシビリティも向上しています。  
 
 次の点も改善されています。
 - iPhone X のサポート。
@@ -267,7 +267,7 @@ Android 用 Intune ポータル サイト アプリを、Android の[マテリ�
 
 ### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>iOS 用ポータル サイト バージョン 2.9.0 でのデバイスのセットアップ ワークフローの機能強化 <!-- 1417174 -->
 
-iOS 用ポータル サイト アプリでのデバイス セットアップ ワークフローを改善しました。 言葉がよりわかりやすくなり、可能な範囲で画面をまとめました。 また、セットアップのテキスト全体でお客様の会社名を使用することで、表現がより会社に合ったものになっています。
+iOS/iPadOS 用ポータル サイト アプリでのデバイス セットアップ ワークフローを改善しました。 言葉がよりわかりやすくなり、可能な範囲で画面をまとめました。 また、セットアップのテキスト全体でお客様の会社名を使用することで、表現がより会社に合ったものになっています。
 
 > [!NOTE]
 > Azure portal で設定した会社名が、 **[Microsoft Intune]**  >  **[クライアント アプリ]**  >  **[ポータル サイトのブランド化]**  >  **[会社名]** で使用されます。 この値を設定していない場合、 **[Azure Active Directory]**  >  **[プロパティ]**  >  **[名前]** で設定したテナント名が使用されます。 [ポータル サイトのブランド化] で会社名を設定しておらず、テナント名を表示させたくない場合は、[ポータル サイトのブランド化] タブで会社名を設定することをお勧めします。この文字列をポータル サイトのヘッダーに表示させたくない場合は、[Show company name next to logo]\(ロゴの横に会社名を表示する\) チェックボックスをオフにすることができます。
@@ -303,7 +303,7 @@ Windows 10 用ポータル サイト アプリの [設定] ページが更新さ
 ### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>ポータル Web サイトの検索機能強化 <!-- 1331697 -->
 マイクロソフトはアプリの検索機能を強化しています。その最初が[ポータル Web サイト](https://portal.manage.microsoft.com)です。 名前フィールドや説明フィールドだけでなく、アプリ カテゴリでも検索できるようになりました。 結果は既定で、関連性の降順で並べ替えられます。 
 
-iOS ユーザーもこの変更の影響を受けます。ポータル Web サイトは、iOS のポータル サイト アプリの一部としても利用されるためです。 Android と Windows のポータル サイト アプリも数か月後に同じように更新されます。
+iOS ユーザーもこの変更の影響を受けます。ポータル Web サイトは、iOS/iPadOS のポータル サイト アプリの一部としても利用されるためです。 Android と Windows のポータル サイト アプリも数か月後に同じように更新されます。
 
 マイクロソフトは関連性の追跡方法を微調整しています。ポータル Web サイトの一番下にある "フィードバック" リンクから調整具合をお知らせください。
 
@@ -407,7 +407,7 @@ Android 用のポータル サイト アプリのアプリの詳細ページに�
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>すべてのプラットフォームでのポータル サイト アプリのサインイン操作の改善 <!--User Story 1132123-->
 
-Android、iOS、Windows 用の Intune ポータル サイト アプリのサインイン エクスペリエンス向上のために、今後数か月間に予定されている変更についてお知らせします。 Azure AD でこの変更が行われ次第、自動的にすべてのプラットフォームでポータル サイト アプリのユーザー エクスペリエンスが一新される予定です。 また、自動生成される一時使用コードを使用して、別のデバイスからポータル サイトにサインインできるようになりました。 これは、資格情報を使用せずにサインインする必要がある場合には特に便利です。  
+Android、iOS/iPadOS、Windows での Intune ポータル サイト アプリのサインイン エクスペリエンス向上のために、今後数か月間に予定されている変更についてお知らせします。 Azure AD でこの変更が行われ次第、自動的にすべてのプラットフォームでポータル サイト アプリのユーザー エクスペリエンスが一新される予定です。 また、自動生成される一時使用コードを使用して、別のデバイスからポータル サイトにサインインできるようになりました。 これは、資格情報を使用せずにサインインする必要がある場合には特に便利です。  
 
 以下に、従来のサインイン、資格情報を使用した新たなサインイン、別のデバイスからのサインインをそれぞれ以下に示します。
 

@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9deee0dca675d7fd95445131ed98ea195972c6ac
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: c134eb1fc413a32f2a27034d8c3a993f18f8a9c9
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74409927"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576274"
 ---
-# <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>チュートリアル: マネージド デバイス上で Exchange Online の電子メールを保護する
+# <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>チュートリアル:マネージド デバイス上で Exchange Online の電子メールを保護する
 
 デバイス コンプライアンス ポリシーと条件付きアクセスを使用して、iOS デバイスが Intune によって管理され、承認されたメール アプリを使用している場合にのみ、Exchange Online のメールにアクセスできるようにする方法を説明します。
 
@@ -37,7 +37,7 @@ ms.locfileid: "74409927"
 
 Intune サブスクリプションがない場合は、[無料試用版アカウントにサインアップ](../fundamentals/free-trial-sign-up.md)します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
 このチュートリアルでは、次のサブスクリプションのあるテスト テナントが必要です。
 
@@ -45,7 +45,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 - Exchange を含む Office 365 Business サブスクリプション ([無料試用版](https://go.microsoft.com/fwlink/p/?LinkID=510938))
 
-始める前に、「[クイック スタート:iOS 用の電子メール デバイス プロファイルを作成する](../configuration/quickstart-email-profile.md)」の手順に従って、iOS デバイス用のテスト デバイス プロファイルを作成します。
+始める前に、「[クイック スタート: iOS/iPadOS 用の電子メール デバイス プロファイルを作成する](../configuration/quickstart-email-profile.md)」の手順に従って、iOS デバイス用のテスト デバイス プロファイルを作成してください。
 
 ## <a name="sign-in-to-intune"></a>Intune にサインインする
 
@@ -162,7 +162,7 @@ Intune デバイス コンプライアンス ポリシーを設定して、デ�
 
 ## <a name="try-it-out"></a>試してみましょう
 
-作成したポリシーでは、Office 365 のメールにサインインしようとするすべての iOS デバイスは、Intune に登録されていて、iOS 用 Outlook モバイル アプリを使用している必要があります。 iOS デバイスでこのシナリオをテストするには、テスト テナントのユーザーの資格情報を使用して、Exchange Online へのサインインを試みます。 デバイスを登録し、Outlook モバイル アプリをインストールするよう求めるメッセージが表示されます。
+作成したポリシーでは、Office 365 のメールにサインインしようとするすべての iOS デバイスは、Intune に登録され、iOS/iPadOS 用 Outlook モバイル アプリを使用している必要があります。 iOS デバイスでこのシナリオをテストするには、テスト テナントのユーザーの資格情報を使用して、Exchange Online へのサインインを試みます。 デバイスを登録し、Outlook モバイル アプリをインストールするよう求めるメッセージが表示されます。
 
 1. iPhone でテストするには、 **[Settings]\(設定\)**  >  **[Passwords & Accounts]\(パスワードとアカウント\)**  >  **[Add Account]\(アカウントの追加\)**  >  **[Exchange]** に移動します。
 
@@ -181,12 +181,12 @@ Intune デバイス コンプライアンス ポリシーを設定して、デ�
 
 2. **[デバイス]**  >  **[コンプライアンス ポリシー]** の順に選択します。
 
-3. **[ポリシー名]** ボックスの一覧で、お使いのテスト ポリシーのコンテキスト メニュー **[...]** を選択し、 **[削除]** を選択します。 **[OK]** を選択して確定します。
+3. **[ポリシー名]** ボックスの一覧で、お使いのテスト ポリシーのコンテキスト メニュー **[...]** を選択し、 **[削除]** を選択します。 **[OK]** をクリックして確定します。
 
 4. **[エンドポイント セキュリティ]**  >  **[条件付きアクセス]** の順に選択します。
 
 5. **[ポリシー名]** ボックスの一覧で、お使いのテスト ポリシーのコンテキスト メニュー **[...]** を選択し、 **[削除]** を選択します。 **[はい]** をクリックして操作を確定します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 このチュートリアルでは、iOS デバイスに対して、Intune に登録することと、Outlook アプリを使用して Exchange Online のメールにアクセスすることを要求する、ポリシーを作成しました。 Exchange ActiveSync クライアントや Office 365 Exchange Online などの他のアプリやサービスを保護するために条件付きアクセスで Intune を使用する方法については、「[条件付きアクセスの設定](conditional-access.md)」を参照してください。

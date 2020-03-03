@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d04897d38c1b46f27fe86e72ecfa6856aa9eece2
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 4962b4c75460b129f9df7729b5a34485d8ee0760
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755667"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576075"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange On-Premises と従来の Exchange Online Dedicated の条件付きアクセス ポリシーを作成する
 
@@ -63,12 +63,12 @@ Exchange Online Dedicated 環境を使用していて、それが新しい構成
 ### <a name="support-for-mobile-devices"></a>モバイル デバイスのサポート
 
 - Windows Phone 8.1 以降
-- iOS のネイティブ電子メール アプリ。
+- iOS/iPadOS のネイティブ電子メール アプリ。
 - Android 4 以降での EAS メール クライアント (Gmail など)。
 - EAS メール クライアント **Android 仕事用プロファイル デバイス:** Android 仕事用プロファイル デバイスでは、**仕事用プロファイル**の **Gmail** と **Nine Work for Android Enterprise** のみがサポートされています。 Android 仕事用プロファイルで条件付きアクセスを機能させるには、Gmail アプリまたは Nine Work for Android Enterprise アプリ用の電子メール プロファイルを配置する必要があります。また、これらのアプリを必要なインストールとしてデプロイする必要があります。
 
 > [!NOTE]
-> Exchange のオンプレミス コネクタを介した Android および iOS 用 Microsoft Outlook の使用はサポートされていません。 オンプレミスのメールボックスに対して iOS および Android 用 Outlook と共に Azure Active Directory の条件付きアクセス ポリシーおよび Intune アプリ保護ポリシーを活用したい場合は、[iOS および Android 用 Outlook でのハイブリッド先進認証の使用](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)に関するページをご覧ください。
+> Exchange のオンプレミス コネクタを介した Android および iOS/iPadOS 用 Microsoft Outlook の使用はサポートされていません。 オンプレミスのメールボックスに対して iOS/iPadOS および Android 用 Outlook で Azure Active Directory の条件付きアクセス ポリシーおよび Intune アプリ保護ポリシーを活用したい場合は、「[iOS/iPadOS および Android 用の Outlook でのハイブリッド先進認証の使用](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)」を参照してください。
 
 ### <a name="support-for-pcs"></a>PC のサポート
 

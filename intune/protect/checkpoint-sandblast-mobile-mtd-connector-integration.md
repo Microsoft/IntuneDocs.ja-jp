@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 514baf3395a2cad9682e6c070b8615f320cc214c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0f543d38b6688b03126e8fb7d5666c1383b2fc0f
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801455"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576499"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>Check Point SandBlast Mobile と Intune を統合します
 
@@ -74,7 +74,7 @@ Check Point SandBlast アプリ承認プロセスは以下で構成されます�
 
 4. **[MDM Service\(MDM サービス\)]** ドロップダウン リストから **[Microsoft Intune]** を選択します。
 
-5. Microsoft Intune を MDM サービスとして設定するとポップアップする **[Microsoft Intune Configuration\(Microsoft Intune の構成\)]** ウィンドウで、各デバイス プラットフォーム (iOS、Android、Windows) の **[Add to my organization\(組織に追加する\)]** を選択して、Check Point SandBlast Mobile が Intune および Azure AD と通信することを承認します。
+5. Microsoft Intune を MDM サービスとして設定すると、**Microsoft Intune 構成** ウィンドウがポップアップ表示され、各デバイス プラットフォーム (iOS/iPadOS、Android、Windows) に対して **[Add to my organization]\(自分の組織に追加する\)** を選択して、Check Point SandBlast Mobile が Intune および Azure AD と通信することを承認します。
 
     ![Check Point MTD Intune の構成を示す画像](./media/checkpoint-sandblast-mobile-mtd-connector-integration/checkpoint-MTD-1.PNG)
 
@@ -87,6 +87,6 @@ Check Point SandBlast アプリ承認プロセスは以下で構成されます�
 
 8. **[Verify\(確認\)]** を選択し、Azure AD セキュリティ グループが正常に検証された後、 **[保存]** を選択します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Check Point SandBlast Mobile アプリをセットアップする](mtd-apps-ios-app-configuration-policy-add-assign.md)

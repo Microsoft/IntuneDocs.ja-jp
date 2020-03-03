@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ba66469dfff004c3cd6a60284ec7466e8b9f00
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 41a46bd400c5901f0352709f6057bddac262ff9e
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415514"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609379"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>ワイプ、インベントリからの削除、デバイス登録の手動解除を使用し、デバイスを削除する
 
@@ -47,7 +47,7 @@ ms.locfileid: "77415514"
 
 **[登録状態とユーザー アカウントを保持します]** オプションは、Windows 10 バージョン 1709 以降でのみ使用できます。
 
-**[Perform protected wipe]\(保護されたワイプの実行\)** オプションを使用すると、デバイスをオフにすることによってワイプ操作が回避できないようになります。 保護されたワイプは、成功するまでデバイスをリセットしようとします。 一部の構成では、このアクションによってデバイスを再起動できなくなる場合があります。
+**[Perform protected wipe]\(保護されたワイプの実行\)** オプションを使用すると、デバイスをオフにすることによってワイプ操作が回避できないようになります。 保護されたワイプは、成功するまでデバイスをリセットしようとします。 一部の構成では、このアクションによってデバイスを[再起動できなくなる](troubleshoot-device-actions.md#wipe-action)場合があります。
 
 MDM ポリシーは、デバイスが次に Intune に接続再したときに適用されます。
 
@@ -196,6 +196,9 @@ Intune による管理から Apple DEP デバイスを完全に削除する場�
 5. **[再割り当て]** を選択します。
 
     ![Apple の再割り当てのスクリーン ショット](./media/devices-wipe/apple-reassign.png)
+
+## <a name="device-states"></a>デバイスの状態
+デバイスの状態については、「[managementStates コレクション](https://docs.microsoft.com/intune/developer/intune-data-warehouse-collections.md#managementstates)」を参照してください。
 
 ## <a name="fresh-start"></a>新たに開始
 

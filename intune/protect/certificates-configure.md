@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5092fa37f0bf6bd1320fa06fa58ac5e36f55aa3c
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 63fa9f461fc9884d8c21e40cb4b5e3831f3b4b03
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410197"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576527"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Microsoft Intune で認証に証明書を使用する
 
@@ -38,7 +38,7 @@ Intune で証明書を使用し、VPN、Wi-Fi、電子メール プロファイ�
 
 このような証明書を配備するには、証明書プロファイルを作成し、デバイスに割り当てます。
 
-作成する証明書プロファイルは、1 つにつきプラットフォームを 1 つサポートします。 たとえば、PKCS 証明書を使用する場合、Android 用の PKCS 証明書プロファイルと iOS 用の別の PKCS 証明書プロファイルを別々に作成します。 この 2 つのプラットフォームに SCEP 証明書も使用する場合、Android 用に 1 つ、iOS 用に 1 つ、SCEP 証明書プロファイルを作成します。
+作成する証明書プロファイルは、1 つにつきプラットフォームを 1 つサポートします。 たとえば、PKCS 証明書を使用する場合、Android 用の PKCS 証明書プロファイルと iOS/iPadOS 用の別の PKCS 証明書プロファイルを別々に作成します。 この 2 つのプラットフォームに SCEP 証明書も使用する場合、Android 用に 1 つ、iOS/iPadOS 用に 1 つ、SCEP 証明書プロファイルを作成します。
 
 ### <a name="general-considerations-when-you-use-a-microsoft-certification-authority"></a>Microsoft の証明機関を使用する場合の一般的な考慮事項
 
@@ -83,7 +83,7 @@ Microsoft の証明機関 (CA) を使用する場合:
 | Android エンタープライズ <br> - フル マネージド (デバイスの所有者)   | ![サポート](./media/certificates-configure/green-check.png) |   | ![サポート](./media/certificates-configure/green-check.png) |   |
 | Android エンタープライズ <br> - 専用 (デバイスの所有者)   | ![サポート](./media/certificates-configure/green-check.png)  |   | ![サポート](./media/certificates-configure/green-check.png)  |   |
 | Android エンタープライズ <br> - 仕事用プロファイル    | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) |
-| iOS                   | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) |
+| iOS/iPadOS                   | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) |
 | macOS                 | ![サポート](./media/certificates-configure/green-check.png) |  ![サポート](./media/certificates-configure/green-check.png) |![サポート](./media/certificates-configure/green-check.png)|![サポート](./media/certificates-configure/green-check.png)|
 | Windows Phone 8.1     |![サポート](./media/certificates-configure/green-check.png)  |  | ![サポート](./media/certificates-configure/green-check.png)| ![サポート](./media/certificates-configure/green-check.png) |
 | Windows 8.1 以降 |![サポート](./media/certificates-configure/green-check.png)  |  |![サポート](./media/certificates-configure/green-check.png) |   |
@@ -139,7 +139,7 @@ SCEP、PKCS、PKCS のインポートされた証明書プロファイルの場�
 - [S/MIME を使用して電子メールに署名し、暗号化する](certificates-s-mime-encryption-sign.md)  
 - [サード パーティの証明機関を使用する](certificate-authority-add-scep-overview.md)  
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 使用する各プラットフォーム用に SCEP、PKCS、または PKCS のインポートされた証明書プロファイルを作成します。 続行するには、次の記事をご覧ください。
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2020
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa4510b95e1e84d9f94158833dac555daa33c690
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 7251a2db0c36db9d01e51ca8fc62bd4e072d80e6
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912559"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609233"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Microsoft Intune を使用する Windows 10 アプリの展開 
 
@@ -44,18 +44,19 @@ Microsoft Intune は、Windows 10 デバイス上のさまざまな種類のア�
 
 ユーザーが実行している Windows 10 のバージョンに基づいて、特定の種類のアプリがサポートされます。 アプリの種類と Windows 10 のサポート状況を次の表に示します。
 
-| アプリの種類 | Home | Pro | Business | Enterprise | Education | S-Mode | Hololense | SurfaceHub | WCOS | Mobile |
+| アプリの種類 | Home | Pro | Business | Enterprise | Education | S-Mode | HoloLens<sup>1 | Surface Hub | WCOS | Mobile |
 |----------------|------|-----|----------|------------|-----------|--------|-----------|------------|------|--------|
 |  .MSI | いいえ | はい | はい | はい | はい | いいえ | いいえ | いいえ | いいえ | いいえ |
 | .IntuneWin | いいえ | はい | はい | はい | はい | 19H2+ | いいえ | いいえ | いいえ | いいえ |
-| Office C2R | いいえ | はい | はい | はい | はい | いいえ | いいえ | いいえ | いいえ | いいえ |
+| Office C2R | いいえ | はい | はい | はい | はい | RS4+ | いいえ | いいえ | いいえ | いいえ |
 | LOB:APPX/MSIX | はい | はい | はい | はい | はい | はい | はい | はい | はい | はい |
 | MSFB Offline | はい | はい | はい | はい | はい | はい | はい | はい | はい | はい |
-| MSFB Online | はい | はい | はい | はい | はい | はい | RS4+ | はい | はい | はい |
-| Web アプリ | はい | はい | はい | はい | はい | はい | はい<sup>1 | はい<sup>1 | はい | はい |
+| MSFB Online | はい | はい | はい | はい | はい | はい | RS4+ | いいえ | はい | はい |
+| Web アプリ | はい | はい | はい | はい | はい | はい | はい<sup>2 | はい<sup>2 | はい | はい<sup>2 |
 | Store のリンク | はい | はい | はい | はい | はい | はい | はい | はい | はい | はい |
 
-<sup>1</sup> ポータル サイトからのみ起動します。
+<sup>1</sup> アプリ管理のロックを解除するには、HoloLens デバイスを [Holographic for Business](../fundamentals/windows-holographic-for-business.md) にアップグレードします。<br />
+<sup>2</sup> ポータル サイトからのみ起動します。
 
 > [!NOTE]
 > すべての Windows アプリの種類には登録が必要です。
@@ -72,8 +73,8 @@ Windows 10 LOB アプリに署名して、Intune 管理コンソールにアッ�
 ビジネス向け Microsoft Store アプリを分類するには: 
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
-2. **[アプリ]** > **[すべてのアプリ]** を選択します。 
-3. ビジネス向け Microsoft Store アプリを選択します。 次に、**[プロパティ]** > **[アプリ情報]** > **[カテゴリ]** を選択します。 
+2. **[アプリ]**  >  **[すべてのアプリ]** を選択します。 
+3. ビジネス向け Microsoft Store アプリを選択します。 次に、 **[プロパティ]**  >  **[アプリ情報]**  >  **[カテゴリ]** を選択します。 
 4. カテゴリを選択します。
 
 ## <a name="install-apps-on-windows-10-devices"></a>Windows 10 デバイスにアプリをインストールする

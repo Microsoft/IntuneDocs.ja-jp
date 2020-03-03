@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d05e33dbc28707bc6f929be72ba4a77c2e0641c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 85aac54a81d81dc138dd12612db183aae839b72b
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206059"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575989"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP を使用して Intune でパートナーの証明機関を追加する
 
-Intune でサード パーティの証明機関 (CA) を使用します。 サード パーティの CA では、Simple Certificate Enrollment Protocol (SCEP) を使って新しい証明書または更新された証明書でモバイル デバイスをプロビジョニングすることができ、Windows、iOS、Android、macOS のデバイスをサポートできます。
+Intune でサード パーティの証明機関 (CA) を使用します。 サード パーティの CA では、Simple Certificate Enrollment Protocol (SCEP) を使って新しい証明書または更新された証明書でモバイル デバイスをプロビジョニングすることができ、Windows、iOS/iPadOS、Android、macOS のデバイスをサポートできます。
 
 この機能の使用には、オープン ソース API と Intune 管理者タスクの 2 つの部分があります。
 

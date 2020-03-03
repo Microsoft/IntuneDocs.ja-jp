@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad363785888a92d1e8be4f2d28690278a2efaae9
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: 3cd153a4c602ba49a5b5135d1d6cb32a61f2668d
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966302"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576519"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Intune で SCEP 証明書プロファイルを作成して割り当てる
 
@@ -60,7 +60,7 @@ Simple Certificate Enrollment Protocol (SCEP) 証明書をサポートするよ�
 
    - **[証明書の種類]** :
 
-     *(適用対象: Android、Android エンタープライズ、iOS、macOS、Windows 8.1 以降、Windows 10 以降。)*
+     *(適用対象: Android、Android エンタープライズ、iOS/iPadOS、macOS、Windows 8.1 以降、Windows 10 以降。)*
 
      証明書プロファイルの使用方法に応じて、種類を選択します。
 
@@ -280,7 +280,7 @@ Exception:    at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation
 - 信頼された証明書プロファイルと SCEP 証明書プロファイルを別々に作成して割り当てる場合でも、両方とも割り当てることが必要です。 両方ともデバイス上にインストールされていなければ、SCEP 証明書ポリシーは失敗します。 信頼されたルート証明書プロファイルも確実に SCEP プロファイルと同じグループに展開されるようにします。
 
 > [!NOTE]
-> iOS デバイスの場合、SCEP 証明書プロファイルが Wi-fi プロファイルや VPN プロファイルなどの追加のプロファイルに関連付けられている場合、デバイスは、該当する追加のプロファイルの各々に対する証明書を受け取ります。 これにより、SCEP 証明書の要求によって提供される複数の証明書を持つ iOS デバイスが存在するようになります。  単一の証明書が求められている場合は、SCEP 証明書ではなく、PKCS 証明書を使用する必要があります。  SCEP 証明書と PKCS 証明書では、デバイスへの配信方法に違いがあるためです。
+> iOS/iPadOS デバイスの場合、SCEP 証明書プロファイルが Wi-Fi プロファイルや VPN プロファイルなどの追加のプロファイルに関連付けられていると、該当する追加のプロファイルの各々に対する証明書がデバイスによって受け取られます。 これにより、SCEP 証明書の要求によって提供される複数の証明書を持つ iOS/iPadOS デバイスが存在するようになります。  単一の証明書が求められている場合は、SCEP 証明書ではなく、PKCS 証明書を使用する必要があります。  SCEP 証明書と PKCS 証明書では、デバイスへの配信方法に違いがあるためです。
 
 ## <a name="next-steps"></a>次のステップ
 

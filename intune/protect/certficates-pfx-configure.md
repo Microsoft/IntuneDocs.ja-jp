@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d35d7470508b610f850ca7f9f394e0d26bec677
-ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
+ms.openlocfilehash: 99983b2d2776e72232c65fcfb12d8075061d804b
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77258098"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609346"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune で PKCS 証明書を構成して使用する
 
@@ -66,7 +66,7 @@ Intune で PKCS 証明書を使用するには、次のインフラストラク�
   Microsoft Intune Certificate Connector では、Federal Information Processing Standard (FIPS) モードもサポートされています。 FIPS は必須ではありませんが、有効になっている場合は、証明書の発行および失効を行うことができます。
 
 - **PFX Certificate Connector for Microsoft Intune**:  
-  S/MIME メールの暗号化の使用を計画している場合は、Intune ポータルを使用して、PFX 証明書のインポートをサポートする *PFX Certificate Connector* をダウンロードします。  **[デバイス構成]**  >  **[証明書コネクタ]**  >  **[追加]** の順に移動して、*インポートした PFX 証明書用コネクタをインストールする手順*に従います。 ポータルのダウンロード リンクを使用して、インストーラー **PfxCertificateConnectorBootstrapper.exe** のダウンロードを開始します。 
+  S/MIME メールの暗号化の使用を計画している場合は、Intune ポータルを使用して、PFX 証明書のインポートをサポートする *PFX Certificate Connector* をダウンロードします。  **[デバイス構成]**  >  **[証明書コネクタ]**  >  **[追加]** の順に移動して、*インポートした PFX 証明書用コネクタをインストールする手順*に従います。 ポータルのダウンロード リンクを使用して、インストーラー **PfxCertificateConnectorBootstrapper.exe** のダウンロードを開始します。
 
   各 Intune テナントでは、このコネクタの 1 つのインスタンスがサポートされます。 Microsoft Intune Certificate Connector のインスタンスと同じサーバー上に、このコネクタをインストールできます。
 
@@ -79,10 +79,12 @@ Intune で PKCS 証明書を使用するには、次のインフラストラク�
   詳細については、「[Microsoft Intune のネットワーク エンドポイント](../fundamentals/intune-endpoints.md)」および「[Intune のネットワーク構成の要件と帯域幅](../fundamentals/network-bandwidth-use.md)」をご覧ください。
 
 - **Windows サーバー**:  
-  Windows Server をホストに使用します。
+  Windows Server を使用して以下をホストします。
 
   - 認証および S/MIME メールの署名のシナリオ用の Microsoft Intune Certificate Connector
   - S/MIME メールの暗号化シナリオ用の PFX Certificate Connector for Microsoft Intune
+
+  コネクタには、[デバイス エンドポイント コンテンツ](https://docs.microsoft.com/intune/fundamentals/intune-endpoints#access-for-managed-devices)に記載されているとおり、マネージド デバイスの詳細と同じポートにアクセスする必要があります。
 
   Intune では、*Microsoft Intune Certificate Connector* と同じサーバー上に *PFX Certificate Connector* をインストールすることができます。
   
@@ -124,7 +126,7 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
 9. **[拡張子]** で、 **[アプリケーション ポリシー]** に暗号化ファイル システム、セキュリティで保護された電子メール、クライアント認証が表示されていることを確認します。
 
     > [!IMPORTANT]
-    > iOS の証明書テンプレートの場合、 **[拡張]** タブで、 **[キー使用法]** を更新し、 **[署名は発行元の証明である]** が選択されていないことを確認します。
+    > iOS/iPadOS の証明書テンプレートの場合、 **[拡張]** タブで、 **[キー使用法]** を更新し、 **[署名は発行元の証明である]** が選択されていないことを確認します。
 
 10. **[セキュリティ]** で、Microsoft Intune Certificate Connector をインストールするサーバーのコンピューター アカウントを追加します。 このアカウントに、**読み取り**と**登録**のアクセス許可を割り当てます。
 11. **[適用]**  >  **[OK]** をクリックして証明書テンプレートを保存します。 **証明書テンプレート コンソール**を閉じます。
@@ -208,12 +210,13 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
    |------------|------------|------------|
    |**[更新しきい値 (%)]**        |<ul><li>すべて         |推奨値は 20% です  | 
    |**[証明書の有効期間]**  |<ul><li>すべて         |証明書テンプレートを変更していない場合、このオプションはおそらく 1 年に設定されています。 |
-   |**キー記憶域プロバイダー (KSP)**   |<ul><li>Windows 10  | Windows では、デバイス上のキーを格納する場所を選択します。 |
+   |**キー記憶域プロバイダー (KSP)**   |<ul><li>Windows 10  |Windows では、デバイス上のキーを格納する場所を選択します。 |
    |**証明機関**      |<ul><li>すべて         |エンタープライズ CA の内部完全修飾ドメイン名 (FQDN) が表示されます。  |
    |**証明機関名** |<ul><li>すべて         |"Contoso Certification Authority" など、エンタープライズ CA の名前が一覧表示されます。 |
+   |**証明書テンプレート名**:    |<ul><li>すべて         |証明書テンプレートの名前を一覧表示します。 |
    |**証明書の種類**             |<ul><li>Android Enterprise (*仕事用プロファイル*)</li><li>iOS</li><li>macOS</li><li>Windows 10 以降|種類の選択: <ul><li> "**ユーザー**" 証明書では、証明書のサブジェクトと SAN 内にユーザー属性とデバイス属性の両方を含めることができます。 </il><li>**[デバイス]** 証明書では、証明書のサブジェクトと SAN にデバイスの属性を含めることができます。 キオスクやその他の共有デバイスなど、ユーザーのいないデバイスなどのシナリオには、[デバイス] を使用します。  <br><br> この選択は、サブジェクト名の形式に影響します。 |
-   |**[サブジェクト名の形式]**          |<ul><li>すべて         |ほとんどのプラットフォームでは、特に指定がない限り、このオプションは**共通名**に設定します。<br><br>次のプラットフォームの場合、サブジェクト名の形式は証明書の種類によって決まります。 <ul><li>Android Enterprise (*仕事用プロファイル*)</li><li>iOS</li><li>macOS</li><li>Windows 10 以降</li></ul>  <p> 後の「[サブジェクト名の形式](#subject-name-format)」を参照してください。 |
-   |**[サブジェクトの別名]**     |<ul><li>すべて         |特に指定がない限り、このオプションは**ユーザー プリンシパル名 (UPN)** に設定します。 |
+   |**[サブジェクト名の形式]**          |<ul><li>すべて         |サブジェクト名の形式を設定する方法については、この記事で後述する「[サブジェクト名の形式](#subject-name-format)」を参照してください。  <br><br> ほとんどのプラットフォームでは、特に指定がない限り、 **[共通名]** オプションを使用します。 <br><br>次のプラットフォームの場合、サブジェクト名の形式は証明書の種類によって決まります。 <ul><li>Android Enterprise (*仕事用プロファイル*)</li><li>iOS</li><li>macOS</li><li>Windows 10 以降</li></ul>  <p>  |
+   |**[サブジェクトの別名]**     |<ul><li>すべて         |*[属性]* については、特に指定がない場合は **[ユーザー プリンシパル名 (UPN)]** を選択し、それに対応する *[値]* を選択し、 **[追加]** をクリックします。 <br><br>詳細については、後述する「[サブジェクト名の形式](#subject-name-format)」を参照してください。|
    |**[拡張キー使用法]**           |<ul><li> Android デバイス管理者 </li><li>Android Enterprise (*デバイス所有者*、*仕事用プロファイル*) </li><li>Windows 10 |ユーザーまたはデバイスがサーバーに対して認証できるように、証明書には通常、 *[クライアント認証]* が必要です。 |
    |**[すべてのアプリが秘密キーにアクセスできるようにする]** |<ul><li>macOS  |**[有効にする]** に設定すると、PKCS 証明書の秘密キーへのアクセスが関連 mac デバイスに構成されているアプリに与えられます。 <br><br> この設定の詳細については、Apple 開発者ドキュメントにある「[Configuration Profile Reference](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)」の「Certificate Payload」セクションに記載されている *AllowAllAppsAccess* を参照してください。 |
    |**ルート証明書**             |<ul><li>Android デバイス管理者 </li><li>Android Enterprise (*デバイス所有者*、*仕事用プロファイル*) |前に割り当てられたルート CA 証明書プロファイルを選択します。 |
@@ -284,8 +287,6 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
   > - デバイス証明書の "*サブジェクト*" または *SAN* で使用されるデバイス プロパティ (**IMEI**、**SerialNumber**、**FullyQualifiedDomainName** など) は、デバイスへのアクセス権を持つユーザーによってスプーフィングされる可能性のあるプロパティです。
   > - 証明書プロファイルをデバイスにインストールする場合は、そのプロファイルで指定されたすべての変数が該当するデバイスでサポートされている必要があります。  たとえば、 **{{IMEI}}** が SCEP プロファイルのサブジェクト名に使用されていて、IMEI 番号を持たないデバイスに割り当てられている場合、プロファイルのインストールは失敗します。  
  
-
-
 ## <a name="whats-new-for-connectors"></a>コネクタの新機能
 
 2 つの証明書コネクタの更新プログラムは、定期的にリリースされます。 コネクタが更新された場合、その変更についてここから確認することができます。
@@ -303,7 +304,7 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
 - **PFX Certificate Connector for Microsoft Intune - バージョン 6.1905.0.402**  
   このリリースの変更点:  
   - コネクタのポーリング間隔が、5 分から 30 秒に短縮されました。
- 
+
 ### <a name="april-2-2019"></a>2019 年 4 月 2 日
 
 - **Intune Certificate Connector - バージョン 6.1904.1.0**  

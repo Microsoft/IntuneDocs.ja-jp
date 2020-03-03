@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 138bf192f5244eb6e44a6be96af3cc15c47bdc76
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: a4b3bd06bad6c31c2d0fb4c31a7ad605af96be86
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755393"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609186"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Intune を使ってマネージド Google Play アプリを Android Enterprise デバイスに追加する
 
@@ -63,7 +63,7 @@ Intune を使ってマネージド Google Play ストア アプリを参照し�
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 2. **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** の順に選択します。
-3. **[アプリの種類の選択]** ペインの使用できる **[ストア アプリ]** の種類で、 **[Managed Google Play アプリ]** を選択します。
+3. **[アプリの種類の選択]** ペインの使用できる **[ストア アプリ]** の種類で、 **[managed Google Play アプリ]** を選択します。
 4. **[選択]** をクリックします。 **[managed Google Play]** アプリ ストアが表示されます。
 
     > [!NOTE]
@@ -80,20 +80,6 @@ Intune を使ってマネージド Google Play ストア アプリを参照し�
 9. **[選択]** をクリックしてアプリを選択します。
 10. ブレードの上部にある **[同期]** をクリックして、アプリを managed Google Play サービスと同期します。
 11. **[更新]** をクリックしてアプリの一覧を更新し、新しく追加されたアプリを表示します。
-
-### <a name="add-additional-app-settings-to-a-managed-google-play-store-app"></a>managed Google Play ストア アプリにアプリの設定を追加する
-1. アプリの詳細を追加する必要がある場合は、アプリの一覧からアプリを選択します。
-2. **[プロパティ]** をクリックし、 **[アプリ情報]** の横にある **[編集]** をクリックします。 **[アプリ情報]** ページが表示されます。
-3. **[アプリ情報]** ページで、アプリの詳細を追加します。
-    - **[カテゴリ]** : (省略可能) 1 つ以上の組み込みアプリ カテゴリ、または作成したカテゴリを選択します。 そうすると、会社のポータルを閲覧するときに、ユーザーがアプリを探しやすくなります。
-    - **[会社のポータルでおすすめアプリとして表示します]** : ユーザーがアプリを参照するとき、会社のポータルのメイン ページにアプリ スイートが目立つように表示するには、このオプションを選びます。
-    - **[情報 URL]** : このアプリに関する情報が含まれる Web サイトの URL を入力することもできます。 この URL は会社のポータルでユーザーに表示されます。
-    - **[プライバシー URL]** : このアプリのプライバシー情報が含まれる Web サイトの URL を入力することもできます。 この URL は会社のポータルでユーザーに表示されます。
-    - **[開発者]** : (省略可能) アプリ開発者の名前を入力します。
-    - **[所有者]** : (省略可能) このアプリの所有者の名前 ("*人事部*" など) を入力します。
-    - **[メモ]** : (省略可能) このアプリに関連付けるメモを入力します。
-4. **[レビューと保存]** をクリックして、 **[レビューと保存]** ページを表示します。 
-5. 完了したら、Intune で **[保存]** をクリックしてアプリを更新します。
 
 ### <a name="add-a-managed-google-play-store-app-in-the-managed-google-play-console-alternative"></a>マネージド Google Play コンソールにマネージド Google Play ストア アプリを追加する (別の方法)
 Intune を使用して直接追加するのではなく、managed Google Play アプリを Intune と同期する場合は、次の手順を実行します。
@@ -131,7 +117,7 @@ LOB アプリをマネージド Google Play に追加するには、2 つの方�
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 2. **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** の順に選択します。
-3. **[アプリの種類の選択]** ペインの使用できる **[ストア アプリ]** の種類で、 **[Managed Google Play アプリ]** を選択します。
+3. **[アプリの種類の選択]** ペインの使用できる **[ストア アプリ]** の種類で、 **[managed Google Play アプリ]** を選択します。
 4. **[選択]** をクリックします。 **[managed Google Play]** アプリ ストアが Intune 内に表示されます。
 5. [Google Play] ウィンドウで **[Private apps]\(プライベート アプリ\)** ("*ロック*" アイコンの横) を選択します。 
 6. 右下にある **[+]** ボタン クリックして新しいアプリを追加します。
@@ -238,6 +224,9 @@ Android エンタープライズ仕事用プロファイル デバイスに展�
 
 ## <a name="delete-managed-google-play-apps"></a>managed Google Play アプリを削除する
 必要に応じて、Microsoft Intune から managed Google Play アプリを削除できます。 マネージド Google Play アプリを削除するには、Azure portal で Microsoft Intune を開き、 **[アプリ]**  >  **[すべてのアプリ]** を選択します。 アプリの一覧から、managed Google Play アプリの右側にある省略記号 (...) を選択し、表示された一覧で **[削除]** を選択します。 アプリの一覧からマネージド Google Play アプリを削除すると、そのマネージド Google Play アプリは自動的に未承認になります。
+
+> [!NOTE]
+> アプリが承認されていなくても、マネージド Google Play ストアから削除されていても、Intune クライアント アプリの一覧から削除されることはありません。 それにより、アプリが承認されていない場合でも、アンインストール ポリシーの対象をユーザーに設定できます。
 
 ## <a name="android-enterprise-system-apps"></a>Android エンタープライズ システム アプリ
 

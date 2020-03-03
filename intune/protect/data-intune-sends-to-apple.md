@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2f1be7a2457cca7da62883370c9e273168c6a29
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0c550fba45e5e6b16e49e7103fde40de1e08ba55
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502426"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576482"
 ---
 # <a name="data-intune-sends-to-apple"></a>Intune から Apple に送られるデータ
 
@@ -54,12 +54,12 @@ Microsoft Intune が接続を確立する前に、各 Apple サービスの Appl
 | ASM/DEP | org_id | DEP の顧客 ID このキーは、プロトコル バージョン 3 以降でのみ使用できます。 |
 | ASM/DEP | serial_number | デバイスのシリアル番号 (文字列)。 |
 | ASM/DEP | 対象となるのは、モデル | モデル名 (文字列)。 |
-| ASM/DEP | 説明 | デバイスの説明 (文字列)。 |
+| ASM/DEP | description | デバイスの説明 (文字列)。 |
 | ASM/DEP | asset_tag | デバイスの資産タグ (文字列)。 |
 | ASM/DEP | profile_status | プロファイルのインストールの状態。 使用可能な値: **空**、**assigned**、**pushed**、または **removed** |
 | ASM/DEP | profile_uuid | 割り当てられたプロファイルの一意の ID。 |
 | ASM/DEP | device_assigned_by | デバイスを割り当てた個人の電子メール アドレス。 |
-| ASM/DEP | os | デバイスのオペレーティング システム: iOS、OSX、または tvOS。 このキーは、X-Server-Protocol-Version 2 以降で有効です。 |
+| ASM/DEP | os | デバイスのオペレーティング システム: iOS/iPadOS、OSX、または tvOS。 このキーは、X-Server-Protocol-Version 2 以降で有効です。 |
 | ASM/DEP | device_family | デバイスの Apple 製品ファミリ: iPad、iPhone、iPod、Mac、または AppleTV。 このキーは、X-Server-Protocol-Version 2 以降で有効です。 |
 | ASM/DEP | profile_name | 文字列。 人が判読できるプロファイル名。 |
 | ASM/DEP | support_phone_number | 任意。 文字列。 組織のサポートの電話番号。 |

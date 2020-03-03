@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c61449e17b96151d2717365e5193fd6c4bdaae3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5b38df90e47e709e02f12a6ccdab68714d04ca93
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509897"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575864"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>クイック スタート:カスタム ロールを作成して割り当てる
 
@@ -28,7 +28,7 @@ ms.locfileid: "72509897"
 
 Intune サブスクリプションがない場合は、[無料試用版アカウントにサインアップ](free-trial-sign-up.md)します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
 - このクイック スタートを完了するには、[グループを作成する](quickstart-create-group.md)必要があります。
 
@@ -70,11 +70,11 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 新しいカスタム ロールを使用しなくなった場合は、削除することができます。 **[ロール]**  >  **[すべてのロール]** の順に選択し、ロールの横にある省略記号を選択し、 **[削除]** を選択します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 このクイック スタートでは、カスタム セキュリティ オペレーション ロールを作成し、それをグループに割り当てました。 Intune のロールの詳細については、「[Microsoft Intune でのロール ベースの管理制御 (RBAC)](role-based-access-control.md)」を参照してください。
 
 この一連の Intune のクイック スタートに従うには、次のクイック スタートに進んでください。
 
 > [!div class="nextstepaction"]
-> [クイック スタート: iOS 用の電子メール デバイス プロファイルを作成する](../configuration/quickstart-email-profile.md)
+> [クイック スタート: iOS/iPadOS 用の電子メール デバイス プロファイルを作成する](../configuration/quickstart-email-profile.md)

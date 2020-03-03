@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/10/2020
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4db1a1a74c1a19f310aba0f1c10ed5d01869073f
-ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
+ms.openlocfilehash: 02fa3acdaf0dc450afee97dfaaf5870166013356
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77258132"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569525"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Intune でインポートした PKCS 証明書を構成して使用する
 
@@ -31,6 +31,17 @@ Microsoft Intune では、インポートした公開キー ペア (PKCS) 証明
 電子メールは特定の証明書で暗号化されるため、S/MIME 暗号化は困難です。 暗号化を解除できるように、電子メールを暗号化した証明書の秘密キーが電子メールを読んでいるデバイス上に必要です。 暗号化証明書は定期的に更新されるため、以前の電子メールを確実に読めるように、すべてのデバイス上に暗号化の履歴が必要になる場合があります。  同じ証明書を複数のデバイスで使用する必要があるため、[SCEP](certificates-scep-configure.md) または [PKCS](certficates-pfx-configure.md) 証明書プロファイルをこの目的で使用することはできません。これらの証明書配信メカニズムではデバイスごとに固有の証明書が提供されるからです。
 
 Intune で S/MIME を使用する方法について詳しくは、[S/MIME を使用した電子メールの暗号化](certificates-s-mime-encryption-sign.md)に関する記事をご覧ください。
+
+## <a name="supported-platforms"></a>サポートされているプラットフォーム
+
+Intune では、次のプラットフォーム用の PFX 証明書のインポートをサポートします。
+
+- Android - デバイス管理者
+- Android Enterprise - フル マネージド
+- Android Enterprise - 仕事用プロファイル
+- iOS
+- Mac
+- Windows 10
 
 ## <a name="requirements"></a>要件
 
@@ -49,6 +60,8 @@ Intune で S/MIME を使用する方法について詳しくは、[S/MIME を使
 - **Windows サーバー**:
 
   Windows Server を使用して、PFX Certificate Connector for Microsoft Intune をホストします。  コネクタは、Intune にインポートされる証明書の要求を処理するために使用されます。
+  
+  コネクタは、マネージド デバイスの詳細で説明しているポートと同じポートにアクセスする必要があります。[デバイス エンドポイント コンテンツ](https://docs.microsoft.com/intune/fundamentals/intune-endpoints#access-for-managed-devices)を参照してください。
 
   Intune では、*PFX Certificate Connector for Microsoft Intune* と同じサーバー上に *Microsoft Intune Certificate Connector* をインストールすることができます。
 

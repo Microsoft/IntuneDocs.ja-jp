@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f67a08ef3cbfae4a801333e5f8ffb5469e723ed
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 65a13c2690f08c2244f31854556a88b6301c6ac5
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77438057"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576011"
 ---
 # <a name="disable-activation-lock-on-supervised-iosipados-devices-with-intune"></a>Intune を使用して監視されている iOS/iPadOS デバイス上のアクティベーション ロックを無効にする
 
@@ -63,7 +63,7 @@ Intune では、iOS/iPadOS 8.0 以降を実行している監視対象デバイ�
 デバイスのアクティベーション ロックを無効にするには、次の手順に従って先にそれを有効にする必要があります。
 
 1. [デバイスの制限設定を構成する方法](/intune-azure/configure-devices/how-to-configure-device-restrictions)に関する記事に記載されている情報を使用して、iOS/iPadOS 用の Intune デバイス制限プロファイルを構成します。
-2. [iOS のデバイス制限設定](../configuration/device-restrictions-ios.md)の **[全般]** 設定で、 **[アクティベーション ロック]** オプションを有効にします。
+2. [iOS/iPadOS のデバイス制限設定](../configuration/device-restrictions-ios.md)の **[全般]** 設定で、 **[アクティベーション ロック]** オプションを有効にします。
 3. プロファイルを保存し、アクティベーション ロックの無効化を管理するデバイスに[割り当て](../configuration/device-profile-assign.md)ます。
 
 

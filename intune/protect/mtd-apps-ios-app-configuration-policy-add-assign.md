@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04a18befe73ce63f5619c3efc6def4189db9c8df
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: efdb1912fdbb2f28c6859fae4407116173daa99d
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188480"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576293"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune で Mobile Threat Defense (MTD) アプリを追加して割り当てる
 
@@ -71,16 +71,16 @@ MTD プロバイダーに対応するセクションを選択します。
   - iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](../apps/store-apps-ios.md)をご覧ください。 **[アプリ ストアの URL]** には、こちらの [Lookout for Work の iOS アプリ ストア URL](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8) を使用してください。
 
 - **Apple ストア以外の Lookout for Work アプリ**
-  - Lookout for Work iOS アプリに再署名する必要があります。 Lookout は、iOS App Store 以外の場所で Lookout for Work iOS アプリを配布しています。 アプリを配布する前に、iOS Enterprise Developer Certificate でアプリに再署名する必要があります。  
+  - Lookout for Work iOS アプリに再署名する必要があります。 Lookout により、その Lookout for Work iOS アプリが the iOS App Store の外部で配布されます。 アプリを配布する前に、iOS Enterprise Developer Certificate でアプリに再署名する必要があります。  
   - Lookout for Work iOS アプリに再署名する詳細な手順については、Lookout の Web サイトの「[Lookout for Work iOS app re-signing process](https://personal.support.lookout.com/hc/articles/114094038714)」(Lookout for Work iOS アプリの再署名プロセス) を参照してください。
 
   - **Lookout for Work iOS アプリ ユーザーに対して Azure AD Authentication を有効にします。**
 
     1. [Azure Portal](https://portal.azure.com) に移動し、資格情報でサインインして、アプリケーションのページに移動します。
 
-    2. **ネイティブ クライアント アプリケーション**として **Lookout for Work iOS アプリ**を追加します。
+    2. **Lookout for Work iOS アプリ**を**ネイティブ クライアント アプリケーション**として追加します。
 
-    3. **com.lookout.enterprise.yourcompanyname** は、IPA に署名したときに選択したカスタマー バンドル ID で置き換えます。
+    3. **com.lookout.enterprise.yourcompanyname** を、IPA に署名したときに選択したカスタマー バンドル ID に置換します。
 
     4. リダイレクト URI を追加します。 **&lt;companyportal://code/>** の後に、元のリダイレクト URI を URL エンコードしたバージョンを続けます。
 
@@ -203,7 +203,7 @@ MTD プロバイダーに対応するセクションを選択します。
 
 ### <a name="pradeo-app-configuration-policy"></a>Pradeo アプリ構成ポリシー
 
-Pradeo では、iOS でのアプリケーション構成ポリシーをサポートしていません。  アプリを構成するには、代わりに、Pradeo を使用して目的の設定であらかじめ構成されたカスタム IPA または APK ファイルを実装します。
+Pradeo では、iOS/iPadOS でのアプリケーション構成ポリシーをサポートしていません。  アプリを構成するには、代わりに、Pradeo を使用して目的の設定であらかじめ構成されたカスタム IPA または APK ファイルを実装します。
 
 ### <a name="better-mobile-app-configuration-policy"></a>Better Mobile モバイル アプリ構成ポリシー
 
@@ -255,6 +255,6 @@ RADAR Wandera ポータルにサインインして、 **[設定]**  >  **[EMM In
 
 この手順は、すべての MTD パートナーに該当します。 [Intune でアプリをグループに割り当てる](../apps/apps-deploy.md)手順を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [MTD のデバイス コンプライアンス ポリシーを構成する](mtd-device-compliance-policy-create.md)

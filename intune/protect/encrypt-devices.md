@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 02/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5209ce7fba30a156de055503751104f9090d49d7
-ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
+ms.openlocfilehash: a5c844377dcd69b6caf5ef9f72fcb8dbb4ef8bd0
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75756008"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609302"
 ---
 # <a name="use-device-encryption-with-intune"></a>Intune でデバイスの暗号化を使用する
 
@@ -39,17 +39,30 @@ Intune では、管理されているすべてのデバイスのデバイスの�
 
 Intune を使用して、macOS を実行するデバイスで FileVault のディスク暗号化を構成します。 次に、Intune の暗号化レポートを使用して、これらのデバイスの暗号化の詳細を表示し、FileVault で暗号化されたデバイスの回復キーを管理します。
 
-デバイス上で FileVault を機能させるためには、ユーザー承認済みのデバイス登録が必要であることに注意してください。 登録がユーザー承認済みであると見なされるためには、そのユーザーがシステム環境設定から手動で管理プロファイルを承認する必要があります。 
+デバイス上で FileVault を機能させるためには、ユーザー承認済みのデバイス登録が必要です。 登録がユーザー承認済みであると見なされるためには、そのユーザーがシステム環境設定から手動で管理プロファイルを承認する必要があります。
 
 FileVault は、macOS に含まれるディスク全体の暗号化プログラムです。 Intune を使用して、**macOS 10.13 以降**を実行するデバイスで FileVault を構成することができます。
 
 FileVault を構成するには、macOS プラットフォームのエンドポイント保護用の[デバイス構成プロファイル](../configuration/device-profile-create.md)を作成します。 FileVault 設定は、macOS エンドポイント保護で使用可能な設定カテゴリの 1 つです。
 
-FileVault を使用してデバイスを暗号化するポリシーを作成すると、そのポリシーは 2 段階でデバイスに適用されます。 まず、Intune が回復キーを取得してバックアップできるようにデバイスが準備されます。 これはエスクローと呼ばれます。 キーがエスクローされると、ディスクの暗号化が開始されます。
+FileVault を使用してデバイスを暗号化するポリシーを作成すると、そのポリシーは 2 段階でデバイスに適用されます。 まず、Intune が回復キーを取得してバックアップできるようにデバイスが準備されます。 このアクションはエスクローと呼ばれます。 キーがエスクローされると、ディスクの暗号化が開始されます。
 
 ![FileVault の設定](./media/encrypt-devices/filevault-settings.png)
 
 Intune で管理できる FileVault 設定の詳細については、macOS エンドポイント保護設定に関する Intune の記事の「[FileVault](endpoint-protection-macos.md#filevault)」を参照してください。
+
+### <a name="permissions-to-manage-filevault"></a>FileVault を管理するためのアクセス許可
+
+Intune で FileVault を管理するには、アカウントに適切な Intune [ロールベースのアクセス制御](../fundamentals/role-based-access-control.md) (RBAC) アクセス許可を与える必要があります。
+
+以下は FileVault アクセス許可です。これは**リモート タスク** カテゴリに含まれ、アクセス許可を付与する組み込み RBAC ロールです。
+ 
+- **FileVault キーの取得**:
+  - ヘルプ デスク オペレーター
+  - エンドポイント セキュリティ マネージャー
+
+- **FileVault キーのローテーション**
+  - ヘルプ デスク オペレーター
 
 ### <a name="how-to-configure-macos-filevault"></a>macOS FileVault を構成する方法
 
@@ -84,7 +97,7 @@ Intune で FileVault を使って macOS デバイスを暗号化した後は、�
 
 ### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices"></a>MEM 暗号化 macOS デバイスから個人用回復キーを取得する
 
-エンド ユーザーは、iOS ポータル サイト アプリを使用して個人用回復キー (FileVault キー) を取得できます。 個人用回復キーを持つデバイスは、Intune に登録され、Intune により FileVault を使用して暗号化されている必要があります。 エンド ユーザーは、iOS ポータル サイト アプリを使用して、FileVault 個人用回復キーを含む Web ページを開くことができます。 また、 **[デバイス]**  > "*暗号化されて登録された macOS デバイス*" >  **[回復キーの取得]** を選択することで、Intune から回復キーを取得することもできます。 
+エンド ユーザーは、iOS ポータル サイト アプリを使用して個人用回復キー (FileVault キー) を取得します。 個人用回復キーを持つデバイスは、Intune に登録され、Intune により FileVault を使用して暗号化されている必要があります。 エンド ユーザーは、iOS ポータル サイト アプリを使用して、FileVault 個人用回復キーを含む Web ページを開くことができます。 また、 **[デバイス]**  > "*暗号化されて登録された macOS デバイス*" >  **[回復キーの取得]** を選択することで、Intune から回復キーを取得することもできます。 
 
 ## <a name="bitlocker-encryption-for-windows-10"></a>Windows 10 の BitLocker 暗号化
 

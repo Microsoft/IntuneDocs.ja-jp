@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,21 +18,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 061644a1c83b02902a6bbdaf3cfbd04815d32ea3
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 9c2083d6f259b62b2856e08fec5ebcb696cbc0df
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755036"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576447"
 ---
-# <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Microsoft Intune を使用して Windows 10 ポータル サイト アプリを手動で追加する
+# <a name="add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Microsoft Intune を使用して Windows 10 ポータル サイト アプリを追加する
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-デバイスを管理し、アプリをインストールするために、エンド ユーザーは Microsoft Store からポータル サイト アプリをインストールすることができます。 ただし、ビジネスでポータル サイト アプリを割り当てる必要がある場合は、Intune から直接 Windows 10 ポータル サイト アプリを手動で割り当てることができます。 Intune をビジネス向け Microsoft Store と統合していない場合でも、同様に割り当てることができます。
+デバイスを管理し、アプリをインストールするために、エンド ユーザーは Microsoft Store からポータル サイト アプリをインストールすることができます。 ただし、ビジネスでポータル サイト アプリを割り当てる必要がある場合は、Intune から直接 Windows 10 ポータル サイト アプリを割り当てることができます。 Intune をビジネス向け Microsoft Store と統合していない場合でも、同様に割り当てることができます。
 
- > [!NOTE]
- > この記事で説明されたオプションでは、アプリの更新プログラムがリリースされるたびに、手動で更新プログラムを割り当てる必要があります。
+ > [!IMPORTANT]
+ > ポータル サイト アプリをダウンロードする場合、この記事で説明されたオプションでは、アプリの更新プログラムがリリースされるたびに、手動で更新プログラムを割り当てる必要があります。 Windows 10 Autopilot でプロビジョニングされたデバイス用のポータル サイト アプリを展開するには、[Windows 10 ポータル サイト アプリのオートパイロット デバイスの追加](~/apps/store-apps-company-portal-autopilot.md)に関するページをご覧ください。
 
 ## <a name="configure-settings-to-show-offline-apps"></a>オフライン アプリ表示するように設定を構成する
 1. 自分の管理アカウントを使って[ビジネス向け Microsoft Store](https://www.microsoft.com/business-store) にサインインします。
