@@ -42,7 +42,7 @@ Microsoft Edge バージョン 77 以降を Intune に追加するには、次�
 
 1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 2. **[アプリ]**  >  **[すべてのアプリ]**  >  **[追加]** の順に選択します。
-3. **Microsoft Edge バージョン 77 以降**の **[アプリの種類]** リストで、**[macOS]** を選択します。
+3. **Microsoft Edge バージョン 77 以降**の **[アプリの種類]** リストで、 **[macOS]** を選択します。
 
 ## <a name="configure-app-information"></a>アプリ情報の構成
 この手順では、このアプリの展開に関する情報を指定します。 この情報は、Intune でアプリを識別する場合に役立ち、会社のポータルでユーザーがアプリを探す場合にも役立ちます。
