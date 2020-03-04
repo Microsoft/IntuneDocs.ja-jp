@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 313d9f470e9467cc80bae9c2400d4cc64aacc7ea
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
-ms.translationtype: MTE75
+ms.openlocfilehash: c0cfe99f022a5e5448bdee453fb0210f6b7195fc
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886766"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181817"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune の新機能 (過去数か月)
 
@@ -187,7 +187,7 @@ Intune の登録とポータル サイトで、iOS バージョン 11 以降が�
 Windows デバイスの名前を変更するとき、新しい規則に従う必要があります。
 - 15 文字以下 (後続の NULL を除き、63 バイト以下にする必要があります)
 - null または空の文字列にしない
-- 使用できる ASCII: 文字 (a-z、a-z)、数字 (0-9)、およびハイフン
+- 許可される ASCII: 文字 (a-z、A-Z)、数字 (0-9)、ハイフン
 - 許可される Unicode: 文字数 >= 0x80、有効な UTF8 であることが必須、IDN マッピング可能であることが必須 (つまり、RtlIdnToNameprepUnicode は合格です。RFC 3492 参照)
 - 名前は数字だけにすることができない
 - 名前にスペースを使用できない
@@ -341,7 +341,7 @@ Intune では、監視対象の iOS デバイスをキオスクまたは専用�
 
 この更新では、制御できる新しい設定があります。
 - **音声制御**: キオスク モードのときにデバイスでの音声制御を有効にします。
-- **音声制御の変更**: キオスク モードのときにデバイスの音声制御設定を変更することをユーザーに許可します。
+- **音声制御の変更**: キオスク モードのときに、ユーザーはデバイスで音声制御の設定を変更できます。
 
 現在の設定を見るには、[iOS キオスクの設定](../configuration/device-restrictions-ios.md#kiosk)に関する記事をご覧ください。
 
@@ -407,7 +407,7 @@ Android Enterprise デバイスでは、仕事用プロファイルで機能を�
 ### <a name="device-enrollment"></a>デバイスの登録
 
 #### <a name="new-tenants-will-default-away-from-android-device-administrator-management---4869790-----"></a>新しいテナントは既定で Android デバイス管理者の管理から外れる<!-- 4869790   -->
-Android のデバイス管理者の機能は、Android Enterprise によって置き換えられています。 そのため、新しい登録には代わりに Android Enterprise を使用することをお勧めします。 今後の更新では、新しいテナントは、デバイス管理者の管理を使用するために、Android の登録で次のステップを事前に実行する必要があります: **[Intune]**  >  **[デバイスの登録]**  >  **[Android の登録]**  >  **[Personal and corporate-owned devices with device administration privileges]\(デバイスの管理特権を持つ個人用デバイスと会社所有デバイス\)**  >  **[デバイス管理者によってデバイスを管理します]** の順に移動します。
+Android のデバイス管理者の機能は、Android Enterprise によって置き換えられています。 そのため、新しい登録には代わりに Android Enterprise を使用することをお勧めします。 今後の更新では、新しいテナントでデバイス管理者の管理を使用するには、Android の登録で次の前提条件手順を完了する必要があります。 **[Intune]**  >  **[デバイスの登録]**  >  **[Android の登録]**  >  **[デバイス管理者特権を持つ個人所有のデバイスと会社所有のデバイス]**  >  **[デバイス管理者によってデバイスを管理します]** に移動します。
 
 既存テナントの環境は変更されません。
 
@@ -526,7 +526,7 @@ Intune では、Android エンタープライズ専用デバイス上のキオ�
 この更新プログラムでは、次の機能が追加されています。
 
 - **[専用デバイス]**  >  **[複数アプリ]** : **[仮想ホーム ボタン]** は、デバイス上で上方向にスワイプするか、またはユーザーが移動できるように画面上でのフローティングによって、表示できます。
-- **[専用デバイス]**  >  **[複数アプリ]** : **[懐中電灯へのアクセス]** を使用すると、ユーザーが懐中電灯を使用できます。 
+- **[専用デバイス]**  >  **[複数アプリ]** : **[懐中電灯へのアクセス]** を利用すると、ユーザーは懐中電灯を使用できます。 
 - **[専用デバイス]**  >  **[複数アプリ]** : **[メディア ボリューム コントロール]** を利用すると、ユーザーはスライダーを使用してデバイスのメディア ボリュームを制御できます。 
 - **[専用デバイス]**  >  **[複数アプリ]** : **[Enable a screensaver]\(スクリーンセーバーを有効にする\)** では、カスタム画像をアップロードして、スクリーンセーバーが表示されるタイミングを制御します。
 
@@ -580,10 +580,10 @@ Intune では、[PKCS 操作に対応した Microsoft Intune Certificate Connect
 
 - **[iOS]**  >  **[デバイスの制限]** には、いくつかの変更点があります。
 
-  - **[組み込みアプリ]**  >  **[iPhone を探す (監視モードのみ)]** : Find My アプリの機能でこの機能をブロックする新しい設定です。 
-  - **[組み込みアプリ]**  >  **[友達を探す (監視モードのみ)]** : Find My アプリの機能でこの機能をブロックする新しい設定です。 
-  - **[ワイヤレス]**  >  **[Wi-Fi 状態の変更 (監視モードのみ)]** : ユーザーがデバイスの Wi-Fi のオンとオフを切り替えられないようにする新しい設定です。
-  - **[キーボードと辞書]**  >  **[QuickPath (監視モードのみ)]** : QuickPath 機能をブロックする新しい設定です。
+  - **[組み込みアプリ]**  >  **[iPhone を探す (監視モードのみ)]** :Find My アプリ機能にあるこの機能をブロックするための新しい設定。 
+  - **[組み込みアプリ]**  >  **[友達を探す (監視モードのみ)]** :Find My アプリ機能にあるこの機能をブロックするための新しい設定。 
+  - **[ワイヤレス]**  >  **[Wi-Fi 状態の変更 (監視モードのみ)]** :ユーザーがデバイス上で Wi-Fi をオンまたはオフにできないようにする新しい設定。
+  - **[キーボードと辞書]**  >  **[QuickPath (監視モードのみ)]** :QuickPath 機能をブロックする新しい設定。
   - **[クラウドとストレージ]** : **[アクティビティの継続]** は **[ハンドオフ]** に名称変更されました。
 
   現在の設定を確認するには、「[Intune を使用して機能を許可または制限するように iOS デバイスを設定する](../configuration/device-restrictions-ios.md)」を参照してください。
@@ -1002,7 +1002,7 @@ Windows 10 以降のデバイスの多くには、トラステッド プラッ�
 #### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices---4097904-----"></a>エンド ユーザーによる個人用ホットスポットの変更を防止し、iOS デバイス上での Siri サーバーのログ記録を無効にする<!-- 4097904   -->  
 iOS デバイス上にデバイスの制限プロファイルを作成します ( **[デバイスの構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  **[iOS]** (プラットフォーム) > **[デバイスの制限]** (プロファイルの種類))。 この更新プログラムには構成できる新しい設定が含まれています。
 
-- **[組み込みアプリ]** : Siri コマンドのサーバー側のログ
+- **組み込みアプリ**:Siri コマンドに対するサーバー側のログ記録
 - **ワイヤレス**:個人用ホットスポットのユーザー変更 (監視モードのみ)
 
 これらの設定を確認するには、[iOS 用の組み込みのアプリ設定](../configuration/device-restrictions-ios.md#built-in-apps)と [iOS 用のワイヤレス設定](../configuration/device-restrictions-ios.md#wireless)に移動します。
@@ -1444,7 +1444,7 @@ Intune コンソール内の条件付きアクセスの UI の改善を行いま
 
 - [Windows 10 以降のデバイスをキオスクとして実行するための設定](../configuration/kiosk-settings-windows.md)
 - [Microsoft Edge ブラウザー デバイスの制限](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser)
-- [お気に入りと検索のデバイスの制限](../configuration/device-restrictions-windows-10.md##favorites-and-search)
+- [お気に入りと検索のデバイスの制限](../configuration/device-restrictions-windows-10.md#favorites-and-search)
 
 適用対象:Windows 10 以降
 
@@ -1639,7 +1639,7 @@ iOS デバイス用の構成プロファイルを作成するときに、ロッ�
 [ロック画面にメッセージを表示するための設定](../configuration/ios-device-features-settings.md#lock-screen-message)に関するページでは、設定の一覧が示されています。
 
 #### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices---2827760--"></a>iOS デバイスに App Store、ドキュメント表示、ゲーム デバイスの新しい制限の設定が追加される<!-- 2827760-->
-**[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  > プラットフォームの **[iOS]** > プロファイル タイプの **[デバイスの制限]** > **[App Store、ドキュメント表示、ゲーム]** で、次の設定が追加されます: [マネージド アプリによるアンマネージド連絡先アカウントへの連絡先の書き込みを許可する]、[アンマネージド アプリによるマネージド連絡先アカウントからの読み取りを許可する]。これらの設定を確認する場合は、[iOS デバイスの制限](../configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming)に関する記事をご覧ください。
+**[デバイスの構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  プラットフォームとして **[iOS]** を選択 > プロファイルの種類として **[デバイスの制限]** を選択 > **[アプリ ストア、ドキュメント表示、ゲーム]** の順に選択すると、次の設定が追加されます。[Allow managed apps to write contacts to unmanaged contacts accounts]\(マネージド アプリによるアンマネージド連絡先アカウントへの連絡先の書き込みを許可する\)、[Allow unmanaged apps to read from managed contacts accounts]\(アンマネージド アプリによるマネージド連絡先アカウントからの読み取りを許可する\)。これらの設定については、[iOS デバイスの制限](../configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming)に関するページをご覧ください。
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices---3201839-3201843---"></a>Android エンタープライズ デバイス所有者デバイスに対する新しい通知、ヒント、キーガードの設定<!-- 3201839 3201843 -->
 この更新には、デバイス所有者として実行するときの Android エンタープライズ デバイスに関するいくつかの新機能が含まれます。 これらの機能を使用するには、 **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** に移動し、 **[プラットフォーム]** で **[Android エンタープライズ]** を選択し、 **[プロファイルの種類]** で **[デバイスの所有者のみ]**  >  **[デバイスの制限]** を選択します。
@@ -1702,7 +1702,7 @@ Android エンタープライズ デバイス用にデバイスの制限プロ�
 
 現在の設定一覧を確認するには、[Android エンタープライズ デバイスの機能を許可または制限する設定](../configuration/device-restrictions-android-for-work.md)に関するページを参照してください。
 
-適用対象: Android Enterprise デバイス所有者
+適用対象:Android エンタープライズ デバイスの所有者
 
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -1850,9 +1850,9 @@ Citrix によって Citrix ゲートウェイの更新プログラムがリリ�
 - ［パスワード］:パスワード共有をブロックする (監視モードのみ)
 
 **macOS の設定**: 
-- パスワード: パスワード オートフィルをブロックする
+- ［パスワード］:パスワード オートフィルをブロックする
 - ［パスワード］:パスワード近接要求をブロックする
-- パスワード: パスワード共有をブロックする
+- ［パスワード］:パスワード共有をブロックする
 
 これらの設定の詳細については、[iOS](../configuration/device-restrictions-ios.md) および [macOS](../configuration/device-restrictions-macos.md) デバイスの制限の設定を参照してください。
 
