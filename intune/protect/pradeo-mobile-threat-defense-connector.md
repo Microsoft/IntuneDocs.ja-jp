@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,18 +15,21 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd2f03edeb1e402401911ab2c80fa0d699e2628c
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 262d36817e86c8087c6ef4b642d1bd53b1511104
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514882"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782103"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Mobile Threat Defense コネクタと Intune
 
 Microsoft Intune に統合された Mobile Threat Defense (MTD) ソリューションである Pradeo によって実行されるリスク評価に基づき、条件付きアクセスを利用し、モバイル デバイスから会社のリソースへのアクセスを制御できます。 リスクは、Pradeo アプリを実行するデバイスから収集される製品利用統計情報に基づいて評価されます。
 
 Intune デバイス コンプライアンス ポリシーで有効にした Pradeo リスク評価に基づき、条件付きアクセスのポリシーを構成できます。Intune デバイス コンプライアンス ポリシーは、検出された脅威に基づき、非準拠デバイスから企業リソースへのアクセスを許可したり、拒否したりするために利用できます。
+
+> [!NOTE]
+> この Mobile Threat Defense ベンダーは、未登録のデバイスではサポートされていません。
 
 ## <a name="how-do-intune-and-pradeo-help-protect-your-company-resources"></a>Intune と Pradeo を利用し、会社のリソースをどのように保護しますか?
 

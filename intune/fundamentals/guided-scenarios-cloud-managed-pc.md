@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f78f3696827ebd50084f0e4b012c5f94427eeb35
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9ddd59715a0730a52738088700a1f2b9166bfa80
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74164569"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216213"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>ガイド付きシナリオ - クラウド マネージド モダン デスクトップ
 
@@ -31,7 +31,7 @@ ms.locfileid: "74164569"
 
 ご自分の組織でクラウド マネージド モダン デスクトップを評価する場合、基本的なデプロイに必要なすべての構成については、このガイド付きシナリオで事前に定義されています。 このガイド付きシナリオでは、Intune のデバイス管理機能を試すことができる安全な環境を作成します。 
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 - [MDM 機関を Intune に設定する](~/fundamentals/mdm-authority-set.md#set-mdm-authority-to-intune) - モバイル デバイス管理 (MDM) 機関の設定によって、デバイスの管理方法が決まります。 IT 管理者が MDM 機関を設定してからでないと、ユーザーは管理対象のデバイスを登録できません。
 - 最低でも M365 E3 (最良のセキュリティのためには M365 E5)
 - Windows 10 1903 デバイス (Windows Autopilot に登録することで最適なエンドユーザー エクスペリエンスを実現)
@@ -116,7 +116,7 @@ Windows Autopilot では新しいデバイスの構成が自動化されてい�
 1. Office 365 ProPlus がクラウド マネージド PC に自動的にインストールされます。 これには、Access、Excel、OneNote、Outlook、PowerPoint、Publisher、Skype for Business、Word など、馴染みのあるアプリケーションが含まれます。 これらのアプリケーションを使用して、SharePoint Online、Exchange Online、Skype for Business Online などの Office 365 サービスに接続することができます。 Office 365 ProPlus は、サブスクリプション以外のバージョンの Office とは異なり、定期的に新しい機能で更新されます。 新機能の一覧については、「Office 365 の新機能」を参照してください。
 2. Windows セキュリティ ベースラインがクラウド マネージド PC にインストールされます。 Microsoft Defender Advanced Threat Protection が設定されている場合、ガイド付きシナリオでは、Defender に対してベースライン設定も構成されます。 Defender Advanced Threat Protection により、Windows 10 セキュリティ スタックに新しい侵害後保護レイヤーが提供されます。 Windows 10 に組み込まれたクライアント テクノロジと堅牢なクラウド サービスとの組み合わせにより、他の防御を通過した脅威を容易に検出できるようになります。 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - Microsoft Defender Advanced Threat Detection を使用する場合は、[Intune コンプライアンス ポリシー](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy)を作成して、Defender 脅威分析がコンプライアンスを満たすようにする必要があります。
 - デバイスが Intune コンプライアンスを満たしていない場合は、[デバイスベースの条件付きアクセス ポリシー](~/protect/advanced-threat-protection.md#create-a-conditional-access-policy)を作成してアクセスをブロックします。

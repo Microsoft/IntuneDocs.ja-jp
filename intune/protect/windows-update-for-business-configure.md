@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: c9245ca028bdb5589df8c76b10560d9130a1108c
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886803"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181723"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Intune で Windows 10 ソフトウェア更新プログラムを管理する
 
@@ -77,14 +77,14 @@ Windows 10 更新プログラムのリングでは、[スコープのタグ](../
 
 ### <a name="create-and-assign-update-rings"></a>更新プログラム リングを作成して割り当てる
 
-1. [Microsoft Endpoint Manager 管理センター]( https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
+1. [Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 
 2. **[デバイス]**  >  **[Windows]**  >  **[Windows 10 更新リング]**  >  **[作成]** の順に選択します。
 
 3. *[基本]* の下で、名前と説明 (省略可能) を指定してから、 **[次へ]** を選択します。
-  ![更新リングを作成する]( ./media/windows-update-for-business-configure/basics-tab.png)
-  
-4. **[更新リングの設定]** の下で、ビジネス ニーズに合わせて設定を構成します。 使用できる設定の詳細については、Windows 更新プログラムの設定に関するページを参照してください。 " *[更新] と [ユーザー エクスペリエンス]* " の設定を構成したら、 **[次へ]** を選択します。
+  ![更新リングを作成する](./media/windows-update-for-business-configure/basics-tab.png)
+
+4. **[更新リングの設定]** の下で、ビジネス ニーズに合わせて設定を構成します。 使用できる設定の詳細については、[Windows 更新プログラムの設定](../protect/windows-update-settings.md)に関するページを参照してください。 " *[更新] と [ユーザー エクスペリエンス]* " の設定を構成したら、 **[次へ]** を選択します。
 
 5. 更新リングにスコープ タグを適用する場合は、 **[スコープ タグ]** の下で **[+ スコープ タグを選択]** を選択して、 *[タグを選択する]* ウィンドウを開きます。 1 つまたは複数のタグを選択してから、 **[選択]** をクリックしてそれらを更新リングに追加し、 *[スコープ タグ]* ページに戻ります。
 

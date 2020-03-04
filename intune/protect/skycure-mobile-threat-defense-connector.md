@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/09/2017
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 884d7f5d4710b44c302598b3c34e704beace240a
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 60bad9299a3751474ef01220a7c18f16be329448
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515273"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782076"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile コネクタ
 
@@ -38,6 +38,9 @@ Microsoft Intune に統合された Mobile Threat Defense ソリューション�
 - 脆弱性防御
 
 Intune デバイス コンプライアンス ポリシーで SEP Mobile のリスク評価を有効にした後、条件付きアクセスのポリシーを使って、検出された脅威に基づき、非準拠デバイスから企業リソースへのアクセスを許可または拒否できます。
+
+> [!NOTE]
+> この Mobile Threat Defense ベンダーは、未登録のデバイスではサポートされていません。
 
 ## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Intune と SEP Mobile が会社のリソースを保護する方法
 
