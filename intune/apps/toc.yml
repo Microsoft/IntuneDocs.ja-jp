@@ -161,6 +161,8 @@
             - name: アプリ保護ポリシーの概要
               href: app-protection-policy.md
               displayName: app; protection; policy
+            - name: アプリを使用するデータ保護フレームワーク
+              href: app-protection-framework.md
             - name: アプリ保護ポリシーの作成
               items:
                 - name: 全般設定
